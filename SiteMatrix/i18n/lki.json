@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hosseinblue"
+		]
+	},
+	"sitematrix-desc": "[[Special:SiteMatrix|فهرستی]] از ویکی‌های ویکی‌مدیا را نمایش می‌دهد",
+	"sitematrix-language": "زوون",
+	"sitematrix-project": "نام پروژه، پیوند میان‌پروژه و پیوند میان‌ویکی",
+	"sitematrix-other-projects": "پروژۀلێ تر",
+	"sitematrix-total": "'''جمع کل: $1'''",
+	"sitematrix-sitetotal": "همه",
+	"sitematrix-private": "خصوصی",
+	"sitematrix-fishbowl": "دارای محدودیت دةسکاری"
+}

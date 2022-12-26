@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"echo-pref-tooltip-bs-admin-cat": "Извести ме кога ќе се создаде нова корисничка сметка",
+	"echo-pref-tooltip-bs-page-create-cat": "Извести ме кога ќе се создаде нова страница",
+	"echo-category-title-bs-page-create-cat": "Создавање на страници",
+	"prefs-namespace-notifications": "Известувања за настани во именскиот простор",
+	"prefs-category-notifications": "Известувања за категории",
+	"echo-category-title-bs-namespace-category-notify-cat": "Промени во претплатените именски простори и категории",
+	"bs-echoconnector-personalurl-notifications": "Известувања ($1)"
+}

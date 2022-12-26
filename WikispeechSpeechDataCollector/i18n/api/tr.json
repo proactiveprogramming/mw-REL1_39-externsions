@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseph"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "Genel kalıcı alan nesnesi erişim APIsi.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "JSON işlemi geri-serileştirilemedi.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "İşlem geri-serileştirilemedi.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "İşlem çalıştırılmadı.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Cevap serileştirilemedi.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Yeni bir tek Kullanıcı isteği oluştur.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Tek bir Kullanıcı isteği oku.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Tek bir Kullanıcı isteği sil."
+}

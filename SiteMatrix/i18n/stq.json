@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maartenvdbent",
+			"Pyt"
+		]
+	},
+	"sitematrix-desc": "Wiest ne [[Special:SiteMatrix|Lieste fon do Wikimedia-Wikis]]",
+	"sitematrix-language": "Sproake",
+	"sitematrix-project": "Projektnoome, Interprojekt-Link un Interwiki-Link",
+	"sitematrix-total": "'''Antaal mädnunner: $1'''",
+	"sitematrix-sitetotal": "Mädnunner",
+	"sitematrix-private": "Privoat",
+	"sitematrix-fishbowl": "Beoarbaidenge ientuund"
+}

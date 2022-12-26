@@ -1,0 +1,87 @@
+{
+	"name": "Title Icon",
+	"version": "6.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Cindy.cicalese Cindy Cicalese]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Title_Icon",
+	"descriptionmsg": "titleicon-desc",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"MessagesDirs": {
+		"TitleIcon": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"TitleIconMagic": "i18n/TitleIconMagic.i18n.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TitleIcon\\": "src",
+		"MediaWiki\\Json\\": "json"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "init",
+		"BeforePageDisplay": "main",
+		"ShowSearchHitTitle": "main",
+		"ParserAfterParse": "main"
+	},
+	"HookHandlers": {
+		"init": {
+			"class": "MediaWiki\\Extension\\TitleIcon\\InitHookHandler"
+		},
+		"main": {
+			"class": "MediaWiki\\Extension\\TitleIcon\\MainHookHandler",
+			"services": [
+				"TitleIcon:IconManager",
+				"MainConfig",
+				"LinkRenderer"
+			]
+		}
+	},
+	"APIPropModules": {
+		"titleicons": {
+			"class": "MediaWiki\\Extension\\TitleIcon\\ApiQueryTitleIcons",
+			"services": [
+				"TitleIcon:IconManager",
+				"JsonCodec"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "TitleIcon"
+	},
+	"ResourceModules": {
+		"ext.TitleIcon": {
+			"scripts": "resources/TitleIcon.js"
+		}
+	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"config": {
+		"TitleIcon_EnableIconInPageTitle": {
+			"value": true
+		},
+		"TitleIcon_EnableIconInSearchTitle": {
+			"value": true
+		},
+		"TitleIcon_CSSSelector": {
+			"value": "#firstHeading"
+		},
+		"TitleIcon_UseFileNameAsToolTip": {
+			"value": true
+		},
+		"TitleIcon_TitleIconPropertyName": {
+			"value": "Title Icon"
+		},
+		"TitleIcon_HideTitleIconPropertyName": {
+			"value": "Hide Title Icon"
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "Splošni API za dostop do stalnih predmetov domene.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Deserializacija JSON-a transakcije ni uspela.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Deserializacija transakcije ni uspela.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Izvedba transakcije ni uspela.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Serializacija odgovora ni uspela.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Ustvarjanje enega novega uporabniškega zahtevka.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Branje enega uporabniškea zahtevka.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Brisanje enega uporabniškega zahtevka."
+}

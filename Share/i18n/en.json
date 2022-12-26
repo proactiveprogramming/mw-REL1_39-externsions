@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agent Isai"
+		]
+	},
+	"share": "Share",
+	"share-desc": "Adds a sidebar portlet which allows users to easily share wiki articles on social media platforms",
+	"share-header": "Share this",
+	"share-email": "Share via email",
+	"share-email-desc": "Allow for a link to share articles via email to be added to the sidebar",
+	"share-facebook": "Share to Facebook",
+	"share-facebook-desc": "Allow for a link to share articles via Facebook to be added to the sidebar",
+	"share-linkedin": "Share to LinkedIn",
+	"share-linkedin-desc": "Allow for a link to share articles via LinkedIn to be added to the sidebar",
+	"share-reddit": "Share to Reddit",
+	"share-reddit-desc": "Allow for a link to share articles via Reddit to be added to the sidebar",
+	"share-sidebar-basicbuttons": "Use Basic Buttons Mode?",
+	"share-sidebar-plainlinks": "Use only plain links in the sidebar?",
+	"share-tumblr": "Share to Tumblr",
+	"share-tumblr-desc": "Allow for a link to share articles via Tumblr to be added to the sidebar",
+	"share-twitter": "Share to Twitter",
+	"share-twitter-desc": "Allow for a link to share articles via Twitter to be added to the sidebar",
+	"share-preftoggle": "Disable display of share links in the sidebar?",
+	"right-viewsharelinks": "View sidebar share portlet",
+	"action-viewsharelinks": "view sidebar share portlet"
+}

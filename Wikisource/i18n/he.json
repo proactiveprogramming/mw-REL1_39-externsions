@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"wikisource-desc": "התאמות של מדיה־ויקי לוויקיטקסט (Wikisource)",
+	"wikisource-export-portlet": "הדפסה/יצוא",
+	"wikisource-download-epub": "הורדת EPUB",
+	"wikisource-download-epub-tooltip": "הורדת גרסת EPUB של היצירה הזאת",
+	"wikisource-download-mobi": "הורדת MOBI",
+	"wikisource-download-mobi-tooltip": "הורדת גרסת MOBI של היצירה הזאת",
+	"wikisource-download-pdf": "הורדת PDF",
+	"wikisource-download-pdf-tooltip": "הורדת גרסת PDF של היצירה הזאת",
+	"wikisource-download-choose": "תסדירים אחרים",
+	"wikisource-download-choose-tooltip": "פתיחת טופס לבחירת תסדירים וגופנים אחרים וכו'",
+	"wikisource-download-button": "הורדה",
+	"wikisource-download-chooser-title": "נא לבחור תסדיר",
+	"wikisource-download-chooser-epub-description": "למחשבים, מכשירים ניידים, ומחשבי לוח",
+	"wikisource-download-chooser-mobi-description": "למכשירי קינדל",
+	"wikisource-download-chooser-pdf-description": "למסכים גדולים והדפסה",
+	"wikisource-download-chooser-different-format": "{{GENDER:|מחפש|מחפשת}} תסדיר שונה?",
+	"wikisource-ocr-extract-text": "העתקת טקסט",
+	"wikisource-ocr-extract-progress": "העתקת טקסט מתוך תמונה...",
+	"wikisource-ocr-extract-cancel": "ביטול",
+	"wikisource-ocr-extract-undo": "ביטול העתקת טקסט",
+	"wikisource-ocr-extract-close": "סגירת ההודעה הזאת",
+	"wikisource-ocr-extract-text-title": "קבלת הטקסט של התמונה הזאת באצעות זיהוי תווים אופטי",
+	"wikisource-ocr-error": "שגיאה מכלי זיהוי התווים האופטי: $1",
+	"wikisource-ocr-no-text": "לא הוחזר שום טקסט על־ידי כלי זיהוי התווים האופטי.",
+	"wikisource-ocr-settings-menu": "שינוי הגדרות OCR",
+	"wikisource-ocr-engine": "נא לבחור את כלי העתקת הטקסט שלך ההתחלתי שלך",
+	"wikisource-ocr-advanced": "אפשרויות מתקדמות",
+	"wikisource-ocr-advanced-title": "פתיחת האפשרויות המתקדמות בלשונית חדשה",
+	"wikisource-ocr-onboarding-title": "העתקת תמונות לטקסט",
+	"wikisource-ocr-onboarding-text": "הפכו מסמכים סרוקים לטקסט שאפשר לערוך באמצעות זיהוי תווים אופטי (OCR)",
+	"wikisource-ocr-onboarding-button": "בסדר, הבנתי"
+}

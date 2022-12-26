@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pikne"
+		]
+	},
+	"fileexporter-desc": "Failide lihtne eksport teise vikisse",
+	"fileexporter-text": "Ekspordi fail",
+	"fileexporter-to-wikimedia-commons": "Ekspordi Wikimedia Commonsisse",
+	"tag-fileimporter-remote": "Muudetud FileImporteriga",
+	"tag-fileimporter-remote-description": "Muudatused, mis on tehtud tarkvaralisaga [[mw:Extension:FileImporter|FileImporter]] pärast faili importimist sellest vikist."
+}

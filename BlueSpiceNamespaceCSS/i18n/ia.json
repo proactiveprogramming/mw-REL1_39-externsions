@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-namespacecss-desc": "Stilo specific al spatio de nomines",
+	"bluespicenamespacecssmanager": "Gestor de CSS de spatios de nomines",
+	"bs-namespacecss-text": "CSS de spatio de nomines",
+	"bs-namespacecss-specialmanager-label-namespacename": "Spatio de nomines",
+	"bs-namespacecss-specialmanager-label-sourcepage": "Pagina de origine",
+	"apihelp-bs-namespacecss-store-summary": "Lista spatios de nomines e lor possibile pagina de fonte CSS. Implementa parametros ExtJS Store."
+}

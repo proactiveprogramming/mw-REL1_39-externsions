@@ -1,0 +1,47 @@
+{
+	"name": "Spark",
+	"version": "1.0.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Jeroen_De_Dauw Jeroen De Dauw]"
+	],
+	"license-name": "GPL-3.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:Spark",
+	"descriptionmsg": "spark-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"Spark": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SparkHooks": "src/SparkHooks.php",
+		"SparkTag": "src/SparkTag.php"
+	},
+	"ResourceModules": {
+		"ext.spark": {
+			"scripts": [
+				"rdf-spark/jquery.spark.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Spark"
+	},
+	"config_prefix": "eg",
+	"config": {
+		"SparkQuery": {
+			"value": "data-spark-query"
+		},
+		"SparkFormat": {
+			"value": "data-spark-format"
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "SparkHooks::onParserFirstCallInit"
+	},
+	"manifest_version": 2
+}

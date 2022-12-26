@@ -1,0 +1,65 @@
+<div class="pgn-viewer{{swap}}" id='chess-browser-div-{{div-number}}' data-chess='{{data-chess}}'>
+	<table class="mw-collapsible mw-collapsed pgn-metadata-table">
+		<tbody>
+			<tr>
+				<th colspan="2"><!-- not a caption due to FOUC issues -->
+					{{game-detail}}
+				</th>
+			</tr>
+			<tr>
+				<th>{{event-label}}</th>
+				<td>{{event}}</td>
+			</tr>
+			<tr>
+				<th>{{site-label}}</th>
+				<td>{{site}}</td>
+			</tr>
+			<tr>
+				<th>{{date-label}}</th>
+				<td>{{date}}</td>
+			</tr>
+			<tr>
+				<th>{{round-label}}</th>
+				<td>{{round}}</td>
+			</tr>
+			<tr>
+				<th>{{white-label}}</th>
+				<td>{{white}}</td>
+			</tr>
+			<tr>
+				<th>{{black-label}}</th>
+				<td>{{black}}</td>
+			</tr>
+			<tr>
+				<th>{{result-label}}</th>
+				<td>{{result}}</td>
+			</tr>
+			{{#other-metadata}}
+				<tr>
+					<th>{{label}}</th>
+					<td>{{value}}</td>
+				</tr>
+			{{/other-metadata}}
+		</tbody>
+	</table>
+	<div class="pgn-notations" role="group" aria-label="{{notations-label}}">
+		<p>
+			<span class="pgn-movelink" data-ply="0">⚃</span>
+			{{#move-set}}
+				{{#step-link}}
+					<span class="pgn-steplink">{{move-number}}</span>
+				{{/step-link}}
+				{{>move-span}}
+			{{/move-set}}
+		</p>
+	</div>
+	{{>ChessBoard}}
+	<div class="pgn-controls">
+	</div>
+	{{! Must be class because id would conflict with more than one board per page }}
+	<div class="pgn-nojs-message">
+		<p>
+			{{no-javascript}}
+		</p>
+	</div>
+</div>

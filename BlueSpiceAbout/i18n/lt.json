@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200",
+			"Tomasdd"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informacija apie BlueSpice.",
+	"bs-bluespiceabout-about-bluespice": "Apie BlueSpice",
+	"bluespiceabout": "Apie BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "žiūrėti specialų puslapį „{{int:bs-bluespiceabout-about-bluespice}}“"
+}

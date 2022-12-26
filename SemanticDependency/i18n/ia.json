@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"semanticdependency-desc": "Usa un proprietate semantic pro indicar paginas que deberea esser purgate quando le pagina que contine le proprietate es modificate."
+}

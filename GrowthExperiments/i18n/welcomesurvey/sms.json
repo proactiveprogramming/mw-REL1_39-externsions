@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"welcomesurvey-dropdown-option-select-label": "Vaʹlljed...",
+	"welcomesurvey-question-email-label": "E-pååʹštaddrõs (vaʹlljeemnallšem)",
+	"welcomesurvey-question-email-placeholder": "Ǩeeʹrjet {{GENDER:|jiijjad}} e-pååʹštaddrõõzz..."
+}

@@ -1,0 +1,36 @@
+{
+	"name": "EmailAuth",
+	"version": "0.1.0",
+	"author": [
+		"Tisza Gergő"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:EmailAuth",
+	"descriptionmsg": "emailauth-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "access",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\EmailAuth\\EmailAuthAuthenticationRequest": "includes/EmailAuthAuthenticationRequest.php",
+		"MediaWiki\\Extension\\EmailAuth\\EmailAuthSecondaryAuthenticationProvider": "includes/EmailAuthSecondaryAuthenticationProvider.php",
+		"MediaWiki\\Extension\\EmailAuth\\Hooks": "includes/Hooks.php"
+	},
+	"MessagesDirs": {
+		"EmailAuth": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"AuthChangeFormFields": "MediaWiki\\Extension\\EmailAuth\\Hooks::onAuthChangeFormFields"
+	},
+	"AuthManagerAutoConfig": {
+		"secondaryauth": {
+			"MediaWiki\\Extension\\EmailAuth\\EmailAuthSecondaryAuthenticationProvider": {
+				"class": "MediaWiki\\Extension\\EmailAuth\\EmailAuthSecondaryAuthenticationProvider",
+				"sort": 50
+			}
+		}
+	},
+	"manifest_version": 2
+}

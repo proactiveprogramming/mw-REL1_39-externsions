@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"wsu-wsu-error": "명령의 구문을 분석할 수 없습니다: $1",
+	"wsu-wsu-error-linetooshort": "$1 줄은 너무 짧습니다.",
+	"wsu-wsu-error-onlyq": "Q 항목만 지원됩니다.",
+	"wsu-wsu-error-unsupportedcommand": "알 수 없는 명령입니다.",
+	"wsu-goback": "목록으로 돌아가기",
+	"wsu-start": "편집 (재)시작",
+	"wsu-stop": "편집 중지",
+	"wsu-give-permission": "이 도구는 {{GENDER:|당신을}} 대신하여 편집할 권한이 필요합니다. [[$1|권한을 부여하십시오]].",
+	"wsu-command-P": "속성",
+	"wsu-batchtable-subject": "주제",
+	"wsu-batchtable-command": "명령",
+	"wsu-batchtable-id": "Id",
+	"wsu-batchtable-value": "값",
+	"wsu-batchtable-status": "상태"
+}

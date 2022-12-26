@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"gpgmail-desc": "Cryptar messages de e-mail con GPG",
+	"gpgmail-pref-enable": "Cryptar messages de e-mail con GPG",
+	"gpgmail-pref-key": "Clave public GPG",
+	"gpgmail-pref-key-help": "Vide [https://help.ubuntu.com/community/GnuPrivacyGuardHowto le pagina \"como facer\" de Ubuntu] pro saper como obtener un clave public.",
+	"gpgmail-encrypt-error": "Un error occurreva durante le cryptation del message de e-mail."
+}

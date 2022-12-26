@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Helmoony",
+			"ديفيد",
+			"علاء"
+		]
+	},
+	"wikidata-org-desc": "تكوين وتخصيصات لقاعدة ويكي خاصة بـwikidata.org",
+	"wikibase-lexeme-lexicographical-data": "بيانات معجمية",
+	"wikibase-lexeme-randomlexeme": "مفردة عشوائية",
+	"wikibase-queryservice": "خدمة الاستعلام",
+	"data-access": "الوصول إلى البيانات"
+}

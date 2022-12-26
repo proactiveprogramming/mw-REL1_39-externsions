@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"changeuserpasswords": "Cambiar contrasignos de usatores",
+	"changeuserpassword-desc": "Isto es un extension pro cambiar contrasignos de usatores, con exception de alcunes indicate per un administrator.",
+	"changeuserpassword-pagename": "Cambiar contrasignos de usatores",
+	"changeuserpassword-topheader": "Selige le nomines del usatores pro qui le contrasigno debe esser cambiate. Tote le usatores es preseligite. Dismarca le nomines del usatores de qui tu non vole cambiar le contrasigno.",
+	"changeuserpassword-success": "Le contrasignos del usatores ha essite cambiate.",
+	"changeuserpassword-title": "Cambiar contrasignos de usatores",
+	"changeuserpassword-intro": "Isto es un extension pro cambiar contrasignos de usatores, con exception de alcunes indicate per un administrator.",
+	"action-changeuserpasswords": "cambiar le contrasignos de usatores",
+	"right-changeuserpasswords": "Cambiar contrasignos de usatores"
+}

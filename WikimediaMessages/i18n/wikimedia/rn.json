@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gilbert Ndihokubwayo"
+		]
+	},
+	"sitesupport": "Tanga ingabire",
+	"wikimedia-copyright": "Inyandiko ziboneka kuri <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-ShareAlike License</a>;\nAyandi majambo arashobora gukurikizwa.\nRaba <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\">Terms of Use</a> uronke ibisobanuro.",
+	"wikimedia-copyrightwarning": "Ubitse impinyanyuro, uba wemeye [https://foundation.wikimedia.org/wiki/Terms_of_Use Terms of Use], kandi uba wemeye gutanga intererano ubutisubirako kuri [https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License CC BY-SA 3.0 License] na [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].\nWemeye ko hyperlink canke URL ari umugabane kuri licence ya Creative Commons.",
+	"wikibase-sitelinks-wikinews": "Amakuru ya Wiki",
+	"wikibase-sitelinks-wikiquote": "Wikiquote",
+	"wikibase-sitelinks-wikisource": "Wikisource",
+	"wikibase-sitelinks-wikivoyage": "Wiki y'ingendo",
+	"wikimedia-developers": "Abahinyanyuzi",
+	"wikimedia-globalblocking-ipblocked": "'''Indangakintu (IP) yawe [[m:Special:MyLanguage/Global blocks|yahagaritswe kuri wiki zose]].'''\n\nGuhagarikwa vyakozwe na $1 ($2).\nImvo yatanzwe ni ''$3''.\n\n* Guhagarikwa vyatanguye: $4\n* Guhagarikwa bizorangira: $5\n\nIndangakintu (IP) yawe y'ubu ni $6.\nUsabwe gushira insiguro zose ziri musi mubibazo vyose usaba.\n\nMugihe wibaza ko woba wahagaritwe kubwo kwihenda, ushobora gusanga inkuru z'inyongera n'amabwirizwa muri [[m:Special:MyLanguage/No open proxies|Nta proxies zuguruye]] indinganizo rusangi.\natari ukwo naho, kuyaga k'uguhagarikwa, gerageza [[m:Steward requests/Global|rungika kuri Meta-Wiki igisabo co gusubiramwo]].",
+	"wikimedia-globalblocking-ipblocked-xff": "'''Sereveri imwe canke nyinshi zikoreshwa n'igisabo cawe ni[[m:Special:MyLanguage/Global blocks|ihagaritswe muri rusangi]].'''\n\n\nGuhagarikwa vyakozwe na $1 ($2).\nImvo yatanzwe ni ''$3''.\n\n* Guhagarikwa vyatanguye: $4\n* Guhagarikwa bizorangira: $5\n\nIndangakintu (IP) yawe y'ubu ni $6.\nUsabwe gushira insiguro zose ziri musi mubibazo vyose usaba.\n\nMugihe wibaza ko woba wahagaritwe kubwo kwihenda, ushobora gusanga inkuru z'inyongera n'amabwirizwa muri [[m:Special:MyLanguage/No open proxies|Nta proxies zuguruye]] indinganizo rusangi.\natari ukwo naho, kuyaga k'uguhagarikwa, gerageza [[m:Steward requests/Global|rungika kuri Meta-Wiki igisabo co gusubiramwo]].",
+	"wikimedia-statslink": "Ibitigiri",
+	"wikimedia-cookiestatement": "Insiguro za cookie"
+}

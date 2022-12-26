@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Ytsukeng Fyvaprol",
+			"Ата"
+		]
+	},
+	"networkauth-desc": "Дозволяє автоматично автентифікувати користувачів з певних мережевих адрес",
+	"networkauth-name": "NetworkAuth",
+	"networkauth-purltext": "NetworkAuth [$1@$2]"
+}

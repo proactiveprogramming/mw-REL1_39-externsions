@@ -1,0 +1,46 @@
+@import '../../lib/wikimedia-ui-base/wikimedia-ui-base.less';
+@import '../../utils/mixins.less';
+
+.addlink-onboarding-content {
+	@mobileFontSize: 16px;
+
+	&-example-label {
+		.rel-font-size-and-line-height( @parentFontSize: @mobileFontSize, @targetFontSize: 14.8px, @targetLineHeight: 22px );
+		font-style: italic;
+		margin-top: 8px;
+		color: @wmui-color-base30;
+	}
+
+	&-example {
+		padding: 12px;
+		background: @wmui-color-base90;
+		border: 1px solid @wmui-color-base80;
+		box-sizing: border-box;
+		border-radius: 2px;
+		margin-bottom: 8px;
+
+		.positive {
+			background: @wmui-color-accent90;
+			mix-blend-mode: multiply;
+			padding: 2px;
+		}
+	}
+
+	&-image1 {
+		background-image: url( ../../../images/addlink/onboarding-image1-ltr.svg );
+	}
+
+	&-image2 {
+		background-image: url( ../../../images/addlink/onboarding-image2-ltr.svg );
+	}
+
+	&-image3 {
+		background-image: url( ../../../images/addlink/onboarding-image3-ltr.svg );
+	}
+
+	&-desktop {
+		.addlink-onboarding-content-example-label {
+			.rel-font-size-and-line-height( @parentFontSize: 14px, @targetFontSize: 13px, @targetLineHeight: 19px );
+		}
+	}
+}

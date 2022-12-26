@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-qr-code-extension-description": "Monstra un codice QR con un ligamine al pagina actual in le barra de utensiles.",
+	"bs-qr-code-title": "Codice QR",
+	"bs-qr-code-text": "Scanna le codice QR pro aperir iste pagina sur un apparato mobile.",
+	"bs-qr-code-action-qr-code-title": "Aperir un dialogo con codice QR",
+	"bs-qr-code-action-qr-code-text": "Codice QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Codice QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Codice QR pro $1",
+	"bs-qr-code-api-no-page": "Le parametro 'page' es vacue",
+	"apihelp-bs-qr-code-summary": "Obtener le codice QR pro un pagina in forma de URI de datos codificate in base64",
+	"apihelp-bs-qr-code-param-revid": "ID de version de un pagina pro generar un permaligamine",
+	"apihelp-bs-qr-code-param-page": "Nomine del pagina pro generar le URI de datos codificate in base64",
+	"apihelp-bs-qr-code-param-size": "Dimension del codice QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Appello API predefinite",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Appello API pro un certe 'revid'",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Appello API con dimension personalisate"
+}

@@ -1,0 +1,51 @@
+{
+	"name": "UnlinkedWikibase",
+	"author": [
+		"[https://samwilson.id.au/ Sam Wilson]"
+	],
+	"license-name": "GPL-2.0-or-later",
+	"namemsg": "unlinkedwikibase",
+	"descriptionmsg": "unlinkedwikibase-desc",
+	"version": "2.0.0",
+	"url": "https://www.mediawiki.org/wiki/Extension:UnlinkedWikibase",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.38"
+	},
+	"MessagesDirs": {
+		"UnlinkedWikibase": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"UnlinkedWikibaseMagicWords": "UnlinkedWikibase.i18n.magic.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\UnlinkedWikibase\\": "includes/"
+	},
+	"Hooks": {
+		"ScribuntoExternalLibraries": "MediaWiki\\Extension\\UnlinkedWikibase\\Hooks::onScribuntoExternalLibraries",
+		"ParserFirstCallInit": "main",
+		"InfoAction": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\UnlinkedWikibase\\Hooks"
+		}
+	},
+	"config": {
+		"UnlinkedWikibaseBaseUrl": {
+			"description": "The base URL of the Wikibase site to use.",
+			"value": "https://www.wikidata.org/wiki/"
+		},
+		"UnlinkedWikibaseBaseQueryEndpoint": {
+			"description": "The query service Sparql endpoint.",
+			"value": "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
+		},
+		"UnlinkedWikibaseQueryTTL": {
+			"description": "The cache lifetime (in seconds) for Sparql queries.",
+			"value": "3600"
+		}
+	},
+	"manifest_version": 2
+}

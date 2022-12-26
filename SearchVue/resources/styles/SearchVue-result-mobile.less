@@ -1,0 +1,27 @@
+.skin-minerva {
+	.searchresult-with-quickview {
+		position: relative;
+
+		&:after {
+			background-image: url( ../assets/icons/arrow-down.svg );
+			background-repeat: no-repeat;
+			background-position-y: center;
+			content: '';
+			position: absolute;
+			width: 24px;
+			height: min( calc( 100% ), 162px );
+			top: 0;
+			right: 8px;
+			transition: transform 0.3s;
+			z-index: -1;
+		}
+	}
+
+	&.search-preview-open {
+		.searchresult-with-quickview--open {
+			&:after {
+				transform: scaleY( -1 );
+			}
+		}
+	}
+}

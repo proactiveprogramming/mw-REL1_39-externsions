@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie",
+			"Siebrand"
+		]
+	},
+	"subpagesortkey-desc": "Wijzigt de standaard-zoeksleutel van een pagina zodat deze wordt gebaseerd op de naam van de subpagina in plaats van de volledige naam"
+}

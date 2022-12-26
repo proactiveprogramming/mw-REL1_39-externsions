@@ -1,0 +1,7 @@
+/*
+ * Set width of the prompt field to make lines of a length that is
+ * comfortable to read, ~ 60 characters each
+ */
+.oo-ui-widget.ext-wikispeech-sdc-record-prompt {
+	width: 30em;
+}

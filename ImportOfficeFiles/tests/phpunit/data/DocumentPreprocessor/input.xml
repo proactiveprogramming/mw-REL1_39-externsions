@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+	<w:body>
+		<w:sdt>
+			<w:sdtPr>
+				<w:alias w:val="address"/>
+			</w:sdtPr>
+			<w:sdtContent>
+				<w:p>123</w:p>
+			</w:sdtContent>
+		</w:sdt>
+		<w:tbl>
+			<w:sdt>
+				<w:sdtPr>
+					<w:alias w:val="invoiceItem"/>
+				</w:sdtPr>
+				<w:sdtContent>
+					<w:tr>456</w:tr>
+				</w:sdtContent>
+			</w:sdt>
+		</w:tbl>
+		<w:p w:rsidR="0092125E" w:rsidRPr="0027060F" w:rsidRDefault="0093272B" w:rsidP="0092125E">
+			<w:pPr>
+				<w:pStyle w:val="Titel"/>
+				<w:rPr>
+					<w:noProof/>
+				</w:rPr>
+			</w:pPr>
+			<w:sdt>
+				<w:sdtPr>
+					<w:rPr>
+						<w:noProof/>
+					</w:rPr>
+					<w:alias w:val="Titel"/>
+					<w:tag w:val=""/>
+					<w:id w:val="1234567890"/>
+					<w:placeholder>
+						<w:docPart w:val="ABC1234567890"/>
+					</w:placeholder>
+				</w:sdtPr>
+				<w:sdtEndPr/>
+				<w:sdtContent>
+					<w:r w:rsidR="1234567E" w:rsidRPr="134567F">
+						<w:rPr>
+							<w:noProof/>
+							<w:lang w:bidi="de-DE"/>
+						</w:rPr>
+						<w:t>789</w:t>
+					</w:r>
+				</w:sdtContent>
+			</w:sdt>
+		</w:p>
+	</w:body>
+</w:document>

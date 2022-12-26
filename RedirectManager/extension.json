@@ -1,0 +1,81 @@
+{
+	"name": "RedirectManager",
+	"author": [
+		"[https://samwilson.id.au/ Sam Wilson]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:RedirectManager",
+	"descriptionmsg": "redirectmanager-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"version": "1.1.2",
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\RedirectManager\\": "src/"
+	},
+	"HookHandlers": {
+		"RedirectManagerHooks": {
+			"class": "MediaWiki\\Extension\\RedirectManager\\Hooks"
+		}
+	},
+	"Hooks": {
+		"EditPage::showEditForm:initial": "RedirectManagerHooks"
+	},
+	"MessagesDirs": {
+		"RedirectManager": [
+			"i18n",
+			"i18n/api"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "RedirectManager/resources"
+	},
+	"ResourceModules": {
+		"ext.RedirectManager": {
+			"dependencies": [
+				"jquery.textSelection",
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"mediawiki.widgets",
+				"oojs-ui-toolbars",
+				"oojs-ui-windows",
+				"oojs-ui.styles.icons-content",
+				"oojs-ui.styles.icons-interactions"
+			],
+			"messages": [
+				"redirectmanager-title",
+				"redirectmanager-close",
+				"redirectmanager-help",
+				"redirectmanager-help-title",
+				"redirectmanager-newredirect-field",
+				"redirectmanager-newredirect-button",
+				"redirectmanager-existing-redirects",
+				"redirectmanager-no-redirects-found",
+				"redirectmanager-redirect-page-exists",
+				"redirectmanager-copy-to-clipboard",
+				"redirectmanager-copied-to-clipboard",
+				"redirectmanager-insert"
+			],
+			"styles": [
+				"RedirectManager.less"
+			],
+			"packageFiles": [
+				"init.js",
+				"RedirectManager.js"
+			]
+		},
+		"ext.RedirectManager.images": {
+			"class": "ResourceLoaderImageModule",
+			"selector": ".ext-redirectmanager-image-{name}",
+			"images": {
+				"toolbaricon": "redirectmanager.svg"
+			}
+		}
+	},
+	"APIModules": {
+		"redirectmanager": "MediaWiki\\Extension\\RedirectManager\\Api"
+	},
+	"manifest_version": 2
+}

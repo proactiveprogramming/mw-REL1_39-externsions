@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brad Jorsch"
+		]
+	},
+	"apifeatureusage": "API feature usage",
+	"apifeatureusage-desc": "Get a summary of logged API feature usages for a user agent",
+	"apifeatureusage-elasticsearch-error": "Elasticsearch error: $1",
+	"apifeatureusage-legend": "API feature usage",
+	"apifeatureusage-text": "",
+	"apifeatureusage-agent-label": "User agent:",
+	"apifeatureusage-startdate-label": "Start date:",
+	"apifeatureusage-enddate-label": "End date:",
+	"apifeatureusage-submit": "Fetch data",
+	"apifeatureusage-no-indexes": "No data is available for the specified date range.",
+	"apifeatureusage-missing-indexes": "No data is available for part of the specified date range.",
+	"apifeatureusage-warnings": "Warning: $1",
+	"apifeatureusage-column-feature": "Feature",
+	"apifeatureusage-column-date": "Date",
+	"apifeatureusage-column-uses": "Uses",
+	"apifeatureusage-deprecation-help": "Use [[Special:ApiFeatureUsage]] to see usage of deprecated features by your application."
+}

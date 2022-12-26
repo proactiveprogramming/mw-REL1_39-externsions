@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cantons-de-l'Est",
+			"Gomoko",
+			"Kimyungjog",
+			"Verdy p"
+		]
+	},
+	"wsu-extension-name": "Wikibase Statement Updater",
+	"wsu-desc": "Outil pour mettre à jour et ajouter des déclarations de Wikibase",
+	"wsu-special-wikibasestatementupdater": "Mise à jour massive des déclarations",
+	"wsu-wsu-batch-title": "Nom du lot",
+	"wsu-wsu-batch-contents": "Commandes au format ''Quick Statements V1''",
+	"wsu-wsu-error": "Impossible d’analyser les commandes : $1",
+	"wsu-wsu-error-linetooshort": "La ligne $1 est trop courte.",
+	"wsu-wsu-error-noqualifiers": "Les qualificatifs ne sont pas encore pris en charge.",
+	"wsu-wsu-error-onlyq": "Seuls les Q-éléments sont pris en charge.",
+	"wsu-wsu-error-unsupportedcommand": "Commande inconnue.",
+	"wsu-your-batches": "{{GENDER:}}Vous avez créé les lots suivants :",
+	"wsu-unknown-batch": "Lot inconnu",
+	"wsu-goback": "Retour à la liste",
+	"wsu-start": "(Re)commencer la modification",
+	"wsu-stop": "Cesser de modifier",
+	"wsu-updater-api-failure": "Impossible d’analyser la réponse de l’API",
+	"wsu-updater-ambiguous-update": "La propriété a plusieurs déclarations",
+	"wsu-give-permission": "Cet outil exige votre permission pour modifier en votre nom. [[$1|Donner des permissions]].",
+	"wsu-create-batch": "Créer un nouveau lot",
+	"wsu-command-P": "Propriété",
+	"wsu-batchtable-subject": "Objet",
+	"wsu-batchtable-command": "Commande",
+	"wsu-batchtable-id": "Identifiant",
+	"wsu-batchtable-value": "Valeur",
+	"wsu-batchtable-status": "État",
+	"wsu-js-batchtable-status": "$1 % terminé. {{PLURAL:$2|0=|$2 en échec.}}",
+	"apihelp-wikibasestatementupdater-summary": "Gérer les lots de mise à jour de déclarations de Wikibase"
+}

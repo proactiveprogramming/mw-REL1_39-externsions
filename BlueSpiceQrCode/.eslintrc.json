@@ -1,0 +1,14 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/mediawiki"
+	],
+	"rules": {
+		"mediawiki/msg-doc": "warn",
+		"no-prototype-builtins": "warn",
+		"no-shadow-restricted-names": "warn",
+		"no-undef": "warn",
+		"no-unused-vars": "warn"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"flexdiagrams-edit-code": "Codice:",
+	"flexdiagrams-gantt-zoomlevel": "Livello di ingrandimento:",
+	"flexdiagrams-gantt-hours": "Ore",
+	"flexdiagrams-gantt-days": "Giorni",
+	"flexdiagrams-gantt-months": "Mesi",
+	"flexdiagrams-gantt-years": "Anni"
+}

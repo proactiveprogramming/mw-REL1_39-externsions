@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bouncehandler-desc": "Pomaga pri ravnanju z vrnjenimi e-poštnimi sporočili MediaWiki",
+	"notification-link-text-change-email": "Spremeni svoj e-poštni naslov"
+}

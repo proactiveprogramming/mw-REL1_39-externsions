@@ -1,0 +1,90 @@
+.menueditor-menu-node-form {
+	padding-top: 0;
+}
+
+.menueditor-menu-node-form .forms-section {
+	margin-top: 0;
+}
+
+.mw-ext-forms-form.menueditor-menu-node-form {
+	padding-top: 0;
+}
+
+.menueditor-menu-node-form.mw-ext-forms-form .forms-section {
+	margin-top: 0;
+}
+
+.menueditor-selector-widget {
+	margin-bottom: 10px;
+}
+
+.toolbar-actions {
+	float: right;
+}
+/* stylelint-disable selector-max-id */
+#contentSub,
+#contentSub2 {
+	margin: 0;
+}
+/* stylelint-enable selector-max-id */
+
+.oojsplus-data-treeWidget {
+	margin-top: 10px;
+}
+
+li > ul.tree-node-list li:after {
+	content: '';
+	position: absolute;
+	border-top: 2px dashed #e3e3e3;
+	top: 16px;
+	left: -15px;
+	width: 35px;
+}
+
+li > ul.tree-node-list li:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -15px;
+	border-left: 2px dashed #e3e3e3;
+	width: 1px;
+	height: 100%;
+}
+
+li > ul.tree-node-list li:last-child:before {
+	height: 50%;
+}
+
+/* stylelint-disable selector-max-id */
+#mw-content-text .oojsplus-data-tree-label a .oo-ui-iconElement-icon {
+	opacity: 0.2;
+}
+/* stylelint-enable selector-max-id */
+
+.tree-item-options-btn {
+	color: #e3e3e3;
+}
+
+.in-drag li > ul.tree-node-list li:after,
+.in-drag li > ul.tree-node-list li:before {
+	display: none;
+}
+
+.oo-ui-tool-name-save > a {
+	height: 45px;
+}
+
+.oo-ui-tool-name-cancel {
+	width: 45px;
+	background-color: #eaecf0;
+}
+
+/* stylelint-disable selector-max-id */
+#mw-content-text .oo-ui-tool-name-cancel a:hover {
+	background-color: #c8ccd1;
+}
+/* stylelint-enable selector-max-id */
+
+.oo-ui-barToolGroup-tools > .oo-ui-tool + .oo-ui-tool {
+	margin-left: 0;
+}

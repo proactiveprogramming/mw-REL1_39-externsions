@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chinamoonroll"
+		]
+	},
+	"indexfunc-badtitle": "Murda nénten patut:\"$1\"",
+	"indexfunc-index-exists": "Kaca \"$1\" sampun wénten",
+	"index": "Indéks rerehan",
+	"index-legend": "Rereh indéks",
+	"index-search": "Rereh:",
+	"index-expand-detail": "Nyinahang indéks kaca sajeroning murda puniki",
+	"index-hide-detail": "Engkebang lis kaca",
+	"index-no-results": "Parerehan, nénten wénten asil"
+}

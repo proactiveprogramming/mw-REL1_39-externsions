@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"action-similareditors": "aceder a [[Special:SimilarEditors]]",
+	"right-similareditors": "Aceder a [[Special:SimilarEditors]]",
+	"similareditors": "Editores semelhantes",
+	"similareditors-desc": "Fornece detalhes de utilizadores com historiais de edição semelhantes.",
+	"similareditors-error-database-refresh": "Ocorreu um erro não identificado. Tente novamente daqui a alguns minutos.",
+	"similareditors-error-default": "Ocorreu um erro não identificado; estamos a analisar esta ocorrência.",
+	"similareditors-error-user-bot": "O utilizador $1 é um robô e, portanto, está fora de âmbito.",
+	"similareditors-error-user-no-account": "O utilizador $1 não parece ter uma conta na Wikipédia em inglês.",
+	"similareditors-error-user-no-edits": "O utilizador $1 não parece ter uma conta (nem edições dentro do âmbito) na Wikipédia em inglês.",
+	"similareditors-form-field-target-label": "Nome de utilizador ou endereço IP:",
+	"similareditors-form-field-target-placeholder": "Nome de utilizador ou 1.1.1.1",
+	"similareditors-form-legend": "Procurar editores semelhantes",
+	"similareditors-form-submit": "Procurar",
+	"similareditors-no-results": "Não foram produzidos resultados.",
+	"similareditors-overlap-level-high": "Alta",
+	"similareditors-overlap-level-low": "Baixa",
+	"similareditors-overlap-level-medium": "Média",
+	"similareditors-overlap-level-no-overlap": "Sem sobreposições",
+	"similareditors-results-day-overlap": "Sobreposição de dias",
+	"similareditors-results-edit-overlap": "Sobreposição de edições",
+	"similareditors-results-edits": "Edições nos dados",
+	"similareditors-results-hour-overlap": "Sobreposição de horas",
+	"similareditors-results-inverse-edit-overlap": "Sobreposição de edições inversa",
+	"similareditors-results-user": "Utilizador",
+	"similareditors-results-user-timeline": "linha cronológica",
+	"similareditors-summary": "Procurar os editores mais semelhantes a um determinado editor com base no historial de edições.",
+	"similareditors-survey-question": "Achou os resultados úteis? Que outras informações pesquisa ao tentar encontrar contas fantoches (''sockpuppets'')?"
+}

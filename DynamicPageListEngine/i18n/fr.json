@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"RV1971",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"dynamicpagelistengine-desc": "Fournit des listes de pages créées dynamiquement selon des critères de sélection configurables et extensibles aux modules [[mw:Special:MyLanguage/Extension:Scribunto|Scribunto]] et à d’autres extensions",
+	"dple-tracking-category": "Pages qui utilisent DynamicPageListEngine",
+	"dple-error-invalid-ns-index": "Erreur de DynamicPageListEngine : aucun espace de noms avec l’index $1.",
+	"dple-error-no-criteria": "Erreur de DynamicPageListEngine : aucun critère de sélection spécifié.",
+	"dple-error-too-expensive": "Erreur de DynamicPageListEngine : tentative d’exécution d’une requête aussi coûteuse que la jointure de $1 tables de base de données, alors que le maximum autorisé est de $2.",
+	"dple-error-too-many-expensive-functions": "Erreur de DynamicPageListEngine : cette page utilise de trop nombreux appels à des fonctions coûteuses."
+}

@@ -1,0 +1,70 @@
+{
+	"name": "DrawioEditor",
+	"license-name": "GPL-3.0-only",
+	"version": "1.1",
+	"author": [
+		"Markus Gebert",
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"descriptionmsg": "drawioeditor-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"ExtensionMessagesFiles": {
+		"DrawioEditorMagic": "DrawioEditor.magic.php"
+	},
+	"MessagesDirs": {
+		"DrawioEditor": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\DrawioEditor\\": "src/"
+	},
+	"ResourceModules": {
+		"ext.drawioeditor.styles": {
+			"styles": "ext.drawioeditor.css"
+		},
+		"ext.drawioeditor": {
+			"scripts": "ext.drawioeditor.js",
+			"dependencies": [
+				"jquery.ui",
+				"mediawiki.api"
+			],
+			"messages": [
+				"drawioeditor-approved-editwarning",
+				"drawioeditor-approved-displaywarning",
+				"drawioeditor-noapproved",
+				"drawioeditor-approve-link",
+				"drawioeditor-changeapprove-link"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "DrawioEditor/resources"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\DrawioEditor\\Hook\\ParserFirstCallInit\\SetFunctionHook::callback",
+		"DrawioGetFile": "approveRevsSetStableFile"
+	},
+	"HookHandlers": {
+		"approveRevsSetStableFile": {
+			"class": "MediaWiki\\Extension\\DrawioEditor\\Hook\\ApprovedRevsSetStableFile",
+			"services": [ "DBLoadBalancer", "RepoGroup" ]
+		}
+	},
+	"config": {
+		"DrawioEditorImageType": {
+			"value": "svg"
+		},
+		"DrawioEditorImageInteractive": {
+			"value": false
+		},
+		"DrawioEditorBackendUrl": {
+			"value": "https://embed.diagrams.net"
+		}
+	},
+	"manifest_version": 2
+}

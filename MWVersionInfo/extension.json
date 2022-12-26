@@ -1,0 +1,23 @@
+{
+	"name": "MWVersionInfo",
+	"author": [
+		"Kunal Mehta"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MWVersionInfo",
+	"descriptionmsg": "mwversioninfo-desc",
+	"type": "other",
+	"license-name": "GPL-3.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.37.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\VersionInfo\\": "includes/"
+	},
+	"APIModules": {
+		"mwversioninfo": "MediaWiki\\VersionInfo\\ApiVersionInfo"
+	},
+	"MessagesDirs": {
+		"MWVersionInfo": "i18n"
+	},
+	"manifest_version": 2
+}

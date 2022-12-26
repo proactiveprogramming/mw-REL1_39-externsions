@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrisportelli",
+			"Roderick Mallia"
+		]
+	},
+	"sitematrix-desc": "Turi [[Special:SiteMatrix|lista ta' wikis tal-Wikimedia]]",
+	"sitematrix-language": "Lingwa",
+	"sitematrix-project": "Isem tal-proġett, ħolqa interproġett u ħolqa interwiki",
+	"sitematrix-other-projects": "Proġetti oħra",
+	"sitematrix-total": "'''Għadd totali: $1'''",
+	"sitematrix-sitetotal": "Total",
+	"sitematrix-private": "privata",
+	"sitematrix-fishbowl": "editjar ristrett"
+}

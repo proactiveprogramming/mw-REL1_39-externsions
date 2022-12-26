@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Urhixidur",
+			"Verdy p",
+			"Windes",
+			"Wladek92"
+		]
+	},
+	"pgftikz-desc": "Génère des graphiques PGF/TikZ dans le wiki",
+	"pgftikz-error-title": "erreur de l’analyseur de PGFTikZ :",
+	"pgftikz-error-emptyinput": "Entrée vide.",
+	"pgftikz-error-imagelineparse": "Impossible d’identifier le nom de l'image, format <code><nowiki>[[File:Image filename.ext|lien vers le fichier]]</code></nowiki>.",
+	"pgftikz-error-apigetpagecontent": "Impossible d’obtenir le contenu de la page de l’image pour comparer.",
+	"pgftikz-error-apiedit": "Impossible de mettre à jour la page wiki du fichier.",
+	"pgftikz-error-apidelete": "Impossible de supprimer la page wiki de prévisualisation.",
+	"pgftikz-error-nonpgffile": "Le fichier existant n’a pas été généré par PGF/TikZ, il n’a pas été remplacé.",
+	"pgftikz-error-preambleparse": "Erreur lors de l’analyse du préambule LaTeX.",
+	"pgftikz-error-tmpdircreate": "Erreur de création du dossier temporaire.",
+	"pgftikz-error-texfilecreate": "Erreur pendant la création du fichier source LaTex.",
+	"pgftikz-error-latexnoout": "Erreur lors de l’exécution de LaTeX (pas de sortie, latex est-il présent ?).",
+	"pgftikz-error-latexcompil": "Erreur dans LaTeX (erreur de compilation).",
+	"pgftikz-error-dvipsnoout": "Erreur lors de l’exécution de dvips (pas de sortie, dvips est-il présent ?).",
+	"pgftikz-error-dvipscompil": "Erreur lors de l’exécution de dvips (erreur d’exécution).",
+	"pgftikz-error-epstoolnoout": "Erreur lors de l’exécution d’epstool (pas de sortie, epstool est-il présent ?).",
+	"pgftikz-error-epstoolrun": "Erreur lors de l’exécution d’epstool (erreur durant l’exécution).",
+	"pgftikz-error-convertnoout": "Erreur lors de l’exécution de convert (pas de sortie, convert est-il présent ?).",
+	"pgftikz-error-convertrun": "Erreur lors de l’exécution de convert (durant l’exécution).",
+	"pgftikz-error-ghostscriptnoout": "Erreur lors de l’exécution de ghostscript (pas de sortie, gs est-il présent ?).",
+	"pgftikz-error-ghostscriptrun": "Erreur lors de l’exécution de ghostscript (durant l’exécution).",
+	"pgftikz-error-uploadlocal_error_empty": "Erreur lors du téléversement (fichier vide).",
+	"pgftikz-error-uploadlocal_error_missing": "Erreur lors du téléversement (type de fichier manquant).",
+	"pgftikz-error-uploadlocal_error_badtype": "Erreur lors du téléversement (mauvais type de fichier).",
+	"pgftikz-error-uploadlocal_error_tooshort": "Erreur lors du téléversement (nom de fichier trop court).",
+	"pgftikz-error-uploadlocal_error_illegal": "Erreur lors du téléversement (nom de fichier illégal).",
+	"pgftikz-error-uploadlocal_error_overwrite": "Erreur lors du téléversement (écraser un fichier existant n’est pas autorisé).",
+	"pgftikz-error-uploadlocal_error_verify": "Erreur lors du téléversement (erreur de vérification) : $1",
+	"pgftikz-error-uploadlocal_error_hook": "Erreur lors du téléversement (crochet avorté).",
+	"pgftikz-error-uploadlocal_error_unknown": "Erreur lors du téléversement (erreur inconnue)."
+}

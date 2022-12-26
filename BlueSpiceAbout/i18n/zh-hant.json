@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"bs-bluespiceabout-desc": "關於 BlueSpice 的資訊",
+	"bs-bluespiceabout-about-bluespice": "關於 BlueSpice",
+	"bluespiceabout": "關於 BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "檢視特殊頁面「{{int:bs-bluespiceabout-about-bluespice}}」",
+	"right-bluespiceabout-viewspecialpage": "存取特殊頁面 [[Special:BlueSpiceAbout]] 的權限。"
+}

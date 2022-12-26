@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rob Church",
+			"Ike Hecht"
+		]
+	},
+	"contributors": "Contributors",
+	"contributors-desc": "Summarizes the main contributors to a page",
+	"contributors-toolbox": "Page contributors",
+	"contributors-legend": "List main contributors to a page",
+	"contributors-target": "Title:",
+	"contributors-submit": "Show",
+	"contributors-subtitle": "Main contributors to $1",
+	"contributors-badtitle": "Invalid title.",
+	"contributors-nosuchpage": "The page $1 does not exist.",
+	"contributors-filterip": "Hide IP addresses",
+	"contributors-name": "Username",
+	"contributors-revisions": "Number of revisions",
+	"contributors-first-edit": "Date of first edit",
+	"contributors-last-edit": "Date of last edit",
+	"contributors-add-subpages": "Add subpages",
+	"apihelp-query+contributors-example-1": "Show contributors to Main page"
+}

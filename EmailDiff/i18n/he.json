@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"emaildiff-desc": "אפשרות שליחת הבדלים בטקסט בהודעות דוא\"ל",
+	"tog-emaildiff": "שליחת הבדל (diff) של שינויים",
+	"emaildiff-newpage": "זהו דף חדש:\n\n$1",
+	"emaildiff-intro": "הבדלי גרסאות:\n$1"
+}

@@ -1,0 +1,42 @@
+{
+	"name": "DoubleWiki",
+	"author": "ThomasV",
+	"license-name": "GPL-2.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:DoubleWiki",
+	"descriptionmsg": "doublewiki-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"config": {
+		"DoubleWikiCacheTime": {
+			"value": 43200
+		}
+	},
+	"Hooks": {
+		"OutputPageBeforeHTML": "main",
+		"BeforePageDisplay": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\DoubleWiki\\DoubleWiki",
+			"services": [
+				"MainConfig",
+				"ContentLanguage",
+				"LanguageFactory",
+				"LanguageNameUtils",
+				"HttpRequestFactory",
+				"MainWANObjectCache"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"DoubleWiki": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\DoubleWiki\\": "includes/"
+	},
+	"manifest_version": 2
+}

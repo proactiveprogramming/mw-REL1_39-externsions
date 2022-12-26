@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kizule",
+			"Michaello",
+			"Milicevic01",
+			"Zoranzoki21"
+		]
+	},
+	"duplicator": "Dupliranje stranice",
+	"duplicator-desc": "Pravi nezavisne [[Special:Duplicate|kopije članaka]] sa potpunim istorijama izmena",
+	"duplicator-toolbox": "Dupliraj ovu stranicu",
+	"duplicator-header": "Ova strana omogućava potpuno dupliranje stranice, pravljenjem nezavisnih kopija svih istorija.\nOvo je korisno za deljenje stranice na dva dela i sl.",
+	"duplicator-options": "Opcije",
+	"duplicator-source": "Izvor:",
+	"duplicator-dest": "Cilj:",
+	"duplicator-dotalk": "Dupliraj stranu za razgovor (ako je moguće)",
+	"duplicator-dosubpages": "Dupliraj podstranice (ukoliko ih ima)",
+	"duplicator-dohistory": "Dupliraj celu istoriju stranice",
+	"duplicator-submit": "Dupliraj",
+	"duplicator-summary": "Kopirano sa [[$1]], izmena [[$2]]",
+	"duplicator-success": "[[$1]] je iskopiran u [[$2]].",
+	"duplicator-success-revisions": "$1 {{PLURAL:$1|izmena je iskopirana|izmena je iskopirano}}.",
+	"duplicator-success-talknotcopied": "Strana za razgovor nije mogla biti iskopirana.",
+	"duplicator-failed": "Članak nije mogao biti dupliran.\nDošlo je do nepozante greške.",
+	"duplicator-failed-toolong": "Stranica [[$1]] nije duplirana. Ciljni naslov je predugačak.",
+	"duplicator-failed-dest-exists": "Stranica [[$1]] nije duplirana. Ciljna stranica [[$2]] već postoji.",
+	"duplicator-source-invalid": "Navedete važeći izvorni naslov.",
+	"duplicator-source-notexist": "[[$1]] ne postoji. Molimo Vas da navedete naslov postojećeg članka.",
+	"duplicator-dest-invalid": "Navedete validan naslov odredišta.",
+	"duplicator-dest-exists": "[[$1]] već postoji. Molimo Vas da navedete nezauzet ciljani naslov.",
+	"action-duplicate": "duplirate stranice",
+	"right-duplicate": "Dupliranje stranica"
+}

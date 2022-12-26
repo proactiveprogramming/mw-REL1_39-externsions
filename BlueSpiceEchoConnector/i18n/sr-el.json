@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-echoconnector-extension-description": "Povezuje BlueSpice sa dodatkom Echo",
+	"echo-category-title-bs-admin-cat": "Administrativni poslovi",
+	"echo-pref-tooltip-bs-admin-cat": "Obaveštava vas kada se otvori novi nalog",
+	"echo-category-title-bs-page-actions-cat": "Radnja na nadgledanoj stranici",
+	"prefs-namespace-notifications": "Obaveštenja o događajima sa imenskim prostorima",
+	"prefs-category-notifications": "Obaveštenja na kategorijama",
+	"echo-category-title-bs-namespace-category-notify-cat": "Izmene u pretplaćenim imenskim prostorima i kategorijama"
+}

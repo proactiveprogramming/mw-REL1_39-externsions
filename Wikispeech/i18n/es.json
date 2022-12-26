@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agent",
+			"BnSrSa",
+			"Fitoschido",
+			"ZealousBlaze"
+		]
+	},
+	"prefs-wikispeech-voice": "Voz",
+	"prefs-wikispeech-show-player": "Mostrar siempre el reproductor",
+	"wikispeech-notice-prefs-apply-on-next-page-load": "Cambios a las preferencias tomarán efecto la próxima vez que la página sea recargada. Para escuchar la página actual con las nuevas preferencias, recarga la página después de salvar.",
+	"right-wikispeech-listen": "Escuchar página",
+	"action-wikispeech-listen": "escuchar página",
+	"wikispeech-preview": "Vista previa"
+}

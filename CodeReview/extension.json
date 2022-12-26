@@ -1,0 +1,207 @@
+{
+	"name": "CodeReview",
+	"version": "1.19.2",
+	"author": [
+		"Brion Vibber",
+		"Aaron Schulz",
+		"Alexandre Emsenhuber",
+		"Chad Horohoe",
+		"Sam Reed",
+		"Roan Kattouw"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CodeReview",
+	"descriptionmsg": "codereview-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.37.0"
+	},
+	"type": "specialpage",
+	"config": {
+		"CodeReviewMaxDiffSize": {
+			"value": 500000
+		},
+		"CodeReviewShuffleTagCloud": {
+			"value": false
+		},
+		"CodeReviewImportBatchSize": {
+			"value": 400
+		},
+		"SubversionUser": {
+			"value": false
+		},
+		"CodeReviewMaxDiffPaths": {
+			"value": 20
+		},
+		"CodeReviewFlags": {
+			"value": [
+				"inspected",
+				"tested"
+			]
+		},
+		"CodeReviewImgRegex": {
+			"value": "/\\.(png|jpg|jpeg|gif)$/i"
+		},
+		"SubversionProxyTimeout": {
+			"value": 30
+		},
+		"SubversionProxy": {
+			"value": false
+		},
+		"SubversionPassword": {
+			"value": false
+		},
+		"CodeReviewCommentWatcherName": {
+			"value": "CodeReview comments list"
+		},
+		"SubversionOptions": {
+			"value": "--non-interactive --trust-server-cert"
+		},
+		"CodeReviewDisableFollowUpNotification": {
+			"value": false
+		},
+		"CodeReviewRepoStatsCacheTime": {
+			"value": 21600
+		},
+		"CodeReviewProtectedStates": {
+			"value": [
+				"ok",
+				"resolved"
+			]
+		},
+		"CodeReviewCommentWatcherEmail": {
+			"value": ""
+		},
+		"CodeReviewENotif": {
+			"value": false
+		},
+		"CodeReviewStates": {
+			"value": [
+				"new",
+				"fixme",
+				"reverted",
+				"resolved",
+				"ok",
+				"deferred",
+				"old"
+			]
+		},
+		"CodeReviewDeferredPaths": {
+			"value": []
+		},
+		"CodeReviewAutoTagPath": {
+			"value": []
+		},
+		"CodeReviewFixmePerPath": {
+			"value": []
+		},
+		"CodeReviewNewPerPath": {
+			"value": []
+		},
+		"CodeReviewRC": {
+			"value": []
+		},
+		"CodeReviewListSpecialPage": {
+			"value": true
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"CodeReviewAliases": "CodeReview.alias.php"
+	},
+	"APIModules": {
+		"codeupdate": "MediaWiki\\Extension\\CodeReview\\Api\\ApiCodeUpdate",
+		"codediff": "MediaWiki\\Extension\\CodeReview\\Api\\ApiCodeDiff",
+		"coderevisionupdate": "MediaWiki\\Extension\\CodeReview\\Api\\ApiRevisionUpdate"
+	},
+	"APIListModules": {
+		"codecomments": "MediaWiki\\Extension\\CodeReview\\Api\\ApiQueryCodeComments",
+		"codepaths": "MediaWiki\\Extension\\CodeReview\\Api\\ApiQueryCodePaths",
+		"coderevisions": "MediaWiki\\Extension\\CodeReview\\Api\\ApiQueryCodeRevisions",
+		"codetags": "MediaWiki\\Extension\\CodeReview\\Api\\ApiQueryCodeTags"
+	},
+	"Hooks": {
+		"MakeGlobalVariablesScript": "MediaWiki\\Extension\\CodeReview\\Hooks::onMakeGlobalVariablesScript",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\CodeReview\\Hooks::onLoadExtensionSchemaUpdates",
+		"RenameUserSQL": "MediaWiki\\Extension\\CodeReview\\Hooks::onRenameUserSQL",
+		"UserMergeAccountFields": "MediaWiki\\Extension\\CodeReview\\Hooks::onUserMergeAccountFields"
+	},
+	"MessagesDirs": {
+		"CodeReview": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.codereview": {
+			"scripts": "ext.codereview.js",
+			"dependencies": "jquery.suggestions"
+		},
+		"ext.codereview.styles": {
+			"styles": "ext.codereview.styles.css"
+		},
+		"ext.codereview.loaddiff": {
+			"scripts": "ext.codereview.loaddiff.js",
+			"dependencies": "jquery.spinner"
+		},
+		"ext.codereview.tooltips": {
+			"class": "MediaWiki\\Extension\\CodeReview\\CodeReviewTooltipsModule",
+			"scripts": "ext.codereview.tooltips.js",
+			"messages": [
+				"code-tooltip-withsummary",
+				"code-tooltip-withoutsummary"
+			],
+			"dependencies": "jquery.tipsy"
+		},
+		"ext.codereview.overview": {
+			"scripts": "ext.codereview.overview.js",
+			"styles": "ext.codereview.overview.css",
+			"dependencies": "jquery.tipsy",
+			"messages": [
+				"codereview-overview-title",
+				"codereview-overview-desc"
+			]
+		},
+		"ext.codereview.local": {
+			"class": "ResourceLoaderWikiModule",
+			"styles": [
+				"MediaWiki:CodeReview.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "CodeReview/modules"
+	},
+	"GroupPermissions": {
+		"*": {
+			"codereview-use": true
+		},
+		"user": {
+			"codereview-add-tag": true,
+			"codereview-remove-tag": true,
+			"codereview-post-comment": true,
+			"codereview-set-status": true,
+			"codereview-link-user": true,
+			"codereview-signoff": true,
+			"codereview-associate": true
+		}
+	},
+	"AvailableRights": [
+		"repoadmin",
+		"codereview-use",
+		"codereview-add-tag",
+		"codereview-remove-tag",
+		"codereview-post-comment",
+		"codereview-set-status",
+		"codereview-signoff",
+		"codereview-associate",
+		"codereview-link-user",
+		"codereview-review-own"
+	],
+	"SpecialPages": {
+		"Code": "MediaWiki\\Extension\\CodeReview\\UI\\SpecialCode",
+		"RepoAdmin": "MediaWiki\\Extension\\CodeReview\\UI\\SpecialRepoAdmin"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\CodeReview\\": "includes/"
+	},
+	"manifest_version": 2
+}

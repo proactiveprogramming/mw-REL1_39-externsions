@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-deferred-action-status-pending": "V teku.",
+	"bs-deferred-action-status-done": "Končano.",
+	"bs-deferred-action-status-error": "Ni uspelo.",
+	"bs-deferred-action-apieditpage-description": "Uredi »$1«.",
+	"bs-deferred-batch-progress-desc": "Napredek",
+	"bs-deferred-batch-actions": "Dejanja",
+	"bs-deferred-batch-description": "Opis",
+	"bs-deferred-batch-status": "Stanje",
+	"bs-deferred-action-apideletepage-description": "Izbriši »$1«."
+}

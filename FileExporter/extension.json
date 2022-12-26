@@ -1,0 +1,40 @@
+{
+	"name": "FileExporter",
+	"author": [
+		"[https://meta.wikimedia.org/wiki/WMDE_Technical_Wishes Wikimedia Deutschland Technical Wishes Team]",
+		"Addshore",
+		"Andrew Kostka",
+		"Christoph Jauera",
+		"Thiemo Kreuz"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:FileExporter",
+	"namemsg": "fileexporter",
+	"descriptionmsg": "fileexporter-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
+	"MessagesDirs": {
+		"FileExporter": [
+			"i18n"
+		]
+	},
+	"config": {
+		"FileExporterTarget": {
+			"value": null,
+			"description": "Link to the FileImporter's Special:ImportFile page on the target wiki where files should be exported to. For Wikimedia wikis this is \"https://commons.wikimedia.org/wiki/Special:ImportFile\".",
+			"public": true
+		}
+	},
+	"Hooks": {
+		"ChangeTagsAllowedAdd": "FileExporter\\FileExporterHooks::onChangeTagsAllowedAdd",
+		"ChangeTagsListActive": "FileExporter\\FileExporterHooks::onListDefinedTags",
+		"SkinTemplateNavigation::Universal": "FileExporter\\FileExporterHooks::onSkinTemplateNavigation",
+		"ListDefinedTags": "FileExporter\\FileExporterHooks::onListDefinedTags"
+	},
+	"AutoloadNamespaces": {
+		"FileExporter\\": "src/"
+	}
+}

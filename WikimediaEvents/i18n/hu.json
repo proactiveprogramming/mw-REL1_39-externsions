@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tacsipacsi",
+			"Tgr"
+		]
+	},
+	"wikimediaevents-desc": "Wikimédia-specifikus eseményeket naplóz az EventLogging segítségével"
+}

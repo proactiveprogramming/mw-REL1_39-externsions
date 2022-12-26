@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-subpagetree-desc": "Adde le etiquetta <code>subpagetree</code> con parametros de configuration, monstra un pannello de arbore ExtJS con structura de subpaginas in alcun parte de un pagina wiki."
+}

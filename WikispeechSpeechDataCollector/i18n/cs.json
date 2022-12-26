@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Georg101"
+		]
+	},
+	"wikispeech-sdc-status-starting": "Spouštění",
+	"wikispeech-sdc-status-ready": "Připraveno",
+	"wikispeech-sdc-status-recording": "Nahrává se"
+}

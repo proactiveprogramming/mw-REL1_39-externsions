@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"!Silent",
+			"Dianakc",
+			"Eduardoaddad"
+		]
+	},
+	"extralanguagelink-desc": "Adiciona ligações extras para outros idiomas na seção \"noutros idiomas\" da barra lateral",
+	"extralanguagelink-param-class": "classe",
+	"extralanguagelink-param-hreflang": "hreflang",
+	"extralanguagelink-param-lang": "lang",
+	"extralanguagelink-param-style": "estilo",
+	"extralanguagelink-param-title": "título",
+	"extralanguagelink-badinterwiki": "O prefixo interwiki \"$1:\" não está na lista de prefixos interwiki permitidos.",
+	"extralanguagelink-badtitle": "O título de página \"$1\" não pôde ser analisado."
+}

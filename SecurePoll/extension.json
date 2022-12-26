@@ -1,0 +1,179 @@
+{
+	"name": "SecurePoll",
+	"author": [
+		"Tim Starling",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SecurePoll",
+	"descriptionmsg": "securepoll-desc",
+	"license-name": "GPL-2.0-or-later",
+	"version": "3.0.0",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"AvailableRights": [
+		"securepoll-create-poll",
+		"securepoll-view-voter-pii"
+	],
+	"ContentHandlers": {
+		"SecurePoll": "\\MediaWiki\\Extension\\SecurePoll\\SecurePollContentHandler"
+	},
+	"SpecialPages": {
+		"SecurePoll": {
+			"class": "\\MediaWiki\\Extension\\SecurePoll\\SpecialSecurePoll",
+			"services": [
+				"SecurePoll.ActionPageFactory"
+			]
+		}
+	},
+	"JobClasses": {
+		"securePollPopulateVoterList": "\\MediaWiki\\Extension\\SecurePoll\\Jobs\\PopulateVoterListJob",
+		"securePollTallyElection": "\\MediaWiki\\Extension\\SecurePoll\\Jobs\\TallyElectionJob",
+		"securePollLogAdminAction": "\\MediaWiki\\Extension\\SecurePoll\\Jobs\\LogAdminActionJob",
+		"securePollArchiveElection": "\\MediaWiki\\Extension\\SecurePoll\\Jobs\\ArchiveElectionJob",
+		"securePollUnarchiveElection": "\\MediaWiki\\Extension\\SecurePoll\\Jobs\\UnarchiveElectionJob"
+	},
+	"APIModules": {
+		"strikevote": {
+			"class": "\\MediaWiki\\Extension\\SecurePoll\\Api\\ApiStrikeVote",
+			"services": [
+				"SecurePoll.ActionPageFactory"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"SecurePoll": [
+			"i18n",
+			"i18n/api"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"SecurePollAlias": "SecurePoll.alias.php",
+		"SecurePollNamespaces": "SecurePoll.namespaces.php"
+	},
+	"AutoloadClasses": {
+		"DeletePoll": "cli/delete.php",
+		"UpdateNotBlockedKey": "cli/updateNotBlockedKey.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SecurePoll\\": "includes/"
+	},
+	"ResourceModules": {
+		"ext.securepoll.htmlform": {
+			"localBasePath": "modules/ext.securepoll.htmlform",
+			"remoteExtPath": "SecurePoll/modules/ext.securepoll.htmlform",
+			"packageFiles": [
+				"dispatcher.js",
+				"page.log.js",
+				"page.create.js",
+				"page.list.js",
+				"page.vote.js"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"mediawiki.widgets.UserInputWidget",
+				"jquery.spinner"
+			],
+			"messages": [
+				"securepoll-strike-button",
+				"securepoll-strike-reason",
+				"securepoll-unstrike-button"
+			]
+		},
+		"ext.securepoll": {
+			"styles": "ext.securepoll.css"
+		},
+		"ext.securepoll.special": {
+			"styles": "ext.securepoll.special.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "SecurePoll/modules"
+	},
+	"Hooks": {
+		"UserLogout": "logout",
+		"LoadExtensionSchemaUpdates": "install",
+		"CanonicalNamespaces": "setup",
+		"TitleQuickPermissions": "setup",
+		"SpecialPage_initList": "setup"
+	},
+	"HookHandlers": {
+		"install": {
+			"class": "\\MediaWiki\\Extension\\SecurePoll\\HookHandler\\InstallHandler"
+		},
+		"setup": {
+			"class": "\\MediaWiki\\Extension\\SecurePoll\\HookHandler\\SetupHandler",
+			"services": [ "MainConfig" ]
+		},
+		"logout": {
+			"class": "\\MediaWiki\\Extension\\SecurePoll\\HookHandler\\LogoutHandler"
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"namespaces": [
+		{
+			"id": 830,
+			"name": "SecurePoll",
+			"constant": "NS_SECUREPOLL",
+			"subpages": true,
+			"defaultcontentmodel": "SecurePoll",
+			"conditional": true
+		},
+		{
+			"id": 831,
+			"name": "SecurePoll_talk",
+			"constant": "NS_SECUREPOLL_TALK",
+			"subpages": true,
+			"conditional": true
+		}
+	],
+	"config": {
+		"SecurePollGPGCommand": {
+			"value": "gpg"
+		},
+		"SecurePollTempDir": {
+			"value": "/tmp"
+		},
+		"SecurePollShowErrorDetail": {
+			"value": false
+		},
+		"SecurePollScript": {
+			"value": "extensions/SecurePoll/auth-api.php"
+		},
+		"SecurePollKeepPrivateInfoDays": {
+			"value": 90,
+			"description": "Maximum number of days for which to store private information about voters."
+		},
+		"SecurePollCreateWikiGroupDir": {
+			"value": "/../",
+			"description": "Directory containing files defining groups of wikis that can participate in an election. File names are defined in SecurePollCreateWikiGroups."
+		},
+		"SecurePollCreateWikiGroups": {
+			"value": [],
+			"description": "Array of $fileName => $messageKey for defining groups of wikis that can participate in an election, and the groups' labels in the Create form. Files should be stored in SecurePollCreateWikiGroupDir with the suffix .dblist, and contain a list of participating wikis. The suffix should be omitted from the file names given here."
+		},
+		"SecurePollCreateRemoteScriptPath": {
+			"value": "https:$wgServer/w"
+		},
+		"SecurePollUseNamespace": {
+			"value": false,
+			"description": "Make the SecurePoll namespace available, and record election details to pages in this namespace."
+		},
+		"SecurePollGpgSignKey": {
+			"value": null
+		},
+		"SecurePollUseLogging": {
+			"value": false,
+			"description": "Whether to log admin actions to securepoll_log table."
+		},
+		"SecurePollSingleTransferableVoteEnabled": {
+			"value": false,
+			"description": "Enable or disable Single Transferable Vote on secure poll."
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"spserror": "Prišlo je do napake",
+	"spserror-date-internalerror": "Pri ustvarjanju datumov je prišlo do napake: $1"
+}

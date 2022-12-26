@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Karl Wettin",
+			"Robby",
+			"Sebastian Berlin",
+			"Umherirrender"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "{{doc-apihelp-summary|wikispeech-sdc-crud}}",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "{{doc-apierror}}",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "{{doc-apierror}}",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "{{doc-apierror}}",
+	"apierror-wikispeech-sdc-crud-serialize-response": "{{doc-apierror}}",
+	"apihelp-wikispeech-sdc-crud-example-1": "{{doc-apihelp-example|wikispeech-sdc-crud}}",
+	"apihelp-wikispeech-sdc-crud-example-2": "{{doc-apihelp-example|wikispeech-sdc-crud}}",
+	"apihelp-wikispeech-sdc-crud-example-3": "{{doc-apihelp-example|wikispeech-sdc-crud}}"
+}

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cainamarques",
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"deleteown-desc": "Permite aos usuários eliminar páginas que criaram recentemente",
+	"action-deleteown": "excluir páginas próprias",
+	"right-deleteown": "Eliminar páginas próprias"
+}

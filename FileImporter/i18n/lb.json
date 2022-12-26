@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Soued031"
+		]
+	},
+	"fileimporter-desc": "Einfacht Importéiere vu Fichiere vun aneren Internetsitten",
+	"fileimporter-specialpage": "Fichier importéieren",
+	"fileimporter-importfailed": "Den Import huet net funktionéiert",
+	"fileimporter-api-file-notfound": "Fichier net fonnt:$1",
+	"fileimporter-cantparseurl": "D'URL $1 déi ugi gouf konnt net duergestallt ginn",
+	"fileimporter-filenameerror-default": "Et gëtt en onbekannte Probleem mat Ärem Numm vum Fichier.",
+	"fileimporter-filenameerror-illegal": "Den Numm vum Fichier deen Dir elo probéiert z'importéieren ass net valabel.",
+	"fileimporter-filenameerror-toolong": "Den Numm vum Fichier deen Dir elo probéiert z'importéieren ass ze laang.",
+	"fileimporter-localtitleexists": "Den Numm vum Fichier deen Dir elo probéiert z'importéieren gëtt schonn op dëser Wiki benotzt.",
+	"fileimporter-illegalfilenamechars": "Den Numm vum Fichier deen Dir elo probéiert z'importéieren huet net valabel Zeechen am Numm vum Fichier.",
+	"fileimporter-duplicatefilesdetected": "De Fichier deen dir elo probéiert z'importéiere gëtt et op dëser Wiki schonn.",
+	"fileimporter-duplicatefilesdetected-prefix": "Doublonen",
+	"fileimporter-exampleprefix": "Beispill",
+	"fileimporter-textrevisions": "$1/$2 Säit {{PLURAL:$2|Versioun gëtt|Versioune ginn}} aus der Lëscht vun de Versiounen importéiert.",
+	"fileimporter-filerevisions": "$1/$2 Fichier {{PLURAL:$2|Versioun|Versiounen}} ginn importéiert.",
+	"fileimporter-submit": "Schécken",
+	"fileimporter-submit-title": "Titel änneren",
+	"fileimporter-import": "Importéieren",
+	"fileimporter-cancel": "Ofbriechen",
+	"fileimporter-edittitle": "Titel änneren",
+	"fileimporter-editinfo": "Info vum Fichier änneren",
+	"fileimporter-extensionlabel": "Erweiderung vum Fichier:",
+	"fileimporter-newfilename": "Neien Numm vum Fichier:",
+	"fileimporter-editsummary": "Resumé vun der Ännerung:",
+	"fileimporter-heading-fileinfo": "Informatioun vum Fichier",
+	"fileimporter-heading-filehistory": "Versiounen",
+	"fileimporter-delete-summary": "Dëse Fichier ass elo op {{SITENAME}} als $1 (geréckelt mat FileImporter).",
+	"fileimporter-import-wait": "Den Import kann e puer Minutten daueren.",
+	"fileimporter-go-to-original-file-button": "Zréck op den Originalfichier",
+	"fileimporter-commonshelper-retrieval-failed": "Beim Sichen no gespaarte Fichieren ass e Feeler geschitt.",
+	"fileimporter-file-contains-blocked-category-template": "De Fichier däerf net op {{SITENAME}} importéiert gi well en als $1 markéiert ass. {{SITENAME}} erlaabt esou Fichieren net. Dës kéint léisbar sinn, awer dat heescht datt de Fichier net kompatibel ass. Kuckt wgl. op [[Project:Licensing|der Säit op {{SITENAME}} vun de Richtlinnen vun der Communautéit an den Diskussiounssäit vun de Lizenzen]].",
+	"fileimporter-viewdiff": "Ännerunge weisen"
+}

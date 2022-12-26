@@ -1,0 +1,33 @@
+.mw-ext-wsu-summary {
+	float: right;
+	margin-left: 10px;
+
+	&__spinner {
+		display: inline-block;
+
+		&:after {
+			content: " ";
+			display: block;
+			width: 10px;
+			height: 10px;
+			margin-left: 8px;
+			border-radius: 50%;
+			border: 3px solid;
+			border-color: #36c transparent #36c transparent;
+			animation: wsu-spinner 1.2s linear infinite;
+		}
+
+		@keyframes wsu-spinner {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		&--inactive {
+			display: none;
+		}
+	}
+}

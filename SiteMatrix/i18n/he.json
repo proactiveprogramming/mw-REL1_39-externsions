@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Guycn2",
+			"Rotem Liss"
+		]
+	},
+	"sitematrix": "רשימת אתרי ויקי",
+	"sitematrix-summary": "הדף המיוחד הזה מציג רשימת כל אתרי הוויקי בחוות הוויקי הזאת.",
+	"sitematrix-desc": "הצגת [[Special:SiteMatrix|רשימת אתרי ויקי של ויקימדיה]]",
+	"sitematrix-language": "שפה",
+	"sitematrix-project": "שם המיזם וקישורי הבינוויקי",
+	"sitematrix-others": "מיזמים אחרים",
+	"sitematrix-other-projects": "מיזם",
+	"sitematrix-other-projects-language": "שפה",
+	"sitematrix-total": "'''מספר האתרים: $1'''",
+	"sitematrix-sitetotal": "סך הכול",
+	"sitematrix-closed": "ללא גישת כתיבה, עם גישת קריאה מלאה",
+	"sitematrix-private": "גישת קריאה וגישת כתיבה מוגבלות",
+	"sitematrix-fishbowl": "גישת כתיבה מוגבלת, גישת קריאה מלאה",
+	"sitematrix-nonglobal": "ציבורי, אבל נדרש רישום"
+}

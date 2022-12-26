@@ -1,0 +1,35 @@
+{
+	"name": "TrustedXFF",
+	"license-name": "GPL-2.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:TrustedXFF",
+	"descriptionmsg": "trustedxff-desc",
+	"version": "2.0.0",
+	"author": [
+		"Tim Starling",
+		"Sam Reed"
+	],
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TrustedXFF\\": "includes/"
+	},
+	"MessagesDirs": {
+		"TrustedXFF": [
+			"i18n"
+		]
+	},
+	"HookHandlers": {
+		"main": {
+			"factory": [
+				"MediaWiki\\Extension\\TrustedXFF\\TrustedXFF",
+				"getInstance"
+			]
+		}
+	},
+	"Hooks": {
+		"IsTrustedProxy": "main"
+	},
+	"manifest_version": 2
+}

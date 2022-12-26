@@ -1,0 +1,27 @@
+{
+	"name": "StatCounter.com Integration",
+	"version": "1.1",
+	"author": [
+		"Jack Phoenix"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:StatCounter.com_Integration",
+	"descriptionmsg": "statcounter-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"AutoloadClasses": {
+		"StatCounterHooks": "StatCounterHooks.php"
+	},
+	"Hooks": {
+		"SkinBuildSidebar": [
+			"StatCounterHooks::onSkinBuildSidebar"
+		]
+	},
+	"MessagesDirs": {
+		"StatCounter": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

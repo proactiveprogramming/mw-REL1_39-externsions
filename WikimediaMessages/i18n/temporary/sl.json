@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Janezdrilc",
+			"NegativeTwelveDollars"
+		]
+	},
+	"wikimediamessages-desc": "Začasna sporočila, specifična za Wikimedio",
+	"grouppage-oversight": "{{ns:project}}:Nadzornik",
+	"group-oversight": "Nadzorniki",
+	"group-oversight-member": "{{GENDER:$1|nadzornik|nadzornica|nadzornik_ca}}",
+	"hello": "Pozdravljeni",
+	"please-translate": "Pomagajte nam jih prevesti v vaš jezik",
+	"thank-you": "{{GENDER:$1|Hvala.}}",
+	"specialblockfeedback": "Povratne informacije",
+	"specialinvestigate-feedback": "Pustite komentar"
+}

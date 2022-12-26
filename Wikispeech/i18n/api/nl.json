@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apihelp-wikispeech-segment-summary": "Verwerk een pagina die gebruikt zal worden door de Wikispeech uitbreiding.",
+	"apihelp-wikispeech-segment-param-page": "De titel van de te verwerken pagina.",
+	"apihelp-wikispeech-segment-param-removetags": "HTML-tags die volledig verwijderd moeten worden tijdens de reiniging, als JSON-object in het formaat:\n<pre>{\n  \"tag1\": true,\n  \"tag2\": \"css-class\",\n  \"tag3\": [\"css-class-1\", \"css-class-2\"]\n}</pre>\nwaarbij <code>tag1</code> altijd verwijderd wordt, <code>tag2</code> enkel verwijderd wordt als het ook de CSS class <code>css-class</code> bezit en <code>tag3</code> enkel verwijderd wordt als het ook de CSS class <code>css-class-1</code> of <code>css-class-2</code> bezit. Houd er rekening mee dat \"wikispeech-listen\" de standaardconfiguratie gebruikt voor segmentering en mogelijk niet compatibel is met segmenten die zijn geproduceerd met een ad-hocinstelling van deze parameter.",
+	"apihelp-wikispeech-segment-param-segmentbreakingtags": "HTML-tags die segmenten moeten onderbreken. Houd er rekening mee dat \"wikispeech-listen\" de standaardconfiguratie gebruikt voor segmentering en mogelijk niet compatibel is met segmenten die zijn geproduceerd met een ad-hocinstelling van deze parameter.",
+	"apihelp-wikispeech-segment-example-1": "De hoofdpagina segmenteren met standaardparameters uit de configuratie.",
+	"apihelp-wikispeech-segment-example-2": "Verkrijg originele HTML inhoud en gezuiverde tekst.",
+	"apierror-wikispeech-segment-removetagsinvalidjson": "<var>removetags</var> is geen geldige JSON string.",
+	"apierror-wikispeech-segment-removetagsinvalid": "<var>removetags</var> is geen geldig formaat. Het moet een object zijn met booleans, strings of stringreeksen als waarden. Om geen labels te verwijderen, set <var>removetags</var> naar leeg object, <code>{}</code>.",
+	"apihelp-wikispeech-listen-summary": "Synthethiseer spraak.",
+	"apihelp-wikispeech-listen-param-lang": "Taalcode.",
+	"apihelp-wikispeech-listen-param-text": "Te synthethiseren text.",
+	"apihelp-wikispeech-listen-param-voice": "Te gebruiken stem. Indien niet voorzien zal de standaardstem van de taal gebruikt worden.",
+	"apierror-wikispeech-listen-notallowed": "Je hebt niet de rechten om deze API actie af te roepen.",
+	"apierror-wikispeech-listen-invalid-language": "<code>$1</code> is geen geldige taal. Moet één zijn van: $2.",
+	"apierror-wikispeech-listen-invalid-voice": "<code>$1</code> is geen geldige stem. Moet één zijn van: $2.",
+	"apihelp-wikispeech-listen-example-1": "Synthethiseer een uiting in het Nederlands.",
+	"apihelp-wikispeech-listen-example-2": "Gebruik een niet-standaard stem."
+}

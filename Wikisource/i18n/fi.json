@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"01miki10",
+			"MITO",
+			"Nike"
+		]
+	},
+	"wikisource-desc": "Wikiaineistoon liittyvät MediaWikin muutokset",
+	"wikisource-download-button": "Lataa",
+	"wikisource-download-chooser-title": "Valitse muoto",
+	"wikisource-download-chooser-epub-description": "tietokoneille, puhelimille ja tableteille",
+	"wikisource-download-chooser-mobi-description": "Kindleille",
+	"wikisource-download-chooser-pdf-description": "isoille näytöille ja tulostamiseen",
+	"wikisource-ocr-extract-cancel": "Peruuta",
+	"wikisource-ocr-extract-close": "Sulje tämä ilmoitus",
+	"wikisource-ocr-onboarding-button": "Selvä"
+}

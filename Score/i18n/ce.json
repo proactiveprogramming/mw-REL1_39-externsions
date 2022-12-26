@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"score-desc": "Музыкан LilyPond партитур кечян тег тӀетуху",
+	"score-error-category": "Рендеринган партитурийн гӀалаташ долу агӀонаш",
+	"score-error-category-desc": "Партитурийн визуализаци ечу хенахь гӀалат даьлла.",
+	"score-visualeditor-mwscoredialog-card-advanced": "Кхин тӀе",
+	"score-visualeditor-mwscoredialog-card-audio": "Аудио",
+	"score-visualeditor-mwscoredialog-lang": "Мотт",
+	"score-visualeditor-mwscoredialog-title": "Нотийн дӀайаздар",
+	"datatypes-type-musical-notation": "Нотийн дӀайаздар",
+	"wikibase-listdatatypes-musical-notation-head": "Нотийн дӀайаздар"
+}

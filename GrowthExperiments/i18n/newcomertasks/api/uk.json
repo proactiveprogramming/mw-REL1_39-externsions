@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Ата"
+		]
+	},
+	"apihelp-query+growthtasks-summary": "Отримати рекомендації завдань, які підходять новачкам.",
+	"apihelp-query+growthtasks-extended-description": "Пропонує набір статей з деякими очевидними проблемами, які новому редактору буде достатньо легко виправити.",
+	"apihelp-query+growthtasks-param-tasktypes": "Типи завдань, якими обмежити результати. Залиште порожнім, щоб отримати усі пропозиції.",
+	"apihelp-query+growthtasks-param-topics": "Теми статей, яким віддавати перевагу у пропозиціях завдань.",
+	"apihelp-query+growthtasks-param-limit": "Максимальна кількість пропозицій завдань у виводі.",
+	"apihelp-query+growthtasks-param-excludepageids": "Ідентифікатори сторінок, які слід виключити із запиту.",
+	"apihelp-query+growthtasks-param-debug": "Додати дані зневадження у вивід.",
+	"apihelp-query+growthtasks-example-1": "Отримати рекомендації для завдань коригування для поточного користувача.",
+	"apihelp-query+growthtasks-example-2": "Отримати рекомендації для поточного користувача з розширеною інформацією про сторінки.",
+	"apierror-growthexperiments-addimage-handler-accepted-missing": "Параметр «прийнято» відсутній у даних плагіна «Додати зображення»",
+	"apierror-growthexperiments-addimage-handler-accepted-wrongtype": "Параметр «прийнято» має бути логічним у даних плагіна «Додати зображення», це $1",
+	"apierror-growthexperiments-addimage-handler-reason-missing": "Параметр «reason» відсутній у даних плагіна «Додати зображення»",
+	"apierror-growthexperiments-addimage-handler-reason-wrongtype": "Параметр «reason» має бути масивом у даних плагіна «Додати зображення», а є $1",
+	"apierror-growthexperiments-addimage-handler-reason-invaliditem": "Недійсний елемент «$1» для параметра «reason», мусить бути один із: $2",
+	"apierror-growthexperiments-addlink-handler-notfound": "Історію рекомендацій посилань не знайдено",
+	"apierror-growthexperiments-addlink-handler-wrongtargets": "Неочікувані цілі рекомендацій посилань: $1",
+	"growthexperiments-underlinked-rescore-profile": "Профіль внутрішньої оцінки, який використовується в рекомендаціях посилань експериментів Зростання для пріоритизування статей, які ще не мають достатньо посилань."
+}

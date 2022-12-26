@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"bs-qr-code-extension-description": "Viser en QR-kode med ei lenke til den nåværende siden i verktøylinjen.",
+	"bs-qr-code-title": "QR-kode",
+	"bs-qr-code-text": "Skann QR-koden for å åpne denne siden på en mobil enhet",
+	"bs-qr-code-action-qr-code-title": "Åpne dialog med QR-kode",
+	"bs-qr-code-action-qr-code-text": "QR-kode",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-kode",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-kode for $1",
+	"bs-qr-code-api-no-page": "Paremeteren «page» er tom",
+	"apihelp-bs-qr-code-summary": "Hent QR-kode som base64-data-URI for ei side",
+	"apihelp-bs-qr-code-param-revid": "Revisjons-ID for siden for å generere en permanent lenke",
+	"apihelp-bs-qr-code-param-page": "Sidenavnet til siden for å generere base64-data-URI",
+	"apihelp-bs-qr-code-param-size": "Størrelsen til QR-koden",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Standard API-kall",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "API-kall for en bestemt revid",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API-kall med egendefinert størrelse"
+}

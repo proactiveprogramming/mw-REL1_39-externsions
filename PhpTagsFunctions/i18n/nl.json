@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"phptagsfunctions-desc": "Implementeert de interne functies van native PHP voor de uitbreiding PhpTags",
+	"phptagsfunctions-preg-bad-delimiter": "Scheidingsteken mag niet alfanumeriek of backslash zijn",
+	"phptagsfunctions-preg-no-ending-delimiter": "Geen afsluitteken \"$1\" gevonden",
+	"phptagsfunctions-preg-unknown-modifier": "Onbekende modifier \"$1\""
+}

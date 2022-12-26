@@ -1,0 +1,82 @@
+{
+	"name": "JsonData",
+	"author": "Rob Lanphier",
+	"url": "https://www.mediawiki.org/wiki/Extension:JsonData",
+	"descriptionmsg": "jsondata-desc",
+	"type": "Tasks",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"JsonData": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\JsonData\\": "includes/"
+	},
+	"ResourceModules": {
+		"ext.jsonwidget": {
+			"scripts": [
+				"json.js",
+				"jsonedit.js",
+				"mw.jsondata.js"
+			],
+			"styles": [
+				"mw.jsondata.css",
+				"jsonwidget.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "JsonData/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\JsonData\\Hooks::beforePageDisplay",
+		"EditPage::showEditForm:fields": "MediaWiki\\Extension\\JsonData\\Hooks::onEditPageShowEditFormInitial",
+		"EditPageBeforeEditToolbar": "MediaWiki\\Extension\\JsonData\\Hooks::onEditPageBeforeEditToolbar",
+		"ParserFirstCallInit": "MediaWiki\\Extension\\JsonData\\Hooks::onParserFirstCallInit",
+		"GetPreferences": "MediaWiki\\Extension\\JsonData\\Hooks::onGetPreferences",
+		"EditFilter": "MediaWiki\\Extension\\JsonData\\Hooks::validateDataEditFilter"
+	},
+	"config": {
+		"JsonDataNamespace": {
+			"value": []
+		},
+		"JsonDataSchemaFile": {
+			"value": null
+		},
+		"JsonData": {
+			"value": null
+		},
+		"JsonDataConfigArticle": {
+			"value": null
+		},
+		"JsonDataConfigFile": {
+			"value": null
+		},
+		"JsonDataDefaultTagHandlers": {
+			"value": [
+				"json",
+				"jsonschema"
+			]
+		},
+		"JsonDataPredefinedData": {
+			"value": {
+				"openschema": "schemas/openschema.json",
+				"schemaschema": "schemas/schemaschema.json",
+				"configexample": "example/configexample.json",
+				"configschema": "schemas/jsondata-config-schema.json",
+				"simpleaddr": "schemas/simpleaddr-schema.json"
+			}
+		},
+		"JsonDataConfig": {
+			"value": {
+				"srctype": "predefined",
+				"src": "configexample"
+			}
+		}
+	},
+	"manifest_version": 2
+}

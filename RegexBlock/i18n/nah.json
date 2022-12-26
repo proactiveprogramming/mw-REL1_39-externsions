@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Akapochtli",
+			"Fluence",
+			"Languaeditor"
+		]
+	},
+	"regexblock-form-username": "IP so tokaxmachiyotl:",
+	"regexblock-form-reason": "Īxtlamatiliztli:",
+	"regexblock-form-account-block": "Ticquīxtīz yancuīc cuentah ītlachīhualiz",
+	"regexblock-form-submit": "Xiktsakwili masewalli",
+	"regexblock-view-all": "Nochi",
+	"regexblock-view-go": "Xiyaw",
+	"regexblock-view-reason": "īxtlamatiliztli: $1",
+	"regexblock-view-stats": "tlapōhualli",
+	"regexblock-view-time": "pan $1"
+}

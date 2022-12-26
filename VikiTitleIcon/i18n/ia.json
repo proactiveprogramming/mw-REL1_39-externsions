@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"vikititleicon-desc": "Modulo VIKI pro monstrar le logo desde paginas que usa le extension \"Title Icon\"",
+	"vikititleicon-error-fetch": "Error obtenente le datos concernente le icone de titulo pro le nodo: $1.",
+	"apihelp-getTitleIcons-description": "Obtener le URLs de tote le icones de titulo pro le pagina, si existe.",
+	"apihelp-getTitleIcons-summary": "Obtener le URLs de tote le icones de titulo pro le pagina, si existe.",
+	"apihelp-getTitleIcons-param-pageTitle": "titulo del pagina cuje icones de titulo tu vole recuperar"
+}

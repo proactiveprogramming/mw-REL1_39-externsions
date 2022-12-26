@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"wikispeech-sdc": "Wikispeech Speech Data Collector",
+	"wikispeech-sdc-desc": "'Nu strumende pe reggistrà, revedè e annotà le conversaziune.",
+	"right-wikispeech-sdc-record": "Reggìstre 'a vôsce",
+	"action-wikispeech-sdc-record": "Reggìstre 'a vôsce",
+	"recordspeech": "Reggìstre 'a conversazione",
+	"wikispeech-sdc-record": "Reggìstre",
+	"wikispeech-sdc-save": "Reggìstre",
+	"wikispeech-sdc-skip": "Zumbe",
+	"right-wikispeech-sdc-speech-recording": "Cange 'a reggistrazione vocale",
+	"action-wikispeech-sdc-speech-recording": "Cange 'a reggistrazione vocale",
+	"right-wikispeech-sdc-speech-recording-talk": "Discute 'a reggistrazione vocale",
+	"action-wikispeech-sdc-speech-recording-talk": "Discute 'a reggistrazione vocale",
+	"wikispeech-sdc-status-starting": "Stoche accumenze",
+	"wikispeech-sdc-status-ready": "Pronde",
+	"wikispeech-sdc-status-listening": "Stoche a sende",
+	"wikispeech-sdc-status-recording": "Stoche a reggìstre"
+}

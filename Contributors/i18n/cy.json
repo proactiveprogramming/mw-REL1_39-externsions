@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pwyll"
+		]
+	},
+	"contributors": "Cyfranwyr",
+	"contributors-desc": "Yn crynhoi y prif gyfranwyr at dudalen",
+	"contributors-toolbox": "Prif gyfranwyr",
+	"contributors-legend": "Rhestr o'r prif gyfranwyr at dudalen",
+	"contributors-target": "Teitl:",
+	"contributors-submit": "Dangos",
+	"contributors-subtitle": "Prif gyfranwyr at $1",
+	"contributors-badtitle": "Teitl annilys",
+	"contributors-nosuchpage": "Nid yw'r dudalen $1 yn bod."
+}

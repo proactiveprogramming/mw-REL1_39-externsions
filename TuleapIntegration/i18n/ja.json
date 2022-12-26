@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore"
+		]
+	},
+	"tuleap-login-error": "ログインのエラー",
+	"tuleap-no-access": "アクセスが拒否されました。"
+}

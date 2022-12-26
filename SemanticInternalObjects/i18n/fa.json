@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Armin1392",
+			"Beginneruser"
+		]
+	},
+	"semanticinternalobjects-desc": "تنظیمات داخلی اشیاء در مدیاویکی معنایی",
+	"semanticinternalobjects-internalproperty": "ویژگی‌ داخلی",
+	"semanticinternalobjects-mainpropertyname": "نام ویژگی برای اتصال این زمینه‌های الگو  به بقیهٔ صفحه:",
+	"semanticinternalobjects-propnamewarning": "(اگر این الگو می‌تواند چند نمونه داشته باشد،تنها باید مورد استفاده قرار گیرد )"
+}

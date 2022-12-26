@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beginneruser",
+			"Huji",
+			"Ladsgroup",
+			"Wayiran"
+		]
+	},
+	"timeline-desc": "برچسب <code>&lt;timeline&gt;</code> را برای نمایش خطوط زمانی می‌افزاید",
+	"timeline-invalidmap": "تصویر نقشهٔ نامعتبر ایجادشده توسط EasyTimeline",
+	"timeline-tracking-category": "صفحاتی که از گاه‌شمار استفاده می‌کنند",
+	"timeline-readerr": "قادر به خواندن پرونده $1 نیست.",
+	"timeline-rsvg-error": "قادر به تبدیل SVG به PNG نیست:\n$1"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"apihelp-query+allcampaigns-description": "{{doc-apihelp-description|query+allcampaigns}}",
+	"apihelp-query+allcampaigns-summary": "{{doc-apihelp-summary|query+allcampaigns}}",
+	"apihelp-query+allcampaigns-param-enabledonly": "{{doc-apihelp-param|query+allcampaigns|enabledonly}}",
+	"apihelp-query+allcampaigns-param-limit": "{{doc-apihelp-param|query+allcampaigns|limit}}",
+	"apihelp-query+allcampaigns-example-1": "{{doc-apihelp-example|query+allcampaigns}}"
+}

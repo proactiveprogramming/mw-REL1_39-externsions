@@ -1,0 +1,32 @@
+{
+	"name": "NoCat",
+	"version": "1.1",
+	"author": [ "Brian Wolff" ],
+	"url": "https://www.mediawiki.org/wiki/Extension:NoCat",
+	"descriptionmsg": "nocat-desc",
+	"type": "other",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">=1.38.0"
+	},
+	"MessagesDirs": {
+		"NoCat": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"NoCatMagic": "NoCat.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"NoCatHooks": "NoCatHooks.php"
+	},
+	"config": {
+		"NoCatShowCat": false
+	},
+	"Hooks": {
+		"GetDoubleUnderscoreIDs": "NoCatHooks::onGetDoubleUnderscoreIDs",
+		"ParserAfterParse": "NoCatHooks::onParserAfterParse",
+		"OutputPageParserOutput": "NoCatHooks::onOutputPageParserOutput"
+	},
+	"manifest_version": 1
+}

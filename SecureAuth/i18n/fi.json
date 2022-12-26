@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veikk0.ma"
+		]
+	},
+	"secureauth-desc": "Antaa käyttäjän syöttää IP-osoite kirjautumista varten. Kirjautuminen muista IP-osoitteista estetään.",
+	"secureauthinfo": "SecureAuthInfo",
+	"special-secureauth-info": "Secure Authentication Information",
+	"secureauth-info-userinfo": "Käyttäjätiedot",
+	"secureauth-current-ip": "Nykyisen kirjautumisesi IP-osoite:",
+	"secureauth-whitelist-ip": "Sallitut IP-osoitteet käyttäjätilisi kirjautumista varten:",
+	"action-sa-access": "käyttää SecureAuthInfoa",
+	"right-sa-access": "Käyttää [[Special:SecureAuthInfo|SecureAuthInfoa]]"
+}

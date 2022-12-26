@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kunal Mehta"
+		]
+	},
+	"mwversioninfo-desc": "{{desc|name=MWVersionInfo|url=https://www.mediawiki.org/wiki/Extension:MWVersionInfo}}",
+	"mwversioninfo.json": "{{notranslate}}",
+	"apihelp-mwversioninfo-summary": "{{doc-apihelp-summary|mwversioninfo}}",
+	"apihelp-mwversioninfo-param-version": "{{doc-apihelp-param|mwversioninfo|version}}",
+	"apihelp-mwversioninfo-example": "{{doc-apihelp-example|mwversioninfo}}"
+}

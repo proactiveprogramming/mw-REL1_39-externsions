@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mehtab ahmed"
+		]
+	},
+	"performanceinspector-pref-label": "ڪارڪردگي جانچيندڙ کي قابلِڪار ڪريو",
+	"performanceinspector-dialog-title": "ڪارڪردگي جانچيندڙ",
+	"performanceinspector-dialog-summary": "تَتُ",
+	"performanceinspector-dialog-cancel": "رد ڪريو",
+	"performanceinspector-modules-summary-total-size": "سڀني ماڊيولن جي سموري ماپ",
+	"performanceinspector-modules-size-name": "ماڊيول جي ماپ",
+	"performanceinspector-modules-css-name": "سي.ايس.ايس",
+	"performanceinspector-modules-css-label": "سي.ايس.ايس",
+	"performanceinspector-modules-css-column-module": "ماڊيول",
+	"performanceinspector-modules-css-column-used-selectors": "استعمال ڪيل چونڊيندڙ",
+	"performanceinspector-modules-css-column-url": "يوآرايل",
+	"performanceinspector-modules-css-column-source": "ذريعو",
+	"performanceinspector-modules-css-column-used-embeds": "استعمال ڪيل امبيڊس",
+	"performanceinspector-modules-localstorage-name": "مقامي اسٽوريج",
+	"performanceinspector-modules-localstorage-label": "مقامي اسٽوريج",
+	"performanceinspector-newpp-ppvisitednodes": "پري-پروسيسر وزيٽڊ نوڊ ڳاڻيٽو",
+	"performanceinspector-newpp-postexpandincludesize": "پوسٽ-ايڪسپينڊ انڪليوڊ ماپ (بائيٽون)",
+	"performanceinspector-newpp-templateargumentsize": "ٽيمپليٽ آرگيومينٽ ماپ (بائيٽون)",
+	"performanceinspector-newpp-expansiondepth": "ھائيئيسٽ ايڪسپينشن گھرائي",
+	"performanceinspector-newpp-expensivefunctioncount": "ايڪسپينسوِ پارسر فنڪشن ڳاڻيٽو",
+	"performanceinspector-newpp-name": "پارسر پروفائيلنگ ڊيٽا",
+	"performanceinspector-newpp-label": "پارسر پروفائيلنگ ڊيٽا",
+	"performanceinspector-newpp-template-time-report-column-name": "نالو",
+	"performanceinspector-newpp-cachereport-now": "ھاڻي"
+}

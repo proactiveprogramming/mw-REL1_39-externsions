@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cgalindo",
+			"Fitoschido",
+			"Macofe",
+			"MarcoAurelio",
+			"Ryo567"
+		]
+	},
+	"apifeatureusage": "Uso de funciones de la API",
+	"apifeatureusage-desc": "Obtén un resumen de los usos registrados de las funciones de la API por cada agente de usuario.",
+	"apifeatureusage-elasticsearch-error": "Error de Elasticsearch: $1",
+	"apifeatureusage-legend": "Uso de funciones de la API",
+	"apifeatureusage-agent-label": "Agente de usuario:",
+	"apifeatureusage-startdate-label": "Fecha de inicio:",
+	"apifeatureusage-enddate-label": "Fecha de finalización:",
+	"apifeatureusage-submit": "Escoge los datos",
+	"apifeatureusage-no-indexes": "No hay datos disponibles para el intervalo de fechas especificado.",
+	"apifeatureusage-missing-indexes": "No hay datos disponibles para una parte del intervalo de fechas especificado.",
+	"apifeatureusage-warnings": "Advertencia: $1",
+	"apifeatureusage-column-feature": "Característica",
+	"apifeatureusage-column-date": "Fecha",
+	"apifeatureusage-column-uses": "Usos",
+	"apifeatureusage-deprecation-help": "Usar [[Special:ApiFeatureUsage]] para ver el uso de funciones obsoletas por tu aplicación."
+}

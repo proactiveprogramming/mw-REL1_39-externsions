@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"emailauth-login-retry-limit": "Πάρα πολλές αποτυχίες!"
+}

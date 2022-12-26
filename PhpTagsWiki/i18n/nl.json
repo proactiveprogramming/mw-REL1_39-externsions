@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"phptagswiki-desc": "Bevat een aantal objecten voor de PhpTags-uitbreiding die werken met de kernsoftware van MediaWiki"
+}

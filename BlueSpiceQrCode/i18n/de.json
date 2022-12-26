@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Josef Konrad",
+			"Metalhead64"
+		]
+	},
+	"bs-qr-code-extension-description": "In der Werkzeugleiste wird ein QR-Code mit dem Link zur aktuellen Seite eingefügt.",
+	"bs-qr-code-title": "QR-Code",
+	"bs-qr-code-text": "Scanne den QR-Code, um diese Seite auf deinem Handy zu öffnen",
+	"bs-qr-code-action-qr-code-title": "Öffne Dialog mit QR Code",
+	"bs-qr-code-action-qr-code-text": "QR Code",
+	"bs-qr-code-action-qr-code-dialog-title": "QR Code",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR Code für $1",
+	"bs-qr-code-api-no-page": "Paramater 'page' ist ein leerer String",
+	"apihelp-bs-qr-code-summary": "QR Code als base64 data URI für eine Seite",
+	"apihelp-bs-qr-code-param-revid": "Revision ID der Seite zum generierren eines permalink",
+	"apihelp-bs-qr-code-param-page": "Name der Seite zum generieren der Base64 data URI",
+	"apihelp-bs-qr-code-param-size": "Größe des QR Code",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Standard API Aufruf",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "API Aufruf für eine bestimmte revid",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API Aufruf mit anderer Größe"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andrei Stroe"
+		]
+	},
+	"fileexporter-desc": "Export facil de fișiere către alt wiki",
+	"fileexporter-text": "Exportă fișier",
+	"fileexporter-to-wikimedia-commons": "Exportă la Wikimedia Commons"
+}

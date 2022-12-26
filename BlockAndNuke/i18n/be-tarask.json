@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nerogaf",
+			"Red Winged Duck",
+			"Renessaince",
+			"Vlad5250"
+		]
+	},
+	"action-blockandnuke": "Блякаваньне і масавае выдаленьне",
+	"blockandnuke": "Блякаваньне і масавае выдаленьне",
+	"blockandnuke-defaultreason": "Масавае выдаленьне старонак, дададзеных праз $1",
+	"blockandnuke-delete-file": "Выдаліць спам праз BlockandNuke",
+	"blockandnuke-delete-article": "Выдаліць спамавыя артыкулы праз BlockandNuke.",
+	"blockandnuke-tools": "Сьпіс карыстальнікаў, якія нядаўна зрабілі ўнёсак, але адсутнічаюць у белым сьпісе:\n\nКаб дадаць карыстальніка ў белы сьпіс, выпраўце extensions/BlockandNuke/whitelist.txt",
+	"blockandnuke-submit-user": "Заблякаваць удзельнікаў",
+	"blockandnuke-submit-delete": "BlockandNuke",
+	"blockandnuke-block": "Выбраныя карыстальнікі былі заблякаваныя, а іхні ўнёсак — выдалены.",
+	"blockandnuke-message": "Карыстальнікі, заблякаваныя BlockandNuke.",
+	"blockandnuke-banhammer": "Каб заблякаваць карыстальнікаў і выдаліць увесь іхні ўнёсак, націсьніце кнопку ніжэй.",
+	"blockandnuke-nothing-to-do": "Няма чаго рабіць!",
+	"blockandnuke-banning": "Блякаваньне...",
+	"blockandnuke-deleted-page": "Выдалена $1",
+	"blockandnuke-ip-addresses": "IP-адрасы",
+	"blockandnuke-users": "Удзельнікі",
+	"blockandnuke-pages": "Старонкі"
+}

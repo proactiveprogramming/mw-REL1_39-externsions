@@ -1,0 +1,78 @@
+[
+	{
+		"name": "wsu_batchlist",
+		"columns": [
+			{
+				"name": "wsubl_id",
+				"type": "integer",
+				"options": { "notnull": true, "autoincrement": true }
+			},
+			{
+				"name": "wsubl_name",
+				"type": "string",
+				"options": { "notnull": true, "length": 255 }
+			},
+			{
+				"name": "wsubl_actor",
+				"comment": "Key to actor.actor_id",
+				"type": "bigint",
+				"options": { "unsigned": true, "notnull": true }
+			},
+			{
+				"name": "wsubl_createdat",
+				"comment": "Timestamp when the batch was created",
+				"type": "mwtimestamp",
+				"options": { "notnull": true }
+			},
+			{
+				"name": "wsubl_status",
+				"type": "string",
+				"options": { "notnull": false, "length": 50 }
+			}
+		],
+		"indexes": [
+			{
+				"name": "wsu_batchlist_actor",
+				"columns": [ "wsubl_actor" ],
+				"unique": false
+			}
+		],
+		"pk": [ "wsubl_id" ]
+	},
+	{
+		"name": "wsu_batch",
+		"columns": [
+			{
+				"name": "wsub_id",
+				"type": "integer",
+				"options": { "notnull": true, "autoincrement": true }
+			},
+			{
+				"name": "wsub_batch",
+				"comment": "Key to wsu_batchlist.wsubl_id",
+				"type": "integer",
+				"options": { "notnull": true }
+			},
+			{
+				"name": "wsub_input",
+				"comment": "JSON blob for one change",
+				"type": "blob",
+				"options": { "length": 65530, "notnull": true }
+			},
+			{
+				"name": "wsub_output",
+				"comment": "JSON blob for processing results",
+				"type": "blob",
+				"options": { "length": 65530, "notnull": false }
+			}
+		],
+		"indexes": [
+			{
+				"name": "wsu_batch_batch",
+				"columns": [ "wsub_batch" ],
+				"unique": false
+			}
+		],
+		"pk": [ "wsub_id" ]
+	}
+]

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman",
+			"আফতাবুজ্জামান",
+			"খাত্তাব হাসান"
+		]
+	},
+	"bs-notifications-email-edit-subject": "$3 কর্তৃক $4 তারিখে \"$1\" পাতাটি {{GENDER:$2|সম্পাদিত হয়েছে}}",
+	"bs-notifications-email-edit-body": "$4 কর্তৃক $5 তারিখে \"$1\" পাতাটি {{GENDER:$2|সম্পাদিত হয়েছে}}।\n\nমন্তব্য:\n $3",
+	"bs-notifications-email-delete-body": "$1 পাতাটি $3 কর্তৃক $5-এ {{GENDER:$2|অপসারিত}} হয়েছে।\n\nকারণটি ছিল:\n$4",
+	"bs-notifications-edit-difflink-label": "পার্থক্য দেখুন",
+	"bs-notifications-htmlmail-sender-info": "$1 বিজ্ঞপ্তি ব্যবস্থা",
+	"bs-notifications-mail-additional-links-label": "অতিরিক্ত সংযোগ"
+}

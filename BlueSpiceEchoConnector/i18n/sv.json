@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mjälten",
+			"Sabelöga",
+			"Technic2",
+			"WikiPhoenix"
+		]
+	},
+	"bs-echoconnector-extension-description": "Ansluter BlueSpice med Echo",
+	"echo-category-title-bs-admin-cat": "Administrativa uppgifter",
+	"echo-pref-tooltip-bs-admin-cat": "Avisera mig när ett nytt användarkonto skapas",
+	"echo-pref-tooltip-bs-page-actions-cat": "Avisera mig när någon redigerar, flyttar eller raderar en sida som jag bevakar",
+	"echo-category-title-bs-page-actions-cat": "Handlingar på sidor i bevakningslistan",
+	"prefs-namespace-notifications": "Aviseringar för namnrymdshändelser",
+	"prefs-category-notifications": "Aviseringar för kategorier"
+}

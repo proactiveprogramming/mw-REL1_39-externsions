@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Trondtr",
+			"Yupik"
+		]
+	},
+	"wikibase-edit": "rievdat",
+	"wikibase-save": "vurke",
+	"wikibase-add": "lasit",
+	"wikibase-addreference": "lasit gáldu",
+	"wikibase-entitytermsview-entitytermsforlanguagelistview-toggler": "Eará gielaide",
+	"wikibase-entitytermsforlanguagelistview-description": "Govvádus",
+	"wikibase-entitytermsforlanguagelistview-label": "Namma",
+	"wikibase-entitytermsforlanguagelistview-language": "Giella",
+	"wikibase-content-language-edit-label": "Giella:",
+	"wikibase-diffview-reference": "gáldu",
+	"wikibase-diffview-label": "namma",
+	"wikibase-diffview-link": "liŋkkat",
+	"wikibase-remove": "sihko",
+	"wikibase-statementview-references-counter": "$1 {{PLURAL:$1|gáldu}}",
+	"wikibase-itembytitle-submit": "Oza",
+	"wikibase-itemdisambiguation-lookup-label": "Namma:",
+	"wikibase-itemdisambiguation-submit": "Oza",
+	"wikibase-newentity-language": "Giella:",
+	"wikibase-newentity-label": "Namma:",
+	"wikibase-setlabel-label": "Namma:",
+	"wikibase-setlabeldescriptionaliases-label-label": "Namma:",
+	"wikibase-federated-properties-edit-request-failed-notice-try-again": "Geahččal fas"
+}

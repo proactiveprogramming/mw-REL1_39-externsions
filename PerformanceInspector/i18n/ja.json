@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Akki-102525",
+			"Shirayuki"
+		]
+	},
+	"performanceinspector-dialog-summary": "概要",
+	"performanceinspector-modules-css-column-module": "モジュール",
+	"performanceinspector-modules-localstorage-disabled": "ローカルストレージは無効です。",
+	"performanceinspector-modules-localstorage-totalsize": "総容量",
+	"performanceinspector-imagesize-column-image-name": "名前",
+	"performanceinspector-newpp-column-name": "名前",
+	"performanceinspector-newpp-column-value": "値",
+	"performanceinspector-newpp-template-time-report-column-name": "名前"
+}

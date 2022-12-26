@@ -1,0 +1,33 @@
+{
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
+		"mediawiki/mediawiki-phan-config": "0.12.0",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2",
+		"phperf/xh-tool": "^1.1"
+	},
+	"scripts": {
+		"lint": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"phpcs -p -s"
+		],
+		"test": [
+			"@lint",
+			"minus-x check ."
+		],
+		"fix-lint": "phpcbf",
+		"fix": [
+			"@fix-lint",
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phan": "phan -d . --long-progress-bar",
+		"phpcs": "phpcs -sp --cache"
+	},
+	"require": {
+		"ext-dom": "*",
+		"ext-simplexml": "*",
+		"ext-xmlreader": "*"
+	}
+}

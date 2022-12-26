@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andriykopanytsia",
+			"DDPAT"
+		]
+	},
+	"sarcasm-desc": "Додає тег <code>&lt;sarcasm></code> для того, щоб зрозуміліше показати сарказм у тексті"
+}

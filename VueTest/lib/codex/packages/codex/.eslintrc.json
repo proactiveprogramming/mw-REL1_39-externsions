@@ -1,0 +1,83 @@
+{
+	"rules": {
+		"no-restricted-imports": [ "error", {
+			"patterns": [
+				{
+					"group": [ "components-wip/", "components-wip" ],
+					"message": "Work-in-progress components may not be used in regular components"
+				}
+			]
+		} ]
+	},
+	"overrides": [
+		{
+			"files": [ "src/**" ],
+			"excludedFiles": "src/**/*.test.[jt]s",
+			"extends": [
+				"wikimedia/client-common",
+				"wikimedia/vue3-es6"
+			],
+			"rules": {
+				"vue/no-unsupported-features": [ "error", {
+					"version": "^3.2.27"
+				} ],
+				"vue/component-name-in-template-casing": [ "error", "kebab-case" ],
+				"unicorn/prefer-includes": "off"
+			}
+		},
+		{
+			"files": [ "**/*.ts", "**/*.js" ],
+			"excludedFiles": "src/**",
+			"extends": [
+				"wikimedia/server"
+			],
+			"rules": {
+				"strict": "off",
+				"node/no-missing-import": [ "error", {
+					"tryExtensions": [ ".js", ".ts" ]
+				} ]
+			}
+		},
+		{
+			"files": [ "**/*.js" ],
+			"excludedFiles": "src/**",
+			"rules": {
+				"jsdoc/valid-types": "off"
+			}
+		},
+		{
+			"files": [ "**/*.ts", "**/*.vue" ],
+			"rules": {
+				"no-unused-vars": "off",
+				"@typescript-eslint/no-unused-vars": "error",
+				"es-x/no-optional-chaining": "off",
+				"es-x/no-rest-spread-properties": "off",
+				"es-x/no-nullish-coalescing-operators": "off",
+				"es-x/no-async-functions": "off",
+				"jsdoc/require-param-type": "off",
+				"jsdoc/require-returns-type": "off",
+				"jsdoc/check-tag-names": [
+					"error",
+					{
+						"definedTags": [ "values" ]
+					}
+				]
+			}
+		},
+		{
+			"files": [ "**/*.test.ts" ],
+			"rules": {
+				"@typescript-eslint/restrict-template-expressions": "off"
+			}
+		},
+		{
+			"files": [ "cypress/**/*.*" ],
+			"extends": [
+				"plugin:cypress/recommended"
+			]
+		}
+	],
+	"ignorePatterns": [
+		"src/env.d.ts"
+	]
+}

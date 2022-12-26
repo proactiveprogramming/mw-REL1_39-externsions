@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseph"
+		]
+	},
+	"wikispeech-sdc": "Vikisöylev Konuşma Veri Toplayıcısı",
+	"wikispeech-sdc-desc": "Konuşma seslerini kaydetmek, gözden geçirmek ve not eklemek için bir araç.",
+	"right-wikispeech-sdc-record": "Ses kaydet",
+	"action-wikispeech-sdc-record": "Ses kaydetmeye",
+	"recordspeech": "Konuşma kaydı",
+	"wikispeech-sdc-record": "Kayıt",
+	"wikispeech-sdc-save": "Kaydet",
+	"wikispeech-sdc-skip": "Atla",
+	"right-wikispeech-sdc-speech-recording": "Konuşma kaydını düzenle",
+	"action-wikispeech-sdc-speech-recording": "konuşma kaydını düzenlemeye",
+	"right-wikispeech-sdc-speech-recording-talk": "Konuşma kaydını tartış",
+	"action-wikispeech-sdc-speech-recording-talk": "konuşma kaydını tartışmaya",
+	"wikispeech-sdc-status-starting": "Başlatılıyor",
+	"wikispeech-sdc-status-ready": "Hazır",
+	"wikispeech-sdc-status-listening": "Dinleniyor",
+	"wikispeech-sdc-status-recording": "Kaydediliyor"
+}

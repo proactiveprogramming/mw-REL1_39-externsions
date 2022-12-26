@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"UsagiNeko"
+		]
+	},
+	"wsu-js-batchtable-status": "$1%完了。 {{PLURAL:$2|0=|$2件の失敗。}}"
+}

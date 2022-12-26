@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bencemac",
+			"Tacsipacsi"
+		]
+	},
+	"fileexporter": "Fájlexportáló",
+	"fileexporter-desc": "Fájlok egyszerű exportálása egy másik wikibe",
+	"fileexporter-text": "Fájl exportálása",
+	"fileexporter-to-wikimedia-commons": "Exportálás a Wikimédia Commonsba"
+}

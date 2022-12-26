@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog"
+		]
+	},
+	"s5slide-name": "Слайдшоу",
+	"s5slide-desc": "S5SlideShow - це розширення MediaWiki, що дозволяє просто, швидко та зручно створювати слайдшоу за допомогою S5 у контексті сторінок MediaWiki та вікі.",
+	"special-s5SlideShow-title": "Конфігурація S5SlideShow",
+	"s5slide-header-title": "Заголовок",
+	"s5slide-header-subtitle": "Підзаголовок",
+	"s5slide-header-footer": "Підвал",
+	"s5slide-header-subfooter": "Нижній колонтитул",
+	"s5slide-header-author": "Автор"
+}

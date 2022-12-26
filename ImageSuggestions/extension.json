@@ -1,0 +1,66 @@
+{
+	"manifest_version": 2,
+	"name": "ImageSuggestions",
+	"namemsg": "imagesuggestions-extensionname",
+	"type": "other",
+	"author": [
+		"Cormac Parle",
+		"Joseph Seddon",
+		"Marco Fossati",
+		"Matthias Mullie"
+	],
+	"version": "0.0.1",
+	"url": "https://www.mediawiki.org/wiki/Extension:ImageSuggestions",
+	"descriptionmsg": "imagesuggestions-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"Echo": "*"
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ImageSuggestions\\": "includes/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\ImageSuggestions\\Tests\\MediaWiki\\": "tests/phpunit/",
+		"MediaWiki\\Extension\\ImageSuggestions\\Maintenance\\": "maintenance/"
+	},
+	"config": {
+		"ImageSuggestionsSuggestionsApi": {
+			"description": "API endpoint for image suggestions; 2 params will be sprintf'ed into the url: 1/ the wiki id & 2/ the page id. See https://www.mediawiki.org/wiki/Platform_Engineering_Team/Data_Value_Stream/Data_Gateway#Suggestions",
+			"value": "https://image-suggestion.discovery.wmnet:30443/public/image_suggestions/suggestions/%1$s/%2$d"
+		},
+		"ImageSuggestionsInstanceOfApi": {
+			"description": "API endpoint for instance of cache; 2 params will be sprintf'ed into the url: 1/ the wiki id & 2/ the page id. See https://www.mediawiki.org/wiki/Platform_Engineering_Team/Data_Value_Stream/Data_Gateway#Instanceof_(cache)",
+			"value": "https://image-suggestion.discovery.wmnet:30443/private/image_suggestions/instanceof_cache/%1$s/%2$d"
+		},
+		"ImageSuggestionsHelpLink": {
+			"description": "URL to per-wiki description pages",
+			"value": ""
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\ImageSuggestions\\Hooks::onBeforePageDisplay",
+		"BeforeCreateEchoEvent": "MediaWiki\\Extension\\ImageSuggestions\\Hooks::onBeforeCreateEchoEvent"
+	},
+	"MessagesDirs": {
+		"ImageSuggestions": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "ImageSuggestions/resources"
+	},
+	"ResourceModules": {
+		"ext.imagesuggestions.notifications.styles": {
+			"deprecated": "For cached HTML only",
+			"targets": [ "desktop", "mobile" ],
+			"dependencies": [
+				"oojs-ui.styles.icons-media",
+				"oojs-ui-core.icons"
+			]
+		}
+	}
+}

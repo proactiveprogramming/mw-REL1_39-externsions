@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-articleinfo-desc": "Prikazuje informacije o strani v statusni vrstici",
+	"prefs-articleinfo": "Podatki o strani",
+	"bs-articleinfo-pref-CheckRevisionInterval": "Interval posodobitev v sekundah:",
+	"bs-articleinfo-flyout-subpages-title": "Podstrani",
+	"bs-articleinfo-pagetool-subpages-tooltip": "Podstrani",
+	"bs-articleinfo-dialog-subpages-title": "Podstrani"
+}

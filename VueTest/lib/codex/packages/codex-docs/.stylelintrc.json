@@ -1,0 +1,20 @@
+{
+	"extends": "../../.stylelintrc.js",
+	"overrides": [
+		{
+			"files": [ "**/*.md" ],
+			"customSyntax": "postcss-markdown",
+			"rules": {
+				"selector-pseudo-class-no-unknown": [
+					true,
+					{
+						"ignorePseudoClasses": [ "deep" ]
+					}
+				]
+			}
+		}
+	],
+	"rules": {
+		"selector-class-pattern": "^(cdx-docs-|cdx-demo)"
+	}
+}

@@ -1,0 +1,262 @@
+<template>
+	<!--
+		WikiLambda Vue interface module for generic ZObject manipulation.
+
+		@copyright 2020– Abstract Wikipedia team; see AUTHORS.txt
+		@license MIT
+	-->
+	<div :class="classZObjectKey">
+		<!-- zKey label -->
+		<span v-if="zKey">{{ zKeyLabel }}</span>
+
+		<!-- If type isn't selected, show type selector -->
+		<z-object-selector
+			v-if="!zType"
+			:type="Constants.Z_TYPE"
+			:return-type="Constants.Z_TYPE"
+			:placeholder="$i18n( 'wikilambda-typeselector-label' ).text()"
+			@input="onTypeChange"
+		></z-object-selector>
+
+		<!-- If there's a type, we render the appropriate component -->
+		<template v-else>
+			<!-- Check if zobject is actually a list  -->
+			<span v-if="zType === Constants.Z_TYPED_LIST && zListType.key === '0'">
+				{{ zTypeLabel }} &rarr;
+				<z-object
+					:zobject-id="zListType.id"
+					:persistent="false"
+					:readonly="readonly"
+					:reference-type="Constants.Z_TYPE"
+				></z-object>
+			</span>
+			<span v-else>
+				<a :href="zTypeLink" :target="!viewmode ? '_blank' : ''">{{ zTypeLabel }}</a>
+			</span>
+
+			<z-key-mode-selector
+				v-if="!( viewmode || readonly ) &&
+					selectedMode && !isIdentityKey &&
+					zType !== Constants.Z_OBJECT &&
+					zType !== Constants.Z_TYPED_LIST"
+				:mode="selectedMode"
+				:parent-type="parentType"
+				:literal-type="literalType"
+				@change="onModeChange"
+			></z-key-mode-selector>
+			<z-object-generic
+				v-if="selectedMode === Constants.Z_KEY_MODES.GENERIC_LITERAL"
+				:zobject-id="zobjectId"
+				:type="zType"
+				:persistent="false"
+				:readonly="readonly"
+			></z-object-generic>
+			<z-reference
+				v-else-if="selectedMode === Constants.Z_KEY_MODES.REFERENCE"
+				:zobject-id="zobjectId"
+				:readonly="readonly"
+				:search-type="literalType"
+			></z-reference>
+			<z-object-json
+				v-else-if="selectedMode === Constants.Z_KEY_MODES.JSON"
+				:zobject-id="zobjectId"
+				:readonly="readonly"
+				@change-literal="onliteralChange"
+			></z-object-json>
+			<!-- Constants.Z_KEY_MODES.FUNCTION_CALL -->
+			<!-- Constants.Z_KEY_MODES.LITERAL -->
+			<z-object
+				v-else
+				:zobject-id="zobjectId"
+				:persistent="false"
+				:parent-type="parentType"
+				:readonly="readonly"
+			></z-object>
+		</template>
+	</div>
+</template>
+
+<script>
+var Constants = require( '../Constants.js' ),
+	ZObjectSelector = require( './ZObjectSelector.vue' ),
+	ZKeyModeSelector = require( './ZKeyModeSelector.vue' ),
+	ZReference = require( './types/ZReference.vue' ),
+	ZObjectJson = require( './ZObjectJson.vue' ),
+	ZObjectGeneric = require( './ZObjectGeneric.vue' ),
+	mapState = require( 'vuex' ).mapState,
+	mapActions = require( 'vuex' ).mapActions,
+	mapGetters = require( 'vuex' ).mapGetters,
+	typeUtils = require( '../mixins/typeUtils.js' );
+
+// @vue/component
+module.exports = exports = {
+	name: 'z-object-key',
+	components: {
+		'z-object-selector': ZObjectSelector,
+		'z-reference': ZReference,
+		'z-key-mode-selector': ZKeyModeSelector,
+		'z-object-json': ZObjectJson,
+		'z-object-generic': ZObjectGeneric
+	},
+	mixins: [ typeUtils ],
+	inject: {
+		viewmode: { default: false }
+	},
+	props: {
+		zKey: {
+			type: String,
+			default: ''
+		},
+		zobjectId: {
+			type: Number,
+			required: true
+		},
+		parentType: {
+			type: String,
+			required: true
+		},
+		readonly: {
+			type: Boolean,
+			default: false
+		}
+	},
+	data: function () {
+		return {
+			Constants: Constants,
+			selectedMode: Constants.Z_KEY_MODES.LITERAL,
+			literalType: Constants.Z_KEY_MODES.LITERAL
+		};
+	},
+	computed: $.extend( {},
+		mapState( [
+			'zKeys'
+		] ),
+		mapGetters( [
+			'getZObjectTypeById',
+			'getListTypeById',
+			'getZkeyLiteralType',
+			'getTypeByMode',
+			'getZkeyLabels',
+			'getModeByType',
+			'getCurrentZObjectId',
+			'getZObjectChildrenById'
+		] ),
+		{
+			classZObjectKey: function () {
+				return {
+					'ext-wikilambda-zobject-key': true,
+					'ext-wikilambda-zobject-key-inline': this.isInlineType
+				};
+			},
+			isInlineType: function () {
+				return [
+					Constants.Z_FUNCTION_CALL,
+					Constants.Z_STRING,
+					Constants.Z_REFERENCE,
+					Constants.Z_BOOLEAN,
+					Constants.Z_ARGUMENT_REFERENCE
+				].indexOf( this.zType ) !== -1;
+			},
+			zType: function () {
+				return this.getZObjectTypeById( this.zobjectId );
+			},
+			zListType: function () {
+				if ( this.zType === Constants.Z_TYPED_LIST ) {
+					return this.getListTypeById( this.zobjectId );
+				}
+				return { id: Constants.NEW_ZID_PLACEHOLDER };
+			},
+			zKeyLabel: function () {
+				var label = this.getZkeyLabels[ this.zKey ];
+				if ( label ) {
+					return label + ':';
+				}
+
+				return;
+			},
+			zTypeLabel: function () {
+				return this.getZkeyLabels[ this.zType ];
+			},
+			referenceValue: function () {
+				return this.findKeyInArray(
+					Constants.Z_REFERENCE_ID,
+					this.getZObjectChildrenById( this.zobjectId ) )
+					.value;
+			},
+			isIdentityKey: function () {
+				return this.zType === Constants.Z_REFERENCE &&
+					this.referenceValue === this.getCurrentZObjectId;
+			},
+			zTypeLink: function () {
+				return new mw.Title( this.zType ).getUrl();
+			}
+		}
+	),
+	methods: $.extend( {},
+		mapActions( [ 'changeType' ] ),
+		{
+			/**
+			 * Sets the type of a ZObject key.
+			 *
+			 * @param {string} type
+			 */
+			onTypeChange: function ( type ) {
+				var payload;
+				if ( type ) {
+					payload = {
+						id: this.zobjectId,
+						type: type
+					};
+					this.literalType = type;
+					this.changeType( payload );
+				}
+			},
+			onliteralChange: function ( type ) {
+				this.literalType = type;
+			},
+			onModeChange: function ( mode ) {
+				var selectedModeType = this.getTypeByMode( { selectedMode: mode, literalType: this.literalType } );
+
+				if ( selectedModeType !== this.zType ) {
+					// If the mode selector generates a zobject content change, call changeType
+					this.changeType( { id: this.zobjectId, type: selectedModeType } );
+				} else {
+					// Else, simply change the view without changing the content
+					this.selectedMode = mode;
+				}
+			}
+		} ),
+	watch: {
+		zType: {
+			immediate: true,
+			handler: function () {
+				this.selectedMode = this.getModeByType( this.zType );
+			}
+		}
+	},
+	beforeCreate: function () {
+		this.$options.components[ 'z-object' ] = require( './ZObject.vue' );
+	},
+	mounted: function () {
+		this.literalType = this.getZkeyLiteralType( this.zKey ) || this.zType;
+	}
+};
+</script>
+
+<style lang="less">
+.ext-wikilambda-zobject-key {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+
+.ext-wikilambda-zobject-key > span {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+}
+
+.ext-wikilambda-zobject-key-inline {
+	display: inline;
+}
+</style>

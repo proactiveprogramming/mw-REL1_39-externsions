@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman",
+			"আজিজ",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"bs-insertmagic": "যাদু শব্দ সন্নিবেশ কারুন",
+	"bs-insertmagic-notoc": "বিষয়বস্তুর সারণী আড়াল করে।",
+	"bs-insertmagic-forcetoc": "বিষয়বস্তুর সারণীকে তার স্বাভাবিক অবস্থানে উপস্থিত হতে বাধ্য করে।",
+	"bs-insertmagic-toc": "শব্দের বর্তমান অবস্থানে বিষয়বস্তুর একটি সারণী স্থাপন করে।",
+	"bs-insertmagic-currentyear": "বর্তমান বছর",
+	"bs-insertmagic-currenttime": "সময় (২৪-ঘণ্টা ঘঘ:মম বিন্যাস)।",
+	"bs-insertmagic-type-quickaccess": "দ্রুত প্রবেশ",
+	"bs-insertmagic-label-desc": "বিবরণ",
+	"bs-insertmagic-label-examples": "উদাহরণ",
+	"bs-insertmagic-label-see-also": "আরও দেখুন",
+	"bs-insertmagic-ve-insertmagic-title": "যাদু শব্দ"
+}

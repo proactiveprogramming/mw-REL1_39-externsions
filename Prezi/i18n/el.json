@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"prezi-desc": "Επιτρέπει την ενσωμάτωση παρουσιάσεων από το [//prezi.com Prezi.com]",
+	"prezi-link": "[http://prezi.com/$1 $2] στο [http://prezi.com Prezi]",
+	"prezi-presentation": "Παρουσίαση Prezi"
+}

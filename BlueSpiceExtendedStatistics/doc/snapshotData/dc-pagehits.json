@@ -1,0 +1,9 @@
+{
+	"members": {
+		"key": "{{{page}}}",
+		"value": {
+			"hits": "{{randint|0,1000}}",
+			"growth": "{{randint|10,100}}"
+		}
+	}
+}

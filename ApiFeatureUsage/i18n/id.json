@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Akmaie Ajam",
+			"Bennylin",
+			"Hidayatsrf",
+			"Palladin911",
+			"Robfirstname"
+		]
+	},
+	"apifeatureusage": "Pemakaian fitur API",
+	"apifeatureusage-elasticsearch-error": "Kesalahan Elasticsearch: $1",
+	"apifeatureusage-agent-label": "Agen pengguna:",
+	"apifeatureusage-startdate-label": "Tanggal mulai:",
+	"apifeatureusage-enddate-label": "Tanggal berakhir:",
+	"apifeatureusage-submit": "Ambil data",
+	"apifeatureusage-warnings": "Peringatan: $1",
+	"apifeatureusage-column-feature": "Fitur",
+	"apifeatureusage-column-date": "Tanggal",
+	"apifeatureusage-column-uses": "Penggunaan"
+}

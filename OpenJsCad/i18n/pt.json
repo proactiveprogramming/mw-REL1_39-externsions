@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"openjscad-desc": "Adiciona a etiqueta <code>&lt;jscad&gt;</code> para apresentar planos de impressão em 3D no formato OpenJsCad"
+}

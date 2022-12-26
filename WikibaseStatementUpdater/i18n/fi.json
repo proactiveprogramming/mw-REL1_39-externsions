@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maantietäjä",
+			"Nike"
+		]
+	},
+	"wsu-extension-name": "Wikibase-lauseen päivitys",
+	"wsu-desc": "Työkalu Wikibase-lauseiden päivittämiseen ja lisäämiseen",
+	"wsu-special-wikibasestatementupdater": "Lausuntojen joukkopäivitys",
+	"wsu-wsu-batch-title": "Erän nimi",
+	"wsu-wsu-batch-contents": "Komennot Quick Statements V1 -muodossa",
+	"wsu-wsu-error": "Komennon jäsentäminen epäonnistui: $1",
+	"wsu-wsu-error-linetooshort": "Rivi $1 on liian lyhyt.",
+	"wsu-wsu-error-noqualifiers": "Tarkkeita ei vielä tueta.",
+	"wsu-wsu-error-onlyq": "Tämä työkalu tukee vain Q-kohteita.",
+	"wsu-wsu-error-unsupportedcommand": "Tuntematon komento.",
+	"wsu-your-batches": "Olet luonut seuraavat erät:",
+	"wsu-unknown-batch": "Tuntematon erä",
+	"wsu-goback": "Takaisin listaan",
+	"wsu-start": "Aloita (uudelleen) muokkaaminen",
+	"wsu-stop": "Pysäytä muokkaaminen",
+	"wsu-updater-api-failure": "API-vastauksen jäsentäminen epäonnistui",
+	"wsu-updater-ambiguous-update": "Ominaisuudella on useita esityksiä",
+	"wsu-give-permission": "Tämä työkalu tarvitsee luvan tehdä muokkauksia puolestasi. [[$1|Anna lupa]].",
+	"wsu-create-batch": "Luo uusi erä",
+	"wsu-command-P": "Ominaisuus",
+	"wsu-batchtable-subject": "Subjekti",
+	"wsu-batchtable-command": "Komento",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Arvo",
+	"wsu-batchtable-status": "Tila",
+	"wsu-js-batchtable-status": "$1 % valmis. {{PLURAL:$2|0=|$2 epäonnistunut|$2 epäonnistunutta.}}"
+}

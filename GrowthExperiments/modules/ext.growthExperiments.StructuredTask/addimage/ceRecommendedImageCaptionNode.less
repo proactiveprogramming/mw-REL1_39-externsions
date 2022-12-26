@@ -1,0 +1,52 @@
+@import '../../lib/wikimedia-ui-base/wikimedia-ui-base.less';
+@paragraphPadding: 7px 8px 27px 8px; // adding bottom padding for help button
+
+.mw-ge-recommendedImageCaption {
+	border: 2px solid @wmui-color-base50;
+	position: relative;
+
+	.mw-ge-recommendedImageCaption-placeholder,
+	.ve-ce-paragraphNode {
+		padding: 7px 8px 27px 8px; // adding bottom padding for help button
+	}
+
+	.ve-ce-paragraphNode {
+		color: @wmui-color-base10;
+	}
+
+	.mw-ge-recommendedImageCaption-placeholder {
+		color: @wmui-color-base30;
+		pointer-events: none;
+	}
+
+	&--with-placeholder {
+		border-color: @wmui-color-accent50;
+		background-color: @wmui-color-accent90;
+
+		.ve-ce-paragraphNode {
+			display: none;
+		}
+	}
+
+	&--with-warning {
+		border-color: @wmui-color-red50;
+	}
+
+	.mw-ge-recommendedImageCaption-help-button {
+		position: absolute;
+		right: 8px;
+		bottom: 8px;
+		opacity: 0.65;
+
+		// Override OOUI ButtonWidget's size
+		&.oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button {
+			min-height: 20px;
+			min-width: 20px;
+			padding: 0;
+
+			.oo-ui-iconElement-icon {
+				left: 0;
+			}
+		}
+	}
+}

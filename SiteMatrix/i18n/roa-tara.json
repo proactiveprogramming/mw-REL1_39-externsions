@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"sitematrix": "Elenghe de le Uicchi",
+	"sitematrix-summary": "Sta pàgena speciale elenghe tutte le uicchi jndr'à sta fattorie de uicchi.",
+	"sitematrix-desc": "Face 'ndrucà 'n'[[Special:SiteMatrix|elenghe de le Uicchi]]",
+	"sitematrix-language": "Lènghe",
+	"sitematrix-project": "Nome de proggette, collegamende 'mbrà inderproggette e collegamende 'mbrà inderuicchi",
+	"sitematrix-others": "Otre pruggette",
+	"sitematrix-other-projects": "Proggette",
+	"sitematrix-other-projects-language": "Lènghe",
+	"sitematrix-total": "'''Condegge totale: $1'''",
+	"sitematrix-sitetotal": "Totele",
+	"sitematrix-closed": "nisciune accesse pa scretture, accesse comblete pa letture",
+	"sitematrix-private": "accesse pa letture e scretture limitate",
+	"sitematrix-fishbowl": "accesse limitate pa scretture, comblete pa letture",
+	"sitematrix-nonglobal": "pubbleche, ma ce vole 'a reggistrazzione"
+}

@@ -1,0 +1,117 @@
+{
+    "analyzer": {
+        "he_plain": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer",
+                "preserve_original_recorder",
+                "icu_folding",
+                "preserve_original",
+                "remove_empty"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "he_plain_search": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "he_text": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "niqqud",
+                "hebrew_lemmatizer",
+                "icu_normalizer",
+                "icu_folding",
+                "remove_empty"
+            ],
+            "tokenizer": "hebrew",
+            "type": "custom"
+        },
+        "he_text_search": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "niqqud",
+                "hebrew_lemmatizer",
+                "icu_normalizer",
+                "icu_folding",
+                "remove_empty"
+            ],
+            "tokenizer": "hebrew",
+            "type": "custom"
+        },
+        "uk_plain": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "uk_plain_search": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "uk_text": {
+            "type": "ukrainian"
+        },
+        "uk_text_search": {
+            "type": "ukrainian"
+        }
+    },
+    "char_filter": {
+        "nnbsp_norm": {
+            "mappings": [
+                "\\u202F=>\\u0020"
+            ],
+            "type": "mapping"
+        },
+        "word_break_helper": {
+            "mappings": [
+                "_=>\\u0020",
+                ".=>\\u0020",
+                "(=>\\u0020",
+                ")=>\\u0020"
+            ],
+            "type": "mapping"
+        }
+    },
+    "filter": {
+        "icu_folding": {
+            "type": "icu_folding"
+        },
+        "icu_normalizer": {
+            "name": "nfkc_cf",
+            "type": "icu_normalizer"
+        },
+        "remove_empty": {
+            "min": 1,
+            "type": "length"
+        }
+    },
+    "tokenizer": []
+}

@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Neriah",
+			"Steeve815",
+			"YaronSh"
+		]
+	},
+	"wikispeech-desc": "כלי המרת טקסט לדיבור כדי להפוך את מיזמי ויקימדיה לנגישים יותר עבור כאלו שמסיבות שונות חווים קשיים בקריאה.",
+	"prefs-wikispeech-voice": "קול",
+	"prefs-wikispeech-speech-rate": "מהירות דיבור",
+	"prefs-wikispeech-speech-rate-percent": "קצב דובר (באחוזים)",
+	"prefs-wikispeech-enable": "הפעלת ויקידיבור",
+	"prefs-wikispeech-show-player": "תמיד להציג נגן",
+	"wikispeech-notice-prefs-apply-on-next-page-load": "שינויים להעדפות ייכנסו לתוקף בפעם הבאה שהדף נטען. כדי להאזין לדף הנוכחי עם ההעדפות הנוכחיות, יש לרענן את הדף אחרי השמירה.",
+	"right-wikispeech-listen": "האזנה לדף",
+	"right-wikispeech-read-lexicon": "קריאת המילון של ויקידיבור",
+	"right-wikispeech-edit-lexicon": "עריכת המילון של ויקידיבור",
+	"action-wikispeech-listen": "להאזין לדף",
+	"action-wikispeech-read-lexicon": "לקרוא את המילון של ויקידיבור",
+	"action-wikispeech-edit-lexicon": "לערוך את המילון של ויקידיבור",
+	"wikispeech-listen": "להאזין",
+	"wikispeech-dont-listen": "לא להאזין",
+	"wikispeech-error-loading-audio-title": "לא היה אפשר לטעון את האודיו",
+	"wikispeech-error-loading-audio-message": "זה יכול להיגרם על־ידי חיבור אינטרנט גרוע או על־ידי שגיאה בשרת. רוצה לנסות שוב או לעצור את ההשמעה?",
+	"wikispeech-retry": "לנסות שוב",
+	"wikispeech-stop": "לעצור",
+	"editlexicon": "עריכת המילון",
+	"wikispeech-language": "שפה",
+	"wikispeech-word": "מילה",
+	"wikispeech-transcription": "תעתיק",
+	"wikispeech-item-id": "מזהה",
+	"wikispeech-preview": "תצוגה מקדימה",
+	"wikispeech-preferred": "מועדף",
+	"wikispeech-lexicon-add-entry-success": "הרשומה נוספה למילון.",
+	"wikispeech-lexicon-new": "הוספה",
+	"wikispeech-lexicon-edit-entry-success": "הרשומה נערכה.",
+	"wikispeech-lexicon-copyrightnote": "שמירת השינויים מהווה את הסכמתך לשחרור התרומה שלך לפי תנאי [https://creativecommons.org/publicdomain/zero/1.0/ CC0].",
+	"group-wikispeech-edit-lexicon": "עורכי מילון ויקידיבור",
+	"group-wikispeech-edit-lexicon-member": "{{GENDER:$1|עורך מילון ויקידיבור|עורכת מילון ויקידיבור}}"
+}

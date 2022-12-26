@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"ديفيد"
+		]
+	},
+	"sii-desc": "يضيف إدخال الصورة الذي يسحب الصور من ويكيبيديا إلى [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:Page_Forms النماذج الدلالية]",
+	"sii-imageinput-loading": "جارٍ تحميل الصورة..."
+}

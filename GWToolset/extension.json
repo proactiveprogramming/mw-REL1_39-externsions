@@ -1,0 +1,116 @@
+{
+	"name": "GWToolset",
+	"version": "0.4.0",
+	"author": [
+		"Dan Entous"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:GWToolset",
+	"descriptionmsg": "gwtoolset-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "media",
+	"config": {
+		"GWToolsetConfigOverrides": {
+			"value": []
+		},
+		"GWTFileBackend": {
+			"value": ""
+		},
+		"GWTFBMaxAge": {
+			"value": "1 week"
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.38"
+	},
+	"namespaces": [
+		{
+			"id": 490,
+			"constant": "NS_GWTOOLSET",
+			"name": "GWToolset",
+			"protection": "gwtoolset",
+			"subpages": true
+		},
+		{
+			"id": 491,
+			"constant": "NS_GWTOOLSET_TALK",
+			"name": "GWToolset_talk",
+			"subpages": true
+		}
+	],
+	"ExtensionFunctions": [
+		"GWToolset\\Config::mergeOverrides"
+	],
+	"AutoloadNamespaces": {
+		"GWToolset\\": "includes/"
+	},
+	"AvailableRights": [
+		"gwtoolset"
+	],
+	"ExtensionMessagesFiles": {
+		"GWToolsetAlias": "GWToolset.alias.php",
+		"GWToolsetNamespaces": "GWToolset.namespaces.php"
+	},
+	"GroupPermissions": {
+		"gwtoolset": {
+			"gwtoolset": true,
+			"upload_by_url": true
+		}
+	},
+	"Hooks": {
+		"CodeEditorGetPageLanguage": "GWToolset\\Hooks::onCodeEditorGetPageLanguage",
+		"ListDefinedTags": "GWToolset\\Hooks::onListDefinedTags",
+		"ChangeTagsListActive": "GWToolset\\Hooks::onChangeTagsListActive"
+	},
+	"JobClasses": {
+		"gwtoolsetGWTFileBackendCleanupJob": "GWToolset\\Jobs\\GWTFileBackendCleanupJob",
+		"gwtoolsetUploadMediafileJob": "GWToolset\\Jobs\\UploadMediafileJob",
+		"gwtoolsetUploadMetadataJob": "GWToolset\\Jobs\\UploadMetadataJob"
+	},
+	"LogActionsHandlers": {
+		"gwtoolset/*": "LogFormatter"
+	},
+	"LogTypes": [
+		"gwtoolset"
+	],
+	"MessagesDirs": {
+		"GWToolset": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.GWToolset": {
+			"scripts": [
+				"resources/js/ext.gwtoolset.js"
+			],
+			"styles": [
+				"resources/css/ext.gwtoolset.css"
+			],
+			"messages": [
+				"gwtoolset-back-text-link",
+				"gwtoolset-cancel",
+				"gwtoolset-create-mapping",
+				"gwtoolset-create-prefix",
+				"gwtoolset-developer-issue",
+				"gwtoolset-loading",
+				"gwtoolset-save",
+				"gwtoolset-save-mapping",
+				"gwtoolset-save-mapping-name",
+				"gwtoolset-save-mapping-failed",
+				"gwtoolset-save-mapping-succeeded",
+				"gwtoolset-step-2-heading"
+			],
+			"dependencies": [
+				"jquery.spinner",
+				"jquery.ui"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "GWToolset"
+	},
+	"SpecialPages": {
+		"GWToolset": "GWToolset\\SpecialGWToolset"
+	},
+	"manifest_version": 2
+}

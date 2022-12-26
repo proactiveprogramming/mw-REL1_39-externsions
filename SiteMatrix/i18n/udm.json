@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Irus",
+			"Wadorgurt"
+		]
+	},
+	"sitematrix-desc": "Возьматъя [[Special:SiteMatrix|Викимедиалэн проектъёсызлы списокез]]",
+	"sitematrix-other-projects": "Мукет проектъёс",
+	"sitematrix-closed": "гожъяны лэзён ӧвӧл, быдэсак лэзён лыдӟыны",
+	"sitematrix-private": "лыдӟыны но гожъяны лэзён сюбегомытэмын",
+	"sitematrix-fishbowl": "сюбегомытэм лэзён гожъяны, быдэсак лэзён лыдӟыны"
+}

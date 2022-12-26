@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Botuzhaleny-sodamo",
+			"Denö",
+			"MuratTheTurkish",
+			"Rueter",
+			"Sura"
+		]
+	},
+	"sitesupport": "Лезксъярмаконь максома",
+	"tooltip-n-sitesupport": "Макста миненек нежедематарка",
+	"group-confirmed": "Кемекстань сёрмадыцят",
+	"group-confirmed-member": "кемекстазь сёрмадыця",
+	"grouppage-confirmed": "{{ns:project}}:Кемекстань сёрмадыцят",
+	"group-founder": "Лувонь путыйть",
+	"group-founder-member": "лувонь путый",
+	"grouppage-founder": "{{ns:project}}:Лувонь путыйть",
+	"group-import-member": "тевень совавтый",
+	"grouppage-import": "{{ns:project}}:Тевень совавтыйть",
+	"group-steward": "Туросторт",
+	"group-steward-member": "туростор",
+	"group-sysadmin": "Системань администраторт",
+	"wikimedia-copyright": "Сёрмакодстось саеви <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Лемдик-ЯвшикВейкетьстэ</a> лиценциясо;\nполадкс условияяк эрси.\nВарштыка <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\">Тевс нолдамонь вешемат</a> лопа лангс.",
+	"wikimedia-mobile-mainpage-title-loggedin": "Шумбрачи, $1!",
+	"wikibase-sitelinks-wikinews": "Викикулят",
+	"wikibase-sitelinks-wikiquote": "Викицитат",
+	"wikibase-sitelinks-wikisource": "Викикундо",
+	"wikibase-sitelinks-wikivoyage": "Вики килангт",
+	"wikimedia-developers": "Кастыцят-келейгавтыцят",
+	"wikimedia-statslink": "Статистикат",
+	"wikimedia-cookiestatement": "Нумолонь кшитнеде ёвтамо"
+}

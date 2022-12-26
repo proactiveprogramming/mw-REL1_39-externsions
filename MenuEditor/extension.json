@@ -1,0 +1,242 @@
+{
+	"name": "MenuEditor",
+	"version": "1.2-alpha",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://www.hallowelt.com",
+	"descriptionmsg": "menueditor-desc",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"MessagesDirs": {
+		"MenuEditor": "i18n"
+	},
+	"attributes": {
+		"MenuEditor": {
+			"Menus": {
+				"mediawiki-sidebar": {
+					"class": "MediaWiki\\Extension\\MenuEditor\\Menu\\MediawikiSidebar",
+					"services": [
+						"MWStakeWikitextParserFactory"
+					]
+				}
+			},
+			"Nodes": {
+				"menu-raw-text": {
+					"classname": "ext.menueditor.ui.data.node.TextNode",
+					"module": "ext.menuEditor.node"
+				},
+				"menu-keyword": {
+					"classname": "ext.menueditor.ui.data.node.KeywordNode",
+					"module": "ext.menuEditor.node"
+				},
+				"menu-wiki-link": {
+					"classname": "ext.menueditor.ui.data.node.WikilinkNode",
+					"module": "ext.menuEditor.node"
+				},
+				"menu-two-fold-link-spec": {
+					"classname": "ext.menueditor.ui.data.node.TwoFoldLinkSpecNode",
+					"module": "ext.menuEditor.node"
+				},
+				"mediawiki-sidebar-keyword": {
+					"classname": "ext.menueditor.ui.data.node.MediawikiSidebarKeywordNode",
+					"module": "ext.menuEditor.node.keyword"
+				}
+			}
+		}
+	},
+	"callback": "MediaWiki\\Extension\\MenuEditor\\Extension::onRegistration",
+	"ExtensionMessagesFiles": {
+		"MenuEditorAlias": "languages/MenuEditor.i18n.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\MenuEditor\\": "src/",
+		"MediaWiki\\Extension\\MenuEditor\\Tests\\": "tests/phpunit/"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"ResourceModules": {
+		"ext.menuEditor.pageEditOverride": {
+			"scripts": [
+				"ext.menuEditor.pageEdit.js"
+			]
+		},
+		"ext.menuEditor.boostrap": {
+			"scripts": [
+				"ext.menuEditor.bootstrap.js"
+			]
+		},
+		"ext.menuEditor.loader": {
+			"packageFiles": [
+				"ext.menuEditor.loader.js",
+				{
+					"name": "menus.json",
+					"callback": "MediaWiki\\Extension\\MenuEditor\\Package\\MenuRegistry::getMenus"
+				},
+				{
+					"name": "nodes.json",
+					"callback": "MediaWiki\\Extension\\MenuEditor\\Package\\MenuRegistry::getNodes"
+				}
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"ext.menuEditor.api": {
+			"scripts": [
+				"Api.js"
+			]
+		},
+		"ext.menuEditor.tree": {
+			"scripts": [
+				"ui/dialog/NodeDialog.js",
+				"ui/data/tree/MenuEditorTree.js",
+				"ui/data/tree/MediawikiSidebarTree.js"
+			],
+			"styles": [
+				"styles/tree.css"
+			],
+			"messages": [
+				"menueditor-ui-dialog-action-done",
+				"menueditor-ui-dialog-action-cancel",
+				"menueditor-ui-edit-node-label",
+				"menueditor-ui-node-type-selector-label",
+				"menueditor-ui-dialog-title"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.data"
+			]
+		},
+		"ext.menuEditor.node": {
+			"scripts": [
+				"ui/data/node/TreeNode.js",
+				"ui/data/node/TextNode.js",
+				"ui/data/node/KeywordNode.js",
+				"ui/data/node/WikilinkNode.js",
+				"ui/data/node/TwoFoldLinkSpecNode.js"
+			],
+			"dependencies": [
+				"ext.menuEditor.tree",
+				"oojs-ui.styles.icons-editing-styling",
+				"oojs-ui.styles.icons-editing-advanced"
+			],
+			"messages": [
+				"menueditor-ui-menu-wiki-link-label",
+				"menueditor-ui-menu-wiki-link-help",
+				"menueditor-ui-menu-two-fold-link-spec-label",
+				"menueditor-ui-menu-two-fold-link-spec-help",
+				"menueditor-ui-menu-raw-text-label",
+				"menueditor-ui-menu-keyword-label",
+				"menueditor-ui-menu-keyword-help",
+				"menueditor-ui-edit-node-label",
+				"menueditor-ui-form-field-keyword",
+				"menueditor-ui-form-field-text",
+				"menueditor-ui-form-field-target",
+				"menueditor-ui-form-field-label",
+				"menueditor-ui-menu-raw-text-help",
+				"menueditor-ui-menu-wiki-link-label-edit",
+				"menueditor-ui-menu-two-fold-link-spec-label-edit",
+				"menueditor-ui-menu-raw-text-label-edit",
+				"menueditor-ui-menu-keyword-label-edit",
+				"menueditor-ui-cancel"
+			]
+		},
+		"ext.menuEditor.panel": {
+			"scripts": [
+				"ui/panel/MenuPanel.js"
+			],
+			"messages": [
+				"menueditor-ui-submit",
+				"menueditor-ui-cancel",
+				"menueditor-ui-redlink-notice"
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"ext.menuEditor.toolbar": {
+			"scripts": [
+				"ui/widget/MenuToolbar.js"
+			],
+			"messages": [
+				"menueditor-toolbar-submit",
+				"menueditor-toolbar-cancel",
+				"menueditor-toolbar-add"
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"ext.menuEditor.node.keyword": {
+			"packageFiles": [
+				"ui/data/node/MediawikiSidebarKeywordNode.js",
+				{
+					"name": "ui/data/node/config.json",
+					"callback": "MediaWiki\\Extension\\MenuEditor\\ClientConfig::makeConfigJson"
+				}
+			],
+			"messages": [
+				"menueditor-ui-mediawiki-sidebar-keyword-label-edit",
+				"menueditor-ui-mediawiki-sidebar-keyword-label"
+			],
+			"dependencies": [
+				"ext.menuEditor.node"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "MenuEditor/resources"
+	},
+	"Hooks": {
+		"BeforeInitialize": "initializeMenus",
+		"SkinTemplateNavigation::Universal": "editActions",
+		"MediaWikiPerformAction": "editActions",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin"
+	},
+	"HookHandlers": {
+		"initializeMenus": {
+			"class": "MediaWiki\\Extension\\MenuEditor\\Hook\\InitializeMenus",
+			"services": [ "MenuEditorMenuFactory" ]
+		},
+		"editActions": {
+			"class": "MediaWiki\\Extension\\MenuEditor\\Hook\\EditActionHookHandler",
+			"services": [
+				"HookContainer", "MenuEditorMenuFactory"
+			]
+		},
+		"discovery-skin": {
+			"class": "MediaWiki\\Extension\\MenuEditor\\Hook\\DiscoverySkin",
+			"services": [
+				"HookContainer"
+			]
+		}
+	},
+	"Actions": {
+		"menueditsource": "EditAction"
+	},
+	"config": {
+		"MenuEditorMediawikiSidebarAllowedKeywords": {
+			"value": [ "SEARCH", "TOOLBOX", "LANGUAGES" ]
+		}
+	},
+	"RestRoutes": [
+		{
+			"method": "GET",
+			"path": "/menueditor/parse/{pagename}",
+			"class": "MediaWiki\\Extension\\MenuEditor\\Api\\ParseHandler",
+			"services": [ "TitleFactory", "MenuEditorMenuFactory", "MWStakeWikitextParserFactory", "RevisionStore" ]
+		},
+		{
+			"method": "PUT",
+			"path": "/menueditor/{pagename}",
+			"class": "MediaWiki\\Extension\\MenuEditor\\Api\\SaveContentHandler",
+			"services": [ "TitleFactory", "MenuEditorMenuFactory", "MWStakeWikitextParserFactory" ]
+		}
+	],
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

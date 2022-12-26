@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"gwtoolset": "GWToolset",
+	"gwtoolset-desc": "GWToolset, 'nu strumende de carecamende massive pe GLAM",
+	"right-gwtoolset": "Ause GWToolset",
+	"action-gwtoolset": "ause GWToolset",
+	"group-gwtoolset": "Utinde GWToolset",
+	"group-gwtoolset-member": "{{GENDER:$1|Utende GWToolset}}",
+	"grouppage-gwtoolset": "{{ns:project}}:Utinde GWToolset",
+	"gwtoolset-back-to-top": "'ngape 'a pàgene",
+	"gwtoolset-batchjob-creation-failure": "'Mbossibbele ccrejà 'na fatìe batch de tipe \"$1\".",
+	"gwtoolset-could-not-close-xml": "'Mbossibbele achiudere 'u lettore XML.",
+	"gwtoolset-could-not-open-xml": "'Mbossibbele aprì 'u fail XML pa letture.",
+	"gwtoolset-fsfile-empty": "'U fail ere vacande e ha state scangellate.",
+	"gwtoolset-fsfile-retrieval-failure": "'U fail non ge pò essre pigghiate da 'a URL $1.",
+	"gwtoolset-ignorewarnings": "<code>ignorewarnings</code> non 'mbostate.",
+	"gwtoolset-no-accepted-types": "Nisciune tipe accettate mise.",
+	"gwtoolset-no-default": "Nisciune valore date.",
+	"gwtoolset-mediawiki-template": "Template $1",
+	"gwtoolset-submit": "Conferme",
+	"gwtoolset-summary-heading": "Riepiloghe",
+	"gwtoolset-cancel": "Annulle",
+	"gwtoolset-save": "Reggìstre",
+	"gwtoolset-json-error-unknown": "Errore scanusciute.",
+	"gwtoolset-accepted-file-types": "Accettate {{PLURAL:$1|tipe}} de file:"
+}

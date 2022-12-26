@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brettchenweber"
+		]
+	},
+	"action-similareditors": "Zugriff auf [[Special:SimilarEditors]]",
+	"right-similareditors": "Zugriff auf [[Special:SimilarEditors]]",
+	"similareditors": "Ähnliche Benutzer",
+	"similareditors-desc": "Liefert Details über Benutzer mit ähnlichen Bearbeitungshistorien.",
+	"similareditors-error-database-refresh": "Etwas ist schiefgelaufen, bitte versuche es in ein paar Minuten erneut.",
+	"similareditors-error-default": "Etwas ist schiefgelaufen, wir untersuchen es.",
+	"similareditors-error-user-bot": "Benutzer $1 ist ein Bot und fällt daher nicht in den Geltungsbereich.",
+	"similareditors-error-user-no-account": "Benutzer $1 scheint kein Konto in der englischen Wikipedia zu haben.",
+	"similareditors-error-user-no-edits": "Benutzer $1 scheint kein Konto (oder Änderungen im Geltungsbereich) in der englischen Wikipedia zu haben.",
+	"similareditors-extensionname": "Ähnliche Benutzer",
+	"similareditors-form-field-target-label": "Benutzername oder IP-Adresse:",
+	"similareditors-form-field-target-placeholder": "Benutzername oder 1.1.1.1",
+	"similareditors-form-legend": "Ähnliche Bearbeiter finden",
+	"similareditors-form-submit": "Suchen",
+	"similareditors-no-results": "Es gibt keine Ergebnisse.",
+	"similareditors-overlap-level-high": "Hoch",
+	"similareditors-overlap-level-low": "Niedrig",
+	"similareditors-overlap-level-medium": "Mittel",
+	"similareditors-overlap-level-no-overlap": "Keine Überschneidung",
+	"similareditors-results-day-overlap": "Überschneidungen am Tag",
+	"similareditors-results-edit-overlap": "Überschneidung der Bearbeitung",
+	"similareditors-results-edits": "Bearbeitungen von Daten",
+	"similareditors-results-hour-overlap": "Stunden-Überschneidungen",
+	"similareditors-results-inverse-edit-overlap": "Überschneidung der Bearbeitung invertieren",
+	"similareditors-results-user": "Benutzer",
+	"similareditors-results-user-timeline": "Zeitleiste",
+	"similareditors-summary": "Sucht die ähnlichsten Benutzer zu einem bestimmten Benutzer anhand der Bearbeitungshistorie.",
+	"similareditors-survey-question": "Fandest du die Ergebnisse hilfreich? Nach welchen anderen Informationen suchst du, wenn du versuchst, Sockenpuppen zu finden?"
+}

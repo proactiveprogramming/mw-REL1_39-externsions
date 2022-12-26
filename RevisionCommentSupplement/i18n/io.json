@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos",
+			"Joao Xavier"
+		]
+	},
+	"logentry-revisioncommentsupplement-create": "$1 {{GENDER:$2|kreis}} suplementala komento, $6 ye la revizo $4",
+	"logentry-revisioncommentsupplement-delete": "$1 {{GENDER:$2|efacis}} suplementala komento, $5 ye la revizo $4",
+	"logentry-revisioncommentsupplement-modify": "$1 {{GENDER:$2|modifikis}} suplementala komento de $5 a $6 ye la revizo $4",
+	"revcs-alert-exist-supplement": "Suplementala komento pri ca revizo existas en la datumo-tabelo.",
+	"revcs-alert-norevision": "La revizo ne esas disponebla. Sive ol ne kreesis ankore, sive ol ja efacesis.",
+	"revcs-alert-supplement-asterisk": "La suplementala komento sendita esas asterisko (*).",
+	"revcs-alert-supplement-empty": "La suplementala komento sendita esas vakua.",
+	"revcs-alert-supplement-zero": "La suplementala komento sendita esas 'zero'.",
+	"revcs-alert-supplement-same-as-summary": "La texto di la suplementala komento esas sama kam la rezumo di la revizo.",
+	"revcs-alert-supplement-same-as-supplement": "La texto di la suplementala komento sendita esas egal ad altru che datumo-tablo.",
+	"revcs-edit-reason": "Motivo:",
+	"revcs-edit-revision-id": "Revizuro #:",
+	"revcs-error": "Eroro: $1",
+	"revcs-error-edit-denied": "Ne povis konservar la suplementala komento.",
+	"revcs-error-history-nosupplement": "La suplementala komento ne existas en la tablo di datumi. Sive ol ankore ne kreesis, sive ol ja efacesis.",
+	"revcs-error-history-revision-id": "ID dil revizo esas nekorekta.",
+	"revcs-error-history-unuse": "Ca wiki ne havas historio pri suplementala komenti.",
+	"revcs-history-rcsh-reason": "Motivo",
+	"revcs-list-extended-supplement-all": "omna",
+	"revcs-list-extended-supplement-empty": "vakua",
+	"revcs-list-rcs-rev-id": "Revizuro #",
+	"revcs-list-rcs-rev-id-edit": "Redaktar",
+	"revcs-list-rcs-user-text": "Uzero",
+	"revcs-list-reset": "Restaurez",
+	"revcs-list-sort": "Ordinar segun:",
+	"revcs-log-nosupplement": "(nulo)",
+	"revcs-show-reason": "Motivo: $1",
+	"revcs-show-revision": "Revizuro: $1"
+}

@@ -1,0 +1,3 @@
+[submodule "lib/codex"]
+	path = lib/codex
+	url = https://gerrit.wikimedia.org/r/design/codex

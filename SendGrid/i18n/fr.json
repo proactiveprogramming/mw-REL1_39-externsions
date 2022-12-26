@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alangi Derick",
+			"Paraboule",
+			"Verdy p"
+		]
+	},
+	"sendgrid-desc": "Envoyer des emails via le service SendGrid API depuis MediaWiki.",
+	"sendgrid-email-not-sent": "Le courriel n’a pas été envoyé en raison d’un problème avec l’API. Vérifiez votre clé API et assurez-vous qu’elle est correcte."
+}

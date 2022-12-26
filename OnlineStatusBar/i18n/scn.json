@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|Ammucciatu|Ammucciata|Ammucciatu/a}}",
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Scanusciutu|Scanusciuta|Scanusciutu/a}}"
+}

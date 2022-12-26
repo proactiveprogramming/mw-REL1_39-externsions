@@ -1,0 +1,27 @@
+{
+	"name": "OnlyRecentRecentChanges",
+	"version": "1.5.0",
+	"author": "Thomas Gries",
+	"url": "https://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges",
+	"descriptionmsg": "onlyrecentrecentchanges-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"DefaultUserOptions": {
+		"onlyrecentrecentchanges-show-only-recent-change": true
+	},
+	"MessagesDirs": {
+		"OnlyRecentRecentChanges": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"OnlyRecentRecentChangesHooks": "OnlyRecentRecentChangesHooks.php"
+	},
+	"Hooks": {
+		"GetPreferences": "OnlyRecentRecentChangesHooks::onGetPreferences",
+		"ChangesListSpecialPageQuery": "OnlyRecentRecentChangesHooks::onChangesListSpecialPageQuery"
+	},
+	"manifest_version": 2
+}

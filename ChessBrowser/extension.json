@@ -1,0 +1,108 @@
+{
+	"name": "ChessBrowser",
+	"version": "0.4.0",
+	"author": [
+		"Wugapodes",
+		"Kipod",
+		"DannyS712"
+	],
+	"descriptionmsg": "chessbrowser-desc",
+	"type": "parserhook",
+	"license-name": "GPL-3.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:ChessBrowser",
+	"requires": {
+		"MediaWiki": ">= 1.35"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ChessBrowser\\": "includes/"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\ChessBrowser\\ChessBrowserHooks::onParserFirstCallInit",
+		"OutputPageParserOutput": "MediaWiki\\Extension\\ChessBrowser\\ChessBrowserHooks::onOutputPageParserOutput"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "ChessBrowser"
+	},
+	"ResourceModules": {
+		"ext.chessViewer": {
+			"templates": {
+				"ChessControls.mustache": "templates/ChessControls.mustache"
+			},
+			"scripts": [
+				"modules/ext.chessViewer.core.js"
+			],
+			"styles": [
+				"modules/ext.chessViewer.css"
+			],
+			"messages": [
+				"chessbrowser-first-rank",
+				"chessbrowser-second-rank",
+				"chessbrowser-third-rank",
+				"chessbrowser-fourth-rank",
+				"chessbrowser-fifth-rank",
+				"chessbrowser-sixth-rank",
+				"chessbrowser-seventh-rank",
+				"chessbrowser-eighth-rank",
+				"chessbrowser-a-file",
+				"chessbrowser-b-file",
+				"chessbrowser-c-file",
+				"chessbrowser-d-file",
+				"chessbrowser-e-file",
+				"chessbrowser-f-file",
+				"chessbrowser-g-file",
+				"chessbrowser-h-file",
+				"chessbrowser-beginning-of-game",
+				"chessbrowser-previous-move",
+				"chessbrowser-slow-autoplay",
+				"chessbrowser-play-pause-button",
+				"chessbrowser-fast-autoplay",
+				"chessbrowser-next-move",
+				"chessbrowser-end-of-game",
+				"chessbrowser-flip-board",
+				"chessbrowser-boardstate-initial",
+				"chessbrowser-boardstate-final",
+				"chessbrowser-boardstate-check",
+				"chessbrowser-boardstate-checkmate",
+				"chessbrowser-castling-queenside",
+				"chessbrowser-castling-kingside",
+				"chessbrowser-piece-white-king",
+				"chessbrowser-piece-white-queen",
+				"chessbrowser-piece-white-bishop",
+				"chessbrowser-piece-white-knight",
+				"chessbrowser-piece-white-rook",
+				"chessbrowser-piece-white-pawn",
+				"chessbrowser-piece-black-king",
+				"chessbrowser-piece-black-queen",
+				"chessbrowser-piece-black-bishop",
+				"chessbrowser-piece-black-knight",
+				"chessbrowser-piece-black-rook",
+				"chessbrowser-piece-black-pawn",
+				"chessbrowser-move",
+				"chessbrowser-capture",
+				"chessbrowser-promote",
+				"chessbrowser-black-moves",
+				"chessbrowser-white-moves",
+				"chessbrowser-chessboard-label",
+				"chessbrowser-empty-square",
+				"chessbrowser-occupied-black",
+				"chessbrowser-occupied-white"
+			]
+		},
+		"ext.chessViewer.styles": {
+			"styles": [
+				"modules/ext.chessViewer.styles.less"
+			],
+			"targets": [ "mobile", "desktop" ]
+		}
+	},
+	"MessagesDirs": {
+		"ChessBrowser": [
+			"i18n"
+		]
+	},
+	"TrackingCategories": [
+		"chessbrowser-invalid-category"
+	],
+	"manifest_version": 2
+}

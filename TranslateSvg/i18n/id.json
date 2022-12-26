@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daud I.F. Argana",
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"translatesvg-desc": "Menyediakan antarmuka bergaya bawaan untuk menerjemahkan SVG sesuai dengan ketentuan SVG1.1",
+	"translate-taskui-export-as-svg": "Simpan kembali ke berkas SVG asal",
+	"translate-svg-nodesc": "(Keterangan berkas tidak disediakan.)",
+	"translate-svg-thumbnail": "Berkas asli",
+	"translate-svg-js-thumbnail": "(keluku diperbarui secara otomatis)",
+	"translate-page-description-legend-svgmg": "Informasi tentang berkas ini",
+	"translate-taction-mstats-svgmg": "Statistik berkas",
+	"translate-taction-export-svgmg": "Mengunggah versi terbaru dari berkas",
+	"translate-svg-table-header": "Penanda pesan",
+	"translate-svg-filepage-caption": "Gambar ini saat ditampilkan sebagai PNG dalam bahasa lain: $1",
+	"translate-svg-filepage-caption-translator": "Gambar ini saat ditampilkan sebagai PNG dalam bahasa lain: $1; atau terjemahkan ke dalam $2",
+	"translate-svg-filepage-edit": "sunting",
+	"translate-svg-filepage-finish": "selesai",
+	"translate-svg-filepage-another": "bahasa lain",
+	"translate-svg-filepage-other": "bahasa lain",
+	"translate-svg-filepage-invite": "Berkas ini dapat dengan mudah diterjemahkan ke dalam $1",
+	"translate-svg-autocreate": "Membuat satuan terjemahan secara otomatis berdasarkan perubahan pada berkas SVG sumber",
+	"translate-svg-autodelete": "Menghapus satuan terjemahan yang tidak diperlukan secara otomatis berdasarkan perubahan pada berkas SVG sumber",
+	"translate-svg-autoedit": "Memperbarui satuan terjemahan secara otomatis berdasarkan perubahan pada berkas SVG sumber",
+	"translate-svg-autofuzzy": "Menandai terjemahan sebagai usang secara otomatis berdasarkan perubahan pada berkas SVG sumber",
+	"translate-svg-upload-comment": "Memperbarui terjemahan (memulai: $1; mengubah/memperluas: $2)",
+	"translate-svg-upload-none": "(tidak ada)",
+	"translate-svg-chooselanguage-title": "Pilihan bahasa",
+	"translate-svg-chooselanguage-desc": "Silakan pilih bahasa terjemahan pilihan Anda untuk berkas SVG ini:",
+	"translate-svg-instructions-title": "Apakah ini pertama kali Anda menerjemahkan berkas SVG seperti ini?",
+	"translate-svg-new-label": "Bahasa:",
+	"translate-js-properties-legend": "Atribut",
+	"translate-js-label-x": "Koordinat X:",
+	"translate-js-label-y": "Koordinat Y:",
+	"translate-js-label-color": "Warna:",
+	"translate-js-label-font-family": "Fon:",
+	"translate-js-label-bold": "Tebal",
+	"translate-js-label-italic": "Miring",
+	"translate-js-label-underline": "Garis bawah",
+	"translate-js-font-family-inherit": "(diturunkan)"
+}

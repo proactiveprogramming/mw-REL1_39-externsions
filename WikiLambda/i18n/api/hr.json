@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bugoslav"
+		]
+	},
+	"apihelp-query+wikilambdasearch_labels-param-language": "Jezični kôd MediaWikija unutar koga će biti izvršeno pretraživanje"
+}

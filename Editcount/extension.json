@@ -1,0 +1,27 @@
+{
+	"name": "Editcount",
+	"author": "Ævar Arnfjörð Bjarmason",
+	"url": "https://www.mediawiki.org/wiki/Extension:Editcount",
+	"descriptionmsg": "editcount-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
+	"SpecialPages": {
+		"Editcount": "Editcount"
+	},
+	"MessagesDirs": {
+		"Editcount": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"EditcountAliases": "Editcount.alias.php"
+	},
+	"AutoloadClasses": {
+		"Editcount": "src/Editcount.php",
+		"EditcountHTML": "src/EditcountHTML.php"
+	},
+	"manifest_version": 1
+}

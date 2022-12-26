@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello"
+		]
+	},
+	"mediafunctions-desc": "Raščlanjivačke funkcije za preuzimanje podataka o medijskim datotekama",
+	"mediafunctions-invalid-title": "„$1” nije validan naslov",
+	"mediafunctions-not-exist": "Datoteka „$1“ ne postoji"
+}

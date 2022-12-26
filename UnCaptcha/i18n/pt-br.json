@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"uncaptcha-auth-label-not": "Não sou um robô.",
+	"uncaptcha-auth-label-am": "Sou um robô.",
+	"uncaptcha-auth-failed": "Erro: Você é um robô.",
+	"uncaptcha-desc": "Identifica se os usuários são robôs durante a criação da conta"
+}

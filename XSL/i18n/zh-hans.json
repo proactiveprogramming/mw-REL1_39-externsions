@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"StarrySky"
+		]
+	},
+	"xsl-desc": "对 XML 文档执行 XSL 转换"
+}

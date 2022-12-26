@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"bs-whoisonline-nousers": "Niko nije prijavljen.",
+	"bs-whoisonline-pref-orderby": "Poređaj po:",
+	"bs-whoisonline-pref-orderby-name": "Ime",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Broj prijava",
+	"bs-whoisonline-statistics-report-login-number": "Prijave"
+}

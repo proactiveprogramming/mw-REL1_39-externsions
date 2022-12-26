@@ -1,0 +1,11 @@
+{
+	"extends": "stylelint-config-wikimedia",
+	"rules": {
+		"no-descending-specificity": null,
+		"selector-no-vendor-prefix": null,
+		"value-keyword-case": null,
+		"declaration-property-unit-disallowed-list": null,
+		"number-leading-zero": "never",
+		"font-weight-notation": "numeric"
+	}
+}

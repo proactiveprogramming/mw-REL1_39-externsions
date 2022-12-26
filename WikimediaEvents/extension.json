@@ -1,0 +1,270 @@
+{
+	"name": "WikimediaEvents",
+	"version": "1.2.0",
+	"author": [
+		"Matthew Flaschen",
+		"Ori Livneh",
+		"Benny Situ"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:WikimediaEvents",
+	"descriptionmsg": "wikimediaevents-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.38.0",
+		"extensions": {
+			"EventLogging": "*",
+			"EventBus": "*"
+		}
+	},
+	"AutoloadNamespaces": {
+		"WikimediaEvents\\": "includes/"
+	},
+	"TestAutoloadNamespaces": {
+		"WikimediaEvents\\Tests\\": "tests/phpunit/"
+	},
+	"HookHandlers": {
+		"BlockMetricsHooks": {
+			"class": "WikimediaEvents\\BlockMetrics\\BlockMetricsHooks",
+			"services": [
+				"UserFactory",
+				"EventBus.EventFactory"
+			]
+		},
+		"EditPageHooks": {
+			"class": "WikimediaEvents\\EditPage\\EditPageHooks",
+			"services": [
+				"PermissionManager"
+			]
+		}
+	},
+	"Hooks": {
+		"BeforeInitialize": "WikimediaEvents\\WikimediaEventsHooks::onBeforeInitializeWMDECampaign",
+		"BeforePageDisplay": "WikimediaEvents\\WikimediaEventsHooks::onBeforePageDisplay",
+		"PageSaveComplete": "WikimediaEvents\\WikimediaEventsHooks::onPageSaveComplete",
+		"PreferencesFormPreSave": "WikimediaEvents\\VectorPrefDiffInstrumentation::onPreferencesFormPreSave",
+		"SaveUserOptions": "WikimediaEvents\\PrefUpdateInstrumentation::onSaveUserOptions",
+		"ArticleViewHeader": "WikimediaEvents\\WikimediaEventsHooks::onArticleViewHeader",
+		"ResourceLoaderGetConfigVars": "WikimediaEvents\\WikimediaEventsHooks::onResourceLoaderGetConfigVars",
+		"ListDefinedTags": "WikimediaEvents\\WikimediaEventsHooks::onListDefinedTags",
+		"ChangeTagsListActive": "WikimediaEvents\\WikimediaEventsHooks::onChangeTagsListActive",
+		"XAnalyticsSetHeader": "WikimediaEvents\\WikimediaEventsHooks::onXAnalyticsSetHeader",
+		"SpecialSearchGoResult": "WikimediaEvents\\WikimediaEventsHooks::onSpecialSearchGoResult",
+		"SpecialSearchResults": "WikimediaEvents\\WikimediaEventsHooks::onSpecialSearchResults",
+		"RecentChange_save": [
+			"WikimediaEvents\\WikimediaEventsHooks::onRecentChangeSaveCrossWikiUpload",
+			"WikimediaEvents\\WikimediaEventsHooks::onRecentChangeSaveEditCampaign"
+		],
+		"ResourceLoaderRegisterModules": "WikimediaEvents\\WikimediaEventsHooks::onResourceLoaderRegisterModules",
+		"RevisionRecordInserted": "WikimediaEvents\\WikimediaEventsHooks::onRevisionRecordInserted",
+		"MakeGlobalVariablesScript": "WikimediaEvents\\WikimediaEventsHooks::onMakeGlobalVariablesScript",
+		"SpecialMuteSubmit": "WikimediaEvents\\WikimediaEventsHooks::onSpecialMuteSubmit",
+		"PermissionErrorAudit": "BlockMetricsHooks",
+		"EditPage::showReadOnlyForm:initial": "EditPageHooks"
+	},
+	"APIModules": {
+		"wikimediaeventsblockededit": {
+			"class": "WikimediaEvents\\ApiWikimediaEventsBlockedEdit",
+			"services": [
+			]
+		}
+	},
+	"MessagesDirs": {
+		"WikimediaEvents": [
+			"i18n"
+		]
+	},
+	"attributes": {
+		"EventLogging": {
+			"Schemas": {
+				"DesktopWebUIActionsTracking": "/analytics/legacy/desktopwebuiactionstracking/1.4.0",
+				"EditAttemptStep": "/analytics/legacy/editattemptstep/1.3.1",
+				"VisualEditorFeatureUse": "/analytics/legacy/visualeditorfeatureuse/1.0.0",
+				"PrefUpdate": "/analytics/legacy/prefupdate/1.0.0",
+				"SearchSatisfaction": "/analytics/legacy/searchsatisfaction/1.4.0",
+				"SpecialMuteSubmit": "/analytics/legacy/specialmutesubmit/1.0.0",
+				"MobileWebUIActionsTracking": "/analytics/legacy/mobilewebuiactionstracking/1.3.0",
+				"WMDEBannerEvents": "/analytics/legacy/wmdebannerevents/1.0.0",
+				"WMDEBannerInteractions": "/analytics/legacy/wmdebannerinteractions/1.0.0",
+				"WMDEBannerSizeIssue": "/analytics/legacy/wmdebannersizeissue/1.0.0",
+				"WikidataCompletionSearchClicks": "/analytics/legacy/wikidatacompletionsearchclicks/1.0.0",
+				"Test": "/analytics/legacy/test/1.2.0",
+				"UniversalLanguageSelector": "/analytics/legacy/universallanguageselector/1.4.0"
+			}
+		},
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.wikimediaEvents.visualEditor"
+			]
+		}
+	},
+	"ResourceModules": {
+		"ext.wikimediaEvents": {
+			"localBasePath": "modules/ext.wikimediaEvents",
+			"remoteExtPath": "WikimediaEvents/modules/ext.wikimediaEvents",
+			"packageFiles": [
+				"index.js",
+				"statsd.js",
+				"deprecate.js",
+				"clientError.js",
+				"sessionTick.js",
+				"webABTestEnrollment.js",
+				"webUIScroll.js",
+				"readingDepth.js",
+				"phpEngine.js",
+				"blockedEdit.js",
+				{
+					"name": "searchSatisfaction.js",
+					"callback": "WikimediaEvents\\WikimediaEventsHooks::getModuleFile",
+					"callbackParam": "searchSatisfaction"
+				},
+				{
+					"name": "desktopWebUIActions.js",
+					"callback": "WikimediaEvents\\WikimediaEventsHooks::getModuleFile",
+					"callbackParam": "desktopWebUIActions"
+				},
+				{
+					"name": "mobileWebUIActions.js",
+					"callback": "WikimediaEvents\\WikimediaEventsHooks::getModuleFile",
+					"callbackParam": "mobileWebUIActions"
+				},
+				{
+					"name": "universalLanguageSelector.js",
+					"callback": "WikimediaEvents\\WikimediaEventsHooks::getModuleFile",
+					"callbackParam": "universalLanguageSelector"
+				},
+				{
+					"name": "config.json",
+					"callback": "WikimediaEvents\\WikimediaEventsHooks::getModuleConfig"
+				}
+			],
+			"dependencies": [
+				"ext.eventLogging",
+				"mediawiki.user",
+				"mediawiki.cookie",
+				"mediawiki.Uri",
+				"mediawiki.experiments",
+				"mediawiki.storage",
+				"mediawiki.visibleTimeout"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.wikimediaEvents.wikibase": {
+			"localBasePath": "modules/ext.wikimediaEvents.wikibase",
+			"remoteExtPath": "WikimediaEvents/modules/ext.wikimediaEvents.wikibase",
+			"packageFiles": [
+				"completionClicks.js",
+				{
+					"name": "config.json",
+					"config": {
+						"wikidataCompletionSearchClicks": "WMEWikidataCompletionSearchClicks"
+					}
+				}
+			],
+			"dependencies": [
+				"ext.eventLogging",
+				"mediawiki.user",
+				"mediawiki.experiments"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules/",
+		"remoteExtPath": "WikimediaEvents/modules"
+	},
+	"QUnitTestModule": {
+		"localBasePath": "",
+		"remoteExtPath": "WikimediaEvents/",
+		"packageFiles": [
+			"tests/qunit/ext.wikimediaEvents/index.js",
+			"tests/qunit/ext.wikimediaEvents/clientError.test.js",
+			"modules/ext.wikimediaEvents/clientError.js",
+			{
+				"name": "modules/ext.wikimediaEvents/config.json",
+				"content": {}
+			}
+		]
+	},
+	"config": {
+		"WMEReadingDepthSamplingRate": {
+			"value": 0
+		},
+		"WMEDesktopWebUIActionsTracking": {
+			"value": 0
+		},
+		"WMEDesktopWebUIActionsTrackingOversampleLoggedInUsers": {
+			"value": true
+		},
+		"WMEWebUIScrollTrackingSamplingRate": {
+			"value": 0
+		},
+		"WMEWebUIScrollTrackingSamplingRateAnons": {
+			"value": 0
+		},
+		"WMEWebUIScrollTrackingTimeToWaitBeforeScrollUp": {
+			"value": 0
+		},
+		"WMEMobileWebUIActionsTracking": {
+			"value": 0
+		},
+		"WMEStatsdBaseUri": {
+			"value": false
+		},
+		"WMEEditCampaigns": {
+			"value": []
+		},
+		"WMESchemaEditAttemptStepSamplingRate": {
+			"value": "0.0625"
+		},
+		"WMESchemaVisualEditorFeatureUseSamplingRate": {
+			"value": "0.0625",
+			"description": "The default sampling rate for the VisualEditorFeatureUse instruments. This should only ever differ from WMESchemaEditAttemptStepSamplingRate (see above) when that is set to 1. The instruments themselves are defined in the DiscussionTools, MobileFrontend, and VisualEditor extensions. See https://phabricator.wikimedia.org/T312016 for detail."
+		},
+		"WMEWikidataCompletionSearchClicks": {
+			"value": []
+		},
+		"WMEClientErrorIntakeURL": {
+			"value": false
+		},
+		"WMESessionTick": {
+			"value": false
+		},
+		"WMEVectorPrefDiffSalt": {
+			"value": null,
+			"description": "@var string Used as a salt in VectorPrefDiffInstrumentation to hash the user id. Set this in `wmf-config/PrivateSettings`."
+		},
+		"WMEPageSchemaSplitTestSamplingRatio": {
+			"value": 0,
+			"description": "If set to 1, 100% of pages will be sampled. Half of those (.5) will receive the new treatment. See https://phabricator.wikimedia.org/T301584 and associated tasks for detail."
+		},
+		"WMEPageSchemaSplitTestBuckets": {
+			"value": [
+				"control",
+				"treatment"
+			],
+			"description": "Pages are bucketed in [0, .5) for control and [.5, 1) for treatment. If a page is sampled and bucketed in treatment, it will contain the new changes. Otherwise, it will show no changes. See https://phabricator.wikimedia.org/T301584 and associated tasks for detail."
+		},
+		"WMEPageSchemaSplitTestTreatment": {
+			"value": "treatment",
+			"description": "The name of the bucket where pages see the new treatment. See https://phabricator.wikimedia.org/T301584 and associated tasks for detail."
+		},
+		"WMENewPHPVersion": {
+			"value": "",
+			"description": "The php version we're moving to."
+		},
+		"WMENewPHPSamplingRate": {
+			"value": 0,
+			"description": "The sampling rate of all users we want to direct to the new PHP version."
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"manifest_version": 2
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-socialarticleactions-type-articlesave": "Cancia vuci",
+	"bs-socialarticleactions-type-filesave": "Cancia file",
+	"bs-socialarticleactions-type-filedelete": "File cancillatu",
+	"bs-socialarticleactions-entityactionarticlesave-header": "[[User:$1|$2]] canciau la vuci [[:$6|$6]]",
+	"bs-socialarticleactions-entityactionarticledelete-header": "[[User:$1|$2]] cancillau la vuci [[:$6|$6]]",
+	"bs-socialarticleactions-entityactionfiledelete-header": "[[User:$1|$2]] cancillau lu file [[:$6|$6]]"
+}

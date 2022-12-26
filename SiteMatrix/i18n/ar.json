@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abanima",
+			"Ideophagous",
+			"Maroen1990",
+			"Meno25",
+			"بدارين",
+			"ديفيد"
+		]
+	},
+	"sitematrix": "قائمة الويكيات",
+	"sitematrix-summary": "تسرد هذه الصفحة الخاصة جميع مواقع الويكي الموجودة في مزرعة الويكي هذه.",
+	"sitematrix-desc": "يعرض [[Special:SiteMatrix|قائمة مواقع الويكي]]",
+	"sitematrix-language": "اللغة",
+	"sitematrix-project": "اسم المشروع، وصلة المشروع الداخلية ووصلة الإنترويكي",
+	"sitematrix-others": "مشاريع أخرى",
+	"sitematrix-other-projects": "المشروع",
+	"sitematrix-other-projects-language": "اللغة",
+	"sitematrix-total": "'''إجمالي العدد: $1'''",
+	"sitematrix-sitetotal": "الإجمالي",
+	"sitematrix-closed": "لا صلاحية كتابة، صلاحية قراءة كاملة",
+	"sitematrix-private": "صلاحية القراءة والكتابة مقيدة",
+	"sitematrix-fishbowl": "صلاحية الكتابة مقيدة، صلاحية القراءة كاملة",
+	"sitematrix-nonglobal": "عام ، لكن التسجيل مطلوب"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"Jakeukalane"
+		]
+	},
+	"starterwiki-desc": "Proporciona un conjunto de ''scripts'' y funciones para permitir la creación de bases de datos de wikis basadas en una wiki inicial"
+}

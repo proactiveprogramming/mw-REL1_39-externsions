@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"tuleap-login-error": "로그인 오류",
+	"tuleap-login-button": "Tuleap을 사용하여 로그인",
+	"tuleap-no-access": "접근이 거부됨"
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"charrangespan-desc": "Prelama sve znakove u definiranim rasponima unutar definiranih oznaka <code>&lt;span&gt;</code>"
+}

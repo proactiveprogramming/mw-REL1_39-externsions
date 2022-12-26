@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"twitterlogin": "Prijavi se s Twitterjem",
+	"twitterlogin-signup": "V tem vikiju se lahko registrirate s Twitter računom",
+	"twiterlogin-tietoaccount": "Trenutno ste v ta viki prijavljeni kot $1. Lahko se prijavite s Twitterjem, da svoj Twitter račun povežete s svojim obstoječim MediaWiki računom.",
+	"twitterlogin-desc": "Registracija in prijava v MediaWiki s Twitter računom",
+	"twitterlogin-alreadyloggedin": "Ste že prijavljeni.",
+	"twitterlogin-couldnotconnect": "Ni bilo mogoče vzpostaviti povezave s Twitterjem. Osvežite stran ali poskusite znova pozneje."
+}

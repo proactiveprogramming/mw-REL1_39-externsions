@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion"
+		]
+	},
+	"googlegeocode-desc": "Обгортка MediaWiki для API геокодування Google Maps"
+}

@@ -1,0 +1,34 @@
+{
+	"name": "NoBogusUserpages",
+	"version": "1.1.1",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Dantman Daniel Friesen]"
+	],
+	"license-name": "GPL-2.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:NoBogusUserpages",
+	"descriptionmsg": "nobogususerpages-desc",
+	"type": "antispam",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"NoBogusUserpages": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NoBogusUserpages": "src/NoBogusUserpages.php"
+	},
+	"Hooks": {
+		"getUserPermissionsErrors": "NoBogusUserpages::onGetUserPermissionsErrors"
+	},
+	"AvailableRights": [
+		"createbogususerpage"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"createbogususerpage": true
+		}
+	},
+	"manifest_version": 1
+}

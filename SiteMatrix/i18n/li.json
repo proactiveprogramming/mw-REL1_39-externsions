@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Matthias",
+			"Ooswesthoesbes"
+		]
+	},
+	"sitematrix-desc": "Toent 'n [[Special:SiteMatrix|lijst van Wikimedia-wiki's]]",
+	"sitematrix-language": "Taal",
+	"sitematrix-project": "Naam van 't perjèk, interperjèk link enne interwiki link",
+	"sitematrix-other-projects": "Anger projekte",
+	"sitematrix-total": "'''Totaal aantal: $1'''",
+	"sitematrix-sitetotal": "Totaal",
+	"sitematrix-closed": "geine sjrieftoegank, volstenjige laestoegank",
+	"sitematrix-private": "laes- en sjrieftoegank bepirk",
+	"sitematrix-fishbowl": "bepirkde sjrieftougank, volstenjige laestoegank",
+	"sitematrix-nonglobal": "aopenbaar, meh registratie vereisj"
+}

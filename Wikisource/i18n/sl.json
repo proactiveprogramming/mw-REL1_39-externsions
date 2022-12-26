@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Janezdrilc"
+		]
+	},
+	"wikisource-desc": "Prilagoditve MediaWiki za Wikivir",
+	"wikisource-export-portlet": "Natisni/izvozi",
+	"wikisource-download-epub": "Prenesi EPUB",
+	"wikisource-download-epub-tooltip": "Prenesi EPUB različico tega dela",
+	"wikisource-download-mobi": "Prenesi MOBI",
+	"wikisource-download-mobi-tooltip": "Prenesi MOBI različico tega dela",
+	"wikisource-download-pdf": "Prenesi PDF",
+	"wikisource-download-pdf-tooltip": "Prenesi PDF različico tega dela",
+	"wikisource-download-choose": "Drugi formati",
+	"wikisource-download-choose-tooltip": "Odpri obrazec za izbor drugih formatov, pisav in ostalo.",
+	"wikisource-download-button": "Prenesi",
+	"wikisource-download-chooser-title": "Izberi format",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "za računalnike, telefone, tablice",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "za Kindle",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "za večje zaslone in tiskanje",
+	"wikisource-download-chooser-different-format": "Želite drugačen format?",
+	"wikisource-ocr-extract-cancel": "Prekliči",
+	"wikisource-ocr-engine": "Izberite svoje privzeto orodje za prepisovanje",
+	"wikisource-ocr-engine-tesseract": "OCR Tesseract",
+	"wikisource-ocr-engine-google": "OCR Google",
+	"wikisource-ocr-advanced": "Napredne možnosti",
+	"wikisource-ocr-advanced-title": "Odprite obrazec za napredne možnosti na novem zavihku",
+	"wikisource-ocr-onboarding-title": "Prepišite slike v besedilo",
+	"wikisource-ocr-onboarding-text": "Z optičnim prepoznavanjem znakov (OCR) pretvorite optično prebrane dokumente v besedilo, ki ga je mogoče urejati.",
+	"wikisource-ocr-onboarding-button": "V redu, razumem"
+}

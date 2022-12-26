@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Karl Wettin",
+			"Sebastian Berlin"
+		]
+	},
+	"wikispeech-sdc": "Wikispeech Speech Data Collector",
+	"wikispeech-sdc-desc": "A tool to record, review and annotate spoken voices.",
+	"right-wikispeech-sdc-record": "Record voice",
+	"action-wikispeech-sdc-record": "record voice",
+	"recordspeech": "Record speech",
+	"wikispeech-sdc-record": "Record",
+	"wikispeech-sdc-save": "Save",
+	"wikispeech-sdc-skip": "Skip",
+	"right-wikispeech-sdc-speech-recording": "Edit speech recording",
+	"action-wikispeech-sdc-speech-recording": "edit speech recording",
+	"right-wikispeech-sdc-speech-recording-talk": "Discuss speech recording",
+	"action-wikispeech-sdc-speech-recording-talk": "discuss speech recording",
+	"wikispeech-sdc-status-starting": "Starting",
+	"wikispeech-sdc-status-ready": "Ready",
+	"wikispeech-sdc-status-listening": "Listening",
+	"wikispeech-sdc-status-recording": "Recording"
+}

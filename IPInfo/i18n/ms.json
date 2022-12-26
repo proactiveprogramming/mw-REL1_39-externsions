@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Tofeiku"
+		]
+	},
+	"ipinfo-property-label-location": "Lokasi",
+	"ipinfo-property-label-isp": "ISP",
+	"ipinfo-property-label-asn": "ASN",
+	"ipinfo-property-label-source": "Sumber",
+	"ipinfo-value-active-blocks": "{{PLURAL:$1|$1 sekatan aktif|0=Tiada sekatan aktif}}",
+	"ipinfo-rest-access-denied-blocked-user": "Anda tiada kebenaran untuk menjalankan tindakan kerana akaun anda disekat"
+}

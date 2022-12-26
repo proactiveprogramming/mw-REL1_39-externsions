@@ -1,0 +1,47 @@
+{
+	"name": "SaveSpinner",
+	"author": [
+		"WikiTeq Team"
+	],
+	"license-name": "MIT",
+	"url": "https://www.mediawiki.org/wiki/Extension:SaveSpinner",
+	"descriptionmsg": "savespinner-desc",
+	"type": "extension",
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SaveSpinner\\": "includes/"
+	},
+	"MessagesDirs": {
+		"SaveSpinner": [
+			"i18n"
+		]
+	},
+	"HookHandlers": {
+		"SaveSpinner": {
+			"class": "MediaWiki\\Extension\\SaveSpinner\\SaveSpinnerHooks"
+		}
+	},
+	"Hooks": {
+		"EditPage::showEditForm:initial": {
+			"handler": "SaveSpinner"
+		},
+		"PageForms::RenderingEnd": [
+			"MediaWiki\\Extension\\SaveSpinner\\SaveSpinnerHooks::onRenderingEnd"
+		]
+	},
+	"ResourceModules": {
+		"ext.savespinner.main": {
+			"localBasePath": "modules",
+			"remoteExtPath": "SaveSpinner/modules",
+			"scripts": [
+				"script.js"
+			],
+			"styles": [
+				"style.less"
+			]
+		}
+	},
+	"manifest_version": 2
+}

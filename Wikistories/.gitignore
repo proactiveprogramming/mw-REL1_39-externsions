@@ -1,0 +1,6 @@
+vendor
+node_modules
+/.eslintcache
+coverage
+tests/selenium/log
+composer.lock

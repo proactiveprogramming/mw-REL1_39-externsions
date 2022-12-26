@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"wikispeech-sdc-desc": "כלי להקלטה, סקירה, וכתיבת הערות על קולות מדוברים.",
+	"right-wikispeech-sdc-record": "הקלטת קול",
+	"action-wikispeech-sdc-record": "להקליט קול",
+	"recordspeech": "הקלטת דיבור",
+	"wikispeech-sdc-record": "להקליט",
+	"wikispeech-sdc-save": "לשמור",
+	"wikispeech-sdc-skip": "לדלג",
+	"right-wikispeech-sdc-speech-recording": "עריכת הקלטת דיבור",
+	"action-wikispeech-sdc-speech-recording": "לערוך הקלטת דיבור",
+	"right-wikispeech-sdc-speech-recording-talk": "דיון על הקלטת דיבור",
+	"action-wikispeech-sdc-speech-recording-talk": "לדון על הקלטת דיבור",
+	"wikispeech-sdc-status-starting": "בהליכי התחלה",
+	"wikispeech-sdc-status-ready": "מוכן",
+	"wikispeech-sdc-status-listening": "בהאזנה",
+	"wikispeech-sdc-status-recording": "בהקלטה"
+}

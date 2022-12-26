@@ -1,0 +1,43 @@
+{
+	"name": "TopTenPages",
+	"namemsg": "toptenpages-extensionname",
+	"version": "0.4.0",
+	"author": [
+		"Timo Tijhof",
+		"Sascha"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:TopTenPages",
+	"descriptionmsg": "toptenpages-desc",
+	"license-name": "MIT",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"HitCounters": "*"
+		}
+	},
+	"MessagesDirs": {
+		"TopTenPages": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"TopTenPagesAliases": "TopTenPages.alias.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"TopTenPagesHooks::onParserFirstCallInit"
+		]
+	},
+	"SpecialPages": {
+		"TopTenPages": "SpecialTopTenPages"
+	},
+	"AutoloadClasses": {
+		"SpecialTopTenPages": "includes/specials/SpecialTopTenPages.php",
+		"TopTenPagesHooks": "includes/TopTenPagesHooks.php"
+	},
+	"config": {
+		"TopTenPagesStartAtOne": false
+	},
+	"manifest_version": 1
+}

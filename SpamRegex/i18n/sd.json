@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"BukhariSaeed",
+			"Indus Asia",
+			"Mehtab ahmed"
+		]
+	},
+	"spamregex-reason": "ڪارڻ:",
+	"spamregex-text": "(متن)",
+	"spamregex-text-and-summary-log": "(متن، تَتُ)",
+	"spamregex-summary-log": "(تَتُ)"
+}

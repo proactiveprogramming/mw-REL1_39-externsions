@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Baloch Afghanistan",
+			"Mostafadaneshvar"
+		]
+	},
+	"sitematrix-desc": "پیشدار یک [[Special:SiteMatrix|لیستی چه ویکیان ویکی مدیا]]",
+	"sitematrix-language": "زبان",
+	"sitematrix-project": "نام پروژه،لینک بین پروژه های و لینک بین ویکیء",
+	"sitematrix-other-projects": "دیگه پروژه‌هان",
+	"sitematrix-total": "'''کل حساب: $1'''",
+	"sitematrix-sitetotal": "کل",
+	"sitematrix-private": "خصوصی",
+	"sitematrix-fishbowl": "اصلاح بند بوتگ"
+}

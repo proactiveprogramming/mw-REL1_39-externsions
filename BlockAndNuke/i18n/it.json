@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Dansita",
+			"Gianfranco",
+			"GpieroMW",
+			"Tizven"
+		]
+	},
+	"action-blockandnuke": "Blocca e cancella tutto",
+	"blockandnuke": "Blocca e cancella tutto",
+	"blockandnuke-nopages": "Non ci sono nuove pagine create da [[Special:Contributions/$1|$1]] nelle ultime modifiche.",
+	"blockandnuke-list": "Le seguenti pagine sono state create di recente da [[Special:Contributions/$1|$1]]; inserisci un commento e premi il tasto per cancellarle.",
+	"blockandnuke-defaultreason": "Rimozione massiva delle pagine aggiunte da $1",
+	"blockandnuke-submit-user": "Blocca utenti",
+	"blockandnuke-submit-delete": "BlockandNuke",
+	"blockandnuke-block": "Gli utenti selezionati sono stati bloccati e i rispettivi contributi cancellati.",
+	"blockandnuke-message": "Utenti bloccati da BlockandNuke.",
+	"blockandnuke-banhammer": "Per bloccare gli utenti selezionati e cancellare tutti i loro contributi fai click sul pulsante sottostante.",
+	"blockandnuke-nothing-to-do": "Nulla da fare!",
+	"blockandnuke-banning": "Bannando...",
+	"blockandnuke-deleted-page": "$1 eliminato",
+	"blockandnuke-banned-ip": "IP $1 bannato",
+	"blockandnuke-ip-addresses": "Indirizzi IP",
+	"blockandnuke-users": "Utenti",
+	"blockandnuke-pages": "Pagine",
+	"right-blockandnuke": "Blocca un elenco di utenti e cancella tutti i loro contributi"
+}

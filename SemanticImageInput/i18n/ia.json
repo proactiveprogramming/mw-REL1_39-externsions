@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"sii-desc": "Adde un modo de inserer imagines que transfere imagines de Wikipedia a [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:Page_Forms Page Forms]",
+	"sii-imageinput-loading": "Carga imagine..."
+}

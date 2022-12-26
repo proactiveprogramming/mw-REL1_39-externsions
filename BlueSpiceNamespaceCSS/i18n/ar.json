@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maroen1990",
+			"Meno25",
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-namespacecss-desc": "تصميم محدد للنطاق",
+	"bluespicenamespacecssmanager": "مدير نطاق CSS",
+	"bs-namespacecss-text": "نطاق CSS",
+	"bs-namespacecss-specialmanager-label-namespacename": "نطاق",
+	"bs-namespacecss-specialmanager-label-sourcepage": "صفحة المصدر",
+	"apihelp-bs-namespacecss-store-summary": "يسرد النطاقات وصفحة مصدر CSS الممكنة الخاصة بها، تنفذ وسائط مخزن ExtJS."
+}

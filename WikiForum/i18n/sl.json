@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Janezdrilc"
+		]
+	},
+	"wikiforum-description": "Opis:",
+	"wikiforum-name": "Ime:",
+	"wikiforum-button-preview": "Predogled",
+	"wikiforum-preview": "Predogled",
+	"wikiforum-preview-with-title": "Predogled: $1",
+	"wikiforum-save": "Shrani",
+	"wikiforum-search-thread": "Nit: $1",
+	"wikiforum-replies": "Odgovori",
+	"wikiforum-thread": "Nit",
+	"wikiforum-threads": "Niti",
+	"wikiforum-pages": "{{PLURAL:$1|Stran|Strani}}:",
+	"wikiforum-error-no-rights": "Nimate pravice za izvedbo tega dejanja.",
+	"wikiforum-add-category": "Dodaj kategorijo",
+	"wikiforum-edit-category": "Uredi kategorijo",
+	"wikiforum-delete-category": "Izbriši kategorijo"
+}

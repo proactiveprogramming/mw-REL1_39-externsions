@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Janezdrilc"
+		]
+	},
+	"secureauth-desc": "Omogoči uporabniku, da doda svoje IP-je za prijavo. Prijava iz drugega IP-ja ne bo uspela.",
+	"secureauthinfo": "Informacije o varni avtentikaciji",
+	"special-secureauth-info": "Informacije o varni avtentikaciji",
+	"secureauth-info-userinfo": "Informacije o uporabniku",
+	"secureauth-current-ip": "Vaš trenutni prijavni IP:",
+	"secureauth-whitelist-ip": "IP-ji na belem seznamu za prijavo z vašim uporabniškim imenom:",
+	"action-sa-access": "dostop do SecureAuthInfo",
+	"right-sa-access": "Dostop do [[Special:SecureAuthInfo|SecureAuthInfo]]"
+}

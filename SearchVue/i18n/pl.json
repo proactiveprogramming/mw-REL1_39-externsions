@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"searchvue-desc": "Dodatkowe i usprawnione funkcje Vue.js w Specjalna:Szukaj",
+	"searchvue-close": "Zamknij",
+	"searchvue-next": "Następny",
+	"searchvue-previous": "Poprzedni",
+	"searchvue-label": "Włącz podgląd wyników wyszukiwania",
+	"searchvue-snippet-gotofullpage": "Przejdź do pełnej strony",
+	"searchvue-snippet-gotofullpage-ns0": "Przejdź do pełnego artykułu",
+	"searchvue-commons-viewmore": "Zobacz więcej",
+	"searchvue-commons-footnote": "W Wikimedia Commons",
+	"searchvue-commons-heading": "Powiązane obrazy",
+	"searchvue-article-sections-heading": "Sekcje na stronie",
+	"searchvue-article-sections-heading-ns0": "Sekcje w artykule",
+	"searchvue-more-sections": "+ $1 więcej {{PLURAL:$1|sekcja|sekcje|sekcji}}",
+	"searchvue-help": "Wyświetl podgląd zawartości strony i powiązanych treści.",
+	"tutorial-popup-title": "Podgląd wyników wyszukiwania",
+	"tutorial-popup-text1": "Kliknij fragment artykułu, aby wyświetlić podgląd wyników i zobaczyć powiązane treści.",
+	"tutorial-popup-text2": "Możesz włączać i wyłączać podgląd podczas wyszukiwania",
+	"tutorial-popup-text-mobile": "Stuknij fragment artykułu lub strzałkę, aby wyświetlić podgląd wyników i zobaczyć powiązane treści.",
+	"tutorial-popup-preferences": "preferencje",
+	"tutorial-popup-close": "Zamknij"
+}

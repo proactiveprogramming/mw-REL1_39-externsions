@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bèrto 'd Sèra",
+			"Dragonòt"
+		]
+	},
+	"contributors": "A l'han contribuì",
+	"contributors-desc": "A lista i prinsipaj contribudor ëd na pàgina",
+	"contributors-toolbox": "Contributor prinsipaj",
+	"contributors-legend": "Lista ij contributor prinsipaj ëd na pàgina",
+	"contributors-target": "Tìtol:",
+	"contributors-submit": "Smon",
+	"contributors-subtitle": "Contributor prinsipaj ëd $1",
+	"contributors-badtitle": "Tìtol nen bon",
+	"contributors-nosuchpage": "La pàgina $1 a esist pa."
+}

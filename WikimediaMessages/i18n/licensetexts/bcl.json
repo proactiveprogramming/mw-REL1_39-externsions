@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daramlagon",
+			"Geopoet",
+			"ShimunUfesoj"
+		]
+	},
+	"wm-license-gfdl-1.2-and-later": "Tinutugutan an pagkopya, pagpanao, asin/o pagbago sa dokumentong ini sa irarom kan mga termino kan '''[[{{int:wm-license-gfdl-wiki-link}}|GNU Free Documentation License]]''', Bersyon 1.2 o dawa anong mas bagong bersyon na naipublikar kan [[{{int:wm-license-fsf-wiki-link}}|Free Software Foundation]]; na mayong paburubagong seksyon, mayong teksto sa front-cover, asin walang teksto sa back-cover. Igwang nakalaag na kopya kan lisensya sa seksyon na may titulong ''[[{{int:wm-license-gfdl-full-1.2-link}}|GNU Free Documentation License]]''.",
+	"wm-license-information-description": "Pagladawan",
+	"wm-license-information-source": "Pinagkunan",
+	"wm-license-information-date": "Petsa",
+	"wm-license-information-author": "Kagsurat",
+	"wm-license-information-permission": "Pagtugot",
+	"wm-license-information-permission-reusing-text": "Giraray na paggamit sa file",
+	"wm-license-own-work": "Sadiring gibo",
+	"wm-license-self-multiple-licenses-select": "Pwede kang makapili nin lisensya mo."
+}

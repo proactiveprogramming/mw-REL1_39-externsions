@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veeven"
+		]
+	},
+	"wsu-wsu-error-linetooshort": "పంక్తి $1 చాలా చిన్నగా ఉంది.",
+	"wsu-wsu-error-unsupportedcommand": "గుర్తుతెలియని ఆదేశం",
+	"wsu-goback": "తిరిగి జాబితాకి",
+	"wsu-command-P": "లక్షణం",
+	"wsu-batchtable-subject": "విషయం",
+	"wsu-batchtable-command": "ఆదేశం",
+	"wsu-batchtable-value": "విలువ",
+	"wsu-batchtable-status": "స్థితి"
+}

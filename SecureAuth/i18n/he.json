@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Guycn2"
+		]
+	},
+	"secureauth-desc": "מתן אפשרות למשתמשים להגדיר את כתובת ה־IP שתשמש אותם לכניסה לחשבון. ניסיונות כניסה מכתובות IP אחרות ייכשלו.",
+	"secureauthinfo": "מידע על האימות המאובטח",
+	"special-secureauth-info": "מידע על האימות המאובטח",
+	"secureauth-info-userinfo": "מידע על המשתמש",
+	"secureauth-current-ip": "כתובת ה־IP הנוכחית עבור הכניסה לחשבון שלך:",
+	"secureauth-whitelist-ip": "כתובות ה־IP המותרות עבור כניסת המשתמש שלך:",
+	"action-sa-access": "לגשת ל־SecureAuthInfo",
+	"right-sa-access": "גישה ל־[[Special:SecureAuthInfo|SecureAuthInfo]]"
+}

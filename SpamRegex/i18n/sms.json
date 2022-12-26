@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"spamregex-reason": "Mäinn:",
+	"spamregex-text": "(teʹkstt)",
+	"spamregex-text-and-summary-log": "(teʹkstt, õʹhtteǩeässmõš)",
+	"spamregex-summary-log": "(õʹhtteǩeässmõš)"
+}

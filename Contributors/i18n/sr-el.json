@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello",
+			"Milicevic01",
+			"Sasa Stefanovic"
+		]
+	},
+	"contributors": "Saradnici",
+	"contributors-desc": "Sažima spisak glavnih autora nekog članka",
+	"contributors-toolbox": "Stranica doprinosioca",
+	"contributors-legend": "Spisak glavnih doprinosioca u članku",
+	"contributors-target": "Naslov:",
+	"contributors-submit": "Prikaži",
+	"contributors-subtitle": "Glavni doprinosioci stranice $1",
+	"contributors-badtitle": "Nevažeći naslov.",
+	"contributors-nosuchpage": "Stranica $1 ne postoji."
+}

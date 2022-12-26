@@ -1,0 +1,146 @@
+#n-book-panel .bookshelfui-chapterpager-heading {
+	padding-left: 40px;
+}
+#n-book-panel .bookshelfui-chapterpager {
+	padding: 0 40px;
+	justify-content: space-between;
+	width: 100%;
+	display: flex;
+}
+#n-book-panel .bookshelfui-chapterpager-heading .book-title {
+	color: currentColor;
+	border-bottom: none;
+}
+
+ul#book-tree {
+	list-style: none;
+	padding: 15px 0;
+	margin: 0;
+}
+li.bs-treenodeitem {
+	list-style-type: none;
+	list-style-position: unset;
+}
+.bs-treenodeitem > ul {
+	margin-left: 10px;
+}
+.bs-treenodeitem > div {
+	color: inherit;
+	padding: 0;
+	border: none;
+	height: auto;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+	border-left: 5px solid transparent;
+	line-height: 35px;
+}
+.bs-treenodeitem.active > div {
+	border-left: 5px solid var(--sidebar-primary-marker--active);
+	color: var(--sidebar-primary-fg--active);
+	background-color: var(--sidebar-primary-bg--active);
+}
+.bs-treenodeitem > div:hover {
+	border-left: 5px solid var(--sidebar-primary-marker--hover);
+	color: var(--sidebar-primary-fg--hover);
+	background-color: var(--sidebar-primary-bg--hover);
+}
+.bs-treenodeitem span {
+	vertical-align: top;
+}
+.bs-treenodeitem > div span.bs-icon {
+	color: var(--sidebar-primary-marker--active);
+	padding-left: 15px;
+	width: 15px;
+	visibility: hidden;
+}
+li.bs-treenodeitem[aria-haspopup="true"] > div span.bs-icon {
+	visibility: visible;
+}
+.bs-treenodeitem[aria-haspopup="true"] > ul > .bs-treenodeitem > div span.bs-icon {
+	visibility: hidden;
+}
+.bs-treenodeitem[aria-haspopup="true"] > ul > .bs-treenodeitem[aria-haspopup="true"] > div span.bs-icon {
+	visibility: visible;
+}
+#edit-book {
+	padding-left: 40px;
+	text-align: right;
+	padding: 0 16px;
+	height: 0;
+	display: block;
+	overflow: hidden;
+	font-size: 0.7rem;
+}
+#book-tree:hover + #edit-book {
+	height: inherit;
+}
+#n-book-panel #edit-book:hover {
+	height: inherit;
+	text-decoration: underline;
+	border-left: 0;
+	background-color: transparent;
+}
+#n-book-panel #edit-book:focus-visible {
+	height: inherit;
+	border: 2px solid var(--focus-visible);
+	outline-color: transparent;
+}
+#n-book-panel .bookshelfui-chapterpager a {
+	border-radius: 5px;
+	border: 0.5px solid var(--mws-secondary-fg);
+	color: var(--mws-secondary-fg);
+	background-color: var(--mws-secondary-bg);
+	font-size: 15px;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	user-select: none;
+	padding: 0.375rem 0.75rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#n-book-panel .bookshelfui-chapterpager a:visited {
+	color: var(--mws-secondary-fg);
+}
+#n-book-panel .bookshelfui-chapterpager a:hover {
+	background-color: var(--mws-secondary-bg--hover);
+	color: var(--mws-secondary-fg--hover);
+	border: 0.5px solid var(--mws-secondary-fg);
+}
+.prev-chapter.disabled {
+	visibility: hidden;
+}
+.next-chapter.disabled {
+	visibility: hidden;
+}
+.bs-articleNumber {
+	padding-right: 5px;
+}
+.bs-treenode-value {
+	width: 220px;
+	height: auto;
+	overflow: auto;
+	display: inline-block;
+}
+.bs-treenodeitem ul {
+	padding-left: 5px;
+}
+.bs-treenodeitem span.bs-icon {
+	padding: 0 5px;
+}
+.bs-treenodeitem:not(.bs-tree-level-0) > div {
+	margin-left: 10px;
+}
+#n-book-panel .bs-treenodeitem a {
+	border-left: none;
+}
+#n-book-panel .bs-treenodeitem a:hover,
+#n-book-panel .bs-treenodeitem a.active {
+	border: none;
+	border-left: none;
+	color: inherit;
+	background-color: transparent;
+}
+li.bs-treenodeitem::marker {
+	display: none;
+}

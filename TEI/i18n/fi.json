@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Pyscowicz"
+		]
+	},
+	"tei-libxml-empty-document": "XML-asiakirja on tyhjä.",
+	"tei-parser-error": "Muunnosvirhe: $1"
+}

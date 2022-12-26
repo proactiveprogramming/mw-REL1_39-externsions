@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Verdy p"
+		]
+	},
+	"purgeclickthrough-desc": "Ne pas rediriger les pages « ?action=purge », mais permettre à la place de cliquer dessus (pour des besoins de débogage)"
+}

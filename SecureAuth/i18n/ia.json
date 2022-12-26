@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"secureauth-desc": "Permitte al usator de adder su adresse IP pro aperir session. Le apertura de session desde un altere adresse IP fallera.",
+	"secureauthinfo": "InfoAuthSecur",
+	"special-secureauth-info": "Information de authentication secur",
+	"secureauth-info-userinfo": "Information de usator",
+	"secureauth-current-ip": "Tu adresse IP de session actual:",
+	"secureauth-whitelist-ip": "Adresses IP in lista blanc pro aperir session con tu nomine de usator:",
+	"action-sa-access": "acceder a SecureAuthInfo",
+	"right-sa-access": "Acceder a [[Special:SecureAuthInfo|SecureAuthInfo]]"
+}

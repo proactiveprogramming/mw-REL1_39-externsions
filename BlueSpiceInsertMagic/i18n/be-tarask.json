@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Renessaince",
+			"W"
+		]
+	},
+	"bs-insertmagic": "Уставіць чароўнае слова",
+	"bs-insertmagic-notoc": "Хавае табліцу зьместу.",
+	"bs-insertmagic-currentyear": "Бягучы год",
+	"bs-insertmagic-currentmonthname": "Бягучы месяц (назва).",
+	"bs-insertmagic-currentmonthnamegen": "Бягучы месяц (у родным склоне).",
+	"bs-insertmagic-currentmonthabbrev": "Бягучы месяц (скарот).",
+	"bs-insertmagic-currentdayname": "Дзень тыдня (назва).",
+	"bs-insertmagic-currenttime": "Час (24-гадзінны выгляд ГГ:хх)",
+	"bs-insertmagic-currentweek": "Тыдзень (нумар).",
+	"bs-insertmagic-type-quickaccess": "Хуткі доступ",
+	"bs-insertmagic-label-desc": "Апісаньне",
+	"bs-insertmagic-label-examples": "Прыклады",
+	"bs-insertmagic-label-see-also": "Глядзіце таксама",
+	"bs-insertmagic-ve-insertmagic-title": "Чароўнае слова"
+}

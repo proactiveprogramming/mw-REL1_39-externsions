@@ -1,0 +1,33 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es6",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki",
+		"wikimedia/jsduck"
+	],
+	"globals": {
+		"ve": "readonly",
+		"VisualEditorSupportCheck": "readonly",
+		"unicodeJS": "readonly",
+		"RangeFix": "readonly",
+		"Papa": "readonly"
+	},
+	"rules": {
+		"no-jquery/no-deferred": "warn",
+		"no-jquery/no-when": "warn",
+		"no-jquery/no-visibility": "warn",
+		"no-jquery/variable-pattern": "warn",
+		"no-jquery/no-class-state": "warn",
+		"new-cap": "warn",
+		"block-scoped-var": "warn",
+		"mediawiki/valid-package-file-require": "warn",
+		"no-undef": "warn",
+		"eqeqeq": "warn",
+		"no-shadow": "warn",
+		"no-var": "warn",
+		"no-unused-vars": "warn",
+		"no-implicit-globals": "warn",
+		"es/no-object-values": "warn"
+	}
+}

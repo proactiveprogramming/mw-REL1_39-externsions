@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"sii-desc": "Во [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:Page_Formsuselang=mk Обрасците за страници] додава можност за внесување на слики што се извлекуваат од Википедија",
+	"sii-imageinput-loading": "Ја вчитувам сликата..."
+}

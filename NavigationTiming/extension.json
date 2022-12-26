@@ -1,0 +1,105 @@
+{
+	"name": "NavigationTiming",
+	"author": [
+		"Patrick Reilly",
+		"Ori Livneh",
+		"Asher Feldman",
+		"Timo Tijhof",
+		"Ian Marlier",
+		"Gilles Dubuc"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NavigationTiming",
+	"descriptionmsg": "navigationtiming-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.33.0",
+		"extensions": {
+			"EventLogging": "*"
+		}
+	},
+	"MessagesDirs": {
+		"NavigationTiming": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\NavigationTiming\\": "includes/"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "NavigationTiming/modules"
+	},
+	"ResourceModules": {
+		"ext.navigationTiming": {
+			"packageFiles": [
+				"ext.navigationTiming.js",
+				{
+					"name": "config.json",
+					"config": {
+						"samplingFactor": "NavigationTimingSamplingFactor",
+						"surveySamplingFactor": "NavigationTimingSurveySamplingFactor",
+						"surveyAuthenticatedSamplingFactor": "NavigationTimingSurveyAuthenticatedSamplingFactor",
+						"surveyName": "NavigationTimingSurveyName",
+						"cpuBenchmarkSamplingFactor": "NavigationTimingCpuBenchmarkSamplingFactor",
+						"oversampleFactor": "NavigationTimingOversampleFactor"
+					}
+				}
+			],
+			"dependencies": [
+				"ext.eventLogging",
+				"mediawiki.user"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"QUnitTestModule": {
+		"localBasePath": "",
+		"remoteExtPath": "NavigationTiming",
+		"scripts": [
+			"tests/ext.navigationTiming.test.js"
+		],
+		"dependencies": [
+			"ext.navigationTiming"
+		]
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\NavigationTiming\\Hooks::onBeforePageDisplay"
+	},
+	"attributes": {
+		"EventLogging": {
+			"Schemas": {
+				"CentralNoticeTiming": "/analytics/legacy/centralnoticetiming/1.0.0",
+				"CpuBenchmark": "/analytics/legacy/cpubenchmark/1.1.0",
+				"FeaturePolicyViolation": "/analytics/legacy/featurepolicyviolation/1.0.0",
+				"NavigationTiming": "/analytics/legacy/navigationtiming/1.3.0",
+				"PaintTiming": "/analytics/legacy/painttiming/1.2.0",
+				"SaveTiming": "/analytics/legacy/savetiming/1.0.0"
+			}
+		}
+	},
+	"config": {
+		"NavigationTimingSamplingFactor": {
+			"value": false
+		},
+		"NavigationTimingOversampleFactor": {
+			"value": false
+		},
+		"NavigationTimingSurveySamplingFactor": {
+			"value": false
+		},
+		"NavigationTimingSurveyAuthenticatedSamplingFactor": {
+			"value": false
+		},
+		"NavigationTimingSurveyName": {
+			"value": false
+		},
+		"NavigationTimingCpuBenchmarkSamplingFactor": {
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

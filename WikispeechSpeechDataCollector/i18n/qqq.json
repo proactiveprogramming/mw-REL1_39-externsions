@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Karl Wettin",
+			"Robby",
+			"Sebastian Berlin",
+			"Umherirrender"
+		]
+	},
+	"wikispeech-sdc": "{{name}}\nThe name of the extension",
+	"wikispeech-sdc-desc": "{{desc|name=Wikispeech Speech Data Collector|url=https://www.mediawiki.org/wiki/Extension:WikispeechSpeechDataCollector}}",
+	"right-wikispeech-sdc-record": "{{doc-right|wikispeech-sdc-record}}",
+	"action-wikispeech-sdc-record": "{{doc-action|wikispeech-sdc-record}}",
+	"recordspeech": "Record speech special page title.",
+	"wikispeech-sdc-record": "Label for button that starts recording on the Record special page.",
+	"wikispeech-sdc-save": "Label for button that saves recording on the Record special page.",
+	"wikispeech-sdc-skip": "Label for button that skips and discards recording on the Record special page.\n{{identical|Skip}}",
+	"right-wikispeech-sdc-speech-recording": "{{doc-right|wikispeech-sdc-speech-recording}}",
+	"action-wikispeech-sdc-speech-recording": "{{doc-action|wikispeech-sdc-speech-recording}}",
+	"right-wikispeech-sdc-speech-recording-talk": "{{doc-right|wikispeech-sdc-speech-recording-talk}}",
+	"action-wikispeech-sdc-speech-recording-talk": "{{doc-action|wikispeech-sdc-speech-recording-talk}}",
+	"wikispeech-sdc-status-starting": "Status message when the recorder is starting up and not yet ready to start recording.",
+	"wikispeech-sdc-status-ready": "Status message when the recorder is ready to start recording.",
+	"wikispeech-sdc-status-listening": "Status message when the recorder is waiting for user to start speaking.",
+	"wikispeech-sdc-status-recording": "Status message when the recorder is recording."
+}

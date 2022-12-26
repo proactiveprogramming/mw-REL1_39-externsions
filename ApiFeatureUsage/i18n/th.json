@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aefgh39622",
+			"Geonuch"
+		]
+	},
+	"apifeatureusage": "การใช้คุณลักษณะเอพีไอ",
+	"apifeatureusage-desc": "รับข้อมูลสรุปเกี่ยวกับการใช้งานคุณลักษณะ API ที่ถูกบันทึกลงในปูมสำหรับตัวแทนผู้ใช้",
+	"apifeatureusage-elasticsearch-error": "ข้อผิดพลาดของ Elasticsearch: $1",
+	"apifeatureusage-legend": "การใช้คุณลักษณะ API",
+	"apifeatureusage-agent-label": "ตัวแทนผู้ใช้:",
+	"apifeatureusage-startdate-label": "วันที่เริ่มต้น:",
+	"apifeatureusage-enddate-label": "วันที่สิ้นสุด:",
+	"apifeatureusage-submit": "ดึงข้อมูล",
+	"apifeatureusage-no-indexes": "ไม่มีข้อมูลที่พร้อมใช้งานสำหรับช่วงวันที่ที่ระบุ",
+	"apifeatureusage-missing-indexes": "ไม่มีข้อมูลที่พร้อมใช้งานสำหรับบางส่วนของช่วงวันที่ที่ระบุ",
+	"apifeatureusage-warnings": "คำเตือน: $1",
+	"apifeatureusage-column-feature": "คุณลักษณะ",
+	"apifeatureusage-column-date": "วันที่",
+	"apifeatureusage-column-uses": "การใช้งาน"
+}

@@ -1,0 +1,44 @@
+{
+	"name": "samwilson/redirectmanager",
+	"description": "MediaWiki extension for viewing and adding redirects to a page while editing.",
+	"homepage": "https://www.mediawiki.org/wiki/Extension:RedirectManager",
+	"type": "mediawiki-extension",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Sam Wilson",
+			"email": "sam@samwilson.id.au",
+			"homepage": "https://samwilson.id.au",
+			"role": "developer"
+		}
+	],
+	"support": {
+		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-redirectmanager/",
+		"source": "https://gerrit.wikimedia.org/r/mediawiki/extensions/RedirectManager"
+	},
+	"require": {
+		"composer/installers": "^1.0"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"test": [
+			"composer validate",
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phpcs": "phpcs -sp --cache"
+	},
+	"extra": {
+		"installer-name": "RedirectManager"
+	}
+}

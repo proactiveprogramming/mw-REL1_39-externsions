@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"action-similareditors": "存取 [[Special:SimilarEditors]]",
+	"right-similareditors": "存取 [[Special:SimilarEditors]]",
+	"similareditors-form-submit": "尋找",
+	"similareditors-no-results": "查無結果。",
+	"similareditors-overlap-level-high": "高",
+	"similareditors-overlap-level-low": "低",
+	"similareditors-overlap-level-medium": "中",
+	"similareditors-overlap-level-no-overlap": "無重疊",
+	"similareditors-results-user": "使用者",
+	"similareditors-results-user-timeline": "時間軸"
+}

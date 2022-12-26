@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"revcs-edit-preview": "Ammustra l'antiprima",
+	"revcs-edit-reason": "Mutivu:",
+	"revcs-error": "Erruri: $1",
+	"revcs-hidehistory-submit": "Applica",
+	"revcs-history-hidden-user": "(nomu utenti ammucciatu)",
+	"revcs-history-rcsh-reason": "Mutivu",
+	"revcs-list-extended-supplement-all": "tutti",
+	"revcs-list-extended-supplement-empty": "vacanti",
+	"revcs-list-extended-supplement-notempty": "nun vacanti",
+	"revcs-list-limit": "Nùmmiru pi pàggina:",
+	"revcs-list-rcs-rev-id-edit": "Cancia",
+	"revcs-list-rcs-rev-id-log": "Riggistru",
+	"revcs-list-rcs-user-text": "Utenti",
+	"revcs-list-submit": "Ammustra",
+	"revcs-log-nosupplement": "(nuddu)",
+	"revcs-show-reason": "Mutivu: $1",
+	"revcs-show-revision": "Virsioni: $1",
+	"revcs-warning": "Accura: $1"
+}

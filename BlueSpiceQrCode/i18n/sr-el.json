@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-qr-code-extension-description": "Prikazuje QR kod s vezom do trenutne stranice u traci s alatkama.",
+	"bs-qr-code-title": "QR kod",
+	"bs-qr-code-text": "Skenirajte QR kod da biste otvorili ovu stranicu na mobilnom uređaju"
+}

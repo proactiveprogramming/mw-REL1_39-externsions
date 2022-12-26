@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Your Name"
+		]
+	},
+	"vuetest": "The name of the extension's special page in Special:SpecialPages",
+	"vuetest-desc": "{{desc}}",
+	"vuetest-summary": "Description appearing on top of Special:VueTest.",
+	"vuetest-codex-title": "Title appearong on top of Special:VueTest/codex",
+	"vuetest-app-welcome": "Header message for App component",
+	"vuetest-app-intro": "Intro text for App component",
+	"vuetest-app-see-also": "Text shown at the top of Special:VueTest, pointing to Special:VueTest/codex"
+}

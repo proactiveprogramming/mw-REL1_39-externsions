@@ -1,0 +1,141 @@
+{
+	"name": "Email Authorization",
+	"version": "3.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Cindy.cicalese Cindy Cicalese]",
+		"[https://www.mediawiki.org/wiki/User:Matthew-a-thompson Mint Thompson]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Email_Authorization",
+	"descriptionmsg": "emailauthorization-desc",
+	"license-name": "MIT",
+	"requires": {
+		"MediaWiki": ">= 1.35.3",
+		"extensions": {
+			"PluggableAuth": "*"
+		}
+	},
+	"type": "other",
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\EmailAuthorization\\": "includes/"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"ResourceFileModulePaths": {
+		"localBasePath": "/",
+		"remoteExtPath": "EmailAuthorization"
+	},
+	"ResourceModules": {
+		"ext.EmailAuthorization": {
+			"styles": [
+				"resources/EmailAuthorization.css"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.EmailAuthorizationConfig": {
+			"scripts": [
+				"resources/EmailAuthorizationConfig.js"
+			],
+			"dependencies": [
+				"mediawiki.api",
+				"ext.EmailAuthorization.datatables"
+			],
+			"messages": [
+				"emailauthorization-config-label-email",
+				"emailauthorization-config-label-username",
+				"emailauthorization-config-label-realname",
+				"emailauthorization-config-label-userpage",
+				"emailauthorization-config-label-authorized"
+			]
+		},
+		"ext.EmailAuthorization.datatables": {
+			"styles": [
+				"modules/datatables/media/css/jquery.dataTables.min.css"
+			],
+			"scripts": [
+				"modules/datatables/media/js/jquery.dataTables.min.js"
+			]
+		}
+	},
+	"SpecialPages": {
+		"EmailAuthorizationConfig": {
+			"class": "MediaWiki\\Extension\\EmailAuthorization\\EmailAuthorizationConfig",
+			"services": [
+				"EmailAuthorizationStore"
+			]
+		},
+		"EmailAuthorizationRequest": {
+			"class": "MediaWiki\\Extension\\EmailAuthorization\\EmailAuthorizationRequest",
+			"services": [
+				"EmailAuthorizationStore",
+				"MainConfig"
+			]
+		},
+		"EmailAuthorizationApprove": {
+			"class": "MediaWiki\\Extension\\EmailAuthorization\\EmailAuthorizationApprove",
+			"services": [
+				"EmailAuthorizationStore"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"EmailAuthorization": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"EmailAuthorizationAlias": "includes/EmailAuthorization.alias.php"
+	},
+	"APIModules": {
+		"emailauthorization-getall": {
+			"class": "MediaWiki\\Extension\\EmailAuthorization\\ApiEmailAuthorizationUsers",
+			"services": [
+				"EmailAuthorizationStore",
+				"EmailAuthorizationService",
+				"ParserFactory",
+				"UserFactory"
+			]
+		},
+		"emailauthorization-getauthorized": {
+			"class": "MediaWiki\\Extension\\EmailAuthorization\\ApiEmailAuthorizationAuthorized",
+			"services": [
+				"EmailAuthorizationStore",
+				"ParserFactory"
+			]
+		}
+	},
+	"HookHandlers": {
+		"schema": {
+			"class": "MediaWiki\\Extension\\EmailAuthorization\\SchemaHooks"
+		},
+		"main": {
+			"class": "MediaWiki\\Extension\\EmailAuthorization\\MainHooks",
+			"services": [
+				"MainConfig",
+				"EmailAuthorizationService",
+				"UserFactory"
+			]
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "schema",
+		"SpecialPage_initList": "main",
+		"PluggableAuthUserAuthorization": "main",
+		"BeforeCreateEchoEvent": "MediaWiki\\Extension\\EmailAuthorization\\LegacyHooks::onBeforeCreateEchoEvent"
+	},
+	"config": {
+		"EmailAuthorization_EnableRequests": {
+			"value": false
+		},
+		"EmailAuthorization_RequestFields": {
+			"value": []
+		},
+		"EmailAuthorization_AuthorizedGroups": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}

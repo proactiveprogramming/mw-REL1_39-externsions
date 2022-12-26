@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"s5slide-desc": "S5SlideShow es un extension de MediaWiki que permitte le creation simple, rapide e commode de presentationes de diapositivas usante S5 in le contexto de paginas MediaWiki e Wiki.",
+	"special-s5SlideShow-title": "Configuration de S5SlideShow",
+	"s5slide-header-title": "Titulo",
+	"s5slide-header-subtitle": "Subtitulo",
+	"s5slide-header-footer": "Pede",
+	"s5slide-header-subfooter": "Subpede",
+	"s5slide-header-author": "Autor"
+}

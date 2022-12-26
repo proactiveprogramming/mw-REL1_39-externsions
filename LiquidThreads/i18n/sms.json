@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"lqt_contents_title": "Siiskâž",
+	"lqt_toc_thread_modified": "Mââimõssân muttum",
+	"lqt_reply": "Vaʹstted",
+	"lqt_delete": "Jaukkâd",
+	"lqt_undelete": "Maaccât",
+	"lqt_hist_deleted": "Jaukkuum",
+	"lqt_protectedfromreply_link": "suõjjuum",
+	"lqt_move_move": "Seeʹrd",
+	"lqt-summary": "Õʹhtteǩeässmõš",
+	"lqt-email-undo": "Kååʹmet",
+	"lqt-new-messages": "Tuʹst lie ođđ saaǥǥ.",
+	"lqt-thread-created": "Rajjum",
+	"lqt-history-user": "Õõʹnni",
+	"lqt-history-comment": "Kommeʹntt",
+	"lqt-movethread": "Seeʹrd",
+	"lqt-changesortorder": "Šlajjâd",
+	"lqt-search-label": "Ooʒʒ saǥstõõllmõõžžâst",
+	"lqt-search-button": "Ooʒʒ",
+	"searchprofile-threads": "Saǥstõõllmõõžž",
+	"lqt-ajax-update-link": "Peiʹvved",
+	"lqt-save-subject": "Ruõkk",
+	"lqt-cancel-subject-edit": "Jõõsk",
+	"lqt-drag-save": "Priim",
+	"lqt-drag-reason": "Mäinn:",
+	"lqt-preview-signature": "(ouddǩiõččmõš)",
+	"lqt-newmessages-n": "Ođđ {{PLURAL:$1|saakk|saaǥǥ|saakkâd}} ($1)",
+	"lqt_newmessages-title": "Ođđ saaǥǥ",
+	"lqt-talkpage-history-title": "Saǥstõõllâmsseeid historia",
+	"lqt-reply-subpage": "vasttõs",
+	"nstab-summary": "Õʹhtteǩeässmõš"
+}

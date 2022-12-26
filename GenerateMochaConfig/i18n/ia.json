@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"generatemochaconfig-desc": "Un script que genera un JSON que pote esser usate pro executar tests Mocha pro tote le extensiones activate"
+}

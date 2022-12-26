@@ -1,0 +1,5 @@
+/resources/lib/
+/node_modules/
+/vendor/
+/coverage/
+/function-schemata/

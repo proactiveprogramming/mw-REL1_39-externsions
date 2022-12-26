@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nerogaf",
+			"Red Winged Duck"
+		]
+	},
+	"apifeatureusage": "Выкарыстаньне функцыяў API",
+	"apifeatureusage-desc": "Атрымаць кароткае апісаньне запісаных ужываньняў функцыяў API для агента карыстальніка",
+	"apifeatureusage-elasticsearch-error": "Памылка Elasticsearch: $1",
+	"apifeatureusage-legend": "Выкарыстаньне функцыяў API",
+	"apifeatureusage-agent-label": "Браўзэр:",
+	"apifeatureusage-startdate-label": "Дата пачатку:",
+	"apifeatureusage-enddate-label": "Дата заканчэньня:",
+	"apifeatureusage-submit": "Атрымаць зьвесткі",
+	"apifeatureusage-no-indexes": "Няма зьвестак для вызначанага дыяпазону датаў.",
+	"apifeatureusage-missing-indexes": "Няма зьвестак для часткі вызначанага дыяпазону датаў.",
+	"apifeatureusage-warnings": "Папярэджаньне: $1",
+	"apifeatureusage-column-feature": "Асаблівасьць",
+	"apifeatureusage-column-date": "Дата",
+	"apifeatureusage-column-uses": "Выкарыстоўвае",
+	"apifeatureusage-deprecation-help": "Скарыстайцеся [[Special:ApiFeatureUsage]], каб пабачыць ужываньне састарэлых функцыяў вашай праграмай."
+}

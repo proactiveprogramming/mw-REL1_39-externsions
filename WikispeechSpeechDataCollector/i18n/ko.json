@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"right-wikispeech-sdc-record": "목소리 녹음",
+	"action-wikispeech-sdc-record": "음성을 녹음할",
+	"wikispeech-sdc-record": "녹음",
+	"wikispeech-sdc-save": "저장",
+	"wikispeech-sdc-skip": "건너뛰기"
+}

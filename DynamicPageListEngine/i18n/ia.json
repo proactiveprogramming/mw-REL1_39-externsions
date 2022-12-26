@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"dynamicpagelistengine-desc": "Forni listas de paginas dynamic con functionalitate configurabile e extensibile a [[mw:Special:MyLanguage/Extension:Scribunto|modulos]] e a altere extensiones",
+	"dple-tracking-category": "Paginas que usa DynamicPageListEngine",
+	"dple-error-invalid-ns-index": "Error de DynamicPageListEngine: Non existe un spatio de nomines con indice $1.",
+	"dple-error-no-criteria": "Error de DynamicPageListEngine: Nulle criterios de selection ha essite specificate.",
+	"dple-error-too-expensive": "Error de DynamicPageListEngine: Tentativa de exequer un consulta costose que require reunir (join) $1 tabellas del base de datos, ma le maximo permittite es $2.",
+	"dple-error-too-many-expensive-functions": "Error de DynamicPageListEngine: Troppo de functiones costose es usate sur iste pagina."
+}

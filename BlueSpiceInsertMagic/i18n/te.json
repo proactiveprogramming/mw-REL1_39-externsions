@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chaduvari",
+			"Veeven"
+		]
+	},
+	"bs-insertmagic-index": "ఈ పేజీని ఇండెక్సు చెయ్యమని సెర్చి ఇంజనుకు చెప్పండి.",
+	"bs-insertmagic-currentweek": "వారం (సంఖ్య)",
+	"bs-insertmagic-sitename": "వికీ సైటు పేరు.",
+	"bs-insertmagic-label-desc": "వివరణ",
+	"bs-insertmagic-label-examples": "ఉదాహరణలు",
+	"bs-insertmagic-label-see-also": "ఇవి కూడా చూడండి"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"pagecheckout-desc": "允許給使用者在頁面上的獨占權限",
+	"pagecheckout-error-no-title": "無效標題",
+	"pagecheckout-error-no-user": "指定的使用者無效",
+	"pagecheckout-error-save-event": "儲存事件失敗。"
+}

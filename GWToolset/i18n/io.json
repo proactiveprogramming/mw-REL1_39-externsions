@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos",
+			"Joao Xavier"
+		]
+	},
+	"gwtoolset-mediawiki-template": "Shablono ̩$1",
+	"gwtoolset-submit": "Sendar",
+	"gwtoolset-summary-heading": "Rezumo",
+	"gwtoolset-cancel": "Anular",
+	"gwtoolset-save": "Konservez",
+	"gwtoolset-category": "Kategorii",
+	"gwtoolset-detect-license": "Probo pri detektar la permiso"
+}

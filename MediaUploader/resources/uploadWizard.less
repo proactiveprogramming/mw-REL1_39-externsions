@@ -1,0 +1,622 @@
+@import 'variables.less';
+
+form.mediauploader-form {
+	display: inline;
+}
+
+#upload-wizard {
+	margin-top: 18px;
+	min-width: 750px; /* width of tutorial.png plus padding */
+	max-width: 900px; /* wild guess */
+
+	@media ( max-width: @mobile-w ) {
+		min-width: inherit;
+		max-width: inherit;
+	}
+}
+
+#mediauploader-steps {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 2.5;
+	background-color: #fff;
+	border: 0;
+
+	@media ( max-width: @mobile-w ) {
+		line-height: inherit;
+	}
+}
+
+.mediauploader-clearing {
+	clear: left;
+	width: 100%;
+}
+
+#mediauploader-content {
+	margin-top: 1em;
+}
+
+.mediauploader-add-files-0,
+#mediauploader-files {
+	margin-top: 3em;
+	margin-bottom: 1em;
+
+	@media ( max-width: @mobile-w ) {
+		margin-top: 0;
+		margin-right: auto !important; /* stylelint-disable-line declaration-no-important */
+		margin-left: auto !important; /* stylelint-disable-line declaration-no-important */
+	}
+}
+
+.mediauploader-add-files-0 {
+	text-align: center;
+
+	.mediauploader-add-file {
+		font-size: large;
+		margin-right: 0;
+
+		.oo-ui-buttonElement-framed.oo-ui-labelElement > .oo-ui-buttonElement-button {
+			// Fix vertical alignment of large text button
+			padding-top: 7px;
+		}
+	}
+}
+
+#mediauploader-add-file-container:not( .mediauploader-add-files-0 ) {
+	.mediauploader-add-file {
+		display: inline-block;
+		width: auto;
+		height: auto;
+
+		@media ( max-width: @mobile-w ) {
+			width: 100%;
+		}
+
+		&.oo-ui-selectFileWidget.oo-ui-selectFileInputWidget-empty.oo-ui-selectFileWidget-dropTarget .oo-ui-selectFileInputWidget-selectButton,
+		&.oo-ui-selectFileWidget.oo-ui-selectFileInputWidget-empty.oo-ui-widget-enabled .oo-ui-selectFileWidget-dropLabel {
+			display: inline-block;
+			margin: 0.5em;
+		}
+	}
+}
+
+.mediauploader-file {
+	&.filled {
+		position: relative;
+	}
+
+	&.odd .mediauploader-visible-file {
+		background: #f8f9fa;
+	}
+
+	&:hover .mediauploader-visible-file {
+		background: #e0f0ff !important; /* stylelint-disable-line declaration-no-important */
+	}
+}
+
+.mediauploader-file-indicator {
+	float: right;
+	padding: 1.5em 1.5em 0 0;
+
+	@media ( max-width: @mobile-w ) {
+		padding: 0 0.5em 0 0;
+	}
+
+	.oo-ui-messageWidget {
+		width: 20px;
+	}
+}
+
+.mediauploader-count {
+	padding: 0.5em;
+}
+
+.mediauploader-visible-file {
+	display: none;
+	position: relative;
+	z-index: 2;
+	width: 100%; /* of containing mediauploader-file */
+	overflow: hidden;
+
+	.mediauploader-file-indicator {
+		visibility: hidden;
+	}
+
+	.mediauploader-file-indicator-visible {
+		visibility: visible;
+	}
+}
+
+#mediauploader-files {
+	margin-right: 8em;
+	margin-left: 8em;
+}
+
+.mediauploader-file.filled .mediauploader-visible-file {
+	display: block;
+}
+
+.mediauploader-visible-file-filename {
+	padding: 1.5em;
+	margin-right: 40px;
+	overflow: hidden;
+
+	@media ( max-width: @mobile-w ) {
+		padding: 1.8em 0.5em 1.5em 0.5em;
+		margin: 0;
+	}
+}
+
+#mediauploader-filelist {
+	/* We rely on the margin collapsing with that on #mediauploader-files */
+	margin-top: 3em;
+
+	@media ( max-width: @mobile-w ) {
+		margin-top: 1.5em;
+	}
+}
+
+.mediauploader-file-status {
+	display: none;
+	color: #72777d;
+}
+
+.mediauploader-file-status-line ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.mediauploader-file-preview {
+	float: left;
+	width: 120px;
+	/*
+	 * min-height ensures the reserved space for a thumbnail gets preserved
+	 * while the thumb gets generated (when there is no content in this div yet)
+	 */
+	min-height: 1px;
+	max-height: 120px;
+	margin-right: 1.5em;
+	text-align: center;
+	/* @embed */
+	background: url( images/blank-document.svg ) no-repeat center center;
+
+	@media ( max-width: @mobile-w ) {
+		margin-right: 0.7em;
+	}
+}
+
+/* Box with filename, upload status and delete button */
+.mediauploader-file-texts {
+	/* This also create a new block formatting context, resulting in the whole block
+	   displaying next to image thumbnail, rather than wrapping the lines of text around it */
+	overflow: hidden;
+
+	@media ( max-width: @mobile-w ) {
+		// min-width: 20em;
+		overflow: unset !important; /* stylelint-disable-line declaration-no-important */
+	}
+}
+
+.mediauploader-file-preview-broken {
+	/* @embed */
+	background: url( images/blank-document-broken.svg ) no-repeat center center !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.mediauploader-add-files-n {
+	float: left;
+}
+
+#mediauploader-add-file-container.mediauploader-add-files-n,
+.mediauploader-progress-bar-etr {
+	width: 300px;
+}
+
+.filled + .filled {
+	border-top: 1px solid #c8ccd1;
+
+	@media ( max-width: @mobile-w ) {
+		padding-top: 0.5em;
+	}
+}
+
+#mediauploader-upload-ctrls {
+	margin-top: 1em;
+
+	@media ( max-width: @mobile-w ) {
+		.oo-ui-buttonElement > .oo-ui-buttonElement-button {
+			// Break lines on long button text
+			white-space: normal !important; /* stylelint-disable-line declaration-no-important */
+		}
+	}
+}
+
+#mediauploader-stepdiv-file .mediauploader-buttons .mediauploader-file-endchoice {
+	display: none;
+}
+
+.mediauploader-license-icon {
+	height: 18px;
+	margin-left: 6px;
+	padding: 9px;
+	width: 18px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.mediauploader-cc-icon {
+	/* @embed */
+	background-image: url( images/cc.svg );
+}
+
+.mediauploader-cc-by-icon {
+	/* @embed */
+	background-image: url( images/cc-by.svg );
+}
+
+.mediauploader-cc-nc-icon {
+	/* @embed */
+	background-image: url( images/cc-nc.svg );
+}
+
+.mediauploader-cc-nd-icon {
+	/* @embed */
+	background-image: url( images/cc-nd.svg );
+}
+
+.mediauploader-cc-pd-icon {
+	/* @embed */
+	background-image: url( images/cc-pd.svg );
+}
+
+.mediauploader-cc-sa-icon {
+	/* @embed */
+	background-image: url( images/cc-sa.svg );
+}
+
+.mediauploader-cc-zero-icon {
+	/* @embed */
+	background-image: url( images/cc-zero.svg );
+}
+
+.mediauploader-copydown-icon {
+	/* @embed */
+	background-image: url( images/copydown.svg );
+}
+
+.mediauploader-copyleft-icon {
+	/* @embed */
+	background-image: url( images/copyleft.svg );
+}
+
+.mediauploader-copyright-icon {
+	/* @embed */
+	background-image: url( images/copyright.svg );
+}
+
+.mediauploader-no-weapons-icon {
+	/* @embed */
+	background-image: url( images/no-weapons.svg );
+}
+
+.mediauploader-progress {
+	margin-top: 15px;
+}
+
+.mediauploader-progress-bar-etr {
+	float: left;
+}
+
+.mediauploader-etr {
+	text-align: center;
+}
+
+.mediauploader-thumbnail {
+	background-color: #fff;
+	text-align: center;
+}
+
+/* thumbs in deed & thanks should not grow too high */
+#mediauploader-stepdiv-deeds,
+#mediauploader-stepdiv-thanks {
+	.mediauploader-thumbnail {
+		max-width: 230px;
+		max-height: 230px;
+	}
+}
+
+/*
+ * thumbs in details step can grow as high as they need, it's more important to display
+ * them with a uniform width in the left column; it doesn't matter too much if they're
+ * tall, there's plenty of content on the right hand side...
+ */
+#mediauploader-stepdiv-details .mediauploader-thumbnail {
+	text-align: left;
+	max-width: 230px;
+}
+
+.mediauploader-thumbnail-link {
+	display: block;
+	margin: 0 auto;
+
+	canvas,
+	img {
+		box-shadow: 0 0 5px #999;
+	}
+}
+
+.mediauploader-thumbnail-side {
+	float: left;
+	margin-bottom: 1em;
+	margin-right: 2.5em;
+}
+
+#mediauploader-stepdiv-details .mediauploader-thumbnail-side {
+	width: 230px;
+}
+
+#mediauploader-stepdiv-thanks .mediauploader-thumbnail-side {
+	width: 120px;
+}
+
+.mediauploader-remove-upload {
+	margin-left: -0.5em;
+	margin-top: 0.5em;
+}
+
+#mediauploader-deeds-thumbnails {
+	background-color: #f8f9fa;
+	border-radius: 2px;
+	text-align: center;
+	margin: 1em 0;
+
+	.mediauploader-thumbnail {
+		display: inline-block;
+		margin: 1em;
+		vertical-align: middle;
+	}
+}
+
+.mediauploader-data {
+	float: left;
+
+	@media ( max-width: @mobile-w ) {
+		width: 100% !important; /* stylelint-disable-line declaration-no-important */
+	}
+}
+
+/* I don't like that this has to have width, to ensure that all the floats work out correctly. */
+#mediauploader-stepdiv-details .mediauploader-data {
+	/* 230px + 2.5em is width of thumbnail on the left */
+	width: ~'calc( 100% - 230px - 2.5em )';
+}
+
+#mediauploader-stepdiv-thanks .mediauploader-data {
+	/* 120px + 2.5em is width of thumbnail on the left */
+	/* 0.5em is padding inside text input (2 * 0.25), 4px is border (2 x 2px) */
+	width: ~'calc( 100% - 120px - 2.5em - 0.5em - 4px )';
+
+	@media ( max-width: @mobile-w ) {
+		.oo-ui-buttonElement > .oo-ui-buttonElement-button {
+			white-space: normal;
+		}
+	}
+}
+
+.mediauploader-stepdiv {
+	position: relative;
+}
+
+.mwe-small-print {
+	font-size: x-small;
+}
+
+.mediauploader-deed.selected .mediauploader-deed-name {
+	font-weight: bold;
+}
+
+.mwe-more-options,
+.mediauploader-macro-deeds-return,
+.mediauploader-deed-header-link {
+	cursor: pointer;
+}
+
+.mediauploader-deed-license {
+	margin-left: 1.5em;
+
+	@media ( max-width: @mobile-w ) {
+		margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+	}
+}
+
+.mediauploader-info-file {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.mediauploader-info-file .oo-ui-fieldLayout-body {
+	margin-bottom: 1em;
+}
+
+.mediauploader-details-fieldname {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.mwe-title {
+	font-family: sans-serif;
+	font-size: small;
+	width: 100%;
+}
+
+.mediauploader-details-fieldname-input {
+	margin-bottom: 1em;
+}
+
+.mediauploader-thirdparty-license {
+	margin-top: 8px;
+}
+
+.mediauploader-deed-form-internal {
+	padding: 0.5em 0 1em 2em;
+
+	@media ( max-width: @mobile-w ) {
+		padding-left: 1.5em;
+	}
+}
+
+label.mediauploader-copyright-info {
+	display: inline-block;
+	padding-left: 3px;
+	text-indent: 0;
+	padding-top: 2px;
+	width: 93%;
+}
+
+.mediauploader-custom-deed {
+	margin-top: 5px;
+}
+
+.mediauploader-buttons {
+	margin-top: 1em;
+	text-align: right;
+}
+
+.mediauploader-button-previous {
+	float: left;
+}
+
+a.mediauploader-tooltip-link {
+	cursor: pointer;
+}
+
+input[ type='radio' ].mediauploader-copyright-info-radio {
+	vertical-align: top;
+}
+
+.mediauploader-details-more-options,
+.mediauploader-details-copy-metadata,
+.mediauploader-deed-license-group-head {
+	padding-left: 1.5em;
+	cursor: pointer;
+	outline: 0;
+	display: block;
+}
+
+.mediauploader-deed-license-group-head.mw-collapsible-arrow,
+.mediauploader-details-more-options.mw-collapsible-toggle,
+.mediauploader-details-copy-metadata.mw-collapsible-toggle,
+.mediauploader-deed-license-group-head.mw-collapsible-toggle {
+	/* Override jquery.makeCollapsible styles */
+	float: none;
+	/* Override mediawiki.icon styles */
+	background-position: left center;
+}
+
+.mediauploader-deed-license-group-head {
+	margin-top: 10px;
+}
+
+.mediauploader-deed-license-group-body {
+	padding-left: 3em;
+
+	@media ( max-width: @mobile-w ) {
+		padding-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+	}
+}
+
+.mediauploader-license-custom {
+	overflow: hidden;
+
+	.oo-ui-buttonElement {
+		float: right;
+		width: 9em;
+		padding-left: 1em;
+		margin-right: 0;
+
+		@media ( max-width: @mobile-w ) {
+			float: none;
+			padding-left: 0;
+			padding-top: 0.5em;
+		}
+	}
+
+	.oo-ui-textInputWidget {
+		width: auto;
+		margin-right: 10em;
+
+		@media ( max-width: @mobile-w ) {
+			float: none;
+			padding-top: 0.5em;
+			margin-right: 0;
+		}
+	}
+}
+
+.mediauploader-license-custom .oo-ui-textInputWidget textarea {
+	font-family: monospace, monospace;
+}
+
+.mediauploader-thanks {
+	margin-bottom: 2em;
+}
+
+.mwe-readonly {
+	background-color: #fff;
+	padding: 0.25em;
+}
+
+.mwe-more-details .mw-collapsible-content {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.ui-corner-top {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+.ui-corner-bottom {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.ui-corner-all {
+	border-radius: 2px;
+}
+
+.mediauploader-deed-license-group-subhead {
+	color: #72777d;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 1.5em;
+
+	@media ( max-width: @mobile-w ) {
+		padding-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+	}
+}
+
+.mediauploader-details-texts {
+	padding: 0.5em;
+}
+
+.mediauploader-sign {
+	max-width: 20em;
+	display: inline-block;
+	margin-right: 0;
+	vertical-align: baseline;
+}
+
+.ui-helper-clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+		border-collapse: collapse;
+	}
+}
+
+.ui-helper-clearfix:after {
+	clear: both;
+}

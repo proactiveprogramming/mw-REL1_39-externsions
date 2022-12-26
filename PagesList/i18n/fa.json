@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beginneruser",
+			"Huji",
+			"Reza1615"
+		]
+	},
+	"pageslist-desc": "نمایش یک فهرست از صفحه‌ها",
+	"pageslist": "فهرست صفحه‌ها",
+	"pageslistquerypage": "صفحه‌های صفحه فهرست پرسمان",
+	"pageslist-legend": "گزینه‌های فهرست صفحه",
+	"pageslist-categories": "رده:",
+	"pageslist-title": "عنوان",
+	"pageslist-last-modified": "آخرین ویرایش",
+	"pageslist-last-user": "آخرین ویرایش توسط",
+	"pageslist-basepage": "زیر صفحهٔ (شامل فضای نام):"
+}

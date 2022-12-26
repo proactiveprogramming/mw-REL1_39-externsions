@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"autogallery-desc": "Voegt een nieuwe galerijmodus (<code>auto</code>) toe aan de wikitest-tag <code><nowiki><gallery></nowiki></code>."
+}

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"revcs-edit-preview": "Ǩičč õõudǩiõʹtte",
+	"revcs-edit-reason": "Mäinn:",
+	"revcs-error": "Vââʹǩǩ: $1",
+	"revcs-history-hidden-reason": "(mäinn čiõkkum)",
+	"revcs-history-hidden-user": "(õõʹnninõmm čiõkkum)",
+	"revcs-history-rcsh-reason": "Mäinn",
+	"revcs-list-extended-supplement-all": "puk",
+	"revcs-list-rcs-rev-id-edit": "Muuʹtt",
+	"revcs-list-rcs-user-text": "Õõʹnni",
+	"revcs-list-submit": "Čuäʹjet",
+	"revcs-log-hidehistory-reason-hidden": "mäinn čiõkkum",
+	"revcs-show-reason": "Mäinn: $1",
+	"revcs-show-revision": "Versio: $1",
+	"revcs-warning": "Vaartõs: $1"
+}

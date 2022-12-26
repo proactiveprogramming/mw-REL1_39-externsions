@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga",
+			"WikiPhoenix"
+		]
+	},
+	"preferenceslist-desc": "Skapar en lista över alla användarinställningar för en specifik inställning",
+	"preferenceslist-preferenceslist": "Inställningslista",
+	"preferenceslist-preferenceslist-intro": "Nedan finns en lista över inställningar. Välj en eller fler för att se en lista över alla användare med de inställningarna.",
+	"preferenceslist": "Lista över inställningar",
+	"action-preferenceslist": "lista över användares inställningar",
+	"preferenceslist-csv": "Ladda ner som CSV",
+	"preferenceslist-nofields": "Inga fält har valts.",
+	"right-preferenceslist": "Öppna sidan Special:PreferencesList"
+}

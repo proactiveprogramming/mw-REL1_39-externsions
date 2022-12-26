@@ -1,0 +1,44 @@
+{
+	"name": "mediawiki/watch-analytics",
+	"type": "mediawiki-extension",
+	"description": "Providing accountability to MediaWiki page-watches",
+	"keywords": [
+		"MediaWiki",
+		"Accountability"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Extension:WatchAnalytics",
+	"license": "GPL-3.0+",
+	"authors": [
+		{
+			"name": "James Montalvo",
+			"homepage": "http://jamesmontalvo3.com",
+			"role": "Author"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/enterprisemediawiki/WatchAnalytics/issues",
+		"wiki": "https://www.mediawiki.org/wiki/Extension:WatchAnalytics",
+		"source": "https://github.com/enterprisemediawiki/WatchAnalytics"
+	},
+	"require": {
+		"php": ">=5.6.0"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phpcs": "phpcs -sp --cache"
+	}
+}

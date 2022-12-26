@@ -1,0 +1,7 @@
+## NetBeans
+nbproject*
+project.index
+node_modules/**
+vendor/**
+composer.lock
+/.eslintcache

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"StarrySky"
+		]
+	},
+	"generatemochaconfig-desc": "生成 JSON 的脚本，可用于为所有启用的扩展运行 Mocha 测试"
+}

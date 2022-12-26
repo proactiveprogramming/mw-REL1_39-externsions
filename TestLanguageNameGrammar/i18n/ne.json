@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"बडा काजी"
+		]
+	},
+	"testlanguagenamegrammar": "भाषा नामहरु संग व्याकरण रूपहरु को परीक्षण",
+	"testlanguagenamegrammar-desc": "भाषा नामहरू सहित व्याकरण फारमहरू परीक्षण गर्न [[Special:TestLanguageNameGrammar|विशेष पृष्ठ]] थप्छ।",
+	"testlanguagenamegrammar-language": "भाषा",
+	"testlanguagenamegrammar-grammarform": "व्याकरण रूप",
+	"testlanguagenamegrammar-submit": "पेस गर्नुहोस्"
+}

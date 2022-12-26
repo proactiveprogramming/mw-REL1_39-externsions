@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chaduvari",
+			"Veeven"
+		]
+	},
+	"stalkerlog-desc": "వాడుకరుల యొక్క లాగిన్, లాగౌట్ల [[Special:Log/stalkerlog|చిట్టా]]ను చేరుస్తుంది",
+	"stalkerlog-log-login": "లోనికి ప్రవేశించారు.",
+	"stalkerlog-log-logout": "నిష్క్రమించారు.",
+	"stalkerlog-log-type": "వాడుకరి అధీకరణల చిట్టా",
+	"stalkerlog-log-text": "ఇది వాడుకరి లాగిన్లు, లాగౌట్ల చిట్టా."
+}

@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"passwordlesslogin-desc": "Forni un maniera de aperir session sin contrasigno, confirmante le session sur un apparato connectite.",
+	"passwordlesslogin-verify-request": "Per favor verifica tu session sur tu telephono.",
+	"passwordlesslogin-error-no-authentication-workflow": "Le fluxo de travalio de authentication ha terminate de maniera inexpectate.",
+	"passwordlesslogin-no-challenge": "Non existe un defia active a confirmar. Per favor tenta authenticar de novo.",
+	"passwordlesslogin-verification-pending": "Le authentication non ha ancora essite verificate. Per favor verifica tu requesta de session sur tu apparato connectite.",
+	"passwordlesslogin-pair-device-step": "Per favor seque le instructiones pro accopular tu nove apparato.",
+	"passwordlesslogin-no-device-paired": "Il non ha ancora un apparato accopulate.",
+	"passwordlesslogin-verify-pair": "Nos ha inviate un requesta de apertura de session a tu apparato pro verificar que illo es registrate correctemente. Per favor confirma le requesta e continua.",
+	"passwordlesslogin-pair-device": "Accopular apparato pro aperir session sin contrasigno",
+	"passwordlesslogin-login": "Aperir session con tu telephono intelligente",
+	"passwordlesslogin-pair-step-1": "1. Discarga le application PasswordlessLogin de MediaWiki",
+	"passwordlesslogin-pair-step-2": "2. Scanna le codice QR con le application",
+	"passwordlesslogin-pair-step-3": "3. Quando le configuration del application ha terminate, continua al proxime passo",
+	"passwordlesslogin-authentication-app": "Application de authentication",
+	"apihelp-passwordlesslogin-summary": "Registrar un nove apparato pro un token de accopulamento anteriormente generate.",
+	"apihelp-passwordlesslogin-param-pairToken": "Le token de accopulamento anteriormente generate pro identificar le usator pro le qual le apparato debe esser registrate.",
+	"apihelp-passwordlesslogin-param-deviceId": "Un identificator unic que pote esser usate pro identificar un dispositivo e pro inviar notificationes a illo con le systema de messageria standard del dispositivo (p.ex. Firebase Cloud Messaging pro dispositivos Android).",
+	"apihelp-passwordlesslogin-param-secret": "Un secreto generate sur le apparato que essera usate pro signar le defias inviate al apparato. Iste secreto se usa pro verificar un responsa al defia de requesta de apertura de session e debe esser guardate in secreto.",
+	"apihelp-passwordlesslogin-verify-challenge-summary": "Verificar un requesta de apertura de session inviate a un apparato.",
+	"apihelp-passwordlesslogin-verify-challenge-param-challenge": "Le defia que ha essite inviate al dispositivo e que debe esser resolvite.",
+	"apihelp-passwordlesslogin-verify-challenge-param-response": "Le responsa (solution) al defia. Le solution debe esser:<br />&#160;1. Un HMAC con SHA512 como algorithmo de signatura<br />&#160;2. Le secreto pre-condividite como material de clave symmetric<br />&#160;3. Le datos MAC es le defia como array de bytes<br />&#160;4. Le responsa debe esser un catena hexadecimal<br />&#160;5. Le responsa debe esser in minusculas",
+	"apihelp-passwordlesslogin-verify-login-summary": "Verificar si un requesta de apertura de session ha ja essite verificate per le apparato."
+}

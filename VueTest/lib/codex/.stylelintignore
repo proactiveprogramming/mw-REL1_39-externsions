@@ -1,0 +1,45 @@
+dist/
+coverage/
+
+# Ignore all of Cypress.
+packages/codex/cypress/
+
+# Ignore documentation Contributing code Markdown file.
+packages/codex-docs/docs/contributing/contributing-code/developing-components.md
+
+# Ignore documentation Components generated Markdown files.
+packages/codex-docs/docs/components/demos/
+
+# Ignore documentation Icons Markdown files.
+packages/codex-docs/docs/icons/
+
+# Turn on linting for hidden directories.
+!.*/
+
+# Ignore JavaScript and TypeScript files.
+*.js
+*.ts
+
+# Ignore JSON files.
+*.json
+
+# Ignore shell scripts.
+*.sh
+
+# Ignore SVG files.
+*.svg
+
+# Ignore PNG files.
+*.png
+
+# Ignore AUTHORS.txt file.
+AUTHORS.txt
+
+# Ignore LICENSE file.
+LICENSE*
+
+# Ignore CHANGELOG, README and other Markdown files.
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+README.md
+RELEASING.md

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore",
+			"Sou0012"
+		]
+	},
+	"similareditors-error-database-refresh": "問題が発生しました。数分後にもう一度お試しください。",
+	"similareditors-error-default": "問題が発生しました。現在調査中です。",
+	"similareditors-form-field-target-label": "利用者名または IP アドレス",
+	"similareditors-form-submit": "検索",
+	"similareditors-no-results": "結果はありません。",
+	"similareditors-overlap-level-high": "高",
+	"similareditors-overlap-level-low": "低",
+	"similareditors-overlap-level-medium": "中",
+	"similareditors-results-user": "利用者",
+	"similareditors-results-user-timeline": "タイムライン"
+}

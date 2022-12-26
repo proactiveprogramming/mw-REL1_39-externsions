@@ -1,0 +1,42 @@
+{
+	"name": "RegularTooltips",
+	"version": "1.0.0",
+	"author": [
+		"Sanjay Thiyagarajan"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:RegularTooltips",
+	"descriptionmsg": "regulartooltips-desc",
+	"type": "parserhook",
+	"load_composer_autoloader": true,
+	"MessagesDirs": {
+		"RegularTooltips": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"RegularTooltipsMagic": "RegularTooltips.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"RegularTooltipsHooks": "src/RegularTooltipsHooks.php",
+		"RegularTooltipsParser": "src/RegularTooltipsParser.php"
+	},
+	"ResourceModules": {
+		"ext.RegularTooltips": {
+			"scripts": "lib/RegularTooltips.js",
+			"dependencies": [
+				"oojs-ui-widgets"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "RegularTooltips"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "RegularTooltipsHooks::registerParserFunctions"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"manifest_version": 1
+}

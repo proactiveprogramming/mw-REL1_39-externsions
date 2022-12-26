@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joachim Mos",
+			"Slomox"
+		]
+	},
+	"sitematrix-desc": "Wiest en [[Special:SiteMatrix|List vun all Wikimedia-Wikis]]",
+	"sitematrix-language": "Spraak",
+	"sitematrix-project": "Naam vun dat Projekt, Interprojekt-Lenk un Interwiki-Lenk",
+	"sitematrix-other-projects": "Annere Projekten",
+	"sitematrix-total": "'''Alltohoop: $1'''",
+	"sitematrix-sitetotal": "Alltohoop",
+	"sitematrix-private": "privat",
+	"sitematrix-fishbowl": "Ännern is inschränkt"
+}

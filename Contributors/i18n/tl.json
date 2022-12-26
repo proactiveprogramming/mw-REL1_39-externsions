@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"AnakngAraw"
+		]
+	},
+	"contributors": "Mga tagapag-ambag",
+	"contributors-desc": "Nagbubuod ng pangunahing mga tagapag-ambag sa isang pahina",
+	"contributors-toolbox": "Pangunahing mga tagapag-ambag",
+	"contributors-legend": "Itala ang pangunahing mga tagapag-ambag sa isang pahina",
+	"contributors-target": "Pamagat:",
+	"contributors-submit": "Ipakita",
+	"contributors-subtitle": "Pangunahing mga tagapag-ambag sa $1",
+	"contributors-badtitle": "Hindi tanggap na pamagat.",
+	"contributors-nosuchpage": "Hindi umiiral ang pahinang $1."
+}

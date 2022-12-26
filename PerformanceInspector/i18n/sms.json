@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"performanceinspector-dialog-summary": "Õʹhtteǩeässmõš",
+	"performanceinspector-dialog-cancel": "Jõõsk",
+	"performanceinspector-modules-css-column-module": "Moduul",
+	"performanceinspector-modules-css-column-url": "URL",
+	"performanceinspector-modules-css-column-source": "Teâttkäivv",
+	"performanceinspector-imagesize-column-image-name": "Nõmm",
+	"performanceinspector-imagesize-column-size": "Šorradvuõtt",
+	"performanceinspector-imagesize-too-big": "Vaartõs",
+	"performanceinspector-newpp-column-name": "Nõmm",
+	"performanceinspector-newpp-column-value": "Ärvv",
+	"performanceinspector-newpp-template-time-report-column-name": "Nõmm"
+}

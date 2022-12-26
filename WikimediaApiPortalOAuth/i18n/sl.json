@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"wikimediaapiportaloauth-desc": "Uporabnikom API portala Fundacije Wikimedia omogoča ustvarjanje in upravljanje odjemalcev OAuth na daljavo",
+	"wikimediaapiportaloauth-ui-action-cancel": "Prekliči",
+	"wikimediaapiportaloauth-ui-action-done": "Končano",
+	"wikimediaapiportaloauth-ui-client-status-disabled": "Onemogočeno"
+}

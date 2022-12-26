@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"Mainframe98",
+			"McDutchie",
+			"Sjoerddebruin",
+			"Xbaked potatox"
+		]
+	},
+	"pageslist-desc": "Toont een lijst van pagina's",
+	"pageslist": "Lijst met pagina's",
+	"pageslistquerypage": "Zoekpagina voor paginalijsten",
+	"pageslist-legend": "Opties voor paginalijsten",
+	"pageslist-categories": "Categorie:",
+	"pageslist-title": "Titel",
+	"pageslist-last-modified": "Laatst gewijzigd",
+	"pageslist-last-user": "Laatst gewijzigd door",
+	"pageslist-basepage": "Subpagina's van (inclusief naamruimte):",
+	"apihelp-pageslist-param-length": "Aantal resultaten om te tonen"
+}

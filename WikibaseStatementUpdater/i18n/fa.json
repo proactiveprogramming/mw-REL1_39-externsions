@@ -1,0 +1,6 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"wsu-js-batchtable-status": "$1٪ انجام شد. {{PLURAL:$2|0=|$2 مورد ناموفق.}}"
+}

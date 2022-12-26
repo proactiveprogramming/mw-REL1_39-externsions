@@ -1,0 +1,22 @@
+/**
+ * Styles for wiki pages using the <hiero> parser tag.
+ */
+
+.mw-hiero-table {
+	border: 0;
+	border-spacing: 0;
+}
+
+.mw-hiero-table td {
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mw-hiero-box {
+	background: #000;
+}
+
+.mw-mirrored {
+	transform: scaleX( -1 );
+}

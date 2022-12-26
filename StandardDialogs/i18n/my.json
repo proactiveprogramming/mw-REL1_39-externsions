@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black"
+		]
+	},
+	"standarddialogs-copy-btn": "မိတ္တူကူး",
+	"standarddialogs-copy-page-legend": "မိတ္တူကူး",
+	"standarddialogs-copy-page-new": "စာမျက်နှာသစ် အမည်",
+	"standarddialogs-page-info-close": "ပိတ်ရန်",
+	"standarddialogs-page-info-general": "အထွေထွေ",
+	"standarddialogs-page-info-history": "နောက်ဆုံးတည်းဖြတ်မှု",
+	"standarddialogs-page-info-page-title": "ခေါင်းစဉ်",
+	"standarddialogs-page-info-page-id": "စာမျက်နှာ အိုင်ဒီ",
+	"standarddialogs-page-info-page-language": "ဘာသာစကား",
+	"standarddialogs-page-info-page-model": "အကြောင်းအရာ မော်ဒယ်",
+	"standarddialogs-page-info-page-redirects": "ပြန်ညွှန်းများ",
+	"standarddialogs-page-info-page-contributors": "ပံ့ပိုးသူများ",
+	"standarddialogs-page-info-page-last-edit": "နောက်ဆုံးတည်းဖြတ်မှု",
+	"standarddialogs-page-info-page-last-editor": "နောက်ဆုံး တည်းဖြတ်သူ",
+	"standarddialogs-page-info-page-templates": "တမ်းပလိတ်များ",
+	"standarddialogs-page-info-page-categories": "ကဏ္ဍများ",
+	"standarddialogs-page-info-page-external": "ပြင်ပလင့်ခ်များ",
+	"standarddialogs-new-page-title": "စာမျက်နှာအသစ် ဖန်တီးရန်",
+	"standarddialogs-new-page-label": "စာမျက်နှာ အမည်",
+	"standarddialogs-create-button-new-page-text": "စာမျက်နှာအသစ်",
+	"standarddialogs-create-button-new-page-title": "စာမျက်နှာသစ်တစ်ခု ဖန်တီးရန်",
+	"standarddialogs-delete-btn": "ဖျက်ရန်",
+	"standarddialogs-move-btn": "ရွှေ့ရန်",
+	"standarddialogs-protect-btn": "ကာကွယ်ပါ",
+	"standarddialogs-purge-btn": "ပြန်လည်ဆန်းသစ်ရန်",
+	"standarddialogs-btn-done": "ပြီးပြီ",
+	"standarddialogs-btn-cancel": "မလုပ်တော့ပါ"
+}

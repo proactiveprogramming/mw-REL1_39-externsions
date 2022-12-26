@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abbas dhothar",
+			"Bgo eiu"
+		]
+	},
+	"datasearch_language": "بولی:",
+	"ow_exporttsv_languages": "بولیاں:",
+	"ow_none_selected": "چُنیا نئیں گیا",
+	"ow_Language": "بولی",
+	"ow_OptionAttribute": "وشیشتا",
+	"ow_OtherLanguages": "ہور بولیاں:",
+	"ow_TextAttribute": "وشیشتا",
+	"ow_TranslatedTextAttribute": "وشیشتا",
+	"ow_TranslatedText": "ترجمہ شدہ ترجمہ",
+	"ow_LinkAttribute": "وشیشتا",
+	"ow_upload": "اُتے چاڑھو",
+	"prefs-ow-lang": "بولیاں",
+	"ow-stat-all-is": "سارے = $1"
+}

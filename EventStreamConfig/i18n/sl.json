@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"eventstreamconfig-desc": "Izpostavi konfiguracijo toka dogodkov v končni točki API. Uporablja se lahko tudi za izpostavljanje konfiguracij prek ResourceLoaderja."
+}

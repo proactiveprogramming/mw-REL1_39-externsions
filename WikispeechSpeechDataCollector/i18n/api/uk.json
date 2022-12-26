@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "Загальний API постійного доступу до об'єктів домену.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Не вдалося десеріалізувати транзакцію JSON.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Не вдалося десеріалізувати транзакцію.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Не вдалося виконати транзакцію.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Не вдалося серіалізувати відповідь.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Створити єдиний новий запит користувача.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Прочитати один запит користувача.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Видалити один запит користувача."
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"openjscad-desc": "Adiciona a etiqueta <code>&lt;jscad&gt;</code> para exibir projetos de impressão 3D do OpenJsCad"
+}

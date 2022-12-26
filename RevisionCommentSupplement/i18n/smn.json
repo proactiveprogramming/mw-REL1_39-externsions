@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"revcs-edit-reason": "Suijâ:",
+	"revcs-error": "Feilâ: $1",
+	"revcs-history-rcsh-reason": "Suijâ",
+	"revcs-list-extended-supplement-all": "puoh",
+	"revcs-list-rcs-user-text": "Kevttee",
+	"revcs-show-reason": "Suijâ: $1",
+	"revcs-warning": "Váruttâs: $1"
+}

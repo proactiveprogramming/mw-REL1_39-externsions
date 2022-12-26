@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"wsu-desc": "Utensiles pro actualisar e adder declarationes de Wikibase",
+	"wsu-special-wikibasestatementupdater": "Actualisation in massa de declarationes",
+	"wsu-wsu-batch-title": "Nomine de lot",
+	"wsu-wsu-batch-contents": "Commandos in formato ''Quick Statements V1''",
+	"wsu-wsu-error": "Impossibile analysar le syntaxe del commandos: $1",
+	"wsu-wsu-error-linetooshort": "Le linea $1 es troppo curte.",
+	"wsu-wsu-error-noqualifiers": "Le qualificatores non es ancora supportate.",
+	"wsu-wsu-error-onlyq": "Solmente elementos Q es supportate.",
+	"wsu-wsu-error-unsupportedcommand": "Commando incognite.",
+	"wsu-your-batches": "Tu ha create le sequente lotes:",
+	"wsu-unknown-batch": "Lot incognite",
+	"wsu-goback": "Retornar al lista",
+	"wsu-start": "(Re)comenciar a modificar",
+	"wsu-stop": "Cessar de modificar",
+	"wsu-updater-api-failure": "Impossibile analysar le syntaxe del responsa del API",
+	"wsu-updater-ambiguous-update": "Le proprietate ha plure declarationes",
+	"wsu-give-permission": "Iste utensile require permission pro facer modificationes in tu nomine. [[$1|Dar permissiones]].",
+	"wsu-create-batch": "Crear nove lot",
+	"wsu-command-P": "Proprietate",
+	"wsu-batchtable-subject": "Subjecto",
+	"wsu-batchtable-command": "Commando",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Valor",
+	"wsu-batchtable-status": "Stato",
+	"wsu-js-batchtable-status": "$1% complete. {{PLURAL:$2|0=|$2 fallite.}}",
+	"apihelp-wikibasestatementupdater-summary": "Gerer lotes del Actualisator de Declarationes Wikibase"
+}

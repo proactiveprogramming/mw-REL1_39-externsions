@@ -1,0 +1,10 @@
+dist/
+coverage/
+node_modules/
+*.snap.*
+
+# Turn on linting for hidden directories
+!.*/
+!**/.*/*
+# Turn linting on for JS and JSON configuration files
+!.*.js*

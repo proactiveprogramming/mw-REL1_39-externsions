@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"growthexperiments-homepage-email-header-confirmed": "ای میل شامل تھی ڳئی",
+	"growthexperiments-homepage-email-button-noemail": "ای میل شامل کرو",
+	"growthexperiments-homepage-email-button-unconfirmed": "نواں لنک",
+	"growthexperiments-homepage-startediting-dialog-intro-back": "منسوخ",
+	"growthexperiments-homepage-startediting-dialog-difficulty-back": "پچھوں",
+	"growthexperiments-homepage-startediting-dialog-difficulty-level-easy-label": "سوکھا",
+	"growthexperiments-homepage-startediting-dialog-difficulty-level-medium-label": "درمیانہ",
+	"growthexperiments-homepage-impact-recent-activity-last-edit-text": "چھیکڑی تبدیلی",
+	"growthexperiments-homepage-impact-recent-activity-streak-count-text": "$1 {{PLURAL:$1|ݙین٘ہ|ݙیہاڑے}}",
+	"growthexperiments-homepage-impact-scores-edit-count": "کل تبدیلیاں",
+	"growthexperiments-homepage-impact-empty-pageviews-tooltip-button": "گھن گھندا",
+	"growthexperiments-homepage-suggestededits-topic-filters-close": "تھی ڳیا",
+	"growthexperiments-homepage-suggestededits-topics-selectall": "سبھ چݨو",
+	"growthexperiments-homepage-suggestededits-topics-unselectall": "سب ہٹاؤ",
+	"growthexperiments-addlink-context-button-next": "اڳلا",
+	"growthexperiments-structuredtask-onboarding-dialog-title": "تعارف",
+	"growthexperiments-addimage-viewer-close-button": "بند کرو",
+	"growthexperiments-tour-newimpact-discovery-title": "اپ ڈیٹ تھیا ڈیزائن",
+	"growthexperiments-tour-newimpact-discovery-response-button-okay": "سمجھ آڳئی"
+}

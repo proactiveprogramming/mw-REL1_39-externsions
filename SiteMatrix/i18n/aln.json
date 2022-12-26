@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mdupont"
+		]
+	},
+	"sitematrix-desc": "Displays a [[Special:SiteMatrix|Lista e Wikimedia wikis]]",
+	"sitematrix-language": "Gjuhë",
+	"sitematrix-project": "Emri i projektit, Lidhje interproject dhe interwiki link",
+	"sitematrix-total": "'''numërimin Gjithsej: $1'''",
+	"sitematrix-sitetotal": "Total",
+	"sitematrix-private": "privat",
+	"sitematrix-fishbowl": "redaktimi i kufizuar"
+}

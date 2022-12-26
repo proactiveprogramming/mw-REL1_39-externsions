@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ssola"
+		]
+	},
+	"apifeatureusage": "Ús de funcionalitats de l'API",
+	"apifeatureusage-desc": "Obté un resum dels usos registrats de les funcionalitats de l'API per un agent d'usuari.",
+	"apifeatureusage-elasticsearch-error": "Error d'Elasticsearch: $1",
+	"apifeatureusage-legend": "Ús de funcionalitats de l'API",
+	"apifeatureusage-agent-label": "Agent d'usuari:",
+	"apifeatureusage-startdate-label": "Data d'inici:",
+	"apifeatureusage-enddate-label": "Data de fi:",
+	"apifeatureusage-submit": "Recupera les dades",
+	"apifeatureusage-no-indexes": "No hi ha dades disponibles per l'interval de dates especificat.",
+	"apifeatureusage-missing-indexes": "No hi ha dades disponibles per part de l'interval de dates especificat.",
+	"apifeatureusage-warnings": "Atenció: $1",
+	"apifeatureusage-column-feature": "Funcionalitat",
+	"apifeatureusage-column-date": "Data",
+	"apifeatureusage-column-uses": "Usos",
+	"apifeatureusage-deprecation-help": "Utilitzeu [[Special:ApiFeatureUsage]] per veure l'ús de les funcionalitats obsoletes per la vostra aplicació."
+}

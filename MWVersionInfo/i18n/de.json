@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"mwversioninfo-desc": "Verwalten von MediaWiki-Versionsinformationen",
+	"apihelp-mwversioninfo-summary": "Ruft Versionsinformationen über MediaWiki-Zweige ab",
+	"apihelp-mwversioninfo-param-version": "MediaWiki-Version",
+	"apihelp-mwversioninfo-example": "Ruft Informationen über MediaWiki 1.27 ab"
+}

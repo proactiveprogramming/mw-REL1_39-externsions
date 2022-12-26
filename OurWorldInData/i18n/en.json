@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ryan Schmidt"
+		]
+	},
+	"owid-desc": "Embed visualizations from OurWorldInData inside of wiki pages",
+	"owid-error-key": "Error: Dataset name contains invalid characters.",
+	"owid-extensionname": "OurWorldInData"
+}

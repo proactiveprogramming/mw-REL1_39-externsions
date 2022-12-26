@@ -1,0 +1,99 @@
+{
+	"name": "OAuthAuthentication",
+	"version": "0.1.0",
+	"author": [
+		"Chris Steipp"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:OAuthAuthentication",
+	"descriptionmsg": "oauthauth-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
+	"SpecialPages": {
+		"OAuthLogin": "MediaWiki\\Extension\\OAuthAuthentication\\SpecialOAuthLogin"
+	},
+	"MessagesDirs": {
+		"OAuthAuthentication": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"SpecialOAuthLoginNoTranslate": "OAuthAuthentication.notranslate-alias.php"
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\OAuthAuthentication\\SpecialOAuthLogin": "specials/SpecialOAuthLogin.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Config": "utils/Config.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Exception": "utils/Exception.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Hooks": "utils/Hooks.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Policy": "utils/Policy.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthExternalUser": "utils/OAuthExternalUser.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\AuthenticationHandler": "handlers/AuthenticationHandler.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\OAuth1Handler": "handlers/OAuth1Handler.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\SessionStore": "store/SessionStore.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\PhpSessionStore": "store/PhpSessionStore.php"
+	},
+	"TestAutoloadClasses": {
+		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthAuthDBTest": "tests/phpunit/OAuthAuthDBTest.php"
+	},
+	"Hooks": {
+		"PersonalUrls": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onPersonalUrls",
+		"PostLoginRedirect": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onPostLoginRedirect",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onLoadExtensionSchemaUpdates",
+		"GetPreferences": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onGetPreferences",
+		"AbortNewAccount": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onAbortNewAccount",
+		"UserLoadAfterLoadFromSession": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession"
+	},
+	"config": {
+		"OAuthAuthenticationUrl": {
+			"description": "Must be configured in LocalSettings.php! The OAuth special page on the wiki. Passing the title as a parameter is usually more reliable E.g., http://en.wikipedia.org/w/index.php?title=Special:OAuth",
+			"value": null
+		},
+		"OAuthAuthenticationConsumerKey": {
+			"description": "Must be configured! The key that was generated for you when you registered your consumer. RSA private key isn't currently supported.",
+			"value": null
+		},
+		"OAuthAuthenticationConsumerSecret": {
+			"description": "Must be configured! The secret that was generated for you when you registered your consumer. RSA private key isn't currently supported.",
+			"value": null
+		},
+		"OAuthAuthenticationCanonicalUrl": {
+			"description": "Optionally set the Canonical url that the server will return, if it's different from the OAuth endpoint. OAuth will use wgCannonicalServer when generating the identity JWT, and this code will compare the iss to this value, or $wgOAuthAuthenticationUrl if this isn't set.",
+			"value": null
+		},
+		"OAuthAuthenticationAccountUsurpation": {
+			"description": "Allow usurpation of accounts. If accounts on the OAuth provider have the same name as an already created local account, this flag decides if the user is allowed to login, or if the login will fail with an error message.",
+			"value": false
+		},
+		"OAuthAuthenticationUsernameWhitelist": {
+			"description": "Only allow creation/login of usernames that are on a whitelist. Setting this to false allows any username to register and login.",
+			"value": false
+		},
+		"OAuthAuthenticationGroupWhitelist": {
+			"description": "Only allow creation/login of users who are in groups on the remote wiki. Setting this to false allows any username to register and login.",
+			"value": false
+		},
+		"OAuthAuthenticationAllowLocalUsers": {
+			"description": "Allow local account creation. Set this to false if you only want to use remote accounts. Note: Once local accounts exist, this extension will not prevent them from logging in.",
+			"value": true
+		},
+		"OAuthAuthenticationRemoteName": {
+			"description": "A simple text string, naming the remote wiki (used for text like, \"Login on <wikiname>\". If this is false, a generic \"Remote OAuth Wiki\" is used, which users may not understand.",
+			"value": false
+		},
+		"OAuthAuthenticationMaxIdentityAge": {
+			"description": "Max age that a session can go without re-validating the user's identity.",
+			"value": 3600
+		},
+		"OAuthAuthenticationValidateSSL": {
+			"description": "If $wgOAuthAuthenticationUrl uses https, do we validate the certificate? This should always be true in production, but sometimes useful to disable while testing.",
+			"value": true
+		},
+		"OAuthAuthenticationCallbackUrl": {
+			"description": "Callback URL (should point to Special:OAuthLogin/finish). If it is empty, the callback is assumed to be non-dynamic (and thus read from the consumer record of the target wiki). Under normal circumstances this should not be changed.",
+			"value": null
+		}
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

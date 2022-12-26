@@ -1,0 +1,27 @@
+{
+	"name": "NewsBox",
+	"version": "2.3",
+	"author": [
+		"Jack Phoenix"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NewsBox",
+	"descriptionmsg": "newsbox-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"NewsBox": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NewsBox": "src/NewsBox.php"
+	},
+	"Hooks": {
+		"SkinBuildSidebar": "NewsBox::render",
+		"MonacoWidgets": "NewsBox::renderForMonaco"
+	},
+	"manifest_version": 1
+}

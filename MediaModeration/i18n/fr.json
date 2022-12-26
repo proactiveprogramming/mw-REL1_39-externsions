@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eneelk",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"mediamoderation-desc": "Service pour détecter les correspondances avec des jeux données de signatures connues d’images relatives à l’exploitation des enfants."
+}

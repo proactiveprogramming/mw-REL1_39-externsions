@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"mwversioninfo-desc": "ניהול מידע על גרסת מדיה־ויקי",
+	"apihelp-mwversioninfo-summary": "קבלת מידע גרסה על ענפים של מדיה־ויקי",
+	"apihelp-mwversioninfo-param-version": "גרסת מדיה־ויקי",
+	"apihelp-mwversioninfo-example": "קבלת מידע על מדיה־ויקי 1.27"
+}

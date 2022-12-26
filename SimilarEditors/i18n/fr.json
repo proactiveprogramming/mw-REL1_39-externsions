@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"action-similareditors": "accéder à [[Special:SimilarEditors]]",
+	"right-similareditors": "Accéder à [[Special:SimilarEditors]]",
+	"similareditors": "Rédacteurs similaires",
+	"similareditors-desc": "Fournit des détails sur les utilisateurs ayant des historiques similaires de modifications.",
+	"similareditors-error-database-refresh": "Quelque chose s’est mal passé, veuillez réessayer dans quelques minutes.",
+	"similareditors-error-default": "Quelque chose s’est mal passé, nous examinons la situation.",
+	"similareditors-error-user-bot": "L’utilisateur $1 est un robot et donc hors de portée.",
+	"similareditors-error-user-no-account": "L’utilisateur $1 ne semble pas avoir de compte sur l’édition de Wikipédia en anglais.",
+	"similareditors-error-user-no-edits": "L’utilisateur $1 ne semble pas avoir de compte (ou de modifications dans la portée) sur l’édition de Wikipédia en anglais.",
+	"similareditors-extensionname": "Rédacteurs similaires",
+	"similareditors-form-field-target-label": "Nom d’utilisateur ou adresse IP :",
+	"similareditors-form-field-target-placeholder": "Nom d’utilisateur ou 1.1.1.1",
+	"similareditors-form-legend": "Trouver des modificateurs similaires",
+	"similareditors-form-submit": "Trouver",
+	"similareditors-no-results": "Il n’y a aucun résultat.",
+	"similareditors-overlap-level-high": "Haute",
+	"similareditors-overlap-level-low": "Basse",
+	"similareditors-overlap-level-medium": "Moyenne",
+	"similareditors-overlap-level-no-overlap": "Aucune coïncidence",
+	"similareditors-results-day-overlap": "Coïncidences du jour",
+	"similareditors-results-edit-overlap": "Coïncidence de modification",
+	"similareditors-results-edits": "Modifications dans les données",
+	"similareditors-results-hour-overlap": "Coïncidence dans l’heure",
+	"similareditors-results-inverse-edit-overlap": "Coïncidence de modification inverse",
+	"similareditors-results-user": "Utilisateur",
+	"similareditors-results-user-timeline": "chronologie",
+	"similareditors-summary": "Trouver les modificateurs les plus similaires à un modificateur donné selon leur historique de modifications.",
+	"similareditors-survey-question": "Avez-vous trouvé les résultats utiles ? Quelles autres informations recherchez-vous pour tenter de trouver des faux-nez ?"
+}

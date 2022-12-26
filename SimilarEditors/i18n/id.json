@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Farras"
+		]
+	},
+	"action-similareditors": "mengakses [[Special:SimilarEditors]]",
+	"right-similareditors": "Akses [[Special:SimilarEditors]]",
+	"similareditors-desc": "Menyajikan informasi pengguna dengan riwayat suntingan serupa.",
+	"similareditors-form-submit": "Temukan",
+	"similareditors-no-results": "Tidak ada hasil.",
+	"similareditors-overlap-level-high": "Tinggi",
+	"similareditors-overlap-level-low": "Rendah",
+	"similareditors-overlap-level-medium": "Medium",
+	"similareditors-results-user": "Pengguna"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"landingcheck-desc": "Omogoča uporabo jezikovno prilagojenih ciljnih strani glede na geolokacijo",
+	"landingcheck": "PreverjanjePristajališča",
+	"landingcheck-nopage": "Pri izvedbi zahtevka ni bilo mogoče najti nobene strani."
+}

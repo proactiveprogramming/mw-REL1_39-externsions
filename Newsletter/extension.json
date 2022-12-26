@@ -1,0 +1,142 @@
+{
+	"name": "Newsletter",
+	"version": "1.2.1",
+	"author": [
+		"Siebrand Mazeland",
+		"Tina Johnson",
+		"Tony Thomas"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Newsletter",
+	"descriptionmsg": "newsletter-extension-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.37.0"
+	},
+	"type": "other",
+	"AvailableRights": [
+		"newsletter-create",
+		"newsletter-delete",
+		"newsletter-manage",
+		"newsletter-restore"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"newsletter-create": true,
+			"newsletter-delete": true,
+			"newsletter-manage": true,
+			"newsletter-restore": true
+		}
+	},
+	"RateLimits": {
+		"newsletter": {
+			"user": [ 3, 3600 ]
+		},
+		"newsletter-announce": {
+			"user": [ 2, 1800 ]
+		}
+	},
+	"SpecialPages": {
+		"NewsletterCreate": "MediaWiki\\Extension\\Newsletter\\Specials\\SpecialNewsletterCreate",
+		"Newsletters": "MediaWiki\\Extension\\Newsletter\\Specials\\SpecialNewsletters",
+		"Newsletter": "MediaWiki\\Extension\\Newsletter\\Specials\\SpecialNewsletter"
+	},
+	"APIModules": {
+		"newslettersubscribe": "MediaWiki\\Extension\\Newsletter\\Api\\ApiNewsletterSubscribe"
+	},
+	"MessagesDirs": {
+		"Newsletter": [
+			"i18n",
+			"i18n/api"
+		]
+	},
+	"LogTypes": [
+		"newsletter"
+	],
+	"LogActionsHandlers": {
+		"newsletter/*": "MediaWiki\\Extension\\Newsletter\\Logging\\NewsletterLogFormatter"
+	},
+	"ActionFilteredLogs": {
+		"newsletter": {
+			"issue-added": [ "issue-added" ],
+			"newsletter-added": [ "newsletter-added" ],
+			"newsletter-removed": [ "newsletter-removed" ],
+			"publisher-added": [ "publisher-added" ],
+			"publisher-removed": [ "publisher-removed" ]
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"NewsletterAlias": "Newsletter.alias.php",
+		"NewsletterNamespaces": "Newsletter.namespaces.php"
+	},
+	"ContentHandlers": {
+		"NewsletterContent": "MediaWiki\\Extension\\Newsletter\\Content\\NewsletterContentHandler"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Newsletter\\": "includes/"
+	},
+	"DefaultUserOptions": {
+		"echo-subscriptions-web-newsletter": true,
+		"echo-subscriptions-email-newsletter": true
+	},
+	"ResourceModules": {
+		"ext.newsletter.newsletters": {
+			"scripts": "ext.newsletter.newsletters.js",
+			"dependencies": [
+				"mediawiki.api",
+				"oojs-ui"
+			],
+			"messages": [
+				"newsletter-subscribe-button",
+				"newsletter-unsubscribe-button",
+				"newsletter-unsubscribing",
+				"newsletter-subscribing",
+				"newsletter-subscribe-success",
+				"newsletter-subscribe-error",
+				"newsletter-unsubscribe-error",
+				"newsletter-unsubscribe-success"
+			]
+		},
+		"ext.newsletter.newsletters.styles": {
+			"styles": "ext.newsletter.newsletters.styles.css"
+		},
+		"ext.newsletter.newsletter.styles": {
+			"styles": "ext.newsletter.newsletter.styles.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Newsletter/modules"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\Newsletter\\Hooks::onLoadExtensionSchemaUpdates",
+		"BeforeCreateEchoEvent": "MediaWiki\\Extension\\Newsletter\\Hooks::onBeforeCreateEchoEvent",
+		"LoginFormValidErrorMessages": "MediaWiki\\Extension\\Newsletter\\Hooks::onLoginFormValidErrorMessages",
+		"UserMergeAccountFields": "MediaWiki\\Extension\\Newsletter\\Hooks::onUserMergeAccountFields",
+		"AlternateEdit": "MediaWiki\\Extension\\Newsletter\\Hooks::onAlternateEdit",
+		"CustomEditor": "MediaWiki\\Extension\\Newsletter\\Hooks::onCustomEditor",
+		"ArticleDelete": "MediaWiki\\Extension\\Newsletter\\Hooks::onArticleDelete",
+		"PageUndelete": "MediaWiki\\Extension\\Newsletter\\Hooks::onPageUndelete",
+		"TitleMove": "MediaWiki\\Extension\\Newsletter\\Hooks::onTitleMove",
+		"ContentModelCanBeUsedOn": "MediaWiki\\Extension\\Newsletter\\Hooks::onContentModelCanBeUsedOn",
+		"EditFilterMergedContent": "MediaWiki\\Extension\\Newsletter\\Hooks::onEditFilterMergedContent",
+		"SkinTemplateNavigation::Universal": "MediaWiki\\Extension\\Newsletter\\Hooks::onSkinTemplateNavigationUniversal"
+	},
+	"namespaces": [
+		{
+			"id": 5500,
+			"constant": "NS_NEWSLETTER",
+			"name": "Newsletter",
+			"protection": [
+				"newsletter-manage",
+				"newsletter-create"
+			],
+			"defaultcontentmodel": "NewsletterContent"
+		},
+		{
+			"id": 5501,
+			"constant": "NS_NEWSLETTER_TALK",
+			"name": "Newsletter_talk"
+		}
+	],
+	"manifest_version": 2
+}

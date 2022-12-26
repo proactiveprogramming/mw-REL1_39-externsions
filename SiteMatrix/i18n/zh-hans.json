@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alexsh",
+			"Angrydog001",
+			"Hydra",
+			"Liuxinyu970226",
+			"Shizhao",
+			"WhitePhosphorus",
+			"Wuqianye",
+			"Xiaomingyan",
+			"Yfdyh000",
+			"列维劳德"
+		]
+	},
+	"sitematrix": "Wiki列表",
+	"sitematrix-summary": "此特殊页面列出了此wiki农场中的所有wiki。",
+	"sitematrix-desc": "显示[[Special:SiteMatrix|wiki 列表]]",
+	"sitematrix-language": "语言",
+	"sitematrix-project": "计划名称、跨计划链接以及跨维基链接",
+	"sitematrix-others": "其他项目",
+	"sitematrix-other-projects": "项目",
+	"sitematrix-other-projects-language": "语言",
+	"sitematrix-total": "'''合计：$1'''",
+	"sitematrix-sitetotal": "总数",
+	"sitematrix-closed": "无写入权限，完全只读访问",
+	"sitematrix-private": "读写皆受限制",
+	"sitematrix-fishbowl": "限制写入权限，完全只读访问",
+	"sitematrix-nonglobal": "公开，但需要注册"
+}

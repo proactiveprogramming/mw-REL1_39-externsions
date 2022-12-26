@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Servien"
+		]
+	},
+	"sitematrix-desc": "Een [[Special:SiteMatrix|lyste van Wikimedia-wikis]]",
+	"sitematrix-language": "Taal",
+	"sitematrix-project": "Naam van t projekt, interprojektverwiezing en interwikiverwiezing",
+	"sitematrix-other-projects": "Aanere projekten",
+	"sitematrix-total": "'''Totaal antal: $1'''",
+	"sitematrix-sitetotal": "Alles samen",
+	"sitematrix-private": "beteunde toegang",
+	"sitematrix-fishbowl": "bewarken beteund"
+}

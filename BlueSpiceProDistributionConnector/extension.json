@@ -1,0 +1,57 @@
+{
+	"name": "BlueSpiceProDistributionConnector",
+	"version": "4.1.0-RC2",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceProDistributionConnector",
+	"descriptionmsg": "bs-prodistributionconnector-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.36.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 4.1"
+		}
+	},
+	"attributes": {
+		"MWStakeContentProvisioner": {
+			"ContentManifests": {
+				"DefaultContentProvisioner": [
+					"extensions/BlueSpiceProDistributionConnector/data/Content/PageTemplates/manifest.json"
+				],
+				"DefaultPageTemplates": [
+					"extensions/BlueSpiceProDistributionConnector/data/Content/PageTemplates/manifest.json"
+				]
+			}
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"math-form": {
+					"class": "\\BlueSpice\\ProDistributionConnector\\ContentDroplets\\MathFormDroplet"
+				},
+				"chem-form": {
+					"class": "\\BlueSpice\\ProDistributionConnector\\ContentDroplets\\ChemFormDroplet"
+				}
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceProDistributionConnector": "i18n"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\ProDistributionConnector\\": "src/",
+		"BlueSpice\\ProDistributionConnector\\Tests\\": "tests/phpunit"
+	},
+	"HookHandlers": {
+		"pdfexport-convert-math-svg-to-png": {
+			"factory": "BlueSpice\\ProDistributionConnector\\HookHandler\\PdfExportConvertMathSVGtoPNG::factory",
+			"services": [ "MediaHandlerFactory" ]
+		}
+	},
+	"Hooks": {
+		"BSUEModulePDFFindFiles": "pdfexport-convert-math-svg-to-png",
+		"BSUsageTrackerRegisterCollectors": "BlueSpice\\ProDistributionConnector\\Hook\\BSUsageTrackerRegisterCollectors\\NumberOfNamespaces::callback"
+	},
+	"manifest_version": 2
+}

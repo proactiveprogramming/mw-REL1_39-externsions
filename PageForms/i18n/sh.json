@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"pageforms-desc": "Obrasci za pravljenje i uređivanje wikistranica",
+	"specialpages-group-pf_group": "Semantički obrasci",
+	"apihelp-pfautocomplete-description": "Automatsko dovršavanje koje rabi proširenje »Stranični obrasci«.",
+	"apihelp-pfautocomplete-summary": "Automatsko dovršavanje koje rabi proširenje »Stranični obrasci«.",
+	"uploadwindow": "Prozor za postavljanje",
+	"pf-simpleupload": "Postavi",
+	"pf_deletionlog": "Evidencija brisanja",
+	"pf-pageschemas-header": "Oblik",
+	"pf_blank_namespace": "Glavna",
+	"right-viewedittab": "Prikaz kartice \"{{int:edit}}\" za stranice koje se mogu uređivati ​​putem obrasca",
+	"right-editrestrictedfields": "Uređivanje ograničenih polja obrazca",
+	"action-editrestrictedfields": "uređivanje ograničenih polja obrazca",
+	"action-viewedittab": "prikaz kartice \"{{int:edit}}\" za stranice koje se mogu uređivati ​​putem obrasca",
+	"tooltip-ca-formedit": "Uređivanje ove stranice pomoću obrasca"
+}

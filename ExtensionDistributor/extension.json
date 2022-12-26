@@ -1,0 +1,103 @@
+{
+	"name": "ExtensionDistributor",
+	"author": [
+		"Tim Starling",
+		"Sam Reed",
+		"Chad Horohoe",
+		"Kunal Mehta"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ExtensionDistributor",
+	"descriptionmsg": "extensiondistributor-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
+	"config": {
+		"ExtDistAPIConfig": {
+			"value": false
+		},
+		"ExtDistListFile": {
+			"value": false
+		},
+		"ExtDistSnapshotRefs": {
+			"value": []
+		},
+		"ExtDistDefaultSnapshot": {
+			"value": "master"
+		},
+		"ExtDistCandidateSnapshot": {
+			"value": false
+		},
+		"ExtDistGraphiteRenderApi": {
+			"value": null
+		},
+		"ExtDistPopularExtList": {
+			"value": []
+		},
+		"ExtDistPopularSkinList": {
+			"value": []
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"ExtensionDistributorAliases": "ExtensionDistributor.alias.php"
+	},
+	"APIListModules": {
+		"extdistrepos": "MediaWiki\\Extension\\ExtensionDistributor\\Api\\ApiListExtDistRepos",
+		"extdistbranches": "MediaWiki\\Extension\\ExtensionDistributor\\Api\\ApiListExtDistBranches"
+	},
+	"MessagesDirs": {
+		"ExtensionDistributor": [
+			"i18n",
+			"i18n/api"
+		]
+	},
+	"Hooks": {
+		"APIQuerySiteInfoGeneralInfo": "MediaWiki\\Extension\\ExtensionDistributor\\Hooks::onAPIQuerySiteInfoGeneralInfo"
+	},
+	"SpecialPages": {
+		"ExtensionDistributor": {
+			"class": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialExtensionDistributor",
+			"services": [
+				"StatsdDataFactory"
+			]
+		},
+		"SkinDistributor": {
+			"class": "MediaWiki\\Extension\\ExtensionDistributor\\Specials\\SpecialSkinDistributor",
+			"services": [
+				"StatsdDataFactory"
+			]
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ExtensionDistributor\\": "includes/"
+	},
+	"ResourceModules": {
+		"ext.extensiondistributor.special.styles": {
+			"styles": "ext.extensiondistributor.special.less"
+		},
+		"ext.extensiondistributor.special": {
+			"scripts": "ext.extensiondistributor.special.js",
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.jqueryMsg",
+				"oojs-ui"
+			],
+			"messages": [
+				"extdist-choose-version-extensions",
+				"extdist-choose-version-skins",
+				"extdist-submit-version",
+				"extdist-no-versions-extensions",
+				"extdist-no-versions-skins",
+				"extdist-branch-alpha",
+				"extdist-branch-stable",
+				"extdist-branch-candidate"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "ExtensionDistributor/resources"
+	},
+	"manifest_version": 2
+}

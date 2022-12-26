@@ -1,0 +1,17 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/mediawiki"
+	],
+	"globals": {
+		"mediaWiki": false,
+		"jQuery": false
+	},
+	"rules": {
+		"no-underscore-dangle": "off",
+		"camelcase": "off",
+		"array-callback-return": "warn",
+		"unicorn/prefer-string-slice": "warn"
+	}
+}

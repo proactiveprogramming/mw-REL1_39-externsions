@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-insertcategory-desc": "Pogovorno okno za vnos povezave kategorije",
+	"bs-insertcategory-insertcat": "Vstavi kategorijo",
+	"prefs-insertcategory": "Vstavi kategorijo",
+	"bs-insertcategory-pref-withparents": "Vstavi kategorijo skupaj s starši",
+	"bs-insertcategory-title": "Vstavljanje kategorije",
+	"bs-insertcategory-cat-label": "Dodeljeno:",
+	"bs-insertcategory-success": "Kategorija je bila dodana",
+	"bs-insertcategory-failure": "Napaka",
+	"bs-insertcategory-hint": "Opomba: za dodajanje kategorije pritisnite vnašalko (enter).",
+	"bs-insertcategory-panel-title": "Kategorije",
+	"bs-insertcategory-edit-dialog-button-submit": "Končano",
+	"bs-insertcategory-edit-dialog-button-cancel": "Prekliči"
+}

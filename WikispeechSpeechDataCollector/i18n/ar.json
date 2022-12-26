@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Asma",
+			"Meno25"
+		]
+	},
+	"wikispeech-sdc-desc": "أداة لتسجيل ومراجعة والتعليق على الأصوات المنطوقة.",
+	"right-wikispeech-sdc-record": "سجل صوت",
+	"action-wikispeech-sdc-record": "سجل صوت",
+	"recordspeech": "سجل الكلام",
+	"wikispeech-sdc-record": "سجل",
+	"wikispeech-sdc-save": "حفظ",
+	"wikispeech-sdc-skip": "تجاوز",
+	"right-wikispeech-sdc-speech-recording": "مناقشة تسجيل الكلام",
+	"action-wikispeech-sdc-speech-recording": "مناقشة تسجيل الكلام",
+	"right-wikispeech-sdc-speech-recording-talk": "مناقشة تسجيل الكلام",
+	"action-wikispeech-sdc-speech-recording-talk": "مناقشة تسجيل الكلام",
+	"wikispeech-sdc-status-starting": "البدء",
+	"wikispeech-sdc-status-ready": "مستعد",
+	"wikispeech-sdc-status-listening": "الاستماع",
+	"wikispeech-sdc-status-recording": "جارٍ التسجيل..."
+}

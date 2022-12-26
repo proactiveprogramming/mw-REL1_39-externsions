@@ -1,0 +1,337 @@
+/* stylelint-disable color-named */
+
+*:has( [ class*='ci_form' ] ) {
+	box-sizing: border-box;
+}
+
+.ci_text_highlight {
+	color: #00f;
+	background: #f5f5f5;
+}
+
+.ci_form_section_inputs_row label {
+	display: block;
+	padding: 4px 0;
+}
+
+.ci_form_section_inputs_col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.ci_form_section_inputs_col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+.ci_form_section_inputs_inner_col {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 4px;
+}
+
+.ci_form_section_inputs_row {
+	margin-bottom: 12px;
+}
+
+.ci_form_section.inputs.rows .ci_form_section_inputs_row {
+	margin-bottom: 16px;
+}
+
+.ci_form_section_inputs_row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+@media screen and ( max-width: 600px ) {
+	.ci_form_section_inputs_col-25,
+	.ci_form_section_inputs_col-75,
+	input[ type='submit' ] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+.ci_form_section_cloze_test_list_question input,
+.ci_form_section_multiple_choice_list input[ type='text' ],
+.ci_form_section_multiple_choice_list .input,
+.ci_form_section_cloze_test_list_question .input {
+	outline: none;
+	border: none;
+	border-bottom: 1px dotted #000;
+	min-width: 6em;
+}
+
+.ci_form_section_multiple_choice_list input[ type='checkbox' ],
+.ci_form_section_multiple_choice_list input[ type='radio' ] {
+	margin: 3px 3px 3px 4px;
+}
+
+.ci_form_section_cloze_test_list_question .input,
+.ci_form_section_multiple_choice_list .input {
+	background: #f5f5f5;
+	width: 100%;
+}
+
+.ci_form_section_cloze_test_list_question .input:after,
+.ci_form_section_multiple_choice_list .input:after {
+	content: '\00A0';
+}
+
+.ci_form_section_inputs_inner_col_input_container {
+	position: relative;
+	display: inline-block;
+}
+
+.ci_form_section_inputs_row input,
+.ci_form_section_inputs_row select,
+.ci_form_section_inputs_row textarea,
+.ci_form_section_inputs_row .input,
+.select2-container--default .select2-selection--single {
+	padding: 8px;
+	background: #fff;
+	border: 1px solid #ccc;
+	display: inline-block;
+	border-radius: 6px;
+	width: 100%;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+.ci_form_section.inputs_responsive .ci_form_section_inputs_row input,
+.ci_form_section.inputs_responsive .ci_form_section_inputs_row select,
+.ci_form_section.inputs_responsive .ci_form_section_inputs_row textarea,
+.ci_form_section.inputs_responsive .ci_form_section_inputs_row .input {
+	border-radius: 2px;
+	padding: 4px;
+	width: 100%;
+	background: #fff;
+	border: 1px solid #ccc;
+	display: inline-block;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+.ci_form.pdf .ci_form_section_inputs_row input,
+.ci_form.pdf .ci_form_section_inputs_row select,
+.ci_form.pdf .ci_form_section_inputs_row textarea,
+.ci_form.pdf .ci_form_section_inputs_row .input {
+	display: block;
+}
+
+.ci_form_section.inputs_responsive .ci_form_section_inputs_row {
+	margin-bottom: 2px;
+}
+
+.ci_form_section.inputs_responsive .input:after,
+.ci_form_section_inputs_row .input:after {
+	content: '\00A0';
+}
+
+.ci_form_section_multiple_choice_list {
+	position: relative;
+}
+
+.ci_form_section_multiple_choice_list .radio_for_required_checkboxes {
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-appearance: none;
+	pointer-events: none;
+	border: none;
+	background: none;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.ci_form_input_submit {
+	background: #36c;
+	border: 1px solid #36c;
+	padding: 6px 12px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.ci_form_input_submit_disabled {
+	padding: 6px 12px;
+	color: #808080ff;
+	font-weight: bold;
+}
+
+.ci_form_input_submit:hover {
+	background-color: #447ff5;
+	border-color: #447ff5;
+}
+
+.ci_form_input_navigation_next {
+	background: #54ba41;
+	border: 1px solid #42a031;
+	padding: 6px 12px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.ci_form_input_navigation_next:hover {
+	background-color: #61d44b;
+	border-color: #61d44b;
+}
+
+.ci_form_input_navigation_back {
+	background: #aaa;
+	border: 1px solid #999;
+	padding: 6px 12px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 4px;
+}
+
+.ci_form_input_navigation_back:hover {
+	background-color: #cacaca;
+	border-color: #cacaca;
+}
+
+.ci_form {
+	background: #f5f5f5;
+	border: 1px solid #ccc;
+	max-width: 480px;
+}
+
+.ci_form_container {
+	padding: 12px 16px 0;
+}
+
+.ci_form_section {
+	margin-bottom: 12px;
+}
+
+.ci_form_title {
+	font-size: large;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.ci_form_section:not( [ class*='_inputs' ] ):not( :last-child ) {
+	border-bottom: 1px dotted #aaa;
+	padding-bottom: 12px;
+}
+
+.ci_form_section_captcha {
+	color: #c0c0c0ff;
+	padding: 6px;
+	text-align: right;
+	font-size: smaller;
+}
+
+.ci_form_section_submit {
+	margin-top: 24px;
+}
+
+ol.ci_form_section_cloze_test_list li.ci_form_section_cloze_test_list_question_example::before {
+	content: '';
+	background-image: url( images/arrow_right.png );
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin-left: -1.2em;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 0.2em;
+}
+
+.ci_form:not( .pdf ) ol,
+.ci_form:not( .pdf ) ul {
+	list-style: none;
+	counter-reset: li;
+}
+
+/*
+ https://stackoverflow.com/questions/23699128/how-can-i-reset-a-css-counter-to-the-start-attribute-of-the-given-list
+*/
+.ci_form ol li::before,
+.ci_form ul li::before {
+	content: counter( li, var( --list_style_type ) );
+	display: inline-block;
+	width: 1em;
+	margin-left: -1.5em;
+	margin-right: 0.5em;
+	text-align: right;
+	direction: rtl;
+}
+
+.ci_form ol li:not( [ class$='_example' ] ) {
+	counter-increment: li;
+}
+
+.ci_form_section_cloze_test_suggestions_word {
+	padding: 0 3px;
+	color: #cb4e3f;
+}
+
+.ci_form_section_cloze_test_suggestions_word_answered {
+	padding: 0 3px;
+	text-decoration: line-through;
+	color: #cb4e3f;
+}
+
+.ci_form_section_cloze_test_list_question_suggestion {
+	color: #0b5e69;
+}
+
+.ci_form_section_cloze_test_list_question_answered {
+	border-bottom: 1px solid #000f;
+	color: #0b5e69;
+	font-weight: bold;
+}
+
+.ci_form_section_inputs_textarea_maxlength {
+	text-align: right;
+	font-size: smaller;
+	color: #808080ff;
+	display: inline-block;
+	width: 100%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: normal;
+}
+
+.select2-container .select2-selection--single {
+	height: auto;
+}
+
+.ci_form_required_symbol {
+	/* font-size: larger; */
+	vertical-align: top;
+}
+
+.ci_form_required_icon {
+	position: absolute;
+	right: 0;
+	margin: auto;
+	margin-right: 0;
+}
+
+.ci_form_required_icon svg {
+	width: 0.5em;
+	height: 0.5em;
+	fill: #363535;
+}
+
+.ci_form_section_inputs_row_error {
+	border: 1px solid red;
+	padding: 8px;
+	background: white;
+}

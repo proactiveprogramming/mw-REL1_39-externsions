@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"TK-999",
+			"Tacsipacsi"
+		]
+	},
+	"translatesvg-desc": "Natív stílusú felületet biztosít az SVG vektorgrafikák fordítására az SVG 1.1 szabvány értelmében",
+	"translate-svg-nodesc": "(Nincs megadva fájlleírás.)"
+}

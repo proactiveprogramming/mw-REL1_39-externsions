@@ -1,0 +1,29 @@
+{
+	"name": "MobileApp",
+	"author": [
+		"Yuvi Panda"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MobileApp",
+	"descriptionmsg": "mobileapp-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"MessagesDirs": {
+		"MobileApp": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\MobileApp\\": "includes/"
+	},
+	"Hooks": {
+		"ListDefinedTags": "MediaWiki\\Extension\\MobileApp\\Hooks::onListDefinedTags",
+		"ChangeTagsListActive": "MediaWiki\\Extension\\MobileApp\\Hooks::onListDefinedTags",
+		"RecentChange_save": "MediaWiki\\Extension\\MobileApp\\Hooks::onRecentChange_save",
+		"AbuseFilter-generateUserVars": "MediaWiki\\Extension\\MobileApp\\Hooks::onAbuseFilterGenerateUserVars",
+		"AbuseFilter-builder": "MediaWiki\\Extension\\MobileApp\\Hooks::onAbuseFilterBuilder"
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"purgeclickthrough-desc": "Non rediriger paginas ?action=purge, ma in su loco permitter un clic pro continuar (pro besonios de depuration)"
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crazymadlover",
+			"Fitoschido",
+			"Imre",
+			"Sanbec"
+		]
+	},
+	"editcount-desc": "Muestra el [[Special:Editcount|recuento de ediciones]] de un usuario",
+	"editcount_username": "Usuario:",
+	"editcount_submit": "Enviar",
+	"editcount_total": "Total"
+}

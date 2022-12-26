@@ -1,0 +1,11 @@
+*~
+*.kate-swp
+*.swp
+node_modules/**
+vendor/**
+/.eslintcache
+
+composer.lock
+composer.phar
+
+webservices/BShtml2PDF.war

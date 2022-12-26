@@ -1,0 +1,144 @@
+{
+	"name": "TuleapWikiFarm",
+	"version": "2.0.0-alpha",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://www.hallowelt.com",
+	"descriptionmsg": "tuleapwikifarm-desc",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"MessagesDirs": {
+		"TuleapWikiFarm": "i18n"
+	},
+	"attributes": {
+		"TuleapWikiFarm": {
+			"MaintenanceScripts": {
+				"runjobs": {
+					"class": "TuleapWikiFarm\\ProcessStep\\Maintenance\\RunJobs",
+					"services": [ "InstanceManager", "MainConfig" ]
+				},
+				"update": {
+					"class": "TuleapWikiFarm\\ProcessStep\\Maintenance\\Update",
+					"services": [ "InstanceManager", "MainConfig" ]
+				},
+				"set-user-groups": {
+					"class": "TuleapWikiFarm\\ProcessStep\\Maintenance\\SetGroups",
+					"services": [ "InstanceManager", "MainConfig" ]
+				},
+				"refresh-links": {
+					"class": "TuleapWikiFarm\\ProcessStep\\Maintenance\\RefreshLinks",
+					"services": [ "InstanceManager", "MainConfig" ]
+				},
+				"terminate-sessions": {
+					"class": "TuleapWikiFarm\\ProcessStep\\Maintenance\\TerminateSessions",
+					"services": [ "InstanceManager", "MainConfig" ]
+				}
+			}
+		}
+	},
+	"AutoloadNamespaces": {
+		"TuleapWikiFarm\\": "src/",
+		"TuleapWikiFarm\\Tests\\": "tests/phpunit/"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "registerTable"
+	},
+	"HookHandlers": {
+		"registerTable": {
+			"class": "TuleapWikiFarm\\Hook\\RegisterTable"
+		}
+	},
+	"AvailableRights": [
+		"tuleap-farm-manage"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"tuleap-farm-manage": true
+		},
+		"user": {
+			"tuleap-farm-manage": false
+		}
+	},
+	"RestRoutes": [
+		{
+			"method": "PUT",
+			"path": "/tuleap/instance/{name}",
+			"class": "TuleapWikiFarm\\Rest\\CreateInstanceHandler",
+			"services": [ "InstanceManager", "MainConfig", "LanguageNameUtils" ]
+		},
+		{
+			"method": "POST",
+			"path": "/tuleap/instance/rename/{name}/{newname}",
+			"class": "TuleapWikiFarm\\Rest\\RenameInstanceHandler",
+			"services": [ "InstanceManager" ]
+		},
+		{
+			"method": "POST",
+			"path": "/tuleap/instance/suspend/{name}",
+			"class": "TuleapWikiFarm\\Rest\\SetInstanceStatusHandler",
+			"args": [ "suspended", "ready" ],
+			"services": [ "InstanceManager" ]
+		},
+		{
+			"method": "POST",
+			"path": "/tuleap/instance/resume/{name}",
+			"class": "TuleapWikiFarm\\Rest\\SetInstanceStatusHandler",
+			"args": [ "ready", "suspended" ],
+			"services": [ "InstanceManager" ]
+		},
+		{
+			"method": "POST",
+			"path": "/tuleap/maintenance/{instance}/{script}",
+			"class": "TuleapWikiFarm\\Rest\\MaintenanceHandler",
+			"services": [ "InstanceManager" ]
+		},
+		{
+			"path": "/tuleap/instance/{name}",
+			"class": "TuleapWikiFarm\\Rest\\InstanceStatusHandler",
+			"services": [ "InstanceManager" ]
+		},
+		{
+			"method": "DELETE",
+			"path": "/tuleap/instance/{name}",
+			"class": "TuleapWikiFarm\\Rest\\DeleteInstanceHandler",
+			"services": [ "InstanceManager", "MainConfig" ]
+		},
+		{
+			"method": "POST",
+			"path": "/tuleap/instance/register/{name}",
+			"class": "TuleapWikiFarm\\Rest\\RegisterInstanceHandler",
+			"services": [ "InstanceManager", "LanguageNameUtils" ]
+		}
+	],
+	"config": {
+		"TuleapPreSharedKey": {
+			"value": null
+		},
+		"TuleapFarmConfig": {
+			"value": {
+				"instanceDir": null,
+				"centralDb": null
+			}
+		}
+	},
+	"SessionProviders": {
+		"TuleapWikiFarm\\PreSharedKeySessionProvider": {
+			"factory": "TuleapWikiFarm\\PreSharedKeySessionProvider::factory"
+		}
+	},
+	"GrantPermissions": {
+		"farm-management": {
+			"tuleap-farm-manage": true
+		}
+	},
+	"GrantPermissionGroups": {
+		"farm-management": "administration"
+	},
+	"manifest_version": 2
+}

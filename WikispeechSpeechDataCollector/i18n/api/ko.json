@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"apierror-wikispeech-sdc-crud-execute-transaction": "트랜잭션 실행을 실패했습니다.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "응답 직렬화를 실패했습니다.",
+	"apihelp-wikispeech-sdc-crud-example-2": "단일 사용자 요청을 읽습니다.",
+	"apihelp-wikispeech-sdc-crud-example-3": "단일 사용자 요청을 삭제합니다."
+}

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arifin.wijaya",
+			"Daud I.F. Argana",
+			"Rachmat.Wahidi",
+			"Rachmat04"
+		]
+	},
+	"bs-insertmagic-desc": "Menambahkan dialog yang memungkinkan penyisipan kata-kata ajaib dan tag",
+	"bs-insertmagic": "Masukkan kata ajaib",
+	"bs-insertmagic-notoc": "Sembunyikan daftar isi.",
+	"bs-insertmagic-forcetoc": "Memaksa daftar isi untuk muncul di posisi normal.",
+	"bs-insertmagic-toc": "Meletakkan daftar isi di posisi terkini kata",
+	"bs-insertmagic-noeditsection": "Menyembunyikan tautan sunting bagian di sebelah subjudul.",
+	"bs-insertmagic-type-quickaccess": "Akses cepat",
+	"bs-insertmagic-label-desc": "Deskripsi",
+	"bs-insertmagic-label-examples": "Contoh",
+	"bs-insertmagic-label-see-also": "Lihat pula",
+	"bs-insertmagic-ve-insertmagic-title": "Kata ajaib"
+}

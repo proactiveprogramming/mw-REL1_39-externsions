@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Yerpo"
+		]
+	},
+	"bs-statistics-diagram": "Poizvedba",
+	"bs-statistics-year": "Leto",
+	"bs-statistics-month": "Mesec",
+	"bs-statistics-day": "Dan",
+	"bs-statistics-list": "Seznam",
+	"bs-statistics-filters": "Filtri",
+	"bs-statistics-label-name": "Ime",
+	"bs-statistics-label-registration": "Registracija",
+	"bs-statistics-label-page": "Stran",
+	"bs-statistics-diag-search-queries": "Poizvedbe",
+	"bs-statistics-label-time": "Čas",
+	"bs-statistics-filter-category": "Kategorija",
+	"bs-statistics-portletconfig-periodday": "Včeraj",
+	"bs-statistics-button-label-export": "Izvozi",
+	"bs-statistics-panel-title-result": "Rezultat",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorije",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dan",
+	"bs-statistics-aggregated-report-filter-interval-month": "Mesec",
+	"bs-statistics-aggregated-report-filter-interval-year": "Leto",
+	"bs-statistics-aggregated-report-filter-namespace": "Imenski prostor",
+	"bs-statistics-aggregated-report-filter-namespaces": "Imenski prostori",
+	"bs-statistics-aggregated-report-filter-page": "Stran",
+	"bs-statistics-aggregated-report-filter-user": "Uporabnik",
+	"bs-statistics-aggregated-report-filter-user-multi": "Uporabniki",
+	"bs-statistics-aggregated-report-error": "Prišlo je do napake!"
+}

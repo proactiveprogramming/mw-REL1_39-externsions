@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"autogallery-desc": "對 <code><nowiki><gallery></nowiki></code> wikitext 標記添加新的圖庫模式（<code>auto</code>）。"
+}

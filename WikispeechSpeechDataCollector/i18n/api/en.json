@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Karl Wettin",
+			"Sebastian Berlin",
+			"Amire80"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "Generic persistent domain object access API.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Failed to deserialize transaction JSON.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Failed to deserialize transaction.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Failed to execute transaction.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Failed to serialize response.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Create a single new User request.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Read a single User request.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Delete a single User request."
+}

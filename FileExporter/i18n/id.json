@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daud I.F. Argana",
+			"Iwan Novirion"
+		]
+	},
+	"fileexporter": "Pengekspor berkas",
+	"fileexporter-desc": "Mengekspor berkas ke wiki lain dengan mudah",
+	"fileexporter-text": "Ekspor berkas",
+	"fileexporter-to-wikimedia-commons": "Ekspor ke Wikimedia Commons",
+	"tag-fileimporter-remote": "Diubah oleh Pengimpor berkas",
+	"tag-fileimporter-remote-description": "Suntingan yang dibuat setelah ekstensi [[mw:Extension:FileImporter|FileImporter]] berhasil mengimpor berkas dari wiki ini."
+}

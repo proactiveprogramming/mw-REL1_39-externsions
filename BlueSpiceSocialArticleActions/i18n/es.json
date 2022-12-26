@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio",
+			"Fitoschido"
+		]
+	},
+	"bs-socialarticleactions-type-articlesave": "Edición del artículo",
+	"bs-socialarticleactions-type-articlecreate": "Creación de artículo",
+	"bs-socialarticleactions-type-articledelete": "Artículo de eliminación",
+	"bs-socialarticleactions-type-filesave": "Edición de archivo",
+	"bs-socialarticleactions-type-filecreate": "Creación de archivo",
+	"bs-socialarticleactions-type-filedelete": "Eliminación de archivos"
+}

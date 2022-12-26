@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gwendal",
+			"VIGNERON",
+			"Y-M D"
+		]
+	},
+	"wikisource-desc": "Personeladurioù MediaWiki arbennik evit Wikimammenn",
+	"wikisource-export-portlet": "Moullañ/ezporzhiañ",
+	"wikisource-download-epub": "Pellgargañ EPUB",
+	"wikisource-download-epub-tooltip": "Pellgargañ stumm EPUB an oberenn-mañ",
+	"wikisource-download-mobi": "Pellgargañ MOBI",
+	"wikisource-download-mobi-tooltip": "Pellgargañ stumm MOBI an oberenn-mañ",
+	"wikisource-download-pdf": "Pellgargañ PDF",
+	"wikisource-download-pdf-tooltip": "Pellgargañ stumm PDF an oberenn-mañ",
+	"wikisource-download-choose": "Furmadoù all",
+	"wikisource-download-choose-tooltip": "Digeriñ ur furm evit dibab furmadoù ha fontoù all h.a",
+	"wikisource-download-button": "Pellgargañ",
+	"wikisource-download-chooser-title": "Dibab ur mentrezh",
+	"wikisource-download-chooser-epub-description": "evit urzhiataeroù, poellgomzerioù, tablezennoù",
+	"wikisource-ocr-extract-text": "Treuzskrivañ an destenn",
+	"wikisource-ocr-extract-cancel": "Nullañ",
+	"wikisource-ocr-extract-text-title": "Kaout an destenn OCR eus ar skeudenn-mañ",
+	"wikisource-ocr-engine": "Dibabit ho ostilh treuzskrivañ testennoù dre ziouer",
+	"wikisource-ocr-advanced": "Dibarzhioù araokaet",
+	"wikisource-ocr-onboarding-title": "Treuzskrivañ ar skeudennoù e testenn",
+	"wikisource-ocr-onboarding-button": "OK, deomp dezhi"
+}

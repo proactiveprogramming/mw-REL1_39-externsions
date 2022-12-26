@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shizhao"
+		]
+	},
+	"autogallery-desc": "向<code><nowiki><gallery></nowiki></code> wikitext标记添加新的图库模式(<code>auto</code>)。"
+}

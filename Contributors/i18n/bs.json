@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"CERminator",
+			"Srdjan m",
+			"Srđan"
+		]
+	},
+	"contributors": "Autori",
+	"contributors-desc": "Kratki pregled glavnih autora stranice",
+	"contributors-toolbox": "Doprinosioci ovoj stranici",
+	"contributors-legend": "Prikaži glavne autore stranice",
+	"contributors-target": "Naslov:",
+	"contributors-submit": "Prikaži",
+	"contributors-subtitle": "Glavni autori stranice $1",
+	"contributors-badtitle": "Pogrešan naslov.",
+	"contributors-nosuchpage": "Stranica $1 ne postoji."
+}

@@ -1,0 +1,38 @@
+{
+	"overrides": [
+		{
+			"files": [ "**/*.ts", "**/*.js" ],
+			"extends": [
+				"wikimedia/server",
+				"plugin:@typescript-eslint/recommended"
+			],
+			"rules": {
+				"strict": "off",
+				"node/no-missing-import": [ "error", {
+					"tryExtensions": [ ".js", ".ts" ]
+				} ]
+			}
+		},
+		{
+			"files": [ "src/**/*.ts", "src/**/*.js" ],
+			"extends": [
+				"wikimedia/language/es6"
+			]
+		},
+		{
+			"files": [ "**/*.ts" ],
+			"rules": {
+				"jsdoc/require-param-type": "off",
+				"jsdoc/require-returns-type": "off"
+			}
+		},
+		{
+			"files": [ "**/*.js" ],
+			"excludedFiles": "src/**",
+			"rules": {
+				"jsdoc/valid-types": "off",
+				"@typescript-eslint/no-var-requires": "off"
+			}
+		}
+	]
+}

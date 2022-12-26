@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-notifications-addaccount": "Le usator \"$1\" ha essite create.",
+	"bs-notifications-email-addaccount-subject": "Usator \"$2\" {{GENDER:$1|create}}",
+	"bs-notifications-email-addaccount-body": "{{GENDER:$1|Le usator}} $2 ha essite create.\n\nTu pote visitar su pagina de usator sequente le ligamine in basso:",
+	"bs-notifications-web-addaccount-body": "{{GENDER:$1|Le usator}} $2 ha essite create.",
+	"bs-notifications-addaccout-performer": "{{GENDER:$1|Creator}}: $1",
+	"bs-notifications-addaccount-performer": "{{GENDER:$1|Creator}}: $1",
+	"bs-notifications-registeruser": "Le usator \"$1\" ha create un conto.",
+	"bs-notifications-email-registeruser-subject": "Le {{GENDER:$1|usator}} \"$2\" ha create un conto",
+	"bs-notifications-email-registeruser-body": "Le {{GENDER:$1|usator}} $2 ha create un conto.\n\nTu pote visitar su pagina de usator sequente le ligamine in basso:",
+	"bs-notifications-web-registeruser-body": "Le {{GENDER:$1|usator}} $2 ha create un conto.",
+	"bs-notifications-edit": "Le pagina \"$1\" ha essite modificate",
+	"bs-notifications-edit-bundle": "Le pagina \"$2\" ha essite modificate {{PLURAL:$1|$1 vice|$1 vices}}",
+	"bs-notifications-email-edit-subject": "Le pagina \"$1\" ha essite {{GENDER:$2|modificate}} a $4 per $3",
+	"bs-notifications-email-edit-body": "Le pagina \"$1\" ha essite {{GENDER:$2|modificate}} a $5 per $4.\n\nCommento:\n $3",
+	"bs-notifications-web-edit-body": "Le pagina \"$1\" ha essite {{GENDER:$2|modificate}} per $3.",
+	"bs-notifications-create": "Le pagina \"$1\" ha essite create",
+	"bs-notifications-email-create-subject": "Pagina \"$1\" {{GENDER:$2|create}} a $4 per $3",
+	"bs-notifications-email-create-body": "Le pagina \"$1\" ha essite {{GENDER:$2|create}} a $5 per $3.\n\nCommento:\n $4 \nTu pote visitar le pagina sequente le ligamine hic infra",
+	"bs-notifications-web-create-body": "Le pagina \"$1\" ha essite {{GENDER:$2|create}} per $3.",
+	"bs-notifications-delete": "Le pagina \"$1\" ha essite delite",
+	"bs-notifications-email-delete-subject": "Le pagina \"$1\" ha essite {{GENDER:$2|delite}} a $4 per $3",
+	"bs-notifications-email-delete-body": "Le pagina \"$1\" ha essite {{GENDER:$2|delite}} a $5 per $3.\n\nEcce le motivo:\n$4",
+	"bs-notifications-web-delete-body": "Le pagina \"$1\" ha essite {{GENDER:$2|delite}} per $3.",
+	"bs-notifications-move": "Le pagina \"$1\" ha essite renominate",
+	"bs-notifications-email-move-subject": "Pagina \"$1\" {{GENDER:$2|renominate}} a \"$3\" a $5 per $4",
+	"bs-notifications-email-move-body": "Le pagina \"$1\" ha essite {{GENDER:$2|renominate}} a \"$3\" a $6 per $4.\n\nMotivo:\n$5\n\nTu pote visitar le pagina sequente le ligamine hic infra",
+	"bs-notifications-web-move-body": "Le pagina \"$1\" ha essite {{GENDER:$2|renominate}} a \"$3\" per $4",
+	"bs-notifications-edit-difflink-label": "Vider differentia",
+	"bs-notifications-htmlmail-greeting": "{{GENDER:$1|Salute}} $1",
+	"bs-notifications-htmlmail-sender-info": "Systema de notification de $1",
+	"bs-notifications-mail-additional-links-label": "Ligamines additional"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Warmglow"
+		]
+	},
+	"emailauthorizationrequest": "Bisa nkitahodie mu",
+	"emailauthorizationapprove": "Gye nkitahodie mu abisa no to mu",
+	"emailauthorization-api-error-permissions": "Wonni akwanya"
+}

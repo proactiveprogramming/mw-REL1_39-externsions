@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"menueditor-ui-menu-two-fold-link-spec-label": "Koppeling",
+	"menueditor-ui-menu-raw-text-label": "Tekst of berichtnaam",
+	"menueditor-ui-menu-keyword-label": "Trefwoord",
+	"menueditor-ui-menu-keyword-help": "Een van de beschikbare '''trefwoorden'''', die de bijbehorende widget tonen",
+	"menueditor-ui-form-field-keyword": "Trefwoord",
+	"menueditor-ui-form-field-target": "Koppelingsdoel",
+	"menueditor-ui-form-field-label": "Koppelingslabel",
+	"menueditor-ui-dialog-action-done": "Afgerond",
+	"menueditor-ui-dialog-action-cancel": "Annuleren",
+	"menueditor-ui-submit": "Opslaan",
+	"menueditor-ui-cancel": "Annuleren",
+	"menueditor-ui-redlink-notice": "Dit menu bestaat nog niet!",
+	"menueditor-action-menueditsource": "Bron bewerken",
+	"menueditor-action-menuedit": "Bewerken"
+}

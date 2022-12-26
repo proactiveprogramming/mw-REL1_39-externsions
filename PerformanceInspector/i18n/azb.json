@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ziraksima"
+		]
+	},
+	"performanceinspector-modules-css-column-module": "ماژول",
+	"performanceinspector-imagesize-column-image-name": "آد",
+	"performanceinspector-imagesize-column-size": "اؤلچو",
+	"performanceinspector-imagesize-column-image-extra": "علاوه",
+	"performanceinspector-imagesize-too-big": "ایخطار",
+	"performanceinspector-newpp-template-time-report-column-name": "آد"
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"autogallery-desc": "Добавляет новый режим галереи (<code>auto</code>) в разметку вики-текста <code><nowiki><gallery></nowiki></code>."
+}

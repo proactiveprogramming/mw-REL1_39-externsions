@@ -1,0 +1,62 @@
+{
+	"name": "GoogleAuthenticator",
+	"author": "Youri van den Bogert",
+	"version": "1.0.0",
+	"url": "https://www.xl-knowledge.nl",
+	"descriptionmsg": "googleauthenticator-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"GoogleAuthenticator": "i18n"
+	},
+	"ExtensionMessagesFiles": {
+		"GoogleAuthenticatorAlias": "GoogleAuthenticator.i18n.alias.php"
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\GoogleAuthenticator\\Google2FactorAuthenticationRequest": "includes/Auth/Google2FactorAuthenticationRequest.php",
+		"MediaWiki\\Extension\\GoogleAuthenticator\\Google2FactorSecondaryAuthenticationProvider": "includes/Auth/Google2FactorSecondaryAuthenticationProvider.php",
+		"MediaWiki\\Extension\\GoogleAuthenticator\\Google2FARecover": "includes/Special/Google2FARecover.php",
+		"MediaWiki\\Extension\\GoogleAuthenticator\\Hooks": "includes/Hooks.php",
+		"MediaWiki\\Extension\\GoogleAuthenticator\\GoogleAuthenticator": "includes/GoogleAuthenticator.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\GoogleAuthenticator\\Hooks::onBeforePageDisplay"
+	},
+	"SpecialPages": {
+		"Google2FARecover": {
+			"class": "MediaWiki\\Extension\\GoogleAuthenticator\\Google2FARecover",
+			"services": [
+				"UserOptionsManager"
+			]
+		}
+	},
+	"config": {
+		"GAIssuer": "__SITENAME__"
+	},
+	"AuthManagerAutoConfig": {
+		"secondaryauth": {
+			"MediaWiki\\Extension\\GoogleAuthenticator\\Google2FactorSecondaryAuthenticationProvider": {
+				"class": "MediaWiki\\Extension\\GoogleAuthenticator\\Google2FactorSecondaryAuthenticationProvider",
+				"sort": 50
+			}
+		}
+	},
+	"ResourceModules": {
+		"ext.Google2FA": {
+			"scripts": [
+				"resources/js/google2fa.js"
+			],
+			"styles": [
+				"resources/css/google2fa.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "GoogleAuthenticator"
+	},
+	"manifest_version": 1
+}

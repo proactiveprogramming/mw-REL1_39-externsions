@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NguoiDungKhongDinhDanh"
+		]
+	},
+	"loopfunc-desc": "Cung cấp tính năng lặp có giới hạn trong mã wiki",
+	"loopfunc_max_loops": "Đã đạt đến giới hạn lặp tối đa"
+}

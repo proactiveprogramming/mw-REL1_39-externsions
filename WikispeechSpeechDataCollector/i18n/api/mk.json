@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "Приложник за пристап до објект на општонаменски траен домен",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Не успеав да го десеријализирам JSON на трансакцијата.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Не успеав да ја десеријализирам трансакцијата.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Не успеав да ја извршам трансакцијата.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Не успеав да го серијализирам одговорот.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Создај единечно ново барање за корисник",
+	"apihelp-wikispeech-sdc-crud-example-2": "Читање на единечно барање за корисник",
+	"apihelp-wikispeech-sdc-crud-example-3": "Избриши единечно барање за корисник."
+}

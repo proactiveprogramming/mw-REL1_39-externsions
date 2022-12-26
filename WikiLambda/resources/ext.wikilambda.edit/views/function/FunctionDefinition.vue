@@ -1,0 +1,596 @@
+<template>
+	<!--
+		WikiLambda Vue component for the definition tab in the ZFunction Editor.
+
+		@copyright 2020– Abstract Wikipedia team; see AUTHORS.txt
+		@license MIT
+	-->
+	<main class="ext-wikilambda-function-definition">
+		<div
+			ref="fnDefinitionContainer"
+			class="ext-wikilambda-function-definition__container">
+			<div
+				v-for="( labelLanguage, index ) in labelLanguages"
+				:key="index"
+				class="ext-wikilambda-function-definition__container__input"
+			>
+				<div class="ext-wikilambda-function-definition__container__input__language">
+					<fn-editor-zlanguage-selector
+						class="ext-wikilambda-function-definition__container__input__language__selector"
+						:z-language="labelLanguage.zLang"
+						@change="function ( value ) {
+							return setInputLangByIndex( value, index )
+						}"
+					>
+					</fn-editor-zlanguage-selector>
+				</div>
+				<!-- component that displays names for a language -->
+				<function-definition-name
+					:z-lang="labelLanguage.zLang"
+					:is-main-z-object="isMainZObject( labelLanguage.zLang, index )"
+				></function-definition-name>
+				<!-- component that displays aliases for a language -->
+				<function-definition-aliases
+					:z-lang="labelLanguage.zLang"
+					:is-main-z-object="index === 0"
+				></function-definition-aliases>
+				<function-definition-inputs
+					:is-mobile="isMobile"
+					:z-lang="labelLanguage.zLang"
+					:is-main-z-object="index === 0"
+					:can-edit="canEditFunction"
+					:tooltip-icon="adminTooltipIcon"
+					:tooltip-message="adminTooltipMessage"
+				></function-definition-inputs>
+				<template v-if="index === 0">
+					<function-definition-output
+						:can-edit="canEditFunction"
+						:tooltip-icon="adminTooltipIcon"
+						:tooltip-message="adminTooltipMessage"
+					></function-definition-output>
+				</template>
+			</div>
+		</div>
+		<div class="ext-wikilambda-function-definition__action-add-input">
+			<cdx-button
+				class="ext-wikilambda-function-definition__action-add-input-button"
+				type="quiet"
+				@click="addLabelInOtherLanguages"
+			>
+				{{ $i18n( 'wikilambda-function-definition-add-other-label-languages-title' ).text() }}
+			</cdx-button>
+		</div>
+		<cdx-message
+			v-if="showToast"
+			:dismiss-button-label="$i18n( 'wikilambda-toast-close' ).text()"
+			:type="toastIntent"
+			:auto-dismiss="true"
+			@user-dismissed="closeToast"
+			@auto-dismissed="closeToast"
+		>
+			{{ currentToast }}
+		</cdx-message>
+
+		<function-definition-footer
+			:is-editing="isEditingExistingFunction"
+			@publish="validateInputOutputTypeChanged"
+			@cancel="handleCancel"
+		></function-definition-footer>
+
+		<dialog-container
+			ref="dialogBox"
+			:cancel-button-text="dialogInfo.cancelButtonText"
+			:confirm-button-text="dialogInfo.confirmButtonText"
+			@confirm-dialog="dialogInfo.onConfirm"
+		>
+			<template #dialog-container-title>
+				<strong>{{ dialogInfo.title }}</strong>
+			</template>
+
+			<template>
+				{{ dialogInfo.description }}
+			</template>
+		</dialog-container>
+	</main>
+</template>
+
+<script>
+var FunctionDefinitionName = require( '../../components/function/definition/FunctionDefinitionName.vue' );
+var FunctionDefinitionAliases = require( '../../components/function/definition/FunctionDefinitionAliases.vue' );
+var FunctionDefinitionInputs = require( '../../components/function/definition/FunctionDefinitionInputs.vue' );
+var FunctionDefinitionOutput = require( '../../components/function/definition/FunctionDefinitionOutput.vue' );
+var FunctionDefinitionFooter = require( '../../components/function/definition/FunctionDefinitionFooter.vue' );
+var FnEditorZLanguageSelector = require( '../../components/editor/FnEditorZLanguageSelector.vue' );
+var useBreakpoints = require( '../../composables/useBreakpoints.js' );
+var icons = require( '../../../lib/icons.json' );
+var mapGetters = require( 'vuex' ).mapGetters,
+	mapActions = require( 'vuex' ).mapActions;
+var Constants = require( '../../Constants.js' );
+var typeUtils = require( '../../mixins/typeUtils.js' );
+var CdxButton = require( '@wikimedia/codex' ).CdxButton,
+	CdxMessage = require( '@wikimedia/codex' ).CdxMessage,
+	DialogContainer = require( '../../components/base/DialogContainer.vue' );
+
+// @vue/component
+module.exports = exports = {
+	name: 'function-definition',
+	components: {
+		'function-definition-name': FunctionDefinitionName,
+		'function-definition-aliases': FunctionDefinitionAliases,
+		'function-definition-inputs': FunctionDefinitionInputs,
+		'function-definition-output': FunctionDefinitionOutput,
+		'function-definition-footer': FunctionDefinitionFooter,
+		'fn-editor-zlanguage-selector': FnEditorZLanguageSelector,
+		'cdx-button': CdxButton,
+		'cdx-message': CdxMessage,
+		'dialog-container': DialogContainer
+	},
+	mixins: [ typeUtils ],
+	setup: function () {
+		var breakpoint = useBreakpoints( Constants.breakpoints );
+		return {
+			breakpoint
+		};
+	},
+	data: function () {
+		return {
+			currentToast: null,
+			toastIntent: 'success',
+			labelLanguages: [],
+			initialInputTypes: [],
+			initialOutputType: '',
+			dialogInfo: {
+				title: '',
+				description: '',
+				cancelButtonText: '',
+				confirmButtonText: '',
+				onConfirm: ''
+			}
+		};
+	},
+	computed: $.extend( mapGetters( [
+		'getZkeyLabels',
+		'getCurrentZLanguage',
+		'currentZFunctionHasValidInputs',
+		'currentZFunctionHasOutput',
+		'currentZObjectLanguages',
+		'isNewZObject',
+		'getViewMode',
+		'getZObjectChildrenById',
+		'getZObjectAsJsonById',
+		'getZObjectInitialized',
+		'getZargumentsArray',
+		'getNestedZObjectById',
+		'getUserZlangZID',
+		'isUserLoggedIn'
+	] ),
+	mapGetters(
+		'router',
+		[ 'getQueryParams' ]
+	),
+	{
+		canEditFunction: function () {
+			// TODO(T301667): restrict to only certain user roles
+			return this.isNewZObject ? true : this.isUserLoggedIn;
+		},
+		isMobile: function () {
+			return this.breakpoint.current.value === Constants.breakpointsTypes.MOBILE;
+		},
+		/**
+		 * A function can be published if it has at least one input and an output
+		 *
+		 * @return {boolean} if a function is able to be published
+		 */
+		ableToPublish: function () {
+			if ( this.currentZFunctionHasValidInputs && this.currentZFunctionHasOutput ) {
+				return true;
+			}
+			return false;
+		},
+		/**
+		 * if toast should be shown
+		 *
+		 * @return {boolean}
+		 */
+		showToast: function () {
+			return this.currentToast !== null;
+		},
+		/**
+		 * if currently editing the loaded function
+		 *
+		 * @return {boolean}
+		 */
+		isEditingExistingFunction: function () {
+			return !this.isNewZObject && !this.getViewMode;
+		},
+		/**
+		 * icon for admin tooltip
+		 *
+		 * @return {Object}
+		 */
+		adminTooltipIcon: function () {
+			return icons.cdxIconInfoFilled;
+		},
+		/**
+		 * message for admin tooltip
+		 *
+		 * @return {string}
+		 */
+		adminTooltipMessage: function () {
+			return this.$i18n( 'wikilambda-editor-fn-edit-definition-tooltip-content' ).text();
+		},
+		/**
+		 * zobject ID
+		 *
+		 * @return {number}
+		 */
+		zobjectId: function () {
+			return this.getZkeyLabels[ 0 ];
+		},
+		/**
+		 * zobjectId
+		 *
+		 * @return {number}
+		 */
+		zobject: function () {
+			return this.getZObjectChildrenById( this.zobjectId );
+		},
+		/**
+		 * id for zObjectLabel
+		 *
+		 * @return {number}
+		 */
+		zObjectLabelId: function () {
+			return this.findKeyInArray( Constants.Z_PERSISTENTOBJECT_LABEL, this.zobject ).id;
+		},
+		/**
+		 * id for zObjectAlias
+		 *
+		 * @return {number}
+		 */
+		zObjectAliasId: function () {
+			return this.findKeyInArray( Constants.Z_PERSISTENTOBJECT_ALIASES, this.zobject ).id;
+		},
+		/**
+		 * list of labels for a given zObject
+		 *
+		 * @return {Array}
+		 */
+		zObjectLabels: function () {
+			return this.getZObjectAsJsonById( this.zObjectLabelId );
+		},
+		/**
+		 * list of aliases for a given zObject
+		 *
+		 * @return {Array}
+		 */
+		zObjectAliases: function () {
+			return this.getZObjectAsJsonById( this.zObjectAliasId );
+		},
+		/**
+		 * get all the existing languages for the current function
+		 * these languages could be used for labels and/or aliases
+		 *
+		 * @return {Array} list of formatted languages
+		 */
+		selectedLanguages: function () {
+			var languageList = this.currentZObjectLanguages;
+			var formattedLanguages = [];
+
+			// Add languages from function names, labels and aliases.
+			for ( var item in languageList ) {
+				formattedLanguages.push( {
+					zLang: languageList[ item ][ Constants.Z_REFERENCE_ID ],
+					// get the label for the language zId
+					label: this.getZkeyLabels[ languageList[ item ][ Constants.Z_REFERENCE_ID ] ],
+					readOnly: true
+				} );
+			}
+			return formattedLanguages;
+		},
+		currentInputs: function () {
+			return this.getZargumentsArray() || [];
+		},
+		currentOutput: function () {
+			return this.getNestedZObjectById( 0, [
+				Constants.Z_PERSISTENTOBJECT_VALUE,
+				Constants.Z_FUNCTION_RETURN_TYPE,
+				Constants.Z_REFERENCE_ID
+			] ) || '';
+		}
+	} ),
+	methods: $.extend( mapActions( [
+		'setCurrentZLanguage',
+		'submitZObject',
+		'changeType'
+	] ), {
+		publishSuccessful: function ( toastMessage ) {
+			this.toastIntent = 'success';
+			this.currentToast = toastMessage;
+		},
+		closeToast: function () {
+			this.currentToast = null;
+		},
+		/**
+		 * Gets called when user clicks on the button
+		 * adds another language label section
+		 */
+		addLabelInOtherLanguages: function () {
+			const hasSingleLanguage = this.labelLanguages.length === 1;
+			const hasMultipleLanguage = this.labelLanguages.length > 1;
+			const lastLanguageHasLabel = hasMultipleLanguage &&
+				!!this.labelLanguages[ this.labelLanguages.length - 1 ].label;
+
+			if ( hasSingleLanguage || lastLanguageHasLabel ) {
+				this.labelLanguages.push(
+					{
+						label: '',
+						zLang: '',
+						readonly: false
+					} );
+
+				// Scroll to new labelLanguage container after it has been added
+				setTimeout( function () {
+					const fnDefinitionContainer = this.$refs.fnDefinitionContainer;
+					fnDefinitionContainer.scrollTop = fnDefinitionContainer.scrollHeight;
+				}.bind( this ), 0 );
+			}
+		},
+		setInputLangByIndex: function ( lang, index ) {
+			// If index is zero, set currentZLanguage as lang.zLang
+			if ( index === 0 ) {
+				this.setCurrentZLanguage( lang );
+			}
+			this.labelLanguages[ index ] = {
+				zLang: lang,
+				label: this.getZkeyLabels[ lang ],
+				readOnly: true
+			};
+		},
+		/**
+		 * publish function changes and redirect to the view page
+		 *
+		 * @param {Object} summary
+		 * @param {boolean} shouldUnattachImplentationAndTester
+		 */
+		handlePublish: function ( summary, shouldUnattachImplentationAndTester ) {
+			if ( this.dialogInfo.title ) {
+				this.resetDialogInfo();
+				this.$refs.dialogBox.closeDialog();
+			}
+
+			const context = this;
+			this.submitZObject( { summary, shouldUnattachImplentationAndTester } ).then( function ( pageTitle ) {
+				if ( pageTitle ) {
+					window.location.href = new mw.Title( pageTitle ).getUrl();
+				}
+			} ).catch( function ( error ) {
+				context.toastIntent = 'error';
+				context.currentToast = error.error.message;
+			} );
+		},
+		changeTypeToFunction: function () {
+			var zObject = this.getZObjectChildrenById( 0 ); // We fetch the Root object
+			var Z2K2 =
+				this.findKeyInArray( Constants.Z_PERSISTENTOBJECT_VALUE, zObject );
+			this.changeType( {
+				id: Z2K2.id,
+				type: Constants.Z_FUNCTION
+			} );
+		},
+		validateInputTypeChanged: function () {
+			let inputTypeChanged = false;
+			if ( this.currentInputs.length === this.initialInputTypes.length ) {
+				for ( let index = 0; index < this.currentInputs.length; index++ ) {
+					const input = this.currentInputs[ index ];
+					if ( input.type.zid !== this.initialInputTypes[ index ] ) {
+						inputTypeChanged = true;
+					}
+				}
+			} else {
+				inputTypeChanged = true;
+			}
+
+			return inputTypeChanged;
+		},
+		validateOutputTypeChanged: function () {
+			return this.currentOutput.value !== this.initialOutputType;
+		},
+		validateInputOutputTypeChanged: function ( summary ) {
+			const inputTypeChanged = this.validateInputTypeChanged();
+			const outputTypeChanged = this.validateOutputTypeChanged();
+
+			if ( this.isEditingExistingFunction &&
+				( inputTypeChanged || outputTypeChanged )
+			) {
+				this.dialogInfo = {
+					title: this.$i18n( 'wikilambda-function-are-you-sure-dialog-header' ).text(),
+					description: '',
+					cancelButtonText: this.$i18n( 'wikilambda-continue-editing' ).text(),
+					confirmButtonText: this.$i18n( 'wikilambda-publishnew' ).text(),
+					onConfirm: function () { return this.handlePublish( summary, true ); }.bind( this )
+				};
+				if ( inputTypeChanged && outputTypeChanged ) {
+					this.dialogInfo.description = this.$i18n( 'wikilambda-publish-input-and-output-changed-impact-prompt' ).text();
+				} else if ( inputTypeChanged ) {
+					this.dialogInfo.description = this.$i18n( 'wikilambda-publish-input-changed-impact-prompt' ).text();
+				} else if ( outputTypeChanged ) {
+					this.dialogInfo.description = this.$i18n( 'wikilambda-publish-output-changed-impact-prompt' ).text();
+				}
+				this.$refs.dialogBox.openDialog();
+			} else if ( !this.isEditingExistingFunction && this.isMobile ) {
+				this.dialogInfo = {
+					title: this.$i18n( 'wikilambda-publishnew' ).text(),
+					description: this.$i18n( 'wikilambda-special-function-definition-publish-description' ).text(),
+					cancelButtonText: this.$i18n( 'wikilambda-cancel' ).text(),
+					confirmButtonText: this.$i18n( 'wikilambda-confirm' ).text(),
+					onConfirm: function () {
+						this.resetDialogInfo();
+						this.$refs.dialogBox.closeDialog();
+						this.handlePublish( summary, true );
+					}.bind( this )
+				};
+				this.$refs.dialogBox.openDialog();
+			} else {
+				this.handlePublish( summary );
+			}
+		},
+		handleCancel: function () {
+			// if leaving without saving edits
+			if ( this.isEditingExistingFunction ) {
+				this.dialogInfo = {
+					title: this.$i18n( 'wikilambda-function-are-you-sure-dialog-header' ).text(),
+					description: this.$i18n( 'wikilambda-function-are-you-sure-dialog-description' ).text(),
+					cancelButtonText: this.$i18n( 'wikilambda-continue-editing' ).text(),
+					confirmButtonText: this.$i18n( 'wikilambda-discard-edits' ).text(),
+					onConfirm: this.confirmCancel
+				};
+				this.$refs.dialogBox.openDialog();
+			} else {
+				// if not editing, go to previous page
+				history.back();
+			}
+		},
+		confirmCancel: function () {
+			this.resetDialogInfo();
+			this.$refs.dialogBox.closeDialog();
+			window.location.href = new mw.Title( this.getQueryParams.title ).getUrl();
+		},
+		resetDialogInfo: function () {
+			this.dialogInfo = {
+				title: '',
+				description: '',
+				cancelButtonText: '',
+				confirmButtonText: '',
+				onConfirm: ''
+			};
+		},
+		/**
+		 *  The main zObject labels are displayed on the Page title.
+		 *
+		 *  It is the zobject which matches the users language, otherwise
+		 *  is the first zobject on the page.
+		 *
+		 *  @param {Object} zLang
+		 *  @param {number} index
+		 *  @return {boolean} isMainZObject
+		 */
+		isMainZObject: function ( zLang, index ) {
+			return this.currentZObjectLanguages.some(
+				( id ) => id[ Constants.Z_REFERENCE_ID ] === this.getUserZlangZID ) ?
+				zLang === this.getUserZlangZID :
+				index === 0;
+		}
+	} ),
+	watch: {
+		currentInputs: {
+			immediate: true,
+			handler: function () {
+				if ( this.initialInputTypes.length === 0 ) {
+					this.initialInputTypes = this.currentInputs.map( ( inputs ) => {
+						return inputs.type.zid || '';
+					} );
+				}
+			}
+		},
+		currentOutput: {
+			immediate: true,
+			handler: function () {
+				if ( this.initialOutputType === '' ) {
+					this.initialOutputType = this.currentOutput.value;
+				}
+			}
+		},
+		/**
+		 * show a toast once the user has filled out the requirements and a function can be published
+		 */
+		ableToPublish: {
+			immediate: true,
+			handler: function ( status ) {
+				if ( status ) {
+					this.toastIntent = 'success';
+					this.currentToast = this.$i18n( 'wikilambda-function-definition-can-publish-message' ).text();
+				}
+			}
+		},
+		selectedLanguages: {
+			immediate: true,
+			handler: function () {
+				if ( this.labelLanguages.length === 0 &&
+					this.selectedLanguages[ this.selectedLanguages.length - 1 ].label !== undefined ) {
+					this.labelLanguages = this.selectedLanguages;
+				}
+			}
+		}
+	},
+	mounted: function () {
+		if ( !this.zObjectLabels ) {
+			this.labelLanguages.push( {
+				label: this.getZkeyLabels[ this.getCurrentZLanguage ],
+				zLang: this.getCurrentZLanguage,
+				readonly: false
+			} );
+		}
+		if ( this.isNewZObject ) {
+			this.changeTypeToFunction();
+		}
+	}
+};
+</script>
+
+<style lang="less">
+@import './../../../lib/wikimedia-ui-base.less';
+
+.ext-wikilambda-function-definition {
+	&__container {
+		padding-top: 20px;
+
+		&__input {
+			margin-bottom: 40px;
+
+			&__language {
+				margin-bottom: 15px;
+
+				&__selector {
+					margin-bottom: 40px;
+					display: flex;
+				}
+
+				&__title {
+					font-size: 2em;
+				}
+			}
+		}
+	}
+
+	&__action-add-input {
+		height: 40px;
+		margin: 40px 0;
+
+		button {
+			height: 100%;
+			font-weight: bold;
+			background: transparent;
+			border: 0;
+			color: @wmui-color-base0;
+		}
+	}
+
+	@media screen and ( min-width: @width-breakpoint-tablet ) {
+		&__container {
+			border: 1px solid @wmui-color-base80;
+			padding-left: 27px;
+		}
+
+		&__action-add-input {
+			background: @wmui-color-base80;
+			margin: 0;
+
+			button {
+				padding-left: 27px;
+				padding-right: 27px;
+			}
+		}
+	}
+}
+</style>

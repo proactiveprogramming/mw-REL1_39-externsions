@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"phptagsfunctions-desc": "מימוש הפונקציות הפנימיות של PHP ילידי להרחבה PhpTags",
+	"phptagsfunctions-preg-bad-delimiter": "התוחם חייב לא להיות אפאנומרי או קו נטוי ימינה",
+	"phptagsfunctions-preg-no-ending-delimiter": "לא נמצא תוחם מסיים \"$1\"",
+	"phptagsfunctions-preg-unknown-modifier": "מאייך בלתי־ידוע \"$1\""
+}

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"forms-form-edit-title": "עריכת $1",
+	"forms-form-editor-prop-title": "כותרת",
+	"forms-form-editor-prop-showtitle": "כותרת התצוגה",
+	"forms-form-editor-prop-targettitle": "כותרת",
+	"forms-action-editsource": "עריכת קוד מקור"
+}

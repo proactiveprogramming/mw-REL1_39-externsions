@@ -1,0 +1,29 @@
+{
+	"root": true,
+	"parserOptions": {
+		"ecmaVersion": 6
+	},
+	"extends": [
+		"wikimedia",
+		"wikimedia/mediawiki"
+	],
+	"env": {
+		"commonjs": true,
+		"browser": true,
+		"jquery": true
+	},
+	"globals": {
+		"mediaWiki": false,
+		"ve": false
+	},
+	"rules": {
+		"jsdoc/no-undefined-types": [
+			"warn",
+			{
+				"definedTypes": [
+					"OcrTool"
+				]
+			}
+		]
+	}
+}

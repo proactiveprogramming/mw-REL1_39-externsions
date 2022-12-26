@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"webauthn-desc": "WebAuthn протокол лелайеш аьтту бо аутентификаци лелайан.",
+	"webauthn-module-label": "Веб-аутентификаци (WebAuthn)"
+}

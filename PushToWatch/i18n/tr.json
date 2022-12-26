@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"Joseph",
+			"MuratTheTurkish"
+		]
+	},
+	"pushtowatch-desc": "Bir sayfayı başka bir kullanıcının izleme listesine itmenizi sağlar",
+	"pushtowatch": "İzlemek için push yapın:",
+	"pushtowatch-email-body": "Merhaba $1,\n\n$2 sizden $3 izlemeni istedi\n\nTebrikler!\n\nTeşekkürler,\n\n{{SITENAME}} ekibi",
+	"pushtowatch-email-subject": "İzleme listesi enjeksiyonu - $1",
+	"pushtowatch-error": "İzleme listesine '''$1''' eklenemedi",
+	"pushtowatch-followers": "İzleyiciler: $1",
+	"pushtowatch-no-followers": "İzleyici yok",
+	"right-pushtowatch": "Diğer kullanıcıların izleme listelerine sözkonusu kullanıcının rızası olmadan sayfa gönderin"
+}

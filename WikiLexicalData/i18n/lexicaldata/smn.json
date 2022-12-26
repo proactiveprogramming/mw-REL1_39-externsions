@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"langman_langname": "Kielâ nommâ:",
+	"datasearch_language": "Kielâ:",
+	"ow_exporttsv_languages": "Kielah:",
+	"ow_save": "Vuorkkii",
+	"ow_history": "Historjá",
+	"ow_transaction_remove": "Siho",
+	"ow_dm_OK": "OK",
+	"ow_Language": "Kielâ",
+	"ow_OtherLanguages": "Eres kielah:",
+	"ow_Remove": "Siho",
+	"ow_Source": "Käldee",
+	"ow_Time": "Äigi",
+	"ow_TranslatedText": "Jurgâlum tekstâ",
+	"ow_Link": "Liŋkkâ",
+	"ow_LinkAttributeValues": "Liiŋkah",
+	"ow_User": "Kevttee",
+	"ow_added": "Lasettum",
+	"ow_removed": "Sikkum",
+	"ow_class_attr_type_link": "Liŋkkâ",
+	"ow_needs_xlation_source_lang": "Käldeekielâ:",
+	"ow_show": "Čääiti",
+	"ow_upload": "Vuorkkii",
+	"ow_create": "Räähti",
+	"ow_suggest_next": "Čuávuvâš",
+	"action-addlanguage": "lasettiđ já molsođ kielâasâttâsâid",
+	"right-addlanguage": "Lasettiđ já molsođ kielâasâttâsâid",
+	"prefs-ow-lang": "Kielah"
+}

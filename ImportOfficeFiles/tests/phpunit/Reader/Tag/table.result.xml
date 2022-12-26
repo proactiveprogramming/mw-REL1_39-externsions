@@ -1,0 +1,27 @@
+
+{| class="wikitable"
+|-
+| AAA
+| BBB
+| CCC
+|-
+| DDD
+| EEE
+| 
+{| class="wikitable"
+|-
+| GGG
+| HHH
+| III
+|-
+| JJJ
+| KKK
+| LLL
+|}
+
+|-
+| MMM
+| NNN
+| OOO
+|}
+

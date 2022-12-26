@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"testlanguagenamegrammar": "Testar formas grammatical con nomines de lingua",
+	"testlanguagenamegrammar-desc": "Adde un [[Special:TestLanguageNameGrammar|pagina special]] pro testar formas grammatical con nomines de lingua",
+	"testlanguagenamegrammar-language": "Lingua",
+	"testlanguagenamegrammar-grammarform": "Forma grammatical",
+	"testlanguagenamegrammar-submit": "Submitter"
+}

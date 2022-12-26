@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"securesessions-desc": "Render le sessiones de usator e le authentication de sessiones plus secur",
+	"securesessions-personalurl": "Sessiones aperte ($1)",
+	"securesessions-ipsession": "Clauder tote le altere sessiones.",
+	"securesessions-iprestrict": "Limitar le session a iste adresse IP.",
+	"securesessions-uarestrict": "Limitar le session a iste navigator.",
+	"securesessions-sessions": "Sessiones",
+	"securesessions-sessions-legend": "Information sur le session",
+	"securesessions-sessions-text": "Ecce tote le sessiones aperte pro tu conto e le informationes sur illos. Tu pote clauder tote le altere sessiones usante le button hic infra. Un asterisco (*) indica le session actual.",
+	"securesessions-sessions-ip": "Adresse IP:",
+	"securesessions-sessions-activity": "Ultime activitate:",
+	"securesessions-sessions-clear": "Clauder tote le altere sessiones",
+	"securesessions-prefs-country": "Limitar le apertura de session per pais:",
+	"securesessions-prefs-tor": "Interdicer le apertura de session desde nodos de exito de Tor.",
+	"securesessions-disallowedcountry": "Iste conto non es autorisate a aperir session desde iste pais.",
+	"securesessions-disallowedtor": "Iste conto non es autorisate a aperir session desde un nodo de exito de Tor."
+}

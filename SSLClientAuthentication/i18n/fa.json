@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Armin1392",
+			"Beginneruser",
+			"Ebraminio",
+			"Huji",
+			"Mjbmr",
+			"Reza1615"
+		]
+	},
+	"sslauth-desc": "اجازه می‌دهد به کاربران تا گواهینامه‌های SSL که برای تأیید اعتبار استفاده می‌شوند را بارگذاری کنند",
+	"sslauth-title-enable": "فعال کردن اصالت‌سنجی کارخواه SSL",
+	"sslauth-title-disable": "غیرفعال کردن اصالت‌سنجی کارخواه SSL",
+	"sslauth-enable": "فعال‌سازی",
+	"sslauth-disable": "غیرفعال سازی",
+	"sslauth-cn": "نام معمولی",
+	"sslauth-email": "آدرس ایمیل",
+	"sslauth-serial": "شماره سریال",
+	"sslauth-response-enable": "اعتبارنامه اس‌اس‌ال با موفقیت فعال شده‌است. اکنون هر زمان شما با {{SITENAME}} بیش از اچ‌تی‌تی‌پی‌ها با گواهی مشتری خود متصل شدید، شما به طور خودکار وارد خواهید شد.",
+	"sslauth-response-disable": "اعتبارنامه اس‌اس‌ال با موفقیت غیرفعال شده‌است.",
+	"sslauth-invalidrequest-title": "درخواست نامعتبر",
+	"sslauth-invalidrequest": "گواهی معتبر مشتری اس‌اس‌ال باید از این صفحه مفید ارائه شود.",
+	"clientssl-legend": "اصالت‌سنجی SSL",
+	"clientssl-text": "از این صفحه برای فعال/غیرفعال کردن تأیید اعتبار دارای گواهینامه‌های سرویس گیرنده SSL استفاده کنید",
+	"sslauth-prefs-name": "اصالت‌سنجی SSL",
+	"sslauth-prefs-linktospecial": "فعال/غیرفعال کردن گواهی‌های مشتری"
+}

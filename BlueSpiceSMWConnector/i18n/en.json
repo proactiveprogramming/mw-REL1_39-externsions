@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robert Vogel <vogel@hallowelt.biz>"
+		]
+	},
+	"bs-bssmwconnector-desc": "Integrates SemanticMediaWiki into BlueSpice",
+	"bs-bssmwconnector-srf-printername-bsgrid": "BlueSpice Grid",
+	"bs-bssmwconnector-nmmngr-label-smw": "Semantic MediaWiki",
+	"bs-dlg-choosesmwprop-label": "Property",
+	"bs-dlg-choosesmwprop-type-smwprop": "Semantic property",
+	"bs-extendedsearch-add-filter-group-smwproperty-label": "Semantic properties",
+	"bs-smwconnector-extendedsearch-smwproperty-result-value": "$1: $2",
+	"bs-extendedsearch-search-center-result-smwproperty-label": "Semantic properties:",
+	"bs-smwconnector-extendedsearch-boolean-property-true": "Yes",
+	"bs-smwconnector-extendedsearch-boolean-property-false": "No",
+	"bs-smwconnector-propertyvalueprovider-usermentions-alias": "Content/User mentions",
+	"bs-smwconnector-propertyvalueprovider-usermentions-desc": "User pages of the users that have been mentioned on this page",
+	"apihelp-bs-smw-connector-ask-store-summary": "ExtJS-compatible store to execute semantic queries",
+	"apihelp-bs-smw-connector-ask-store-props-param": "Properties to be retrieved. Those properties will correspond to the schema and data returned. Key-value pairs, key is the actual property name, value is desired label (JSON)",
+	"bs-swm-connector-ask-store-page-label": "Page",
+	"bs-smw-connector-async-ask-unknown-handler": "Handler for format \"$1\" is not registered or not valid",
+	"apihelp-bs-smw-connector-ask-tree-store-node-param": "Node value that will replace <nowiki>{{{node}}}</nowiki> placeholder in the query",
+	"bs-smwconnector-extendedsearch-anon-user-label": "Anonymous user"
+}

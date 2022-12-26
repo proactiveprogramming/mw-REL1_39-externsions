@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"wsu-extension-name": "Wikibase Statement Updater",
+	"wsu-desc": "Verktyg både för att uppdatera och lägga till uttalanden i Wikibase",
+	"wsu-special-wikibasestatementupdater": "Massuppdatering av uttalanden",
+	"wsu-wsu-batch-title": "Namn på omgången",
+	"wsu-wsu-batch-contents": "Kommandon i Quick Statements V1-format",
+	"wsu-wsu-error": "Kan inte parsa kommandona: $1",
+	"wsu-wsu-error-linetooshort": "Rad $1 är för kort.",
+	"wsu-wsu-error-noqualifiers": "Bestämningarna stöds ännu inte.",
+	"wsu-wsu-error-onlyq": "Endast Q-objekt stöds.",
+	"wsu-wsu-error-unsupportedcommand": "Okänd kommando.",
+	"wsu-your-batches": "{{GENDER:|Du}} har skapad följande omgångar:",
+	"wsu-unknown-batch": "Okänd omgång",
+	"wsu-goback": "Tillbaka till listan",
+	"wsu-start": "(Åter)uppta redigering",
+	"wsu-stop": "Avsluta redigering",
+	"wsu-updater-api-failure": "Kan inte parsa API-respons",
+	"wsu-updater-ambiguous-update": "Egenskap har flera uttalanden",
+	"wsu-give-permission": "Det här verktyget behöver rättigheter för att redigera å {{GENDER:|dina}} vägnar. [[$1|Tilldela rättigheter]].",
+	"wsu-create-batch": "Skapa ny omgång",
+	"wsu-command-P": "Egenskap",
+	"wsu-batchtable-subject": "Ämne",
+	"wsu-batchtable-command": "Kommando",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Värde",
+	"wsu-batchtable-status": "Status",
+	"wsu-js-batchtable-status": "$1% slutfört. {{PLURAL:$2|0=|$2 misslyckades.}}",
+	"apihelp-wikibasestatementupdater-summary": "Hantera Wikibase Statement Updater-batchar."
+}

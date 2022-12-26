@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Ex-Diktator"
+		]
+	},
+	"testlanguagenamegrammar": "בדיקת צורות דקדוק עם שמות שפות",
+	"testlanguagenamegrammar-desc": "הוספת [[Special:TestLanguageNameGrammar|דף מיוחד]] לבדיקת צורות דקדוקיות עם שמות שפות",
+	"testlanguagenamegrammar-language": "שפה",
+	"testlanguagenamegrammar-grammarform": "צורת דקדוק",
+	"testlanguagenamegrammar-submit": "שליחה"
+}

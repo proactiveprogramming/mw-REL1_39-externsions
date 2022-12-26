@@ -1,0 +1,32 @@
+.mw-ge-recommendedImageViewer {
+	.oo-ui-window-head {
+		text-align: right;
+	}
+
+	.mw-ge-recommendedImageViewer-image-close-button {
+		position: fixed;
+		top: 5px;
+		right: 8px;
+		opacity: 0.8;
+	}
+
+	.oo-ui-window-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: #000;
+	}
+
+	.mw-ge-recommendedImageViewer-image {
+		max-height: 100%;
+		margin: 0 auto;
+		background: url( ../../../images/checker.png ) repeat;
+	}
+}
+
+// Override default (slide from top) dialog animation
+.ve-ui-overlay-global-mobile > .oo-ui-windowManager-modal > .oo-ui-dialog {
+	&.mw-ge-recommendedImageViewer {
+		transition: unset;
+	}
+}

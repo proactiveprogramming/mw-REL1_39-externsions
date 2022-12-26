@@ -1,0 +1,52 @@
+{
+	"name": "MissedPages",
+	"namemsg": "missedpages-extensionname",
+	"version": "0.1.0",
+	"author": [
+		"Sam Wilson"
+	],
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
+	"url": "https://www.mediawiki.org/wiki/Extension:MissedPages",
+	"descriptionmsg": "missedpages-desc",
+	"license-name": "MIT",
+	"type": "extension",
+	"load_composer_autoloader": true,
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\MissedPages\\": "includes/"
+	},
+	"ExtensionMessagesFiles": {
+		"MissedPagesAlias": "MissedPages.i18n.alias.php"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\MissedPages\\Hooks"
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "main",
+		"ShowMissingArticle": "main"
+	},
+	"MessagesDirs": {
+		"MissedPages": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.missedpages": {
+			"styles": [ "resources/ext.missedpages.less" ],
+			"scripts": [ "resources/ext.missedpages.js" ],
+			"messages": [],
+			"dependencies": [ "mediawiki.widgets", "oojs-ui-core" ]
+		}
+	},
+	"SpecialPages": {
+		"MissedPages": "MediaWiki\\Extension\\MissedPages\\SpecialMissedPages"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "MissedPages"
+	},
+	"manifest_version": 1
+}

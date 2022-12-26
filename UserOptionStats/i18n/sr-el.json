@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello"
+		]
+	},
+	"useroptionstats": "Statistika korisničkih opcija",
+	"useroptionstats-desc": "[[Special:UserOptionStats|Posebna stranica]] za izvešća o Medijaviki upotrebi korisničkih opcija",
+	"uos-warn": "PHPlot nije instaliran!",
+	"uos-choose": "Izaberite jednu od sledećih korisničkih opcija: $1",
+	"uos-choose-hidden": "Odaberite jednu od sledećih sakrivenih korisničkih opcija: $1",
+	"uos-unknown": "*Podrazumevano",
+	"uos-other": "*Drugo",
+	"uos-title": "Distribucija vrednosti korisničke opcije $1"
+}

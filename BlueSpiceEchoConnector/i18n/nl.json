@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"McDutchie"
+		]
+	},
+	"bs-echoconnector-extension-description": "Verbindt BlueSpice met Echo",
+	"echo-category-title-bs-admin-cat": "Administratieve taken",
+	"echo-pref-tooltip-bs-admin-cat": "Mij op de hoogte stellen wanneer een nieuw gebruikersaccount is aangemaakt",
+	"echo-pref-tooltip-bs-page-actions-cat": "Mij op de hoogte stellen wanneer iemand een door mij gevolgde pagina bewerkt, verplaatst of verwijdert",
+	"echo-pref-tooltip-bs-page-create-cat": "Mij op de hoogte stellen wanneer er een nieuwe pagina wordt aangemaakt",
+	"echo-category-title-bs-page-actions-cat": "Handelingen aan pagina's op de volglijst",
+	"echo-category-title-bs-page-create-cat": "Pagina-aanmaak",
+	"prefs-namespace-notifications": "Meldingen over naamruimtegebeurtenissen",
+	"prefs-category-notifications": "Meldingen over categorieën",
+	"echo-category-title-bs-namespace-category-notify-cat": "Wijzigingen in geabonneerde naamruimten en categorieën",
+	"bs-echoconnector-personalurl-notifications": "Meldingen ($1)"
+}

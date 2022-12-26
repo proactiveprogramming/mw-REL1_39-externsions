@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Carlosmg.dg",
+			"DannyS712",
+			"Fitoschido",
+			"Jakeukalane",
+			"Macofe"
+		]
+	},
+	"configmanager-admintool-label": "Gestor de configuración",
+	"action-configmanager-viewspecialpage": "ver la página especial «{{int:configmanager}}»",
+	"configmanager": "Gestor de configuración",
+	"configmanager-desc": "Permite a los administradores configurar toda la wiki desde una única página especial",
+	"configmanager-discardchanges": "¿Quieres descartar los cambios?",
+	"configmanager-noentry": "No se encontró ninguna entrada",
+	"apihelp-configmanager-tasks-summary": "Gestionar tareas",
+	"apihelp-configmanager-store-summary": "Gestionar almacenes",
+	"right-configmanager-viewspecialpage": "Acceso a la página especial [[Special:ConfigManager]]"
+}

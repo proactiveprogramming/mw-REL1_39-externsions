@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahrada2016"
+		]
+	},
+	"bs-notifications-create": "Fuulli \"$1\" uumameera",
+	"bs-notifications-delete": "Fuulli \"$1\" balleeffameera",
+	"bs-notifications-move": "Fuulli \"$1\" haxaa'ameera"
+}

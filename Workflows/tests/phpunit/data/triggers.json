@@ -1,0 +1,44 @@
+{
+	"start-approval-on-edit": {
+		"name": "Start approval on edit",
+		"description": "Dummy",
+		"type": "edit",
+		"active": true,
+		"definition": "user-approval",
+		"repository": "workflow-file",
+		"initData": {
+			"username": "Dummy user",
+			"instructions": "Do this thing!"
+		},
+		"rules": {
+			"include": {
+				"namespace": [
+					0,
+					12
+				]
+			},
+			"exclude": {
+				"category": [
+					"Test"
+				],
+				"editType": "minor"
+			}
+		}
+	},
+	"inactive-trigger": {
+		"name": "Inactive trigger",
+		"description": "Dummy",
+		"type": "edit",
+		"active": false,
+		"definition": "dummy",
+		"repository": "dummy",
+		"rules": {
+			"include": {
+				"pages": "PageA|PageB"
+			},
+			"exclude": {
+				"editType": "minor"
+			}
+		}
+	}
+}

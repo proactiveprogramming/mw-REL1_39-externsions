@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Otokoume",
+			"Shirayuki",
+			"SkyDaisy9"
+		]
+	},
+	"hsts-desc": "HSTS (HTTP Strict Transport Security) を、利用者の個人設定に応じて有効にする",
+	"hsts-tog": "HTTP Strict Transport Security (HSTS) を有効にする",
+	"hsts-https-tog": "HTTP Strict Transport Security (HSTS) を有効にする<br />この設定を変更するには、このページを HTTPS で再読み込みしてください。",
+	"hsts-beta-feature-message": "セキュリティで保護された接続を使用します",
+	"hsts-beta-feature-description": "これにより、ログアウト後も安全が確保され、閲覧中は誰にも覗かれることがないため、安心してご利用いただけます。このオプションを有効にし、この技術 (HSTS) をサポートする最新のブラウザーを使用すると、どんなセキュリティ警告もおそらくあなたに対する真の攻撃であると考えられます。"
+}

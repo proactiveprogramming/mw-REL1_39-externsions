@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Candalua",
+			"GatoSelvadego"
+		]
+	},
+	"sitematrix-desc": "Mostra un [[Special:SiteMatrix|elenco dei siti Wikimedia]]",
+	"sitematrix-language": "Lengua",
+	"sitematrix-project": "Nome del progeto, colegamento interprogeto e colegamento inter-wiki",
+	"sitematrix-other-projects": "Altri projeti",
+	"sitematrix-total": "'''Contegio total: $1'''",
+	"sitematrix-sitetotal": "Total",
+	"sitematrix-private": "privato",
+	"sitematrix-fishbowl": "modifiche limità"
+}

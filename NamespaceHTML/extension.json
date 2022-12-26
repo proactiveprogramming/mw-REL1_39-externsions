@@ -1,0 +1,34 @@
+{
+	"name": "NamespaceHTML",
+	"version": "0.5",
+	"author": "Ike Hecht for [http://www.wikiworks.com/ WikiWorks]",
+	"url": "https://www.mediawiki.org/wiki/Extension:NamespaceHTML",
+	"descriptionmsg": "namespacehtml-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"MessagesDirs": {
+		"NamespaceHTML": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NamespaceHTML": "src/NamespaceHTML.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "NamespaceHTML::addNamespaceHTML"
+	},
+	"config_prefix": "wg",
+	"config": {
+		"RawHtmlNamespaces": {
+			"description": "List of namespaces where raw HTML should be allowed",
+			"value": []
+		}
+	},
+	"ConfigRegistry": {
+		"NamespaceHTML": "GlobalVarConfig::newInstance"
+	},
+	"callback": "NamespaceHTML::onRegistration",
+	"manifest_version": 2
+}

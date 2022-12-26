@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"Romaine"
+		]
+	},
+	"apihelp-transcodereset-param-title": "De titel van het mediabestand.",
+	"apierror-timedmedia-notlocal": "Bestand niet lokaal"
+}

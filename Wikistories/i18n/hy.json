@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"GeoO",
+			"Kareyac",
+			"Սերգեյ Սաֆարյան"
+		]
+	},
+	"prefs-wikistories": "Վիքիպատմություններ",
+	"wikistories-story-deleteframe": "Ջնջել այս էջը",
+	"wikistories-article-cancelselection": "Մաքրել",
+	"wikistories-confirmdialog-cancel": "Չեղարկել",
+	"wikistories-confirmdialog-ok": "Լավ",
+	"wikistories-storyviewer-textsize-title": "Տառաչափը",
+	"wikistories-storyviewer-textsize-label-small": "Փոքր",
+	"wikistories-storyviewer-textsize-label-large": "Մեծ",
+	"wikistories-builder-publishform-publishbutton": "Հրապարակել",
+	"wikistories-nojs-form-label-image": "Պատկեր",
+	"wikistories-nojs-form-label-text": "Տեքստ",
+	"wikistories-storyviewer-next-story-header": "Կարդալ ավելին",
+	"wikistories-storyviewer-next-story-viewtext": "Դիտել",
+	"wikistories-storyviewer-textsize": "Փոխել տառաչափը",
+	"wikistories-storyviewer-edit": "Խմբագրել"
+}

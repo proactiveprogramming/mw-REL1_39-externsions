@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dutchy45",
+			"McDutchie",
+			"Nickthijssen1994",
+			"PonkoSasuke",
+			"Romaine"
+		]
+	},
+	"wikispeech": "Wikispeech",
+	"wikispeech-desc": "Een tekst-naar-spraak gereedschap om Wikimedia's projecten toegankelijker te maken voor mensen die om uiteenlopende redenen moeite hebben met lezen.",
+	"prefs-wikispeech": "Wikispeech",
+	"prefs-wikispeech-voice": "Stem",
+	"prefs-wikispeech-speech-rate": "Spreektempo",
+	"prefs-wikispeech-enable": "Schakel Wikispeech in",
+	"prefs-wikispeech-show-player": "De speler altijd tonen",
+	"right-wikispeech-listen": "Luister naar pagina",
+	"action-wikispeech-listen": "luister naar pagina",
+	"wikispeech-listen": "Beluisteren",
+	"wikispeech-error-loading-audio-title": "Audio kon niet geladen worden",
+	"wikispeech-retry": "Probeer opnieuw",
+	"wikispeech-language": "Taal",
+	"wikispeech-lexicon-new": "Nieuw"
+}

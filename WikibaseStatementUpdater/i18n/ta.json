@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"ElangoRamanujam"
+		]
+	},
+	"wsu-wsu-error-unsupportedcommand": "இனமறியாக் கட்டளை.",
+	"wsu-batchtable-command": "கட்டளை",
+	"wsu-batchtable-value": "மதிப்பு"
+}

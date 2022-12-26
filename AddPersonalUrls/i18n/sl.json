@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"addpersonalurls-desc": "Osebnim URL-jem doda nekaj elementov",
+	"addpersonalurls-preload": "Deluje kot katera koli druga vikistran; zlasti jo lahko vidijo ali urejajo drugi uporabniki.",
+	"addpersonalurls-userpages": "Moje strani",
+	"addpersonalurls-home": "Domov",
+	"addpersonalurls-home-preload": "To stran lahko uporabljate kot svojo osebno domačo stran.",
+	"addpersonalurls-favorites": "Priljubljeno",
+	"addpersonalurls-favorites-preload": "To stran lahko uporabite za shranjevanje svojih priljubljenih.",
+	"addpersonalurls-sandbox": "Peskovnik",
+	"addpersonalurls-sandbox-preload": "To stran lahko uporabite za testiranje vikikode.",
+	"addpersonalurls-notes": "Opombe",
+	"addpersonalurls-notes-preload": "To stran lahko uporabljate za osebne zapiske."
+}

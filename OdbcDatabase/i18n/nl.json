@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"McDutchie"
+		]
+	},
+	"odbcdatabase": "ODBC-database",
+	"odbcdatabase-desc": "Stuurprogramma dat gebruikt maakt van de opdrachtenbibliotheek <code>odbc_*</code> van PHP om de uitbreiding voor externe gegevens te ondersteunen",
+	"odbcdatabase-odbc-missing": "Er ontbreken ODBC-functies. Zorg ervoor dat <code>PHP:ODBC</code> is geïnstalleerd.",
+	"odbcdatabase-connection-error": "Fout bij verbinden met server [{{1}}]: {{2}}",
+	"odbcdatabase-free-error": "Kan ODBC-resultaat niet vrijmaken",
+	"odbcdatabase-fetch-object-error": "Fout bij het ophalen van het object: [{{1}}] {{2}}",
+	"odbcdatabase-fetch-row-error": "Fout bij het ophalen van een rij: [{{1}}] {{2}}",
+	"odbcdatabase-insert-id-unsupported": "Functie insertId() wordt niet ondersteund.",
+	"odbcdatabase-unknown-server-version": "Onbekende ODBC-serverversie."
+}

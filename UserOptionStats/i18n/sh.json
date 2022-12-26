@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"useroptionstats": "Statistike korisničkih opcija",
+	"useroptionstats-desc": "[[Special:UserOptionStats|Posebna stranica]] za izvještaje o korištenju MediaWiki korisničkih opcija",
+	"uos-warn": "PHPlot nije instaliran!"
+}

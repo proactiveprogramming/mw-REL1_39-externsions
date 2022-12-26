@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "API de acesso a objeto de domínio persistente genérico.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Falha ao desserializar a transação JSON.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Falha ao desserializar a transação.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Falha ao executar a transação.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Falha ao serializar a resposta.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Crie uma única solicitação de novo usuário.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Leia uma única solicitação do usuário.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Exclua uma única solicitação do usuário."
+}

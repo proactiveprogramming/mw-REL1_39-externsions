@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lokal Profil",
+			"Nemo bis",
+			"Sabelöga",
+			"SaldırganSincap",
+			"WikiPhoenix"
+		]
+	},
+	"wikimedia-acct_creation_throttle_hit": "Besökare på den här webbplatsen med din IP-adress har skapat {{PLURAL:$1|1 konto|$1 konton}} den senaste dagen, vilket är det högsta tillåtna antalet den tidsperioden.\nPå grund av detta kan för tillfället inte besökare med denna IP-adress skapa fler konton.\n\nOm du är på ett evenemang med fokus på att bidra till Wikimedias projekt, var god läs [[m:Mass account creation#Requesting_temporary_lift_of_IP_cap|Requesting temporary lift of IP cap]] för att lösa problemet.",
+	"wikimedia-createacct-helpusername": "[[{{MediaWiki:createacct-helpusername-url}}|(hjälp mig att välja)]]",
+	"wikimedia-prefs-user-downloaddata-help-message": "Du kan besöka dina inställningar på [[m:Special:CentralAuth/$1|andra Wikimedia-projekt där du har bidragit]] för att ladda ner dina kontouppgifter från de projekten.",
+	"wikimedia-createacct-imgcaptcha-help": "Kan du inte se bilden? [[{{MediaWiki:createacct-captcha-help-url}}|Begär ett konto]]",
+	"wikimedia-centralauth-groupname": "Wikimedia Foundation",
+	"wikimedia-centralauth-login-error-locked": "<strong>Detta konto är [[m:Special:MyLanguage/Global locks|globalt blockerat]].</strong> {{GENDER:$1|Du}} kan inte logga in till några Wikimedia-wikier. Var god [[m:Special:Contact/stewards|kontakta stewarderna]] om {{GENDER:$1|du}} har några frågor.",
+	"createacct-helpusername-url": "{{ns:Project}}:Användarnamnspolicy",
+	"wikimedia-discussiontools-replywidget-terms-click": "Genom att klicka på \"$1\" godkänner du våra [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkor] och samtycker till att oåterkalleligen släppa din text under licenserna [https://creativecommons.org/licenses/by-sa/3.0/ CC BY-SA 3.0] och [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].",
+	"wikimedia-feedback-termsofuse": "Jag samtycker till att ge återkoppling enligt <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\" target=\"_blank\">användarvillkoren</a>.",
+	"wikimedia-flow-terms-of-use-new-topic": "Genom att klicka \"{{int:flow-newtopic-save}}\" godkänner du våra [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkor] och samtycker till att oåterkalleligen släppa din text under licenserna [https://creativecommons.org/licenses/by-sa/3.0/ CC BY-SA 3.0] och [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].",
+	"wikimedia-flow-terms-of-use-reply": "Genom att klicka \"{{int:flow-reply-link}}\" godkänner du våra [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkor] och samtycker till att oåterkalleligen släppa din text under licenserna [https://creativecommons.org/licenses/by-sa/3.0/ CC BY-SA 3.0] och [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].",
+	"wikimedia-flow-terms-of-use-edit": "Genom att spara ändringar godkänner du våra [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkor] och samtycker till att oåterkalleligen släppa din text under licenserna [https://creativecommons.org/licenses/by-sa/3.0/ CC BY-SA 3.0] och [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].",
+	"wikimedia-flow-terms-of-use-summarize": "Genom att klicka \"{{int:flow-topic-action-update-topic-summary}}\" godkänner du våra [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkor] och samtycker till att oåterkalleligen släppa din text under licenserna [https://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0] och [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].",
+	"wikimedia-flow-terms-of-use-lock-topic": "Genom att klicka \"{{int:flow-topic-action-lock-topic}}\" godkänner du våra [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkor] och samtycker till att oåterkalleligen släppa din text under licenserna [https://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0] och [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].",
+	"wikimedia-flow-terms-of-use-unlock-topic": "Genom att klicka \"{{int:flow-topic-action-unlock-topic}}\" godkänner du våra [https://foundation.wikimedia.org/wiki/Terms_of_Use användarvillkor] och samtycker till att oåterkalleligen släppa din text under licenserna [https://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0] och [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].",
+	"wikimedia-globalrenamequeue-email-body-approved": "Begäran om att byta namn på \"{{GENDER:$1|$1}}\" till \"{{GENDER:$2|$2}}\" har godkänts. När det är färdigt, kommer du att kunna logga in med ditt nya användarnamn med ditt gamla lösenord. Tack för du deltar på Wikimedia-projekt.",
+	"wikimedia-globalrenamequeue-email-body-rejected": "Begäran om att byta namn på \"{{GENDER:$1|$1}}\" till \"{{GENDER:$2|$2}}\" kunde inte slutföras.\n\nAnteckning: $3\n\nFör mer information, besök <https://meta.wikimedia.org/wiki/Help:Unified_login#Frequently_asked_questions>. För att diskutera din namnbytesförfrågan kan du skriva ett inlägg på denna sida: <https://meta.wikimedia.org/wiki/Talk:Steward_requests/Username_changes>. Du måste fortfarande logga in med ditt nuvarande användarnamn först.",
+	"wikimedia-interfaceadmin-info": "Behörigheter för att redigera CSS/JS/JSON-filer har begränsats till medlemmar i gruppen [[{{int:grouppage-interface-admin}}|{{int:group-interface-admin}}]].",
+	"wikimedia-mwoauthserver-invalid-user": "Ett problem uppstod när du loggades in globalt. Om du precis skapade ditt konto, logga ut och in igen, prova sedan att auktorisera appen igen. Om du inte skapade ditt konto nyligen, besök [https://meta.wikimedia.org/ meta.wikimedia.org] och försök sedan att att auktorisera appen igen. (Felkod: E008)",
+	"wikimedia-sitematrix": "Lista över Wikimedias wikier",
+	"wikimedia-sitematrix-others": "Andra Wikimediaprojekt",
+	"wikimedia-sitematrix-summary": "Denna specialsida listar alla Wikimedias wikier.",
+	"wikimedia-sulrenamewarning-usenew": "Från och med nu, måste du nu logga in med ditt nya användarnamn <strong>$1</strong>. Ditt nya användarnamn är unikt för dig över alla Wikimedia-projekt, och om du är inloggad på ett projekt och besöker ett annat kommer ditt konto att följa med dig. [[:m:Special:MyLanguage/Help:Unified_login|Hjälpsida för enhetlig inloggning]] har mer information om ett-användarnamn-inloggning, samt en lista över vanligt förekommande frågor.\nOm du behöver uppdatera din e-postadress eller ändra ditt lösenord i dina [[Special:Preferences|inställningar]], kan detta vara ett bra tillfälle att göra det.\n\nFör att begära ett annat kontonamn, besök [[Special:GlobalRenameRequest]]. Tack för att du deltar på Wikimedia-projekten.",
+	"wikimedia-urlshortener-badaccessgroups": "Korta länkar kan endast skapas via sidan [[:m:Special:UrlShortener|Special:UrlShortener]] på meta.wikimedia.org.",
+	"wikimedia-apierror-urlshortener-permissiondenied": "Korta länkar kan endast skapas med ett anrop till wikin på meta.wikimedia.org.",
+	"wikimedia-mwoauth-form-privacypolicy-link": "[https://foundation.wikimedia.org/wiki/Privacy_policy Integritetspolicy]"
+}

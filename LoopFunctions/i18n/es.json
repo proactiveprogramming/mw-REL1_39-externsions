@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio"
+		]
+	},
+	"loopfunc-desc": "Proporciona una funcionalidad de bucle limitada en el wikitexto"
+}

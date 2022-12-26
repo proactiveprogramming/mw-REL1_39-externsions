@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"sia-description": "Anotar imagens semanticamente e pesquisar anotações",
+	"sia-comment": "comentário",
+	"sia-buttonannotate": "Anotar esta imagem",
+	"sia-resize": "Redimensionar imagem"
+}

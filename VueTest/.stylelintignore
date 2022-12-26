@@ -1,0 +1,6 @@
+/resources/lib/
+/node_modules/
+/vendor/
+/coverage/
+/resources/codex-demos/style.css
+/lib/codex/

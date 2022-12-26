@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"ישראל קלר",
+			"מגזין יהלום"
+		]
+	},
+	"apihelp-flexiskin-save-summary": "מודל השמירה",
+	"apihelp-flexiskin-delete-summary": "מודול המחיקה",
+	"apihelp-flexiskin-save-param-id": "פרמטר הזיהוי",
+	"apihelp-flexiskin-save-param-name": "פרמטר השם",
+	"flexiskin-ui-plugin-colors-foreground-quaternary-label": "צבע 4",
+	"flexiskin-ui-configurator-button-save-label": "לשמור ולהפעיל",
+	"flexiskin-font-weight-medium": "בינוניות"
+}

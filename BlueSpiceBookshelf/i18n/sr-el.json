@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-bookshelf-tagerror-attribute-float-not-valid": "Koristite <i>left</i> ili <i>right</i>.",
+	"bs-bookshelf-specialpage-title": "Knjige",
+	"bs-bookshelf-specialpage-allpages-ns-book-text": "Biblioteka",
+	"bs-bookshelf-tag-next": "Sledeća",
+	"bs-bookshelf-tag-prev": "Prethodna",
+	"bs-bookshelf-tag-edit-book": "Uredi knjigu",
+	"bs-bookshelf-add-to-book-label": "Dodaj u knjigu",
+	"bs-bookshelf-add-to-book-label-book": "Knjiga",
+	"bs-bookshelf-add-to-book-label-alias": "Pseudonim",
+	"bs-bookshelf-setting-path-feature": "Knjiga",
+	"bs-bookshelf-action-export-book": "Izvezi knjigu",
+	"bs-bookshelf-edit-title": "$1 — uređivanje",
+	"bs-bookshelf-book-grid-title": "Knjige",
+	"bs-bookshelf-prof-defaultview-images": "Slike",
+	"bs-bookshelf-ve-bookmeta-attr-author-label": "Autor",
+	"bs-bookshelf-ve-bookmeta-attr-version-label": "Verzija"
+}

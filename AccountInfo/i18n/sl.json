@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Pinky sl"
+		]
+	},
+	"accountinfo": "Informacija o uporabniku",
+	"accountinfo-desc": "Dovoli uporabniku da vidi shranjeno informacijo o sebi",
+	"accountinfo-ts": "Čas",
+	"accountinfo-ip": "IP-naslov",
+	"accountinfo-ua": "Uporabniški agent",
+	"accountinfo-xff": "XFF glava",
+	"accountinfo-length": "Informacija se ohrani $1.",
+	"accountinfo-now": "Zdaj"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"mwversioninfo-desc": "Gerer informationes del version de MediaWiki",
+	"apihelp-mwversioninfo-summary": "Obtener informationes de version sur brancas de MediaWiki",
+	"apihelp-mwversioninfo-param-version": "Version de MediaWiki",
+	"apihelp-mwversioninfo-example": "Obtene information sur MediaWiki 1.27"
+}

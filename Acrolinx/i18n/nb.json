@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"acrolinx-desc": "Muliggjør integrasjon med Aerolinx, en (betalt og proprietær) tjeneste som tilbyr stave- og grammatikkontroll for tekst."
+}

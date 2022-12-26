@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Likibp",
+			"Omotecho"
+		]
+	},
+	"wikisource-desc": "ウィキソース固有のMediaWikiカスタマイズ",
+	"wikisource-export-portlet": "印刷/書き出し",
+	"wikisource-download-epub": "EPUBをダウンロード",
+	"wikisource-download-epub-tooltip": "この作品のEPUB形式のファイルをダウンロードします",
+	"wikisource-download-mobi": "MOBIをダウンロード",
+	"wikisource-download-mobi-tooltip": "この作品のMOBI形式のファイルをダウンロードします",
+	"wikisource-download-pdf": "PDFをダウンロード",
+	"wikisource-download-pdf-tooltip": "この作品のPDF形式のファイルをダウンロードします",
+	"wikisource-download-choose": "その他のファイル形式",
+	"wikisource-download-choose-tooltip": "その他のファイル形式やフォントなどを選ぶフォームを開きます",
+	"wikisource-download-button": "ダウンロード",
+	"wikisource-download-chooser-title": "ファイル形式の選択",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "コンピューター、モバイル、タブレット用",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "Kindle用",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "大画面、印刷用",
+	"wikisource-download-chooser-different-format": "別のファイル形式を探していますか？",
+	"wikisource-ocr-extract-text": "文章の転記",
+	"wikisource-ocr-extract-progress": "画像から文章を転記中...",
+	"wikisource-ocr-extract-cancel": "中止",
+	"wikisource-ocr-extract-undo": "転記を元に戻す",
+	"wikisource-ocr-extract-close": "この通知を閉じます",
+	"wikisource-ocr-extract-text-title": "この画像のOCRテキストを取得する",
+	"wikisource-ocr-error": "OCRツールのエラー: $1",
+	"wikisource-ocr-no-text": "OCRツールで返されたテキストはありませんでした。",
+	"wikisource-ocr-settings-menu": "OCR設定の変更",
+	"wikisource-ocr-engine": "既定の文章転記ツールの選択",
+	"wikisource-ocr-advanced": "詳細設定",
+	"wikisource-ocr-advanced-title": "新しいタブで詳細設定のフォームを開く",
+	"wikisource-ocr-onboarding-title": "画像を文章に転記",
+	"wikisource-ocr-onboarding-text": "光学式文字認識(OCR)を使用して、スキャンされたドキュメントを編集可能なテキストに変換します。",
+	"wikisource-ocr-onboarding-button": "わかりました"
+}

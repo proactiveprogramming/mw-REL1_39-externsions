@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"sendgrid-desc": "Στέλνει μηνύματα ηλεκτρονικού ταχυδρομείου μέσω της υπηρεσίας SendGrid API από το MediaWiki"
+}

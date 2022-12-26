@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"apihelp-mwversioninfo-param-version": "Virsioni di MediaWiki",
+	"apihelp-mwversioninfo-example": "Utteni nfurmazzioni supra MediaWiki 1.27"
+}

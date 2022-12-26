@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"action-similareditors": "пристап до [[Special:SimilarEditors]]",
+	"right-similareditors": "Пристап до [[Special:SimilarEditors]]",
+	"similareditors": "Слични уредници",
+	"similareditors-desc": "Дава поединости за корисници со слични уредувачки истории.",
+	"similareditors-error-database-refresh": "Нешто не е во ред. Обидете се повторно за неколку минути.",
+	"similareditors-error-default": "Нешто не е во ред. Го разгледуваме проблемот.",
+	"similareditors-error-user-bot": "Корисникот $1 е бот и затоа е вон делокругот.",
+	"similareditors-error-user-no-account": "Корисникот $1 нема сметка на Википедија на англиски.",
+	"similareditors-error-user-no-edits": "Корисникот $1 нема сметка (или уредувања во делокругот) на Википедија на англиски.",
+	"similareditors-form-field-target-label": "Корисничко име или IP-адреса:",
+	"similareditors-form-field-target-placeholder": "Корисничко име или 1.1.1.1",
+	"similareditors-form-legend": "Најди слични корисници",
+	"similareditors-form-submit": "Најди",
+	"similareditors-no-results": "Не најдов ништо.",
+	"similareditors-overlap-level-high": "Голем",
+	"similareditors-overlap-level-low": "Мал",
+	"similareditors-overlap-level-medium": "Среден",
+	"similareditors-overlap-level-no-overlap": "Нема преклоп",
+	"similareditors-results-day-overlap": "Дневен преклоп",
+	"similareditors-results-edit-overlap": "Уредувачки преклоп",
+	"similareditors-results-edits": "Уредувања во податоци",
+	"similareditors-results-hour-overlap": "Часовен преклоп",
+	"similareditors-results-inverse-edit-overlap": "Обратен уредувачки преклоп",
+	"similareditors-results-user": "Корисник",
+	"similareditors-results-user-timeline": "времеслед",
+	"similareditors-summary": "Најдете ги најсличните уредици на даден уредник врз основа на историјата на уредувања.",
+	"similareditors-survey-question": "Дали барањево ви помогна? Какви други информации барате кога сакате да најдете марионети?"
+}

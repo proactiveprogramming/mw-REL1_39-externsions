@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"pageexchange-package-website": "Neʹttseiddõs:",
+	"pageexchange-package-version": "Versio:",
+	"pageexchange-package-pages": "Seeid:",
+	"pageexchange-package-language": "Ǩiõll:",
+	"pageexchange-package-license": "Liseʹnss:",
+	"pageexchange-package-update": "Peiʹvved",
+	"pageexchange-latestvalue": "(ođđsumus versio: $1)"
+}

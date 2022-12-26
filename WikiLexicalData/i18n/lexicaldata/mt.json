@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Roderick Mallia",
+			"ToniSant"
+		]
+	},
+	"ow_importtsv_nothing_added": "Xejn miżjud.",
+	"ow_Language": "Lingwa",
+	"ow_OtherLanguages": "Lingwi oħra:",
+	"ow_added": "Miżjud",
+	"prefs-ow-lang": "Lingwa",
+	"ow_pref_lang_switch": "<strong>Uri biss il-lingwi magħżula</strong>",
+	"ow-stat-languages": "{{PLURAL:$1|Lingwa|Lingwi}}"
+}

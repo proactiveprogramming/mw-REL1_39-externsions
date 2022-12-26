@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"debugtemplates-args-title": "Parametri",
+	"debugtemplates-args-name": "Ime",
+	"debugtemplates-args-value": "Vrednost",
+	"apihelp-expandframe-description": "Razširi predloge in parametre v vikibesedilo ob predpostavki specifičnega kontekstnega okvira.",
+	"apihelp-expandframe-summary": "Razširi predloge in parametre v vikibesedilo ob predpostavki specifičnega kontekstnega okvira.",
+	"apihelp-expandframe-example-1": "Razčleni vikibesedilo <kbd><nowiki>{{{a}}}</nowiki></kbd> z opredeljenim kontekstom okvira.",
+	"apihelp-expandframe-param-text": "Vikibesedilo za razširitev."
+}

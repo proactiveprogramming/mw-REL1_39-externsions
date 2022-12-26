@@ -1,0 +1,55 @@
+{
+	"private": true,
+	"homepage": "https://doc.wikimedia.org/codex/",
+	"repository": {
+		"type": "git",
+		"url": "https://gerrit.wikimedia.org/g/design/codex/"
+	},
+	"bugs": "https://phabricator.wikimedia.org/tag/codex/",
+	"license": "GPL-2.0+",
+	"workspaces": [
+		"packages/codex-design-tokens",
+		"packages/codex-icons",
+		"packages/codex",
+		"packages/codex-search",
+		"packages/codex-docs"
+	],
+	"engines": {
+		"npm": ">=7.21.0",
+		"node": ">=16"
+	},
+	"scripts": {
+		"branch-deploy": "CODEX_BRANCH_DEPLOY=1 CODEX_PATCH_ID=$ZUUL_CHANGE npm run doc && npm run branch-deploy:sandbox && npx netlify deploy --auth $BRANCHDEPLOY_AUTH_TOKEN --site $BRANCHDEPLOY_SITE_ID --alias $ZUUL_CHANGE --dir packages/codex-docs/docs/.vitepress/dist",
+		"branch-deploy:sandbox": " npm run -w @wikimedia/codex build-sandbox && cp -r packages/codex/dist/sandbox packages/codex-docs/docs/.vitepress/dist/",
+		"build-all": "npm run build --workspaces --if-present",
+		"build-all-if-missing": "npm run build-if-missing --workspaces --if-present",
+		"coverage": "npm run build-all-if-missing && mkdir -p coverage && npm run test:unit -w @wikimedia/codex -- --coverageDirectory=../../coverage",
+		"dev": "npm run build-if-missing -w @wikimedia/codex-icons && concurrently \"npm run watch -w @wikimedia/codex-design-tokens\" \"npm run dev -w @wikimedia/codex\"",
+		"doc": "npm run build -w @wikimedia/codex-icons && npm run build -w @wikimedia/codex-design-tokens && npm run build -w @wikimedia/codex && npm run build -w codex-docs",
+		"doc-release": "CODEX_RELEASE=1 npm run doc",
+		"doc:dev": "npm run build-if-missing -w @wikimedia/codex-icons  && concurrently \"npm run watch -w @wikimedia/codex-design-tokens\" \"CODEX_DOC_DEV=1 npm run dev -w codex-docs\"",
+		"lint": "npm run lint:eslint && npm run lint:stylelint && npm run lint --workspaces --if-present",
+		"lint:eslint": "npm run build-all-if-missing && eslint --max-warnings 0 .",
+		"lint:stylelint": "stylelint --max-warnings 0 . packages/codex-docs/docs/.vitepress",
+		"test": "npm run lint && npm run test --workspaces --if-present && ./build/diff-css.sh",
+		"build-and-update-snapshots": "npm run build-all && npm run update-snapshots --workspaces --if-present"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.36.1",
+		"@typescript-eslint/parser": "^5.36.1",
+		"concurrently": "^6.3.0",
+		"cssbeautify": "^0.3.1",
+		"eslint": "^8.12.0",
+		"eslint-config-wikimedia": "^0.23.0",
+		"eslint-plugin-jest": "^26.1.3",
+		"netlify-cli": "^10.10.2",
+		"postcss-html": "^1.5.0",
+		"postcss-markdown": "^1.2.0",
+		"stylelint": "14.14.0",
+		"stylelint-config-wikimedia": "^0.13.1",
+		"stylelint-declaration-strict-value": "^1.9.1",
+		"stylelint-no-unsupported-browser-features": "^6.0.1",
+		"stylelint-order": "^5.0.0",
+		"typescript": "^4.8.2"
+	}
+}

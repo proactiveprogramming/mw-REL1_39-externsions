@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beginneruser",
+			"FarsiNevis",
+			"Huji",
+			"Jeeputer",
+			"Mjbmr",
+			"Reza1615"
+		]
+	},
+	"importusers": "درون‌ریزی کاربران",
+	"importusers-uploadfile": "بارگذاری پرونده",
+	"importusers-file-structure": "ساختار:",
+	"importusers-file-format": "قالب:",
+	"importusers-form-button": "درون‌ریزی",
+	"importusers-log": "برون‌بری سیاهه کاربران",
+	"importusers-log-summary": "خلاصهٔ درون‌ریزی:",
+	"importusers-log-summary-all": "{{PLURAL:$1|کاربران}} کل: $1",
+	"importusers-log-summary-added": "{{PLURAL:$1|{{GENDER:$2|کاربر}}|کاربران}} افزوده‌شده: $1",
+	"importusers-log-summary-updated": "{{PLURAL:$1|کاربر|کاربران}} روزآمد شده: $1",
+	"importusers-login-name": "نام ورود به سیستم",
+	"importusers-password": "رمز عبور",
+	"importusers-email": "ایمیل",
+	"importusers-realname": "نام واقعی",
+	"importusers-group": "گروه‌ کاربر"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"Mguix"
+		]
+	},
+	"ipinfo-property-label-organization": "Organització",
+	"ipinfo-rest-access-denied": "No teniu permís per a efectuar l’acció"
+}

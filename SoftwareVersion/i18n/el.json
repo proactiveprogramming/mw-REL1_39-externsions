@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"softwareversion-desc": "Εξατομικεύει το [[Special:Version]], αρχικά για το ShoutWiki αλλά τώρα μπορεί να χρησιμοποιηθεί από άλλα τρίτα μέρη"
+}

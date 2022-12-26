@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog"
+		]
+	},
+	"mwversioninfo-desc": "Керування інформацією про версію MediaWiki",
+	"apihelp-mwversioninfo-summary": "Отримує інформацію про версію про гілки MediaWiki",
+	"apihelp-mwversioninfo-param-version": "Версія MediaWiki",
+	"apihelp-mwversioninfo-example": "Отримує інформацію про MediaWiki 1.27"
+}

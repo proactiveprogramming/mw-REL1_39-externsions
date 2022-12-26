@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"sii-desc": "Adiciona uma entrada de imagens que puxa imagens da Wikipédia para [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:Page_Forms formulários de página]",
+	"sii-imageinput-loading": "A carregar imagem..."
+}

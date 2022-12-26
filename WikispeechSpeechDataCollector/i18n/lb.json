@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"wikispeech-sdc-desc": "E Geschier fir geschwate Stëmmen opzehuelen, nozekucken an ze kommentéieren.",
+	"right-wikispeech-sdc-record": "Stëmm ophuelen",
+	"action-wikispeech-sdc-record": "Stëmm ophuelen",
+	"recordspeech": "Sprooch ophuelen",
+	"wikispeech-sdc-record": "Ophuelen",
+	"wikispeech-sdc-save": "Späicheren",
+	"wikispeech-sdc-skip": "Iwwersprangen",
+	"right-wikispeech-sdc-speech-recording": "Ophuele vun der Sprooch änneren",
+	"wikispeech-sdc-status-starting": "Ufänken",
+	"wikispeech-sdc-status-ready": "Prett",
+	"wikispeech-sdc-status-listening": "Lauschteren",
+	"wikispeech-sdc-status-recording": "Ophuelen"
+}

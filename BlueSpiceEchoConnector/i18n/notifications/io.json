@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"bs-notifications-email-delete-body": "La pagino \"$1\" {{GENDER:$2|efacesis}} ye $4 da $3.\n\nLa motivo esis:\n$4"
+}

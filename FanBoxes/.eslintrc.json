@@ -1,0 +1,22 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	],
+	"globals": {
+		"mediaWiki": false,
+		"jQuery": false
+	},
+	"rules": {
+		"camelcase": "warn",
+		"jsdoc/require-param-type": "warn",
+		"max-len": "warn",
+		"no-alert": "warn",
+		"no-jquery/no-fade": "warn",
+		"no-jquery/no-global-selector": "warn",
+		"no-jquery/no-sizzle": "warn",
+		"unicorn/prefer-string-slice": "warn"
+	}
+}

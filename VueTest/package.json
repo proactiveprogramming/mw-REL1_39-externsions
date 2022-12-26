@@ -1,0 +1,32 @@
+{
+	"private": true,
+	"scripts": {
+		"test": "grunt test && npm run test:unit",
+		"test:unit": "jest",
+		"coverage": "npm run test:unit",
+		"codex:build-demos": "cd lib/codex && npm install && npm run build-demos -w codex-docs && cd ../.. && npm run codex:copy-demos",
+		"codex:copy-demos": "npm run codex:copy-demos-js && npm run codex:copy-demos-css",
+		"codex:copy-demos-js": "cp lib/codex/packages/codex-docs/dist/codex-demos.cjs.js resources/codex-demos/codex-demos.cjs.js",
+		"codex:copy-demos-css": "cp lib/codex/packages/codex-docs/dist/style.css resources/codex-demos/style.css"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "^7.16.11",
+		"@vue/compat": "^3.2.27",
+		"@vue/compiler-sfc": "^3.2.27",
+		"@vue/test-utils": "^2.0.0",
+		"@vue/vue3-jest": "27.0.0-alpha.4",
+		"@wikimedia/codex": "0.2.2",
+		"eslint": "^7.32.0",
+		"eslint-config-wikimedia": "^0.21.0",
+		"eslint-plugin-compat": "^4.0.1",
+		"eslint-plugin-jest": "^25.7.0",
+		"grunt": "1.4.1",
+		"grunt-banana-checker": "0.9.0",
+		"grunt-eslint": "^23.0.0",
+		"grunt-stylelint": "0.17.0",
+		"jest": "^27.4.7",
+		"stylelint": "^14.0.0",
+		"stylelint-config-wikimedia": "0.13.1",
+		"vue": "^3.2.27"
+	}
+}

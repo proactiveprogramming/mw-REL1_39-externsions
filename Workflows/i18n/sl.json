@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"workflows-ui-starter-action-choose": "Izberite",
+	"workflows-ui-starter-action-done": "Začni",
+	"workflows-ui-starter-action-cancel": "Prekliči",
+	"logentry-ext-workflows-sendmail-send": "Pošiljanje e-pošte: E-pismo z zadevo »$4« poslano",
+	"workflows-ui-task-completion-action-complete": "Pošlji",
+	"workflows-ui-task-completion-action-cancel": "Prekliči",
+	"workflows-form-placeholder-comment": "Komentar",
+	"workflows-activity-edit-request-name": "Ureditev zahtevka",
+	"workflows-ui-workflow-overview-action-cancel": "Zapri",
+	"workflows-ui-overview-details-state-label": "Stanje:",
+	"workflows-ui-overview-details-state-column": "Stanje",
+	"workflows-ui-overview-details-action-reason": "Razlog",
+	"workflows-ui-overview-details-page-context-page": "Stran",
+	"workflows-ui-overview-details-workflow-type-label": "Vrsta",
+	"workflows-ui-overview-grid-filter-state-all": "Vse",
+	"workflows-form-instructions-comment": "Komentar",
+	"workflows-collect-data-form-groupname": "Skupina",
+	"workflows-collect-data-form-username": "Uporabnik",
+	"workflows-ui-overview-details-raw-data-popup-prop": "Lastnost",
+	"workflows-ui-overview-details-raw-data-popup-value": "Vrednost",
+	"workflows-ui-action-cancel": "Prekliči",
+	"workflows-ui-trigger-action-create": "Shrani",
+	"workflows-ui-triggers-error-persist-fail": "Sprožilca ni bilo mogoče shraniti",
+	"workflows-ui-trigger-field-name": "Ime",
+	"workflows-action-edit-label": "Uredi",
+	"workflows-ui-workflow-overview-step-name-edit-request": "Ureditev zahtevka",
+	"workflows-activity-set-template-params-cannot-save": "Shranjevanje ni uspelo"
+}

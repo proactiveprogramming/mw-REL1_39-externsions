@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ryan Schmidt"
+		]
+	},
+	"owid-desc": "{{desc|name=OurWorldInData}}",
+	"owid-error-key": "Displayed when the data set name passed to the &lt;ourworldindata&gt; tag contains invalid characters",
+	"owid-extensionname": "{{name}}"
+}

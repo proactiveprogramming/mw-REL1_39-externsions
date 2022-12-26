@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"TayfunEt."
+		]
+	},
+	"edituser": "Ulanyjyny redaktirläň",
+	"edituser-username": "Ulanyjy ady:",
+	"edituser-dosearch": "Gözle",
+	"right-edituser": "Beýleki ulanyjylaryň isleglerini redaktirläň",
+	"right-edituser-exempt": "Beýlekiler bu ulanyjynyň isleglerini redaktirläp bilmeýärler",
+	"action-edituser": "beýleki ulanyjylaryň isleglerini redaktirläň",
+	"action-edituser-exempt": "bu ulanyjynyň isleglerini redaktirläň"
+}

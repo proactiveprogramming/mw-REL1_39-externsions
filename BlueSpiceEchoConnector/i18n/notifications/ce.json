@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-notifications-email-addaccount-subject": "{{GENDER:$1|Декъашхо кхоьллина}} $2 цӀарца",
+	"bs-notifications-email-addaccount-body": "{{GENDER:$1|Кхоьллина декъашхо}} $2 цӀарца.\n\nХьан йиш йу {{GENDER:$1|цуьнан}} агӀонга хьажа, лахарчу хьажорган чохь",
+	"bs-notifications-web-addaccount-body": "{{GENDER:$1|$2 декъашхо кхоьллина}}.",
+	"bs-notifications-addaccout-performer": "{{GENDER:$1|Кхоллархо}}: $1",
+	"bs-notifications-addaccount-performer": "{{GENDER:$1|Кхоллархо}}: $1",
+	"bs-notifications-registeruser": "\"$1\" декъашхочо кхоьллина аккаунт.",
+	"bs-notifications-email-registeruser-subject": "{{GENDER:$1|Декъашхочо}} \"$2\" {{GENDER:$1|кхоьллина}} аккаунт",
+	"bs-notifications-create": "[[:$1]] агӀо кхоьллина",
+	"bs-notifications-delete": "«$1» агӀо дӀайаьккхина",
+	"bs-notifications-edit-difflink-label": "Схьагайта башхаллаш",
+	"bs-notifications-htmlmail-greeting": "{{GENDER:$1|Марша догӀийла}}, $1"
+}

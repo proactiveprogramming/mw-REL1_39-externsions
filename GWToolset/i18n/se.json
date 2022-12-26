@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"gwtoolset-mediawiki-template": "Málle $1",
+	"gwtoolset-save": "Vurke",
+	"gwtoolset-json-error-unknown": "Dovdameahttun feaila.",
+	"gwtoolset-category": "Kategoriija"
+}

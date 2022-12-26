@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rancher",
+			"Sasa Stefanovic",
+			"Михајло Анђелковић"
+		]
+	},
+	"editcount-desc": "Приказује [[Special:Editcount|бројач измена]] корисника",
+	"editcount_username": "Корисник:",
+	"editcount_submit": "Пошаљи",
+	"editcount_total": "Укупно"
+}

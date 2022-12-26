@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black",
+			"Saw Aye Chan Maung"
+		]
+	},
+	"machinevision-machineaidedtagging-popular-tab": "လူကြိုက်များ",
+	"machinevision-publish": "လွှင့်တင်ရန်",
+	"machinevision-skip": "ကျော်ရန်",
+	"machinevision-skip-title": "\"$1\" အတွက် အကြံပြုချက်များကို ကျော်သွားမည်လော",
+	"machinevision-loading-message": "ပုံများ ဝန်ဆွဲတင်နေသည်...",
+	"machinevision-confirm-tags-dialog-confirm-action": "အိုကေ",
+	"machinevision-confirm-tags-dialog-cancel-action": "မလုပ်တော့ပါ",
+	"machinevision-onboarding-dialog-close-label": "ပိတ်ရန်",
+	"machinevision-categories-label": "ကဏ္ဍများ-",
+	"machinevision-add-custom-tag-dialog-add-action": "ပေါင်းရန်",
+	"machinevision-add-custom-tag-dialog-cancel-action": "မလုပ်တော့ပါ"
+}

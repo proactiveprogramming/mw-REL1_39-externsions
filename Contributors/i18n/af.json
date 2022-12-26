@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arnobarnard",
+			"Naudefj"
+		]
+	},
+	"contributors": "Bydraers",
+	"contributors-desc": "Opsomming van die belangrikste skrywers van 'n bladsy",
+	"contributors-toolbox": "Belangrikste bydraers",
+	"contributors-legend": "Lys die belangrikste bydraers van 'n bladsy",
+	"contributors-target": "Titel:",
+	"contributors-submit": "Wys",
+	"contributors-subtitle": "Belangrikste bydraers tot $1",
+	"contributors-badtitle": "Ongeldige titel.",
+	"contributors-nosuchpage": "Die bladsy $1 bestaan nie."
+}

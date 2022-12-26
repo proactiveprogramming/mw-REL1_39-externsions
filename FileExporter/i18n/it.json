@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"fileexporter": "FileExporter",
+	"fileexporter-desc": "Esporta facilmente file su un altro wiki",
+	"fileexporter-text": "Esporta file",
+	"fileexporter-to-wikimedia-commons": "Esporta su Wikimedia Commons",
+	"tag-fileimporter-remote": "Modificato da FileImporter"
+}

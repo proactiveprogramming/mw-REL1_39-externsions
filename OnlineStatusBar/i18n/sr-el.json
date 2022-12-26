@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"prefs-onlinestatus": "Onlajn status",
+	"onlinestatusbar-used": "Prikazuje vaš onlajn status na vašim korisničkim stranicama",
+	"onlinestatusbar-title-online": "{{GENDER:$1|Onlajn}}",
+	"onlinestatusbar-title-busy": "{{GENDER:$1|Zauzet}}",
+	"onlinestatusbar-title-offline": "{{GENDER:$1|Oflajn}}",
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Nepoznato}}"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"McDutchie",
+			"Siebrand"
+		]
+	},
+	"jsbreadcrumbs-desc": "Voegt een spoor van broodkruimels toe onder de menubalk",
+	"jsbreadcrumbs-intro-horizontal": "Laatste {{PLURAL:$1|pagina|$1 pagina's}} bekeken:",
+	"jsbreadcrumbs-intro-vertical": "Laatste {{PLURAL:$1|pagina|$1 pagina's}} bekeken",
+	"prefs-jsbreadcrumbs": "Navigatiegeschiedenis",
+	"prefs-jsbreadcrumbs-showcrumbs": "Navigatiegeschiedenis weergeven",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Maximumaantal broodkruimels om weer te geven",
+	"prefs-jsbreadcrumbs-showsite": "Naam van de site tonen vóór broodkruimels"
+}

@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			")8",
+			"Shizhao"
+		]
+	},
+	"wsu-desc": "用于更新和添加Wikibase陈述的工具",
+	"wsu-special-wikibasestatementupdater": "批量更新陈述",
+	"wsu-wsu-batch-title": "批量命名",
+	"wsu-wsu-batch-contents": "Quick Statements V1格式的命令",
+	"wsu-wsu-error": "无法解析命令：$1",
+	"wsu-wsu-error-linetooshort": "行$1太短了。",
+	"wsu-wsu-error-noqualifiers": "尚不支持修饰符。",
+	"wsu-wsu-error-onlyq": "仅支持Q项目。",
+	"wsu-wsu-error-unsupportedcommand": "未知的命令。",
+	"wsu-your-batches": "{{GENDER:|您}}创建了下列批处理：",
+	"wsu-unknown-batch": "未知批处理",
+	"wsu-goback": "返回列表",
+	"wsu-start": "（重新）开始编辑",
+	"wsu-stop": "停止编辑",
+	"wsu-updater-api-failure": "无法解析API响应",
+	"wsu-updater-ambiguous-update": "属性有多个声明",
+	"wsu-give-permission": "此工具需要授权才能代表{{GENDER:|你}}进行编辑。[[$1|授予权限]]。",
+	"wsu-create-batch": "新建批处理",
+	"wsu-command-P": "属性",
+	"wsu-batchtable-subject": "主题",
+	"wsu-batchtable-command": "命令",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "值",
+	"wsu-batchtable-status": "状态",
+	"wsu-js-batchtable-status": "$1%完成。{{PLURAL:$2|0=|$2个失败。}}",
+	"apihelp-wikibasestatementupdater-summary": "管理Wikibase声明更新程序批处理"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dejan Savuljesku"
+		]
+	},
+	"bs-extendedfilelist-desc": "Provides a special page to interact with the wiki file repo",
+	"bluespiceextendedfilelist": "Extended file list",
+	"bs-extendedfilelist-globalactionentry-filelist": "File list"
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kkairri",
+			"Tamaki Wakita"
+		]
+	},
+	"bs-player-pref-autostart": "自動で動画を再生",
+	"bs-player-file-does-not-exist": "ファイルが存在しません。",
+	"bs-player-tag-showtime-desc": "このタグで動画を埋め込むことができます",
+	"bs-player-unsupported-type": "このファイルの種類には対応していません。",
+	"bs-player-config-prefwidth": "動画のデフォルトの幅",
+	"bs-player-config-prefheight": "動画のデフォルトの高さ",
+	"prefs-videoplayer": "動画プレイヤー"
+}

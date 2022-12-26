@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello"
+		]
+	},
+	"absenteelandlord-reason": "Baza podataka je automatski zaključana zbog neaktivnosti administratora.",
+	"absenteelandlord-desc": "Automatski zaključava wiki bazu podataka ako su svi administratori neaktivni neko vreme"
+}

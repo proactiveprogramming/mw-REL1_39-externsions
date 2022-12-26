@@ -1,0 +1,48 @@
+{
+	"name": "OurWorldInData",
+	"namemsg": "owid-extensionname",
+	"version": "1.1.0",
+	"author": [
+		"[https://mwusers.org Ryan Schmidt]"
+	],
+	"license-name": "GPL-3.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:OurWorldInData",
+	"descriptionmsg": "owid-desc",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"OurWorldInData": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\OurWorldInData\\": "src/"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\OurWorldInData\\Hooks",
+			"services": [
+				"MainConfig"
+			]
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "main"
+	},
+	"ResourceModules": {
+		"ext.owid": {
+			"localBasePath": "modules/ext.owid",
+			"remoteExtPath": "OurWorldInData/modules/ext.owid",
+			"styles": "owid.css"
+		}
+	},
+	"config": {
+		"OurWorldInDataUrl": {
+			"value": "https://ourworldindata.org/grapher/$1",
+			"description": "The URL used to generate the graphs; $1 is replaced with the data key"
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.37.0"
+	},
+	"manifest_version": 2
+}

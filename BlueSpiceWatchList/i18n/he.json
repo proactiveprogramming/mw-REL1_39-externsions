@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Erelon",
+			"Guycn2",
+			"Steeve815",
+			"מקף"
+		]
+	},
+	"bs-watchlist-desc": "הוספת תג וכלי רשימת המעקב",
+	"bs-watchlist-title-sidebar": "רשימת המעקב",
+	"bs-watchlist-pref-sort-time": "שעה",
+	"bs-watchlist-pref-sort-title": "כותרת",
+	"bs-watchlist-tag-watchlist-desc": "הצגת הערכים מרשימת המעקב שלך שמכילים הכי הרבה שינויים אחרונים.",
+	"bs-watchlist-window-watchlist-title": "רשימת המעקב",
+	"bs-watchlist-window-watchlist-intro": "זוהי סקירה של כל הדפים ברשימת המעקב שלך. ניתן גם להחליף ל[[Special:Watchlist|דף רשימת המעקב הקלאסי]].",
+	"bs-watchlist-grid-watchlist-column-link-header": "דף",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "שינויים שלא נקראו",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "בדיקת שינויים",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "דף שיחה",
+	"bs-watchlist-grid-watchlist-label-filter": "מסנן",
+	"bs-watchlist-ve-watchlistinspector-title": "רשימת המעקב",
+	"bs-watchlist-ve-watchlist-attr-count-label": "ספירה",
+	"bs-watchlist-tag-watchlist-attr-count-help": "עזרה על ספירה",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "אורך כותרת מרבי",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "עזרה לאורך כותרת מרבי",
+	"bs-watchlist-ve-watchlist-attr-order-label": "סדר",
+	"bs-watchlist-tag-watchlist-attr-order-help": "עזרה לסדר",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "שם דף",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "עזרה לשם דף",
+	"bs-watchlist-ve-watchlist-attr-time-label": "זמן",
+	"bs-watchlist-tag-watchlist-attr-time-help": "עזרה על זמן"
+}

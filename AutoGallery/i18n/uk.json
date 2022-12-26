@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"autogallery-desc": "Додає новий режим галереї (<code>auto</code>) до розмітки вікітексту <code><nowiki><gallery></nowiki></code>."
+}

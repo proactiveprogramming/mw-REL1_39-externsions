@@ -1,0 +1,166 @@
+{
+	"manifest_version": 2,
+	"name": "Phonos",
+	"author": [
+		"[https://meta.wikimedia.org/wiki/Community_Tech#Team Wikimedia Community Tech Team]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Phonos",
+	"version": "0.1.0",
+	"license-name": "GPL-2.0-or-later",
+	"namemsg": "phonos",
+	"descriptionmsg": "phonos-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"config": {
+		"PhonosEngine": {
+			"value": "espeak",
+			"description": "Backend TTS provider to use"
+		},
+		"PhonosApiEndpointLarynx": {
+			"value": "https://larynx-tts.wmcloud.org/api/tts",
+			"description": "API endpoint for the Larynx engine"
+		},
+		"PhonosApiEndpointGoogle": {
+			"value": "https://texttospeech.googleapis.com/v1/",
+			"description": "API endpoint for the Google engine"
+		},
+		"PhonosApiKeyGoogle": {
+			"value": "",
+			"description": "API key for the Google Cloud Text-to-speech API"
+		},
+		"PhonosApiProxy": {
+			"value": false,
+			"description": "HTTP proxy to use for API requests"
+		},
+		"PhonosFileBackend": {
+			"value": false,
+			"description": "Which backend to use for file caching"
+		},
+		"PhonosFileBackendDirectory": {
+			"value": false,
+			"description": "Custom public directory to store persisted Phonos audio"
+		},
+		"PhonosEspeak": {
+			"value": "/usr/bin/espeak",
+			"description": "Path to the eSpeak executable"
+		},
+		"PhonosStoreFilesAsMp3": {
+			"value": true,
+			"description": "Store audio files as MP3"
+		},
+		"PhonosLame": {
+			"value": "/usr/bin/lame",
+			"description": "Path to the Lame executable used for converting WAV to MP3"
+		},
+		"PhonosPath": {
+			"value": false,
+			"description": "Relative URL path to where Phonos files are publicly available"
+		},
+		"PhonosWikibaseUrl": {
+			"value": "https://www.wikidata.org/wiki/",
+			"description": "Wikibase URL"
+		},
+		"PhonosWikibaseProperties": {
+			"value":  {
+				"wikibasePronunciationAudioProp": "P443",
+				"wikibaseLangNameProp": "P407",
+				"wikibaseIETFLangTagProp": "P305",
+				"wikibaseIPATranscriptionProp": "P898"
+			},
+			"description": "Wikibase properties for the Wikibase API"
+		},
+		"PhonosCommonsMediaUrl": {
+			"value":  "https://commons.wikimedia.org/wiki/Special:FilePath/",
+			"description": "Commons media URL"
+		},
+		"PhonosIPARenderingEnabled": {
+			"value": true,
+			"description": "Enable rendering of IPA"
+		},
+		"PhonosFileExpiry": {
+			"value":  "30",
+			"description": "Time in days after which files should expire, if the backend supports the 'X-Delete-At' header."
+		}
+	},
+	"MessagesDirs": {
+		"Phonos": [ "i18n" ]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Phonos/modules"
+	},
+	"ResourceModules": {
+		"ext.phonos": {
+			"es6": true,
+			"packageFiles": [
+				"ext.phonos.js",
+				"PhonosButton.js"
+			],
+			"messages": [
+				"phonos",
+				"phonos-desc",
+				"phonos-file-not-found",
+				"phonos-file-not-audio",
+				"phonos-purge-needed-error",
+				"phonos-purge-needed-error-link",
+				"phonos-ipa-too-long",
+				"phonos-wikibase-api-error",
+				"phonos-wikibase-invalid-entity-lexeme",
+				"phonos-wikibase-not-found",
+				"phonos-wikibase-no-ipa"
+			],
+			"dependencies": [
+				"mediawiki.api",
+				"oojs-ui-widgets"
+			],
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		},
+		"ext.phonos.styles": {
+			"styles": [
+				"PhonosButton.less"
+			],
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		},
+		"ext.phonos.icons": {
+			"class": "MediaWiki\\ResourceLoader\\OOUIIconPackModule",
+			"icons": [ "volumeUp", "volumeOff", "reload" ],
+			"dependencies": [
+				"oojs-ui-widgets.styles",
+				"oojs-ui.styles.icons-media"
+			],
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"PhonosMagic": "Phonos.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "PhonosHooks"
+	},
+	"HookHandlers": {
+		"PhonosHooks": {
+			"class": "MediaWiki\\Extension\\Phonos\\Phonos",
+			"services": [ "RepoGroup", "Phonos.Engine", "Phonos.Wikibase", "StatsdDataFactory", "JobQueueGroup", "MainConfig" ]
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Phonos\\": "includes/"
+	},
+	"JobClasses": {
+		"phonosIPAFilePersist": "MediaWiki\\Extension\\Phonos\\Job\\PhonosIPAFilePersistJob"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dnlweijers",
+			"McDutchie"
+		]
+	},
+	"redirectmanager-title": "Doorverwijsbeheer",
+	"redirectmanager-close": "Sluiten",
+	"redirectmanager-help": "Hulp",
+	"redirectmanager-help-title": "Lees de gebruikershandleiding",
+	"redirectmanager-newredirect-button": "Toevoegen",
+	"redirectmanager-existing-redirects": "Verwijderen doorverwijzingen naar $1",
+	"redirectmanager-no-redirects-found": "Geen omleidingen gevonden.",
+	"redirectmanager-copy-to-clipboard": "Kopiëren",
+	"redirectmanager-copied-to-clipboard": "Gekopieerd!",
+	"redirectmanager-insert": "Invoegen"
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alirezaaa",
+			"Amirsara",
+			"FarsiNevis",
+			"Huji",
+			"Jeeputer"
+		]
+	},
+	"configmanager-admintool-label": "مدیر پیکربندی",
+	"action-configmanager-viewspecialpage": "مشاهدهٔ صفحهٔ ویژهٔ «{{int:configmanager}}»",
+	"configmanager": "مدیر پیکربندی",
+	"configmanager-desc": "به مدیران این امکان را می‌دهد که تمام ویکی را از طریق یک صفحهٔ ویژه پیکربندی کنند",
+	"configmanager-discardchanges": "دور ریختن تغییرات",
+	"apihelp-configmanager-tasks-summary": "مدیریت وظایف"
+}

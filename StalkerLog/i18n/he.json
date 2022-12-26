@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agbad",
+			"Amire80",
+			"Rotemliss",
+			"דניאל ב."
+		]
+	},
+	"stalkerlog-desc": "הוספת [[Special:Log/stalkerlog|יומן]] לכניסות וליציאות מהחשבון",
+	"stalkerlog-log-login": "נכנס לחשבון.",
+	"stalkerlog-log-logout": "יצא מהחשבון.",
+	"stalkerlog-log-type": "יומן הזדהות משתמשים",
+	"stalkerlog-log-text": "זהו יומן הכניסות והיציאות מהחשבון.",
+	"action-stalkerlog-view-log": "להציג יומנים של כניסות ויציאות של משתמשים",
+	"right-stalkerlog-view-log": "הצגת יומנים של כניסות ויציאות של משתמשים"
+}

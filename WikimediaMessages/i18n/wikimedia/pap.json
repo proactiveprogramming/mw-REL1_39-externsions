@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Irus",
+			"ObaTango"
+		]
+	},
+	"sitesupport": "Duna",
+	"tooltip-n-sitesupport": "Nos stèns",
+	"wikimedia-copyright": "E teksto ta disponé bou di <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-ShareAlike License</a>;\nkontenido additional por apliká.\nWak <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\">Kondishonnan ta Uza</a> na haña mas details.",
+	"wikimedia-copyrightwarning": "Si bo warda e kambionan, bo ta bai di akuerdo ku [https://foundation.wikimedia.org/wiki/Terms_of_Use Terms of Use], i bo ta aseptá, sin posibilidat di kambia esaki, pa publiká bo kontribushon segun [https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License CC BY-SA 3.0 License] i [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL].\nBo ta bai di akuerdo ku un hyperlink òf URL ta sufisiente atribushon segun e lisensia Creative Commons.",
+	"wikimedia-mobile-mainpage-title-loggedin": "{{GENDER:$1|Bon biní}}, $1!",
+	"wikibase-sitelinks-wikinews": "Wikinews",
+	"wikibase-sitelinks-wikiquote": "Wikiquote",
+	"wikibase-sitelinks-wikisource": "Wikisource",
+	"wikibase-sitelinks-wikivoyage": "Wikivoyage",
+	"wikimedia-developers": "Desaroyadó tékniko",
+	"wikimedia-globalblocking-ipblocked": "'''Bo direkshon di IP ta [[m:Special:MyLanguage/Global blocks|blòkiá na tur wiki]].'''\n\n$1 ($2)a hasi e blòkeo.\nSu motibu ta ''$3''.\n\n* Kuminsamentu di e blòkeo: $4\n* E blòkeo ta kaduká: $5\n\nBo direkshon aktual di IP  IP ta $6.\nPor fabor inkluí tur e detayenan menshoná ariba den kualke pregunta ku bo hasi.\n\nSi bo ta kere ku a blòkiabo eroneamente bo por haña informashon adishonal i instrukshon den e manego global [[m:Special:MyLanguage/No open proxies|prohibishon di proxies habrí]] \nDen otro kaso, pa diskutí e blòkeo, por fabor [[m:Steward requests/Global|entregá un petishon di revishon na Meta-Wiki]].",
+	"wikimedia-statslink": "Statistik",
+	"wikimedia-cookiestatement": "Deklarashon tokante cookies"
+}

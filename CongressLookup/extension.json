@@ -1,0 +1,40 @@
+{
+	"name": "CongressLookup",
+	"version": "2.0.0",
+	"author": [
+		"Ryan Kaldari"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CongressLookup",
+	"descriptionmsg": "congresslookup-desc",
+	"license-name": "MIT",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"SpecialPages": {
+		"NetNeutrality": "MediaWiki\\Extension\\CongressLookup\\SpecialNetNeutrality",
+		"SenateLookup": "MediaWiki\\Extension\\CongressLookup\\SpecialSenateLookup"
+	},
+	"MessagesDirs": {
+		"CongressLookup": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"CongressLookupAlias": "CongressLookup.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\CongressLookup\\": "includes/"
+	},
+	"ResourceModules": {
+		"ext.congresslookup.styles": {
+			"styles": "ext.congresslookup.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "CongressLookup/resources"
+	},
+	"config": {},
+	"manifest_version": 2
+}

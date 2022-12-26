@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"onlyrecentrecentchanges-desc": "הצגת דפים ברשימת השינויים האחרונים רק פעם אחת כאשר הם שונו לאחרונה",
+	"onlyrecentrecentchanges-option": "להציג רק את השינוי האחרון של כל דף שהשתנה (במגבלות של ''{{int:prefs-displayrc}}'' כפי שמוצג למעלה)"
+}

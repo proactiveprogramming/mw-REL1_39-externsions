@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"L2212"
+		]
+	},
+	"page-creation-notif-desc": "Imbiat una lìtera eletrònica de notìfica cando benint creadas pàginas noas",
+	"page-creation-notification": "Imbia·mi una lìtera eletrònica cando benit creada una pàgina noa",
+	"page-creation-email-subject": "Pàgina noa – $1 {{GENDER:$3|creada}} in $2 dae $3",
+	"page-creation-email-body": "Salude $1,\n\nCusta est una notìfica dae {{SITENAME}} pro t'informare chi s'impitadore $3 {{GENDER:$3|at creadu}} una pàgina noa, $2.\n\nLa podes bìdere in\n$4\n\nSu testu de sa pàgina est:\n$5\n\nS'amigu tuo, su sistema de notìfica de {{SITENAME}}.\n\nPro cambiare sas impostatziones de notìfica de posta eletrònica tuas bìsita\n{{canonicalurl:{{#special:Preferences}}}}"
+}

@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"blockinactive-desc": "Bloca tote le usatores que non ha aperite session ante que un certe numero de dies ha passate post lor ultime session.",
+	"blockinactive-special-intro": "Ecce le lista de usatores inactive que attende esser blocate. Le usatores con un ultime data de session >='''$1''' se tracta como inactive e essera blocate '''$2''' dies post lor ultime session. Illes recipera advertimentos in e-mail '''$3''' die(s) ante de esser blocate e un sol message de e-mail post le blocada effective.",
+	"blockinactive": "Blocar contos inactive",
+	"blockinactive-table-username": "Nomine de usator",
+	"blockinactive-table-userid": "ID del usator",
+	"blockinactive-table-inactivetime": "Periodo de inactivitate",
+	"blockinactive-table-emailsent": "E-mail inviate",
+	"blockinactive-table-actions": "Actiones",
+	"blockinactive-action-block": "Blocar",
+	"blockinactive-config-threshold": "Dies a passar ante de considerar le conto como inactive",
+	"blockinactive-config-daysblock": "Dies a passar ante de comenciar a blocar",
+	"blockinactive-config-warningdaysleft": "Dies a passar ante de inviar le advertimento de blocada",
+	"blockinactive-config-mail-subject": "Attention! Tu conto wiki essera tosto blocate",
+	"blockinactive-config-mail-body": "Tu conto wiki essera tosto blocate automaticamente a causa de inactivitate. A fin de evitar isto, per favor aperi session in {{SITENAME}}, lo que rendera tu conto active e impedira le blocada.",
+	"blockinactive-config-mail-block-subject": "Tu conto wiki ha essite blocate",
+	"blockinactive-config-mail-block-body": "Tu conto wiki ha essite automaticamente blocate a causa de inactivitate. A fin de reactivar tu conto, per favor contacta un administrator de systema de {{SITENAME}}.",
+	"action-blockinactive": "blocar contos inactive",
+	"right-blockinactive": "Blocar contos inactive",
+	"right-alwaysactive": "Ultrapassar blocage pro inactivitate",
+	"action-alwaysactive": "ultrapassar blocage pro inactivitate"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|Skrit|Skrita|Skrit_a}}",
+	"onlinestatusbar-title-offline": "{{GENDER:$1|Brez povezave}}",
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Neznano}}"
+}

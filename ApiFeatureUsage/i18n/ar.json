@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"apifeatureusage": "استخدام مزايا API",
+	"apifeatureusage-desc": "الحصول على ملخص لاستخدامات ميزة API المسجلة لوكيل مستخدم",
+	"apifeatureusage-elasticsearch-error": "خطأ البحث المرن: $1",
+	"apifeatureusage-legend": "استخدام مزايا API",
+	"apifeatureusage-agent-label": "وكيل المستخدم:",
+	"apifeatureusage-startdate-label": "تاريخ البدء:",
+	"apifeatureusage-enddate-label": "تاريخ الانتهاء:",
+	"apifeatureusage-submit": "جلب البيانات",
+	"apifeatureusage-no-indexes": "لا توجد بيانات متاحة للنطاق الزمني المحدد.",
+	"apifeatureusage-missing-indexes": "لا توجد بيانات متاحة لجزء من النطاق الزمني المحدد.",
+	"apifeatureusage-warnings": "تحذير: $1",
+	"apifeatureusage-column-feature": "الميزة",
+	"apifeatureusage-column-date": "التاريخ",
+	"apifeatureusage-column-uses": "الاستخدامات",
+	"apifeatureusage-deprecation-help": "استخدم [[Special:ApiFeatureUsage]] tمعرفة استخدام الميزات الموقوفة من قبل تطبيقك."
+}

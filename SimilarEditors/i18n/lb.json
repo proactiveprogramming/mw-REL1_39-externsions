@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"similareditors-form-field-target-label": "Benotzernumm oder IP-Adress:",
+	"similareditors-form-field-target-placeholder": "Benotzernumm oder 1.1.1.1",
+	"similareditors-form-submit": "Sichen",
+	"similareditors-no-results": "Et gëtt keng Resultater.",
+	"similareditors-overlap-level-high": "Héich",
+	"similareditors-overlap-level-low": "Niddereg",
+	"similareditors-overlap-level-medium": "Mëttel",
+	"similareditors-overlap-level-no-overlap": "Keng Iwwerschneidung",
+	"similareditors-results-user": "Benotzer"
+}

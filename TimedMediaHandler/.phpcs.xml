@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ruleset>
+	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
+		<exclude name="MediaWiki.Usage.ForbiddenFunctions.exec" />
+	</rule>
+	<file>.</file>
+	<arg name="extensions" value="php"/>
+	<arg name="encoding" value="UTF-8"/>
+	<exclude-pattern type="relative">^includes/Handlers/OggHandler/File_Ogg</exclude-pattern>
+</ruleset>

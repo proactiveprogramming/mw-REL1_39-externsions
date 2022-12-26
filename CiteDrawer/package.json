@@ -1,0 +1,33 @@
+{
+	"private": true,
+	"name": "mediawiki-extension-citedrawer",
+	"version": "1.0.0",
+	"description": "Eases user interaction with Cite powered references links",
+	"main": "index.js",
+	"directories": {
+		"test": "tests"
+	},
+	"scripts": {
+		"test": "grunt test"
+	},
+	"keywords": [
+		"mediawiki",
+		"extension",
+		"cite",
+		"reference"
+	],
+	"author": "Wikiworks",
+	"license": "MIT",
+	"homepage": "https://mediawiki.org/Extensions:CiteDrawer",
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.22.1",
+		"grunt": "1.5.3",
+		"grunt-banana-checker": "0.10.0",
+		"grunt-eslint": "24.0.0",
+		"grunt-stylelint": "0.17.0",
+		"stylelint-config-wikimedia": "0.13.0"
+	},
+	"eslintIgnore": [
+		"vendor/**"
+	]
+}

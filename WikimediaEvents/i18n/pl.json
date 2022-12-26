@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"Darellur",
+			"Rail",
+			"Railfail536",
+			"Woytecr"
+		]
+	},
+	"wikimediaevents-desc": "Rejestruje operacje specyficzne dla Fundacji Wikimedii przy użyciu rozszerzenia EventLogging"
+}

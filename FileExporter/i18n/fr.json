@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"EnderHero",
+			"Gomoko",
+			"The RedBurn",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"fileexporter": "FileExporter",
+	"fileexporter-desc": "Exportation facile des fichiers vers un autre wiki",
+	"fileexporter-text": "Exporter un fichier",
+	"fileexporter-to-wikimedia-commons": "Exporter vers Wikimedia Commons",
+	"tag-fileimporter-remote": "Modifié par FileImporter",
+	"tag-fileimporter-remote-description": "Modifications effectuées par l’extension [[mw:Extension:FileImporter|FileImporter]] après avoir bien importé un fichier depuis ce wiki."
+}

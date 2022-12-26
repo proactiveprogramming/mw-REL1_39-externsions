@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"wsu-extension-name": "Atualizador de declaração do Wikibase",
+	"wsu-desc": "Ferramenta para atualizar e adicionar declarações do Wikibase",
+	"wsu-special-wikibasestatementupdater": "Declarações de atualização em massa",
+	"wsu-wsu-batch-title": "Nome do lote",
+	"wsu-wsu-batch-contents": "Comandos no formato Quick Statements V1",
+	"wsu-wsu-error": "Incapaz de analisar os comandos: $1",
+	"wsu-wsu-error-linetooshort": "A linha $1 é muito curta.",
+	"wsu-wsu-error-noqualifiers": "Os qualificadores ainda não são suportados.",
+	"wsu-wsu-error-onlyq": "Apenas Q-items são suportados.",
+	"wsu-wsu-error-unsupportedcommand": "Comando desconhecido.",
+	"wsu-your-batches": "{{GENDER:|Você}} criou os seguintes lotes:",
+	"wsu-unknown-batch": "Lote desconhecido",
+	"wsu-goback": "Voltar à lista",
+	"wsu-start": "(Re)começar a editar",
+	"wsu-stop": "Parar de editar",
+	"wsu-updater-api-failure": "Não é possível analisar a resposta da API",
+	"wsu-updater-ambiguous-update": "A propriedade tem várias declarações",
+	"wsu-give-permission": "Esta ferramenta precisa de permissão para fazer edições em  {{GENDER:|seu}} nome. [[$1|Dê permissões]].",
+	"wsu-create-batch": "Criar novo lote",
+	"wsu-command-P": "Propriedade",
+	"wsu-batchtable-subject": "Assunto",
+	"wsu-batchtable-command": "Comando",
+	"wsu-batchtable-id": "Id",
+	"wsu-batchtable-value": "Valor",
+	"wsu-batchtable-status": "Status"
+}

@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agusbou2015",
+			"Destinid10 2",
+			"DiegoAmbrocio",
+			"Fitoschido",
+			"Macofe"
+		]
+	},
+	"bs-echoconnector-extension-description": "Conecta BlueSpice con Echo",
+	"echo-category-title-bs-admin-cat": "Tareas administrativas",
+	"echo-pref-tooltip-bs-admin-cat": "Notificarme cuando se cree una nueva cuenta de usuario",
+	"echo-pref-tooltip-bs-page-actions-cat": "Notoficarme cuando alguien edita, mueve o elimina una página que yo observo",
+	"echo-pref-tooltip-bs-page-create-cat": "Notificarme cuando se cree una nueva página",
+	"echo-category-title-bs-page-actions-cat": "Acciones en las páginas de la lista de vigilancia",
+	"echo-category-title-bs-page-create-cat": "Creación de páginas",
+	"prefs-namespace-notifications": "Notificaciones sobre eventos de espacios de nombres",
+	"prefs-category-notifications": "Notificaciones por categoría",
+	"echo-category-title-bs-namespace-category-notify-cat": "Cambios en los espacios de nombres y categorías suscritos",
+	"bs-echoconnector-personalurl-notifications": "Notificaciones ($1)"
+}

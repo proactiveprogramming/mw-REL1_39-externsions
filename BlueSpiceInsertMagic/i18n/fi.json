@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joquliina",
+			"Pyscowicz",
+			"Silvonen",
+			"Yupik"
+		]
+	},
+	"bs-insertmagic-currentyear": "Tämä vuosi",
+	"bs-insertmagic-currentmonthname": "Nykyinen kuukausi (nimi).",
+	"bs-insertmagic-currentmonthnamegen": "Nykyinen kuukausi (genetiivissä).",
+	"bs-insertmagic-currentmonthabbrev": "Nykyinen kuukausi (lyhenne).",
+	"bs-insertmagic-currentdayname": "Viikonpäivä (nimi).",
+	"bs-insertmagic-currentweek": "Viikko (numero).",
+	"bs-insertmagic-servername": "Domain-nimi.",
+	"bs-insertmagic-currentversion": "Wikin MediaWiki-versio.",
+	"bs-insertmagic-type-variables": "Muuttujat",
+	"bs-insertmagic-type-quickaccess": "Nopea pääsy",
+	"bs-insertmagic-label-desc": "Kuvaus",
+	"bs-insertmagic-label-examples": "Esimerkit",
+	"bs-insertmagic-label-see-also": "Katso myös",
+	"bs-insertmagic-ve-insertmagic-title": "Taikasana"
+}

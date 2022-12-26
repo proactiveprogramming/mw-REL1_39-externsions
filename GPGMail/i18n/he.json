@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"gpgmail-desc": "הצפנת דואר אלקטרוני באמצעות GPG",
+	"gpgmail-pref-enable": "הצפנת דואר אלקטרוני באמצעות GPG",
+	"gpgmail-pref-key": "מפתח ציבורי של GPG",
+	"gpgmail-pref-key-help": "ר' [https://help.ubuntu.com/community/GnuPrivacyGuardHowto דף הדרכה באובונטו] לעזרה בקבלת מפתח ציבורי.",
+	"gpgmail-encrypt-error": "אירעה שגיאה בעת הצפנת הדואר האלקטרוני."
+}

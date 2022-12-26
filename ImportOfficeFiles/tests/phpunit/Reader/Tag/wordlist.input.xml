@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+	<w:body>
+		<w:p>
+			<w:pPr>
+				<w:numPr>
+					<w:ilvl w:val="0"/>
+					<w:numId w:val="1"/>
+				</w:numPr>
+				<w:ind w:left="720" w:hanging="360"/>
+				<w:rPr>
+					<w:u w:val="none"/>
+				</w:rPr>
+			</w:pPr>
+			<wikitext>Ordered item 1</wikitext>
+		</w:p>
+		<w:p>
+			<w:pPr>
+				<w:numPr>
+					<w:ilvl w:val="0"/>
+					<w:numId w:val="1"/>
+				</w:numPr>
+				<w:ind w:left="720" w:hanging="360"/>
+				<w:rPr>
+					<w:u w:val="none"/>
+				</w:rPr>
+			</w:pPr>
+			<wikitext>Ordered item 2</wikitext>
+		</w:p>
+		<w:p>
+			<w:pPr>
+				<w:numPr>
+					<w:ilvl w:val="1"/>
+					<w:numId w:val="1"/>
+				</w:numPr>
+				<w:ind w:left="720" w:hanging="360"/>
+				<w:rPr>
+					<w:u w:val="none"/>
+				</w:rPr>
+			</w:pPr>
+			<wikitext>Ordered subitem 1</wikitext>
+		</w:p>
+		<w:p>
+			<w:pPr>
+				<w:numPr>
+					<w:ilvl w:val="0"/>
+					<w:numId w:val="2"/>
+				</w:numPr>
+				<w:ind w:left="720" w:hanging="360"/>
+				<w:rPr>
+					<w:u w:val="none"/>
+				</w:rPr>
+			</w:pPr>
+			<wikitext>Unordered item 1</wikitext>
+		</w:p>
+		<w:p>
+			<w:pPr>
+				<w:numPr>
+					<w:ilvl w:val="0"/>
+					<w:numId w:val="2"/>
+				</w:numPr>
+				<w:ind w:left="720" w:hanging="360"/>
+				<w:rPr>
+					<w:u w:val="none"/>
+				</w:rPr>
+			</w:pPr>
+			<wikitext>Unordered item 2</wikitext>
+		</w:p>
+		<w:p>
+			<w:pPr>
+				<w:numPr>
+					<w:ilvl w:val="1"/>
+					<w:numId w:val="2"/>
+				</w:numPr>
+				<w:ind w:left="720" w:hanging="360"/>
+				<w:rPr>
+					<w:u w:val="none"/>
+				</w:rPr>
+			</w:pPr>
+			<wikitext>Unordered subitem 1</wikitext>
+		</w:p>
+	</w:body>
+</w:document>

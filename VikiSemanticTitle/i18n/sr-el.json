@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"vikisemantictitle-desc": "VIKI plagin za upravljanje viki stranicama pomoću ekstenzije Semantic Title",
+	"vikisemantictitle-error-displaytitle-fetch": "Greška pri pokušaju prikaza naslovnih podataka za nodu: $1."
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "API לגישה לעצם מתחם מתקיים כללי.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "הוצאה מהסדרה של ה־JSON של התנועה לא עבדה.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "הוצאה מהסדרה של התנועה לא עבדה.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "ביצוע התנועה נכשל.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "הסדרת התשובה לא עבדה.",
+	"apihelp-wikispeech-sdc-crud-example-1": "יצירת בקשה בודדת עבור משתמש חדש.",
+	"apihelp-wikispeech-sdc-crud-example-2": "קריאת בקשה בודדת עבור משתמש.",
+	"apihelp-wikispeech-sdc-crud-example-3": "מחיקת בקשה בודדת עבור משתמש."
+}

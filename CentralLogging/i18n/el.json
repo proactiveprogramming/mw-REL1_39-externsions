@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"centrallogging-desc": "Επιτρέπει σε επεκτάσεις να δημιουργήσουν καταχωρήσεις μητρώου σε ένα κεντρικό βίκι",
+	"centrallogging-queued-count": "Καταχωρήσεις μητρώου στην ουρά"
+}

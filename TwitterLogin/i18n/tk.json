@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"TayfunEt."
+		]
+	},
+	"twitterlogin": "Twitter ulanyp giriň",
+	"twitterlogin-signup": "Bu wikide Twitter hasaby ulanyp hasaba durup bilersiňiz",
+	"twitterlogin-desc": "Twitter hasaby ulanyp, MediaWiki-de hasaba alyň we giriň",
+	"twitterlogin-alreadyloggedin": "Siz eýýäm girdiňiz.",
+	"twitterlogin-couldnotconnect": "Twitter-e birigip bilmedim. Sahypany täzeläň ýa-da soňrak synanyşyň."
+}

@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Pefect",
+			"WaldiSt"
+		]
+	},
+	"bs-bookshelf-specialpage-title": "Książki",
+	"bs-bookshelf-specialpage-allpages-ns-book-text": "Biblioteka",
+	"bs-bookshelf-tag-next": "Następny",
+	"bs-bookshelf-tag-prev": "Poprzedni",
+	"bs-bookshelf-add-to-book-label": "Dodaj do książki",
+	"bs-bookshelf-setting-path-feature": "Książka",
+	"bs-bookshelf-empty-selection": "Nic nie zaznaczono",
+	"bs-bookshelf-grouping-template-type-user_book": "Własne książki",
+	"bs-bookshelf-action-editbook": "Edytuj kod źródłowy",
+	"bs-bookshelf-action-editbook-create": "Edytuj kod źródłowy",
+	"bs-bookshelf-edit-title": "Edycja $1",
+	"bs-bookshelf-book-grid-title": "Książki",
+	"bs-bookshelf-prof-defaultview": "Widok domyślny",
+	"bs-bookshelf-prof-defaultview-images": "Obrazy",
+	"bs-bookshelf-actionmenuentry-addtobook": "Dodaj do książki",
+	"bs-bookshelf-ve-booklist-attr-filter-label": "Filtruj",
+	"bs-bookshelf-ve-bookmeta-attr-title-label": "Tytuł",
+	"bs-bookshelf-ve-bookmeta-attr-subtitle-label": "Podtytuł",
+	"bs-bookshelf-ve-bookmeta-attr-author-label": "Autor",
+	"bs-bookshelf-ve-bookmeta-attr-version-label": "Wersja",
+	"bs-bookshelf-ve-bookshelf-attr-book-label": "Książka"
+}

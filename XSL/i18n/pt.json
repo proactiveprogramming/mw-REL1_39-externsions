@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"xsl-desc": "Realiza uma transformação XSL em documentos XML"
+}

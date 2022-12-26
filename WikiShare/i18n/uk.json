@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Movses",
+			"Piramidion"
+		]
+	},
+	"wikishare": "Поділитися",
+	"wikishare-follow": "Слідуй за нами",
+	"wikishare-desc": "Додає на бічну панель посилання для поширення в соцмережах, і показує панель у заголовках сторінок. Щоб викликати цю панель посилань можна скористатись тегом <nowiki><wikishare /></nowiki>"
+}

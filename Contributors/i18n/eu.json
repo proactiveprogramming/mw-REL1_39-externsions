@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"An13sa",
+			"Kobazulo",
+			"Subi",
+			"Theklan",
+			"Xabier Armendaritz"
+		]
+	},
+	"contributors": "Lankideak",
+	"contributors-desc": "Orrialde baten ekarpen guztiak laburbiltzen ditu",
+	"contributors-toolbox": "Lankide nagusiak",
+	"contributors-legend": "Orrialde baten lankide nagusiak zerrendatu",
+	"contributors-target": "Izenburua:",
+	"contributors-submit": "Erakutsi",
+	"contributors-subtitle": "Lankide nagusiak $1-en",
+	"contributors-badtitle": "Izenburu ezegokia.",
+	"contributors-nosuchpage": "«$1» orria ez da existitzen.",
+	"contributors-filterip": "Ezkutatu IP helbideak"
+}

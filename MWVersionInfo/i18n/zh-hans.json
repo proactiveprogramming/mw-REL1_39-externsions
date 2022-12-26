@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lakejason0"
+		]
+	},
+	"mwversioninfo-desc": "管理MediaWiki版本信息",
+	"apihelp-mwversioninfo-summary": "获取有关MediaWiki分支的版本信息",
+	"apihelp-mwversioninfo-param-version": "MediaWiki版本",
+	"apihelp-mwversioninfo-example": "获取有关MediaWiki 1.27的信息"
+}

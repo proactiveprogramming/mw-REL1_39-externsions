@@ -1,0 +1,26 @@
+{
+	"name": "NamespaceSidebar",
+	"version": "0.1.0",
+	"author": [
+		"Ike Hecht"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NamespaceSidebar",
+	"descriptionmsg": "namespacesidebar-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"MessagesDirs": {
+		"NamespaceSidebar": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NamespaceSidebarHooks": "NamespaceSidebarHooks.php"
+	},
+	"Hooks": {
+		"SkinBuildSidebar": "NamespaceSidebarHooks::onSkinBuildSidebar"
+	},
+	"manifest_version": 1
+}

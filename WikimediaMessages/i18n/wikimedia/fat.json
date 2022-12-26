@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ebenoffen1",
+			"Leonard Nketsia",
+			"Suzieturkson"
+		]
+	},
+	"sitesupport": "Yi ma",
+	"wikimedia-copyright": "Akyerɛw yi wɔ <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-ShareAlike License</a> ase;\nnhyehyɛɛ fofor botum aba ekyir.\nHwɛ nkyerɛkyerɛmu wɔ <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\">Terms of Use</a>.",
+	"wikimedia-copyrightwarning": "Irisie nsesa no a, nna tserɛ egye [https://foundation.wikimedia.org/wiki/Terms_of_Use Dwumadzi ho nhyehyɛɛ] to mu, na egye to mu fenenkyenemm dɛ yɛnda wo mboae edzi wɔ [https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License CC BY-SA 3.0 License] na [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL]ase.\nEgye to mu dɛ hyperlink anaa URL yɛ edzinbɔ a ɔboa wɔ Creative Commons license ase.",
+	"wikibase-sitelinks-wikinews": "Wikinews",
+	"wikibase-sitelinks-wikiquote": "Wikiquote",
+	"wikibase-sitelinks-wikisource": "Wikisource",
+	"wikibase-sitelinks-wikivoyage": "Wikivoyage",
+	"wikimedia-developers": "Ayɛfo",
+	"wikimedia-globalblocking-ipblocked": "'''Woesiw wo IP adrɛɛse wɔ wiki beebiara do [[m:Special:MyLanguage/Global blocks|blocked on all wikis]].'''\n\nThe block was made by $1 ($2).\nThe reason given is ''$3''.\n\n* Start of block: $4\n* Expiry of block: $5\n\nWo IP adrɛɛse seseiara yɛ $6.\nMepa wo kyɛw fa nkyerɛkyerɛmu a ɔwɔ sor ha biara ka nsɛmbisa biara a ibɛyɛ ho.\n\nSɛ igyedzi dɛ woesiw wo kwan a ɔnam mfomdo a ayɛ a, ibotum ahwehwɛ nsɛm fofor na akyerɛkyerɛkwan wɔ [[m:Special:MyLanguage/No open proxies|No open proxies]] global policy.\nAnaa ibebisa akwansiw no ho nsɛm, mepa wo kyɛw [[m:Steward bisa/Global|post a request for review on Meta-Wiki]].",
+	"wikimedia-statslink": "Nhwehwɛmu",
+	"wikimedia-cookiestatement": "Cookie ho nsɛm"
+}

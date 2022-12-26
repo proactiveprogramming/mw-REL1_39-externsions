@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"McDutchie"
+		]
+	},
+	"htmltags-desc": "Permette di visualizzare un insieme pre-specificato di tag HTML",
+	"htmltags-notagname": "L'attributo \"tagname\" deve essere impostato per questo tag.",
+	"htmltags-unsupportedtag": "Il tagname \"$1\" non è supportato da <htmltag>."
+}

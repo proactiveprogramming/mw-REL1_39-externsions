@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hooshmand.hasannia",
+			"Huji",
+			"Mjbmr",
+			"Mohammad ebz"
+		]
+	},
+	"edituser": "ویرایش کاربر",
+	"edituser-username": "نام کاربری:",
+	"edituser-dosearch": "جستجو",
+	"edituser-nouser": "کاربر \"$1\" وجود ندارد.",
+	"edituser-exempt": "کاربر «$1» قابل ویرایش شدن نیست.",
+	"right-edituser": "ویرایش ترجیحات سایر کاربران",
+	"right-edituser-exempt": "سایرین نمی‌توانند ترجیحات این کاربر را ویرایش کنند",
+	"action-edituser": "ویرایش ترجیحات سایر کاربران",
+	"action-edituser-exempt": "ویرایش ترجیحات این کاربر"
+}

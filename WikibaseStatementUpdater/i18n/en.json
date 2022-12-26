@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"wsu-extension-name": "Wikibase Statement Updater",
+	"wsu-desc": "Tool for both updating and adding Wikibase statements",
+	"wsu-special-wikibasestatementupdater": "Mass update statements",
+	"wsu-wsu-batch-title": "Batch name",
+	"wsu-wsu-batch-contents": "Commands in Quick Statements V1 format",
+	"wsu-wsu-error": "Unable to parse the commands: $1",
+	"wsu-wsu-error-linetooshort": "Line $1 is too short.",
+	"wsu-wsu-error-noqualifiers": "Qualifiers are not yet supported.",
+	"wsu-wsu-error-onlyq": "Only Q-items are supported.",
+	"wsu-wsu-error-unsupportedcommand": "Unknown command.",
+	"wsu-your-batches": "{{GENDER:|You}} have created the following batches:",
+	"wsu-unknown-batch": "Unknown batch",
+	"wsu-goback": "Back to listing",
+	"wsu-start": "(Re)start editing",
+	"wsu-stop": "Stop editing",
+	"wsu-updater-api-failure": "Unable to parse API response",
+	"wsu-updater-ambiguous-update": "Property has multiple statements",
+	"wsu-give-permission": "This tool needs permission to do edits on {{GENDER:|your}} behalf. [[$1|Give permissions]].",
+	"wsu-create-batch": "Create new batch",
+	"wsu-command-P": "Property",
+	"wsu-batchtable-subject": "Subject",
+	"wsu-batchtable-command": "Command",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Value",
+	"wsu-batchtable-status": "Status",
+	"wsu-js-batchtable-status": "$1% complete. {{PLURAL:$2|0=|$2 failed.}}",
+	"apihelp-wikibasestatementupdater-summary": "Manage Wikibase Statement Updater batches"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"wikishare": "Partilhar",
+	"wikishare-follow": "Siga-nos",
+	"wikishare-desc": "Adiciona à barra lateral hiperligações de partilha de serviços de redes sociais e mostra uma barra de ferramentas nos cabeçalhos de página que pode ser reproduzida em qualquer lugar inserindo a etiqueta <nowiki><wikishare /></nowiki>"
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio",
+			"Macofe",
+			"MarcoAurelio"
+		]
+	},
+	"bs-namespacecss-desc": "Estilo específico del espacio de nombres",
+	"bs-namespacecss-text": "Espacio de nombres CSS",
+	"bs-namespacecss-specialmanager-label-namespacename": "Espacio de nombres",
+	"bs-namespacecss-specialmanager-label-sourcepage": "Página de origen",
+	"apihelp-bs-namespacecss-store-summary": "Enumera los espacios de nombres y su posible página de origen CSS. Implementa los parámetros de ExtJS Store."
+}

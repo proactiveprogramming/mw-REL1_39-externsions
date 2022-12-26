@@ -1,0 +1,37 @@
+{
+	"name": "SimpleCalendar",
+	"version": "1.4.0",
+	"author": [
+		"[https://organicdesign.nz/User:Nad Aran Dunkley]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SimpleCalendar",
+	"description": "A simple calendar extension",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"ExtensionMessagesFiles": {
+		"SimpleCalendarMagic": "SimpleCalendar.i18n.magic.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SimpleCalendar\\": "src/"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\SimpleCalendar\\Setup::onParserFirstCallInit"
+	},
+	"ResourceModules": {
+		"ext.simplecalendar": {
+			"styles": {
+				"simplecalendar.css": {
+					"media": "all"
+				}
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "SimpleCalendar/resources"
+	},
+	"manifest_version": 2
+}

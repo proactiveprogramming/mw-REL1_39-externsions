@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sanjay Thiyagarajan"
+		]
+	},
+	"regulartooltips-desc": "Provides inline tooltips and popup-based tooltips"
+}

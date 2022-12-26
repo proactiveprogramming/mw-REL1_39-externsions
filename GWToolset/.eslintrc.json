@@ -1,0 +1,18 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	],
+	"rules": {
+		"max-len": "off",
+		"no-jquery/no-class-state": "off",
+		"no-jquery/no-each-util": "off",
+		"no-jquery/no-fade": "off",
+		"no-jquery/no-global-selector": "off",
+		"no-jquery/variable-pattern": "off",
+		"no-useless-escape": "off",
+		"valid-jsdoc": "off"
+	}
+}

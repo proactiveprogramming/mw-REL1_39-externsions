@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen",
+			"Vinhtantran"
+		]
+	},
+	"sitematrix-desc": "Liệt kê [[Special:SiteMatrix|các wiki trực thuộc Wikimedia]]",
+	"sitematrix-language": "Ngôn ngữ",
+	"sitematrix-project": "Tên dự án, tiền tố trong liên kết, và liên kết liên wiki",
+	"sitematrix-other-projects": "Các dự án khác",
+	"sitematrix-total": "'''Tổng cộng: $1'''",
+	"sitematrix-sitetotal": "Tổng cộng",
+	"sitematrix-closed": "cấm sửa đổi, hoàn toàn cho phép đọc",
+	"sitematrix-private": "hạn chế sửa đổi và đọc",
+	"sitematrix-fishbowl": "hạn chế sửa đổi, hoàn toàn cho phép đọc",
+	"sitematrix-nonglobal": "công khai, bắt phải đăng nhập"
+}

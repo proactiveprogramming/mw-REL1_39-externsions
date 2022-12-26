@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jaeminlovetaejoon",
+			"Khing",
+			"Nyi Nyi Minn Maung",
+			"Rul1902",
+			"SawJaemin"
+		]
+	},
+	"sitesupport": "တၢ်မၤဘူၣ်",
+	"tooltip-n-sitesupport": "ဆီၣ်ထွဲမၤစၢၤပှၤ",
+	"wikimedia-copyright": "လံာ်မဲာ်ဖျၢၣ်အံၤမၤန့ၢ်အီၤသ့လၢ <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-ShareAlike License</a>;\nadditional terms may apply.\nလဲၤကွၢ် <a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\">Terms of Use</a> မ့ၢ်အဲၣ်ဒိးသ့ၣ်ညါတၢ်ဂ့ၢ်တၢ်ကျိၤ.",
+	"wikimedia-mobile-mainpage-title-loggedin": "{{GENDER:$1|တၢ်တူၢ်လိာ်မုာ်}}, $1!",
+	"wikibase-repo-name": "ဝံၣ်ကံးဒ့ဒၤ",
+	"wikibase-sitelinks-wikinews": "ဝံၣ်ကံးတၢ်ကစီၣ်",
+	"wikibase-sitelinks-wikiquote": "ဝံၣ်ကံးတဲဒိးပှၤဂၤအတၢ်ကတိၤ",
+	"wikibase-sitelinks-wikisource": "ဝံၣ်ကံးစိၣ်စု",
+	"wikibase-sitelinks-wikivoyage": "ဝံၣ်ကံးတၢ်လဲၤတၢ်ကျဲလၢထံကျါ",
+	"wikibase-sitelinks-wiktionary": "ဝ့းၡ့ၣ်နရံၣ်",
+	"wikibase-otherprojects-testwikidata": "ဝံၣ်ကံးဒ့ဒၤ",
+	"wikibase-otherprojects-mediawiki": "မံဒံာ်ယၤဝံၣ်ကံး",
+	"wikibase-otherprojects-wikidata": "ဝံၣ်ကံးဒ့ဒၤ",
+	"wikibase-otherprojects-wikipedia": "ဝံၣ်ကံးဖံဒံာ်ယၤ",
+	"wikibase-otherprojects-wiktionary": "ဝ့းၡ့ၣ်နရံၣ်",
+	"wikibase-sitelinks-sitename-mediawikiwiki": "မံဒံာ်ယၤဝံၣ်ကံး",
+	"wikibase-sitelinks-sitename-wikidatawiki": "ဝံၣ်ကံးဒ့ဒၤ",
+	"wikimedia-developers": "ပှၤတ့ထီၣ်တၢ်ဖိ",
+	"interlanguage-link-wikipedia": "ဝံၣ်ကံးဖံဒံာ်ယၤ",
+	"wikimedia-statslink": "နီၣ်ဂံၢ်စရီ",
+	"wikimedia-cookiestatement": "ခၢၣ်ကံၤ တၢ်ပာ်ဖျါ",
+	"ext-quicksurveys-tst-internal-survey-answer-positive": "မ့ၢ်",
+	"ext-quicksurveys-tst-internal-survey-answer-negative": "တမ့ၢ်ဘၣ်"
+}

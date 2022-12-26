@@ -1,0 +1,10 @@
+/resources/lib/
+/__mocks__/
+**/__mocks__/**
+/vendor/
+/coverage/
+/node_modules/
+jest.config.js
+/resources/components/icons.json
+/resources/codex-demos/codex-demos.cjs.js
+/lib/codex/

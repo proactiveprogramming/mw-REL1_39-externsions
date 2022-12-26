@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"closewikis-desc": "Omogoča zapiranje wikimest v wikiposestvih",
+	"closewikis-page": "Zapri wiki",
+	"closewikis-page-close": "Zapri wiki",
+	"closewikis-page-close-wiki": "Viki:",
+	"closewikis-page-close-dreason": "Razlog (prikazan):",
+	"closewikis-page-close-reason": "Razlog (zabeležen):",
+	"closewikis-page-close-submit": "Zapri",
+	"closewikis-page-close-success": "Wiki je bil zaprt",
+	"closewikis-page-reopen": "Znova odpri viki",
+	"closewikis-page-reopen-wiki": "Viki:",
+	"closewikis-page-reopen-reason": "Razlog:",
+	"closewikis-page-reopen-submit": "Znova odpri",
+	"closewikis-page-reopen-success": "Viki je znova odprt",
+	"closewikis-page-err-nowiki": "Določen je neveljaven wiki",
+	"closewikis-page-err-closed": "Wiki je že zaprt",
+	"closewikis-page-err-opened": "Wiki ni zaprt",
+	"closewikis-list": "Seznam zaprtih vikijev",
+	"closewikis-list-intro": "Ta seznam vsebuje wikije, ki so jih zaprli upravniki.",
+	"closewikis-list-header-wiki": "Viki",
+	"closewikis-list-header-by": "Zaprl",
+	"closewikis-list-header-timestamp": "Zaprto",
+	"closewikis-list-header-dispreason": "Prikazan razlog",
+	"closewikis-log": "Dnevnik zapiranja vikijev",
+	"closewikis-log-header": "Tu je prikazan dnevnik vseh zapiranj in ponovnih odpiranj vikijev, ki so jih opravili upravniki",
+	"closewikis-log-close": "je zaprl_a $2",
+	"closewikis-log-reopen": "znova odprl_a $2",
+	"action-editclosedwikis": "urejanje zaprtih vikijev",
+	"right-editclosedwikis": "Urejanje zaprtih vikijev",
+	"action-closewikis": "zapiranje vikijev",
+	"right-closewikis": "Zapiranje vikijev"
+}

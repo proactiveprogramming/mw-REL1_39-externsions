@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"vikisemantictitle-desc": "Modulo VIKI pro gerer le paginas del wiki usante le extension \"Semantic Title\"",
+	"vikisemantictitle-error-displaytitle-fetch": "Error obtenente le datos concernente le titulo a monstrar pro le nodo: $1."
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"pluggablesso-desc": "Usa le SSO fornite per le servitor web in $REMOTE_USER in conjunction con PluggableAuth",
+	"pluggablesso-no-session": "Nulle nomine de usator recipite. Le session ha fallite de alcun maniera.",
+	"pluggablesso-username-mismatch": "Le usator non correspondeva al session."
+}

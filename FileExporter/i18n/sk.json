@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vegetator"
+		]
+	},
+	"fileexporter": "Exportér súborov",
+	"fileexporter-desc": "Jednoduché exportovanie súborov na inú wiki",
+	"fileexporter-text": "Exportovať súbor",
+	"fileexporter-to-wikimedia-commons": "Exportovať na Wikimedia Commons"
+}

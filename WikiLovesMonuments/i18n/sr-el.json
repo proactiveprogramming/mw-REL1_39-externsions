@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Сербијана"
+		]
+	},
+	"wlm-extension-desc": "Dodaje informacije i poruke vezane za Wiki Loves Monuments foto-konkurs",
+	"wlm-no-contest-year": "Nije bilo Wiki Loves Monuments foto-konkursa u $1. godini",
+	"wlm-no-url-bad-country": "Nismo mogli da dobavimo veb-sajt za lokalno takmičenje. $1 nije važeći kod zemlje.",
+	"wlm-country-not-given": "Navedite državni kod.",
+	"wlm-country-not-participating-year": "«$1» ne učestvuje u Wiki Loves Monuments $2",
+	"wlm-sidebar-portlet": "Ostale zemlje",
+	"wlm-international-contest": "Globalno takmičenje",
+	"wlm-text-contact": "Kontakt",
+	"wlm-text-contest": "Konkurs",
+	"wlm-text-donate": "Doniraj",
+	"wlm-text-faq": "Česta pitanja",
+	"wlm-text-jury": "Žiri",
+	"wlm-text-monuments": "Nepokretna kulturna dobra",
+	"wlm-text-news": "Aktuelnosti",
+	"wlm-text-participate": "Učestvuj!",
+	"wlm-text-prizes": "Nagrade",
+	"wlm-text-rules": "Pravila",
+	"wlm-text-sponsors": "Sponzori",
+	"wlm-text-uploading": "Otpremanje"
+}

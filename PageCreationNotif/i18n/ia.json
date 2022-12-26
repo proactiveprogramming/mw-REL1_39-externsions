@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"page-creation-notif-desc": "Invia un notification per e-mail quando nove paginas es create",
+	"page-creation-notification": "Inviar me un e-mail quando un nove pagina es create",
+	"page-creation-email-subject": "Nove pagina – $1 {{GENDER:$3|create}} sur $2 per $3",
+	"page-creation-email-body": "Car $1,\n\nIsto es un notification de {{SITENAME}} pro informar te que un nove pagina $2 ha essite {{GENDER:$3|create}} per le usator $3.\n\nTu pote vider lo a\n$4\n\nLe texto del pagina es:\n$5\n\nAmicalmente,\n\nLe robot messagero de {{SITENAME}}\n\nPro cambiar tu parametros de notification per e-mail, visita\n{{canonicalurl:{{#special:Preferences}}}}"
+}

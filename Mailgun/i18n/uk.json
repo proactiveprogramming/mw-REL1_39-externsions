@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Ата"
+		]
+	},
+	"mailgun-desc": "Відправляти електронні листи через службу Mailgun API з MediaWiki"
+}

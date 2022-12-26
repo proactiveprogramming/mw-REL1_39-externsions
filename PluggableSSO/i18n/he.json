@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Ex-Diktator"
+		]
+	},
+	"pluggablesso-desc": "שימוש ב־SSO שמסופק על־ידי שרת וב ב־<span dir=\"ltr\">$REMOTE_USER</span> עם PluggableAuth",
+	"pluggablesso-no-session": "לא התקבל שם משתמש, ההתחברות נכשלה איכשהו.",
+	"pluggablesso-username-mismatch": "שם המשתמש לא התאים להתחברות"
+}

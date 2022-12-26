@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Asma",
+			"Meno25"
+		]
+	},
+	"action-similareditors": "دخول [[Special:SimilarEditors]]",
+	"right-similareditors": "دخول [[Special:SimilarEditors]]",
+	"similareditors": "محررين متشابهين",
+	"similareditors-desc": "يوفر تفاصيل عن المستخدمين الذين لديهم تاريخ تحرير مماثل.",
+	"similareditors-error-database-refresh": "حدث خطأ ما ، يرجى المحاولة مرة أخرى بعد بضع دقائق.",
+	"similareditors-error-default": "حدث خطأ ما ، نحن نبحث فيه.",
+	"similareditors-error-user-bot": "المستخدم $1 هو روبوت وبالتالي فهو خارج النطاق.",
+	"similareditors-error-user-no-account": "يبدو أن المستخدم $1 ليس لديه حساب في ويكيبيديا الإنجليزية.",
+	"similareditors-error-user-no-edits": "يبدو أن المستخدم $1 ليس لديه حساب (أو تعديلات في النطاق) في ويكيبيديا الإنجليزية.",
+	"similareditors-form-field-target-label": "اسم المستخدم أو عنوان IP:",
+	"similareditors-form-field-target-placeholder": "اسم المستخدم أو 1.1.1.1",
+	"similareditors-form-legend": "ابحث عن محررين متشابهين",
+	"similareditors-form-submit": "ابحث",
+	"similareditors-no-results": "لا توجد نتائج.",
+	"similareditors-overlap-level-high": "مرتفع",
+	"similareditors-overlap-level-low": "منخفض",
+	"similareditors-overlap-level-medium": "متوسط",
+	"similareditors-overlap-level-no-overlap": "لا تداخل",
+	"similareditors-results-day-overlap": "تداخل اليوم",
+	"similareditors-results-edit-overlap": "تداخل التحرير",
+	"similareditors-results-edits": "عمليات التحرير في البيانات",
+	"similareditors-results-hour-overlap": "تداخل الساعة",
+	"similareditors-results-inverse-edit-overlap": "تداخل تحرير معكوس",
+	"similareditors-results-user": "مستخدم",
+	"similareditors-results-user-timeline": "الجدول الزمني",
+	"similareditors-summary": "اعثر على المحررين الأكثر تشابهًا مع محرر معين استنادًا إلى سجل التحرير.",
+	"similareditors-survey-question": "هل وجدت النتائج مفيدة؟ ما هي المعلومات الأخرى التي تبحث عنها عند محاولة العثور على دمى جورب؟"
+}

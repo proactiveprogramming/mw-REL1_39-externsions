@@ -1,0 +1,6 @@
+/*.tex
+/*.pdf
+/composer.lock
+/vendor
+/node_modules
+.eslintcache

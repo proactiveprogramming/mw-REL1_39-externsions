@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"wsu-extension-name": "Wikibase Statement Updater",
+	"wsu-desc": "Werkzeug zum Aktualisieren und Hinzufügen von Wikibase-Aussagen",
+	"wsu-special-wikibasestatementupdater": "Massen-Update von Aussagen",
+	"wsu-wsu-batch-title": "Batchname",
+	"wsu-wsu-batch-contents": "Befehle im Quick Statements V1-Format",
+	"wsu-wsu-error": "Die Befehle können nicht geparst werden: $1",
+	"wsu-wsu-error-linetooshort": "Zeile $1 ist zu kurz.",
+	"wsu-wsu-error-noqualifiers": "Qualifier werden noch nicht unterstützt.",
+	"wsu-wsu-error-onlyq": "Es werden nur Q-Items unterstützt.",
+	"wsu-wsu-error-unsupportedcommand": "Unbekannter Befehl.",
+	"wsu-your-batches": "{{GENDER:|Du}} hast die folgenden Batches erstellt:",
+	"wsu-unknown-batch": "Unbekannter Batch",
+	"wsu-goback": "Zurück zur Auflistung",
+	"wsu-start": "(Neu-)Start der Bearbeitung",
+	"wsu-stop": "Bearbeitung stoppen",
+	"wsu-updater-api-failure": "API-Antwort kann nicht geparst werden",
+	"wsu-updater-ambiguous-update": "Eigenschaft hat mehrere Aussagen",
+	"wsu-give-permission": "Dieses Werkzeug benötigt die Erlaubnis, in {{GENDER:|deinem}} Namen Bearbeitungen vorzunehmen. [[$1|Berechtigungen erteilen]].",
+	"wsu-create-batch": "Neuen Batch erstellen",
+	"wsu-command-P": "Eigenschaft",
+	"wsu-batchtable-subject": "Thema",
+	"wsu-batchtable-command": "Befehl",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Wert",
+	"wsu-batchtable-status": "Status",
+	"wsu-js-batchtable-status": "$1 % vollständig. {{PLURAL:$2|0=|$2 fehlgeschlagen.}}",
+	"apihelp-wikibasestatementupdater-summary": "Verwalten von Wikibase Statement Updater-Batches"
+}

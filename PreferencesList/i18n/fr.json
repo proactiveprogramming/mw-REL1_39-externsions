@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"McDutchie",
+			"Wladek92"
+		]
+	},
+	"preferenceslist-desc": "Génère une liste de tous les paramètres utilisateur pour une préférence particulière",
+	"preferenceslist-preferenceslist": "Liste des préférences",
+	"preferenceslist-preferenceslist-intro": "Ci-dessous se trouve une liste de préférences. En choisir au moins une pour voir une liste de tous les utilisateurs avec leur préférence.",
+	"preferenceslist": "Liste de préférences",
+	"action-preferenceslist": "lister les préférences de tous les utilisateurs",
+	"preferenceslist-csv": "Télécharger en CSV",
+	"preferenceslist-nofields": "Aucun champ n’a été sélectionné.",
+	"right-preferenceslist": "Ouvrir la page Special:PreferenceList"
+}

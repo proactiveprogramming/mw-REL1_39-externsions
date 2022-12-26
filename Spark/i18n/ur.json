@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Obaid Raza"
+		]
+	},
+	"spark-desc": "ایک <nowiki><spark /></nowiki> ٹیگ شامل کرتا ہے جو سرایت کرنے کے قابل بناتا ہے [http://km.aifb.kit.edu/sites/spark/ اسپارک] میش اپس",
+	"spark-missing-query": "\"data-spark-query\" پیرامیٹر کا استعمال کرتے ہوئے آپ کو ایک سوال کی وضاحت کرنے کی ضرورت ہے۔"
+}

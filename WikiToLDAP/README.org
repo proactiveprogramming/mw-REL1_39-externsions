@@ -1,0 +1,42 @@
+
+#+TITLE: WikiToLDAP
+#+SUBTITLE: An extension to help migrate wiki users to an LDAP-backed account
+
+The initial development of this extension was funded by [[https://www.osgeo.org/][The Open Source Geospatial Foundation]] to help migrate their wiki users from MediaWiki-only user accounts to their centralized, LDAP-backed [[https://www.osgeo.org/community/getting-started-osgeo/osgeo_userid/][OSGeo Services UserID]].  The intent is to merge existing wiki accounts with LDAP-backed accounts using the [[https://www.mediawiki.org/wiki/Extension:UserMerge][UserMerge extension]].  There are two SpecialPages to handle this: Special:WikiUserMerge and Special:LDAPUserMerge. Because of the requirements for OSGeo, more work has been done on the Special:LDAPUserMerge workflow, but the other one should work as well.
+
+* Prerequisites
+- *A test wiki.* You'll want to test the entire workflow before you deploy to production it since authentication is a critical part of the wiki.
+- *Set up the [[https://www.mediawiki.org/wiki/Extension:LDAPAuthentication2][LDAPAuthentication2 extension]].* This depends on at least [[https://www.mediawiki.org/wiki/Extension:PluggableAuth][PluggableAuth]] and [[https://www.mediawiki.org/wiki/Extension:LDAPProvider][LDAPProvider]].  You should ensure that users can log in using their LDAP credentials before proceding.
+- *Enable the [[https://www.mediawiki.org/wiki/Extension:UserMerge][UserMerge extension]].* WikiToLDAP uses the merge capability of the UserMerge to handle the actual merging of users.
+- *Enable the [[https://www.mediawiki.org/wiki/Extension:Renameuser][Renameuser extension]].* This is not strictly required, but the workflow outlined here depends on it.  If you use the merge method described in this documentation, you'll need this extension installed.
+* Installation
+This extension uses the new (as of early 2021) [[https://www.mediawiki.org/wiki/Composer/For_extensions][Composer for extensions]] guidance to install the extension.
+
+This means that to install the extension you need to install composer and run the following To download the extension, run the following command from the command line in your wiki's top-level directory (/i.e./ the one that contains the =LocalSettings.php= file) :
+#+begin_src bash
+  $ COMPOSER=composer.local.json php ( touch $COMPOSER && \
+										composer.phar require --no-update mediawiki/wiki-to-ldap )
+#+end_src
+After this, you'll need to enable the extension by adding the following to your =LocalSettings.php= file:
+#+begin_src php
+wfLoadExtension( 'WikiToLDAP' );
+#+end_src
+* Configuration
+As with most other MediaWiki extensions, this extension is configured by setting PHP variables in the =LocalSettings.php= file.  The settings are all prefixed with =WikiToLDAP= so the =MigrationInProgress= setting below would be set by adding the following line to the =LocalSettings.php=:
+#+begin_src php
+$WikiToLDAPMigrationInProgress = false;
+#+end_src
+
+| Setting             | Default                    | Description                                                                                                                                                    |
+|---------------------+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MigrationGroup      | wikitoldap-needs-migration | The group old wiki users are put into before any migration is attempted.                                                                                       |
+| InProgressGroup     | wikitoldap-in-progress     | The group users are put into after they log in and migration has started.                                                                                      |
+| MergedGroup         | wikitoldap-merged          | The group for users who have gone through WikiToLDAP's merge process.                                                                                          |
+| OldUserNamePrefix   | ⚠️                          | The prefix the old wiki accounts have. You can use the =-r= option in the 'MoveToMigrationGroup.php' script to rename all current wiki users with this prefix. |
+| MigrationInProgress | true                       | Whether any migration is currently in progress.  If false, defaults to behaving just like [[https://www.mediawiki.org/wiki/Extension:LDAPAuthentication2][LDAPAuthentication2]].                                                 |
+| OldUsersAreRenamed  | false                      | Set to true if you use the =-r= option in the 'MoveToMigrationGroup.php' script.                                                                               |
+| CanCheckOldUser     | false                      | Set to true if you want users to be able to log in with their old wiki username during the transition period.                                                  |
+
+
+* Documentation
+A PDF version of this documentation can be produced by running =make= at the command line.  It requires Emacs and LaTeX be installed as well and will complain if they aren't.

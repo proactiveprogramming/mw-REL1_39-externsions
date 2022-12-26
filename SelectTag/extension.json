@@ -1,0 +1,22 @@
+{
+	"name": "SelectTag",
+	"version": "1.2.0",
+	"author": "[http://www.expressprogs.com Khaled El Mansoury]",
+	"url": "https://www.mediawiki.org/wiki/Extension:SelectTag",
+	"descriptionmsg": "selecttag-desc",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"SelectTag": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SelectTagHooks": "SelectTagHooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "SelectTagHooks::onSelectTagParserInit"
+	},
+	"manifest_version": 2
+}

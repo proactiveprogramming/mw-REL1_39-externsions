@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos",
+			"Tacsipacsi"
+		]
+	},
+	"wikisource-export-portlet": "Nyomtatás/exportálás",
+	"wikisource-download-epub": "Letöltés EPUB-ban",
+	"wikisource-download-epub-tooltip": "A mű EPUB-változatának letöltése",
+	"wikisource-download-mobi": "Letöltés MOBI-ban",
+	"wikisource-download-mobi-tooltip": "A mű MOBI-változatának letöltése",
+	"wikisource-download-pdf": "Letöltés PDF-ben",
+	"wikisource-download-pdf-tooltip": "A mű PDF-változatának letöltése",
+	"wikisource-download-choose": "Egyéb formátumok",
+	"wikisource-download-choose-tooltip": "Egy űrlap megnyitása, ahol kiválasztható a letöltendő formátum, a használandó betűtípus stb.",
+	"wikisource-download-button": "Letöltés",
+	"wikisource-download-chooser-title": "Válassz egy formátumot",
+	"wikisource-download-chooser-epub-description": "számítógépekhez, mobiltelefonokhoz, tabletekhez",
+	"wikisource-download-chooser-mobi-description": "Kindle-hez",
+	"wikisource-download-chooser-pdf-description": "nagyméretű kijelzőkhöz és nyomtatáshoz"
+}

@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alexsh",
+			"Cwlin0416",
+			"Hello903hello",
+			"Kly",
+			"Mark85296341",
+			"Waihorace",
+			"Wwycheuk",
+			"列维劳德",
+			"捍粵者"
+		]
+	},
+	"sitematrix": "Wiki 清單",
+	"sitematrix-summary": "此特殊頁面列出在此 Wiki 農場上的所有 Wiki。",
+	"sitematrix-desc": "顯示 [[Special:SiteMatrix|wiki 清單]]",
+	"sitematrix-language": "語言",
+	"sitematrix-project": "專案名稱、跨專案連結與跨 Wiki 連結",
+	"sitematrix-others": "其它專案",
+	"sitematrix-other-projects": "專案",
+	"sitematrix-other-projects-language": "語言",
+	"sitematrix-total": "'''合計：$1'''",
+	"sitematrix-sitetotal": "總計",
+	"sitematrix-closed": "不能寫入，但能完整讀取",
+	"sitematrix-private": "讀寫受限",
+	"sitematrix-fishbowl": "限制寫入，但能完整讀取",
+	"sitematrix-nonglobal": "公開；但需註冊"
+}

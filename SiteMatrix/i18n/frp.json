@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"sitematrix-desc": "Montre una [[Special:SiteMatrix|lista des vouiquis de la Wikimedia Foundation]].",
+	"sitematrix-language": "Lengoua",
+	"sitematrix-project": "Nom du projèt, lim entèrprojèt et lim entèrvouiqui",
+	"sitematrix-other-projects": "Ôtros projèts",
+	"sitematrix-total": "'''Soma du compto : $1'''",
+	"sitematrix-sitetotal": "Soma",
+	"sitematrix-private": "privâ",
+	"sitematrix-fishbowl": "changements rètrents"
+}

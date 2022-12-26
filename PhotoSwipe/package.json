@@ -1,0 +1,30 @@
+{
+	"name": "mediawiki-extensions-photoswipe",
+	"version": "1.0.0",
+	"author": "Jason Khanlar",
+	"description": "This is a MediaWiki extension that adds <code>&lt;photoswipe&gt;</code> tag to provide a front-end JavaScript image gallery and lightbox using [PhotoSwipe](https://photoswipe.com/)",
+	"license": "GPL-3.0-or-later",
+	"main": "Gruntfile.js",
+	"private": true,
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.22.1",
+		"grunt": "1.5.3",
+		"grunt-banana-checker": "0.10.0",
+		"grunt-eslint": "24.0.0",
+		"grunt-stylelint": "0.18.0",
+		"stylelint-config-wikimedia": "0.13.1"
+	},
+	"eslintIgnore": [
+		"vendor/**"
+	],
+	"scripts": {
+		"build-lib": ". ./bin/build.sh",
+		"test": "grunt test"
+	},
+	"dependencies": {
+		"grunt-exec": "^3.0.0",
+		"photoswipe": "^5.2.4",
+		"photoswipe-deep-zoom-plugin": "^1.1.2",
+		"photoswipe-dynamic-caption-plugin": "^1.1.1"
+	}
+}

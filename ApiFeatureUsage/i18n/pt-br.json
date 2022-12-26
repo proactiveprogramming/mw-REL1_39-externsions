@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"!Silent",
+			"Araceletorres",
+			"Felipe L. Ewald"
+		]
+	},
+	"apifeatureusage": "Uso de recursos da API",
+	"apifeatureusage-desc": "Obter um resumo dos usos dos recursos da API registrados por um agente de usuário.",
+	"apifeatureusage-elasticsearch-error": "Error de Elasticsearch: $1",
+	"apifeatureusage-legend": "Uso de recursos da API",
+	"apifeatureusage-agent-label": "Agente de usuário:",
+	"apifeatureusage-startdate-label": "Data inicial:",
+	"apifeatureusage-enddate-label": "Data final:",
+	"apifeatureusage-submit": "Buscar dados",
+	"apifeatureusage-no-indexes": "Não existem dados disponíveis para o período especificado.",
+	"apifeatureusage-missing-indexes": "Não existem dados disponíveis para a parte do período especificado.",
+	"apifeatureusage-warnings": "Aviso: $1",
+	"apifeatureusage-column-feature": "Recurso",
+	"apifeatureusage-column-date": "Data",
+	"apifeatureusage-column-uses": "Usos",
+	"apifeatureusage-deprecation-help": "Use [[Special:ApiFeatureUsage]] para ver o uso de recursos obsoletos pela sua aplicação."
+}

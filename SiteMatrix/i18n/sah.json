@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"HalanTul"
+		]
+	},
+	"sitematrix-desc": "[[Special:SiteMatrix|Викимедиа бырайыактарын испииһэгин]] көрдөрөр",
+	"sitematrix-language": "Тыла",
+	"sitematrix-project": "Бырайыак аата, бырайыак ыккардынааҕы ыйынньык уонна интервики",
+	"sitematrix-other-projects": "Атын бырайыактар",
+	"sitematrix-total": "'''Уопсай ахсаана: $1'''",
+	"sitematrix-sitetotal": "Барыта",
+	"sitematrix-private": "приватнай/чааһынай",
+	"sitematrix-fishbowl": "көннөрүү хааччахтаммыт"
+}

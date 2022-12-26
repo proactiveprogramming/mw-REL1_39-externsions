@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"standarddialogs-page-info-close": "Zapri",
+	"standarddialogs-page-info-properties": "Lastnosti",
+	"standarddialogs-page-info-page-title": "Naslov",
+	"standarddialogs-page-info-page-language": "Jezik",
+	"standarddialogs-page-info-page-redirects": "Preusmeritve",
+	"standarddialogs-page-info-page-templates": "Predloge",
+	"standarddialogs-page-info-page-categories": "Kategorije",
+	"standarddialogs-create-button-new-page-text": "Nova stran",
+	"standarddialogs-delete-btn": "Izbriši",
+	"standarddialogs-move-btn": "Prestavi",
+	"standarddialogs-move-title": "Prestavi stran »$1«",
+	"standarddialogs-btn-done": "Končano",
+	"standarddialogs-btn-cancel": "Prekliči"
+}

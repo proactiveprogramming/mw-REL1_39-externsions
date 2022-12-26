@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lakejason0"
+		]
+	},
+	"action-similareditors": "访问[[Special:SimilarEditors]]",
+	"right-similareditors": "访问[[Special:SimilarEditors]]",
+	"similareditors": "相似的编辑者",
+	"similareditors-desc": "提供具有相似编辑历史的用户的详细信息。",
+	"similareditors-error-default": "出现了一些问题，我们正在调查。",
+	"similareditors-form-field-target-label": "用户名或IP地址：",
+	"similareditors-form-field-target-placeholder": "UserName或1.1.1.1",
+	"similareditors-form-legend": "寻找相似的编辑者",
+	"similareditors-form-submit": "寻找",
+	"similareditors-no-results": "没有结果。",
+	"similareditors-overlap-level-high": "高",
+	"similareditors-overlap-level-low": "低",
+	"similareditors-overlap-level-medium": "中",
+	"similareditors-overlap-level-no-overlap": "无重叠",
+	"similareditors-results-day-overlap": "重叠程度（按天）",
+	"similareditors-results-edit-overlap": "编辑重叠",
+	"similareditors-results-edits": "编辑量",
+	"similareditors-results-hour-overlap": "重叠程度（按小时）",
+	"similareditors-results-inverse-edit-overlap": "反向编辑重叠",
+	"similareditors-results-user": "用户",
+	"similareditors-results-user-timeline": "时间线",
+	"similareditors-summary": "根据编辑历史查找与给定编辑者最相似的编辑者。",
+	"similareditors-survey-question": "你觉得结果有帮助吗？在寻找傀儡用户时，你还会寻找其他哪些信息？"
+}

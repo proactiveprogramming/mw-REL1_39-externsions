@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250",
+			"Zoranzoki21"
+		]
+	},
+	"changeuserpasswords": "Promena korisničkih lozinki",
+	"changeuserpassword-desc": "Ovo je dodatak za promenu korisničkih lozinki, osim nekoliko koliko je naznačio administrator.",
+	"changeuserpassword-pagename": "PromenaKorisničkihLozinki",
+	"changeuserpassword-topheader": "Izaberite korisnička imena za koja lozinke treba da budu promenjene. Po podrazumevanom, svi korisnici su izabrani. Opozovite izbor korisničkih imena za koja ne želite da promenite lozinku.",
+	"changeuserpassword-success": "Korisničke lozinke su promenjene.",
+	"changeuserpassword-title": "Promena korisničkih lozinki",
+	"changeuserpassword-intro": "Ovo je dodatak za promenu korisničkih lozinki, osim nekoliko koliko je naznačio administrator.",
+	"action-changeuserpasswords": "promenite lozinke korisnika",
+	"right-changeuserpasswords": "promena korisničkih lozinki"
+}

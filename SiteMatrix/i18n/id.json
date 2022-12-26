@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bennylin",
+			"Daud I.F. Argana",
+			"IvanLanin",
+			"Rex",
+			"לערי ריינהארט"
+		]
+	},
+	"sitematrix": "Daftar wiki",
+	"sitematrix-summary": "Halaman istimewa ini mencantumkan semua wiki di dalam keluarga wiki ini.",
+	"sitematrix-desc": "Menampilkan [[Special:SiteMatrix|daftar wiki]]",
+	"sitematrix-language": "Bahasa",
+	"sitematrix-project": "Nama proyek, pranala interproyek dan pranala interwiki",
+	"sitematrix-others": "Proyek lain",
+	"sitematrix-other-projects": "Proyek",
+	"sitematrix-other-projects-language": "Bahasa",
+	"sitematrix-total": "'''Jumlah total: $1'''",
+	"sitematrix-sitetotal": "Total",
+	"sitematrix-closed": "tidak bisa ditulis, bisa dibaca sepenuhnya",
+	"sitematrix-private": "membaca dan menulis dibatasi",
+	"sitematrix-fishbowl": "menulis dibatasi, bisa dibaca sepenuhnya",
+	"sitematrix-nonglobal": "publik tetapi wajib mendaftar"
+}

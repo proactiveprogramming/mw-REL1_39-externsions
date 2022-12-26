@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saurmandal"
+		]
+	},
+	"wsu-desc": "विकिबेस बयान जोड़ने और बदलने के लिए उपकरण",
+	"wsu-special-wikibasestatementupdater": "बयानों का समूह अपडेट करें",
+	"wsu-wsu-batch-title": "समूह का नाम",
+	"wsu-wsu-batch-contents": "Quick Statements V1 प्रारूप में कमांड्स",
+	"wsu-wsu-error": "कमांड्स को पार्स न किया जा सका: $1",
+	"wsu-wsu-error-linetooshort": "पंक्ति $1 कुछ ज़्यादा ही छोटी है।",
+	"wsu-wsu-error-noqualifiers": "अब तक क्वालिफ़ायर्स का समर्थन नहीं है।",
+	"wsu-wsu-error-onlyq": "सिर्फ Q-आयटम्स का ही समर्थन है।",
+	"wsu-wsu-error-unsupportedcommand": "अज्ञात कमांड।",
+	"wsu-your-batches": "आपने ये समूह बनाए हैं:",
+	"wsu-unknown-batch": "अज्ञात समूह",
+	"wsu-goback": "सूची पर वापस जाएँ",
+	"wsu-start": "संपादन (दोबारा) शुरू करें",
+	"wsu-stop": "संपादन रोकें",
+	"wsu-updater-api-failure": "API के जवाब को पार्स न किया जा सका",
+	"wsu-updater-ambiguous-update": "गुणधर्म में कई बयान हैं",
+	"wsu-give-permission": "इस उपकरण को आपके लिए संपादन करने की अनुमति चाहिए। [[$1|अनुमति दें]]।",
+	"wsu-create-batch": "नया समूह बनाएँ",
+	"wsu-command-P": "गुणधर्म",
+	"wsu-batchtable-subject": "विषय",
+	"wsu-batchtable-command": "कमांड",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "वैल्यू",
+	"wsu-batchtable-status": "स्थिति",
+	"wsu-js-batchtable-status": "$1 प्रतिशत पूरा हुआ। {{PLURAL:$2|0=|एक असफल रहा।|$2 असफल रहे।}}",
+	"apihelp-wikibasestatementupdater-summary": "विकिबेस बयान अपडेटर समूहों को प्रबंधित करें"
+}

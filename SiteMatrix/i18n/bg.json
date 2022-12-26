@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"DCLXVI",
+			"Spiritia",
+			"StanProg",
+			"Stanqo",
+			"Turin",
+			"Vlad5250",
+			"לערי ריינהארט"
+		]
+	},
+	"sitematrix-desc": "Показва [[Special:SiteMatrix|списък на уикитата]]",
+	"sitematrix-language": "Език",
+	"sitematrix-project": "Име на проекта, междупроектна препратка и междууики",
+	"sitematrix-other-projects": "Проект",
+	"sitematrix-other-projects-language": "Език",
+	"sitematrix-total": "'''Общ брой: $1'''",
+	"sitematrix-sitetotal": "Общо",
+	"sitematrix-fishbowl": "ограничен достъп за запис, пълен достъп за четене"
+}

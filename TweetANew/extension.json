@@ -1,0 +1,115 @@
+{
+	"name": "TweetANew",
+	"version": "1.2.12052020",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Varnent Gregory Varnum]",
+		"[https://github.com/mooeypoo Moriel Schottlender] after merging extensions by [https://www.mediawiki.org/wiki/User:Joa_ds Joachim De Schrijver]",
+		"Andrew Fitzgerald",
+		"Wendell Gaudencio",
+		"Rohit Keshwani"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:TweetANew",
+	"descriptionmsg": "tweetanew-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"ExtensionMessagesFiles": {
+		"TweetANewMagic": "TweetANew.i18n.magic.php"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
+	"MessagesDirs": {
+		"TweetANew": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"TweetANew": "TweetANew.body.php",
+		"tmhOAuth": "lib/tmhOAuth.php",
+		"tmhUtilities": "lib/tmhUtilities.php",
+		"GoogleURL": "lib/GoogleURL.php"
+	},
+	"callback": "TweetANew::registerExtension",
+	"Hooks": {
+		"EditPageGetCheckboxesDefinition": "TweetANew::TweetANewEditCheckBox",
+		"ParserFirstCallInit": "TweetANew::onParserFirstCallInit"
+	},
+	"config": {
+		"TweetANewTweet": {
+			"description": "'New': Automatically tweet about new articles. Default is true. 'Edit': Automatically tweet about articles when edited. Default is true. 'LessMinutesOld': Minutes since last edit to wait before tweeting about a new edit. Default is 5. 'SkipMinor': Skip minor edits. Default is true.",
+			"value": {
+				"New": true,
+				"Edit": true,
+				"LessMinutesOld": 5,
+				"SkipMinor": true,
+				"SkipRedirect": true,
+				"TwitterAsTitle": false,
+				"UserGroup": "autoconfirmed"
+			}
+		},
+		"TweetANewText": {
+			"description": "'Minor': Indicate in tweet if edit is marked as minor. Only applies if $wgTweetANewTweet['SkipMinor'] = false. Default is false. 'MinorSpace': Include a space after minor edit indicator. Only applies if $wgTweetANewTweet['SkipMinor'] = false and'Minor'] = true. Default is true. 'NewRandom': Use a mix of random messages in body of tweets about new articles. Default is true. 'NewRandomMax': Maximum number of random messages to use. Set any additional (beyond 3) using [[MediaWiki:Tweetanew-new4]], [[MediaWiki:Tweetanew-new5]], etc. Default is 3. 'NewAuthor': Display the author of the new article. Default is false. 'NewSummary': Display content entered into new article's summary box. Default is false. 'EditRandom': Use a mix of random messages in body of tweets about article edits. Default is true. 'EditRandomMax': Maximum number of random messages to use. Set any additional (beyond 3) using [[MediaWiki:Tweetanew-edit4]], [[MediaWiki:Tweetanew-edit5]], etc. Default is 3. 'EditAuthor': Display the author of the edit. Default is false. 'EditSummary': Display content entered into edit's summary box. Default is false. 'RealName': Determine if user's real name will be displayed instead of their username. Default is false.",
+			"value": {
+				"Minor": false,
+				"MinorSpace": true,
+				"NewRandom": true,
+				"NewRandomMax": 3,
+				"NewAuthor": false,
+				"NewSummary": false,
+				"EditRandom": true,
+				"EditRandomMax": 3,
+				"EditAuthor": false,
+				"EditSummary": false,
+				"RealName": false
+			}
+		},
+		"TweetANewEditpage": {
+			"description": "'Enable': Determine if checkbox to tweet from edit page if $wgTweetANewTweet['New'] = false or $wgTweetANewTweet['Edit'] = false. Default is false. 'Checked': Determine if checkbox to tweet from edit page is automatically checked.",
+			"value": {
+				"Enable": false,
+				"Checked": false
+			}
+		},
+		"TweetANewTwitter": {
+			"description": "'ConsumerKey': Consumer key provided at https://dev.twitter.com/apps - be sure to have write and read permissions. 'ConsumerSecret': Consumer secret provided at https://dev.twitter.com/apps - be sure to have write and read permissions. 'AccessToken': Access token provided by the OAuth tool at https://dev.twitter.com/apps - be sure to have write and read permissions. 'AccessTokenSecret': Access token secret provided by the OAuth tool at https://dev.twitter.com/apps. Be sure to have write and read permissions.",
+			"value": {
+				"ConsumerKey": "",
+				"ConsumerSecret": "",
+				"AccessToken": "",
+				"AccessTokenSecret": ""
+			}
+		},
+		"TweetANewBitly": {
+			"description": "'Enable': Display URL as bitly link - allowing you to track usage via your bitly account. Default is false. 'Login': If bitly link display is enabled, enter your bitly user account - signup at: http://bitly.com/a/sign_up. 'API': If bitly link display is enabled, enter your bitly API key - find your API key at: http://bitly.com/a/your_api_key",
+			"value": {
+				"Enable": false,
+				"Login": "",
+				"API": ""
+			}
+		},
+		"TweetANewGoogl": {
+			"description": "'Enable': Display URL as goo.gl link - allowing you to track usage via your Google Account. Default is false. 'API': If goo.gl link display is enabled, enter your goo.gl API key. Enable the URL shortener API and find your API key at: http://code.google.com/apis/console/",
+			"value": {
+				"Enable": false,
+				"API": ""
+			}
+		},
+		"TweetANewBlacklist": {
+			"description": "Array of pages blacklisted. Example: $wgTweetANewBlacklist = array('BadPage1','BadPage2');",
+			"value": {
+				"value": ""
+			}
+		},
+		"TweetANewBlocklist": {
+			"value": {
+				"value": ""
+			}
+		},
+		"TweetANewCatBlocklist": {
+			"value": {
+				"value": ""
+			}
+		}
+	},
+	"manifest_version": 2
+}

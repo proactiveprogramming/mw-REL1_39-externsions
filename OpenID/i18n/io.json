@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"openidemail": "E-postal adreso",
+	"openidlanguage": "Linguo",
+	"openiddelete-button": "Konfirmez efaco",
+	"openid-urls-delete": "Efacar",
+	"openid-trusted-sites-delete-link-action-text": "Supresez",
+	"openid-trusted-sites-delete-confirmation-button-text": "Konfirmez"
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"AnakngAraw",
+			"Jojit fb"
+		]
+	},
+	"svgedit-editbutton-edit": "Baguhin ang iginuhit",
+	"svgedit-summary-label": "Buod ng pamamatnugot",
+	"svgedit-summary-default": "/* Binago sa svg-mamatnugot */",
+	"svgedit-editor-save-close": "Sagipin at isara",
+	"svgedit-editor-close": "Huwag ituloy",
+	"svgedit-desc": "In-browser na pagbabago ng mga iginuhit na SVG sa pamamagitan ng [http://code.google.com/p/svg-edit/ SVG-Edit]",
+	"svgedit-edit-tab": "Baguhin ang iginuhit",
+	"svgedit-edit-tab-tooltip": "Maaari mong baguhin ang pagguhit ng SVG sa loob ng pantingin-tingin mo",
+	"svgedit-toolbar-insert": "Pagguhit ng SVG"
+}

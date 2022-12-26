@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "API de acesso a objetos genéricos de domínio persistente.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Não foi possível desseriar o JSON da transação.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Não foi possível desseriar a transação.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Não foi possível executar a transação.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Não foi possível seriar a resposta.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Criar um único pedido novo de utilizador.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Ler um único pedido de utilizador.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Apagar um único pedido de utilizador."
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"svgedit-editbutton-edit": "Uredi risbo",
+	"svgedit-summary-label": "Povzetek urejanja",
+	"svgedit-summary-default": "/* Spremenjeno v svg-edit */",
+	"svgedit-editor-save-close": "Shrani in zapri",
+	"svgedit-editor-close": "Prekliči",
+	"svgedit-desc": "Urejanje risb SVG v brskalniku z [http://code.google.com/p/svg-edit/ SVG-Edit]",
+	"svgedit-edit-tab": "Uredi risbo",
+	"svgedit-edit-tab-tooltip": "To risbo SVG lahko uredite v brskalniku",
+	"svgedit-toolbar-insert": "Risba SVG"
+}

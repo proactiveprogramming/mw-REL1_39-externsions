@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie",
+			"Nike",
+			"Robby"
+		]
+	},
+	"wsu-extension-name": "{{name}}",
+	"wsu-desc": "{{desc|name=Wikibase Statement Updater|url=https://www.mediawiki.org/wiki/Extension:WikibaseStatementUpdater}}",
+	"wsu-special-wikibasestatementupdater": "{{doc-special|WikibaseStatementUpdater}}\n\nThe verb is \"Mass update\" and object is \"statements\".",
+	"wsu-wsu-batch-title": "Title for a form input",
+	"wsu-wsu-batch-contents": "Help message for a form input",
+	"wsu-wsu-error": "Error message. $1 contains more information",
+	"wsu-wsu-error-linetooshort": "Error message. $1 is a line number",
+	"wsu-wsu-error-noqualifiers": "Error message. Refers to Wikibase statement qualifiers",
+	"wsu-wsu-error-onlyq": "Error message. Refers to Wikibase Q-items.",
+	"wsu-wsu-error-unsupportedcommand": "Error message. Command means of property, label, description, alias or sitelink.",
+	"wsu-your-batches": "Label for a list.",
+	"wsu-unknown-batch": "Error message.",
+	"wsu-goback": "Button label",
+	"wsu-start": "Button label that queues updates to the jobqueue",
+	"wsu-stop": "Button label that ensures all future jobs are stopped for given batch.",
+	"wsu-updater-api-failure": "Error message.",
+	"wsu-updater-ambiguous-update": "Error message.",
+	"wsu-give-permission": "Information message.",
+	"wsu-create-batch": "Button label",
+	"wsu-command-P": "Table cell value. Property as in Wikibase property.",
+	"wsu-batchtable-subject": "Table column header. Subject as in Wikibase item.",
+	"wsu-batchtable-command": "Table column header. Command means one of property, label, description, alias or sitelink.",
+	"wsu-batchtable-id": "Table column header. Either property number or language code or sitelink code.",
+	"wsu-batchtable-value": "Table column header. Value of a property in the input.\n{{identical|Value}}",
+	"wsu-batchtable-status": "Table column header. Status of the update process for a row.",
+	"wsu-js-batchtable-status": "Summary line. Parameters:\n*$1 percentage number\n*$2 number",
+	"apihelp-wikibasestatementupdater-summary": "{{doc-apihelp-description|wikibasestatementupdater}}"
+}

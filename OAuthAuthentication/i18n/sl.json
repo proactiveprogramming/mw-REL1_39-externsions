@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"oauthauth-desc": "Vikijem omogoča dodeljevanje lastne avtentikacije drugemu vikiju",
+	"ouathauth-logout": "Odjava"
+}

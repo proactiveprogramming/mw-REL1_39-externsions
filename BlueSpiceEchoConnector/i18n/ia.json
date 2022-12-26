@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-echoconnector-extension-description": "Connecte BlueSpice a Echo",
+	"echo-category-title-bs-admin-cat": "Travalios administrative",
+	"echo-pref-tooltip-bs-admin-cat": "Notificar me quando un nove conto de usator es create",
+	"echo-pref-tooltip-bs-page-actions-cat": "Notificar me quando alcuno modifica, renomina o dele un pagina que io observa",
+	"echo-pref-tooltip-bs-page-create-cat": "Notificar me quando un nove pagina es create",
+	"echo-category-title-bs-page-actions-cat": "Actiones sur paginas sub observation",
+	"echo-category-title-bs-page-create-cat": "Creation de paginas",
+	"prefs-namespace-notifications": "Notificationes sur eventos de spatio de nomines",
+	"prefs-category-notifications": "Notificationes sur categorias",
+	"echo-category-title-bs-namespace-category-notify-cat": "Cambiamentos in spatios de nomines e categorias subscribite",
+	"bs-echoconnector-personalurl-notifications": "Notificationes ($1)"
+}

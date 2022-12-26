@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aotake",
+			"Foomin10",
+			"Fryed-peach",
+			"JtFuruhata",
+			"Marine-Blue",
+			"Muttley",
+			"Ohgi",
+			"Omotecho",
+			"Otokoume",
+			"RYOUMA1117",
+			"Shirayuki",
+			"לערי ריינהארט"
+		]
+	},
+	"sitematrix-desc": "[[Special:SiteMatrix|ウィキ一覧]]を表示する",
+	"sitematrix-language": "言語",
+	"sitematrix-project": "プロジェクト名、プロジェクト間リンク、ウィキ間リンク",
+	"sitematrix-other-projects": "プロジェクト",
+	"sitematrix-total": "'''総計: $1'''",
+	"sitematrix-sitetotal": "合計",
+	"sitematrix-private": "閲覧、書き込みとも制限",
+	"sitematrix-fishbowl": "編集は制限、閲覧は全員に許可",
+	"sitematrix-nonglobal": "公開されているが利用者登録に制限あり"
+}

@@ -1,0 +1,73 @@
+{
+	"name": "PagePermissions",
+	"version": "1.0",
+	"author": [
+		"Sanjay Thiyagarajan"
+	],
+	"descriptionmsg": "pagepermissions-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"load_composer_autoloader": true,
+	"MessagesDirs": {
+		"PagePermissions": [
+			"i18n"
+		]
+	},
+	"Actions": {
+		"pagepermissions": "PagePermissionsAction"
+	},
+	"Hooks": {
+		"ArticleDeleteComplete": "PagePermissionsHooks::onArticleDeleteComplete",
+		"SkinTemplateNavigation::Universal": "PagePermissionsHooks::onSkinTemplateNavigationUniversal",
+		"MediaWikiServices": "PagePermissionsHooks::onMediaWikiServices",
+		"LoadExtensionSchemaUpdates": "PagePermissionsHooks::onLoadExtensionSchemaUpdates"
+	},
+	"AutoloadClasses": {
+		"PagePermissionsAction": "includes/PagePermissionsAction.php",
+		"PagePermissionsForm": "includes/PagePermissionsForm.php",
+		"PagePermissionsHooks": "includes/PagePermissionsHooks.php",
+		"PagePermissionsManager": "includes/PagePermissionsManager.php"
+	},
+	"AvailableRights": [
+		"pagepermissions"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"pagepermissions": true
+		}
+	},
+	"config": {
+		"PagePermissionsRoles": {
+			"reader": [ "read" ],
+			"editor": [ "read", "edit" ],
+			"manager": [ "read", "edit", "move", "rollback" ],
+			"owner": [ "read", "edit", "move", "rollback", "delete", "pagepermissions" ]
+		}
+	},
+	"ResourceModules": {
+		"ext.pagepermissions.form": {
+			"scripts": "pagepermissions.js",
+			"styles": "pagepermissions.css",
+			"dependencies": [
+				"mediawiki.widgets.UserInputWidget",
+				"mediawiki.widgets.UsersMultiselectWidget"
+			],
+			"messages": [
+				"pagepermissions-usernames-placeholder",
+				"duplicate-usernames-error",
+				"standardrole-reader",
+				"standardrole-editor",
+				"standardrole-manager",
+				"standardrole-owner"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "PagePermissions/modules"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"manifest_version": 1
+}

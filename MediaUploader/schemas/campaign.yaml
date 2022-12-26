@@ -1,0 +1,465 @@
+# JSON schema for MediaUploader campaigns
+#
+# Changes to this schema MUST be backwards-compatible.
+# See tests/phpunit/unit/Campaign/ValidatorTest.php for schema tests
+
+$schema: 'http://json-schema.org/draft-04/schema#'
+
+################################
+## Definitions used elsewhere ##
+################################
+definitions:
+  # Represents a name of a license defined in the global config
+  licenseName:
+    type: string
+    # To be filled by PHP code during execution
+    # PHP snippet: $schema->definitions->licenseName->enum = ...
+    enum: [ ~ ]
+
+  # 'defaults' field in licensing config
+  defaultLicensesField:
+    oneOf:
+      - { $ref: '#/definitions/licenseName' }
+      - type: array
+        items: { $ref: '#/definitions/licenseName' }
+
+  # One abstract group of licenses
+  licenseGroup:
+    type: object
+    properties:
+      licenses:
+        type: array
+        items: { $ref: '#/definitions/licenseName' }
+      licenseWikitext: { type: string }
+      licenseSeparator: { type: string }
+      wrapper: { type: string }
+
+  # Licensing – plain list of licenses
+  licensingList:
+    allOf:
+      - $ref: '#/definitions/licenseGroup'
+      - type: object
+        additionalProperties: false
+        properties:
+          type:
+            type: string
+            enum:
+              - radio
+              - checkbox
+          defaults: { $ref: '#/definitions/defaultLicensesField' }
+          # For overriding the base config with groups of licenses
+          licenseGroups: { type: 'null' }
+          # # # # #
+          licenses: {}
+          licenseWikitext: {}
+          licenseSeparator: {}
+          wrapper: {}
+
+  # Licensing – grouped licenses
+  licensingGroups:
+    type: object
+    additionalProperties: false
+    properties:
+      defaults: { $ref: '#/definitions/defaultLicensesField' }
+      type:
+        type: string
+        enum:
+          - radio
+          - checkbox
+      # For overriding the base config with a list of licenses
+      licenses: { type: 'null' }
+      licenseGroups:
+        type: array
+        items:
+          allOf:
+            - $ref: '#/definitions/licenseGroup'
+            - type: object
+              additionalProperties: false
+              properties:
+                head: { type: string }
+                subhead: { type: string }
+                special: { type: string }
+                # # # # #
+                licenses: { }
+                licenseWikitext: { }
+                licenseSeparator: { }
+                wrapper: { }
+
+  # The "display" section of the config
+  displaySection:
+    type: object
+    additionalProperties: false
+    properties:
+      headerLabel: { type: string }
+      thanksLabel: { type: string }
+      homeButton:
+        type: object
+        additionalProperties: false
+        properties:
+          label: { type: string }
+          target: { type: string }
+      beginButton:
+        type: object
+        additionalProperties: false
+        properties:
+          label: { type: string }
+          target: { type: string }
+
+  # Base for fields in the details step
+  fieldBase:
+    type: object
+    properties:
+      # Not defined here:
+      #  - type: it's defined as enum in each field type
+      #  - default: has a different datatype in each field type
+      # No required fields because campaigns can modify only specific
+      # parameters of fields that exist in the main config.
+      type: { type: string }
+      order: { type: integer }
+      label: { type: string }
+      help: { type: string }
+      required:
+        type: string
+        enum:
+          - required
+          - recommended
+          - optional
+      hidden: { type: boolean }
+      enabled: { type: boolean }
+      auxiliary: { type: boolean }
+
+  fieldText:
+    allOf:
+      - $ref: '#/definitions/fieldBase'
+      - type: object
+        properties:
+          type:
+            enum:
+              - text
+              # Multiline input
+              - textarea
+              # Title field is very similar
+              # We could separate it for more validation, but meh
+              - title
+          default: { type: string }
+          minLength: { type: integer }
+          maxLength: { type: integer }
+          autoFill:
+            type: boolean
+          # Acknowledge the fieldBase properties so that we can disallow
+          # additional properties.
+          order: { }
+          label: { }
+          help: { }
+          required: { }
+          hidden: { }
+          enabled: { }
+          auxiliary: { }
+        additionalProperties: false
+
+  fieldSingleLang:
+    allOf:
+      - $ref: '#/definitions/fieldBase'
+      - type: object
+        properties:
+          type:
+            enum:
+              # textarea + language choice
+              - singlelang
+          default:
+            type: object
+            properties:
+              language: { type: string }
+              text: { type: string }
+            required:
+              - language
+              - text
+          minLength: { type: integer }
+          maxLength: { type: integer }
+          autoFill:
+            type: boolean
+          # # # # #
+          order: { }
+          label: { }
+          help: { }
+          required: { }
+          hidden: { }
+          enabled: { }
+          auxiliary: { }
+        additionalProperties: false
+
+  fieldMultiLang:
+    allOf:
+      - $ref: '#/definitions/fieldBase'
+      - type: object
+        properties:
+          type:
+            enum:
+              # Multi textarea + language choice
+              - multilang
+          default:
+            type: array
+            items:
+              type: object
+              properties:
+                language: { type: string }
+                text: { type: string }
+              required:
+                - language
+                - text
+          minLength: { type: integer }
+          maxLength: { type: integer }
+          autoFill:
+            type: boolean
+          # # # # #
+          order: { }
+          label: { }
+          help: { }
+          required: { }
+          hidden: { }
+          enabled: { }
+          auxiliary: { }
+        additionalProperties: false
+
+  fieldSelect:
+    allOf:
+      - $ref: '#/definitions/fieldBase'
+      - type: object
+        properties:
+          # JSON Schema Draft 4 does not support const values, so just use an enum
+          type:
+            enum:
+              - select
+          default: { type: string }
+          options:
+            type: object
+            additionalProperties: { type: string }
+          # # # # #
+          order: { }
+          label: { }
+          help: { }
+          required: { }
+          hidden: { }
+          enabled: { }
+          auxiliary: { }
+        additionalProperties: false
+        required:
+          - options
+
+  fieldLicense:
+    allOf:
+      - $ref: '#/definitions/fieldBase'
+      - type: object
+        properties:
+          type:
+            enum:
+              - license
+          # # # # #
+          order: { }
+          label: { }
+          help: { }
+          required: { }
+          hidden: { }
+          enabled: { }
+          auxiliary: { }
+        additionalProperties: false
+
+  fieldDate:
+    allOf:
+      - $ref: '#/definitions/fieldBase'
+      - type: object
+        properties:
+          type:
+            enum:
+              - date
+          default: { type: string }
+          autoFill:
+            type: boolean
+          # # # # #
+          order: { }
+          label: { }
+          help: { }
+          required: { }
+          hidden: { }
+          enabled: { }
+          auxiliary: { }
+        additionalProperties: false
+
+  fieldCategories:
+    allOf:
+      - $ref: '#/definitions/fieldBase'
+      - type: object
+        properties:
+          type:
+            enum:
+              - categories
+          missingWikitext:
+            oneOf:
+              - { type: string }
+              - { type: 'null' }
+          default:
+            type: array
+            items: { type: string }
+          hiddenDefault:
+            type: array
+            items: { type: string }
+          # # # # #
+          order: { }
+          label: { }
+          help: { }
+          required: { }
+          hidden: { }
+          enabled: { }
+          auxiliary: { }
+        additionalProperties: false
+
+  fieldLocation:
+    allOf:
+      - $ref: '#/definitions/fieldBase'
+      - type: object
+        properties:
+          type:
+            enum:
+              - location
+          fields:
+            type: array
+            items:
+              type: string
+              uniqueItems: true
+              enum:
+                - latitude
+                - longitude
+                - heading
+                - altitude
+          default:
+            type: object
+            properties:
+              latitude:
+                type: number
+                minimum: -90
+                maximum: 90
+              longitude:
+                type: number
+                minimum: -180
+                maximum: 180
+              heading:
+                type: number
+                minimum: 0
+                maximum: 360
+              altitude:
+                type: number
+          autoFill:
+            type: boolean
+          # # # # #
+          order: { }
+          label: { }
+          help: { }
+          required: { }
+          hidden: { }
+          enabled: { }
+          auxiliary: { }
+        additionalProperties: false
+
+################################
+#### The main config object ####
+################################
+type: object
+additionalProperties: false
+properties:
+  # General campaign properties
+  title: { type: string }
+  description: { type: string }
+  enabled: { type: boolean }
+  start: { type: string }
+  end: { type: string }
+
+  # Tracking category – only disabling the auto-adding it is allowed here
+  trackingCategory:
+    autoAdd: { type: boolean }
+
+  # Field definitions
+  fields:
+    type: object
+    additionalProperties:
+      oneOf:
+        # null can be used for "unsetting" fields previously defined in the main config
+        - type: 'null'
+        - $ref: '#/definitions/fieldText'
+        - $ref: '#/definitions/fieldSingleLang'
+        - $ref: '#/definitions/fieldMultiLang'
+        - $ref: '#/definitions/fieldSelect'
+        - $ref: '#/definitions/fieldDate'
+        - $ref: '#/definitions/fieldCategories'
+        - $ref: '#/definitions/fieldLocation'
+
+  # Field -> content (wikitext) transformation
+  content:
+    type: object
+    properties:
+      titleField: { type: string }
+      captionField: { type: string }
+      wikitext: { type: string }
+      prepend: { type: string }
+      append: { type: string }
+
+  # Labels and URLs on things
+  display: { $ref: '#/definitions/displaySection' }
+
+  # License groups
+  licensing:
+    type: object
+    additionalProperties: false
+    properties:
+      enabled: { type: boolean }
+      defaultType:
+        type: string
+        enum:
+          - ownWork
+          - thirdParty
+          - choice
+      showTypes:
+        type: array
+        items:
+          type: string
+          enum:
+            - ownWork
+            - thirdParty
+      ownWork:
+        oneOf:
+          - $ref: '#/definitions/licensingList'
+          - $ref: '#/definitions/licensingGroups'
+      thirdParty:
+        oneOf:
+          - $ref: '#/definitions/licensingList'
+          - $ref: '#/definitions/licensingGroups'
+
+  # The tutorial
+  tutorial:
+    type: object
+    additionalProperties: false
+    properties:
+      enabled: { type: boolean }
+      skip: { type: boolean }
+      wikitext: { type: string }
+
+  # (before|while|after)Active modifiers
+  beforeActive:
+    type: object
+    additionalProperties: false
+    properties:
+      display: { $ref: '#/definitions/displaySection' }
+
+  whileActive:
+    type: object
+    additionalProperties: false
+    properties:
+      display: { $ref: '#/definitions/displaySection' }
+
+  afterActive:
+    type: object
+    additionalProperties: false
+    properties:
+      display: { $ref: '#/definitions/displaySection' }
+
+required:
+  - enabled

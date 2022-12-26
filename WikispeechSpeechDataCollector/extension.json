@@ -1,0 +1,131 @@
+{
+	"name": "Wikispeech Speech Data Collector",
+	"version": "0.1.0",
+	"author": [
+		"Sebastian Berlin",
+		"André Costa",
+		"Karl Wettin"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:WikispeechSpeechDataCollector",
+	"namemsg": "wikispeech-sdc",
+	"descriptionmsg": "wikispeech-sdc-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"manifest_version": 2,
+	"MessagesDirs": {
+		"WikispeechSpeechDataCollector": [
+			"i18n",
+			"i18n/api"
+		]
+	},
+	"requires": {
+		"MediaWiki": ">= 1.35.3"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\WikispeechSpeechDataCollector\\": "includes/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\WikispeechSpeechDataCollector\\Tests\\": "tests/phpunit/"
+	},
+	"SpecialPages": {
+		"RecordSpeech": "MediaWiki\\WikispeechSpeechDataCollector\\Specials\\SpecialRecordSpeech"
+	},
+	"ExtensionMessagesFiles": {
+		"WikispeechSpeechDataCollectorAlias": "WikispeechSpeechDataCollector.alias.php",
+		"WikispeechSpeechDataCollectorNamespaces": "WikispeechSpeechDataCollector.namespaces.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "WikispeechSpeechDataCollector/modules"
+	},
+	"ResourceModules": {
+		"ext.wikispeech-sdc.specialRecordSpeech": {
+			"packageFiles": [
+				"ext.wikispeech-sdc.specialRecordSpeech.js",
+				"ext.wikispeech-sdc.recorder.js"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"LinguaRecorder"
+			],
+			"messages": [
+				"wikispeech-sdc-status-ready",
+				"wikispeech-sdc-status-listening",
+				"wikispeech-sdc-status-recording"
+			]
+		},
+		"ext.wikispeech-sdc.specialRecordSpeech.styles": {
+			"styles": [
+				"ext.wikispeech-sdc.specialRecordSpeech.css"
+			]
+		},
+		"LinguaRecorder": {
+			"scripts": [
+				"lib/LinguaRecorder/src/LinguaRecorder.js",
+				"lib/LinguaRecorder/src/AudioRecord.js"
+			]
+		}
+	},
+	"QUnitTestModule": {
+		"localBasePath": ".",
+		"remoteExtPath": "WikispeechSpeechDataCollector",
+		"packageFiles": [
+			"tests/qunit/ext.wikispeech-sdc.recorder.test.js",
+			"modules/ext.wikispeech-sdc.recorder.js"
+		]
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "db",
+		"ApiBeforeMain": "api",
+		"MediaWikiServices": "mcr"
+	},
+	"HookHandlers": {
+		"api": {
+			"class": "MediaWiki\\WikispeechSpeechDataCollector\\Hooks\\ApiHooks",
+			"services": [
+				"ConfigFactory"
+			]
+		},
+		"db": {
+			"class": "MediaWiki\\WikispeechSpeechDataCollector\\Hooks\\DatabaseHooks"
+		},
+		"mcr": {
+			"class": "MediaWiki\\WikispeechSpeechDataCollector\\Hooks\\McrHooks"
+		}
+	},
+	"ConfigRegistry": {
+		"wikispeech-sdc": "GlobalVarConfig::newInstance"
+	},
+	"APIModules": {
+		"wikispeech-sdc-crud": {
+			"class": "\\MediaWiki\\WikispeechSpeechDataCollector\\Api\\ApiCrud",
+			"services": [
+				"DBLoadBalancer",
+				"RevisionStore"
+			]
+		}
+	},
+	"AvailableRights": [
+		"wikispeech-sdc-record",
+		"wikispeech-sdc-speech-recording"
+	],
+	"GroupPermissions": {
+		"*": {
+			"wikispeech-sdc-record": true,
+			"wikispeech-sdc-speech-recording": true
+		}
+	},
+	"namespaces": [
+		{
+			"id": 5770,
+			"constant": "NS_SPEECH_RECORDING",
+			"name": "Speech_recording",
+			"protection": "wikispeech-sdc-speech-recording"
+		},
+		{
+			"id": 5771,
+			"constant": "NS_SPEECH_RECORDING_TALK",
+			"name": "Speech_recording_talk"
+		}
+	]
+}

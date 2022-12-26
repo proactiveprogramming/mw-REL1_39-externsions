@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga",
+			"WikiPhoenix"
+		]
+	},
+	"fileexporter": "Filexporterare",
+	"fileexporter-desc": "Enkel exportering av filer till en annan wiki",
+	"fileexporter-text": "Exportera fil",
+	"fileexporter-to-wikimedia-commons": "Exportera till Wikimedia Commons"
+}

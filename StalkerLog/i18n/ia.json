@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"stalkerlog-desc": "Adde [[Special:Log/stalkerlog|un registro]] de apertura e clausura de sessiones de usatores",
+	"stalkerlog-log-login": "ha aperite session.",
+	"stalkerlog-log-logout": "claudeva le session.",
+	"stalkerlog-log-type": "Registro de identification de usatores",
+	"stalkerlog-log-text": "Isto es un registro de apertura e clausura del sessiones de usatores.",
+	"action-stalkerlog-view-log": "vider registros de apertura e clausura del sessiones de usatores",
+	"right-stalkerlog-view-log": "Vider registros de apertura e clausura del sessiones de usatores"
+}

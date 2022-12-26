@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Strainu"
+		]
+	},
+	"gwtoolset": "GWToolset",
+	"right-gwtoolset": "Folosiți GWToolset",
+	"action-gwtoolset": "folosiți GWToolset",
+	"gwtoolset-summary-heading": "Rezumat",
+	"gwtoolset-cancel": "Revocare",
+	"gwtoolset-save": "Salvare"
+}

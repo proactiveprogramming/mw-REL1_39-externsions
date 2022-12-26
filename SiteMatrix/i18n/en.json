@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"sitematrix": "List of wikis",
+	"sitematrix-summary": "This special page lists all wikis in this wiki farm.",
+	"sitematrix-desc": "Displays a [[Special:SiteMatrix|list of wikis]]",
+	"sitematrix-language": "Language",
+	"sitematrix-project": "Name of project, interproject link and interwiki link",
+	"sitematrix-others": "Other projects",
+	"sitematrix-other-projects": "Project",
+	"sitematrix-other-projects-language": "Language",
+	"sitematrix-total": "'''Total count: $1'''",
+	"sitematrix-sitetotal": "Total",
+	"sitematrix-closed": "no write access, full read access",
+	"sitematrix-private": "read and write access restricted",
+	"sitematrix-fishbowl": "restricted write access, full read access",
+	"sitematrix-nonglobal": "public but registration required"
+}

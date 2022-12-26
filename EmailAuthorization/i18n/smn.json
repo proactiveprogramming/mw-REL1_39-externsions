@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"emailauthorization-config-label-email": "Šleđgâpostâčujottâs",
+	"emailauthorization-config-label-username": "Kevtteenommâ",
+	"emailauthorization-config-label-realname": "Olmâ nommâ",
+	"emailauthorization-config-label-userpage": "Kevtteesijđo",
+	"emailauthorization-config-button-next": "Čuávuvâš",
+	"emailauthorization-config-button-search": "Uusâ",
+	"emailauthorization-config-button-add": "Lasseet",
+	"emailauthorization-request-label-email": "Šleđgâpostâčujottâs",
+	"emailauthorization-approve-label-email": "Šleđgâpostâčujottâs",
+	"emailauthorization-approve-button-next": "Čuávuvâš"
+}

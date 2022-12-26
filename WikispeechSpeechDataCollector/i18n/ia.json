@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"wikispeech-sdc-desc": "Un utensile pro registrar, revider e annotar voces parlate.",
+	"right-wikispeech-sdc-record": "Registrar voce",
+	"action-wikispeech-sdc-record": "registrar voce",
+	"recordspeech": "Registrar parola",
+	"wikispeech-sdc-record": "Registrar",
+	"wikispeech-sdc-save": "Salveguardar",
+	"wikispeech-sdc-skip": "Saltar",
+	"right-wikispeech-sdc-speech-recording": "Modificar le registration de parola",
+	"action-wikispeech-sdc-speech-recording": "modificar le registration de parola",
+	"right-wikispeech-sdc-speech-recording-talk": "Discuter le registration de parola",
+	"action-wikispeech-sdc-speech-recording-talk": "discuter le registration de parola",
+	"wikispeech-sdc-status-starting": "Initialisa",
+	"wikispeech-sdc-status-ready": "Preste",
+	"wikispeech-sdc-status-listening": "Ascolta",
+	"wikispeech-sdc-status-recording": "Registra"
+}

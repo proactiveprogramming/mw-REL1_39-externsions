@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"wikispeech-sdc": "Wikispeech-taldatasamlare",
+	"wikispeech-sdc-desc": "Ett verktyg för att spela in, granska och kommentera på talade röster.",
+	"right-wikispeech-sdc-record": "Spela in en röst",
+	"action-wikispeech-sdc-record": "Spela in en röst",
+	"recordspeech": "Spela in tal",
+	"wikispeech-sdc-record": "Spela in",
+	"wikispeech-sdc-save": "Spara",
+	"wikispeech-sdc-skip": "Hoppa över"
+}

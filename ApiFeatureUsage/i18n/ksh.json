@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"apifeatureusage": "Eijeschaffte beim Jebruch vun de <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Application Programming Interface\">API</i>",
+	"apifeatureusage-desc": "Holl en Zersammevaßong vun de faßjehallde Eijeschaffte beim Jebruch vun de <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Application Programming Interface\">API</i> för ene bschtemmpte Brauser.",
+	"apifeatureusage-elasticsearch-error": "Ene Fähler em <i lang=\"en\" xml:lang=\"en\" dir=\"rtl\" title=\"„elastesch udder beeschsahm Söhke“\">Elasticsearch</i>\nes opjetrodde: $1",
+	"apifeatureusage-legend": "Eijeschaffte beim Jebruch vun de <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Application Programming Interface\">API</i>",
+	"apifeatureusage-agent-label": "Dä Brauser:",
+	"apifeatureusage-submit": "Dahte opnämme",
+	"apifeatureusage-no-indexes": "Mer han kein Dahte em aanjejovve Berät vum Dattom.",
+	"apifeatureusage-missing-indexes": "Mer han kein Dahte för en Deijl vum aanjejovve Berät vum Dattom.",
+	"apifeatureusage-warnings": "Opjepaß: $1",
+	"apifeatureusage-column-feature": "Eijeschaff",
+	"apifeatureusage-column-date": "Dattom",
+	"apifeatureusage-column-uses": "Wi öff jebruch?"
+}

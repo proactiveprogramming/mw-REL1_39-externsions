@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"apihelp-cspostcomment-param-wikitext": "Vikibesedilo za komentar.",
+	"apihelp-cseditcomment-param-wikitext": "Vikibesedilo za komentar.",
+	"apihelp-cspostreply-param-wikitext": "Vikibesedilo za odgovor.",
+	"apihelp-cseditreply-param-wikitext": "Vikibesedilo za odgovor.",
+	"commentstreams-api-error-post-parentpagedoesnotexist": "Komentar, na katerega odgovarjate, ne obstaja.",
+	"commentstreams-buttontext-reply": "Odgovori",
+	"commentstreams-buttontooltip-reply": "odgovori",
+	"commentstreams-buttontooltip-edit": "uredi",
+	"commentstreams-buttontooltip-delete": "izbriši",
+	"commentstreams-buttontooltip-collapse": "strni",
+	"commentstreams-buttontooltip-expand": "razširi",
+	"commentstreams-buttontooltip-submit": "objavi",
+	"commentstreams-buttontooltip-cancel": "prekliči",
+	"commentstreams-dialog-buttontext-cancel": "Prekliči",
+	"commentstreams-dialog-buttontext-yes": "Da",
+	"commentstreams-dialog-buttontext-no": "Ne",
+	"notification-link-label-commentstreams-comment-on-watched-page": "Obišči komentar",
+	"notification-link-label-commentstreams-reply-on-watched-page": "Obišči odgovor",
+	"notification-link-label-commentstreams-reply-to-watched-comment": "Obišči odgovor",
+	"commentstreams-allcomments-label-wikitext": "Besedilo",
+	"commentstreams-allcomments-label-commenttitle": "Naslov",
+	"commentstreams-allcomments-label-author": "Avtor"
+}

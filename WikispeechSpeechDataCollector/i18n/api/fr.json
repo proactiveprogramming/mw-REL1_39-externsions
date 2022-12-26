@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "API générique d’accès à l’objet domaine persistant",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Échec de désérialisation du JSON de la transaction.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Échec de désérialisation de la transaction.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Échec d’exécution de la transaction.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Échec de sérialisation de la réponse.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Créer une unique nouvelle requête Utilisateur.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Lire une unique requête Utilisateur.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Supprimer une unique requête Utilisateur."
+}

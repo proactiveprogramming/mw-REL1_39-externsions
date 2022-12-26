@@ -1,0 +1,19 @@
+{
+	"extends": "stylelint-config-wikimedia",
+	"rules": {
+		"color-named": null,
+		"function-url-no-scheme-relative": [
+			true,
+			{
+				"severity": "warning"
+			}
+		],
+		"no-descending-specificity": [
+			true,
+			{
+				"severity": "warning"
+			}
+		],
+		"declaration-property-unit-disallowed-list": null
+	}
+}

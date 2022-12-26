@@ -1,0 +1,49 @@
+{
+	"name": "Duplicator",
+	"version": "1.5.0",
+	"author": [
+		"Rob Church",
+		"Vitaliy Filippov"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Duplicator",
+	"descriptionmsg": "duplicator-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"AvailableRights": [
+		"duplicate"
+	],
+	"GroupPermissions": {
+		"user": {
+			"duplicate": true
+		}
+	},
+	"SpecialPages": {
+		"Duplicator": "SpecialDuplicator"
+	},
+	"MessagesDirs": {
+		"Duplicator": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"DuplicatorAlias": "Duplicator.alias.php"
+	},
+	"AutoloadClasses": {
+		"DuplicatorHooks": "includes/DuplicatorHooks.php",
+		"SpecialDuplicator": "includes/specials/SpecialDuplicator.php"
+	},
+	"Hooks": {
+		"SidebarBeforeOutput": "DuplicatorHooks::efDuplicatorNavigation",
+		"SkinTemplateToolboxEnd": "DuplicatorHooks::efDuplicatorToolbox"
+	},
+	"config": {
+		"DuplicatorRevisionLimit": {
+			"description": "At most this number of recent revisions will be duplicated.",
+			"value": 250
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,93 @@
+{
+	"name": "Favorites",
+	"version": "1.1.3",
+	"author": "Jeremy Lemley",
+	"url": "https://www.mediawiki.org/wiki/Extension:Favorites",
+	"descriptionmsg": "favorites-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
+	"APIModules": {
+		"favorite": "ApiFavorite"
+	},
+	"SpecialPages": {
+		"Favoritelist": "SpecialFavoritelist"
+	},
+	"MessagesDirs": {
+		"Favorites": [
+			"i18n"
+		]
+	},
+	"Actions": {
+		"favorite": "FavoriteAction",
+		"unfavorite": "UnfavoriteAction"
+	},
+	"ExtensionMessagesFiles": {
+		"FavoritesAlias": "SpecialFavorites.alias.php"
+	},
+	"AutoloadClasses": {
+		"Favorites": "includes/Favorites.php",
+		"BaseAction": "includes/BaseAction.php",
+		"FavoriteAction": "includes/FavoriteAction.php",
+		"UnfavoriteAction": "includes/UnfavoriteAction.php",
+		"SpecialFavoritelist": "includes/specials/SpecialFavoritelist.php",
+		"ViewFavorites": "includes/specials/SpecialFavoritelist.php",
+		"FavoritelistEditor": "includes/FavoritelistEditor.php",
+		"FavParser": "includes/FavParser.php",
+		"FavoritesHooks": "includes/FavoritesHooks.php",
+		"ApiFavorite": "includes/api/ApiFavorite.php"
+	},
+	"ResourceModules": {
+		"ext.favorites": {
+			"scripts": [
+				"js/page.favorite.ajax.js",
+				"js/favorites.js"
+			],
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.util",
+				"user.options"
+			],
+			"messages": [
+				"favoriteerrortext",
+				"tooltip-ca-favorite",
+				"tooltip-ca-unfavorite",
+				"favoriteing",
+				"unfavoriteing",
+				"favoritethispage",
+				"unfavoritethispage",
+				"favorite",
+				"unfavorite",
+				"addedfavoritetext",
+				"removedfavoritetext"
+			]
+		},
+		"ext.favorites.style": {
+			"styles": "css/favorites.css",
+			"position": "top"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Favorites/resources"
+	},
+	"Hooks": {
+		"SkinTemplateNavigation": "FavoritesHooks::onSkinTemplateNavigation",
+		"BeforePageDisplay": "FavoritesHooks::onBeforePageDisplay",
+		"ParserFirstCallInit": "FavoritesHooks::onParserFirstCallInit",
+		"TitleMoveComplete": "FavoritesHooks::onTitleMoveComplete",
+		"ArticleDeleteComplete": "FavoritesHooks::onArticleDeleteComplete",
+		"PersonalUrls": "FavoritesHooks::onPersonalUrls",
+		"LoadExtensionSchemaUpdates": "FavoritesHooks::onLoadExtensionSchemaUpdates"
+	},
+	"config": {
+		"FavoritesPersonalURL": {
+			"value": false
+		},
+		"UseIconFavorite": {
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

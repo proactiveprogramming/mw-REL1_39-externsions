@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"wsu-wsu-error-unsupportedcommand": "Ukendt kommando.",
+	"wsu-command-P": "Egenskab",
+	"wsu-batchtable-command": "Kommando",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Værdi"
+}

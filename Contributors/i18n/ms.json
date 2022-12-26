@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Tofeiku"
+		]
+	},
+	"contributors": "Penyumbang",
+	"contributors-desc": "Membuat intisari penyumbang utama sesuatu laman",
+	"contributors-toolbox": "Penyumbang laman",
+	"contributors-legend": "Senaraikan penyumbang utama kepada laman",
+	"contributors-target": "Tajuk:",
+	"contributors-submit": "Tunjukkan",
+	"contributors-subtitle": "Penyumbang utama kepada $1",
+	"contributors-badtitle": "Tajuk tidak sah.",
+	"contributors-nosuchpage": "Laman $1 tidak wujud."
+}

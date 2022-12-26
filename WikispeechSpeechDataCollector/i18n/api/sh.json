@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "Priložnik za generički postojani pristup objektu domene.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Deserijalizacija transakcije JSON nije uspjela.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Deserijalizacija transakcije nije uspjela.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Izvršenje transakcije nije uspjelo.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Serijalizacija odgovora nije uspjela."
+}

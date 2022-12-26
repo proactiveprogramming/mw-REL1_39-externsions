@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lakejason0"
+		]
+	},
+	"bs-socialarticleactions-type-filesave": "文件编辑",
+	"bs-socialarticleactions-type-filecreate": "文件创建",
+	"bs-socialarticleactions-type-filedelete": "文件删除"
+}

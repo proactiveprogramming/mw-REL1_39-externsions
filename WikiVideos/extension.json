@@ -1,0 +1,84 @@
+{
+	"name": "WikiVideos",
+	"version": "4.2.1",
+	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
+	"url": "https://www.mediawiki.org/wiki/Extension:WikiVideos",
+	"descriptionmsg": "wikivideos-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "tag",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"MessagesDirs": {
+		"WikiVideos": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"WikiVideosHooks": "WikiVideosHooks.php",
+		"WikiVideosFactory": "WikiVideosFactory.php",
+		"WikiVideosGallery": "WikiVideosGallery.php"
+	},
+	"Hooks": {
+		"BeforeInitialize": "WikiVideosHooks::onBeforeInitialize",
+		"BeforePageDisplay": "WikiVideosHooks::onBeforePageDisplay",
+		"GalleryGetModes": "WikiVideosHooks::onGalleryGetModes"
+	},
+	"ResourceModules": {
+		"ext.WikiVideos": {
+			"scripts": "WikiVideos.js",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.WikiVideos.styles": {
+			"styles": "WikiVideos.css",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "WikiVideos"
+	},
+	"config": {
+		"GoogleCloudCredentials": {
+			"value": ""
+		},
+		"WikiVideosUserAgent": {
+			"value": "WikiVideos/4.0 (https://www.mediawiki.org/wiki/Extension:WikiVideos)"
+		},
+		"WikiVideosMinSize": {
+			"value": 200
+		},
+		"WikiVideosMaxSize": {
+			"value": 1280
+		},
+		"WikiVideosControls": {
+			"value": true
+		},
+		"WikiVideosAutoplay": {
+			"value": false
+		},
+		"WikiVideosChapters": {
+			"value": true
+		},
+		"WikiVideosCaptions": {
+			"value": false
+		},
+		"WikiVideosVoiceLanguage": {
+			"value": ""
+		},
+		"WikiVideosVoiceGender": {
+			"value": ""
+		},
+		"WikiVideosVoiceName": {
+			"value": ""
+		}
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

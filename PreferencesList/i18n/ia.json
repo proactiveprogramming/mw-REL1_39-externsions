@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"preferenceslist-desc": "Genera un lista de tote le parametros de usator pro un preferentia particular",
+	"preferenceslist-preferenceslist": "Lista de preferentias",
+	"preferenceslist-preferenceslist-intro": "Hic infra se trova un lista de preferentias. Elige un o plus de illos pro vider un lista de tote le usatores con lor preferentia.",
+	"preferenceslist": "Lista de preferentias",
+	"action-preferenceslist": "listar le preferentias de tote le usatores",
+	"preferenceslist-csv": "Discargar como CSV",
+	"preferenceslist-nofields": "Nulle campo ha essite seligite.",
+	"right-preferenceslist": "Aperir le pagina Special:PreferencesList"
+}

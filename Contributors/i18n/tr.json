@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"Hedda",
+			"Karduelis",
+			"MuratTheTurkish",
+			"Rapsar",
+			"Sayginer",
+			"Srhat",
+			"Suelnur",
+			"Vito Genovese"
+		]
+	},
+	"contributors": "Katkıda bulunanlar",
+	"contributors-desc": "Sayfaya çok sık katkıda bulunanları özetler",
+	"contributors-toolbox": "Sayfaya katkıda bulunanlar",
+	"contributors-legend": "Bir sayfanın temel katkıda bulunanlarını listele",
+	"contributors-target": "Başlık:",
+	"contributors-submit": "Göster",
+	"contributors-subtitle": "$1 sayfasına temel katkıda bulunanlar",
+	"contributors-badtitle": "Geçersiz başlık.",
+	"contributors-nosuchpage": "$1 sayfası mevcut değil.",
+	"contributors-filterip": "IP adreslerini gizle",
+	"contributors-name": "Kullanıcı adı",
+	"contributors-revisions": "Sürüm sayısı",
+	"contributors-first-edit": "İlk değişiklik tarihi",
+	"contributors-last-edit": "Son değişiklik tarihi",
+	"contributors-add-subpages": "Alt sayfa ekle",
+	"apihelp-query+contributors-example-1": "Anasayfaya katkıda bulunanları göster"
+}

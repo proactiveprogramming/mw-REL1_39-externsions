@@ -1,0 +1,48 @@
+{
+	"name": "mediawiki/wiki-to-ldap",
+	"extra": {
+		"installer-name": "WikiToLDAP"
+	},
+	"license": "GPL-3.0+",
+	"type": "mediawiki-extension",
+	"homepage": "https://www.mediawiki.org/wiki/Extension:WikiToLDAP",
+	"description": "Provides a way to migrate wiki users to LDAP-backed users",
+	"keywords": [
+		"extension",
+		"wiki",
+		"mediawiki",
+		"ldap"
+	],
+	"authors": [
+		{
+			"name": "Mark A. Hershberger",
+			"email": "mah@nichework.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"ext-mbstring": "*"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "38.0.0",
+		"mediawiki/mediawiki-phan-config": "0.11.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "0.5.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.1"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phan": [
+			"phan -m text --no-color --no-progress-bar | sed 's, ,:,'"
+		],
+		"phpcs": "phpcs -sp --cache"
+	}
+}

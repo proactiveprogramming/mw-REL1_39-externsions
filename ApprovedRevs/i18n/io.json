@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"approvedrevs-approve": "aprobar",
+	"approvedrevs-revisionnumber": "revizuro $1",
+	"approvedrevs-notlatestfiles": "Arkivi quin lua revizo aprobata ne esas la lasta"
+}

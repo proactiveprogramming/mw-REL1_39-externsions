@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Guycn2"
+		]
+	},
+	"apifeatureusage": "שימוש באפשרויות של API",
+	"apifeatureusage-desc": "קבלת סיכום של שימוש באפשרויות API רשומות עבור סוכן לקוח",
+	"apifeatureusage-elasticsearch-error": "שגיאת Elasticsearch‏: $1",
+	"apifeatureusage-legend": "שימוש באפשרויות של API",
+	"apifeatureusage-agent-label": "סוכן לקוח:",
+	"apifeatureusage-startdate-label": "תאריך תחילה:",
+	"apifeatureusage-enddate-label": "תאריך סיום:",
+	"apifeatureusage-submit": "אחזור נתונים",
+	"apifeatureusage-no-indexes": "אין נתונים זמינים לטוח התאריכים שצוין",
+	"apifeatureusage-missing-indexes": "אין נתונים זמינים לחלק מטווח התאריכים שצוין.",
+	"apifeatureusage-warnings": "אזהרה: $1",
+	"apifeatureusage-column-feature": "אפשרות",
+	"apifeatureusage-column-date": "תאריך",
+	"apifeatureusage-column-uses": "שימושים",
+	"apifeatureusage-deprecation-help": "באפשרותך להשתמש בדף [[Special:ApiFeatureUsage]] כדי לצפות בשימוש של היישום שלך באפשרויות מיושנות."
+}

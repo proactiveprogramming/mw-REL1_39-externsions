@@ -1,0 +1,54 @@
+{
+	"name": "ApiFeatureUsage",
+	"version": "1.0",
+	"author": "Brad Jorsch",
+	"url": "https://www.mediawiki.org/wiki/Extension:ApiFeatureUsage",
+	"descriptionmsg": "apifeatureusage-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"Elastica": "*"
+		}
+	},
+	"ConfigRegistry": {
+		"ApiFeatureUsage": "GlobalVarConfig::newInstance"
+	},
+	"SpecialPages": {
+		"ApiFeatureUsage": "MediaWiki\\Extension\\ApiFeatureUsage\\SpecialApiFeatureUsage"
+	},
+	"APIMetaModules": {
+		"featureusage": "MediaWiki\\Extension\\ApiFeatureUsage\\ApiQueryFeatureUsage"
+	},
+	"MessagesDirs": {
+		"ApiFeatureUsage": [
+			"i18n",
+			"i18n/api"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ApiFeatureUsageAlias": "ApiFeatureUsage.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ApiFeatureUsage\\": "includes/"
+	},
+	"ResourceModules": {
+		"ext.apifeatureusage": {
+			"styles": "ext.apifeatureusage.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "ApiFeatureUsage/modules"
+	},
+	"Hooks": {
+		"ApiDeprecationHelp": "MediaWiki\\Extension\\ApiFeatureUsage\\Hooks::onApiDeprecationHelp"
+	},
+	"config": {
+		"ApiFeatureUsageQueryEngineConf": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}

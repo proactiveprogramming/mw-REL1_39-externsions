@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ashok modhvadia",
+			"KartikMistry"
+		]
+	},
+	"contributors": "યોગદાનકર્તાઓ",
+	"contributors-desc": "પાનામાં મુખ્ય યોગદાનકર્તાઓને સંક્ષિપ્તમાં દર્શાવો",
+	"contributors-toolbox": "મુખ્ય યોગદાનકર્તાઓ",
+	"contributors-legend": "પાનાનાં છેલ્લા મુખ્ય યોગદાનકર્તાઓ",
+	"contributors-target": "મથાળું:",
+	"contributors-submit": "બતાવો",
+	"contributors-subtitle": "$1 નાં મુખ્ય યોગદાનકર્તાઓ",
+	"contributors-badtitle": "અમાન્ય મથાળું.",
+	"contributors-nosuchpage": "પાનું $1 ઉપલબ્ધ નથી."
+}

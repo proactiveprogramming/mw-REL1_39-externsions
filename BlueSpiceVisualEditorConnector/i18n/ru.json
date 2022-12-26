@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alexander Yukal",
+			"Kareyac",
+			"Katunchik",
+			"Megakott",
+			"Nk88",
+			"Okras",
+			"Vlad5250"
+		]
+	},
+	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "Отменить изменения",
+	"bs-visualeditorconnector-cancel-edit": "Отменить изменения. Несохраненные изменения будут отменены",
+	"bs-visualeditor-nsm-label": "Визуальный редактор",
+	"bs-visualeditorconnector-inspector-tab-advanced-name": "Дополнительно",
+	"bs-visualeditorconnector-dialog-media-meta-link": "Ссылка на страницу описания файла",
+	"bs-vec-dialog-action-safe": "Отмена",
+	"bs-visualeditor-linkcontext-label-change": "Изменить метку",
+	"bs-visualeditor-linkcontext-label-label": "Метка",
+	"bs-vec-insert-softhyphen-title": "Мягкий дефис",
+	"bs-vec-insert-line-break-title": "Разрыв строки (<br />)"
+}

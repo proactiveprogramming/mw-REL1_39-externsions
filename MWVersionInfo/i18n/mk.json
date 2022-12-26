@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"mwversioninfo-desc": "Раководење со верзиски информации за МедијаВики",
+	"apihelp-mwversioninfo-summary": "Дава верзиски информации за разграноците на МедијаВики",
+	"apihelp-mwversioninfo-param-version": "Верзија на МедијаВики",
+	"apihelp-mwversioninfo-example": "Дава информации за МедијаВики 1.27"
+}

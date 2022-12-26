@@ -1,0 +1,30 @@
+{
+	"name": "BaseHooks",
+	"version": "0.1.0",
+	"author": [
+		"Victor Porton"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:BaseHooks",
+	"descriptionmsg": "basehooks-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"MessagesDirs": {
+		"BaseHooks": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"BaseHooksHooks": "BaseHooksHooks.php"
+	},
+	"Hooks": {
+		"SkinAfterBottomScripts": "BaseHooksHooks::onSkinAfterBottomScripts"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "BaseHooks"
+	},
+	"manifest_version": 2
+}

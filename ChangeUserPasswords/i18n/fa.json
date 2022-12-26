@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beginneruser",
+			"Jeeputer",
+			"Mahdy Saffar"
+		]
+	},
+	"changeuserpasswords": "تغییر گذرواژهٔ کاربران",
+	"changeuserpassword-desc": "این یک افزونه برای تغییر گذرواژهٔ کاربران، به‌جز تعدادی که توسط مدیر مشخص می‌شود است.",
+	"changeuserpassword-pagename": "تغییر گذرواژهٔ کاربر",
+	"changeuserpassword-topheader": "لطفاً نام کاربری کاربرانی که رمز عبور آن‌ها باید تغییر کند را انتخاب کنید. تمام کاربرن به‌طور پیش‌فرض انتخاب شده‌اند. لطفاً نام‌های کاربری که نمی‌خواهید رمز عبورشان را تغییر دهید را از حالت انتخاب‌شده درآورید.",
+	"changeuserpassword-success": "گذرواژه‌های کاربری تغییر یافت!",
+	"changeuserpassword-title": "تغییر گذرواژه‌های کاربری",
+	"changeuserpassword-intro": "این یک افزونه برای تغییر گذرواژهٔ کاربران، به‌جز تعدادی که توسط مدیر مشخص می‌شود است.",
+	"action-changeuserpasswords": "تغییر گذرواژه‌های کاربری",
+	"right-changeuserpasswords": "تغییر گذرواژه‌های کاربری"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"onlyrecentrecentchanges-desc": "Monstrar paginas in le lista de modificationes recente solmente un vice quando illos ha essite modificate recentemente",
+	"onlyrecentrecentchanges-option": "Monstrar solmente le modification le plus recente de qualcunque pagina modificate (in le limites de ''{{int:prefs-displayrc}}'' como monstrate hic supra)"
+}

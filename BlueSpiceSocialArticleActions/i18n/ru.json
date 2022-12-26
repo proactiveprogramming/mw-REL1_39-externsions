@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog"
+		]
+	},
+	"bs-socialarticleactions-desc": "Добавляет базовые записи действий со статьей в BlueSpiceSocial",
+	"bs-socialarticleactions-type-articlesave": "Статей редактируется"
+}

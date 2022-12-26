@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"generatemochaconfig-desc": "نص برمجي يُنشئ JSON يمكن استخدامه لتشغيل اختبارات Mocha لجميع الامتدادات الممكّنة"
+}

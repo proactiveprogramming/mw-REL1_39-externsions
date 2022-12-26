@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"indexfunc-desc": "Parserska funkcija koja stvara automatska preusmjerenja i čvor stranice",
+	"indexfunc-badtitle": "Pogrešni naslov: \"$1\"",
+	"indexfunc-editwarning": "Upozorenje:\nOvaj naslov je naslov indeksa za {{PLURAL:$2|sljedeću stranicu|sljedeće stranice}}:\n$1\nProvjerite da stranica što namjeravate napraviti ne postoji pod drugim naslovom.\nAko napravite ovu stranicu, uklonite ovaj naslov iz <nowiki>{{#index:}}</nowiki> sa {{PLURAL:$2|gornje stranice|gornjih stranica}}.",
+	"indexfunc-index-exists": "Stranica \"$1\" već postoji",
+	"indexfunc-movewarn": "Upozorenje:\n\"$1\" je naslov indeksa za {{PLURAL:$3|sljedeću stranicu|sljedeće stranice}}:\n$2\nMolimo uklonite \"$1\" iz <nowiki>{{#index:}}</nowiki> sa {{PLURAL:$3|gornje stranice|gornjih stranica}}.",
+	"index": "Indeksna pretraga",
+	"index-legend": "Pretraživanje indeksa",
+	"index-search": "Traži:",
+	"index-submit": "Pošalji",
+	"index-disambig-start": "'''$1''' može se odnositi na nekoliko stranica:",
+	"index-emptylist": "Nema stranica povezanih sa \"$1\"",
+	"index-expand-detail": "Prikaži stranice indeksirane pod ovim naslovom",
+	"index-hide-detail": "Sakrij spisak stranica",
+	"index-no-results": "Pretraga nije dala ništa.",
+	"index-search-explain": "Ova stranica koristi pretragu po prefiksima.\n\nUpišite prvih par znakova i pritisnite dugme Pošalji za traženje naslova stranica i indeksiranih stavki koje počinju sa traženim izrazom.",
+	"index-details-explain": "Stavke sa strelicama su stavke indeksa.\nKliknite na strelicu za prikaz svih stranica indeksiranih pod tim naslovom."
+}

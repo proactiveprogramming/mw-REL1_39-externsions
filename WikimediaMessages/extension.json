@@ -1,0 +1,132 @@
+{
+	"name": "WikimediaMessages",
+	"author": [
+		"Tim Starling",
+		"Siebrand Mazeland",
+		"James D. Forrester",
+		"Multichill"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:WikimediaMessages",
+	"descriptionmsg": "wikimediamessages-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"WikimediaMessages": [
+			"i18n/contactpage",
+			"i18n/wikimedia",
+			"i18n/wikimediainterwikisearchresults",
+			"i18n/temporary",
+			"i18n/wikimediaoverrides",
+			"i18n/wikimediaoverridesnotranslate",
+			"i18n/wikimediaprojectnames",
+			"i18n/licensetexts",
+			"i18n/cclicensetexts",
+			"i18n/codeofconduct",
+			"i18n/wikitech",
+			"i18n/undeployedplaceholders"
+		]
+	},
+	"RawHtmlMessages": [
+		"wikimedia-copyright",
+		"mediawiki.org-copyright",
+		"wikimedia-commons-copyright",
+		"wikidata-copyright",
+		"wikifunctions-site-footer-copyright",
+		"wikifunctions-edit-copyrightwarning-function",
+		"wikifunctions-edit-copyrightwarning-implementation",
+		"wikimedia-feedback-termsofuse"
+	],
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\WikimediaMessages\\": "includes/"
+	},
+	"ResourceModules": {
+		"ext.wikimediamessages.contactpage": {
+			"localBasePath": "modules/ext.wikimediamessages.contactpage",
+			"remoteExtPath": "WikimediaMessages/modules/ext.wikimediamessages.contactpage",
+			"styles": [
+				"affcomchapthorg.css",
+				"affcomusergroup.css"
+			]
+		},
+		"mediawiki.special.block.feedback.request": {
+			"localBasePath": "modules",
+			"remoteExtPath": "WikimediaMessages/modules",
+			"styles": "mediawiki.special.block.feedback.request.less"
+		}
+	},
+	"callback": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::onRegistration",
+	"HookHandlers": {
+		"WikimediaMessagesHooks": {
+			"class": "MediaWiki\\Extension\\WikimediaMessages\\Hooks",
+			"factory": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::factory",
+			"services": [
+				"MainConfig",
+				"UserOptionsManager"
+			]
+		},
+		"WikimediaMessagesCampaignEventsHooks": {
+			"class": "MediaWiki\\Extension\\WikimediaMessages\\WikimediaMessagesCampaignEventsHooks"
+		}
+	},
+	"Hooks": {
+		"MessageCache::get": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"SkinCopyrightFooter": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"EditPageCopyrightWarning": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"DiscussionToolsTermsOfUseMessages": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::onDiscussionToolsTermsOfUseMessages",
+		"FlowTermsOfUseMessages": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::onFlowTermsOfUseMessages",
+		"SkinAddFooterLinks": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"TorBlockBlockedMsg": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::onTorBlockBlockedMsg",
+		"GlobalBlockingBlockedIpMsg": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::onGlobalBlockingBlockedIpMsg",
+		"GlobalBlockingBlockedIpRangeMsg": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::onGlobalBlockingBlockedIpRangeMsg",
+		"GlobalBlockingBlockedIpXffMsg": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::onGlobalBlockingBlockedIpXffMsg",
+		"UploadForm:initial": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"ChangesListSpecialPageStructuredFilters": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"LocalUserCreated": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"ResourceLoaderRegisterModules": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"GetPreferences": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"SpecialPageBeforeExecute": {
+			"handler": "WikimediaMessagesHooks"
+		},
+		"CheckUserSubtitleLinks": "MediaWiki\\Extension\\WikimediaMessages\\Hooks::onCheckUserSubtitleLinks",
+		"CampaignEventsGetPolicyMessageForRegistration": {
+			"handler": "WikimediaMessagesCampaignEventsHooks"
+		},
+		"CampaignEventsGetPolicyMessageForRegistrationForm": {
+			"handler": "WikimediaMessagesCampaignEventsHooks"
+		}
+	},
+	"DefaultUserOptions": {
+		"rcenhancedfilters-seen-highlight-button-counter": 0
+	},
+	"ConfigRegistry": {
+		"wikimedia-messages": "GlobalVarConfig::newInstance"
+	},
+	"config": {
+		"WikimediaMessagesLicensing": {
+			"value": "standard",
+			"description": "Style of licensing messages to display, one of 'standard', 'commons', 'mediawiki', 'wikidata', 'wikinews', 'wikifunctions'"
+		}
+	},
+	"manifest_version": 2
+}

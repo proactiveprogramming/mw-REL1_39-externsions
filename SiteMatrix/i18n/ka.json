@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"BRUTE",
+			"David1010",
+			"Malafaya",
+			"Sopho"
+		]
+	},
+	"sitematrix-desc": "აჩვენებს [[Special:SiteMatrix|ვიკიმედიის პროექტების სიას]]",
+	"sitematrix-language": "ენა",
+	"sitematrix-project": "პროექტის სახელი, ინტერპროექტის ბმული და ინტერვიკები",
+	"sitematrix-other-projects": "პროექტი",
+	"sitematrix-total": "'''საერთო რაოდენობა: $1'''",
+	"sitematrix-sitetotal": "სულ",
+	"sitematrix-private": "კერძო",
+	"sitematrix-fishbowl": "რედაქტირება შეზღუდულია"
+}

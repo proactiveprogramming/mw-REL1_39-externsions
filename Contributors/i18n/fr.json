@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crochet.david",
+			"Gomoko",
+			"IAlex",
+			"McDutchie",
+			"PieRRoMaN",
+			"Sherbrooke",
+			"Urhixidur",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"contributors": "Contributeurs",
+	"contributors-desc": "Résume les principaux contributeurs d’une page",
+	"contributors-toolbox": "Contributeurs de la page",
+	"contributors-legend": "Lister les principaux contributeurs de la page",
+	"contributors-target": "Titre :",
+	"contributors-submit": "Afficher",
+	"contributors-subtitle": "Principaux contributeurs de $1",
+	"contributors-badtitle": "Titre non valide.",
+	"contributors-nosuchpage": "La page $1 n’existe pas.",
+	"contributors-filterip": "Masquer les adresses IP",
+	"contributors-name": "Nom d’utilisateur",
+	"contributors-revisions": "Nombre de révisions",
+	"contributors-first-edit": "Date de la première modification",
+	"contributors-last-edit": "Date de la dernière modification",
+	"contributors-add-subpages": "Ajouter des sous-pages",
+	"apihelp-query+contributors-example-1": "Afficher les contributeurs de la page principale"
+}

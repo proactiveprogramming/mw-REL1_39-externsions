@@ -1,0 +1,71 @@
+{
+	"name": "SimilarEditors",
+	"url": "https://www.mediawiki.org/wiki/Extension:SimilarEditors",
+	"version": "0.0.0",
+	"namemsg": "similareditors-extensionname",
+	"descriptionmsg": "similareditors-desc",
+	"license-name": "MIT",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.39.0",
+		"extensions": {
+			"QuickSurveys": ">= 1.4.0"
+		}
+	},
+	"AvailableRights": [
+		"similareditors"
+	],
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SimilarEditors\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\SimilarEditors\\Test\\Integration\\": "tests/phpunit/integration/"
+	},
+	"SpecialPages": {
+		"SimilarEditors": {
+			"class": "MediaWiki\\Extension\\SimilarEditors\\SpecialSimilarEditors",
+			"services": [
+				"SimilarEditorsClient",
+				"SimilarEditorsResultsFormatterFactory"
+			]
+		}
+	},
+	"ResourceModules": {
+		"ext.similarEditors.styles": {
+			"localBasePath": "modules/ext.similarEditors.styles",
+			"remoteExtPath": "SimilarEditors/modules/ext.similarEditors.styles",
+			"styles": "similarEditors.less"
+		},
+		"ext.similarEditors": {
+			"localBasePath": "modules/ext.similarEditors",
+			"remoteExtPath": "SimilarEditors/modules/ext.similarEditors",
+			"scripts": "init.js"
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"SimilarEditorsAliases": "SimilarEditors.alias.php"
+	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"config": {
+		"SimilarEditorsApiUrl": {
+			"value": false,
+			"description": "API domain"
+		},
+		"SimilarEditorsApiUser": {
+			"value": false,
+			"description": "API user"
+		},
+		"SimilarEditorsApiPassword": {
+			"value": false,
+			"description": "API password"
+		}
+	},
+	"MessagesDirs": {
+		"SimilarEditors": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

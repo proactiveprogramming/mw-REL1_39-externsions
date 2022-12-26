@@ -1,0 +1,57 @@
+{
+	"name": "EditSimilar",
+	"version": "1.27",
+	"author": [
+		"Bartek Łapiński",
+		"Łukasz Garczewski"
+	],
+	"license-name": "GPL-2.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:EditSimilar",
+	"descriptionmsg": "editsimilar-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"config": {
+		"EditSimilarMaxResultsPool": {
+			"description": "The maximum pool of results to choose randomly from",
+			"value": 50
+		},
+		"EditSimilarMaxResultsToDisplay": {
+			"description": "Maximum number of chosen results to display",
+			"value": 3
+		},
+		"EditSimilarCounterValue": {
+			"description": "Specifies per which number of edits show the results' message (defaults to 1, which means that every time results are found the message is shown)",
+			"value": 1
+		},
+		"EditSimilarAlwaysShowThanks": {
+			"description": "Whether to thank for an edit even on no results",
+			"value": false
+		}
+	},
+	"MessagesDirs": {
+		"EditSimilar": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"EditSimilar": "includes/EditSimilar.php",
+		"EditSimilarHooks": "includes/EditSimilarHooks.php"
+	},
+	"Hooks": {
+		"OutputPageBeforeHTML": "EditSimilarHooks::onOutputPageBeforeHTML",
+		"PageSaveComplete": "EditSimilarHooks::onPageSaveComplete",
+		"GetPreferences": "EditSimilarHooks::onGetPreferences"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "EditSimilar/resources"
+	},
+	"ResourceModules": {
+		"ext.editSimilar": {
+			"styles": "EditSimilar.css"
+		}
+	},
+	"manifest_version": 2
+}

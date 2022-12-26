@@ -1,0 +1,89 @@
+{
+	"name": "TuleapIntegration",
+	"version": "2.0.0-alpha",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://www.hallowelt.com",
+	"descriptionmsg": "tuleapintegration-desc",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"TuleapIntegration": "i18n"
+	},
+	"ExtensionMessagesFiles": {
+		"TuleapIntegrationAlias": "includes/TuleapIntegration.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"TuleapIntegration\\": "src/"
+	},
+	"config": {
+		"TuleapUrl": {
+			"value": "https://tuleap-web.tuleap-aio-dev.docker"
+		},
+		"TuleapOAuth2Config": {
+			"value": {
+				"clientId": "",
+				"clientSecret": "",
+				"redirectUri": ""
+			}
+		},
+		"TuleapProjectId": {
+			"value": 0
+		},
+		"TuleapData": {
+			"value": {}
+		},
+		"TuleapEnableLocalLogin": {
+			"value": true,
+			"description": "If true, no Oauth auto-login will be executed"
+		}
+	},
+	"Hooks": {
+		"BeforeInitialize": "setUpOauthLogin",
+		"SkinTemplateNavigation::Universal": [ "setUpOauthLogin", "replaceUserLinks" ],
+		"HtmlPageLinkRendererEnd": "replaceUserLinks",
+		"SpecialPage_initList": "setUpOauthLogin",
+		"OutputPageBeforeHTML": "replaceLinks",
+		"BeforePageDisplay": "replaceLinks",
+		"getUserPermissionsErrors":  "setUpOauthLogin"
+	},
+	"HookHandlers": {
+		"setUpOauthLogin": {
+			"class": "TuleapIntegration\\Hook\\SetUpOauthLogin",
+			"services": [ "MainConfig" ]
+		},
+		"replaceUserLinks": {
+			"class": "TuleapIntegration\\Hook\\ReplaceUserLinks",
+			"services": [ "UserFactory" ]
+		},
+		"replaceLinks": {
+			"class": "TuleapIntegration\\ReferenceManager",
+			"services": [ "TuleapConnection", "MainConfig" ]
+		}
+	},
+	"ResourceModules": {
+		"ext.tuleap.forcereload.js": {
+			"scripts": [
+				"reloadAfterEdit.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources/",
+		"remoteExtPath": "TuleapIntegration/resources"
+	},
+	"SpecialPages": {
+		"TuleapLogin": {
+			"class": "TuleapIntegration\\Special\\TuleapLogin",
+			"services": [ "TuleapConnection", "TitleFactory", "UserFactory", "UserOptionsManager", "UserGroupManager", "TuleapUserMappingProvider" ]
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

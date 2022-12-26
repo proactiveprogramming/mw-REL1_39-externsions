@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dnlweijers",
+			"Mainframe98",
+			"Robin van der Vliet",
+			"Vistaus"
+		]
+	},
+	"workflows-ui-starter-action-cancel": "Annuleren",
+	"workflows-ui-task-completion-action-cancel": "Annuleren",
+	"workflows-uto-activity-user_feedback": "Gebruikersfeedback",
+	"workflows-uto-activity-group_feedback": "Groepsfeedback",
+	"workflows-form-label-vote-widget-approve": "Goedkeuren",
+	"workflows-form-label-vote-widget-decline": "Afwijzen",
+	"workflows-ui-alert-activity-edit-request-complete-button": "Details bekijken",
+	"workflows-ui-workflow-overview-action-abort": "Afbreken",
+	"workflows-ui-workflow-overview-action-cancel": "Sluiten",
+	"workflows-ui-workflow-overview-action-back": "Terug",
+	"workflows-ui-overview-details-state-running": "Actief",
+	"workflows-ui-overview-details-state-finished": "Voltooid",
+	"workflows-ui-overview-details-state-aborted": "Geannuleerd",
+	"workflows-ui-overview-details-action-reason": "Reden",
+	"workflows-ui-overview-details-page-context-revision": "Versie",
+	"workflows-ui-overview-details-page-context-page": "Pagina",
+	"workflows-ui-overview-details-workflow-type-label": "Type",
+	"workflows-ui-overview-grid-filter-state-all": "Alle",
+	"workflows-ui-overview-grid-filter-state-active": "Actief",
+	"workflows-error-generic": "Er is een fout opgetreden",
+	"workflows-uto-body-field-instructions": "Instructies: $1",
+	"workflows-ui-overview-details-initiator": "Gestart door:",
+	"workflows-ui-workflow-overview-initial-data-title": "Eerste gegevens",
+	"workflows-ui-overview-details-section-details": "Details",
+	"workflows-ui-overview-details-due-date-label": "Verloopt op",
+	"workflows-ui-overview-details-section-assignee": "Toegewezen aan"
+}

@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"contributors": "Contributores",
+	"contributors-desc": "Detalia le contributores principal de un pagina",
+	"contributors-toolbox": "Contributores al pagina",
+	"contributors-legend": "Lista le contributores principal de un pagina",
+	"contributors-target": "Titulo:",
+	"contributors-submit": "Revelar",
+	"contributors-subtitle": "Contributores principal de $1",
+	"contributors-badtitle": "Titulo invalide.",
+	"contributors-nosuchpage": "Le pagina $1 non existe.",
+	"contributors-filterip": "Celar adresses IP",
+	"contributors-name": "Nomine de usator",
+	"contributors-revisions": "Numero de versiones",
+	"contributors-first-edit": "Data del prime modification",
+	"contributors-last-edit": "Data del ultime modification",
+	"contributors-add-subpages": "Adder subpaginas",
+	"apihelp-query+contributors-example-1": "Monstrar le contributores del pagina principal"
+}

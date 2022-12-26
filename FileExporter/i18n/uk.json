@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion",
+			"SimondR",
+			"Ата"
+		]
+	},
+	"fileexporter": "Експортер файлів",
+	"fileexporter-desc": "Легке експортування файлів до іншої вікі",
+	"fileexporter-text": "Експортувати файл",
+	"fileexporter-to-wikimedia-commons": "Експортувати до Вікісховища",
+	"tag-fileimporter-remote": "Змінено FileImporter",
+	"tag-fileimporter-remote-description": "Зміни, внесені розширенням [[mw:Extension:FileImporter|FileImporter]] після успішного імпорту файлу з цієї вікі."
+}

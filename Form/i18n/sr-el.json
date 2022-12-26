@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello",
+			"Жељко Тодоровић"
+		]
+	},
+	"form": "Započinjanje nove stranice",
+	"form-no-name": "Nema imena forme",
+	"form-bad-name": "Loše ime forme",
+	"form-save": "Sačuvaj",
+	"form-article-exists": "Stranica postoji",
+	"form-article-existstext": "Stranica [[$1]] već postoji.",
+	"form-bad-page-name": "Loše ime strane",
+	"form-save-summary": "Nova stranica koristi [[Special:Form/$1|formu $1]]",
+	"form-save-error": "Greška prilikom snimanja forme"
+}

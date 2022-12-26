@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie",
+			"Romaine"
+		]
+	},
+	"bs-socialarticleactions-desc": "Voegt items voor elementaire artikelhandelingen toe aan BlueSpiceSocial",
+	"bs-socialarticleactions-type-articlesave": "Artikel bewerken",
+	"bs-socialarticleactions-type-articlecreate": "Artikel aanmaken",
+	"bs-socialarticleactions-type-articledelete": "Artikel verwijderen",
+	"bs-socialarticleactions-type-filesave": "Bestand bewerken",
+	"bs-socialarticleactions-type-filecreate": "Bestand aanmaken",
+	"bs-socialarticleactions-type-filedelete": "Bestand verwijderen",
+	"bs-socialarticleactions-entityactionarticlesave-header": "[[User:$1|$2]] bewerkte het artikel [[:$6|$6]]",
+	"bs-socialarticleactions-entityactionarticlecreate-header": "[[User:$1|$2]] maakte het artikel [[:$6|$6]] aan",
+	"bs-socialarticleactions-entityactionarticledelete-header": "[[User:$1|$2]] verwijderde het artikel [[:$6|$6]]",
+	"bs-socialarticleactions-entityactionfilesave-header": "[[User:$1|$2]] voegde een nieuwe versie toe aan het bestand [[:$6|$6]]",
+	"bs-socialarticleactions-entityactionfilecreate-header": "[[User:$1|$2]] uploadde het bestand [[:$6|$6]]",
+	"bs-socialarticleactions-entityactionfiledelete-header": "[[User:$1|$2]] verwijderde het bestand [[:$6|$6]]"
+}

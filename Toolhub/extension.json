@@ -1,0 +1,46 @@
+{
+	"manifest_version": 2,
+	"name": "Toolhub",
+	"author": [
+		"Bryan Davis"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Toolhub",
+	"descriptionmsg": "toolhubbridge-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.38.0",
+		"extensions": {
+			"Scribunto": "*"
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Toolhub\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\Toolhub\\Tests\\": "tests/phpunit/unit/",
+		"MediaWiki\\Extension\\Toolhub\\Tests\\Integration\\": "tests/phpunit/integration/"
+	},
+	"config": {
+		"ToolhubBaseUrl": {
+			"description": "Base URL for Toolhub instance",
+			"value": "https://toolhub.wikimedia.org"
+		}
+	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"Hooks": {
+		"ScribuntoExternalLibraries": "ToolhubHooks"
+	},
+	"HookHandlers": {
+		"ToolhubHooks": {
+			"class": "MediaWiki\\Extension\\Toolhub\\Hooks"
+		}
+	},
+	"MessagesDirs": {
+		"Toolhub": [
+			"i18n"
+		]
+	}
+}

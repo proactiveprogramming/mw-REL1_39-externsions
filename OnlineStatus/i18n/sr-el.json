@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello",
+			"Milicevic01"
+		]
+	},
+	"onlinestatus-desc": "Dodaje podešavanja da bi se pokazivalo da li je korisnik trentno prisutan na vikiju ili ne.",
+	"onlinestatus-js-anon": "Greška: morate biti prijavljeni da biste koristili ovu mogućnost",
+	"onlinestatus-js-changed": "Vaš status je promenjen na „$1“",
+	"onlinestatus-js-error": "Ne mogu da promenim status. Vrednost „$1“ je neispravna",
+	"onlinestatus-subtitle-offline": "{{GENDER:|Ovaj korisnik|Ova korisnica}} je trenutno oflajn",
+	"onlinestatus-subtitle-online": "{{GENDER:$1|Ovaj korisnik|Ova korisnica}} je trenutno onlajn",
+	"onlinestatus-tab": "Status",
+	"onlinestatus-toggles-desc": "Vaš status:",
+	"onlinestatus-toggles-explain": "Uz pomoć ovoga, drugi korisnici na vašoj stranici mogu da vide da li ste trenutno onlajn.",
+	"onlinestatus-toggles-show": "Prikazuj prisutnost na mojoj korisničkoj stranici",
+	"onlinestatus-toggle-offline": "Oflajn",
+	"onlinestatus-toggle-online": "Onlajn",
+	"onlinestatus-pref-onlineonlogin": "Promeni moj status na „onlajn“ kada se prijavim",
+	"onlinestatus-pref-offlineonlogout": "Promeni moj status na „oflajn“ kada se odjavim"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Samatics"
+		]
+	},
+	"timedmedia-source-file": "$1 orijin",
+	"timedmedia-source-audio-file-desc": "Orijina $1 file ($2)"
+}

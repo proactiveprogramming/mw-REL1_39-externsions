@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dani",
+			"Tacsipacsi"
+		]
+	},
+	"sitematrix": "Az összes wiki listája",
+	"sitematrix-summary": "Ez a speciális lap listázza ezen wikifarm összes wikijét.",
+	"sitematrix-desc": "A [[Special:SiteMatrix|Wikimedia wikijeinek listája]]",
+	"sitematrix-language": "Nyelv",
+	"sitematrix-project": "A projekt neve, projekt- és nyelvközi link",
+	"sitematrix-others": "További projektek",
+	"sitematrix-other-projects": "Projekt",
+	"sitematrix-other-projects-language": "Nyelv",
+	"sitematrix-total": "'''Összes: $1'''",
+	"sitematrix-sitetotal": "Összesen",
+	"sitematrix-closed": "nincs írási, teljes olvasási hozzáférés",
+	"sitematrix-private": "írási és olvasási hozzáférés korlátozott",
+	"sitematrix-fishbowl": "a szerkesztés korlátozott, olvasás nem",
+	"sitematrix-nonglobal": "nyilvános, de regisztráció szükséges"
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andrei Stroe",
+			"Firilacroco",
+			"KlaudiuMihaila"
+		]
+	},
+	"contributors": "Contribuitori",
+	"contributors-desc": "Rezumă principalii contribuitori la o pagină",
+	"contributors-toolbox": "Contribuitori la pagină",
+	"contributors-legend": "Afișează contribuitorii principali la o pagină",
+	"contributors-target": "Titlu:",
+	"contributors-submit": "Arată",
+	"contributors-subtitle": "Contribuitori principali la $1",
+	"contributors-badtitle": "Titlu nevalid.",
+	"contributors-nosuchpage": "Pagina $1 nu există."
+}

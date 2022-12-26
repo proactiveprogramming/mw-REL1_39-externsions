@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"NMW03",
+			"Neriman2003",
+			"Toghrul Rahimli",
+			"Turkmen"
+		]
+	},
+	"grouppage-oversight": "{{ns:project}}:Nəzarətçilər",
+	"group-oversight": "Nəzarətçilər",
+	"group-oversight-member": "{{GENDER:$1|nəzarətçi}}"
+}

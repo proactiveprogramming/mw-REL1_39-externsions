@@ -1,0 +1,31 @@
+{
+	"private": true,
+	"scripts": {
+		"test": "grunt test"
+	},
+	"name": "SemanticGenealogy",
+	"version": "0.3.0",
+	"description": "MediaWiki extension to deal with Genealogy",
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.22.1",
+		"grunt": "1.5.3",
+		"grunt-banana-checker": "0.10.0",
+		"grunt-contrib-clean": "2.0.0",
+		"grunt-contrib-sass": "1.0.0",
+		"grunt-contrib-watch": "1.1.0",
+		"grunt-eslint": "24.0.0",
+		"grunt-sass": "3.1.0",
+		"load-grunt-tasks": "5.1.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "ssh://gerrit.wikimedia.org:29418/mediawiki/extensions/SemanticGenealogy.git"
+	},
+	"keywords": [
+		"Genealogy",
+		"Mediawiki",
+		"Semantic"
+	],
+	"author": "Thomas Pellissier Tanon <thomaspt@hotmail.fr>",
+	"license": "BSD-2-Clause"
+}

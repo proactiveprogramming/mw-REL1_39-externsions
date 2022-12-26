@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kizule",
+			"Zoranzoki21"
+		]
+	},
+	"tweetanew-desc": "Tvituje kada je stranica napravljena ili uređena",
+	"tweetanew-newaction": "Tvituj o ovoj novoj stranici",
+	"tweetanew-newtooltip": "Pošaljite informacije o ovoj novoj stranici na Twitter",
+	"tweetanew-editaction": "Tvituj o ovoj izmeni",
+	"tweetanew-edittooltip": "Pošaljite informacije o ovoj izmeni na Twitter",
+	"tweetanew-minoredit": "m",
+	"tweetanew-authorcredit": "od",
+	"tweetanew-newdefault": "NOVA STRANICA: $1 — $2",
+	"tweetanew-new1": "Izgleda kao da je stranica „$1” napravljena na adresi $2"
+}

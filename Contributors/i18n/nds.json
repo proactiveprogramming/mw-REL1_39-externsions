@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Slomox"
+		]
+	},
+	"contributors": "Lüüd, de bidragen hebbt",
+	"contributors-desc": "Wiest de wichtigsten Autorn to en Siet",
+	"contributors-toolbox": "Lüüd, de wichtige Delen bidragen hebbt",
+	"contributors-legend": "Lüüd oplisten, de to en Artikel bidragen hebbt",
+	"contributors-target": "Titel:",
+	"contributors-submit": "Wiesen",
+	"contributors-subtitle": "Lüüd, de wichtige Delen to $1 bidragen hebbt",
+	"contributors-badtitle": "Titel ungüllig.",
+	"contributors-nosuchpage": "Siet $1 gifft dat nich."
+}

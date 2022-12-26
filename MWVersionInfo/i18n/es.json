@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agent",
+			"Bruno44101"
+		]
+	},
+	"mwversioninfo-desc": "Administrar información de la version de MediaWiki",
+	"apihelp-mwversioninfo-summary": "Obtiene información sobre la versión de las ramas de MediaWiki",
+	"apihelp-mwversioninfo-param-version": "Versión de MediaWiki",
+	"apihelp-mwversioninfo-example": "Obtiene información sobre MediaWiki 1.27"
+}

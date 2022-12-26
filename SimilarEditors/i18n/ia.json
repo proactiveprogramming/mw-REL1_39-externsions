@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"action-similareditors": "acceder a [[Special:SimilarEditors]]",
+	"right-similareditors": "Acceder a [[Special:SimilarEditors]]",
+	"similareditors": "Redactores similar",
+	"similareditors-desc": "Forni detalios de usatores con historias similar de modificationes.",
+	"similareditors-error-database-refresh": "Un error se ha producite. Per favor tenta lo de novo in qualque minutas.",
+	"similareditors-error-default": "Un error se ha producite. Nos examina le situation.",
+	"similareditors-error-user-bot": "Le usator $1 es un robot e dunque es foras del sphera de action.",
+	"similareditors-error-user-no-account": "Le usator $1 non pare haber un conto sur le Wikipedia in anglese.",
+	"similareditors-error-user-no-edits": "Le usator $1 non pare haber un conto (o alcun modificationes in le sphera de action) sur le Wikipedia in anglese.",
+	"similareditors-form-field-target-label": "Nomine de usator o adresse IP:",
+	"similareditors-form-field-target-placeholder": "NomineDeUsator o 1.1.1.1",
+	"similareditors-form-legend": "Cercar redactores similar",
+	"similareditors-form-submit": "Cercar",
+	"similareditors-no-results": "Il non ha resultatos.",
+	"similareditors-overlap-level-high": "Alte",
+	"similareditors-overlap-level-low": "Basse",
+	"similareditors-overlap-level-medium": "Medie",
+	"similareditors-overlap-level-no-overlap": "Sin coincidentia",
+	"similareditors-results-day-overlap": "Coincidentia del dia",
+	"similareditors-results-edit-overlap": "Coincidentia de modificationes",
+	"similareditors-results-edits": "Modificationes in datos",
+	"similareditors-results-hour-overlap": "Coincidentia de horas",
+	"similareditors-results-inverse-edit-overlap": "Coincidentia inverse de modificationes",
+	"similareditors-results-user": "Usator",
+	"similareditors-results-user-timeline": "chronologia",
+	"similareditors-summary": "Cercar le redactores le plus similar a un redactor fornite a base del historia de modificationes.",
+	"similareditors-survey-question": "Ha tu trovate le resultatos utile? Qual altere information cerca tu quando tu cerca marionettes?"
+}

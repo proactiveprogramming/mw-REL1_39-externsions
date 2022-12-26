@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Imperadeiro90",
+			"Vitorvicentevalente"
+		]
+	},
+	"apifeatureusage": "Uso de funcionalidades da API",
+	"apifeatureusage-desc": "Obter um resumo dos usos registados de funcionalidades da API para um agente do utilizador.",
+	"apifeatureusage-elasticsearch-error": "Erro da Elasticsearch: $1",
+	"apifeatureusage-legend": "Uso de funcionalidades da API",
+	"apifeatureusage-agent-label": "Agente do utilizador:",
+	"apifeatureusage-startdate-label": "Data de início:",
+	"apifeatureusage-enddate-label": "Data de fim:",
+	"apifeatureusage-submit": "Obter dados",
+	"apifeatureusage-no-indexes": "Não existem dados disponíveis para o período especificado.",
+	"apifeatureusage-missing-indexes": "Não existem dados disponíveis para uma parte do período especificado.",
+	"apifeatureusage-warnings": "Aviso: $1",
+	"apifeatureusage-column-feature": "Funcionalidade",
+	"apifeatureusage-column-date": "Data",
+	"apifeatureusage-column-uses": "Usos",
+	"apifeatureusage-deprecation-help": "Use [[Special:ApiFeatureUsage]] para ver as utilizações de funcionalidades obsoletas pela sua aplicação."
+}

@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hedda"
+		]
+	},
+	"action-similareditors": "[[Special:SimilarEditors]] sayfasına erişim",
+	"right-similareditors": "[[Special:SimilarEditors]] sayfasına erişim",
+	"similareditors": "Benzer Editörler",
+	"similareditors-desc": "Benzer düzenleme geçmişine sahip kullanıcıların ayrıntılarını göterir.",
+	"similareditors-form-field-target-label": "Kullanıcı adı veya IP adresi:",
+	"similareditors-form-field-target-placeholder": "KullanıcıAdı veya 1.1.1.1",
+	"similareditors-form-legend": "Benzer editörler bulun",
+	"similareditors-form-submit": "Bul",
+	"similareditors-no-results": "Sonuç yok.",
+	"similareditors-overlap-level-high": "Yüksek",
+	"similareditors-overlap-level-low": "Düşük",
+	"similareditors-overlap-level-medium": "Orta",
+	"similareditors-overlap-level-no-overlap": "Çakışma yok",
+	"similareditors-results-day-overlap": "Gün çakışması",
+	"similareditors-results-edit-overlap": "Çakışmayı düzenle",
+	"similareditors-results-edits": "Verilerdeki düzenlemeler",
+	"similareditors-results-hour-overlap": "Saat çakışması",
+	"similareditors-results-inverse-edit-overlap": "Ters düzenleme çakışması",
+	"similareditors-results-user": "Kullanıcı",
+	"similareditors-summary": "Düzenleme geçmişine göre belirli bir düzenleyiciye en çok benzeyen düzenleyicileri bulun.",
+	"similareditors-survey-question": "Sonuçları faydalı buldunuz mu? Kukla bulmaya çalışırken başka hangi bilgileri arıyorsunuz?"
+}

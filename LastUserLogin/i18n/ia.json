@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Karmwiki",
+			"McDutchie"
+		]
+	},
+	"lastuserlogin": "Ultime apertura de session",
+	"lastuserlogin-desc": "Monstra le ultime vice que un usator ha aperite session",
+	"lastuserlogin-userid": "Nomine del usator",
+	"lastuserlogin-username": "Nomine real",
+	"lastuserlogin-useremail": "Adresse de e-posta",
+	"lastuserlogin-useremailauthenticated": "E-mail authenticate?",
+	"lastuserlogin-lastlogin": "Ultime apertura de session",
+	"lastuserlogin-daysago": "Dies retro",
+	"lastuserlogin-nousers": "Nulle usator trovate.",
+	"action-lastlogin": "vider le ultime vice que un usator ha aperite session",
+	"right-lastlogin": "Vider le ultime vice que un usator ha aperite session"
+}

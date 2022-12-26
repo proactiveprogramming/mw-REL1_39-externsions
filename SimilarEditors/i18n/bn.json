@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"আজিজ",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"similareditors-error-database-refresh": "কিছু একটায় ত্রুটি হয়েছে, অনুগ্রহ করে কয়েক মিনিট পর আবার চেষ্টা করুন।",
+	"similareditors-error-default": "কিছু ভুল হয়েছে, আমরা তা খতিয়ে দেখছি।",
+	"similareditors-error-user-bot": "$1 নামক ব্যবহারকারী একটি বট এবং তাই এই সুযোগ পাবে না।",
+	"similareditors-error-user-no-account": "$1 নামক ব্যবহারকারীর ইংরেজি উইকিপিডিয়ায় কোনও অ্যাকাউন্ট আছে বলে মনে হয় না।"
+}

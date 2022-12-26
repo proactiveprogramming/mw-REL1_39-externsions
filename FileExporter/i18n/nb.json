@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"fileexporter": "Fileksportering",
+	"fileexporter-desc": "Enkel eksportering av filer til en annen wiki",
+	"fileexporter-text": "Eksporter fil",
+	"fileexporter-to-wikimedia-commons": "Eksporter til Wikimedia Commons",
+	"tag-fileimporter-remote": "Modifisert av FileImporter",
+	"tag-fileimporter-remote-description": "Redigeringer gjort med utvidelsen [[mw:Extension:FileImporter|FileImporter]] etter importering av en fil fra denne wikien."
+}

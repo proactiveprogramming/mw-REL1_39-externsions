@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"mwversioninfo-desc": "미디어위키 버전 정보 관리",
+	"apihelp-mwversioninfo-summary": "미디어위키 브랜치의 버전 정보를 가져옵니다",
+	"apihelp-mwversioninfo-param-version": "미디어위키 버전",
+	"apihelp-mwversioninfo-example": "미디어위키 1.27에 관한 정보를 가져옵니다"
+}

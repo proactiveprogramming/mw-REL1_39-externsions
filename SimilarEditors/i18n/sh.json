@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"similareditors-form-field-target-label": "Korisničko ime ili IP adresa:",
+	"similareditors-form-submit": "Nađi",
+	"similareditors-no-results": "Nema rezultata.",
+	"similareditors-results-user": "Korisnik",
+	"similareditors-results-user-timeline": "vremenska crta"
+}

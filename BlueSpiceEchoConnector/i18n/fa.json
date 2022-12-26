@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beginneruser",
+			"FarsiNevis",
+			"Jeeputer",
+			"LordProfo",
+			"Mohammad ebz"
+		]
+	},
+	"echo-category-title-bs-admin-cat": "وظیفه‌های مدیریتی",
+	"echo-pref-tooltip-bs-admin-cat": "هنگامی که حساب تازه ایجاد شد من را آگاه کن.",
+	"echo-pref-tooltip-bs-page-actions-cat": "اگر صفحه‌ای که پیگیری می‌کنم ویرایش، منتقل یا حذف شد، مرا آگاه کن",
+	"echo-pref-tooltip-bs-page-create-cat": "به‌هنگام ایجاد یک صفحهٔ جدید مرا آگاه کن",
+	"echo-category-title-bs-page-actions-cat": "عمل در صفحه‌های پیگیری‌شده",
+	"echo-category-title-bs-page-create-cat": "ایجاد صفحه",
+	"prefs-namespace-notifications": "آگاهی‌سازی‌ها در رویدادهای فضای نام",
+	"prefs-category-notifications": "آگاه‌سازی رده‌ها",
+	"echo-category-title-bs-namespace-category-notify-cat": "تغییرات در فضاهای نام و رده‌های پیگیری‌شده",
+	"bs-echoconnector-personalurl-notifications": "آگاه‌سازی‌ها ($1)"
+}

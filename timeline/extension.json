@@ -1,0 +1,67 @@
+{
+	"name": "EasyTimeline",
+	"author": "Erik Zachte",
+	"url": "https://www.mediawiki.org/wiki/Extension:EasyTimeline",
+	"descriptionmsg": "timeline-desc",
+	"license-name": "GPL-2.0-only",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
+	"MessagesDirs": {
+		"Timeline": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Timeline\\": "includes/"
+	},
+	"ResourceModules": {
+		"ext.timeline.styles": {
+			"styles": [
+				"resources/ext.timeline.styles/timeline.css"
+			],
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "timeline"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\Timeline\\Timeline::onParserFirstCallInit"
+	},
+	"TrackingCategories": [
+		"timeline-tracking-category"
+	],
+	"config": {
+		"TimelinePloticusCommand": {
+			"value": "/usr/bin/ploticus"
+		},
+		"TimelinePerlCommand": {
+			"value": "/usr/bin/perl"
+		},
+		"TimelineFonts": {
+			"value": {}
+		},
+		"TimelineFontFile": {
+			"value": "FreeSans"
+		},
+		"TimelineFontDirectory": {
+			"value": false
+		},
+		"TimelineFileBackend": {
+			"value": ""
+		},
+		"TimelineShell": {
+			"value": "/bin/bash"
+		},
+		"TimelineRsvgCommand": {
+			"value": "/usr/bin/rsvg-convert"
+		}
+	},
+	"manifest_version": 2
+}

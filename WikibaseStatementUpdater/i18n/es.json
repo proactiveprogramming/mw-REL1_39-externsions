@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"wsu-wsu-error-onlyq": "Se admiten solo los elementos Q.",
+	"wsu-wsu-error-unsupportedcommand": "Orden desconocida.",
+	"wsu-stop": "Dejar de editar",
+	"wsu-updater-api-failure": "No se pudo procesar la respuesta de la API",
+	"wsu-command-P": "Propiedad",
+	"wsu-batchtable-command": "Orden",
+	"wsu-batchtable-id": "Id.",
+	"wsu-batchtable-value": "Valor",
+	"wsu-batchtable-status": "Estado"
+}

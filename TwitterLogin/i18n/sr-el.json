@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"twitterlogin": "Prijava pomoću Twitter-a",
+	"twitterlogin-signup": "Možete se registrovati na ovom vikiju pomoću naloga na Twitter-u",
+	"twiterlogin-tietoaccount": "Prijavljeni ste kao $1. Možete se prijaviti pomoću Twitter-a da biste povezali njegov nalog sa postojećim nalogom na MediaWiki-ju.",
+	"twitterlogin-desc": "Otvorite nalog i prijavite se na MediaWiki pomoću naloga na Twitter-u.",
+	"twitterlogin-alreadyloggedin": "Već ste prijavljeni.",
+	"twitterlogin-couldnotconnect": "Ne mogu da se povežem sa Twitter-om. Osvežite stranicu ili pokušajte kasnije."
+}

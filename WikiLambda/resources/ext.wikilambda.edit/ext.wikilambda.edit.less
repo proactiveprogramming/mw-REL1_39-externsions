@@ -1,0 +1,37 @@
+/*!
+ * WikiLambda special page styles
+ * Styles and variables declaration added on this file should be unique to the wikilamdba project.
+ * Please ensure that the styles are not already present in the "wikimedia-ui-base.less" file within the "lib" folder
+ *
+ * @copyright 2020– Abstract Wikipedia team; see AUTHORS.txt
+ * @license MIT
+ */
+@import '../lib/wikimedia-ui-base.less';
+@import '../lib/sd-base-variables.less';
+
+.ext-wikilambda-edit {
+	/* Typography */
+	&__text-regular {
+		font-family: @font-family-sans;
+		font-weight: @font-weight-base;
+		font-size: @sd-font-size-base; //14px
+		line-height: 1.5; //20px
+		color: @wmui-color-base0;
+	}
+
+	&__text-smaller {
+		font-family: @font-family-sans;
+		font-weight: @font-weight-base;
+		font-size: 0.815em; //13px
+		line-height: 1.125; //18px
+		color: @wmui-color-accent50;
+	}
+
+	&__text-button {
+		font-family: @font-family-sans;
+		font-weight: @font-weight-bold;
+		font-size: @sd-font-size-base; //14px
+		line-height: 1.5; //20px
+		color: @wmui-color-base0;
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-socialblog-desc": "Entitate de blog pro BlueSpiceSocial",
+	"bs-socialblog-type": "Blog",
+	"blog": "Blog",
+	"bs-socialblog-entityblog-header-create": "Crear un nove blog…",
+	"bs-socialblog-var-blogtitle": "Titulo",
+	"bs-socialblog-entityblog-content-more-btn-more": "Plus",
+	"bs-socialblog-entityblog-content-more-btn-less": "Minus",
+	"bs-socialblog-toc-useblogteaser": "Usar un extracto del texto pro articulos de blog in le chronologia",
+	"bs-socialblog-special-blog-heading": "Blog",
+	"bs-socialblog-special-blog-heading-entry": "Blog/$1",
+	"bs-social-notifications-blog-create": "Le usator {{GENDER:$1|$2 ha create}} un nove blog \"$3\"",
+	"bs-social-notifications-email-blog-create-subject": "Le usator {{GENDER:$1|$2 ha create}} un nove blog \"$3\"",
+	"bs-social-notifications-email-blog-create-body": "Le usator {{GENDER:$1|$2 ha create}} un nove blog \"$3\" con le sequente texto:\n\n$4",
+	"bs-social-notifications-web-blog-create-body": "{{GENDER:$1|$2 ha create}} un nove blog \"$3\"",
+	"bs-social-notifications-blog-edit": "Le usator {{GENDER:$1|$2 ha modificate}} le blog \"$3\"",
+	"bs-social-notifications-email-blog-edit-subject": "Le usator {{GENDER:$1|$2 ha modificate}} le blog \"$3\"",
+	"bs-social-notifications-email-blog-edit-body": "Le usator {{GENDER:$1|$2 ha modificate}} le blog \"$3\" Le nove texto es:\n\n$4",
+	"bs-social-notifications-web-blog-edit-body": "{{GENDER:$1|$2 ha modificate}} le blog \"$3\"",
+	"bs-social-notifications-blog-delete": "Le usator {{GENDER:$1|$2 ha delite}} le blog \"$3\"",
+	"bs-social-notifications-email-blog-delete-subject": "Le usator {{GENDER:$1|$2 ha delite}} le blog \"$3\"",
+	"bs-social-notifications-email-blog-delete-body": "Le usator {{GENDER:$1|$2 ha delite}} le blog \"$3\"",
+	"bs-social-notifications-web-blog-delete-body": "{{GENDER:$1|$2 ha delite}} le blog \"$3\"",
+	"bs-social-notification-blog-primary-link-label": "Vider blog",
+	"bs-socialblog-toc-useblogteaser-help": "In le formulario del blog, usatores pote entrar un texto de extracto cliccante sur le symbolo de rota dentate. Si es activate, iste texto de extracto appare sur le pagina Special:Timeline in loco del prime parte del articulo de blog mesme.",
+	"action-social-blog": "crear e modificar blogs",
+	"action-social-blog-comment": "commentar sur blogs",
+	"right-social-blog": "Crear e modificar blogs",
+	"right-social-blog-comment": "Commentar sur blogs",
+	"bs-socialblog-config-mainlinks-blog-label": "Monstrar le puncto de entrata \"Blog\"",
+	"bs-socialblog-config-mainlinks-blog-help": "Monstrar le ligamine del puncto de entrata \"Blog\" in le navigation al sinistra",
+	"bs-socialblog-type-groupblog": "Blog del gruppo",
+	"bs-socialblog-groupblog-permission-error": "Le usator non es autorisate a exequer le action"
+}

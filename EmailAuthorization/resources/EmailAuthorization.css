@@ -1,0 +1,46 @@
+.emailauth-message {
+	background-color: #ddd;
+	padding: 5px 5px 10px 10px;
+}
+
+.emailauth-wikitable {
+	width: 100%;
+	margin: 0 !important;
+}
+
+.emailauth-wikitable th {
+	text-align: center;
+}
+
+.emailauth-wikitable .mw-htmlform-ooui-wrapper {
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
+}
+
+.emailauth-navigationtable {
+	width: 100%;
+	margin: 0 !important;
+}
+
+/* https://www.gyrocode.com/articles/jquery-datatables-how-to-show-loading-indicator-during-table-reload/ */
+@keyframes spinner {
+	to {
+		transform: rotate( 360deg );
+	}
+}
+
+.spinner:before {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	margin-left: -10px;
+	border-radius: 50%;
+	border: 2px solid #ccc;
+	border-top-color: #333;
+	animation: spinner 0.6s linear infinite;
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"phptagssparql-desc": "Cliente HTTP PhpTags Sparql para Endpoint do SPARQL 1.1"
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jmarchn",
+			"Kippelboy",
+			"SMP",
+			"Solde"
+		]
+	},
+	"whoiswatching": "Qui està una pàgina wiki",
+	"whoiswatching-desc": "Proporciona una llista dels usuaris que estan mirant una pàgina wiki",
+	"specialwhoiswatchingusage": "Aquesta pàgina especial no pot ser utilitzada per ella mateixa.",
+	"specialwhoiswatchingaddusers": "Afegir usuaris a patrullar la pàgina",
+	"specialwhoiswatchingaddbtn": "Afegir usuaris seleccionats"
+}

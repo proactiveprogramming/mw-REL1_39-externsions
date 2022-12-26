@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"windowsazurestorage-desc": "Αποθήκευση αρχείων στην υπηρεσία νέφους Windows Azure, χρησιμοποιώντας την υπηρεσία αποθήκευσης Windows Azure"
+}

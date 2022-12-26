@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"GpieroMW",
+			"Stefano"
+		]
+	},
+	"bs-namespacecss-desc": "Stile specifico per namespace",
+	"bluespicenamespacecssmanager": "Gestore namespace CSS",
+	"bs-namespacecss-text": "Namespace CSS",
+	"bs-namespacecss-specialmanager-label-namespacename": "Namespace",
+	"bs-namespacecss-specialmanager-label-sourcepage": "Pagina sorgente",
+	"apihelp-bs-namespacecss-store-summary": "Elenca i namespace e la loro possibile pagina di origine CSS. Implementa i parametri ExtJS Store."
+}

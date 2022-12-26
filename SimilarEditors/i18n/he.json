@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"action-similareditors": "לגשת לדף המיוחד [[Special:SimilarEditors]]",
+	"right-similareditors": "גישה לדף המיוחד [[Special:SimilarEditors]]",
+	"similareditors": "עורכים דומים",
+	"similareditors-desc": "אספקת פרטים של משתמשים עם היסטוריית עריכות דומות.",
+	"similareditors-error-database-refresh": "משהו השתבש, נא לנסות שוב בעוד כמה דקות.",
+	"similareditors-error-default": "משהו השתבש, אנחנו בודקים את זה.",
+	"similareditors-error-user-bot": "המשתמש $1 הוא בוט ולכן אינו רלוונטי.",
+	"similareditors-error-user-no-account": "נראה שלמשתמש $1 אין חשבון בוויקיפדיה האנגלית.",
+	"similareditors-error-user-no-edits": "נראה שלמשתמש $1 אין חשבון (או עריכות רלוונטיות) בוויקיפדיה האנגלית.",
+	"similareditors-form-field-target-label": "שם משתמש או כתובת IP:",
+	"similareditors-form-field-target-placeholder": "שם משתמש או 1.1.1.1",
+	"similareditors-form-legend": "למצוא עורכים דומים",
+	"similareditors-form-submit": "למצוא",
+	"similareditors-no-results": "אין תוצאות.",
+	"similareditors-overlap-level-high": "גבוהה",
+	"similareditors-overlap-level-low": "נמוכה",
+	"similareditors-overlap-level-medium": "בינונית",
+	"similareditors-overlap-level-no-overlap": "אין חפיפה",
+	"similareditors-results-day-overlap": "חפיפת ימים",
+	"similareditors-results-edit-overlap": "חפיפת ערכים",
+	"similareditors-results-edits": "עריכות בנתונים",
+	"similareditors-results-hour-overlap": "חפיפיה בשעות",
+	"similareditors-results-inverse-edit-overlap": "חפיפה הפוכה בעריכות",
+	"similareditors-results-user": "משתמש",
+	"similareditors-results-user-timeline": "ציר זמן",
+	"similareditors-summary": "מציאת העורכים הדומים ביותר לעורך נתונים, על־פי היסטוריית עריכות.",
+	"similareditors-survey-question": "האם התוצאות עזרו לך? איזה עוד מידע {{GENDER:|אתה מחפש כשאתה|את מחפשת כשאת}} מנסה למצוא בובות קש?"
+}

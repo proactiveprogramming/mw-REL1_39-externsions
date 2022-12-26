@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"mlm-input-label-add": "Dodaj prevod",
+	"mlm-input-label-save": "Shrani",
+	"mlm-input-label-delete": "Izbriši vse prevode",
+	"mlm-input-label-cancel": "Prekliči"
+}

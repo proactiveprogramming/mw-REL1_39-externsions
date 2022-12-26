@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"emaildiff-desc": "Permitte inviar diffs de texto in e-mails de notification",
+	"tog-emaildiff": "Inviar un diff de cambiamentos",
+	"emaildiff-newpage": "Iste es un nove pagina:\n\n$1",
+	"emaildiff-intro": "Differentias de version:\n$1"
+}

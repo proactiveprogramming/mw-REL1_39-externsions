@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"gwtoolset": "GWToolset",
+	"right-gwtoolset": "Usa GWToolset",
+	"action-gwtoolset": "usari GWToolset",
+	"group-gwtoolset": "Utenti GWToolset",
+	"group-gwtoolset-member": "{{GENDER:$1|utenti GWToolset}}",
+	"grouppage-gwtoolset": "{{ns:project}}:Utenti GWToolset",
+	"gwtoolset-back-to-top": "nizziu dâ pàggina",
+	"gwtoolset-fsfile-empty": "Lu file era vacanti e fu cancillatu",
+	"gwtoolset-file-is-empty": "Lu file carricàtu è vacanti.",
+	"gwtoolset-mediawiki-template": "Template $1",
+	"gwtoolset-submit": "Manna",
+	"gwtoolset-summary-heading": "Summariu",
+	"gwtoolset-cancel": "Annulla",
+	"gwtoolset-save": "Sarva",
+	"gwtoolset-json-error-unknown": "Erruri scanusciutu.",
+	"gwtoolset-category": "Catigurìa",
+	"gwtoolset-global-categories": "Catigurìi glubbali",
+	"gwtoolset-create-prefix": "GWToolset",
+	"gwtoolset-required-group": "Tu nun sî nu mèmmiru dû gruppu $1.",
+	"gwtoolset-title-label": "Tìtulu GWToolset",
+	"gwtoolset-wrap-language-heading": "Template di lingua",
+	"gwtoolset-templatedata-link-text": "bloccu <code>&lt;templatedata></code>",
+	"gwtoolset-templatebox-link-text": "<code>TemplateBox</code>",
+	"gwtoolset-title-none": "Nuddu tìtulu"
+}

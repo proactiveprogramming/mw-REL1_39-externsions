@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"externallinkconfirm-desc": "{{desc|name=External Link Confirm|url=https://www.mediawiki.org/wiki/Extension:ExternalLinkConfirm}}",
+	"externallinkconfirm-confirmation-message": "The confirmation message shown when user clicks on an external link"
+}

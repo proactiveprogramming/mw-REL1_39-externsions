@@ -1,0 +1,40 @@
+<template>
+	<button class="ext-wikistories-primarybutton" @click="$emit( 'click' )">
+		{{ text }}
+	</button>
+</template>
+
+<script>
+// @vue/component
+module.exports = {
+	name: 'PrimaryButton',
+	props: {
+		text: { type: String, required: true }
+	},
+	emits: [ 'click' ]
+};
+</script>
+
+<style lang="less">
+@import 'mediawiki.ui/variables.less';
+
+.ext-wikistories-primarybutton {
+	background: @color-primary;
+	border-radius: 2px;
+	padding: 6px 12px;
+	// stylelint-disable-next-line font-family-no-missing-generic-family-keyword
+	font-family: 'Helvetica Neue';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	z-index: 101;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0 6px;
+	border: 0;
+	cursor: pointer;
+}
+</style>

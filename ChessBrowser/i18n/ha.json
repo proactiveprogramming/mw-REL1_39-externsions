@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gwanki",
+			"Omar Ali",
+			"Salihu aliyu"
+		]
+	},
+	"chessbrowser-notations-label": "Chess motsa da aka bayyana a cikin bayanin PGN.  Danna maɓallin don canzawa zuwa wancan matsayin hukumar.",
+	"chessbrowser-boardstate-initial": "Halin farko na hukuma.",
+	"chessbrowser-boardstate-final": "Matsayin ƙarshe.",
+	"chessbrowser-boardstate-check": "Bincika.",
+	"chessbrowser-boardstate-checkmate": "Mai bincika wa.",
+	"chessbrowser-castling-queenside": "Jefa gefen sarauniya.",
+	"chessbrowser-castling-kingside": "Jefa gefen sarki.",
+	"chessbrowser-piece-white-king": "Farin Sarki",
+	"chessbrowser-piece-white-queen": "Farar sarauniya",
+	"chessbrowser-piece-white-bishop": "Farin Bishop",
+	"chessbrowser-piece-white-knight": "farar jaruma",
+	"chessbrowser-piece-black-king": "Bakin Sarki",
+	"chessbrowser-piece-black-queen": "Sarauniya baka",
+	"chessbrowser-piece-black-bishop": "Bakin Bishop",
+	"chessbrowser-move": "$1 $2 matsa zuwa $3.",
+	"chessbrowser-capture": "$1 $2 kamawa $3.",
+	"chessbrowser-promote": "Bunƙasa zuwa $1.",
+	"chessbrowser-black-moves": "Baƙi:",
+	"chessbrowser-white-moves": "Fari:",
+	"chessbrowser-chessboard-label": "Katako",
+	"chessbrowser-empty-square": "Fankom murabba'i, $1"
+}

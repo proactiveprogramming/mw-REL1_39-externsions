@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"configmanager-admintool-label": "Menadžer konfiguracije",
+	"action-configmanager-viewspecialpage": "pogl. posebnu stranicu \"{{int:configmanager}}\"",
+	"configmanager": "Menadžer konfiguracije",
+	"configmanager-desc": "Administratorima omogućuje konfigurirati cijelu wiki služeći se jednom posebnom stranicom",
+	"configmanager-discardchanges": "Odbaci promjene?",
+	"configmanager-noentry": "Nisu pronađeni unosi",
+	"apihelp-configmanager-tasks-summary": "Upravljaj zadacima",
+	"apihelp-configmanager-store-summary": "Upravljaj prodavnicama",
+	"right-configmanager-viewspecialpage": "Pristup posebnoj stranici [[Special:ConfigManager]]"
+}

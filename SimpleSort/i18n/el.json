@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"simplesort-err": "Μη αναγνωρισμένη επιλογή προς το SimpleSort: \"$1\""
+}

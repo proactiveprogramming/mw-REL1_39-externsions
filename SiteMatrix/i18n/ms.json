@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Aviator",
+			"Tofeiku"
+		]
+	},
+	"sitematrix": "Senarai wiki",
+	"sitematrix-summary": "Laman khas ini menyenaraikan semua wiki di ladang wiki ini.",
+	"sitematrix-desc": "Memaparkan [[Special:SiteMatrix|senarai wiki]]",
+	"sitematrix-language": "Bahasa",
+	"sitematrix-project": "Nama projek, pautan antara projek dan pautan antara wiki",
+	"sitematrix-others": "Projek lain",
+	"sitematrix-other-projects": "Projek",
+	"sitematrix-total": "'''Jumlah bilangan: $1'''",
+	"sitematrix-sitetotal": "Jumlah",
+	"sitematrix-private": "tertutup",
+	"sitematrix-fishbowl": "penyuntingan terhad"
+}

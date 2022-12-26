@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"wikispeech-sdc-desc": "Uma ferramenta para gravar, rever e anotar vozes faladas.",
+	"right-wikispeech-sdc-record": "Gravar voz",
+	"action-wikispeech-sdc-record": "Gravar uma voz",
+	"recordspeech": "Gravação de fala",
+	"wikispeech-sdc-record": "Iniciar gravação",
+	"wikispeech-sdc-save": "Gravar",
+	"wikispeech-sdc-skip": "Saltar",
+	"right-wikispeech-sdc-speech-recording": "Editar gravação de fala",
+	"action-wikispeech-sdc-speech-recording": "editar gravação de fala",
+	"right-wikispeech-sdc-speech-recording-talk": "Discutir gravação de fala",
+	"action-wikispeech-sdc-speech-recording-talk": "discutir gravação de fala",
+	"wikispeech-sdc-status-starting": "A começar…",
+	"wikispeech-sdc-status-ready": "Pronto",
+	"wikispeech-sdc-status-listening": "A ouvir",
+	"wikispeech-sdc-status-recording": "A gravar..."
+}

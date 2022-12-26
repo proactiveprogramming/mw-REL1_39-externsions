@@ -1,0 +1,102 @@
+{
+	"name": "BlueSpiceAbout",
+	"license-name": "GPL-3.0-only",
+	"version": "4.2.0-alpha",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceAbout",
+	"author": [
+		"Markus Glaser",
+		"Peter Böhm",
+		"Leonid Verhovskij"
+	],
+	"descriptionmsg": "bs-bluespiceabout-desc",
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceAbout": {
+					"className": "\\BlueSpice\\About\\Extension",
+					"extPath": "/BlueSpiceAbout"
+				}
+			},
+			"AdminToolRegistry": {
+				"bs-bluespiceabout": "BlueSpice\\About\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"bluespiceabout-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"accountselfcreate",
+						"admin",
+						"author",
+						"bot",
+						"commenter",
+						"editor",
+						"maintenanceadmin",
+						"reader",
+						"reviewer",
+						"structuremanager"
+					]
+				}
+			}
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.36.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 4.1"
+		}
+	},
+	"SpecialPages": {
+		"BlueSpiceAbout": "SpecialBlueSpiceAbout"
+	},
+	"MessagesDirs": {
+		"BlueSpiceAbout": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"BlueSpiceAboutAlias": "includes/specials/SpecialBlueSpiceAbout.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\About\\": "src/"
+	},
+	"AutoloadClasses": {
+		"SpecialBlueSpiceAbout": "includes/specials/SpecialBlueSpiceAbout.php"
+	},
+	"GroupPermissions": {
+		"*": {
+			"bluespiceabout-viewspecialpage": false
+		},
+		"user": {
+			"bluespiceabout-viewspecialpage": true
+		},
+		"sysop": {
+			"bluespiceabout-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"bluespiceabout-viewspecialpage"
+	],
+	"ResourceModules": {
+		"ext.bluespice.bluespiceabout": {
+			"styles": "bluespice.bluespiceabout.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceAbout/resources"
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\About\\HookHandler\\CommonUserInterface"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "\\BlueSpice\\About\\Hook\\BeforePageDisplay\\AddModules::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
+	},
+
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

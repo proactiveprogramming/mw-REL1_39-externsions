@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adamw",
+			"Dgstranz",
+			"Jakeukalane"
+		]
+	},
+	"apihelp-query+ores-description": "Devolver la configuración de ORES y los datos del modelo para esta wiki.",
+	"apihelp-query+ores-summary": "Devolver la configuración de ORES y los datos del modelo para esta wiki.",
+	"apihelp-query+ores-example-simple": "Obtener datos ORES:",
+	"apihelp-query+revisions-paramvalue-prop-oresscores": "Puntuaciones ORES para la revisión.",
+	"apihelp-query+allrevisions-paramvalue-prop-oresscores": "Puntuaciones ORES para la revisión.",
+	"apihelp-query+recentchanges-paramvalue-prop-oresscores": "Añade las puntuaciones ORES para la entrada.",
+	"apihelp-query+watchlist-paramvalue-prop-oresscores": "Añade las puntuaciones ORES para la edición.",
+	"apihelp-query+usercontribs-paramvalue-prop-oresscores": "Añade las puntuaciones ORES para la edición."
+}

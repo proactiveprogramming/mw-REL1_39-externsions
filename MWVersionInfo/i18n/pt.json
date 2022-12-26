@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"mwversioninfo-desc": "Administrar informação da versão do MediaWiki",
+	"apihelp-mwversioninfo-summary": "Obtém informações de versão sobre ramificações do MediaWiki",
+	"apihelp-mwversioninfo-param-version": "Versão do MediaWiki",
+	"apihelp-mwversioninfo-example": "Obtém informações sobre o MediaWiki 1.27"
+}

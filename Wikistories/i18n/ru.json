@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Deltaspace",
+			"Gulka.nik",
+			"Kareyac",
+			"Okras",
+			"Pacha Tchernof",
+			"Tanzun"
+		]
+	},
+	"wikistories-extensiondesc": "ВикиИстории позволяют редакторам извлекать краткую, наглядную и достоверную информацию из проектов Викимедиа.",
+	"wikistories-specialstorybuilder-loading": "Загружается…",
+	"wikistories-specialstorybuilder-nojswarning": "Для работы этой служебной страницы требуется JavaScript",
+	"wikistories-search-inputplaceholder": "Искать изображения",
+	"wikistories-search-noresultstext": "Ничего не найдено",
+	"wikistories-story-goto-publish": "Далее",
+	"wikistories-story-selecttext": "Выбрать текст рассказа из <span class=\"ext-wikistories-wikipedia\">Википедии</span>",
+	"wikistories-story-editdone": "Готово",
+	"wikistories-story-replaceimage": "Заменить это изображение",
+	"wikistories-story-deleteframe": "Удалить эту страницу",
+	"wikistories-imageattribution-author-unknown": "Автор неизвестен",
+	"wikistories-article-cancelselection": "Очистить",
+	"wikistories-article-loading": "Загрузка статьи…",
+	"wikistories-article-usetext": "Добавить в историю",
+	"wikistories-article-info-banner": "Выберите текст, чтобы добавить его в свою историю",
+	"wikistories-article-info-expanded-banner": "Нажмите и удерживайте слово, а затем перетащите ползунки, чтобы выделить текст для добавления в Викисторию. Нажмите <strong>Добавить в историю</strong>.",
+	"wikistories-confirmdialog-delete-title": "Удалить эту страницу?",
+	"wikistories-confirmdialog-delete-accept": "Удалить",
+	"wikistories-confirmdialog-delete-cancel": "Отмена",
+	"wikistories-builder-publishform-publishbutton": "Опубликовать",
+	"wikistories-builder-publishform-saving": "ВикиИстория публикуется…",
+	"wikistories-discover-cta-text": "Создать ВикиИсторию",
+	"wikistories-storyviewer-next-story-header": "Подробнее",
+	"wikistories-invalid-format": "Неверный формат истории",
+	"wikistories-not-enough-frames": "В истории недостаточно количество кадров",
+	"wikistories-too-many-frames": "В истории слишном много кадров",
+	"wikistories-text-too-long": "Текст в #$1-й рамке очень длинный. В нём {{PLURAL:$2|$2 символ|$2 символа|$2 символов}}, когда максимально допустимо — $3 {{PLURAL:$3|символ|символа|символов}}."
+}

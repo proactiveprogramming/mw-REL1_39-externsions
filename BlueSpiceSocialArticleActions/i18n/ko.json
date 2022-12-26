@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong",
+			"Yunbj"
+		]
+	},
+	"bs-socialarticleactions-type-articlesave": "기사 편집",
+	"bs-socialarticleactions-type-articlecreate": "기사 만들기",
+	"bs-socialarticleactions-type-articledelete": "기사 삭제",
+	"bs-socialarticleactions-type-filesave": "파일 편집",
+	"bs-socialarticleactions-type-filecreate": "파일 만들기",
+	"bs-socialarticleactions-type-filedelete": "파일 삭제",
+	"bs-socialarticleactions-entityactionarticlesave-header": "[[User:$1|$2]]님이 [[:$6|$6]] 문서를 편집했습니다",
+	"bs-socialarticleactions-entityactionarticlecreate-header": "[[User:$1|$2]]님이 [[:$6|$6]] 문서를 만들었습니다",
+	"bs-socialarticleactions-entityactionarticledelete-header": "[[User:$1|$2]]님이 [[:$6|$6]] 문서를 삭제했습니다",
+	"bs-socialarticleactions-entityactionfilesave-header": "[[User:$1|$2]]님이 새 판의 [[:$6|$6]] 파일을 추가했습니다",
+	"bs-socialarticleactions-entityactionfilecreate-header": "[[User:$1|$2]]님이 [[:$6|$6]] 파일을 업로드했습니다",
+	"bs-socialarticleactions-entityactionfiledelete-header": "[[User:$1|$2]]님이 [[:$6|$6]] 파일을 삭제했습니다"
+}

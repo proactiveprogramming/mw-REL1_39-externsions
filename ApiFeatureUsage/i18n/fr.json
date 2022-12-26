@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"0x010C",
+			"Benjozork",
+			"Gomoko",
+			"Nicolapps",
+			"Thibaut120094",
+			"Urhixidur",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"apifeatureusage": "Utilisation de la fonctionnalité de l’API",
+	"apifeatureusage-desc": "Obtenir un résumé de l’utilisation des fonctionnalités de l’API tracées pour un agent utilisateur",
+	"apifeatureusage-elasticsearch-error": "Erreur d’Elasticsearch : $1",
+	"apifeatureusage-legend": "Utilisation de fonctionnalité de l’API",
+	"apifeatureusage-agent-label": "Agent utilisateur :",
+	"apifeatureusage-startdate-label": "Date de début :",
+	"apifeatureusage-enddate-label": "Date de fin :",
+	"apifeatureusage-submit": "Récupérer les données",
+	"apifeatureusage-no-indexes": "Aucune donnée n’est disponible pour la plage de dates spécifiée.",
+	"apifeatureusage-missing-indexes": "Aucune donnée n’est disponible pour la partie de la plage de dates spécifiée.",
+	"apifeatureusage-warnings": "Attention : $1",
+	"apifeatureusage-column-feature": "Élément",
+	"apifeatureusage-column-date": "Date",
+	"apifeatureusage-column-uses": "Utilisations",
+	"apifeatureusage-deprecation-help": "Utiliser [[Special:ApiFeatureUsage]] pour voir l’utilisation des fonctionnalités désuètes par votre application."
+}

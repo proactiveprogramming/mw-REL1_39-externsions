@@ -1,0 +1,9 @@
+/composer.lock
+/vendor
+/node_modules
+.eslintcache
+/coverage
+/jest-coverage
+/tests/selenium/log
+/resources/lib/.foreign/
+/docs

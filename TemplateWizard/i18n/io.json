@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"templatewizard-cancel": "Nuligar",
+	"templatewizard-default": "Predeterminita: $1",
+	"templatewizard-insert": "Insertar"
+}

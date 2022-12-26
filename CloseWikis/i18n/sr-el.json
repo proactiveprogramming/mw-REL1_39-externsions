@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello",
+			"Rancher"
+		]
+	},
+	"closewikis-desc": "Omogućava zatvaranje viki projekata u viki farmama",
+	"closewikis-page": "Zatvori vikiju",
+	"closewikis-page-close": "Zatvori viki",
+	"closewikis-page-close-wiki": "Viki:",
+	"closewikis-page-close-dreason": "Razlog (prikazan):",
+	"closewikis-page-close-reason": "Razlog (zabeležen):",
+	"closewikis-page-close-submit": "Zatvori",
+	"closewikis-page-close-success": "Viki je zatvoren",
+	"closewikis-page-reopen": "Otvori Viki ponovo",
+	"closewikis-page-reopen-wiki": "Viki:",
+	"closewikis-page-reopen-reason": "Razlog:",
+	"closewikis-page-reopen-submit": "Otvori ponovo",
+	"closewikis-page-reopen-success": "Viki je ponovo otvoren",
+	"closewikis-page-err-nowiki": "Naveden je nevažeći viki",
+	"closewikis-page-err-closed": "Viki je već zatvoren",
+	"closewikis-page-err-opened": "Viki nije zatvoren",
+	"closewikis-list": "Lista zatvorenik vikija",
+	"closewikis-list-intro": "Ova lista sadrži vikije koje su zatvorili stjuardi.",
+	"closewikis-list-header-wiki": "Viki",
+	"closewikis-list-header-by": "Zatvorio",
+	"closewikis-list-header-timestamp": "Zatvoren na",
+	"closewikis-list-header-dispreason": "Prikazani razlog",
+	"closewikis-log": "Dnevnik zatvaranja vikija",
+	"closewikis-log-header": "Ovo je dnevnik svih zatvaranja i ponovnih otvaranja projekata koje su izvršili stjuardi",
+	"closewikis-log-close": "zatvoren $2",
+	"closewikis-log-reopen": "ponovo otvoren $2",
+	"action-editclosedwikis": "uređivanje zatvorenih vikija",
+	"right-editclosedwikis": "Uređivanje zatvorenih vikija",
+	"action-closewikis": "zatvoreni vikiji",
+	"right-closewikis": "Zatvaranje vikija"
+}

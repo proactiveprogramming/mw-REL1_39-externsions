@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"basehooks-desc": "Tekenreeksen of bestanden toevoegen vóór het einde van de tag <code><nowiki><body></nowiki></code>"
+}

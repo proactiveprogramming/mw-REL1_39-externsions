@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saurmandal"
+		]
+	},
+	"dynamicpagelistengine-desc": "[[mw:Special:MyLanguage/Extension:Scribunto|मॉड्यूल्स]] और दूसरे एक्सटेंशनों को कॉन्फ़िगरेबल और एक्सटेंसिबल सुविधाओं के साथ डायनामिक पृष्ठ सूचियाँ प्रदान करता है।",
+	"dple-tracking-category": "DynamicPageListEngine का इस्तेमाल कर रहे पृष्ठ",
+	"dple-error-invalid-ns-index": "DynamicPageListEngine त्रुटि: इनडेक्स $1 वाला कोई नामस्थान नहीं है।",
+	"dple-error-no-criteria": "DynamicPageListEngine त्रुटि: चयन का कोई मानदंड नहीं दिया गया।",
+	"dple-error-too-expensive": "DynamicPageListEngine त्रुटि: $1 जितने महँगे क्वेरी करने की कोशिश की गई जिससे डेटाबेस टेबल जुड़ गए, जबकि अधिकतम मात्रा है $2।",
+	"dple-error-too-many-expensive-functions": "DynamicPageListEngine त्रुटि: इस पृष्ठ पर कुछ ज़्यादा ही महँगे फ़ंक्शन्स का प्रयोग किया गया है।"
+}

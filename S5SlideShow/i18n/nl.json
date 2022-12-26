@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Romaine"
+		]
+	},
+	"s5slide-header-title": "Titel",
+	"s5slide-header-subtitle": "Ondertitel",
+	"s5slide-header-author": "Auteur"
+}

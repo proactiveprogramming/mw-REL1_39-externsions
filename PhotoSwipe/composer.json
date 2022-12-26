@@ -1,0 +1,58 @@
+{
+	"name": "mediawiki/photoswipe",
+	"type": "mediawiki-extension",
+	"description": "This is a MediaWiki extension that adds <code>&lt;photoswipe&gt;</code> tag to provide a front-end JavaScript image gallery and lightbox using [PhotoSwipe](https://photoswipe.com/)",
+	"homepage": "https://mediawiki.org/wiki/Extension:PhotoSwipe",
+	"authors": [
+		{
+			"name": "Jason Khanlar"
+		}
+	],
+	"keywords": [
+		"extension",
+		"gallery",
+		"imagegallery",
+		"MediaWiki",
+		"photogallery",
+		"photoswipe",
+		"wiki"
+	],
+	"license": "GPL-3.0-or-later",
+	"support": {
+		"forum": "https://www.mediawiki.org/wiki/Extension_talk:Photoswipe",
+		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-photoswipe/",
+		"wiki": "https://www.mediawiki.org/wiki/Extension:Photoswipe"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"prepend-autoloader": false,
+		"allow-plugins": {
+			"composer/installers": false
+		}
+	},
+	"require": {
+		"php": ">=7.1",
+		"composer/installers": ">=1.0.1",
+		"respect/validation": "^2.2",
+		"adhocore/json-comment": "^1.1",
+		"seld/jsonlint": "^1.9"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phpcs": "phpcs -ps --cache",
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"@phpcs",
+			"minus-x check ."
+		]
+	}
+}

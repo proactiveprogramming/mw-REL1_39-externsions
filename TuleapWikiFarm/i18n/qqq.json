@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Umherirrender"
+		]
+	},
+	"tuleapwikifarm-desc": "{{desc|name=TuleapWikiFarm}}",
+	"action-tuleap-farm-manage": "{{doc-action|tuleap-farm-manage}}",
+	"right-tuleap-farm-manage": "{{doc-right|tuleap-farm-manage}}"
+}

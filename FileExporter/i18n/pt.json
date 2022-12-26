@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Vitorvicentevalente"
+		]
+	},
+	"fileexporter": "Exportador de ficheiros",
+	"fileexporter-desc": "Exportação fácil de ficheiros para outra wiki",
+	"fileexporter-text": "Exportar ficheiro",
+	"fileexporter-to-wikimedia-commons": "Exportar para a wiki Wikimedia Commons",
+	"tag-fileimporter-remote": "Modificado pelo Importador de Ficheiros",
+	"tag-fileimporter-remote-description": "Edições efetuadas pela extensão [[mw:Extension:FileImporter|Importador de Ficheiros]] após ter importado um ficheiro desta wiki."
+}

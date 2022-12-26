@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "Generische API für den Zugriff auf persistente Domänenobjekte.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Die JSON-Transaktion konnte nicht deserialisiert werden.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Die Transaktion konnte nicht deserialisiert werden.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Die Transaktion konnte nicht ausgeführt werden.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Antwort konnte nicht serialisiert werden.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Erstellen einer einzelnen neuen Benutzeranfrage.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Lesen einer einzelnen Benutzeranfrage.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Löschen einer einzelnen Benutzeranfrage."
+}

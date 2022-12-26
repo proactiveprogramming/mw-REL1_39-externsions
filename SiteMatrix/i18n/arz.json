@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ghaly",
+			"Meno25",
+			"Ramsis II"
+		]
+	},
+	"sitematrix-desc": "بيعرض [[Special:SiteMatrix|لستة ويكيهات الويكيميديا]]",
+	"sitematrix-language": "اللغه",
+	"sitematrix-project": "اسم المشروع،لينك المشروع الداخلية و لينك الانترويكي",
+	"sitematrix-total": "'''اجمالى العدد: $1'''",
+	"sitematrix-sitetotal": "المجموع",
+	"sitematrix-private": "خصوصي",
+	"sitematrix-fishbowl": "التعديل متحدد"
+}

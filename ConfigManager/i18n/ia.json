@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"configmanager-admintool-label": "Gestor de configuration",
+	"action-configmanager-viewspecialpage": "vider le pagina special \"{{int:configmanager}}\"",
+	"configmanager": "Gestor de configuration",
+	"configmanager-desc": "Offere al administratores le possibilitate de configurar tote le wiki ab un singule pagina special",
+	"configmanager-discardchanges": "Abandonar modificationes?",
+	"configmanager-noentry": "Nulle entrata trovate",
+	"apihelp-configmanager-tasks-summary": "Gerer cargas",
+	"apihelp-configmanager-store-summary": "Gerer immagazinages",
+	"right-configmanager-viewspecialpage": "Accesso al pagina special [[Special:ConfigManager]]"
+}

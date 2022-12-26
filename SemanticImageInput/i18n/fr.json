@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"sii-desc": "Ajoute une entrée d’image qui tire des images de Wikipédia vers les [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:Page_Forms formulaires de page]",
+	"sii-imageinput-loading": "Chargement de l’image..."
+}

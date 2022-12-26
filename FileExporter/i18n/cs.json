@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mormegil"
+		]
+	},
+	"fileexporter": "Exportér souborů",
+	"fileexporter-desc": "Jednoduché exportování souborů na jinou wiki",
+	"fileexporter-text": "Exportovat soubor",
+	"fileexporter-to-wikimedia-commons": "Exportovat na Wikimedia Commons"
+}

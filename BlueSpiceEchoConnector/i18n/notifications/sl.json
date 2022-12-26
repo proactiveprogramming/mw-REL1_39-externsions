@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Janezdrilc",
+			"Skalcaa"
+		]
+	},
+	"bs-notifications-addaccount": "Uporabnik »$1« je bil ustvarjen.",
+	"bs-notifications-email-addaccount-subject": "{{GENDER:$1|Uporabnik »$2« ustvarjen|Uporabnica »$2« ustvarjena|Uporabnik_ca »$2« ustvarjen_a}}",
+	"bs-notifications-email-addaccount-body": "{{GENDER:$1|Uporabnik|Uporabnica|Uporabnik_ca}} $2 {{GENDER:$1|ustvarjen|ustvarjena|ustvarjen_a}}.\n\nUporabniško stran {{GENDER:$1|uporabnika|uporabnice|uporabnika_ce}} lahko obiščete tako, da sledite naslednji povezavi",
+	"bs-notifications-web-addaccount-body": "{{GENDER:$1|Uporabnik|Uporabnica|Uporabnik_ca}} $2 je {{GENDER:$1|bil ustvarjena|bila ustvarjena|bil_a ustvarjen_a}}.",
+	"bs-notifications-addaccout-performer": "{{GENDER:$1|Ustvaritelj|Ustvariteljica|Ustvaritelj_ica}}: $1",
+	"bs-notifications-addaccount-performer": "{{GENDER:$1|Ustvaritelj|Ustvariteljica|Ustvaritelj_ica}}: $1",
+	"bs-notifications-registeruser": "Uporabnik »$1« si je ustvaril račun.",
+	"bs-notifications-email-registeruser-subject": "{{GENDER:$1|Uporabnik|Uporabnica|Uporabnik_ca}} »$2« si je {{GENDER:$1|ustvaril|ustvarila|ustvaril_a}} račun",
+	"bs-notifications-email-registeruser-body": "{{GENDER:$1|Uporabnik|Uporabnica|Uporabnik_ca}} $2 si je {{GENDER:$1|ustvaril|ustvarila|ustvaril_a}} račun.\n\nObiščete lahko {{GENDER:$1|njegovo|njeno|njegovo_njeno}} uporabniško stran, tako da sledite naslednji povezavi",
+	"bs-notifications-web-registeruser-body": "{{GENDER:$1|Uporabnik|Uporabnica|Uporabnik_ca}} $2 si je {{GENDER:$1|ustvaril|ustvarila|ustvaril_a}} račun.",
+	"bs-notifications-edit": "Stran »$1« je bila spremenjena",
+	"bs-notifications-edit-bundle": "Stran »$2« je bila spremenjena {{PLURAL:$1|$1-krat}}",
+	"bs-notifications-email-edit-subject": "Stran »$1« je dne $4 {{GENDER:$2|uredil|uredila|uredil_a}} $3.",
+	"bs-notifications-email-edit-body": "Stran »$1« je dne $5 {{GENDER:$2|uredil|uredila|uredil_a}} $4.\n\nKomentar:\n  $3",
+	"bs-notifications-web-edit-body": "Stran »$1« je {{GENDER:$2|uredil|uredila|uredil_a}} $3.",
+	"bs-notifications-create": "Stran »$1« je bila ustvarjena",
+	"bs-notifications-email-create-subject": "Stran »$1« je dne $4 {{GENDER:$2|ustvaril|ustvarila|ustvaril_a}} $3",
+	"bs-notifications-email-create-body": "Stran »$1« je dne $5 {{GENDER:$2|ustvaril|ustvarila|ustvaril_a}} $3.\n\nKomentar:\n  $4\nStran lahko obiščete tako, da sledite naslednji povezavi",
+	"bs-notifications-web-create-body": "Stran »$1« je {{GENDER:$2|ustvaril|ustvarila|ustvaril_a}} $3.",
+	"bs-notifications-delete": "Stran »$1« je bila izbrisana",
+	"bs-notifications-email-delete-subject": "Stran »$1« je dne $4 {{GENDER:$2:|izbrisal|izbrisala|izbrisal_a}} $3",
+	"bs-notifications-email-delete-body": "Stran »$1« je dne $5 {{GENDER:$2|izbrisal|izbrisala|izbrisal_a}} $3.\n\nRazlog za izbris:\n$4",
+	"bs-notifications-web-delete-body": "Stran »$1« je {{GENDER:$2|izbrisal|izbrisala|izbrisal_a}} $3.",
+	"bs-notifications-move": "Stran »$1« je prestavljena",
+	"bs-notifications-email-move-subject": "Stran »$1« je $4 dne $5 {{GENDER:$2|prestavil|prestavila|prestavil_a}} na »$3«",
+	"bs-notifications-email-move-body": "Stran »$1« je na »$3« dne $6 {{GENDER:$2|prestavil|prestavila|prestavil_a}} $4.\n\nRazlog:\n$5\n\nStran lahko obiščete tako, da sledite povezavi spodaj",
+	"bs-notifications-web-move-body": "Stran »$1« je {{GENDER:$2|uporabnik|uporabnica|uporabnik_ca}} $4 {{GENDER:$2|prestavil|prestavila|prestavil_a}} na naslov »$3«",
+	"bs-notifications-edit-difflink-label": "Prikaži razlike",
+	"bs-notifications-htmlmail-greeting": "{{GENDER:$1|Pozdravljeni}}, $1",
+	"bs-notifications-htmlmail-sender-info": "Obvestilni sistem $1",
+	"bs-notifications-mail-additional-links-label": "Dodatne povezave",
+	"bs-notifications-param-realname-with-username": "$1 ($2)"
+}

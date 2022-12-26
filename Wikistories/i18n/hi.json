@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abijeet Patro",
+			"AnupamM"
+		]
+	},
+	"wikistories-specialstorybuilder-loading": "लोड हो रहा है...",
+	"wikistories-search-inputplaceholder": "छवियों को खोजें",
+	"wikistories-search-noresultstext": "कोई परिणाम नहीं",
+	"wikistories-story-goto-publish": "अगला",
+	"wikistories-story-editdone": "पूर्ण हुआ",
+	"wikistories-story-deleteframe": "इस पृष्ठ को हटाएं",
+	"wikistories-article-cancelselection": "रद्द करें",
+	"wikistories-alert-okbuttontext": "ठीक है",
+	"wikistories-confirmdialog-cancel": "रद्द करें",
+	"wikistories-confirmdialog-ok": "ठीक है",
+	"wikistories-confirmdialog-delete-title": "इस पृष्ठ को हटाएं?",
+	"wikistories-confirmdialog-delete-message": "इसे आपकी स्टोरी से हमेशा के लिए हटा दिया जाएगा",
+	"wikistories-confirmdialog-delete-accept": "हटाएँ",
+	"wikistories-confirmdialog-delete-cancel": "रद्द करें",
+	"wikistories-storyviewer-textsize-label-large": "बड़ा",
+	"wikistories-error-frameswithouttext-title": "अनुपस्थित टेक्स्ट",
+	"wikistories-builder-publishform-placeholder": "कहानी का शीर्षक दर्ज करें...",
+	"wikistories-builder-publishform-publishbutton": "प्रकाशित करें",
+	"wikistories-builder-publishform-info": "प्रकाशित कहानियां लेख पृष्ठ पर उपलब्ध होंगी।",
+	"wikistories-builder-publishform-invalidtitle-empty": "कहानी का शीर्षक दर्ज करें",
+	"wikistories-builder-publishform-saveerror": "कहानी प्रकाशित करते समय एक त्रुटि हुई। बाद में पुन: प्रयास करें।",
+	"wikistories-storyviewer-next-story-viewtext": "देखें"
+}

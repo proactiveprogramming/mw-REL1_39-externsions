@@ -1,0 +1,49 @@
+{
+	"name": "GroupWhitelist",
+	"author": [
+		"WikiWorks team"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:GroupWhitelist",
+	"descriptionmsg": "groupwhitelist-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\GroupWhitelist\\": "includes/"
+	},
+	"config": {
+		"GroupWhitelistRights": {
+			"description": "A list of actions to be allowed",
+			"value": [ "edit" ],
+			"merge_strategy": "array_plus"
+		},
+		"GroupWhitelistGroup": {
+			"description": "A group affected by the extension",
+			"value": [ "user" ],
+			"merge_strategy": "array_plus"
+		},
+		"GroupWhitelistSourcePage": {
+			"description": "A page to look for list of whitelisted pages",
+			"value": "MediaWiki:Whitelist"
+		},
+		"GroupWhitelistAPIAllow": {
+			"description": "API modules to be always granted with the right",
+			"value": []
+		}
+	},
+	"Hooks": {
+		"getUserPermissionsErrors": "MediaWiki\\Extension\\GroupWhitelist\\Hooks::ongetUserPermissionsErrors",
+		"UserGetRights": "MediaWiki\\Extension\\GroupWhitelist\\Hooks::onUserGetRights"
+	},
+	"MessagesDirs": {
+		"GroupWhitelist": [
+			"i18n"
+		]
+	},
+	"ConfigRegistry": {
+		"GroupWhitelist": "GlobalVarConfig::newInstance"
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"graphviz-desc": "Permitte incorporar le marcation [http://www.graphviz.org Graphviz] e genera imagines pro insertion in pagina",
+	"graphviz-reload": "Le fonte del imagine del graphico ha cambiate. Recarga le pagina pro actualisar le imagine del graphico.",
+	"graphviz-no-input": "Le fonte del graphico manca.",
+	"graphviz-dot-invalid-image": "Le attributo puncto $1 debe esser le nomine de un file incargate.",
+	"graphviz-dot-attr-forbidden": "Le attributo puncto $1 es prohibite.",
+	"graphviz-read-src-failed": "Non poteva leger le texto del graphico ab le systema de files.",
+	"graphviz-write-src-failed": "Non poteva scriber le texto del graphico al systema de files.",
+	"graphviz-write-map-failed": "Non poteva scriber le mappa del graphico al systema de files.",
+	"graphviz-mkdir-failed": "Non poteva crear un directorio in le systema de files.",
+	"graphviz-delete-reason": "Iste file temporari ha essite delite per le extension GraphViz.",
+	"graphviz-alt": "Isto es un graphico con bordos e nodos que pote continer hyperligamines.",
+	"graphviz-uploaddisabledtext": "Le creation de imagines de graphico non es permittite perque le incargamento de files ha essite disactivate.",
+	"graphviz-upload-not-permitted": "Le creation de imagines de graphico require le permission de incargar.",
+	"graphviz-user-blocked": "Le creation de imagines de graphico non es permittite pro usatores blocate.",
+	"graphviz-read-only": "Le creation de imagines de graphico non es permittite perque le wiki es in modo de lectura sol.",
+	"graphviz-uploaderror": "Le incargamento del imagine de graphico ha fallite pro le file: $1",
+	"graphviz-upload-comment": "generate per le [[Special:Version#Installed_extensions|extension]] GraphViz a partir del pagina [[$1]]",
+	"graphviz-unrecognized-preparse-value": "Le valor de preanalyse syntactic \"$1\" non es recognoscite.",
+	"graphviz-category-desc": "$1 contine paginas create per le extension GraphViz.",
+	"graphviz-subcategory-desc": "$1 contine pagina create usante le commando $2.",
+	"graphviz-map-desc": "= ImageMap =\nSi tu include iste imagine in un pagina wiki, usa le sequente notation pro activar ligamines:\n <nowiki>\n<imagemap>\nFile:$1\n$2</imagemap>\n</nowiki>\nVide [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:ImageMap ImageMap] pro plus information.",
+	"graphviz-upload-user": "GraphViz",
+	"graphviz-setting-execpath": "Le percurso al file executabile de GraphViz.",
+	"graphviz-setting-mscgenpath": "Le percurso al file executabile mscgen pro GraphViz.",
+	"graphviz-setting-defaultimg": "Le typo de imagine de sortita predefinite pro GraphViz."
+}

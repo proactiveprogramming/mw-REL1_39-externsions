@@ -1,0 +1,708 @@
+'use strict';
+
+/**
+ * @class Kartographer.Data.DataLoader
+ * @param {Function} createPromise
+ * @param {Function} createResolvedPromise
+ * @param {Function} mwApi Reference to the {@see mw.Api} constructor
+ * @param {Object} [clientStore]
+ * @param {string} [title] Will be ignored if revid is supplied.
+ * @param {string|false} [revid] Either title or revid must be set. If false or missing, falls back
+ *  to a title-only request.
+ * @param {Function} [debounce] Reference to e.g. {@see jQuery.debounce}
+ * @param {Function} [log]
+ * @constructor
+ */
+var DataLoader = function (
+	createPromise,
+	createResolvedPromise,
+	mwApi,
+	clientStore,
+	title,
+	revid,
+	debounce,
+	log
+) {
+	var DataLoader = function () {
+		/**
+		 * @type {Object.<string,Promise>} Hash of group ids and associated promises
+		 * @private
+		 */
+		this.promiseByGroup = {};
+
+		/**
+		 * @type {string[]} List of group ids to fetch next time {@link #fetch} is called
+		 * @private
+		 */
+		this.nextFetch = [];
+
+		if ( debounce ) {
+			this.fetch = debounce( 100, this.fetch.bind( this ) );
+		}
+	};
+
+	clientStore = clientStore || {};
+
+	/**
+	 * @param {string} groupId
+	 * @return {Promise}
+	 */
+	DataLoader.prototype.fetchGroup = function ( groupId ) {
+		var promise = this.promiseByGroup[ groupId ],
+			resolveFunc, rejectFunc;
+		if ( !promise ) {
+			if ( clientStore[ groupId ] ) {
+				promise = createResolvedPromise( clientStore[ groupId ] );
+			} else {
+				// FIXME: this is a horrible hack
+				// The resolve and reject functions are attached to the promise object's instance
+				// so that they can be called from the fetch function later
+				this.nextFetch.push( groupId );
+				promise = createPromise( function ( resolve, reject ) {
+					resolveFunc = resolve;
+					rejectFunc = reject;
+				} );
+				promise.mwResolve = resolveFunc;
+				promise.mwReject = rejectFunc;
+			}
+
+			this.promiseByGroup[ groupId ] = promise;
+		}
+		return promise;
+	};
+
+	/**
+	 * @return {Promise}
+	 */
+	DataLoader.prototype.fetch = function () {
+		var loader = this,
+			groupsToLoad = loader.nextFetch;
+
+		if ( !groupsToLoad.length ) {
+			return createResolvedPromise();
+		}
+
+		loader.nextFetch = [];
+
+		/**
+		 * FIXME: we need to fix this horrid hack
+		 * http://stackoverflow.com/questions/39970101/combine-multiple-debounce-promises-in-js
+		 *
+		 * @param {string[]} groupsToLoad
+		 * @param {Object.<string,Object>} values Map of group id to GeoJSON
+		 * @param {Object} [err] MediaWiki API error
+		 */
+		function setPromises( groupsToLoad, values, err ) {
+			for ( var i = 0; i < groupsToLoad.length; i++ ) {
+				var promise = loader.promiseByGroup[ groupsToLoad[ i ] ];
+				if ( promise.mwResolve ) {
+					if ( err ) {
+						promise.mwReject( err );
+					} else {
+						promise.mwResolve( values[ groupsToLoad[ i ] ] || {} );
+					}
+					delete promise.mwResolve;
+					delete promise.mwReject;
+				}
+			}
+		}
+
+		var params = {
+			action: 'query',
+			formatversion: '2',
+			titles: title,
+			revids: revid,
+			prop: 'mapdata',
+			mpdlimit: 'max',
+			mpdgroups: groupsToLoad.join( '|' )
+		};
+		delete params[ revid ? 'titles' : 'revids' ];
+
+		return mwApi( params ).then( function ( data ) {
+			if ( !data.query || !data.query.pages || !data.query.pages[ 0 ] ) {
+				if ( log ) {
+					log( 'warn', 'DataLoader retrieved incomplete results: ' + JSON.stringify( data ) );
+				}
+				setPromises( groupsToLoad, {} );
+			} else {
+				var rawMapData = data.query.pages[ 0 ].mapdata;
+				setPromises( groupsToLoad, rawMapData && JSON.parse( rawMapData ) || {} );
+			}
+		}, function ( err ) {
+			if ( log ) {
+				log( 'error', 'DataLoader request failed: ' + err.message + err.stack );
+			}
+			setPromises( groupsToLoad, undefined, err );
+		} );
+	};
+
+	return new DataLoader();
+};
+
+/**
+ * Group parent class.
+ *
+ * @class Kartographer.Data.Group
+ * @extends L.Class
+ * @abstract
+ */
+
+/**
+ * @param {string} groupId
+ * @param {Object} [geoJSON]
+ * @param {Object} [options]
+ * @constructor
+ */
+var Group$1 = function () {
+	// call the constructor
+	this.initialize.apply( this, arguments );
+};
+
+Group$1.prototype.initialize = function ( groupId, geoJSON, options ) {
+	this.id = groupId;
+	this.geoJSON = geoJSON || null;
+	this.options = options || {};
+};
+
+/**
+ * @return {Object|null} Group GeoJSON
+ */
+Group$1.prototype.getGeoJSON = function () {
+	return this.geoJSON;
+};
+
+/**
+ * @return {string} Group annotation
+ */
+Group$1.prototype.getAttribution = function () {
+	return this.options.attribution;
+};
+
+var Group_1 = Group$1;
+
+/**
+ * @class Kartographer.Data.Group.External
+ * @extends Kartographer.Data.Group
+ * @param {Function} extend Reference to e.g. {@see jQuery.extend}
+ * @param {Function} isEmptyObject Reference to e.g. {@see jQuery.isEmptyObject}
+ * @param {Function} getJSON Reference to e.g. {@see jQuery.getJSON}
+ * @param {Function} [mwMsg] Reference to the {@see mw.msg} function
+ * @param {Function} mwUri Reference to the {@see mw.Uri} constructor
+ * @param {Function} mwHtmlElement Reference to the {@see mw.html.element} function
+ * @param {Function} Group Reference to the {@see Kartographer.Data.Group} class
+ * @param {Function} [log]
+ * @return {Function}
+ */
+var Group_External = function (
+	extend,
+	isEmptyObject,
+	getJSON,
+	mwMsg,
+	mwUri,
+	mwHtmlElement,
+	Group,
+	log
+) {
+
+	var ExternalGroup = function () {
+		// call the constructor
+		this.initialize.apply( this, arguments );
+		this.isExternal = true;
+	};
+
+	extend( ExternalGroup.prototype, Group.prototype );
+
+	ExternalGroup.prototype.initialize = function ( groupId, geoJSON, options ) {
+		options = options || {};
+
+		Group.prototype.initialize.call( this, groupId, geoJSON, options );
+	};
+
+	/**
+	 * @return {Promise}
+	 */
+	ExternalGroup.prototype.fetch = function () {
+		var group = this,
+			data = group.geoJSON;
+
+		if ( group.promise ) {
+			return group.promise;
+		}
+
+		if ( !data.url ) {
+			throw new Error( 'ExternalData has no url' );
+		}
+
+		group.promise = getJSON( data.url ).then( function ( geodata ) {
+			var baseProps = data.properties,
+				geometry,
+				coordinates,
+				i, j;
+
+			switch ( data.service ) {
+
+				case 'page':
+					if ( geodata.jsondata && geodata.jsondata.data ) {
+						extend( data, geodata.jsondata.data );
+					}
+					// FIXME: error reporting, at least to console.log
+					break;
+
+				case 'geomask':
+					// Mask-out the entire world 10 times east and west,
+					// and add each result geometry as a hole
+					coordinates = [ [
+						[ 3600, -180 ],
+						[ 3600, 180 ],
+						[ -3600, 180 ],
+						[ -3600, -180 ],
+						[ 3600, -180 ]
+					] ];
+					for ( i = 0; i < geodata.features.length; i++ ) {
+						geometry = geodata.features[ i ].geometry;
+						if ( !geometry ) {
+							continue;
+						}
+						// Only add the very first (outer) polygon
+						switch ( geometry.type ) {
+							case 'Polygon':
+								coordinates.push( geometry.coordinates[ 0 ] );
+								break;
+							case 'MultiPolygon':
+								for ( j = 0; j < geometry.coordinates.length; j++ ) {
+									coordinates.push( geometry.coordinates[ j ][ 0 ] );
+								}
+								break;
+						}
+					}
+					data.type = 'Feature';
+					data.geometry = {
+						type: 'Polygon',
+						coordinates: coordinates
+					};
+					break;
+
+				case 'geoshape':
+				case 'geopoint':
+				case 'geoline':
+
+					// HACK: workaround for T144777 - we should be using topojson instead
+					extend( data, geodata );
+
+					// data.type = 'FeatureCollection';
+					// data.features = [];
+					// $.each( geodata.objects, function ( key ) {
+					// data.features.push( topojson.feature( geodata, geodata.objects[ key ] ) );
+					// } );
+
+					// Each feature returned from geoshape service may contain "properties"
+					// If externalData element has properties, merge with properties in the feature
+					if ( baseProps ) {
+						for ( i = 0; i < data.features.length; i++ ) {
+							if ( isEmptyObject( data.features[ i ].properties ) ) {
+								data.features[ i ].properties = baseProps;
+							} else {
+								data.features[ i ].properties = extend( {}, baseProps,
+									data.features[ i ].properties );
+							}
+						}
+					}
+					break;
+
+				default:
+					throw new Error( 'Unknown externalData service ' + data.service );
+			}
+
+			if ( mwMsg ) {
+				group.parseAttribution();
+			}
+		}, function () {
+			if ( log ) {
+				log( 'warn', 'ExternalGroup getJSON failed: ' + JSON.stringify( arguments ) );
+			}
+			group.failed = true;
+		} );
+
+		return group.promise;
+	};
+
+	ExternalGroup.prototype.parseAttribution = function () {
+		var group = this,
+			links = [],
+			uri = mwUri( group.geoJSON.url );
+
+		if ( group.geoJSON.service === 'page' ) {
+			links.push(
+				mwHtmlElement( 'a',
+					{
+						target: '_blank',
+						href: '//commons.wikimedia.org/wiki/Data:' + encodeURIComponent( uri.query.title )
+					},
+					uri.query.title
+				)
+			);
+			group.attribution = mwMsg(
+				'kartographer-attribution-externaldata',
+				mwMsg( 'project-localized-name-commonswiki' ),
+				links
+			);
+		}
+	};
+
+	return ExternalGroup;
+};
+
+/**
+ * @class Kartographer.Data.DataStore
+ * @constructor
+ */
+var DataStore = function () {
+
+	var DataStore = function () {
+		this.groups = {};
+	};
+
+	/**
+	 * @param {Kartographer.Data.Group} group
+	 * @return {Kartographer.Data.Group}
+	 */
+	DataStore.prototype.add = function ( group ) {
+		this.groups[ group.id ] = group;
+		return group;
+	};
+
+	/**
+	 * @param {string} groupId
+	 * @return {Kartographer.Data.Group|undefined}
+	 */
+	DataStore.prototype.get = function ( groupId ) {
+		return this.groups[ groupId ];
+	};
+
+	/**
+	 * @param {string} groupId
+	 * @return {boolean}
+	 */
+	DataStore.prototype.has = function ( groupId ) {
+		return ( groupId in this.groups );
+	};
+
+	return new DataStore();
+};
+
+/**
+ * A hybrid group is a group that is not considered as a {@link Kartographer.Data.Group.HybridGroup}
+ * because it does not implement a `fetch` method.
+ *
+ * This abstraction is useful for the Developer API: the data is passed directly but still needs to
+ * be parsed to extract the external sub-groups.
+ *
+ * @class Kartographer.Data.Group.HybridGroup
+ * @extends Kartographer.Data.Group
+ * @param {Function} extend Reference to e.g. {@see jQuery.extend}
+ * @param {Function} createResolvedPromise
+ * @param {Function} isPlainObject Reference to e.g. {@see jQuery.isPlainObject}
+ * @param {Function} whenAllPromises Reference to e.g. {@see jQuery.when}
+ * @param {Function} Group Reference to the {@see Kartographer.Data.Group} class
+ * @param {Function} ExternalGroup Reference to the {@see Kartographer.Data.Group.External}
+ *  constructor
+ * @param {Kartographer.Data.DataStore} dataStore
+ * @param {Function} [log]
+ * @return {Function}
+ */
+var Group_Hybrid = function (
+	extend,
+	createResolvedPromise,
+	isPlainObject,
+	whenAllPromises,
+	Group,
+	ExternalGroup,
+	dataStore,
+	log
+) {
+
+	var HybridGroup = function () {
+		// call the constructor
+		this.initialize.apply( this, arguments );
+	};
+
+	function isExternalDataGroup( data ) {
+		return isPlainObject( data ) && data.type && data.type === 'ExternalData';
+	}
+
+	extend( HybridGroup.prototype, Group.prototype );
+
+	HybridGroup.prototype.initialize = function ( groupId, geoJSON, options ) {
+		options = options || {};
+
+		Group.prototype.initialize.call( this, groupId, geoJSON, options );
+		this.externals = [];
+		this.isExternal = false;
+	};
+
+	/**
+	 * @return {Promise}
+	 */
+	HybridGroup.prototype.load = function () {
+		return this.parse( this.getGeoJSON() ).then( function ( group ) {
+			return group.fetchExternalGroups();
+		}, function () {
+			if ( log ) {
+				log( 'warn', 'HybridGroup getGeoJSON failed: ' + JSON.stringify( arguments ) );
+			}
+		} );
+	};
+
+	/**
+	 * @return {Promise}
+	 */
+	HybridGroup.prototype.fetchExternalGroups = function () {
+		var promises = [],
+			group = this,
+			i,
+			externals = group.externals;
+
+		for ( i = 0; i < externals.length; i++ ) {
+			promises.push( externals[ i ].fetch() );
+		}
+
+		return whenAllPromises( promises ).then( function () {
+			return group;
+		}, function () {
+			if ( log ) {
+				log( 'warn', 'HybridGroup fetchExternalGroups failed: ' + JSON.stringify( arguments ) );
+			}
+		} );
+	};
+
+	/**
+	 * Parses the GeoJSON to extract the external data sources.
+	 *
+	 * Creates {@link Kartographer.Data.Group.External external data groups} and
+	 * keeps references of them in {@link #externals}.
+	 *
+	 * @param {Object[]|Object} apiGeoJSON The GeoJSON as returned by the API.
+	 * @return {Promise}
+	 */
+	HybridGroup.prototype.parse = function ( apiGeoJSON ) {
+		var group = this,
+			geoJSON,
+			externalKey,
+			i;
+
+		group.apiGeoJSON = apiGeoJSON;
+		apiGeoJSON = JSON.parse( JSON.stringify( apiGeoJSON ) );
+		if ( Array.isArray( apiGeoJSON ) ) {
+			geoJSON = [];
+			for ( i = 0; i < apiGeoJSON.length; i++ ) {
+				if ( isExternalDataGroup( apiGeoJSON[ i ] ) ) {
+					externalKey = JSON.stringify( apiGeoJSON[ i ] );
+					group.externals.push(
+						dataStore.get( externalKey ) ||
+						dataStore.add( new ExternalGroup( externalKey, apiGeoJSON[ i ] ) )
+					);
+				} else {
+					geoJSON.push( apiGeoJSON[ i ] );
+				}
+			}
+		} else if ( isExternalDataGroup( apiGeoJSON ) ) {
+			externalKey = JSON.stringify( apiGeoJSON );
+			group.externals.push(
+				dataStore.get( externalKey ) ||
+				dataStore.add( new ExternalGroup( externalKey, apiGeoJSON ) )
+			);
+			geoJSON = {};
+		}
+
+		group.geoJSON = geoJSON;
+
+		return createResolvedPromise( group );
+	};
+
+	return HybridGroup;
+};
+
+/**
+ * @class Kartographer.Data.Group.Internal
+ * @extends Kartographer.Data.Group.HybridGroup
+ * @param {Function} extend Reference to e.g. {@see jQuery.extend}
+ * @param {Function} HybridGroup Reference to the {@see Kartographer.Data.Group.HybridGroup} class
+ * @param {Kartographer.Data.DataLoader} dataLoader
+ * @param {Function} [log]
+ * @return {Function}
+ */
+var Group_Internal = function ( extend, HybridGroup, dataLoader, log ) {
+
+	var InternalGroup = function () {
+		// call the constructor
+		this.initialize.apply( this, arguments );
+	};
+
+	extend( InternalGroup.prototype, HybridGroup.prototype );
+
+	/**
+	 * @return {Promise}
+	 */
+	InternalGroup.prototype.fetch = function () {
+		if ( this.promise ) {
+			return this.promise;
+		}
+
+		var group = this;
+		this.promise = dataLoader.fetchGroup( this.id ).then( function ( apiGeoJSON ) {
+			return group.parse( apiGeoJSON ).then( function ( group ) {
+				return group.fetchExternalGroups();
+			} );
+		}, function () {
+			if ( log ) {
+				log( 'warn', 'InternalGroup fetchGroup failed: ' + JSON.stringify( arguments ) );
+			}
+			group.failed = true;
+		} );
+		return this.promise;
+	};
+	return InternalGroup;
+};
+
+var dataLoaderLib = DataLoader;
+var Group = Group_1;
+var externalGroupLib = Group_External;
+var dataStoreLib = DataStore;
+var hybridGroupLib = Group_Hybrid;
+var internalGroupLib = Group_Internal;
+
+/**
+ * @class Kartographer.Data.DataManager
+ * @param {Object} wrappers
+ * @param {Object} [wrappers.clientStore]
+ * @param {Function} wrappers.createPromise
+ * @param {Function} [wrappers.debounce] Reference to e.g. {@see jQuery.debounce}
+ * @param {Function} wrappers.extend Reference to e.g. {@see jQuery.extend}
+ * @param {Function} wrappers.getJSON Reference to e.g. {@see jQuery.getJSON}
+ * @param {Function} wrappers.isEmptyObject Reference to e.g. {@see jQuery.isEmptyObject}
+ * @param {Function} wrappers.isPlainObject Reference to e.g. {@see jQuery.isPlainObject}
+ * @param {Function} wrappers.mwApi Reference to the {@see mw.Api} constructor
+ * @param {Function} wrappers.mwHtmlElement Reference to the {@see mw.html.element} function
+ * @param {Function} [wrappers.mwMsg] Reference to the {@see mw.msg} function
+ * @param {Function} wrappers.mwUri Reference to the {@see mw.Uri} constructor
+ * @param {string} [wrappers.title] Will be ignored when revid is supplied
+ * @param {string|false} [wrappers.revid] Either title or revid must be set. If false or missing,
+ *  falls back to a title-only request.
+ * @param {Function} wrappers.whenAllPromises Reference to e.g. {@see jQuery.when}
+ * @param {Function} [wrappers.log]
+ * @constructor
+ */
+var DataManager = function ( wrappers ) {
+
+	var createResolvedPromise = function ( value ) {
+			return wrappers.createPromise( function ( resolve ) {
+				resolve( value );
+			} );
+		},
+		dataLoader = dataLoaderLib(
+			wrappers.createPromise,
+			createResolvedPromise,
+			wrappers.mwApi,
+			wrappers.clientStore,
+			wrappers.title,
+			wrappers.revid,
+			wrappers.debounce,
+			wrappers.log
+		),
+		ExternalGroup = externalGroupLib(
+			wrappers.extend,
+			wrappers.isEmptyObject,
+			wrappers.getJSON,
+			wrappers.mwMsg,
+			wrappers.mwUri,
+			wrappers.mwHtmlElement,
+			Group,
+			wrappers.log
+		),
+		dataStore = dataStoreLib(),
+		HybridGroup = hybridGroupLib(
+			wrappers.extend,
+			createResolvedPromise,
+			wrappers.isPlainObject,
+			wrappers.whenAllPromises,
+			Group,
+			ExternalGroup,
+			dataStore,
+			wrappers.log
+		),
+		InternalGroup = internalGroupLib(
+			wrappers.extend,
+			HybridGroup,
+			dataLoader,
+			wrappers.log
+		),
+		DataManager = function () {};
+
+	/**
+	 * @param {string[]|string} groupIds List of group ids to load.
+	 * @return {Promise}
+	 */
+	DataManager.prototype.loadGroups = function ( groupIds ) {
+		var promises = [];
+
+		if ( !Array.isArray( groupIds ) ) {
+			groupIds = [ groupIds ];
+		}
+		for ( var i = 0; i < groupIds.length; i++ ) {
+			var group = dataStore.get( groupIds[ i ] ) ||
+				dataStore.add( new InternalGroup( groupIds[ i ] ) );
+			// eslint-disable-next-line no-loop-func
+			promises.push( wrappers.createPromise( function ( resolve ) {
+				group.fetch().then( resolve, resolve );
+			} ) );
+		}
+
+		dataLoader.fetch();
+
+		return wrappers.whenAllPromises( promises ).then( function () {
+			var groupList = [];
+
+			for ( var i = 0; i < groupIds.length; i++ ) {
+				var group = dataStore.get( groupIds[ i ] );
+				if ( group.failed || !wrappers.isEmptyObject( group.getGeoJSON() ) ) {
+					groupList = groupList.concat( group );
+				}
+				groupList = groupList.concat( group.externals );
+			}
+
+			return groupList;
+		}, function () {
+			if ( wrappers.log ) {
+				wrappers.log( 'warn', 'DataManager loadGroups failed: ' + JSON.stringify( arguments ) );
+			}
+		} );
+	};
+
+	/**
+	 * @param {Object} geoJSON
+	 * @return {Promise}
+	 */
+	DataManager.prototype.load = function ( geoJSON ) {
+		var group = new HybridGroup( null, geoJSON );
+
+		return group.load().then( function () {
+			var groupList = [];
+
+			if ( !wrappers.isEmptyObject( group.getGeoJSON() ) ) {
+				groupList = groupList.concat( group );
+			}
+
+			return groupList.concat( group.externals );
+		}, function () {
+			if ( wrappers.log ) {
+				wrappers.log( 'warn', 'DataManager load failed: ' + JSON.stringify( arguments ) );
+			}
+		} );
+	};
+
+	return new DataManager();
+};
+
+var index = DataManager;
+
+module.exports = index;

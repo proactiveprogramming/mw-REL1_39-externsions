@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Albertas",
+			"Eitvys200",
+			"Matasg",
+			"Tomasdd",
+			"Zygimantus"
+		]
+	},
+	"sitematrix-desc": "Rodomas [[Special:SiteMatrix|Wikimedia wiki sąrašas]]",
+	"sitematrix-language": "Kalba",
+	"sitematrix-project": "Projekto pavadinimas, interprojektinė nuoroda ir interwiki nuoroda.",
+	"sitematrix-other-projects": "Projektas",
+	"sitematrix-total": "'''Viso: $1'''",
+	"sitematrix-sitetotal": "Viso",
+	"sitematrix-private": "skaitymas ir rašymas apriboti",
+	"sitematrix-fishbowl": "ribota prieiga prie rašymo, visiška skaitymo prieiga",
+	"sitematrix-nonglobal": "vieša, bet reikalinga registracija"
+}

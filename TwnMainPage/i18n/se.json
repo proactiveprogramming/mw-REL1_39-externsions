@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Pyscowicz",
+			"Yupik"
+		]
+	},
+	"twnmp-desc": "translatewiki.net váldosiidu",
+	"twnmp-mainpage": "Váldosiidu",
+	"twnmp-s-translators": "{{PLURAL:$1|jorgaleaddji}}",
+	"twnmp-s-projects": "{{PLURAL:$1|prošeakta|prošeavtta}}",
+	"twnmp-s-languages": "{{PLURAL:$1|aktiivvalaš giella|aktiivvalaš giela}}",
+	"twnmp-bannerwho": "Govva $1",
+	"twnmp-show-more-projects": "Čájet buot prošeavttaid...",
+	"twnmp-login": "Čálit sisa",
+	"twnmp-logout": "Čálit olggos",
+	"twnmp-search-placeholder": "Oza ja divo jorgalusaid",
+	"twnmp-search-button": "Oza",
+	"twnmp-translate-link": "Jorgal",
+	"twnmp-view-link": "Čájet jorgalusaid",
+	"twnmp-translate-button": "Jorgal",
+	"twnmp-view-button": "Čájet jorgalusaid",
+	"twnmp-your-translations-stats-all-languages": "Buot gielat",
+	"twnmp-translations-in-sandbox": "{{PLURAL:$1|jorgalus|jorgalusa}}",
+	"twnmp-bottom-about": "Dieđut",
+	"twnmp-signup-username-placeholder": "Geavaheaddjinamma",
+	"twnmp-signup-password-placeholder": "Beassansátni",
+	"twnmp-signup-email-placeholder": "E-poasta",
+	"twnmp-create-account-button": "Ráhkat dovddaldaga",
+	"twnmp-create-account-cancel": "Šluhtte"
+}

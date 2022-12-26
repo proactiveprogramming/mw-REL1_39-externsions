@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andriykopanytsia",
+			"DDPAT",
+			"Ice bulldog"
+		]
+	},
+	"titleicon-desc": "Відображає піктограму в заголовку на сторінках і в результатах пошуку",
+	"apihelp-query+titleicons-description": "Повертає масив заголовків даних сторінок JSON.",
+	"apihelp-query+titleicons-summary": "Повертає значки заголовків даних сторінок.",
+	"apihelp-query+titleicons-example": "Отримайте піктограми заголовка головної сторінки"
+}

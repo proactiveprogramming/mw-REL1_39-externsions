@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vistaus"
+		]
+	},
+	"action-similareditors": "toegang [[Special:SimilarEditors]]",
+	"right-similareditors": "Toegang [[Special:SimilarEditors]]",
+	"similareditors": "Vergelijkbare bewerkers",
+	"similareditors-desc": "Toont details van gebruikers met vergelijkbare bewerkgeschiedenissen.",
+	"similareditors-form-field-target-label": "Gebruikersnaam of ip-adres:",
+	"similareditors-form-field-target-placeholder": "Gebruikersnaam of 1.1.1.1",
+	"similareditors-form-submit": "Zoeken",
+	"similareditors-no-results": "Er zijn geen zoekresultaten.",
+	"similareditors-overlap-level-high": "Hoog",
+	"similareditors-overlap-level-low": "Laag",
+	"similareditors-overlap-level-medium": "Gemiddeld",
+	"similareditors-overlap-level-no-overlap": "Geen overlap",
+	"similareditors-results-day-overlap": "Dagoverlap",
+	"similareditors-results-edit-overlap": "Overlap bewerken",
+	"similareditors-results-edits": "Bewerkingen in gegevens",
+	"similareditors-results-hour-overlap": "Uuroverlap",
+	"similareditors-results-user": "Gebruiker",
+	"similareditors-summary": "Vind de vergelijkbaarste bewerkers op basis van de bewerkgeschiedenis."
+}

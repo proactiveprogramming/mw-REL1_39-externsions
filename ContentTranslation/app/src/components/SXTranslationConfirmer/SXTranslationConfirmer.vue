@@ -1,0 +1,143 @@
+<template>
+  <section class="sx-translation-confirmer">
+    <mw-row
+      class="sx-translation-confirmer__header ma-0 py-3"
+      align="stretch"
+      justify="start"
+    >
+      <mw-col grow class="px-4" align="center">
+        <h5 v-i18n:cx-sx-translation-confirmer-title class="mb-0" />
+      </mw-col>
+      <mw-col shrink align="start" class="pe-4">
+        <mw-button
+          class="pa-0"
+          type="icon"
+          :icon="mwIconClose"
+          :icon-size="20"
+          @click="onClose"
+        />
+      </mw-col>
+    </mw-row>
+    <div class="sx-translation-confirmer__article-image flex justify-center">
+      <img v-if="articleImageSource" :src="articleImageSource" />
+      <mw-icon
+        v-else
+        size="120"
+        :icon="mwIconArticle"
+        :icon-color="$mwui.colors.primary"
+      />
+    </div>
+    <sx-translation-confirmer-article-information />
+    <sx-article-language-selector />
+    <sx-translation-confirmer-action-panel />
+    <mw-row justify="center" class="sx-translation-confirmer__license ma-0">
+      <p class="ma-3">
+        <!--          TODO: Fix font-size to be 12px. Probably needs UI Typography-->
+        <small v-i18n-html:cx-license-agreement />
+      </p>
+    </mw-row>
+  </section>
+</template>
+
+<script>
+import { MwRow, MwCol, MwButton, MwIcon } from "@/lib/mediawiki.ui";
+import SxTranslationConfirmerActionPanel from "./SXTranslationConfirmerActionPanel.vue";
+import SxArticleLanguageSelector from "../SXArticleLanguageSelector.vue";
+import SxTranslationConfirmerArticleInformation from "./SXTranslationConfirmerArticleInformation.vue";
+import { replaceUrl } from "@/utils/urlHandler";
+import {
+  mwIconClose,
+  mwIconArticle,
+} from "@/lib/mediawiki.ui/components/icons";
+import { loadVEModules } from "@/plugins/ve";
+import { computed, onMounted } from "vue";
+import { useRouter, useRoute } from "vue-router";
+import { useStore } from "vuex";
+import { useEventLogging } from "../../plugins/eventlogging";
+import useApplicationState from "@/composables/useApplicationState";
+
+export default {
+  name: "SxTranslationConfirmer",
+  components: {
+    MwIcon,
+    SxTranslationConfirmerArticleInformation,
+    MwRow,
+    MwCol,
+    MwButton,
+    SxArticleLanguageSelector,
+    SxTranslationConfirmerActionPanel,
+  },
+  setup() {
+    const store = useStore();
+    const { sourceLanguage, targetLanguage, currentSourcePage } =
+      useApplicationState(store);
+    const articleImageSource = computed(
+      () => currentSourcePage.value?.image?.source
+    );
+    const route = useRoute();
+    const { previousRoute, eventSource } = route.params;
+    const logEvent = useEventLogging();
+
+    onMounted(() => {
+      store.dispatch("application/fetchCurrentSectionSuggestionLanguageTitles");
+      logEvent({
+        event_type: "dashboard_translation_start",
+        event_source: eventSource,
+        translation_source_language: sourceLanguage.value,
+        translation_target_language: targetLanguage.value,
+      });
+
+      // Start loading VE in background. Don't wait for it though.
+      // We anticipate that user is going to use editor in next step.
+      loadVEModules();
+
+      // Fetch appendix section titles, if they have not been fetched during suggestion initialization (e.g. if
+      // page title is pre-filled as URL parameter), so that they are always available in "Compare contents"
+      // step (for proper positioning of the new section placeholder inside target article preview)
+      store.dispatch(
+        "suggestions/fetchAppendixSectionTitles",
+        targetLanguage.value
+      );
+    });
+
+    const router = useRouter();
+
+    const onClose = () => {
+      store.dispatch("application/clearCurrentSectionSuggestion");
+      // Remove URL params so that section translation doesn't restart, leading to endless loop
+      replaceUrl(null);
+
+      router.push({ name: previousRoute });
+    };
+
+    return {
+      articleImageSource,
+      mwIconArticle,
+      mwIconClose,
+      onClose,
+    };
+  },
+};
+</script>
+
+<style lang="less">
+@import "../../lib/mediawiki.ui/variables/wikimedia-ui-base.less";
+
+.sx-translation-confirmer {
+  &__article-image {
+    background-color: @background-color-primary;
+    height: 192px;
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 33%;
+    }
+  }
+  &__license {
+    border-top: @border-width-base @border-style-base
+      @border-color-base--disabled;
+    background-color: @background-color-framed;
+  }
+}
+</style>

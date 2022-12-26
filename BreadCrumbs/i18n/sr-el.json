@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"breadcrumbs-desc": "Pokazuje putanje korisnika kroz Viki",
+	"prefs-breadcrumbs-separator-max": "Možete da unesete najmanje dva znaka.",
+	"prefs-breadcrumbs": "Mrvice",
+	"prefs-breadcrumbs-showcrumbs": "Prikazuj mrvice",
+	"prefs-breadcrumbs-numberofcrumbs": "Broj mrvica",
+	"prefs-breadcrumbs-numberofcrumbs-max": "Može se prikazati najviše dvadeset mrvica.",
+	"prefs-breadcrumbs-preceding-text-max": "Možete da unesete najviše trideset znakova."
+}

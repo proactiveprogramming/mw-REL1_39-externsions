@@ -1,0 +1,58 @@
+{
+	"name": "StickyTOC",
+	"version": "1.0.0",
+	"author": [
+		"WikiWorks Team"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:StickyTOC",
+	"descriptionmsg": "stickytoc-desc",
+	"license-name": "LGPL-2.1-only",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"skins": {
+			"chameleon": ">= 2.0"
+		}
+	},
+	"MessagesDirs": {
+		"StickyTOC": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"StickyTOC\\StickyTOCHooks": "includes/StickyTOCHooks.php"
+	},
+	"ResourceModules": {
+		"ext.stickytoc": {
+			"scripts": "stickytoc.js",
+			"styles": "stickytoc.less"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "StickyTOC/modules"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"StickyTOC\\StickyTOCHooks::onBeforePageDisplay"
+		],
+		"ResourceLoaderGetConfigVars": [
+			"StickyTOC\\StickyTOCHooks::onResourceLoaderGetConfigVars"
+		]
+	},
+	"config": {
+		"StickyTOCFloat": {
+			"description": "To which side to float",
+			"value": "left"
+		},
+		"StickyTOCNavbar": {
+			"description": "Forces TOC to run in sticky navbar compatible mode",
+			"value": false
+		},
+		"StickyTOCReplaceTitle": {
+			"description": "Replaces TOC title with article title",
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

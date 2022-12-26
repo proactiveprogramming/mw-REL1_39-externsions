@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Matthias Klostermayr",
+			"Mucalexx"
+		]
+	},
+	"sitematrix-desc": "Eagenzt a [[Special:SiteMatrix|Spezialseitn]] mid ana Listn vo Wikimedia-Wikis",
+	"sitematrix-language": "Sproch",
+	"sitematrix-project": "Projektnama, Interprojektlink und Interwikilink",
+	"sitematrix-other-projects": "Weidane Projektt",
+	"sitematrix-total": "'''Gsamtozoi: $1'''",
+	"sitematrix-sitetotal": "Insgsamt",
+	"sitematrix-private": "Privat",
+	"sitematrix-fishbowl": "Beorbatung eigschrenkt"
+}

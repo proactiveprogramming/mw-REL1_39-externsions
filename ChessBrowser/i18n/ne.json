@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bada Kaji",
+			"पर्वत सुबेदी",
+			"बडा काजी"
+		]
+	},
+	"chessbrowser-expand-button": "देखाउनुहोस्",
+	"chessbrowser-event-label": "कार्यक्रम",
+	"chessbrowser-date-label": "मिति",
+	"chessbrowser-round-label": "चरण",
+	"chessbrowser-white-label": "सेताे",
+	"chessbrowser-black-label": "कालो",
+	"chessbrowser-result-label": "परिणाम",
+	"chessbrowser-previous-move": "अघिल्लो चरण",
+	"chessbrowser-slow-autoplay": "ढिलाे",
+	"chessbrowser-fast-autoplay": "छिटाे"
+}

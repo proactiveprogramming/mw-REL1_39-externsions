@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andriykopanytsia",
+			"DDPAT",
+			"Ice bulldog"
+		]
+	},
+	"disqustag-desc": "Додає тег <code>&lt;disqus&gt;</code>, щоб вставити вбудоване посилання на спливні обговорення [http://disqus.com Disqus]"
+}

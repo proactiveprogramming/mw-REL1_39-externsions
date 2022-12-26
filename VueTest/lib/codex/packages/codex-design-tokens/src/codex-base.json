@@ -1,0 +1,969 @@
+{
+	"background-color": {
+		"comment": "Background Colors",
+		"base": {
+			"value": "{ color.white }"
+		},
+		"interactive": {
+			"value": "{ color.gray200 }"
+		},
+		"interactive-subtle": {
+			"value": "{ color.gray100 }"
+		},
+		"disabled": {
+			"comment": "Components like Buttons, Checkboxes, Radios, ProgressBars….",
+			"value": "{ color.gray300 }"
+		},
+		"disabled-subtle": {
+			"comment": "Components like TextInputs, Selects….",
+			"value": "{ color.gray200 }"
+		},
+		"progressive": {
+			"value": "{ color.blue600 }"
+		},
+		"progressive--hover": {
+			"value": "{ color.blue500 }"
+		},
+		"progressive--active": {
+			"value": "{ color.blue700 }"
+		},
+		"progressive--focus": {
+			"value": "{ color.blue600 }"
+		},
+		"progressive-subtle": {
+			"value": "{ color.blue100 }"
+		},
+		"destructive": {
+			"value": "{ color.red600 }"
+		},
+		"destructive--hover": {
+			"value": "{ color.red500 }"
+		},
+		"destructive--active": {
+			"value": "{ color.red700 }"
+		},
+		"destructive--focus": {
+			"value": "{ color.red600 }"
+		},
+		"destructive-subtle": {
+			"value": "{ color.red100 }"
+		},
+		"error-subtle": {
+			"value": "{ color.red100 }"
+		},
+		"warning-subtle": {
+			"value": "{ color.yellow100 }"
+		},
+		"success-subtle": {
+			"value": "{ color.green100 }"
+		},
+		"notice-subtle": {
+			"value": "{ color.gray200 }"
+		},
+		"backdrop-light": {
+			"comment": "Backdrop is the term used by CSS Fullscreen API and is used to dim the background when a modal Dialog is open. Also known as overlay mask.",
+			"value": "{ color.opacity-medium-light }"
+		},
+		"backdrop-dark": {
+			"value": "{ color.opacity-medium-dark }"
+		},
+		"transparent": {
+			"value": "{ color.transparent-light }"
+		},
+		"base--hover": {
+			"deprecated": "Use `background-color-interactive` instead.",
+			"value": "{ color.gray200 }"
+		},
+		"base--active": {
+			"deprecated": "Use `background-color-progressive-subtle` instead.",
+			"value": "{ color.blue100 }"
+		},
+		"base--disabled": {
+			"deprecated": "Use `background-color-disabled-subtle` instead.",
+			"value": "{ color.gray200 }"
+		},
+		"base--transparent": {
+			"deprecated": "Use `background-color-transparent` instead.",
+			"value": "{ color.transparent-light }"
+		},
+		"filled--disabled": {
+			"deprecated": "Use `background-color-disabled` instead.",
+			"value": "{ color.gray300 }"
+		},
+		"framed": {
+			"deprecated": "Use `background-color-interactive-subtle` instead.",
+			"value": "{ color.gray100 }"
+		},
+		"framed--hover": {
+			"deprecated": "Use `background-color-base` instead.",
+			"value": "{ color.white }"
+		},
+		"framed--active": {
+			"deprecated": "Use `background-color-interactive` with buttons' active state instead.",
+			"value": "{ color.gray200 }"
+		},
+		"error--framed": {
+			"deprecated": "Use `background-color-error-subtle` instead.",
+			"value": "{ color.red100 }"
+		},
+		"warning--framed": {
+			"deprecated": "Use `background-color-warning-subtle` instead.",
+			"value": "{ color.yellow100 }"
+		},
+		"success--framed": {
+			"deprecated": "Use `background-color-success-subtle` instead.",
+			"value": "{ color.green100 }"
+		},
+		"notice--framed": {
+			"deprecated": "Use `background-color-notice-subtle` instead.",
+			"value": "{ color.gray200 }"
+		}
+	},
+	"color": {
+		"base": {
+			"value": "{ color.gray700 }"
+		},
+		"base--hover": {
+			"comment": "Aimed to be replaced by `color.gray600` in future.",
+			"value": "{ color.gray650 }"
+		},
+		"emphasized": {
+			"value": "{ color.black }"
+		},
+		"subtle": {
+			"value": "{ color.gray600 }"
+		},
+		"placeholder": {
+			"value": "{ color.gray500 }"
+		},
+		"disabled": {
+			"value": "{ color.gray500 }"
+		},
+		"inverted": {
+			"value": "{ color.white }"
+		},
+		"progressive": {
+			"comment": "'Progressive' Color and states",
+			"value": "{ color.blue600 }"
+		},
+		"progressive--hover": {
+			"value": "{ color.blue500 }"
+		},
+		"progressive--active": {
+			"value": "{ color.blue700 }"
+		},
+		"progressive--focus": {
+			"value": "{ color.blue600 }"
+		},
+		"destructive": {
+			"comment": "'Destructive' Color and states",
+			"value": "{ color.red600 }"
+		},
+		"destructive--hover": {
+			"value": "{ color.red500 }"
+		},
+		"destructive--active": {
+			"value": "{ color.red700 }"
+		},
+		"destructive--focus": {
+			"value": "{ color.red600 }"
+		},
+		"visited": {
+			"comment": "'Visited' color. In combination with progressive. Used for default links.",
+			"value": "{ color.purple }"
+		},
+		"error": {
+			"value": "{ color.red600 }"
+		},
+		"warning": {
+			"comment": "Note, this is only meant for warning icon for contrast reasons.",
+			"value": "{ color.yellow600 }"
+		},
+		"success": {
+			"comment": "Note, this needs to use a tone darker than Red and Yellow for contrast reasons with background White.",
+			"value": "{ color.green700 }"
+		},
+		"notice": {
+			"value": "{ color.gray700 }"
+		},
+		"base--active": {
+			"deprecated": "Use `color-emphasized` instead.",
+			"value": "{ color.black }"
+		},
+		"base--inverted": {
+			"deprecated": "Use `color-inverted` instead.",
+			"value": "{ color.white }"
+		},
+		"base--emphasized": {
+			"deprecated": "Use `color-emphasized` instead.",
+			"value": "{ color.black }"
+		},
+		"base--subtle": {
+			"deprecated": "Use `color-subtle` instead. Note, that `color-subtle` is using `color.gray600` instead of `color.gray500` now.",
+			"value": "{ color.gray500 }"
+		},
+		"base--disabled": {
+			"deprecated": "Use `color-disabled` instead.",
+			"value": "{ color.gray500 }"
+		},
+		"filled--disabled": {
+			"deprecated": "Use `color-inverted` instead.",
+			"value": "{ color.white }"
+		},
+		"accessory": {
+			"deprecated": "Use `color-subtle` instead.",
+			"value": "{ color.gray600 }"
+		}
+	},
+	"opacity": {
+		"base": {
+			"value": "{ opacity.100 }"
+		},
+		"medium": {
+			"value": "{ opacity.60 }"
+		},
+		"low": {
+			"value": "{ opacity.30 }"
+		},
+		"transparent": {
+			"value": "{ opacity.0 }"
+		},
+		"icon-base": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products.",
+			"value": "{ opacity.87 }"
+		},
+		"icon-base--hover": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products.",
+			"value": "{ opacity.74 }"
+		},
+		"icon-base--selected": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products.",
+			"value": "{ opacity.100 }"
+		},
+		"base--disabled": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products. Has only been used for icons despite the name.",
+			"value": "{ opacity.51 }"
+		},
+		"icon-accessory": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products.",
+			"value": "{ opacity.67 }"
+		}
+	},
+	"z-index": {
+		"base": {
+			"value": "{ z-index.0 }"
+		},
+		"overlay": {
+			"value": "{ z-index.101 }"
+		}
+	},
+	"box-sizing": {
+		"base": {
+			"value": "{ box-sizing.100 }"
+		}
+	},
+	"min-size": {
+		"base": {
+			"comment": "TODO: Deprecate key and change to `min-size-component`?",
+			"value": "{ dimension.200 }{ unit.system }"
+		}
+	},
+	"size": {
+		"0": {
+			"value": "{ dimension.0 }"
+		},
+		"6": {
+			"value": "{ dimension.6 }{ unit.system }"
+		},
+		"12": {
+			"value": "{ dimension.12 }{ unit.system }"
+		},
+		"25": {
+			"value": "{ dimension.25 }{ unit.system }"
+		},
+		"50": {
+			"value": "{ dimension.50 }{ unit.system }"
+		},
+		"75": {
+			"value": "{ dimension.75 }{ unit.system }"
+		},
+		"100": {
+			"value": "{ dimension.100 }{ unit.system }"
+		},
+		"125": {
+			"value": "{ dimension.125 }{ unit.system }"
+		},
+		"150": {
+			"value": "{ dimension.150 }{ unit.system }"
+		},
+		"200": {
+			"value": "{ dimension.200 }{ unit.system }"
+		},
+		"250": {
+			"value": "{ dimension.250 }{ unit.system }"
+		},
+		"275": {
+			"value": "{ dimension.275 }{ unit.system }"
+		},
+		"300": {
+			"value": "{ dimension.300 }{ unit.system }"
+		},
+		"400": {
+			"value": "{ dimension.400 }{ unit.system }"
+		},
+		"800": {
+			"value": "{ dimension.800 }{ unit.system }"
+		},
+		"1600": {
+			"value": "{ dimension.1600 }{ unit.system }"
+		},
+		"2400": {
+			"value": "{ dimension.2400 }{ unit.system }"
+		},
+		"2800": {
+			"value": "{ dimension.2800 }{ unit.system }"
+		},
+		"3200": {
+			"value": "{ dimension.3200 }{ unit.system }"
+		},
+		"5600": {
+			"value": "{ dimension.5600 }{ unit.system }"
+		},
+		"absolute-1": {
+			"value": "{ dimension.absolute-1 }"
+		},
+		"absolute-9999": {
+			"value": "{ dimension.absolute-9999 }"
+		},
+		"third": {
+			"value": "{ dimension.third }"
+		},
+		"half": {
+			"value": "{ dimension.half }"
+		},
+		"full": {
+			"value": "{ dimension.full }"
+		},
+		"double": {
+			"value": "{ dimension.double }"
+		},
+		"viewport": {
+			"width-full": {
+				"value": "{ dimension.viewport.width-full }"
+			},
+			"height-full": {
+				"value": "{ dimension.viewport.height-full }"
+			}
+		},
+		"base": {
+			"deprecated": "Legacy size for use in non-Codex products. Only used in relative size in new Codex design token application.",
+			"value": "{ dimension.200 }{ unit.system }"
+		}
+	},
+	"min-width": {
+		"breakpoint": {
+			"comment": "Breakpoints. Minimum available screen width to be considered a certain device type.",
+			"mobile": {
+				"comment": "A mobile device's minimum available screen width. Many older feature phones have screens smaller than this value.",
+				"value": "{ size.viewport.32 }"
+			},
+			"tablet": {
+				"comment": "A tablet device's minimum available screen width. Note: the size chosen is eager to be re-evaluated with Web team and Product Analytics.",
+				"value": "{ size.viewport.64 }"
+			},
+			"desktop": {
+				"comment": "A desktop device's minimum available screen width.",
+				"value": "{ size.viewport.112 }"
+			},
+			"desktop-wide": {
+				"comment": "A wider desktop's minimum available screen width.",
+				"value": "{ size.viewport.168 }"
+			}
+		}
+	},
+	"max-width": {
+		"base": {
+			"value": "{ max-width.100 }"
+		},
+		"breakpoint": {
+			"comment": "Breakpoints. Maximum available screen width to be considered a certain device type.",
+			"mobile": {
+				"comment": "A mobile device's maximum available screen width. Many older feature phones have screens smaller than this value.",
+				"value": "calc( { size.viewport.64 } - { size.absolute-1 } )"
+			},
+			"tablet": {
+				"comment": "A tablet device's maximum available screen width. Note, the size chosen is eager to be re-evaluated with Web team and Product Analytics.",
+				"value": "calc( { size.viewport.112 } - { size.absolute-1 } )"
+			},
+			"desktop": {
+				"comment": "A desktop device's maximum available screen width.",
+				"value": "calc( { size.viewport.168 } - { size.absolute-1 } )"
+			}
+		}
+	},
+	"width": {
+		"breakpoint": {
+			"comment": "Legacy Breakpoints. Width for use as minimum available screen width (`min-width`) to be considered a certain device type.",
+			"mobile": {
+				"deprecated": "Legacy breakpoint. Use `min-width`/`max-width` breakpoint token instead. A mobile device's screen width. Many older feature phones have screens smaller than this value.",
+				"value": "{ size.viewport.32 }"
+			},
+			"tablet": {
+				"deprecated": "Legacy breakpoint. Use `min-width`/`max-width` breakpoint token instead. A tablet device's screen width.",
+				"value": "{ size.viewport.72 }"
+			},
+			"desktop": {
+				"deprecated": "Legacy breakpoint. Use `min-width`/`max-width` breakpoint token instead. A desktop device's screen width.",
+				"value": "{ size.viewport.100 }"
+			},
+			"desktop-wide": {
+				"deprecated": "Legacy breakpoint. Use `min-width`/`max-width` breakpoint token instead. A wider desktop's screen width.",
+				"value": "{ size.viewport.120 }"
+			},
+			"desktop-extrawide": {
+				"deprecated": "Legacy breakpoint. Use `min-width`/`max-width` breakpoint token instead. An extra wide desktop's screen width.",
+				"value": "{ size.viewport.200 }"
+			}
+		}
+	},
+	"position": {
+		"offset": {
+			"comment": "position.offset is a Codex token shorthand to use in `top`, `left`, `bottom`, `right`, and `margin` properties for elements that expand over default boundary box.",
+			"border-width-base": {
+				"value": "-{ border-width.base }"
+			}
+		}
+	},
+	"spacing": {
+		"0": {
+			"value": "{ dimension.0 }"
+		},
+		"12": {
+			"value": "{ dimension.12 }{ unit.system }"
+		},
+		"25": {
+			"value": "{ dimension.25 }{ unit.system }"
+		},
+		"30": {
+			"comment": "This token is an exception to the scale.  Used as vertical `padding` in inputs and controls to achieve the default 32px component height.",
+			"value": "{ dimension.30 }{ unit.system }"
+		},
+		"35": {
+			"comment": "This token is an exception to the scale.  Used as `padding` of the ToggleSwitch component.",
+			"value": "{ dimension.35 }{ unit.system }"
+		},
+		"50": {
+			"value": "{ dimension.50 }{ unit.system }"
+		},
+		"75": {
+			"value": "{ dimension.75 }{ unit.system }"
+		},
+		"100": {
+			"value": "{ dimension.100 }{ unit.system }"
+		},
+		"125": {
+			"value": "{ dimension.125 }{ unit.system }"
+		},
+		"150": {
+			"value": "{ dimension.150 }{ unit.system }"
+		},
+		"200": {
+			"value": "{ dimension.200 }{ unit.system }"
+		},
+		"250": {
+			"value": "{ dimension.250 }{ unit.system }"
+		},
+		"300": {
+			"value": "{ dimension.300 }{ unit.system }"
+		},
+		"400": {
+			"value": "{ dimension.400 }{ unit.system }"
+		},
+		"half": {
+			"comment": "From here on, spacing tokens which are used for positioning values.",
+			"value": "{ dimension.half }"
+		},
+		"full": {
+			"value": "{ dimension.full }"
+		}
+	},
+	"border": {
+		"comment": "Note, that all `border` token shorthands are legacy now, to reinforce design decisions in modular way.",
+		"base": {
+			"deprecated": "Legacy `border` token shorthand. Use sub-property tokens instead.",
+			"value": "{ border-width.base } { border-style.base } { border-color.base }"
+		},
+		"error": {
+			"deprecated": "Legacy `border` token shorthand. Use sub-property tokens instead.",
+			"value": "{ border-width.base } { border-style.base } { border-color.error }"
+		},
+		"warning": {
+			"deprecated": "Legacy `border` token shorthand. Use sub-property tokens instead.",
+			"value": "{ border-width.base } { border-style.base } { border-color.warning }"
+		},
+		"success": {
+			"deprecated": "Legacy `border` token shorthand. Use sub-property tokens instead.",
+			"value": "{ border-width.base } { border-style.base } { border-color.success }"
+		},
+		"notice": {
+			"deprecated": "Legacy `border` token shorthand. Use sub-property tokens instead.",
+			"value": "{ border-width.base } { border-style.base } { border-color.notice }"
+		}
+	},
+	"border-width": {
+		"base": {
+			"value": "{ dimension.6 }{ unit.system }"
+		},
+		"thick": {
+			"value": "{ dimension.12 }{ unit.system }"
+		}
+	},
+	"border-style": {
+		"base": {
+			"value": "{ border-style.100 }"
+		},
+		"dashed": {
+			"value": "{ border-style.50 }"
+		}
+	},
+	"border-color": {
+		"base": {
+			"value": "{ color.gray400 }"
+		},
+		"interactive": {
+			"value": "{ color.gray500 }"
+		},
+		"subtle": {
+			"value": "{ color.gray300 }"
+		},
+		"disabled": {
+			"value": "{ color.gray300 }"
+		},
+		"inverted": {
+			"value": "{ color.white }"
+		},
+		"progressive": {
+			"value": "{ color.blue600 }"
+		},
+		"progressive--hover": {
+			"value": "{ color.blue500 }"
+		},
+		"progressive--active": {
+			"value": "{ color.blue700 }"
+		},
+		"progressive--focus": {
+			"value": "{ color.blue600 }"
+		},
+		"destructive": {
+			"value": "{ color.red600 }"
+		},
+		"destructive--hover": {
+			"value": "{ color.red500 }"
+		},
+		"destructive--active": {
+			"value": "{ color.red700 }"
+		},
+		"destructive--focus": {
+			"value": "{ color.red600 }"
+		},
+		"error": {
+			"value": "{ color.red600 }"
+		},
+		"warning": {
+			"value": "{ color.yellow600 }"
+		},
+		"success": {
+			"value": "{ color.green700 }"
+		},
+		"notice": {
+			"value": "{ color.gray400 }"
+		},
+		"transparent": {
+			"value": "{ color.transparent }"
+		},
+		"base--hover": {
+			"deprecated": "Use `border-color-base` instead.",
+			"value": "{ color.gray400 }"
+		},
+		"base--active": {
+			"deprecated": "Use `border-color-interactive` instead.",
+			"value": "{ color.gray500 }"
+		},
+		"base--focus": {
+			"deprecated": "Use `border-color-progressive--focus` instead.",
+			"value": "{ color.blue600 }"
+		},
+		"base--disabled": {
+			"deprecated": "Use `border-color-disabled` instead.",
+			"value": "{ color.gray300 }"
+		},
+		"filled--disabled": {
+			"deprecated": "Use `border-color-inverted` instead.",
+			"value": "{ color.white }"
+		},
+		"neutral": {
+			"deprecated": "Use `border-color-base` instead.",
+			"value": "{ color.gray400 }"
+		},
+		"neutral--hover": {
+			"deprecated": "Use `border-color-base` instead.",
+			"value": "{ color.gray400 }"
+		},
+		"neutral--active": {
+			"deprecated": "Use `border-color-interactive` instead.",
+			"value": "{ color.gray500 }"
+		},
+		"neutral--focus": {
+			"deprecated": "Use `border-color-progressive--focus` instead.",
+			"value": "{ color.blue600 }"
+		},
+		"inset--focus": {
+			"deprecated": "Use `border-color-inverted` instead.",
+			"value": "{ color.inverted }"
+		}
+	},
+	"border-radius": {
+		"base": {
+			"value": "{ dimension.12 }{ unit.system }"
+		},
+		"sharp": {
+			"value": "{ dimension.0 }"
+		},
+		"pill": {
+			"value": "{ dimension.absolute-9999 }"
+		},
+		"circle": {
+			"value": "{ dimension.full }"
+		}
+	},
+	"padding": {
+		"base": {
+			"deprecated": "Use `spacing-25 spacing-75` instead.",
+			"value": "{ padding.vertical.base } { padding.horizontal.base }"
+		},
+		"horizontal": {
+			"base": {
+				"deprecated": "Use `spacing-75` instead.",
+				"value": "{ dimension.75 }{ unit.system }"
+			}
+		},
+		"vertical": {
+			"base": {
+				"deprecated": "Use `spacing-25` instead.",
+				"value": "{ dimension.25 }{ unit.system }"
+			}
+		}
+	},
+	"box-shadow": {
+		"drop-small": {
+			"comment": "This features color as part of the theme token value.",
+			"value": "{ box-shadow.100 }"
+		},
+		"drop-medium": {
+			"comment": "This features color as part of the theme token value.",
+			"value": "{ box-shadow.200 }"
+		},
+		"drop-extra-extra-large": {
+			"comment": "This features color as part of the theme token value.",
+			"value": "{ box-shadow.500 }"
+		},
+		"inset-small": {
+			"value": "{ box-shadow.25 }"
+		},
+		"inset-medium": {
+			"value": "{ box-shadow.50 }"
+		},
+		"inset-medium-vertical": {
+			"value": "{ box-shadow.50-vertical }"
+		},
+		"outset-small": {
+			"value": "{ box-shadow.25-outset }"
+		},
+		"outset-small-top": {
+			"value": "{ box-shadow.25-top }"
+		},
+		"outset-small-start": {
+			"value": "{ box-shadow.25-start }"
+		},
+		"color": {
+			"comment": "Separate `box-shadow` colors from colors to apply clean, property specific tokens.",
+			"base": {
+				"value": "{ color.black }"
+			},
+			"progressive--active": {
+				"value": "{ color.blue700 }"
+			},
+			"progressive--focus": {
+				"value": "{ color.blue600 }"
+			},
+			"progressive-selected": {
+				"value": "{ color.blue600 }"
+			},
+			"progressive-selected--hover": {
+				"value": "{ color.blue500 }"
+			},
+			"progressive-selected--active": {
+				"value": "{ color.blue700 }"
+			},
+			"destructive--focus": {
+				"value": "{ color.red600 }"
+			},
+			"inverted": {
+				"value": "{ color.white }"
+			},
+			"transparent": {
+				"value": "{ color.transparent }"
+			}
+		},
+		"progressive--active": {
+			"deprecated": "Legacy `box-shadow` token shorthand. Apply single category tokens instead.",
+			"value": "{ box-shadow.25 } { color.blue700 }"
+		},
+		"progressive--focus": {
+			"deprecated": "Legacy `box-shadow` token shorthand. Apply single category tokens instead.",
+			"value": "{ box-shadow.25 } { color.blue600 }"
+		},
+		"destructive--focus": {
+			"deprecated": "Legacy `box-shadow` token shorthand. Apply single category tokens instead.",
+			"value": "{ box-shadow.25 } { color.red600 }"
+		},
+		"inverted": {
+			"deprecated": "Legacy `box-shadow` token shorthand. Apply single category tokens instead.",
+			"value": "{ box-shadow.50 } { color.white }"
+		},
+		"progressive-filled--focus": {
+			"deprecated": "Legacy `box-shadow` token shorthand. Apply single category tokens instead.",
+			"value": "{ box-shadow.progressive--focus }, { box-shadow.inverted }"
+		},
+		"destructive-filled--focus": {
+			"deprecated": "Legacy `box-shadow` token shorthand. Apply single category tokens instead.",
+			"value": "{ box-shadow.destructive--focus }, { box-shadow.inverted }"
+		},
+		"base": {
+			"deprecated": "Legacy value. Only used in non-Codex products.",
+			"value": "{ box-shadow.25 } { color.transparent }"
+		},
+		"base--active": {
+			"deprecated": "Legacy value. Only used in non-Codex products.",
+			"value": "{ box-shadow.progressive--active }"
+		},
+		"base--focus": {
+			"deprecated": "Legacy value. Only used in non-Codex products.",
+			"value": "{ box-shadow.progressive--focus }"
+		},
+		"filled--disabled": {
+			"deprecated": "Legacy value. Only used in non-Codex products.",
+			"value": "{ box-shadow.25 } { color.white }"
+		},
+		"primary--focus": {
+			"deprecated": "Legacy value. Only used in non-Codex products.",
+			"value": "{ box-shadow.progressive-filled--focus }"
+		}
+	},
+	"outline": {
+		"comment": "Outlines",
+		"base--focus": {
+			"comment": "Enable Windows high contrast mode on certain widgets, that have default outlines overridden.",
+			"value": "{ dimension.6 }{ unit.system } { border-style.100 } { color.transparent }"
+		}
+	},
+	"font-family": {
+		"base": {
+			"comment": "Reference Vector's default fallback sans instead of the deprecated value `font-family-sans` in WikimediaUI Base.",
+			"value": "{ font-family.sans.10 }"
+		},
+		"sans": {
+			"deprecated": "Use `font-family-sans--fallback` instead. See T247166.",
+			"value": "{ font-family.sans.50 }"
+		},
+		"system-sans": {
+			"value": "{ font-family.sans.100 }"
+		},
+		"sans--fallback": {
+			"value": "{ font-family.sans.10 }"
+		},
+		"serif": {
+			"value": "{ font-family.serif.100 }"
+		},
+		"serif--fallback": {
+			"value": "{ font-family.serif.10 }"
+		},
+		"monospace": {
+			"value": "{ font-family.monospace.100 }"
+		},
+		"monospace--fallback": {
+			"value": "{ font-family.monospace.10 }"
+		}
+	},
+	"font-weight": {
+		"hairline": {
+			"value": "{ font-weight.25 }"
+		},
+		"light": {
+			"value": "{ font-weight.75 }"
+		},
+		"normal": {
+			"value": "{ font-weight.100 }"
+		},
+		"semi-bold": {
+			"value": "{ font-weight.150 }"
+		},
+		"bold": {
+			"value": "{ font-weight.175 }"
+		}
+	},
+	"line-height": {
+		"xxx-small": {
+			"comment": "`x` stands for extra. In this case extra-extra-extra small.",
+			"value": "{ line-height.60 }"
+		},
+		"xx-small": {
+			"value": "{ line-height.70 }"
+		},
+		"x-small": {
+			"deprecated": "Legacy line-height. Use `line-height-small` instead.",
+			"value": "{ line-height.80 }"
+		},
+		"small": {
+			"value": "{ line-height.90 }"
+		},
+		"medium": {
+			"value": "{ line-height.100 }"
+		},
+		"base": {
+			"deprecated": "Legacy `line-height` for use in non-Codex products. Use `line-height-medium` instead.",
+			"value": "{ line-height.100 }"
+		},
+		"heading": {
+			"deprecated": "Legacy `line-height` for headings in non-Codex products. Use `line-height-xx-small` instead.",
+			"value": "{ line-height.65 }"
+		}
+	},
+	"text-decoration": {
+		"none": {
+			"value": "{ text-decoration.0 }"
+		},
+		"line-through": {
+			"value": "{ text-decoration.150 }"
+		},
+		"underline": {
+			"value": "{ text-decoration.200 }"
+		}
+	},
+	"tab-size": {
+		"base": {
+			"value": "{ tab-size.100 }"
+		}
+	},
+	"transition": {
+		"base": {
+			"deprecated": "Legacy `transition` for icon states in non-Codex products.",
+			"value": "{ transition-duration.100 }"
+		}
+	},
+	"transition-duration": {
+		"base": {
+			"value": "{ transition-duration.100 }"
+		},
+		"medium": {
+			"value": "{ transition-duration.200 }"
+		}
+	},
+	"transition-timing-function": {
+		"system": {
+			"value": "{ transition-timing-function.100 }"
+		},
+		"user": {
+			"value": "{ transition-timing-function.200 }"
+		}
+	},
+	"transition-property": {
+		"base": {
+			"value": "{ transition-property.background-color }, { transition-property.color }, { transition-property.border-color }, { transition-property.box-shadow }"
+		},
+		"fade": {
+			"value": "{ transition-property.opacity }"
+		}
+	},
+	"animation-delay": {
+		"none": {
+			"value": "{ animation-delay.0 }"
+		},
+		"medium": {
+			"value": "{ animation-delay.100 }"
+		},
+		"slow": {
+			"value": "{ animation-delay.200 }"
+		}
+	},
+	"animation-duration": {
+		"medium": {
+			"value": "{ animation-duration.100 }"
+		},
+		"slow": {
+			"value": "{ animation-duration.200 }"
+		}
+	},
+	"animation-timing-function": {
+		"base": {
+			"value": "{ animation-timing-function.100 }"
+		},
+		"bouncing": {
+			"value": "{ animation-timing-function.200 }"
+		}
+	},
+	"animation-iteration-count": {
+		"base": {
+			"value": "{ animation-iteration-count.100 }"
+		}
+	},
+	"cursor": {
+		"base": {
+			"value": "{ cursor.arrow }"
+		},
+		"base--disabled": {
+			"value": "{ cursor.arrow }"
+		},
+		"base--hover": {
+			"value": "{ cursor.hand }"
+		},
+		"grab": {
+			"value": "{ cursor.hand-open }"
+		},
+		"grabbing": {
+			"value": "{ cursor.hand-closed }"
+		},
+		"help": {
+			"value": "{ cursor.question-mark }"
+		},
+		"move": {
+			"value": "{ cursor.arrow-move }"
+		},
+		"not-allowed": {
+			"value": "{ cursor.arrow-not-allowed }"
+		},
+		"resize-nesw": {
+			"value": "{ cursor.resize-left }"
+		},
+		"resize-nwse": {
+			"value": "{ cursor.resize-right }"
+		},
+		"text": {
+			"value": "{ cursor.text-marker }"
+		},
+		"zoom-in": {
+			"value": "{ cursor.zoom-more }"
+		},
+		"zoom-out": {
+			"value": "{ cursor.zoom-less }"
+		}
+	},
+	"unit": {
+		"absolute": {
+			"value": "{ unit.system }"
+		},
+		"relative": {
+			"value": "{ unit.user }"
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dianakc",
+			"Eduardo Addad de Oliveira",
+			"Eduardo.mps",
+			"Eduardoaddad",
+			"Felipe L. Ewald",
+			"Giro720",
+			"He7d3r",
+			"Helder.wiki",
+			"WikiUser22222"
+		]
+	},
+	"sitematrix": "Lista de wikis",
+	"sitematrix-summary": "Esta página especial lista todos aos wikis nessa fazenda de wiki.",
+	"sitematrix-desc": "Apresenta uma [[Special:SiteMatrix|lista de wikis]]",
+	"sitematrix-language": "Idioma",
+	"sitematrix-project": "Nome do projeto, link de interprojeto e link interwiki",
+	"sitematrix-others": "Outros projetos",
+	"sitematrix-other-projects": "Projeto",
+	"sitematrix-other-projects-language": "Idioma",
+	"sitematrix-total": "'''Contagem total: $1'''",
+	"sitematrix-sitetotal": "Total",
+	"sitematrix-closed": "sem acesso de gravação, acesso completo de leitura",
+	"sitematrix-private": "acesso restrito para ler e escrever",
+	"sitematrix-fishbowl": "acesso de escrita restrito, acesso completo de leitura",
+	"sitematrix-nonglobal": "público, mas registro requerido"
+}

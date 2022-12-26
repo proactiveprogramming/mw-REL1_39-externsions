@@ -1,0 +1,157 @@
+{
+	"name": "Wikisource",
+	"author": [
+		"Thomas Pellissier Tanon",
+		"Sam Wilson"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Wikisource",
+	"descriptionmsg": "wikisource-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"MessagesDirs": {
+		"Wikisource": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Wikisource\\": "includes/"
+	},
+	"Hooks": {
+		"SidebarBeforeOutput": "SidebarBeforeOutput",
+		"ArticleViewHeader": "ArticleViewHeader",
+		"EditPage::showEditForm:initial": "EditPageShowEditFormInitial",
+		"WikibaseClientSiteLinksForItem": "MediaWiki\\Extension\\Wikisource\\WikibaseClientSiteLinksForItemHandler::provideSiteLinks"
+	},
+	"HookHandlers": {
+		"SidebarBeforeOutput": {
+			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\SidebarBeforeOutputHandler",
+			"services": [ "MainConfig", "ContentLanguage" ]
+		},
+		"ArticleViewHeader": {
+			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\ArticleViewHeaderHandler",
+			"services": [ "MainConfig", "ContentLanguage" ]
+		},
+		"EditPageShowEditFormInitial": {
+			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler",
+			"services": [ "MainConfig" ]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Wikisource/modules"
+	},
+	"ResourceModules": {
+		"ext.wikisource.download": {
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui.styles.icons-content",
+				"oojs-ui-windows"
+			],
+			"packageFiles": [
+				"ext.wikisource.WsExport/ext.wikisource.download.js",
+				"ext.wikisource.WsExport/ext.wikisource.DownloadDialog.js",
+				"ext.wikisource.WsExport/ext.wikisource.ChooserButton.js"
+			],
+			"styles": [
+				"ext.wikisource.WsExport/ext.wikisource.DownloadDialog.less"
+			],
+			"messages": [
+				"wikisource-download-button",
+				"wikisource-download-chooser-title",
+				"wikisource-download-chooser-epub",
+				"wikisource-download-chooser-epub-description",
+				"wikisource-download-chooser-mobi",
+				"wikisource-download-chooser-mobi-description",
+				"wikisource-download-chooser-pdf",
+				"wikisource-download-chooser-pdf-description",
+				"wikisource-download-chooser-different-format"
+			]
+		},
+		"ext.wikisource.icons": {
+			"class": "ResourceLoaderImageModule",
+			"selector": ".ext-wikisource-icon-{name}",
+			"images": {
+				"desktop-and-printer": {
+					"file": "ext.wikisource.WsExport/icons/desktop-and-printer.svg"
+				},
+				"laptop-and-mobile": {
+					"file": "ext.wikisource.WsExport/icons/laptop-and-mobile.svg"
+				},
+				"tablet": {
+					"file": "ext.wikisource.WsExport/icons/tablet.svg"
+				},
+				"ocr-onboarding": {
+					"file": "ext.wikisource.OCR/OnboardingPopup.svg"
+				}
+			}
+		},
+		"ext.wikisource.OCR": {
+			"dependencies": [
+				"jquery.spinner",
+				"ext.proofreadpage.page.edit",
+				"mediawiki.pulsatingdot",
+				"ext.wikisource.icons",
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui-windows",
+				"oojs-ui.styles.icons-movement",
+				"oojs-ui.styles.indicators",
+				"oojs-ui.styles.icons-editing-core"
+			],
+			"styles": [
+				"ext.wikisource.OCR/ExtractTextWidget.less",
+				"ext.wikisource.OCR/TextBoxWidget.less",
+				"ext.wikisource.OCR/OnboardingPopup.less"
+			],
+			"packageFiles": [
+				"ext.wikisource.OCR/index.js",
+				"ext.wikisource.OCR/OcrTool.js",
+				"ext.wikisource.OCR/ExtractTextWidget.js",
+				"ext.wikisource.OCR/OnboardingPopup.js",
+				"ext.wikisource.OCR/LoadingWidget.js",
+				"ext.wikisource.OCR/UndoWidget.js"
+			],
+			"messages": [
+				"wikisource-ocr-extract-text",
+				"wikisource-ocr-extract-text-title",
+				"wikisource-ocr-extract-progress",
+				"wikisource-ocr-extract-cancel",
+				"wikisource-ocr-extract-undo",
+				"wikisource-ocr-extract-close",
+				"wikisource-ocr-error",
+				"wikisource-ocr-no-text",
+				"wikisource-ocr-settings-menu",
+				"wikisource-ocr-engine",
+				"wikisource-ocr-engine-tesseract",
+				"wikisource-ocr-engine-google",
+				"wikisource-ocr-advanced",
+				"wikisource-ocr-advanced-title",
+				"wikisource-ocr-onboarding-title",
+				"wikisource-ocr-onboarding-text",
+				"wikisource-ocr-onboarding-button"
+			]
+		}
+	},
+	"config": {
+		"WikisourceWikibaseEditionProperty": {
+			"value": "P747"
+		},
+		"WikisourceWikibaseEditionOfProperty": {
+			"value": "P629"
+		},
+		"WikisourceWsExportUrl": {
+			"value": "https://ws-export.wmcloud.org"
+		},
+		"WikisourceEnableOcr": {
+			"value": true
+		},
+		"WikisourceOcrUrl": {
+			"value": "https://ocr.wmcloud.org/"
+		}
+	},
+	"manifest_version": 2
+}

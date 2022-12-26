@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"wsu-extension-name": "Подновувач на искази во Викибазата",
+	"wsu-desc": "Алатка за поднова и додавање на искази во Викибазата",
+	"wsu-special-wikibasestatementupdater": "Масовна поднова на искази",
+	"wsu-wsu-batch-title": "Име на купчето",
+	"wsu-wsu-batch-contents": "Наредби во Брзи искази во форматот V1",
+	"wsu-wsu-error": "Не можев да ги расчленам коментарите: $1",
+	"wsu-wsu-error-linetooshort": "Редот $1 е прекраток.",
+	"wsu-wsu-error-noqualifiers": "Определниците сè уште не се поддржани.",
+	"wsu-wsu-error-onlyq": "Поддржани се само Q-ставки.",
+	"wsu-wsu-error-unsupportedcommand": "Непозната наредба.",
+	"wsu-your-batches": "Ги {{GENDER:|создадовте}} следниве купчиња:",
+	"wsu-unknown-batch": "Непознато купче",
+	"wsu-goback": "Назад на списокот",
+	"wsu-start": "Почни уредување",
+	"wsu-stop": "Запри уредување",
+	"wsu-updater-api-failure": "Не можев да го расчленам одговорот од приложникот.",
+	"wsu-updater-ambiguous-update": "Својството има повеќе искази",
+	"wsu-give-permission": "На алаткава ѝ треба дозвола за да врши уредувања во {{GENDER:|ваше}} име. [[$1|Дајте дозволи]].",
+	"wsu-create-batch": "Создај ново купче",
+	"wsu-command-P": "Својство",
+	"wsu-batchtable-subject": "Предмет",
+	"wsu-batchtable-command": "Наредба",
+	"wsu-batchtable-id": "Назнака",
+	"wsu-batchtable-value": "Вредност",
+	"wsu-batchtable-status": "Состојба",
+	"wsu-js-batchtable-status": "$1 % завршено. {{PLURAL:$2|0=|$2 неуспешни.}}",
+	"apihelp-wikibasestatementupdater-summary": "Раководење со купчиња на Подновувачот на искази во Викибазата"
+}

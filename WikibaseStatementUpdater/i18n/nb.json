@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"wsu-command-P": "Egenskap",
+	"wsu-batchtable-command": "Kommando",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Verdi",
+	"wsu-batchtable-status": "Status"
+}

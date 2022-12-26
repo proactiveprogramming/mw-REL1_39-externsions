@@ -1,0 +1,16 @@
+{
+	"overrides": [
+		{
+			"files": [ "**/*.ts", "**/*.js" ],
+			"extends": [
+				"wikimedia/server",
+				"wikimedia/language/es2020"
+			],
+			"rules": {
+				"strict": "off",
+				"jsdoc/valid-types": "off",
+				"es-x/no-string-prototype-matchall": "off"
+			}
+		}
+	]
+}

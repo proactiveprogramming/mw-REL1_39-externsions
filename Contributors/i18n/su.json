@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kandar"
+		]
+	},
+	"contributors": "Kontributor",
+	"contributors-desc": "Ngabéréndélkeun kontributor utama hiji kaca",
+	"contributors-toolbox": "Kontributor utama",
+	"contributors-legend": "Ngabéréndélkeun kontributor utama hiji kaca",
+	"contributors-target": "Judul:",
+	"contributors-submit": "Témbongkeun",
+	"contributors-subtitle": "Kontributor utama $1",
+	"contributors-badtitle": "Judulna teu bener.",
+	"contributors-nosuchpage": "Kaca $1 euweuh."
+}

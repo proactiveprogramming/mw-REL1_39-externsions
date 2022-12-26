@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Diskdance",
+			"Kly",
+			"Tranve"
+		]
+	},
+	"loopfunc-desc": "在 wikitext 裡提供有限制的迴圈功能",
+	"loopfunc_max_loops": "已達到最大允許的迴圈次數"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"SemanticPioneer"
+		]
+	},
+	"vikisemantictitle-desc": "Wtyczka VIKI do obsługi stron wiki za pomocą rozszerzenia Semantic Title",
+	"vikisemantictitle-error-displaytitle-fetch": "Błąd podczas pobierania wyświetlanego tytułu dla węzła: $1 ."
+}

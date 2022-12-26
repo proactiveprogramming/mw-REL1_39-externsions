@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"page-creation-notif-desc": "שליחת התראה בדוא\"ל כאשר נוצרים דפים חדשים",
+	"page-creation-notification": "לשלוח לי דוא\"ל כאשר נוצר דף חדש",
+	"page-creation-email-subject": "דף חדש – $1 {{GENDER:$3|נוצר}} ב־$2 על־ידי $3",
+	"page-creation-email-body": "$1 {{GENDER:$1|היקר|היקרה}},\n\nזוהי הודעה מאתר {{SITENAME}}, שהדף החדש $2 {{GENDER:$3|נוצר}} על־ידי {{GENDER:$3|המשתמש|המשתמשת}} $3.\n\n{{GENDER:$1|אתה יכול|את יכולה}} לראות אותו בקישור\n$4\n\nטקסט הדף הוא:\n$5\n\nמערכת ההתראות הידידותית שלך באתר {{SITENAME}}.\n\nכדי לשנות את הגדרות ההתראות הדוא\"ל שלך, יש לבקר בקישור\n{{canonicalurl:{{#special:Preferences}}}}"
+}

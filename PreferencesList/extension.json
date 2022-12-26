@@ -1,0 +1,51 @@
+{
+	"name": "PreferencesList",
+	"version": "0.1.0",
+	"author": [
+		"Ike Hecht"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:PreferencesList",
+	"descriptionmsg": "preferenceslist-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadClasses": {
+		"PreferencesList": "includes/PreferencesList.php",
+		"SpecialPreferencesList": "includes/specials/SpecialPreferencesList.php",
+		"PreferencesListUtils": "includes/PreferencesListUtils.php",
+		"PreferencesListPreferences": "includes/PreferencesListPreferences.php",
+		"FakeLinkRenderer": "includes/FakeLinkRenderer.php"
+	},
+	"ExtensionMessagesFiles": {
+		"PreferencesListAlias": "PreferencesList.i18n.alias.php"
+	},
+	"MessagesDirs": {
+		"PreferencesList": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+		"PreferencesList": "SpecialPreferencesList"
+	},
+	"AvailableRights": [
+		"preferenceslist"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"preferenceslist": true
+		}
+	},
+	"ResourceModules": {
+		"ext.preferenceslist": {
+			"styles": "style.less",
+			"scripts": "script.js"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "PreferencesList/modules"
+	},
+	"manifest_version": 1
+}

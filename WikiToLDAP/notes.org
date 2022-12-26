@@ -1,0 +1,80 @@
+* Testing
+** New LDAP user
+- Test hexmode with fresh DB
+- Taken to Merge
+- Specified no merge
+- Put in merged group
+** Wiki user with no LDAP
+** Wiki user with one LDAP
+** LDAP user with one WIKI
+- Tested with hexmode merging with MarkAHershberger
+** Wiki username same as LDAP
+
+* Redirecting users
+Since there does not appear to be a hook that can be used when permission is denied (i.e. the showPermissionsError function is called), we will use JS to show the error.
+
+This means creating a JS module that will redirect the user when a permissions error would be displayed.
+
+Since we are putting these users in the ldap-migration group, we'll just look for that in the header of the page and redirect when we see it in the config value for wgUserGroups
+
+Of course, this means that the ldap users cannot be in that group.
+
+- FEH
+  I cannot seem to put a redirect in the outputpage context object and get a redirect.  Maybe this is a bug, but, for now, it isn't working.
+
+  As a result, I've fallen back to
+  #+begin_src php
+			header( "Location: " . $migrate->getFullURL() )
+  #+end_src
+  to just force the redirect.  This is ugly.
+
+- FEH 2
+  I was trying to use the $title parameter of the userCan hook to avoid a redirect look but that is not working.
+  Got to find a better hook.
+
+It ended up working, but I'm bailing (=exit()=) after the redirect
+
+Also, had to whitelist the MigrateUserToLDAP page.o
+
+* Logging
+Ok, now that is working, I have to get logging working.
+Logging is failing right now with this:
+#+begin_src sh
+PHP Fatal error:  OOUI\\InputWidget cannot use OOUI\\TabIndexedElement - it is not a trait in /var/www/wiki_osgeo/html/w/vendor/oojs/oojs-ui/php/widgets/InputWidget.php on line 11
+#+end_src
+rebuilding to vendor fixed
+* Ok, now, the logs aren't showing up.
+Removing the =exit()= (to allow post display actions?) fixed it.
+* Migrate User
+Page should say “Hey, you need to migrate your account.”
+* LDAP user logs in using PluggableAuth
+Have to find a way to mark that user as not in =ldap-migration=.
+
+Looks like the closest I can get right now is the hook =PluggableAuthPopulateGroups= that will tell me someone used PluggableAuth.  For OSGeo right now that can only mean LDAP, I think.
+- Discovered a [[https://phabricator.wikimedia.org/T270056][bug in LDAPAuthentication2]] because it wasn't setting $id and so groups could not be removed on login (which I need if someone logs in with LDAP — that user should not be marked for LDAP migration any more.)
+* Next step on migration, choose a user
+Done.  Had to hack the ability to do API reads even without permission to otherwise read.
+* Verify the user is an LDAP user and that our user can log into the account
+Yay, not too much work and I learned to think a little more about how forms work and why sessons and stuff.
+* Actually merge the account.
+- Can this be done while the user is logged in?
+  - We should tell the user that they'll be logged out and they should log in again with their ldap account and verify everything
+	1. Can we show progress during merging?
+* We have a progress bar!
+- Still need to make stuff happen on the back end, but I'm pleased with where things are now.
+* Finished but no progress bar
+This are the steps needed to update.
+
+#+begin_src php
+
+pv ~/osgeo_wiki.sql | sudo mysql osgeo_wiki && \
+php html/w/maintenance/runJobs.php && \
+php html/w/maintenance/update.php --quick && \
+php html/w/extensions/SemanticMediaWiki/maintenance/rebuildData.php && \
+php html/w/extensions/SemanticMediaWiki/maintenance/updateEntityCountMap.php && \
+php html/w/extensions/WikiToLDAP/maintenance/MoveToMigrationGroup.php
+
+#+end_src
+
+* Do not automatically ok LDAP users
+- PluggableAuthUserAuthorization hook should not delete

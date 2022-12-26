@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"wikispeech-sdc": "Collecteur de données de parole de Wikispeech",
+	"wikispeech-sdc-desc": "Un outil pour enregistrer, relire et annoter les voix parlées.",
+	"right-wikispeech-sdc-record": "Enregistrer la voix",
+	"action-wikispeech-sdc-record": "enregistrer la voix",
+	"recordspeech": "Enregistrer la conversation",
+	"wikispeech-sdc-record": "Enregistrer",
+	"wikispeech-sdc-save": "Enregistrer",
+	"wikispeech-sdc-skip": "Sauter",
+	"right-wikispeech-sdc-speech-recording": "Modifier l’enregistrement vocal",
+	"action-wikispeech-sdc-speech-recording": "modifier l’enregistrement vocal",
+	"right-wikispeech-sdc-speech-recording-talk": "Discuter de l’enregistrement vocal",
+	"action-wikispeech-sdc-speech-recording-talk": "discuter de l’enregistrement vocal",
+	"wikispeech-sdc-status-starting": "Démarrage",
+	"wikispeech-sdc-status-ready": "Prêt",
+	"wikispeech-sdc-status-listening": "À l’écoute",
+	"wikispeech-sdc-status-recording": "Enregistrement en cours"
+}

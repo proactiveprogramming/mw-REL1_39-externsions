@@ -1,0 +1,555 @@
+{
+	"name": "MediaUploader",
+	"version": "0.1.0",
+	"author": [
+		"Ostrzyciel",
+		"Neil Kandalgaonkar",
+		"Jeroen De Dauw",
+		"Mark Holmquist",
+		"Ryan Kaldari",
+		"Michael Dale",
+		"Ankur Anand",
+		"Ian Baker",
+		"Nischay Nahata",
+		"Yuvi Panda",
+		"Bartosz Dziewoński",
+		"Matthias Mullie"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MediaUploader",
+	"descriptionmsg": "mediauploader-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.37.0"
+	},
+	"DefaultUserOptions": {
+		"upwiz_deflicense": "default",
+		"upwiz_maxsimultaneous": "default",
+		"upwiz_mv_cta_dismissed": 0
+	},
+	"GroupPermissions": {
+		"*": {
+			"upwizcampaigns": false
+		},
+		"user": {
+			"upwizcampaigns": false
+		},
+		"autoconfirmed": {
+			"upwizcampaigns": false
+		},
+		"bot": {
+			"upwizcampaigns": false
+		},
+		"sysop": {
+			"upwizcampaigns": true,
+			"mass-upload": true
+		},
+		"upwizcampeditors": {
+			"upwizcampaigns": true
+		}
+	},
+	"AddGroups": {
+		"sysop": [
+			"upwizcampeditors"
+		]
+	},
+	"RemoveGroups": {
+		"sysop": [
+			"upwizcampeditors"
+		]
+	},
+	"AvailableRights": [
+		"upwizcampaigns",
+		"mass-upload"
+	],
+	"callback": "MediaWiki\\Extension\\MediaUploader\\Hooks\\RegistrationHooks::registerExtension",
+	"ContentHandlers": {
+		"Campaign": {
+			"class": "MediaWiki\\Extension\\MediaUploader\\Campaign\\CampaignContentHandler",
+			"services": [ "MediaUploaderConfigFactory" ]
+		}
+	},
+	"SpecialPages": {
+		"MediaUploader": {
+			"class": "MediaWiki\\Extension\\MediaUploader\\Special\\MediaUploader",
+			"services": [
+				"MediaUploaderRawConfig",
+				"MediaUploaderConfigFactory",
+				"MediaUploaderCampaignStore",
+				"UserOptionsLookup"
+			]
+		},
+		"Campaigns": {
+			"class": "MediaWiki\\Extension\\MediaUploader\\Special\\Campaigns",
+			"services": [
+				"MediaUploaderCampaignStore",
+				"MediaUploaderConfigFactory"
+			]
+		}
+	},
+	"APIListModules": {
+		"allcampaigns": {
+			"class": "MediaWiki\\Extension\\MediaUploader\\Api\\QueryAllCampaigns",
+			"services": [
+				"MediaUploaderCampaignStore",
+				"MediaUploaderCampaignStats"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"MediaUploader": [
+			"i18n",
+			"i18n/api",
+			"i18n/license"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"MediaUploaderAlias": "MediaUploader.alias.php",
+		"MediaUploaderNamespaces": "MediaUploader.namespaces.php"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\MediaUploader\\": "includes/",
+		"MediaWiki\\Extension\\MediaUploader\\Maintenance\\": "maintenance/"
+	},
+	"TestAutoloadClasses": {
+		"MediaWiki\\Extension\\MediaUploader\\Tests\\Unit\\Config\\ConfigUnitTestCase": "tests/phpunit/unit/Config/ConfigUnitTestCase.php"
+	},
+	"ResourceModules": {
+		"ext.mediaUploader.campaignEditor": {
+			"scripts": "resources/ext.mediaUploader.campaignEditor.js",
+			"group": "ext.wikiEditor"
+		},
+		"ext.mediaUploader.base": {
+			"scripts": "resources/uw.base.js",
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"group": "ext.uploadWizard"
+		},
+		"ext.uploadWizard.page": {
+			"scripts": "resources/mw.UploadWizardPage.js",
+			"dependencies": "ext.uploadWizard",
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"group": "ext.uploadWizard"
+		},
+		"ext.uploadWizard.page.styles": {
+			"styles": "resources/uploadWizard.noWizard.less",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.uploadWizard.uploadCampaign.display": {
+			"styles": "resources/ext.uploadWizard.uploadCampaign.display.less",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.uploadWizard.uploadCampaign.list": {
+			"styles": "resources/ext.uploadWizard.uploadCampaign.list.css",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.uploadWizard": {
+			"factory": "MediaWiki\\Extension\\MediaUploader\\MediaUploaderResourceModuleFactory::factory",
+			"dependencies": [
+				"ext.mediaUploader.base",
+				"jquery.client",
+				"jquery.spinner",
+				"jquery.makeCollapsible",
+				"mediawiki.icon",
+				"mediawiki.Uri",
+				"mediawiki.util",
+				"mediawiki.libs.jpegmeta",
+				"mediawiki.jqueryMsg",
+				"mediawiki.api",
+				"mediawiki.confirmCloseWindow",
+				"mediawiki.Title",
+				"mediawiki.user",
+				"mediawiki.language",
+				"mediawiki.editfont.styles",
+				"mediawiki.String",
+				"moment",
+				"oojs",
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui-windows",
+				"oojs-ui.styles.icons-alerts",
+				"oojs-ui.styles.icons-content",
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-editing-core",
+				"oojs-ui.styles.icons-editing-advanced",
+				"oojs-ui.styles.icons-location",
+				"oojs-ui.styles.icons-moderation",
+				"mediawiki.widgets",
+				"mediawiki.widgets.DateInputWidget",
+				"mediawiki.widgets.CategoryMultiselectWidget",
+				"user.options"
+			],
+			"scripts": [
+				"resources/jquery.arrowSteps/jquery.arrowSteps.js",
+				"resources/uw.units.js",
+				"resources/transports/mw.FormDataTransport.js",
+				"resources/handlers/mw.ApiUploadHandler.js",
+				"resources/handlers/mw.ApiUploadFormDataHandler.js",
+				"resources/ui/uw.ui.base.js",
+				"resources/ui/uw.ui.Wizard.js",
+				"resources/ui/uw.ui.Step.js",
+				"resources/ui/uw.ui.DeedPreview.js",
+				"resources/ui/steps/uw.ui.Deed.js",
+				"resources/ui/steps/uw.ui.Details.js",
+				"resources/ui/steps/uw.ui.Thanks.js",
+				"resources/ui/steps/uw.ui.Tutorial.js",
+				"resources/ui/steps/uw.ui.Upload.js",
+				"resources/uw.ConcurrentQueue.js",
+				"resources/uw.CopyMetadataWidget.js",
+				"resources/controller/uw.controller.base.js",
+				"resources/controller/uw.controller.Step.js",
+				"resources/controller/uw.controller.Deed.js",
+				"resources/controller/uw.controller.Details.js",
+				"resources/controller/uw.controller.Thanks.js",
+				"resources/controller/uw.controller.Tutorial.js",
+				"resources/controller/uw.controller.Upload.js",
+				"resources/deed/uw.deed.base.js",
+				"resources/deed/uw.deed.Abstract.js",
+				"resources/deed/uw.deed.None.js",
+				"resources/deed/uw.deed.OwnWork.js",
+				"resources/deed/uw.deed.ThirdParty.js",
+				"resources/deed/uw.deed.Custom.js",
+				"resources/deed/uw.deed.External.js",
+				"resources/jquery/jquery.morphCrossfade.js",
+				"resources/jquery/jquery.lazyload.js",
+				"resources/uw.ValidationMessageElement.js",
+				"resources/uw.DetailsWidget.js",
+				"resources/uw.FieldLayout.js",
+				"resources/uw.LicenseGroup.js",
+				"resources/uw.LicensePreviewDialog.js",
+				"resources/details/uw.TitleDetailsWidget.js",
+				"resources/details/uw.DateDetailsWidget.js",
+				"resources/details/uw.CategoriesDetailsWidget.js",
+				"resources/details/uw.DeedChooserDetailsWidget.js",
+				"resources/details/uw.LanguageDropdownWidget.js",
+				"resources/details/uw.UlsWidget.js",
+				"resources/details/uw.SingleLanguageInputWidget.js",
+				"resources/details/uw.MultipleLanguageInputWidget.js",
+				"resources/details/uw.LocationDetailsWidget.js",
+				"resources/details/uw.TextWidget.js",
+				"resources/details/uw.DropdownWidget.js",
+				"resources/mw.fileApi.js",
+				"resources/mw.canvas.js",
+				"resources/mw.errorDialog.js",
+				"resources/mw.Escaper.js",
+				"resources/mw.DestinationChecker.js",
+				"resources/mw.QuickTitleChecker.js",
+				"resources/mw.GroupProgressBar.js",
+				"resources/mw.UploadWizardDeedChooser.js",
+				"resources/mw.UploadWizardLicenseInput.js",
+				"resources/mw.UploadWizard.js",
+				"resources/mw.UploadWizardUpload.js",
+				"resources/mw.UploadWizardDetails.js",
+				"resources/mw.UploadWizardUploadInterface.js"
+			],
+			"styles": [
+				"resources/jquery.arrowSteps/jquery.arrowSteps.less",
+				"resources/uw.CopyMetadataWidget.less",
+				"resources/ui/steps/uw.ui.Thanks.less",
+				"resources/ui/steps/uw.ui.Tutorial.less",
+				"resources/uploadWizard.less",
+				"resources/uw.FieldLayout.less",
+				"resources/details/uw.DateDetailsWidget.less",
+				"resources/details/uw.SingleLanguageInputWidget.less",
+				"resources/details/uw.MultipleLanguageInputWidget.less",
+				"resources/details/uw.LocationDetailsWidget.less"
+			],
+			"messages": [
+				"mediauploader",
+				"mediauploader-desc",
+				"mediauploader-step-tutorial",
+				"mediauploader-step-file",
+				"mediauploader-step-deeds",
+				"mediauploader-step-details",
+				"mediauploader-step-thanks",
+				"mediauploader-api-error-aborted",
+				"mediauploader-api-error-noimageinfo",
+				"mediauploader-api-error-parsererror",
+				"mediauploader-api-error-unknown-warning",
+				"unknown-error",
+				"api-clientside-error-noconnect",
+				"api-clientside-error-timeout",
+				"api-clientside-error-invalidresponse",
+				"apierror-stashfailed-complete",
+				"file-exists-duplicate",
+				"file-deleted-duplicate",
+				"mediauploader-api-warning-exists",
+				"mediauploader-multi-file-select2",
+				"mediauploader-uploading",
+				"mediauploader-queued",
+				"mediauploader-assembling",
+				"mediauploader-publish",
+				"mediauploader-transport-started",
+				"mediauploader-transported",
+				"mediauploader-stashed-upload",
+				"mediauploader-getting-metadata",
+				"mediauploader-submitting-details",
+				"mediauploader-published",
+				"mediauploader-failed",
+				"mediauploader-remove",
+				"mediauploader-remove-upload",
+				"mediauploader-multilang-remove",
+				"mediauploader-deleted-duplicate-unknown-filename",
+				"mediauploader-upload",
+				"mediauploader-file-retry",
+				"mediauploader-next-file-despite-failures",
+				"mediauploader-upload-count",
+				"mediauploader-progressbar-uploading",
+				"mediauploader-almost-finished",
+				"mediauploader-finished",
+				"mediauploader-deeds-macro-prompt",
+				"mediauploader-source-ownwork",
+				"disclaimerpage",
+				"mediauploader-source-thirdparty",
+				"mediauploader-source-custom",
+				"mediauploader-more-options",
+				"mediauploader-description",
+				"mediauploader-multilang-add",
+				"mediauploader-title",
+				"mediauploader-date-created",
+				"mediauploader-select-date",
+				"mediauploader-location",
+				"mediauploader-location-button",
+				"mediauploader-location-latitude",
+				"mediauploader-location-longitude",
+				"mediauploader-location-altitude",
+				"mediauploader-location-heading",
+				"mediauploader-copyright-info",
+				"mediauploader-other",
+				"mediauploader-upload-error-bad-filename-extension",
+				"mediauploader-upload-error-bad-filename-no-extension",
+				"mediauploader-upload-error-duplicate-filename-error",
+				"mediauploader-allowed-filename-extensions",
+				"mediauploader-upload-error-duplicate",
+				"mediauploader-upload-error-duplicate-archive",
+				"mediauploader-upload-error-stashed-anyway",
+				"mediauploader-ok",
+				"mediauploader-fileexists-replace-on-page",
+				"mediauploader-fileexists-replace-no-link",
+				"mediauploader-blacklisted-details",
+				"mediauploader-override",
+				"mediauploader-override-upload",
+				"mediauploader-next",
+				"mediauploader-next-file",
+				"mediauploader-next-deeds",
+				"mediauploader-publish-details",
+				"mediauploader-previous",
+				"mediauploader-home",
+				"mediauploader-upload-another",
+				"mediauploader-tooltip-title",
+				"mediauploader-tooltip-description",
+				"mediauploader-tooltip-date",
+				"mediauploader-tooltip-categories",
+				"mediauploader-tooltip-other",
+				"mediauploader-tooltip-location",
+				"mediauploader-tooltip-more-info",
+				"mediauploader-file-need-file",
+				"mediauploader-deeds-need-deed",
+				"mediauploader-deeds-need-license",
+				"mediauploader-label-optional",
+				"mediauploader-error-latitude",
+				"mediauploader-error-longitude",
+				"mediauploader-error-altitude",
+				"mediauploader-error-heading",
+				"mediauploader-error-blank",
+				"mediauploader-error-too-long",
+				"mediauploader-error-too-short",
+				"mediauploader-error-title-too-long",
+				"mediauploader-error-title-too-short",
+				"mediauploader-error-bad-multilang",
+				"mediauploader-error-title-blacklisted",
+				"mediauploader-error-title-senselessimagename",
+				"mediauploader-error-title-invalid",
+				"mediauploader-error-title-thumbnail",
+				"mediauploader-error-title-extension",
+				"mediauploader-error-title-protected",
+				"mediauploader-error-title-duplicate",
+				"mediauploader-error-license-wikitext-missing",
+				"mediauploader-error-license-wikitext-too-short",
+				"mediauploader-error-license-wikitext-too-long",
+				"mediauploader-warning-value-missing",
+				"mediauploader-warning-postdate",
+				"mediauploader-details-error-count",
+				"mediauploader-details-warning-count",
+				"mediauploader-license-custom-preview",
+				"mediauploader-license-confirm-remove",
+				"mediauploader-license-confirm-remove-title",
+				"mediauploader-categories",
+				"mediauploader-categories-missing",
+				"mediauploader-thumbnail-failed",
+				"mediauploader-unparseable-filename",
+				"mediauploader-subhead-alt-upload",
+				"mediauploader-subhead-alternatives",
+				"mediauploader-errordialog-title",
+				"mediauploader-errordialog-ok",
+				"mediauploader-calendar-date",
+				"mediauploader-custom-date",
+				"mediauploader-too-many-files-text",
+				"mediauploader-too-many-files",
+				"mediauploader-file-too-large-text",
+				"mediauploader-file-too-large",
+				"mediauploader-dialog-warning",
+				"mediauploader-dialog-title",
+				"mediauploader-dialog-continue",
+				"mediauploader-dialog-back",
+				"colon-separator",
+				"mediauploader-copy-metadata",
+				"mediauploader-copy-metadata-button",
+				"mediauploader-copy-metadata-button-undo",
+				"mediauploader-copied-metadata",
+				"mediauploader-undid-metadata",
+				"mediauploader-copy-title",
+				"mediauploader-copy-description",
+				"mediauploader-copy-date",
+				"mediauploader-copy-categories",
+				"mediauploader-copy-location",
+				"mediauploader-copy-other",
+				"mediauploader-file-some-failed",
+				"mediauploader-file-all-failed",
+				"mediauploader-file-all-ok",
+				"mediauploader-thanks-intro",
+				"mediauploader-thanks-explain",
+				"mediauploader-thanks-wikitext",
+				"mediauploader-thanks-url",
+				"mediauploader-skip-tutorial-future",
+				"mediauploader-tooltip-skiptutorial",
+				"prefs-uploads",
+				"prefs-mediauploader-interface",
+				"mediauploader-add-file-n",
+				"mediauploader-add-file-0-free",
+				"mediauploader-tooltip-sign",
+				"mediauploader-source-ownwork-assert",
+				"mediauploader-error-signature-blank",
+				"mediauploader-error-signature-too-long",
+				"mediauploader-error-signature-too-short",
+				"mediauploader-license-show-all",
+				"mediauploader-license-show-recommended",
+				"mediauploader-source",
+				"mediauploader-author",
+				"mediauploader-tooltip-author",
+				"mediauploader-tooltip-source",
+				"mediauploader-source-thirdparty-cases",
+				"mediauploader-source-thirdparty-custom-multiple-intro",
+				"mediauploader-default-content-wikitext",
+				"mediauploader-content-source-ownwork",
+				"size-gigabytes",
+				"size-megabytes",
+				"size-kilobytes",
+				"size-bytes"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"group": "ext.uploadWizard"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "MediaUploader"
+	},
+	"QUnitTestModule": {
+		"localBasePath": "tests/qunit",
+		"remoteExtPath": "MediaUploader/tests/qunit",
+		"scripts": [
+			"controller/uw.controller.Deed.test.js",
+			"controller/uw.controller.Details.test.js",
+			"controller/uw.controller.Step.test.js",
+			"controller/uw.controller.Thanks.test.js",
+			"controller/uw.controller.Tutorial.test.js",
+			"controller/uw.controller.Upload.test.js",
+			"transports/mw.FormDataTransport.test.js",
+			"uw.ConcurrentQueue.test.js",
+			"mw.UploadWizardUpload.test.js",
+			"mw.UploadWizardLicenseInput.test.js",
+			"uw.TitleDetailsWidget.test.js",
+			"mw.fileApi.test.js"
+		],
+		"dependencies": [
+			"ext.uploadWizard"
+		]
+	},
+	"Hooks": {
+		"PageDelete": "campaign",
+		"PageDeleteComplete": "campaign",
+		"ChangeTagsAllowedAdd": "registration",
+		"ChangeTagsListActive": "registration",
+		"CodeEditorGetPageLanguage": "\\MediaWiki\\Extension\\MediaUploader\\Hooks\\CampaignContentHooks::onCodeEditorGetPageLanguage",
+		"ContentModelCanBeUsedOn": "campaignContent",
+		"EditFilterMergedContent": "campaign",
+		"EditPage::showEditForm:initial": "campaignContent",
+		"GetPreferences": "general",
+		"LinksUpdateComplete": "campaign",
+		"ListDefinedTags": "registration",
+		"LoadExtensionSchemaUpdates": "registration",
+		"MovePageIsValidMove": "campaign",
+		"PageSaveComplete": "campaign",
+		"UserGetReservedNames": "registration"
+	},
+	"HookHandlers": {
+		"campaign": {
+			"class": "MediaWiki\\Extension\\MediaUploader\\Hooks\\CampaignHooks",
+			"services": [
+				"MediaUploaderCampaignStore",
+				"MediaUploaderConfigCacheInvalidator"
+			]
+		},
+		"campaignContent": {
+			"class": "MediaWiki\\Extension\\MediaUploader\\Hooks\\CampaignContentHooks",
+			"factory": "MediaWiki\\Extension\\MediaUploader\\Hooks\\CampaignContentHooks::newFromGlobalState"
+		},
+		"general": {
+			"class": "MediaWiki\\Extension\\MediaUploader\\Hooks\\Hooks",
+			"services": [ "MediaUploaderRawConfig" ]
+		},
+		"registration": {
+			"class": "MediaWiki\\Extension\\MediaUploader\\Hooks\\RegistrationHooks"
+		}
+	},
+	"JobClasses": {
+		"globalConfigAnchorUpdate": "MediaWiki\\Extension\\MediaUploader\\Config\\GlobalConfigAnchorUpdateJob"
+	},
+	"namespaces": [
+		{
+			"id": 460,
+			"constant": "NS_CAMPAIGN",
+			"name": "Campaign",
+			"defaultcontentmodel": "Campaign",
+			"protection": "upwizcampaigns",
+			"capitallinkoverride": false
+		},
+		{
+			"id": 461,
+			"constant": "NS_CAMPAIGN_TALK",
+			"name": "Campaign_talk",
+			"capitallinkoverride": false
+		}
+	],
+	"config": {
+		"MediaUploaderConfig": {
+			"value": []
+		},
+		"UploadWizardConfig": {
+			"value": []
+		}
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

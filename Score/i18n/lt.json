@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200",
+			"Manvydasz",
+			"Tomasdd",
+			"Zygimantus"
+		]
+	},
+	"score-download-midi-file": "Atsisiųsti MIDI failą",
+	"score-download-source-file": "Atsisiųsti LilyPond  failą",
+	"score-visualeditor-mwscoredialog-audio": "Sukurti garso failą",
+	"score-visualeditor-mwscoredialog-card-advanced": "Išsamiau",
+	"score-visualeditor-mwscoredialog-lang": "Kalba",
+	"score-visualeditor-mwscoredialog-override-audio": "Naudoti esamą garso failą",
+	"score-visualeditor-mwscoredialog-override-midi": "Naudoti esamą MIDI failą",
+	"score-visualeditor-mwscoredialog-override-midi-placeholder": "Esamo MIDI failo pavadinimas",
+	"score-visualeditor-mwscoredialog-raw": "Tai yra pilnas LilyPond failas",
+	"score-visualeditor-mwscoredialog-title": "Muzikos notacija"
+}

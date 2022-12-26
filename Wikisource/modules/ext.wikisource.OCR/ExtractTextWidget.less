@@ -1,0 +1,51 @@
+@import 'mediawiki.ui/variables';
+
+.prp-page-container {
+	position: relative;
+}
+
+.ext-wikisource-ExtractTextWidget {
+	float: right;
+	// Keep enough margin to not obscure the right border of the toolbar.
+	margin-right: 1px;
+	z-index: 2;
+	border-left: 1px solid #eaecf0;
+
+	.oo-ui-buttonElement-button {
+		border: 0;
+	}
+}
+
+.ext-wikisource-ocr-config-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	.ext-wikisource-ocr-engine-label,
+	.ext-wikisource-ocr-engineradios .oo-ui-radioOptionWidget {
+		display: flex;
+		align-items: center;
+		padding: 12px 12px 4px 12px;
+
+		.oo-ui-inputWidget,
+		.ext-wikisource-icon-wrapper {
+			width: 20px;
+		}
+
+		.oo-ui-labelElement-label {
+			padding-left: 12px;
+		}
+	}
+
+	.ext-wikisource-ocr-engineradios {
+		font-weight: bolder;
+		margin-bottom: 12px;
+	}
+
+	.ext-wikisource-ocr-advanced-link > .oo-ui-buttonElement-button {
+		width: 100%;
+		border-width: @border-width-base 0 0 0;
+		text-align: left;
+		padding: 12px 0;
+	}
+}

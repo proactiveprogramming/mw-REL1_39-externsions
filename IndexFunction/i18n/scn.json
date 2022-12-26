@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Gmelfi"
+		]
+	},
+	"indexfunc-badtitle": "Tìtulu nun vàliddu: \"$1\"",
+	"indexfunc-index-exists": "La pàggina \"$1\" già esisti.",
+	"index": "Ricerca ìnnici",
+	"index-submit": "Manna",
+	"index-hide-detail": "Ammuccia l'elencu dî pàggini"
+}

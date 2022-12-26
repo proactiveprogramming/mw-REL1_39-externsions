@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agent Isai"
+		]
+	},
+	"share": "Name of the extension",
+	"share-desc": "Extension description",
+	"share-header": "Header of sidebar portlet",
+	"share-email": "Link name and alt value for 'Share via email'",
+	"share-email-desc": "i18n counterpart of message in extension.json",
+	"share-facebook": "Link name and alt value for 'Share to Facebook'",
+	"share-facebook-desc": "i18n counterpart of message in extension.json",
+	"share-linkedin": "Link name and alt value for 'Share to LinkedIn'",
+	"share-linkedin-desc": "i18n counterpart of message in extension.json",
+	"share-reddit": "Link name and alt value for 'Share to Reddit'",
+	"share-reddit-desc": "i18n counterpart of message in extension.json",
+	"share-sidebar-basicbuttons": "i18n counterpart of message in extension.json",
+	"share-sidebar-plainlinks": "i18n counterpart of message in extension.json",
+	"share-tumblr": "Link name and alt value for 'Share to Tumblr'",
+	"share-tumblr-desc": "i18n counterpart of message in extension.json",
+	"share-twitter": "Link name and alt value for 'Share to Twitter'",
+	"share-twitter-desc": "i18n counterpart of message in extension.json",
+	"share-preftoggle": "Toggle to allow users to enable or disable the sidebar portlet in their user preferences",
+	"right-viewsharelinks": "{{doc-right|viewsharelinks}}",
+	"action-viewsharelinks": "{{doc-action|viewsharelinks}}"
+}

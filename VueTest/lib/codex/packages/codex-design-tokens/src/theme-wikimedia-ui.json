@@ -1,0 +1,661 @@
+{
+	"color": {
+		"comment": "The colors are given numbers corresponding to their contrast, starting with 100 for the brightest to 700 for the darkest. Note, that single color options of a tone, white, black and purple, don't carry a number. Same goes for transparent.",
+		"white": {
+			"value": "#fff"
+		},
+		"gray100": {
+			"value": "#f8f9fa"
+		},
+		"gray200": {
+			"value": "#eaecf0"
+		},
+		"gray300": {
+			"value": "#c8ccd1"
+		},
+		"gray400": {
+			"value": "#a2a9b1"
+		},
+		"gray500": {
+			"value": "#72777d"
+		},
+		"gray600": {
+			"value": "#54595d"
+		},
+		"gray650": {
+			"deprecated": "Gray 650 will be added as legacy and we are set out to use Gray 600 instead.",
+			"value": "#404244"
+		},
+		"gray700": {
+			"value": "#202122"
+		},
+		"black": {
+			"value": "#000"
+		},
+		"blue100": {
+			"value": "#eaf3ff"
+		},
+		"blue500": {
+			"value": "#447ff5"
+		},
+		"blue600": {
+			"value": "#36c"
+		},
+		"blue700": {
+			"value": "#2a4b8d"
+		},
+		"red100": {
+			"value": "#fee7e6"
+		},
+		"red500": {
+			"value": "#ff4242"
+		},
+		"red600": {
+			"value": "#d33"
+		},
+		"red700": {
+			"value": "#b32424"
+		},
+		"yellow100": {
+			"value": "#fef6e7"
+		},
+		"yellow500": {
+			"value": "#fc3"
+		},
+		"yellow600": {
+			"value": "#edab00"
+		},
+		"yellow700": {
+			"value": "#ac6600"
+		},
+		"green100": {
+			"value": "#d5fdf4"
+		},
+		"green600": {
+			"value": "#00af89"
+		},
+		"green700": {
+			"value": "#14866d"
+		},
+		"purple": {
+			"value": "#6b4ba1"
+		},
+		"maroon": {
+			"value": "#a55858"
+		},
+		"modifier-gray100-translucent": {
+			"comment": "TODO: Not part of DS Figma yet. Equals `color-gray100` on white.",
+			"value": "rgba( 0, 24, 73, calc( 7 / 255 ) )"
+		},
+		"modifier-gray200-translucent": {
+			"comment": "TODO: Not part of DS Figma yet. Equals `color-gray200` on white.",
+			"value": "rgba( 0, 24, 73, calc( 21 / 255 ) )"
+		},
+		"modifier-blue600-translucent": {
+			"comment": "TODO: Not part of DS Figma yet. Note, that WikimediaUI Base's `rgba( 41, 98, 204, 0.1 )` was not a modifier of Blue600, while this is.",
+			"value": "rgba( 51, 102, 204, 0.1 )"
+		},
+		"opacity-medium-light": {
+			"value": "rgba( 255, 255, 255, 0.65 )"
+		},
+		"opacity-medium-dark": {
+			"value": "rgba( 0, 0, 0, 0.65 )"
+		},
+		"transparent": {
+			"value": "transparent"
+		},
+		"transparent-light": {
+			"value": "rgba( 255, 255, 255, 0 )"
+		},
+		"transparent-dark": {
+			"value": "rgba( 0, 0, 0, 0 )"
+		}
+	},
+	"opacity": {
+		"0": {
+			"value": "0"
+		},
+		"30": {
+			"value": "0.30"
+		},
+		"60": {
+			"value": "0.65"
+		},
+		"100": {
+			"value": "1"
+		},
+		"87": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products.",
+			"comment": "Equals `#222` on `background-color: #fff`, closest to `#202122`.",
+			"value": "0.87"
+		},
+		"74": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products.",
+			"comment": "Equals `#424242` on `background-color: #fff`, closest to `#404244`.",
+			"value": "0.74"
+		},
+		"67": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products.",
+			"comment": "Equals `#555` on `background-color: `#fff`, closest to `#54595d`.",
+			"value": "0.67"
+		},
+		"51": {
+			"deprecated": "Legacy opacity for icon states in non-Codex products.",
+			"comment": "Equals `#7d7d7d` on `background-color: #fff`, closest to `#72777d`.",
+			"value": "0.51"
+		}
+	},
+	"z-index": {
+		"0": {
+			"value": "0"
+		},
+		"1": {
+			"value": "1"
+		},
+		"2": {
+			"value": "2"
+		},
+		"10": {
+			"value": "10"
+		},
+		"100": {
+			"value": "100"
+		},
+		"101": {
+			"value": "101"
+		}
+	},
+	"box-sizing": {
+		"100": {
+			"value": "border-box"
+		}
+	},
+	"dimension": {
+		"0": {
+			"value": "0"
+		},
+		"6": {
+			"value": "1"
+		},
+		"12": {
+			"value": "2"
+		},
+		"25": {
+			"value": "4"
+		},
+		"30": {
+			"comment": "This token is an exception to the scale.  Used as vertical `padding` in inputs and controls to achieve the default 32px component height.",
+			"value": "5"
+		},
+		"35": {
+			"comment": "This token is an exception to the scale.  Used as `padding` of the ToggleSwitch component.",
+			"value": "6"
+		},
+		"50": {
+			"value": "8"
+		},
+		"75": {
+			"value": "12"
+		},
+		"100": {
+			"value": "16"
+		},
+		"125": {
+			"value": "20"
+		},
+		"150": {
+			"value": "24"
+		},
+		"200": {
+			"value": "32"
+		},
+		"250": {
+			"value": "40"
+		},
+		"275": {
+			"value": "44"
+		},
+		"300": {
+			"value": "48"
+		},
+		"400": {
+			"value": "64"
+		},
+		"800": {
+			"value": "128"
+		},
+		"1600": {
+			"value": "256"
+		},
+		"2400": {
+			"value": "384"
+		},
+		"2800": {
+			"value": "448"
+		},
+		"3200": {
+			"value": "512"
+		},
+		"5600": {
+			"value": "896"
+		},
+		"absolute-1": {
+			"value": "1px"
+		},
+		"absolute-9999": {
+			"value": "9999px"
+		},
+		"third": {
+			"comment": "From here on, percentages.",
+			"value": "33.33%"
+		},
+		"half": {
+			"value": "50%"
+		},
+		"full": {
+			"value": "100%"
+		},
+		"double": {
+			"value": "200%"
+		},
+		"viewport": {
+			"width-full": {
+				"comment": "From here on, viewport sizes",
+				"value": "100vw"
+			},
+			"height-full": {
+				"value": "100vh"
+			}
+		}
+	},
+	"size": {
+		"viewport": {
+			"32": {
+				"value": "320px"
+			},
+			"64": {
+				"value": "640px"
+			},
+			"72": {
+				"deprecated": "Legacy breakpoint for non-Codex products.",
+				"value": "720px"
+			},
+			"100": {
+				"deprecated": "Legacy breakpoint for non-Codex products.",
+				"value": "1000px"
+			},
+			"112": {
+				"value": "1120px"
+			},
+			"120": {
+				"deprecated": "Legacy breakpoint for non-Codex products.",
+				"value": "1200px"
+			},
+			"168": {
+				"value": "1680px"
+			},
+			"200": {
+				"deprecated": "Legacy breakpoint for non-Codex products.",
+				"value": "2000px"
+			}
+		}
+	},
+	"max-width": {
+		"100": {
+			"value": "none"
+		}
+	},
+	"border-style": {
+		"50": {
+			"value": "dashed"
+		},
+		"100": {
+			"value": "solid"
+		}
+	},
+	"box-shadow": {
+		"comment": "Don't sub-group inset and drop shadows as themes might choose doing differently.",
+		"25": {
+			"value": "inset 0 0 0 1px"
+		},
+		"25-top": {
+			"value": "0 -1px 0 0"
+		},
+		"25-start": {
+			"value": "-1px 0 0 0"
+		},
+		"25-outset": {
+			"value": "0 0 0 1px"
+		},
+		"50": {
+			"value": "inset 0 0 0 2px"
+		},
+		"50-vertical": {
+			"comment": "Only visible at bottom.",
+			"value": "inset 0 -2px 0 0"
+		},
+		"100": {
+			"comment": "Defining `rgba()` as combination of color and opacity tokens is overly complex in Style Dictionary. Therefore adding drop shadow colors here.",
+			"value": "0 1px 1px rgba( 0, 0, 0, 0.2 )"
+		},
+		"200": {
+			"value": "0 2px 2px 0 rgba( 0, 0, 0, 0.2 )"
+		},
+		"500": {
+			"value": "0 20px 48px 0 rgba( 0, 0, 0, 0.2 )"
+		}
+	},
+	"font-family": {
+		"comment": "TODO: Re-evaluate and make possibly obsolete with multi-platform tokens output.",
+		"sans": {
+			"10": {
+				"comment": "Use for `sans--fallback`.",
+				"value": "sans-serif"
+			},
+			"50": {
+				"deprecated": "Legacy `font-family`. Replaced by `sans-fallback`.",
+				"comment": "Use for `sans`.",
+				"value": "'Helvetica Neue', 'Helvetica', 'Liberation Sans', 'Arial', sans-serif"
+			},
+			"100": {
+				"comment": "Provide better operating system-specific readability. See T175877. `system-ui` is currently not an option due to OS/language combination issues. See T175877#4776576.",
+				"value": "-apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Inter', 'Helvetica', 'Arial', sans-serif"
+			}
+		},
+		"serif": {
+			"10": {
+				"comment": "Use for `serif--fallback`.",
+				"value": "serif"
+			},
+			"100": {
+				"value": "'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif"
+			}
+		},
+		"monospace": {
+			"10": {
+				"comment": "Use for `monospace--fallback`. See T176636.",
+				"value": "monospace, monospace"
+			},
+			"100": {
+				"comment": "Provide better operating system-specific monospace stack. See T209915.",
+				"value": "'Menlo', 'Consolas', 'Liberation Mono', 'Fira Code', 'Courier New', monospace"
+			}
+		}
+	},
+	"font-weight": {
+		"comment": "Set `100` to `normal` default `400` to move away from property value collisions.",
+		"25": {
+			"value": "100"
+		},
+		"75": {
+			"value": "300"
+		},
+		"100": {
+			"value": "400"
+		},
+		"150": {
+			"value": "600"
+		},
+		"175": {
+			"value": "700"
+		}
+	},
+	"line-height": {
+		"60": {
+			"value": "1.25"
+		},
+		"65": {
+			"comment": "Used for `line-height-heading` in WikimediaUI Base.",
+			"deprecated": "Legacy line-height for non-Codex products. Use `line-height-70` instead.",
+			"value": "1.3"
+		},
+		"70": {
+			"value": "1.375"
+		},
+		"80": {
+			"deprecated": "Legacy line-height. Use `line-height-90` instead.",
+			"value": "1.4285714"
+		},
+		"90": {
+			"value": "1.5714285"
+		},
+		"100": {
+			"value": "1.6"
+		}
+	},
+	"text-decoration": {
+		"0": {
+			"value": "none"
+		},
+		"150": {
+			"value": "line-through"
+		},
+		"200": {
+			"value": "underline"
+		}
+	},
+	"tab-size": {
+		"100": {
+			"value": "4"
+		}
+	},
+	"transition-duration": {
+		"100": {
+			"value": "100ms"
+		},
+		"200": {
+			"value": "250ms"
+		}
+	},
+	"transition-property": {
+		"background-color": {
+			"value": "background-color"
+		},
+		"color": {
+			"value": "color"
+		},
+		"border-color": {
+			"value": "border-color"
+		},
+		"box-shadow": {
+			"value": "box-shadow"
+		},
+		"left": {
+			"value": "left"
+		},
+		"opacity": {
+			"value": "opacity"
+		}
+	},
+	"transition-timing-function": {
+		"100": {
+			"comment": "`ease` for system initiated transitions. See T77949. It's also the initial value.",
+			"value": "ease"
+		},
+		"200": {
+			"comment": "`ease-out` for human initiated transitions.",
+			"value": "ease-out"
+		}
+	},
+	"animation-delay": {
+		"0": {
+			"value": "0ms"
+		},
+		"100": {
+			"value": "-160ms"
+		},
+		"200": {
+			"value": "-330ms"
+		}
+	},
+	"animation-duration": {
+		"100": {
+			"value": "1600ms"
+		},
+		"200": {
+			"value": "2000ms"
+		}
+	},
+	"animation-timing-function": {
+		"100": {
+			"value": "linear"
+		},
+		"200": {
+			"value": "ease-in-out"
+		}
+	},
+	"animation-iteration-count": {
+		"100": {
+			"value": "infinite"
+		}
+	},
+	"cursor": {
+		"arrow": {
+			"value": "default"
+		},
+		"arrow-move": {
+			"value": "move"
+		},
+		"arrow-not-allowed": {
+			"value": "not-allowed"
+		},
+		"hand": {
+			"value": "pointer"
+		},
+		"hand-open": {
+			"value": "grab"
+		},
+		"hand-closed": {
+			"value": "grabbing"
+		},
+		"question-mark": {
+			"value": "help"
+		},
+		"resize-left": {
+			"value": "nesw-resize"
+		},
+		"resize-right": {
+			"value": "nwse-resize"
+		},
+		"text-marker": {
+			"value": "text"
+		},
+		"zoom-more": {
+			"value": "zoom-in"
+		},
+		"zoom-less": {
+			"value": "zoom-out"
+		}
+	},
+	"unit": {
+		"system": {
+			"value": "px"
+		},
+		"user": {
+			"value": "em"
+		}
+	},
+	"wmui-color": {
+		"comment": "Note: Deprecated color names necessary for WikimediaUI Base backwards-compatibility!",
+		"base0": {
+			"deprecated": true,
+			"value": "{ color.black }"
+		},
+		"base10": {
+			"deprecated": true,
+			"value": "{ color.gray700 }"
+		},
+		"base20": {
+			"deprecated": true,
+			"value": "{ color.gray600 }"
+		},
+		"base30": {
+			"deprecated": true,
+			"value": "{ color.gray500 }"
+		},
+		"base50": {
+			"deprecated": true,
+			"value": "{ color.gray400 }"
+		},
+		"base70": {
+			"deprecated": true,
+			"value": "{ color.gray300 }"
+		},
+		"base80": {
+			"deprecated": true,
+			"value": "{ color.gray200 }"
+		},
+		"base90": {
+			"deprecated": true,
+			"value": "{ color.gray100 }"
+		},
+		"base100": {
+			"deprecated": true,
+			"value": "{ color.white }"
+		},
+		"accent30": {
+			"deprecated": true,
+			"value": "{ color.blue700 }"
+		},
+		"accent50": {
+			"deprecated": true,
+			"value": "{ color.blue600 }"
+		},
+		"accent90": {
+			"deprecated": true,
+			"value": "{ color.blue100 }"
+		},
+		"red30": {
+			"deprecated": true,
+			"value": "{ color.red700 }"
+		},
+		"red50": {
+			"deprecated": true,
+			"value": "{ color.red600 }"
+		},
+		"red90": {
+			"deprecated": true,
+			"value": "{ color.red100 }"
+		},
+		"yellow30": {
+			"deprecated": true,
+			"value": "{ color.yellow700 }"
+		},
+		"yellow50": {
+			"deprecated": true,
+			"value": "{ color.yellow600 }"
+		},
+		"yellow90": {
+			"deprecated": true,
+			"value": "{ color.yellow100 }"
+		},
+		"green30": {
+			"deprecated": true,
+			"value": "{ color.green700 }"
+		},
+		"green50": {
+			"deprecated": true,
+			"value": "{ color.green600 }"
+		},
+		"green90": {
+			"deprecated": true,
+			"value": "{ color.green100 }"
+		},
+		"purple50": {
+			"deprecated": true,
+			"value": "{ color.purple }"
+		},
+		"modifier-base10--lighten": {
+			"deprecated": true,
+			"value": "{ color.gray650 }"
+		},
+		"modifier-accent50--lighten": {
+			"deprecated": true,
+			"value": "{ color.blue500 }"
+		},
+		"modifier-red50--lighten": {
+			"deprecated": true,
+			"value": "{ color.red100 }"
+		}
+	}
+}

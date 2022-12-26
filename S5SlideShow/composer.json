@@ -1,0 +1,61 @@
+{
+	"name": "mediawiki/s5-slide-show",
+	"description": "",
+	"extra": {
+		"installer-name": "S5SlideShow"
+	},
+	"homepage": "https://www.mediawiki.org/wiki/Extension:S5SlideShow",
+	"license": "GPL-2.0-or-later",
+	"type": "mediawiki-extension",
+	"keywords": [
+		"extension",
+		"wiki",
+		"mediawiki",
+		"presentation"
+	],
+	"authors": [
+		{
+			"name": "Vitaliy Filippov",
+			"homepage": "https://www.mediawiki.org/wiki/User:VitaliyFilippov",
+			"role": "Developer"
+		},
+		{
+			"name": "Mark A. Hershberger",
+			"homepage": "http://hexmode.com/",
+			"email": "mah@nichework.com",
+			"role": "Contributor"
+		},
+		{
+			"name": "Wolfgang Fahl",
+			"homepage": "http://bitplan.com/",
+			"role": "Contributor"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"MediaWiki\\Extension\\S5SlideShow\\": "src"
+		}
+	},
+	"require": {
+		"php": ">=7.0.0",
+		"composer/installers": "1.*,>=1.0.1"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phpcs": "phpcs -p -s ."
+	}
+}

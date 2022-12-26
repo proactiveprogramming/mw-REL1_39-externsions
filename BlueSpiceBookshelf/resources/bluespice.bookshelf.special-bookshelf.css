@@ -1,0 +1,68 @@
+.preview .x-panel-body.x-panel-body-default {
+	overflow: auto;
+}
+.preview .thumbnail {
+	padding: 16px;
+	display: inline-block;
+}
+
+div.caption {
+	height: 334px;
+	width: 207px;
+	padding: 0 0;
+}
+div.caption .title {
+	border: 1px solid #3e5389;
+	border-bottom: none;
+	height: 20px;
+	display: block;
+	font-size: 110%;
+	font-weight: 500;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 3px 8px 3px 8px;
+}
+div.caption .title a {
+	color: #3e5389;
+}
+
+div.caption .image {
+	height: 200px;
+	width: 207px;
+	padding: 10px;
+	border: 1px solid #3e5389;
+	border-bottom: none;
+}
+
+div.caption .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+div.caption .meta {
+	color: #3e5389;
+	border: 1px solid #3e5389;
+	height: calc(334px - 200px - 20px - 5px);
+	padding: 3px 8px 0 8px;
+	width: 207px;
+	display: block;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0;
+}
+
+#bs-bookshelf-container span.x-tab-icon-el.x-tab-icon-el-default {
+	display: none;
+	width: 0px;
+	height: 0px;
+}
+
+#bs-bookshelf-container .bs-flyout-tabbed-data-view .x-tab-inner {
+	text-indent: 0px;
+	width: auto;
+	max-width: inherit;
+	padding: 0 5px;
+}

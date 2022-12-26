@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Als-Holder",
+			"J. 'mach' wust"
+		]
+	},
+	"contributors": "Hauptautore",
+	"contributors-desc": "Zeigt d Hauptautore vun ere Syte",
+	"contributors-toolbox": "Hauptautore",
+	"contributors-legend": "Zeig d Hauptautore vun ere Syte",
+	"contributors-target": "Syte:",
+	"contributors-submit": "Zeig",
+	"contributors-subtitle": "Hauptautore vu $1",
+	"contributors-badtitle": "Nit giltigi Syte",
+	"contributors-nosuchpage": "D Syte $1 git nit."
+}

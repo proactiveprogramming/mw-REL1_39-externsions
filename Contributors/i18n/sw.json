@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephenwanjau"
+		]
+	},
+	"contributors": "Wachangiaji",
+	"contributors-desc": "Inatoa muhtasari wa wachangiaji wakuu kwa ukurasa",
+	"contributors-toolbox": "Wachangiaji wakuu",
+	"contributors-legend": "Orodhesha wachangiaji wakuu kwa ukurasa",
+	"contributors-target": "Kichwa:",
+	"contributors-submit": "Onyesha",
+	"contributors-subtitle": "Wachangiaji wakuu kwa $1",
+	"contributors-badtitle": "Kichwa batili",
+	"contributors-nosuchpage": "Ukuarasa $1 haupo."
+}

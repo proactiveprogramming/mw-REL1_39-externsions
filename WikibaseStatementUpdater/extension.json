@@ -1,0 +1,81 @@
+{
+	"name": "WikibaseStatementUpdater",
+	"author": "Niklas Laxström",
+	"version": "1.0.0+20201212",
+	"url": "https://www.mediawiki.org/wiki/Extension:WikibaseStatementUpdater",
+	"descriptionmsg": "wsu-desc",
+	"namemsg": "wsu-extension-name",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2,
+	"config": {
+		"WSUClientConfig": {
+			"value": {
+				"key": "",
+				"secret": ""
+			}
+		}
+	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"ExtensionMessagesFiles": {
+		"WikibaseStatementUpdaterAlias": "WikibaseStatementUpdater.alias.php"
+	},
+	"MessagesDirs": {
+		"WikibaseStatementUpdater": "i18n"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\WikibaseStatementUpdater\\": "src/"
+	},
+	"APIModules": {
+		"wikibasestatementupdater": {
+			"class": "MediaWiki\\Extension\\WikibaseStatementUpdater\\WikibaseStatementUpdaterActionApi",
+			"services": [
+				"DBLoadBalancer"
+			]
+		}
+	},
+	"SpecialPages": {
+		"WikibaseStatementUpdater": {
+			"factory": "MediaWiki\\Extension\\WikibaseStatementUpdater\\WikibaseStatementUpdaterSpecialPage::factory"
+		}
+	},
+	"HookHandlers": {
+		"WsuHookHandler": {
+			"class": "MediaWiki\\Extension\\WikibaseStatementUpdater\\Hooks"
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": {
+			"handler": "WsuHookHandler"
+		}
+	},
+	"JobClasses": {
+		"WSUUpdateJob": "MediaWiki\\Extension\\WikibaseStatementUpdater\\Updater\\UpdateJob"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources/src",
+		"remoteExtPath": "WikibaseStatementUpdater/resources/src"
+	},
+	"ResourceModules": {
+		"ext.wsu": {
+			"packageFiles": "wsu/index.js",
+			"styles": "wsu/index.less",
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.jqueryMsg"
+			],
+			"messages": [
+				"wsu-js-batchtable-status"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	}
+}

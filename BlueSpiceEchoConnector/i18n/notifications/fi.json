@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joquliina",
+			"Markus Mikkonen",
+			"Pyscowicz"
+		]
+	},
+	"bs-notifications-addaccout-performer": "{{GENDER:$1|Luoja}}: $1",
+	"bs-notifications-addaccount-performer": "{{GENDER:$1|Luoja}}: $1",
+	"bs-notifications-registeruser": "Käyttäjä \"$1\" on luonut tilin.",
+	"bs-notifications-create": "Sivu \"$1\" luotiin",
+	"bs-notifications-email-delete-subject": "$3 {{GENDER:$2|poisti}} sivun \"$1\" $4",
+	"bs-notifications-edit-difflink-label": "Näytä ero"
+}

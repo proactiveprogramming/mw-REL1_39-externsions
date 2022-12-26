@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"contributors": "Přinošowarjo",
+	"contributors-desc": "Zjima hłownych přinošowarjow strony",
+	"contributors-toolbox": "Sobuskutkowacy stronow",
+	"contributors-legend": "Pokazaj hłownych přinošowarjow strony",
+	"contributors-target": "Titl:",
+	"contributors-submit": "Pokazać",
+	"contributors-subtitle": "Hłowni přinošowarjo strony $1",
+	"contributors-badtitle": "Njepłaćiwy titl.",
+	"contributors-nosuchpage": "Strona $1 njeeksistuje."
+}

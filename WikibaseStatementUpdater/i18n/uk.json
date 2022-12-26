@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog"
+		]
+	},
+	"wsu-extension-name": "Оновлення заяв ВІкібази",
+	"wsu-desc": "Інструмент для оновлення та додавання висловлювань Вікібази",
+	"wsu-special-wikibasestatementupdater": "Заяви про масове оновлення",
+	"wsu-wsu-batch-title": "Назва партії",
+	"wsu-wsu-batch-contents": "Команди у форматі Quick Statements v1",
+	"wsu-wsu-error": "Не вдається проаналізувати команди: $1",
+	"wsu-wsu-error-linetooshort": "Рядок $1 закороткий.",
+	"wsu-wsu-error-noqualifiers": "Кваліфікатори ще не підтримуються.",
+	"wsu-wsu-error-onlyq": "Підтримуються лише Q-елементи.",
+	"wsu-wsu-error-unsupportedcommand": "Невідома команда.",
+	"wsu-your-batches": "{{GENDER:|Ви}} створили такі пакети:",
+	"wsu-unknown-batch": "Невідома партія",
+	"wsu-goback": "Назад до списку",
+	"wsu-start": "(Почати) редагування",
+	"wsu-stop": "Зупинити редагування",
+	"wsu-updater-api-failure": "Не вдалося проаналізувати відповідь API",
+	"wsu-updater-ambiguous-update": "Власність має кілька тверджень",
+	"wsu-give-permission": "Цей інструмент потребує дозволу для редагування від {{GENDER:|вашого}} імені. [[$1|Дайте дозволи]].",
+	"wsu-create-batch": "Створити новий пакет",
+	"wsu-command-P": "Властивість",
+	"wsu-batchtable-subject": "Тема",
+	"wsu-batchtable-command": "Команда",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Значення",
+	"wsu-batchtable-status": "Статус",
+	"wsu-js-batchtable-status": "$1% завершено. {{PLURAL:$2|0=|$2 не вдалося.}}",
+	"apihelp-wikibasestatementupdater-summary": "Керування пакетами оновлень заяв Вікібази"
+}

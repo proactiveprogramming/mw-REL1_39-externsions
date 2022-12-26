@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie",
+			"Siebrand"
+		]
+	},
+	"numbertext-desc": "Maakt het mogelijk getallen in woorden om te zetten"
+}

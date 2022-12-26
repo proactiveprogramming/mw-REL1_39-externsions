@@ -1,0 +1,60 @@
+@import '../lib/wikimedia-ui-base.less';
+
+// Global MediaSearch variables
+// ---------------------------------------------------------
+// Use semantic variable names from wikimedia-ui-base in the code when it makes
+// sense to do so. Otherwise, create a new extension-specific semantic
+// variable here, with prefix sdms- (Structured Data Media Search).
+
+// Colors
+// ---------------------------------------------------------
+// https://design.wikimedia.org/style-guide/visual-style_colors.html
+@sdms-icon-color--subtle: @wmui-color-base50;
+@sdms-background-color-namespace-label: @background-color-tabs;
+@sdms-color-tool: @color-base--emphasized;
+@sdms-background-color-tool--hover: @background-color-framed;
+@sdms-background-color-tool--focus: @background-color-base--hover;
+@sdms-background-color-tool--active: @background-color-base--hover;
+@sdms-background-color-tool--selected: @background-color-primary;
+
+// Border
+// ---------------------------------------------------------
+@sdms-border-color-base--focus: @color-primary--focus;
+@sdms-border-color-result: @background-color-tabs;
+@sdms-border-color-tool: transparent;
+@sdms-border-color-tool--hover: @border-color-base--active;
+
+// Sizes
+// ---------------------------------------------------------
+@sdms-max-width-base: 50em;
+
+// Spacing
+// ---------------------------------------------------------
+@sdms-spacing-base: 16px;
+@sdms-spacing-sm: @sdms-spacing-base / 2;
+@sdms-spacing-xs: @sdms-spacing-base / 4;
+@sdms-padding-vertical-base: 6px;
+@sdms-padding-vertical-tool: 5px;
+@sdms-padding-horizontal-base: 12px;
+@sdms-margin-horizontal-base: 6px;
+@sdms-margin-horizontal-mobile: 8px;
+@sdms-padding-end-dropdown: @size-indicator + ( 1.5 * @sdms-padding-horizontal-base );
+
+// Mixins
+// ---------------------------------------------------------
+.sdms-result-box-shadow() {
+	box-shadow: 4px 4px 5px -2px @border-color-base;
+};
+
+// Taken from OOUI.
+.sdms-visually-hidden() {
+	display: block;
+	position: absolute;
+	clip: rect( 1px, 1px, 1px, 1px );
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"mwversioninfo-desc": "إدارة معلومات إصدار ميدياويكي",
+	"apihelp-mwversioninfo-summary": "الحصول على معلومات الإصدار حول فروع ميدياويكي",
+	"apihelp-mwversioninfo-param-version": "نسخة ميدياويكي",
+	"apihelp-mwversioninfo-example": "يحصل على معلومات حول ميدياويكي 1.27"
+}

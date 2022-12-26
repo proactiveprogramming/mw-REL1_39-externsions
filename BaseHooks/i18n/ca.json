@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vfc"
+		]
+	},
+	"basehooks-desc": "Afegeix text o fitxers abans de finalitzar <code><nowiki><body></nowiki></code> l'etiqueta"
+}

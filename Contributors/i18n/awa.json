@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"1AnuraagPandey"
+		]
+	},
+	"contributors": "योगदानकर्ता",
+	"contributors-desc": "पन्ना कय मुख्य योगदानकर्ता कय संक्षिप्त सूची",
+	"contributors-toolbox": "मुख्य योगदानकर्ता",
+	"contributors-legend": "पन्ना कय मुख्य योगदानकर्ता कय सूची बनावा जाय",
+	"contributors-target": "शिर्षक",
+	"contributors-submit": "देखावा जाय",
+	"contributors-subtitle": "$1 कय प्रमुख योगदानकर्ता",
+	"contributors-badtitle": "अवैध शीर्षक।",
+	"contributors-nosuchpage": "स्रोत पन्ना $1 मौजूद नाई है।"
+}

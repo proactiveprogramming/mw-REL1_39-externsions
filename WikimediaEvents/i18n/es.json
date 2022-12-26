@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"AlvaroMolina",
+			"Dgstranz",
+			"Fitoschido",
+			"Jonathan rrr",
+			"Lemondoge",
+			"Macofe",
+			"MarcoAurelio"
+		]
+	},
+	"wikimediaevents-desc": "Registra eventos específicos de Wikimedia mediante EventLogging"
+}

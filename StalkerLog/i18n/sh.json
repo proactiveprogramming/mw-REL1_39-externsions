@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"stalkerlog-desc": "Dodaj [[Special:Log/stalkerlog|evideniju]] prijava i odjava korisnika.",
+	"stalkerlog-log-login": "prijavljen.",
+	"stalkerlog-log-logout": "odjavljen.",
+	"stalkerlog-log-type": "Evidencija korisničke potvrde",
+	"stalkerlog-log-text": "Ovo je evidencija korisničkih prijava i odjava.",
+	"action-stalkerlog-view-log": "pregled evidencija korisničkih prijava i odjava",
+	"right-stalkerlog-view-log": "Pogl. evidencije korisničkih prijava i odjava"
+}

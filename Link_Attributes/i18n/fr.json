@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eneelk",
+			"Verdy p"
+		]
+	},
+	"linkattributes-desc": "Permet de modifier simplement les attributs « rel », « rev » ou « class » des éléments &lt;a&gt;"
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"autogallery-desc": "Lägger till ett nytt galleriläge (<code>auto</code>) till wikitextmarkeringen <code><nowiki><gallery></nowiki></code>."
+}

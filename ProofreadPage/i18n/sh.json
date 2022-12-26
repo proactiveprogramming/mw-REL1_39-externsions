@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"OC Ripper",
+			"Vipz",
+			"Vlad5250"
+		]
+	},
+	"proofreadpage_quality0_category": "Bez teksta",
+	"proofreadpage_quality1_category": "Nije provjerena",
+	"proofreadpage_quality2_category": "Problematično",
+	"proofreadpage_quality3_category": "Provjereno",
+	"proofreadpage_quality4_category": "Potvrđeno",
+	"proofreadpage_quality1_message": "Ova stranica nije bila lektorisana",
+	"prp-editinsequence-preview": "Pregled",
+	"prp-editinsequence-save-settings-dialog-primary-button-title": "Sačuvaj postavke",
+	"prp-editinsequence-save-dialog-title": "Sačuvaj ovu stranicu",
+	"tag-proofreadpage-quality0-description": "Uređivanja koja su promijenila kvalitetu stranice na \"{{int:tag-proofreadpage-quality0}}\"",
+	"tag-proofreadpage-quality1-description": "Uređivanja koja su promijenila kvalitetu stranice na \"{{int:tag-proofreadpage-quality1}}\"",
+	"tag-proofreadpage-quality2-description": "Uređivanja koja su promijenila kvalitetu stranice na \"{{int:tag-proofreadpage-quality2}}\"",
+	"tag-proofreadpage-quality3-description": "Uređivanja koja su promijenila kvalitetu stranice na \"{{int:tag-proofreadpage-quality3}}\"",
+	"tag-proofreadpage-quality4-description": "Uređivanja koja su promijenila kvalitetu stranice na \"{{int:tag-proofreadpage-quality4}}\""
+}

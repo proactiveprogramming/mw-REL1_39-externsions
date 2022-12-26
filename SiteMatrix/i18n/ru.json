@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaganer",
+			"Mailman",
+			"Mouse21",
+			"Movses",
+			"Okras",
+			"Vlad5250",
+			"Wileyfoxyx",
+			"Александр Сигачёв"
+		]
+	},
+	"sitematrix": "Список вики-проектов",
+	"sitematrix-desc": "Показывает [[Special:SiteMatrix|список вики]]",
+	"sitematrix-language": "Язык",
+	"sitematrix-project": "Имя проекта, межпроектная ссылка и интервики",
+	"sitematrix-others": "Другие проекты",
+	"sitematrix-other-projects": "Проект",
+	"sitematrix-other-projects-language": "Язык",
+	"sitematrix-total": "'''Общее количество: $1'''",
+	"sitematrix-sitetotal": "Всего",
+	"sitematrix-closed": "нет доступа на запись, полный доступ на чтение",
+	"sitematrix-private": "доступ на чтение и запись ограничен",
+	"sitematrix-fishbowl": "доступ на запись ограничен, полный доступ на чтение",
+	"sitematrix-nonglobal": "публичная, но требуется регистрация"
+}

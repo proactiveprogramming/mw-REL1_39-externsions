@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daud I.F. Argana"
+		]
+	},
+	"autogallery-desc": "Menambahkan mode galeri baru (<code>auto</code>) ke markah teks wiki <code><nowiki><gallery></nowiki></code>"
+}

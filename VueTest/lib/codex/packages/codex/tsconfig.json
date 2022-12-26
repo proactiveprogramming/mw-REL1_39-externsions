@@ -1,0 +1,16 @@
+{
+	"extends": "./tsconfig-build.json",
+	"compilerOptions": {
+		"noEmit": true
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.vue",
+		"build/**/*.ts",
+		".jest/*.js",
+		"./*.ts",
+		"./*.js"
+	],
+	"exclude": [ "src/**/*.snap.ts", "cypress.config.ts" ]
+}

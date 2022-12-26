@@ -1,0 +1,62 @@
+{
+	"name": "TheWikipediaLibrary",
+	"version": "1.0.1",
+	"author": [
+		"Kavitha Muthu",
+		"Roan Kattouw"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:TheWikipediaLibrary",
+	"namemsg": "thewikipedialibrary",
+	"descriptionmsg": "thewikipedialibrary-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.38.0",
+		"extensions": {
+			"CentralAuth": "*",
+			"GlobalPreferences": "*"
+		}
+	},
+	"MessagesDirs": {
+		"TheWikipediaLibrary": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TheWikipediaLibrary\\": "includes/"
+	},
+	"DefaultUserOptions": {
+		"twl-notified": null
+	},
+	"Hooks": {
+		"PageSaveComplete": "MediaWiki\\Extension\\TheWikipediaLibrary\\Hooks::onPageSaveComplete",
+		"BeforeCreateEchoEvent": "MediaWiki\\Extension\\TheWikipediaLibrary\\Hooks::onBeforeCreateEchoEvent",
+		"GetPreferences": "MediaWiki\\Extension\\TheWikipediaLibrary\\Hooks::onGetPreferences"
+	},
+	"config": {
+		"TwlUserPrimaryUrl": {
+			"description": "URL for the notification's primary link",
+			"value": "https://wikipedialibrary.wmflabs.org/"
+		},
+		"TwlUserSecondaryUrl": {
+			"description": "URL for the notification's secondary link",
+			"value": "https://wikipedialibrary.wmflabs.org/"
+		},
+		"TwlSendNotifications": {
+			"description": "Whether to send Wikipedia Library notifications. If set to false, no notifications will be sent.",
+			"value": true
+		},
+		"TwlRegistrationDays": {
+			"description": "Minimum account age (in days) for a user to be eligible for the Wikipedia Library",
+			"value": 182
+		},
+		"TwlEditCount": {
+			"description": "Minimum (global) edit count for a user to be eligible for the Wikipedia Library",
+			"value": 50000
+		}
+	},
+	"ConfigRegistry": {
+		"TheWikipediaLibrary": "GlobalVarConfig::newInstance"
+	},
+	"manifest_version": 2
+}

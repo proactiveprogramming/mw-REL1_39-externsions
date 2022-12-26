@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Gomoko",
+			"Verdy p"
+		]
+	},
+	"bs-qr-code-extension-description": "Affiche un code QR avec un lien vers la page actuelle dans la barre d’outils.",
+	"bs-qr-code-title": "Code QR",
+	"bs-qr-code-text": "Scanner un code QR pour ouvrir cette page sur un appareil mobile",
+	"bs-qr-code-action-qr-code-title": "Ouvrir une fenêtre de dialogue avec le code QR",
+	"bs-qr-code-action-qr-code-text": "Code QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Code QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Code QR pour $1",
+	"bs-qr-code-api-no-page": "Le paramètre « page » est vide",
+	"apihelp-bs-qr-code-summary": "Obtenir le code QR pour une page sous forme d’URI de données codées en base64",
+	"apihelp-bs-qr-code-param-revid": "Identifiant de révision de la page pour générer un lien permanent",
+	"apihelp-bs-qr-code-param-page": "Nom de page de la page pour générer l’URI de données codées en base64",
+	"apihelp-bs-qr-code-param-size": "Taille du code QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Appel API par défaut",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Appel API pour un certain revid",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Appel API avec une taille personnalisée"
+}

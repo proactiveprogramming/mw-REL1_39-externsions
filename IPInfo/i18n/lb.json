@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"ipinfo-infobox-title": "IP-Informatioun",
+	"ipinfo-property-label-location": "Plaz",
+	"ipinfo-property-label-ipversion": "VERSIOUN",
+	"ipinfo-property-label-organization": "Organisatioun",
+	"ipinfo-property-label-source": "Quell",
+	"ipinfo-property-label-active-blocks": "Aktiv Spären",
+	"ipinfo-property-label-edits": "Kontributiounen",
+	"ipinfo-property-no-data": "Net disponibel",
+	"ipinfo-rest-access-denied-blocked-user": "Dir hutt net d'Recht fir dës Aktioun ze maachen well Äre Benotzerkont gespaart ass",
+	"prefs-ipinfo": "IP-Informatioun",
+	"right-ipinfo-view-log": "E Log weisen wien op d'IP-Informatioun zougegraff huet",
+	"ipinfo-log-name": "IPInfo-Logbuch",
+	"ipinfo-log-access-level-ipinfo-view-basic": "Limitéierten Zougang",
+	"ipinfo-log-access-level-ipinfo-view-full": "Kompletten Zougang",
+	"logentry-ipinfo-view_popup": "$1 huet $4 IP-Informatioun's Pop-up fir $3 {{GENDER:$2|gekuckt}}.",
+	"ipinfo-change-access-level-enable": "Aktivéiert",
+	"ipinfo-change-access-level-disable": "desaktivéiert"
+}

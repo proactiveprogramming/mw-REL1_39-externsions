@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Matěj Grabovský",
+			"Patriccck",
+			"Patrik L."
+		]
+	},
+	"whosonline": "Kdo je online",
+	"whosonline-desc": "Zobrazuje [[Special:WhosOnline|seznam]] přihlášených a neregistrovaných uživatelů, kteří jsou momentálně online"
+}

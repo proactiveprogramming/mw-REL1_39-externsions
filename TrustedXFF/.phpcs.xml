@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset>
+	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki" />
+	<rule ref="MediaWiki.NamingConventions.ValidGlobalName">
+		<properties>
+			<property name="ignoreList" type="array" value="$IP" />
+		</properties>
+	</rule>
+	<rule ref="MediaWiki.NamingConventions.PrefixedGlobalFunctions">
+		<properties>
+			<property name="ignoreList" type="array" value="showProgress" />
+		</properties>
+	</rule>
+	<file>.</file>
+	<arg name="extensions" value="php" />
+	<arg name="encoding" value="UTF-8" />
+</ruleset>

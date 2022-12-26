@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daud I.F. Argana",
+			"Hidayatsrf",
+			"J Nia30",
+			"Shinkiwa"
+		]
+	},
+	"addpersonalurls-desc": "Tambahkan beberapa butir ke URL pribadi",
+	"addpersonalurls-preload": "Cara kerjanya seperti halaman wiki lainnya; khususnya, pengguna lain bisa melihat dan menyuntingnya.",
+	"addpersonalurls-userpages": "Halaman saya",
+	"addpersonalurls-home": "Beranda",
+	"addpersonalurls-home-preload": "Anda dapat menggunakan halaman ini sebagaihalaman beranda pribadi.",
+	"addpersonalurls-favorites": "Favorit",
+	"addpersonalurls-favorites-preload": "Anda bisa menggunakan halaman ini untuk menyimpan favorit Anda.",
+	"addpersonalurls-sandbox": "Bak pasir",
+	"addpersonalurls-sandbox-preload": "Anda dapat menggunakan halaman ini untuk uji coba kode wiki.",
+	"addpersonalurls-notes": "Catatan",
+	"addpersonalurls-notes-preload": "Anda dapat menggunakan halaman ini untuk catatan pribadi Anda."
+}

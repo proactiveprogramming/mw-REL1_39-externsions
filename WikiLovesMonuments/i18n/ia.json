@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"wlm-extension-desc": "Adde information e messages associate al concurso photographic Wiki Loves Monuments",
+	"wlm-no-contest-year": "Il non habeva un concurso Wiki Loves Monuments in $1.",
+	"wlm-no-url-bad-country": "Non poteva obtener le sito web del concurso local. $1 non es un codice de pais valide.",
+	"wlm-country-not-given": "Es necessari fornir un codice de pais.",
+	"wlm-country-not-participating-year": "«$1» non participa in Wiki Loves Monuments $2",
+	"wlm-sidebar-portlet": "Altere paises",
+	"wlm-international-contest": "International",
+	"wlm-text-contact": "Contacto",
+	"wlm-text-contest": "Concurso",
+	"wlm-text-donate": "Donar",
+	"wlm-text-faq": "FAQ",
+	"wlm-text-jury": "Jury",
+	"wlm-text-monuments": "Monumentos",
+	"wlm-text-news": "Novas",
+	"wlm-text-participate": "Participa!",
+	"wlm-text-prizes": "Premios",
+	"wlm-text-rules": "Regulas",
+	"wlm-text-sponsors": "Sponsores",
+	"wlm-text-uploading": "Incargar"
+}

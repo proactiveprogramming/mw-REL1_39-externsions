@@ -1,0 +1,18 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/mediawiki"
+	],
+	"globals": {
+		"mediaWiki": true,
+		"JSON": true,
+		"jQuery": false,
+		"Caman": false
+	},
+	"rules": {
+		"valid-jsdoc": "off",
+		"no-shadow": "warn",
+		"no-useless-escape": "warn"
+	}
+}

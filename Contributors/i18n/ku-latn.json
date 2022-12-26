@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bangin",
+			"Bikarhêner",
+			"Erdal Ronahi",
+			"George Animal"
+		]
+	},
+	"contributors": "Kedyar",
+	"contributors-desc": "Kurteya kedyarên serekî yên vê rûpelê",
+	"contributors-toolbox": "Kedyarên rûpelê",
+	"contributors-legend": "Lîsteya kedyarên serekî yê rûpelê",
+	"contributors-target": "Sernav:",
+	"contributors-submit": "Nîşandan",
+	"contributors-subtitle": "Kedyarên serekî yên $1",
+	"contributors-badtitle": "Sernavekî şaş.",
+	"contributors-nosuchpage": "Rûpela $1 tune.",
+	"contributors-filterip": "Navnîşana IP'yê veşêre"
+}

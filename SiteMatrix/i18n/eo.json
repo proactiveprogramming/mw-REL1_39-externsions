@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tlustulimu",
+			"Yekrats",
+			"לערי ריינהארט"
+		]
+	},
+	"sitematrix-desc": "Montras [[Special:SiteMatrix|liston de vikioj de Wikimedia]]",
+	"sitematrix-language": "Lingvo",
+	"sitematrix-project": "Nomo de projekto, interprojekta ligilo kaj intervikia ligilo",
+	"sitematrix-other-projects": "Aliaj projektoj",
+	"sitematrix-total": "'''Tuta nombrado: $1'''",
+	"sitematrix-sitetotal": "Tuto",
+	"sitematrix-private": "privata",
+	"sitematrix-fishbowl": "redaktado estas limigita"
+}

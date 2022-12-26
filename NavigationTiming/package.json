@@ -1,0 +1,16 @@
+{
+	"name": "NavigationTiming",
+	"private": true,
+	"scripts": {
+		"test": "npm run test:eslint && npm run test:banana",
+		"test:eslint": "eslint --ext .js,.json --cache .",
+		"test:banana": "banana-checker i18n/"
+	},
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.22.1",
+		"grunt-banana-checker": "0.10.0"
+	},
+	"eslintIgnore": [
+		"vendor/**"
+	]
+}

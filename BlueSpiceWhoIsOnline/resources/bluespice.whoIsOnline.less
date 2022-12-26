@@ -1,0 +1,22 @@
+.bs-userminiprofile[data-bs-whoisonline-marker] {
+	a::after {
+		color: grey;
+		text-stroke: 1px grey;
+		-webkit-text-stroke: 1px grey;
+		content: '\2B24';
+		position: absolute;
+		vertical-align: bottom;
+		right: 5%;
+		bottom: 5%;
+		font-size: 100%;
+	}
+	&.bs-whoisonline-marker-online {
+		a::after {
+			color: greenyellow;
+		}
+	}
+}
+
+.wo-tooltip {
+	opacity: 1;
+}

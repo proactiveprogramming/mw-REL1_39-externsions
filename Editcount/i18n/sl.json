@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"editcount": "Število urejanj",
+	"editcount-desc": "Prikaže [[Special:Editcount|števec urejanj]] uporabnika",
+	"editcount_username": "Uporabnik:",
+	"editcount_submit": "Pošlji",
+	"editcount_total": "Skupno"
+}

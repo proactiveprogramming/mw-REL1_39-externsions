@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie",
+			"Metalhead64"
+		]
+	},
+	"preferenceslist-desc": "Erzeugt eine Liste aller Benutzereinstellungen für eine bestimmte Einstellung",
+	"preferenceslist-preferenceslist": "Einstellungsliste",
+	"preferenceslist-preferenceslist-intro": "Unten folgt eine Liste der Einstellungen. Wähle eine oder mehrere aus, um eine Liste aller Benutzer mit ihrer Einstellung zu sehen.",
+	"preferenceslist": "Einstellungsliste",
+	"action-preferenceslist": "die Einstellungen aller Benutzer aufzulisten",
+	"preferenceslist-csv": "Als CSV herunterladen",
+	"preferenceslist-nofields": "Es wurden keine Felder ausgewählt",
+	"right-preferenceslist": "Die Spezialseite „Einstellungsliste“ öffnen"
+}

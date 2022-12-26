@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"code-change-removed": "sikkum:",
+	"code-change-added": "lasettum:",
+	"code-tags": "kilgoleh",
+	"code-field-timestamp": "Peivim",
+	"code-rev-date": "Peivim:",
+	"code-rev-modified-a": "lasettum",
+	"code-rev-tags": "Kilgoleh:",
+	"code-rev-tag-add": "Lasseet kilgolijd",
+	"code-rev-tag-remove": "Meddâlist kilgolijd:",
+	"code-rev-history-link": "historjá",
+	"code-status-ok": "ok",
+	"code-signoff-field-user": "Kevttee",
+	"code-signoff-field-date": "Peivim",
+	"code-revfilter-ct_tag": "Kilgool = $1",
+	"code-rev-submit": "Vuorkkii nubástusâid",
+	"codereview-subtitle": "Vuárkán $1",
+	"code-stats": "lovottuvah",
+	"repoadmin-new-button": "Räähti",
+	"repoadmin-edit-button": "OK"
+}

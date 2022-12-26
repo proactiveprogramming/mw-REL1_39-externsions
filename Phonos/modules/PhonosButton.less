@@ -1,0 +1,101 @@
+@import '../../lib/ooui/wikimedia-ui-base.less';
+
+// Make the button look better as an inline text component.
+// We have to override a bunch of OOUI button styles, but it's worth it because
+// we also *don't* have to add a bunch of button behaviour and styles ourselves.
+.ext-phonos-PhonosButton {
+	margin: 0;
+	vertical-align: bottom;
+
+	&.oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
+		left: 0;
+	}
+
+	&.oo-ui-buttonElement-frameless.oo-ui-buttonWidget.oo-ui-iconElement:first-child {
+		// Avoid the default negative left margin on buttons.
+		margin-left: 0;
+	}
+
+	&.oo-ui-buttonElement-frameless.oo-ui-buttonWidget {
+		// Avoid the default 8px right margin
+		margin-right: 0;
+	}
+
+	&.oo-ui-buttonElement-frameless.oo-ui-buttonWidget > .oo-ui-buttonElement-button {
+		padding: 0 0 0 28px;
+		min-height: 24px;
+		min-width: 0;
+		user-select: auto;
+
+		&:hover {
+			background-color: @wmui-color-accent90;
+		}
+
+		// Make button focus match the default link focus styles.
+		&:focus {
+			box-shadow: none;
+			border-color: transparent;
+			// Fall back to currentColor as 'invert' is not supported by many browsers.
+			outline: medium auto currentcolor;
+			outline: medium auto invert;
+		}
+
+		.oo-ui-iconElement-icon {
+			position: relative;
+			float: left;
+			width: 16px;
+			height: 16px;
+			min-width: 16px;
+			min-height: 16px;
+			top: 1.5px;
+		}
+
+		.oo-ui-labelElement-label {
+			display: inline-block;
+			font-weight: normal;
+			text-decoration: underline;
+			text-decoration-style: dotted;
+			padding-left: 0.2em;
+		}
+	}
+
+	/* stylelint-disable-next-line no-descending-specificity */
+	&.oo-ui-buttonElement-frameless.oo-ui-labelElement > .oo-ui-buttonElement-button {
+		padding: 5px 0;
+	}
+
+	&.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
+		// Override the default left padding
+		padding-left: 0;
+	}
+
+	// An error means the button is disabled, and we want to show it with a solid background.
+	/* stylelint-disable-next-line no-descending-specificity */
+	&.oo-ui-buttonElement-frameless.oo-ui-widget-disabled > .oo-ui-buttonElement-button,
+	&.oo-ui-buttonElement-frameless.oo-ui-widget-disabled > .oo-ui-buttonElement-button:hover {
+		color: @wmui-color-base10;
+		background-color: @wmui-color-base80;
+		cursor: pointer;
+	}
+}
+
+.ext-phonos-error-popup {
+	// Error popup colors.
+	.oo-ui-popupWidget {
+		// Duplicate parent style to manually add Red50 at 30% opacity.
+		filter: drop-shadow( 0 2px 1px rgba( 221, 51, 51, 0.3 ) );
+	}
+
+	.oo-ui-popupWidget-popup {
+		border-color: @wmui-color-red50;
+		background-color: @wmui-color-red90;
+	}
+
+	&.oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:before {
+		border-bottom-color: @wmui-color-red50;
+	}
+
+	&.oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {
+		border-bottom-color: @wmui-color-red90;
+	}
+}

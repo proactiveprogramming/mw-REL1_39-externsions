@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"generatemochaconfig-desc": "סקריפט שמחולל JSON שניתן להשתמש בו כדי להריץ בדיקות Mocha עבור כל ההרחבות המופעלות"
+}

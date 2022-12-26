@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"phptagsfunctions-desc": "Implementa le functiones interne de PHP native pro le extension PhpTags",
+	"phptagsfunctions-preg-bad-delimiter": "Le delimitator non debe esser alphanumeric o un barra oblique inverse",
+	"phptagsfunctions-preg-no-ending-delimiter": "Nulle delimitator de fin \"$1\" trovate",
+	"phptagsfunctions-preg-unknown-modifier": "Modificator \"$1\" incognite"
+}

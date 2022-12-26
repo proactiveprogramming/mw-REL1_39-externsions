@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello",
+			"Rancher"
+		]
+	},
+	"unicodeconverter": "Pretvarač za Unicode",
+	"unicodeconverter-desc": "Jednostavan primer modula posebne stranice. [[Special:UnicodeConverter|Datu nisku u formatu UTF-8]] pretvara u HTML stavke pogodne za veb-stranice u ISO 8859-1 formatu",
+	"unicodeconverter-ok": "Pretvori",
+	"unicodeconverter-oldtext": "Prvobitni tekst:",
+	"unicodeconverter-newtext": "Pretvoreni tekst:"
+}

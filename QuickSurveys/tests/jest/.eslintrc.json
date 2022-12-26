@@ -1,0 +1,15 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/mediawiki",
+		"wikimedia/server"
+	],
+	"rules": {
+		"compat/compat": "off",
+		"max-len": "off"
+	},
+	"env": {
+		"jest": true,
+		"browser": true
+	}
+}

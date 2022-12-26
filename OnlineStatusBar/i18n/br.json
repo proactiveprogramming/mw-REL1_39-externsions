@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fohanno",
+			"Fulup",
+			"Huñvreüs"
+		]
+	},
+	"prefs-onlinestatus": "Statud enlinenn",
+	"onlinestatusbar-status": "Petra eo ar statud dre ziouer a fell deoc'h implijout ?",
+	"onlinestatusbar-title-online": "{{GENDER:$1|Kevreet}}",
+	"onlinestatusbar-title-busy": "{{GENDER:$1|Soulgarget}}",
+	"onlinestatusbar-title-away": "{{GENDER:$1|Er-maez}}",
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|Kuzhet}}",
+	"onlinestatusbar-title-offline": "{{GENDER:$1|Digevreet}}",
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Dianav}}"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|Čiõkkum}}",
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Toobdtem}}"
+}

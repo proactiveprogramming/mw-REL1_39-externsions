@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Leeheonjin"
+		]
+	},
+	"emailauthorization-config-label-username": "Lagyu ning Talagamit",
+	"emailauthorization-config-label-realname": "Tutung Lagyu",
+	"emailauthorization-config-label-userpage": "Bulung ning Talagamit",
+	"emailauthorization-config-button-next": "Tutuki",
+	"emailauthorization-config-button-search": "Manintun/Manuliksa",
+	"emailauthorization-config-button-add": "Magdagdag"
+}

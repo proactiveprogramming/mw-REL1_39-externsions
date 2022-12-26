@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"quickresponse-desc": "Genera un codice QR pro le URL del pagina actual",
+	"quickresponse-text": "Codice QR",
+	"quickresponse-tooltip": "Genera un codice QR pro le URL actual",
+	"quickresponse-title": "Ecce tu codice QR!"
+}

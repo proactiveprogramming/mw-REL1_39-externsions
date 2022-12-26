@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chinamoonroll"
+		]
+	},
+	"citoid-action-replace": "Gentos soroh référénsi",
+	"citoid-citation-widget-insert-button": "Sisipang",
+	"citoid-citoiddialog-back": "Walik",
+	"citoid-citoiddialog-credit": "Kawasa olih $1",
+	"citoid-citoiddialog-lookup-button": "Asilang",
+	"citoid-citoiddialog-mode-auto": "Otomatis",
+	"citoid-citoiddialog-mode-manual": "Manual",
+	"citoid-citoiddialog-mode-reuse": "Anggén malih",
+	"citoid-citoiddialog-search": "Rereh",
+	"citoid-citoiddialog-search-label": "URL, DOI, ISBN, PMC/PMID, QID, murda, utawi anggitan",
+	"citoid-citoiddialog-search-placeholder": "sekadi http://www.example.com",
+	"citoid-citoiddialog-search-progress": "Ngerereh, durus jantos...",
+	"citoid-citoiddialog-title": "Tambah anggit",
+	"citoid-citoiddialog-title-replace": "Gentos anggit",
+	"citoid-citoiddialog-use-general-error-message": "Iraga ten nyidayang ngaé anggitan antuk ragané. Ragané prasida ngardi manual nganggén tab \"{{int:citoid-citoiddialog-mode-manual}}\" ring duur.",
+	"citoid-citoidtool-title": "Anggit",
+	"citoid-citoidtool-title-othergroup": "Anggit",
+	"citoid-desc": "Nyadiayang titik aksés riantara layanan anggitan tur MediaWiki",
+	"citoid-referencecontextitem-convert-button": "Konvérsi",
+	"citoid-referencecontextitem-convert-message": "Ragané prasida nganggén tombol \"{{int:citoid-referencecontextitem-convert-button}}\" ring sor antuk antuk pustaka sané sampun kaformat becik saking pranala jaba",
+	"citoid-unknown-error": "Galat sané nénten kauningin sané ngempetin iraga ngardi anggitan. Durus ingayang malih jebos.",
+	"citoid-wb-referenceview-tabs-automatic": "Otomatis",
+	"citoid-wb-referenceview-tabs-search": "rereh",
+	"citoid-wb-referenceview-tabs-search-label": "URL, DOI, ISBN, utawi QID:",
+	"citoid-wb-pendingdialog-error": "Tan sida ngasilang pustaka saking manjingan niki. Anggén tab manual utawi indayang malih.",
+	"citoid-wb-pendingdialog-message": "Ngasilanng pustaka antuk ragané... durus jantos...",
+	"citoid-wb-pendingdialog-title": "Asilang Anggitan"
+}

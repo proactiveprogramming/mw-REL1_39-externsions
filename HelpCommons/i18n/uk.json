@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Ата"
+		]
+	},
+	"helpcommons-desc": "Дістає сторінки довідки із зовнішньої довідкової вікі і додає до цієї вікі",
+	"helpcommons-create": "Створити на довідковій вікі",
+	"helpcommons-edit": "Редагувати на довідковій вікі",
+	"helpcommons-discussion": "Обговорити це на довідковій вікі",
+	"helpcommons-info": "Цей вміст взято з $1. Див. $2."
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaganer",
+			"Pacha Tchernof",
+			"Vlad5250"
+		]
+	},
+	"action-similareditors": "доступ к [[Special:SimilarEditors]]",
+	"right-similareditors": "Доступ к [[Special:SimilarEditors]]",
+	"similareditors-error-database-refresh": "Что-то пошло не так, пожалуйста, повторите попытку через несколько минут.",
+	"similareditors-error-default": "Что-то пошло не так, мы разбираемся в случившемся."
+}

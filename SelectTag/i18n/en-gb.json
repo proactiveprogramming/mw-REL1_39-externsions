@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chase me ladies, I'm the Cavalry",
+			"Shirayuki"
+		]
+	},
+	"selecttag-desc": "Adds customisable &lt;select&gt; for inserting text via database fetching"
+}

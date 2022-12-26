@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Tofeiku"
+		]
+	},
+	"bookshelf": "Rak buku",
+	"bs-bookshelf-prof-defaultview": "Paparan lalai",
+	"bs-bookshelf-pref-chapterpagerbeforecontent": "Tunjuk kelui bab buku sebelum kandungan",
+	"bs-bookshelf-pref-chapterpagerbeforecontent-help": "Tambah kelui bab di atas laman.",
+	"bs-bookshelf-pref-chapterpageraftercontent": "Tunjuk kelui bab buku selepas kandungan",
+	"bs-bookshelf-pref-chapterpageraftercontent-help": "Tambah kelui bab di bawah laman."
+}

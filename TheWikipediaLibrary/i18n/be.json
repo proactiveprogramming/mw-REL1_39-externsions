@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chadyka",
+			"Plaga med"
+		]
+	},
+	"thewikipedialibrary-desc": "Паведамляе ўдзельнікам, што яны маюць правы доступу да Бібліятэкі Вікіпедыі, калі яны праходзяць парог колькасці правак і ўзросту ўліковага запісу",
+	"notification-header-twl-eligiblity": "Віншуем! Цяпер вы маеце правы доступу да бібліятэкі Вікіпедыі.",
+	"notification-body-twl-eligiblity": "Націсніце тут, каб агледзіць шырокую калекцыю вольных надзейных крыніц.",
+	"notification-twl-eligiblity-secondarylink-text": "Бібліятэка Вікіпедыі"
+}

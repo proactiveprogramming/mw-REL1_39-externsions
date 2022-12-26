@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"logentry-revisioncommentsupplement-create": "$1 je {{GENDER:$2|ustvaril|ustvarila|ustvaril_a}} dodaten komentar, »$6« v redakciji $4",
+	"logentry-revisioncommentsupplement-delete": "$1 je {{GENDER:$2|izbrisal|izbrisala|izbrisal_a}} dodatni komentar, $5, v redakciji $4",
+	"logentry-revisioncommentsupplement-modify": "$1 je v redakciji $4 {{GENDER:$2|spremenil|spremenila|spremenil_a}} dodatni komentar iz $5 v $6",
+	"revcs-alert-exist-supplement": "Dodatni komentar v redakciji obstaja v tabeli podatkovne zbirke.",
+	"revcs-alert-norevision": "Redakcija ni na voljo. Bodisi še ni bila ustvarjena ali pa je že izbrisana.",
+	"revcs-alert-special-parameter": "Pri parametru je napaka.",
+	"revcs-alert-supplement-asterisk": "Dodatni komentar v vnosu je asterisk.",
+	"revcs-alert-supplement-empty": "Dodatni komentar v vnosu je prazen.",
+	"revcs-alert-supplement-zero": "Dodatni komentar v vnosu je ničla.",
+	"revcs-alert-supplement-same-as-summary": "Dodatni komentar v vnosu je isti niz kot povzetek redakcije.",
+	"revcs-alert-supplement-same-as-supplement": "Dodatni komentar v vnosu je isti niz kot v tabeli podatkovne zbirke.",
+	"revcs-delete-failure": "Dodatnega komentarja ni bilo mogoče izbrisati.",
+	"revcs-edit-preview": "Prikaži predogled",
+	"revcs-edit-reason": "Razlog:",
+	"revcs-error": "Napaka: $1",
+	"revcs-error-edit-denied": "Dodatnega komentarja ni bilo mogoče shraniti.",
+	"revcs-error-history-nosupplement": "Dodaten komentar ne obstaja v tabeli podatkovne zbirke. Bodisi še ni bil ustvarjen ali pa je že izbrisan.",
+	"revcs-error-history-revision-id": "ID redakcije je napačen.",
+	"revcs-error-history-unuse": "Ta viki ne shranjuje zgodovine dodatnih komentarjev.",
+	"revcs-history-rcsh-reason": "Razlog",
+	"revcs-list-extended-supplement-all": "vse",
+	"revcs-list-limit": "Število na stran:",
+	"revcs-list-rcs-rev-id-edit": "Uredi",
+	"revcs-list-rcs-user-text": "Uporabnik",
+	"revcs-list-sort": "Razvrsti po:",
+	"revcs-log-nosupplement": "(brez)",
+	"revcs-log-supplement": "»$1«",
+	"revcs-show-reason": "Razlog: $1",
+	"revcs-warning": "Opozorilo: $1"
+}

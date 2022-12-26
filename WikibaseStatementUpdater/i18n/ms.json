@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tofeiku"
+		]
+	},
+	"wsu-wsu-error-linetooshort": "Baris $1 terlalu pendek.",
+	"wsu-stop": "Berhenti menyunting",
+	"wsu-batchtable-id": "Id",
+	"wsu-batchtable-value": "Nilai",
+	"wsu-js-batchtable-status": "$1% lengkap. {{PLURAL:$2|0=|$2 gagal.}}"
+}

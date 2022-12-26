@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"wikispeech-sdc": "Прибирач на говорни податоци од Викиговор",
+	"wikispeech-sdc-desc": "Алатка за снимање, преглед и прибележување на говор.",
+	"right-wikispeech-sdc-record": "Снимање на глас",
+	"action-wikispeech-sdc-record": "Снимање на глас",
+	"recordspeech": "Снимање на говор",
+	"wikispeech-sdc-record": "Снимај",
+	"wikispeech-sdc-save": "Зачувај",
+	"wikispeech-sdc-skip": "Прескокни",
+	"right-wikispeech-sdc-speech-recording": "Уредување на гласовни снимки",
+	"action-wikispeech-sdc-speech-recording": "Уредување на гласовни снимки",
+	"right-wikispeech-sdc-speech-recording-talk": "Разговарање за гласовни снимки",
+	"action-wikispeech-sdc-speech-recording-talk": "Разговарање за гласовни снимки",
+	"wikispeech-sdc-status-starting": "Почнувам",
+	"wikispeech-sdc-status-ready": "Спремно",
+	"wikispeech-sdc-status-listening": "Слушам",
+	"wikispeech-sdc-status-recording": "Снимам"
+}

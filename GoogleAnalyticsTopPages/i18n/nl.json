@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"McDutchie"
+		]
+	},
+	"googleanalyticstoppages-desc": "Voorziet in een lijst met toppagina's op basis van de gegevens van Google Analytics",
+	"apihelp-googlepagestatsupdate-param-key": "De waarde van de [[mw:Special:MyLanguage/Manual:$wgSecretKey|$wgSecretKey]]"
+}

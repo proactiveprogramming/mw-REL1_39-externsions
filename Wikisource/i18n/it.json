@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Candalua",
+			"Lorem Ipsum"
+		]
+	},
+	"wikisource-desc": "Personalizzazioni di MediaWiki specifiche per Wikisource",
+	"wikisource-export-portlet": "Stampa/esporta",
+	"wikisource-download-epub": "Scarica ePub",
+	"wikisource-download-epub-tooltip": "Scarica una versione ePub di quest'opera",
+	"wikisource-download-mobi": "Scarica MOBI",
+	"wikisource-download-mobi-tooltip": "Scarica una versione MOBI di quest'opera",
+	"wikisource-download-pdf": "Scarica PDF",
+	"wikisource-download-pdf-tooltip": "Scarica una versione PDF di quest'opera",
+	"wikisource-download-choose": "Altri formati",
+	"wikisource-download-choose-tooltip": "Apre un modulo per selezionare altri formati, tipi di carattere, ecc.",
+	"wikisource-download-button": "Scarica",
+	"wikisource-download-chooser-title": "Scegli un formato",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "per computer, smartphone, tablet",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "per Kindle",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "per grandi schermi e stampa",
+	"wikisource-download-chooser-different-format": "Cerchi un formato diverso?",
+	"wikisource-ocr-extract-text": "Trascrivi il testo",
+	"wikisource-ocr-extract-progress": "Trascrizione del testo dall'immagine...",
+	"wikisource-ocr-extract-cancel": "Annulla",
+	"wikisource-ocr-engine": "Seleziona il tuo strumento di trascrizione del testo predefinito",
+	"wikisource-ocr-onboarding-title": "Trascrivi le immagini in testo",
+	"wikisource-ocr-onboarding-button": "Ok, capito"
+}

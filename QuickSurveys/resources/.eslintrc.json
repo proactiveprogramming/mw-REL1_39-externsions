@@ -1,0 +1,11 @@
+{
+	"root": true,
+	"env": {
+		"commonjs": true
+	},
+	"extends": [
+		"wikimedia/client-es6",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	]
+}

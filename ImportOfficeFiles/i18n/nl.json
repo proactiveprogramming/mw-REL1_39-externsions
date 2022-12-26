@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vistaus"
+		]
+	},
+	"importofficefiles-ui-import-dialog-title": "Bestand importeren",
+	"importofficefiles-ui-import-in-progress": "Bezig met importeren…",
+	"importofficefiles-ui-dialog-action-import": "Importeren",
+	"importofficefiles-ui-dialog-action-back": "Terug",
+	"importofficefiles-ui-dialog-settings-structure-label": "Inhoudsstructuur",
+	"importofficefiles-ui-dialog-settings-conflicts-override": "Overschrijven",
+	"importofficefiles-ui-dialog-settings-split-level-1": "Niveau 1-koppen",
+	"importofficefiles-ui-dialog-settings-split-level-3": "Niveau 3-koppen",
+	"importofficefiles-ui-dialog-preview-title": "Voorvertoning",
+	"importofficefiles-ui-dialog-preview-label": "De volgende pagina's worden geïmporteerd",
+	"importofficefiles-api-storage-error-no-available-file": "Er zijn geen uploadbestanden beschikbaar",
+	"importofficefiles-ui-progress-import-images-step": "Bezig met importeren van afbeeldingen…",
+	"importofficefiles-ui-progress-import-pages-step": "Bezig met importeren van pagina's…"
+}

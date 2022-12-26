@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01",
+			"Сербијана"
+		]
+	},
+	"revcs-edit-reason": "Razlog:",
+	"revcs-hidehistory-submit": "Primeni",
+	"revcs-history-hidden-user": "(korisničko ime je sakriveno)",
+	"revcs-list-extended-supplement-all": "sve",
+	"revcs-list-rcs-rev-id-edit": "Uredi",
+	"revcs-list-rcs-rev-id-log": "Dnevnik",
+	"revcs-list-rcs-user-text": "Korisnik",
+	"revcs-list-sort": "Poređaj po:",
+	"revcs-list-submit": "Prikaži",
+	"revcs-log-nosupplement": "(ništa)",
+	"revcs-show-reason": "Razlog: $1",
+	"revcs-show-revision": "Izmena: $1",
+	"revcs-show-user": "Korisnik: $1 $2 (ID korisnika: $3)"
+}

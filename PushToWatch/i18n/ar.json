@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"ديفيد"
+		]
+	},
+	"pushtowatch-desc": "يسمح بدفع صفحة إلى قائمة مراقبة مستخدم آخر",
+	"pushtowatch": "اضغط للمشاهدة:",
+	"pushtowatch-email-body": "مرحبًا $1،\n\nطلب منك $2 مشاهدة $3\n\nتهانينا \n\nشكرًا،\n\nفريق {{SITENAME}}",
+	"pushtowatch-email-subject": "حقن قائمة المراقبة - $1",
+	"pushtowatch-error": "تعذرت إضافة '' ' $1 ' '' إلى قائمة المراقبة",
+	"pushtowatch-followers": "المتابعون: $1",
+	"pushtowatch-no-followers": "لا متابعين",
+	"right-pushtowatch": "ادفع الصفحات إلى قائمة مراقبة المستخدمين الآخرين دون موافقة المستخدم المعني"
+}

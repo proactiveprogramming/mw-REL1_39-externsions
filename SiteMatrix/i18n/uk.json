@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahonc",
+			"Andriy.v",
+			"Base",
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion",
+			"Renamerr",
+			"Vlad5250",
+			"Ата",
+			"Тест"
+		]
+	},
+	"sitematrix": "Список вікі",
+	"sitematrix-summary": "Ця спеціальна сторінка перелічує всі вікі цієї вікі-ферми.",
+	"sitematrix-desc": "Показує [[Special:SiteMatrix|список вікі]]",
+	"sitematrix-language": "Мова",
+	"sitematrix-project": "Назва проєкту, міжпроєктне посилання та інтервікі-посилання",
+	"sitematrix-others": "Інші проєкти",
+	"sitematrix-other-projects": "Проєкт",
+	"sitematrix-other-projects-language": "Мова",
+	"sitematrix-total": "'''Загальна кількість: $1'''",
+	"sitematrix-sitetotal": "Усього",
+	"sitematrix-closed": "немає доступу для запису, повний доступ для читання",
+	"sitematrix-private": "доступ до запису та читання обмежено",
+	"sitematrix-fishbowl": "обмежений доступ для запису, повний доступ для читання",
+	"sitematrix-nonglobal": "публічна, однак реєстрація є обов'язковою"
+}

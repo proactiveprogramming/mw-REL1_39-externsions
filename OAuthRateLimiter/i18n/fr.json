@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"oauthratelimiter-desc": "Étend l’extension OAuth pour inclure des demandes de limitation de fréquence d’accès dans le JWT."
+}

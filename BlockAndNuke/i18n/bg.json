@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Ted Masters",
+			"Vlad5250"
+		]
+	},
+	"action-blockandnuke": "Блокиране и масово изтриване",
+	"blockandnuke": "Блокиране и масово изтриване",
+	"blockandnuke-ip-addresses": "IP-адреси",
+	"blockandnuke-users": "Потребители",
+	"blockandnuke-pages": "Страници"
+}

@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Nike",
+			"Pyscowicz"
+		]
+	},
+	"content-model-wikibase-lexeme": "Wikibase lekseemi",
+	"datatypes-type-wikibase-lexeme": "Lekseemi",
+	"datatypes-type-wikibase-sense": "Merkitys",
+	"special-mergelexemes": "Yhdistä kaksi lekseemiä",
+	"special-newlexeme": "Luo uusi lekseemi",
+	"wikibase-lexeme-summary-wbeditentity-create-lexeme": "Loi uuden lekseemin",
+	"wikibase-listdatatypes-wikibase-form-head": "Muoto",
+	"wikibase-listdatatypes-wikibase-lexeme-head": "Lekseemi",
+	"wikibase-listdatatypes-wikibase-sense-head": "Merkitys",
+	"wikibaselexeme-diffview-form": "Muoto",
+	"wikibaselexeme-diffview-language": "kieli",
+	"wikibaselexeme-diffview-lemma": "Lemma",
+	"wikibaselexeme-field-language-label": "Kieli",
+	"wikibaselexeme-field-lexical-category-label": "Leksikaalinen luokka",
+	"wikibaselexeme-form-grammatical-features": "Kieliopilliset ominaisuudet",
+	"wikibaselexeme-gloss-field-language-label": "Kieli",
+	"wikibaselexeme-lemma-edit-placeholder": "Lemma on yleensä sanan lyhin muoto",
+	"wikibaselexeme-lemma-field-lemma-label": "Lemma",
+	"wikibaselexeme-newlexeme-fieldset": "Luo uusi lekseemi",
+	"wikibaselexeme-newlexeme-language": "Lekseemin kieli",
+	"wikibaselexeme-newlexeme-language-placeholder": "Syötä kieli, esim. suomi",
+	"wikibaselexeme-newlexeme-lemma": "Lemma",
+	"wikibaselexeme-newlexeme-lemma-language-help-link-text": "(Ohje)",
+	"wikibaselexeme-newlexeme-lexicalcategory": "Leksikaalinen luokka",
+	"wikibaselexeme-newlexeme-lexicalcategory-placeholder": "Syötä leksikaalinen luokka, esim. substantiivi",
+	"wikibaselexeme-unknown-language": "Tuntematon kieli"
+}

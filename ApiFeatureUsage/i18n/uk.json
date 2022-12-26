@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"AS",
+			"Piramidion",
+			"Ата"
+		]
+	},
+	"apifeatureusage": "Використання функцій API",
+	"apifeatureusage-desc": "Отримати зведення журналу використання функцій API для агента користувача.",
+	"apifeatureusage-elasticsearch-error": "Помилка Elasticsearch: $1",
+	"apifeatureusage-legend": "Використання функцій API",
+	"apifeatureusage-agent-label": "User Agent:",
+	"apifeatureusage-startdate-label": "Початкова дата:",
+	"apifeatureusage-enddate-label": "Кінцева дата:",
+	"apifeatureusage-submit": "Вибірка даних",
+	"apifeatureusage-no-indexes": "Немає даних за вказаний діапазон дат.",
+	"apifeatureusage-missing-indexes": "Немає даних для частини вказаного діапазону дат.",
+	"apifeatureusage-warnings": "Попередження: $1",
+	"apifeatureusage-column-feature": "Функція",
+	"apifeatureusage-column-date": "Дата",
+	"apifeatureusage-column-uses": "Використання",
+	"apifeatureusage-deprecation-help": "Скористайтеся [[Special:ApiFeatureUsage]], щоб побачити, чи використовує Ваша система застралілі можливості."
+}

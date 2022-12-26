@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lakejason0"
+		]
+	},
+	"acrolinx-desc": "提供与Acrolinx（一项付费专有的为文本提供拼写语法检查的服务）的集成。"
+}

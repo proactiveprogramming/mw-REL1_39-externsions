@@ -1,0 +1,113 @@
+{
+	"name": "VueTest",
+	"author": [
+		"Eric Gardner"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:VueTest",
+	"descriptionmsg": "vuetest-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\VueTest\\": "includes/"
+	},
+	"config": {},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\VueTest\\Hooks::onBeforePageDisplay"
+	},
+	"MessagesDirs": {
+		"VueTest": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"VueTestAlias": "VueTest.alias.php"
+	},
+	"SpecialPages": {
+		"VueTest": "MediaWiki\\Extension\\VueTest\\SpecialVueTest"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "VueTest/resources"
+	},
+	"ResourceModules": {
+		"ext.vueTest": {
+			"dependencies": [
+				"ext.vueTest.components",
+				"vue",
+				"mediawiki.api"
+			],
+			"messages": [],
+			"styles": [],
+			"scripts": [
+				"init.js"
+			],
+			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.vueTest.components": {
+			"dependencies": [
+				"@wikimedia/codex"
+			],
+			"messages": [
+				"vuetest-app-welcome",
+				"vuetest-app-intro",
+				"vuetest-app-see-also"
+			],
+			"styles": [],
+			"packageFiles": [
+				"components/index.js",
+				"components/App.vue",
+				{
+					"name": "components/icons.json",
+					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
+					"callbackParam": [
+						"cdxIconAdd"
+					]
+				}
+			],
+			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.vueTest.codexdemo": {
+			"dependencies": [
+				"vue"
+			],
+			"localBasePath": "resources/codex-demos",
+			"remoteExtPath": "VueTest/resources/codex-demos",
+			"styles": [ "style.css" ],
+			"noflip": true,
+			"packageFiles": [
+				"init.js",
+				"Sandbox.vue",
+				"codex-demos.cjs.js",
+				{
+					"name": "icons.json",
+					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
+					"callbackParam": [
+						"cdxIconArrowNext",
+						"cdxIconBold",
+						"cdxIconRobot",
+						"cdxIconTrash",
+						"cdxIconPause",
+						"cdxIconPlay"
+					]
+				}
+			],
+			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeeputer"
+		]
+	},
+	"bs-socialarticleactions-type-articlesave": "ویرایش مقاله",
+	"bs-socialarticleactions-type-articlecreate": "ایجاد مقاله",
+	"bs-socialarticleactions-type-articledelete": "حذف مقاله",
+	"bs-socialarticleactions-type-filesave": "ویرایش پرونده",
+	"bs-socialarticleactions-type-filecreate": "ایجاد پرونده",
+	"bs-socialarticleactions-type-filedelete": "حذف پرونده",
+	"bs-socialarticleactions-entityactionarticlesave-header": "[[User:$1|$2]] مقالهٔ [[:$6|$6]] را ویرایش کرد",
+	"bs-socialarticleactions-entityactionarticlecreate-header": "[[User:$1|$2]] مقالهٔ [[:$6|$6]] را ایجاد کرد",
+	"bs-socialarticleactions-entityactionarticledelete-header": "[[User:$1|$2]] مقالهٔ [[:$6|$6]] را حذف کرد",
+	"bs-socialarticleactions-entityactionfilesave-header": "[[User:$1|$2]] نسخهٔ جدیدی از پروندهٔ [[:$6|$6]] را اضافه کرد",
+	"bs-socialarticleactions-entityactionfilecreate-header": "[[User:$1|$2]] پروندهٔ [[:$6|$6]] را بارگذاری کرد",
+	"bs-socialarticleactions-entityactionfiledelete-header": "[[User:$1|$2]] پروندهٔ [[:$6|$6]] را حذف کرد"
+}

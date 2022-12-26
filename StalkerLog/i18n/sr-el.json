@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello"
+		]
+	},
+	"stalkerlog-log-login": "ulogovan.",
+	"stalkerlog-log-logout": "izlogovan.",
+	"stalkerlog-log-type": "Istorija logovanja korisnika",
+	"right-stalkerlog-view-log": "pregled dnevnika korisničkih prijava i odjava"
+}

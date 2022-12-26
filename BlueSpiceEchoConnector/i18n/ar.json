@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"FiberAhmed",
+			"Meno25",
+			"أَحمد",
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-echoconnector-extension-description": "يربط BlueSpice بإشعار",
+	"echo-category-title-bs-admin-cat": "مهام إدارية",
+	"echo-pref-tooltip-bs-admin-cat": "أخبرني عند إنشاء حساب مستخدم جديد",
+	"echo-pref-tooltip-bs-page-actions-cat": "إعلامي عندما يقوم شخص ما بتعديل أو نقل أو حذف صفحة أشاهدها",
+	"echo-pref-tooltip-bs-page-create-cat": "أرسل إشعارًا لي عند إنشاء صفحة جديدة",
+	"echo-category-title-bs-page-actions-cat": "الإجراءات على الصفحات في قائمة المراقبة",
+	"echo-category-title-bs-page-create-cat": "إنشاء الصفحة",
+	"prefs-namespace-notifications": "الإخطارات بشأن أحداث مساحة الاسم",
+	"prefs-category-notifications": "الإخطارات على الفئات",
+	"echo-category-title-bs-namespace-category-notify-cat": "التغييرات في مساحات وفئات المشتركين",
+	"bs-echoconnector-personalurl-notifications": "الإشعارات ($1)"
+}

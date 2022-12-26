@@ -1,0 +1,27 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		".eslintshared.json",
+		"wikimedia/mediawiki"
+	],
+	"env": {
+		"commonjs": true
+	},
+	"rules": {
+		"max-len": "off",
+		"no-jquery/variable-pattern": "off",
+		"no-jquery/no-event-shorthand": "off",
+		"compat/compat": "warn",
+		"vue/no-undef-properties": "off",
+		"vue/no-unused-refs": "off"
+	},
+	"overrides": [
+		{
+			"files": [ "jest.setup.js" ],
+			"extends": [
+				"wikimedia/language/es6"
+			]
+		}
+	]
+}

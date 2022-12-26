@@ -1,0 +1,213 @@
+{
+	"name": "WikiToLDAP",
+	"author": [
+		"Mark A. Hershberger"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:WikiToLDAP",
+	"config_prefix": "WikiToLDAP",
+	"config": {
+		"MigrationGroup": {
+			"value": "wikitoldap-needs-migration",
+			"public": true,
+			"descriptionmsg": "wikitoldap-migrationgroup-desc"
+		},
+		"InProgressGroup": {
+			"value": "wikitoldap-in-progress",
+			"public": true,
+			"descriptionmsg": "wikitoldap-inprogressgroup-desc"
+		},
+		"MergedGroup": {
+			"value": "wikitoldap-merged",
+			"public": true,
+			"descriptionmsg": "wikitoldap-merged-desc"
+		},
+		"OldUsernamePrefix": {
+			"value": "⚠️",
+			"public": true,
+			"descriptionmsg": "wikitoldap-old-username-prefix-desc"
+		},
+		"OldUsersAreRenamed": {
+			"value": false,
+			"public": true,
+			"descriptionmsg": "wikitoldap-old-users-are-renamed-desc"
+		},
+		"CanCheckOldUser": {
+			"value": false,
+			"public": true,
+			"descriptionmsg": "wikitoldap-can-check-old-user-desc"
+		},
+		"MigrationInProgress": {
+			"value": true,
+			"public": true,
+			"descriptionmsg": "wikitoldap-migrationinprogress-desc"
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"extensions": {
+			"LDAPAuthentication2": ">= 1.0.1"
+		}
+	},
+	"Hooks": {
+		"userCan": "MediaWiki\\Extension\\WikiToLDAP\\Hook::onUserCan",
+		"PluggableAuthPopulateGroups": "MediaWiki\\Extension\\WikiToLDAP\\Hook::onPluggableAuthPopulateGroups",
+		"AuthChangeFormFields": "MediaWiki\\Extension\\WikiToLDAP\\Hook::onAuthChangeFormFields"
+	},
+	"callback": "MediaWiki\\Extension\\WikiToLDAP\\Hook::init",
+	"SpecialPages": {
+		"WikiUserMerge": "MediaWiki\\Extension\\WikiToLDAP\\SpecialWikiMerge",
+		"LDAPUserMerge": "MediaWiki\\Extension\\WikiToLDAP\\SpecialLDAPMerge"
+	},
+	"APIModules": {
+		"wikitoldapoptout": "MediaWiki\\Extension\\WikiToLDAP\\API"
+	},
+	"MessagesDirs": {
+		"WikiToLDAP": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"LegalLoginAlias": "WikiToLDAP.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\WikiToLDAP\\": "includes/"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "WikiToLDAP/resources"
+	},
+	"ResourceModules": {
+		"ext.WikiToLDAP": {
+			"scripts": [
+				"init.js"
+			]
+		}
+	},
+	"descriptionmsg": "wikitoldap-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"LogTypes": [
+		"wikitoldap"
+	],
+	"LogActionsHandlers": {
+		"wikitoldap/*": "LogFormatter"
+	},
+	"GroupPermissions": {
+		"wikitoldap-needs-migration": {
+			"migrate-from-ldap": true
+		},
+		"wikitoldap-in-progress": {
+			"migrate-from-ldap": true
+		},
+		"wikitoldap-merged": {
+			"migrate-from-ldap": true
+		}
+	},
+	"RevokePermissions": {
+		"wikitoldap-in-progress": {
+			"bigdelete": true,
+			"block": true,
+			"blockemail": true,
+			"browsearchive": true,
+			"confirmaccount": true,
+			"createclass": true,
+			"createpage": true,
+			"createtalk": true,
+			"datatransferimport": true,
+			"delete": true,
+			"deletechangetags": true,
+			"deletelogentry": true,
+			"deleterevision": true,
+			"edit": true,
+			"editmyoptions": true,
+			"editmywatchlist": true,
+			"editprotected": true,
+			"editsemiprotected": true,
+			"editsitecss": true,
+			"editsiteinterface": true,
+			"editsitejs": true,
+			"editsitejson": true,
+			"editusercss": true,
+			"edituserjs": true,
+			"edituserjson": true,
+			"geocode": true,
+			"hideuser": true,
+			"import": true,
+			"importupload": true,
+			"lookupcredentials": true,
+			"managechangetags": true,
+			"mergehistory": true,
+			"move": true,
+			"move-categorypages": true,
+			"move-rootuserpages": true,
+			"move-subpages": true,
+			"movefile": true,
+			"nuke": true,
+			"protect": true,
+			"reupload": true,
+			"smw-admin": true,
+			"suppressionlog": true,
+			"suppressrevision": true,
+			"upload": true,
+			"userrights": true,
+			"viewedittab": true,
+			"viewmyprivateinfo": true,
+			"viewmywatchlist": true,
+			"viewsuppressed": true,
+			"writeapi": true
+		},
+		"wikitoldap-needs-migration": {
+			"bigdelete": true,
+			"block": true,
+			"blockemail": true,
+			"browsearchive": true,
+			"confirmaccount": true,
+			"createclass": true,
+			"createpage": true,
+			"createtalk": true,
+			"datatransferimport": true,
+			"delete": true,
+			"deletechangetags": true,
+			"deletelogentry": true,
+			"deleterevision": true,
+			"edit": true,
+			"editmyoptions": true,
+			"editmywatchlist": true,
+			"editprotected": true,
+			"editsemiprotected": true,
+			"editsitecss": true,
+			"editsiteinterface": true,
+			"editsitejs": true,
+			"editsitejson": true,
+			"editusercss": true,
+			"edituserjs": true,
+			"edituserjson": true,
+			"geocode": true,
+			"hideuser": true,
+			"import": true,
+			"importupload": true,
+			"lookupcredentials": true,
+			"managechangetags": true,
+			"mergehistory": true,
+			"move": true,
+			"move-categorypages": true,
+			"move-rootuserpages": true,
+			"move-subpages": true,
+			"movefile": true,
+			"nuke": true,
+			"protect": true,
+			"reupload": true,
+			"smw-admin": true,
+			"suppressionlog": true,
+			"suppressrevision": true,
+			"upload": true,
+			"userrights": true,
+			"viewedittab": true,
+			"viewmyprivateinfo": true,
+			"viewmywatchlist": true,
+			"viewsuppressed": true,
+			"writeapi": true
+		}
+	},
+	"manifest_version": 2
+}

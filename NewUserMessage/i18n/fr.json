@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crochet.david",
+			"Grondin",
+			"Louperivois",
+			"Urhixidur",
+			"Verdy p"
+		]
+	},
+	"newusermessage-desc": "Ajoute un message de bienvenue dans la page de discussion des nouveaux utilisateurs.",
+	"newuseredit-summary": "Ajoute un [[{{int:newusermessage-template}}|message de bienvenue]] dans la page de discussion d’un nouvel utilisateur"
+}

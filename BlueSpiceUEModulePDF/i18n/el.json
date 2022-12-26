@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"bs-uemodulepdf-overview-webservice-state-ok": "διαθέσιμοι",
+	"bs-uemodulepdf-overview-webservice-state-not-ok": "μη διαθέσιμοι"
+}

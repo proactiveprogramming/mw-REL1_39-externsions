@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"tweetanew-desc": "Tvitne, ko je ustvarjena ali urejena stran",
+	"tweetanew-newaction": "Tvitni o novi tej strani",
+	"tweetanew-newtooltip": "Objavi informacijo o tej novi strani na Twitterju",
+	"tweetanew-editaction": "Tvitni o tem urejanju",
+	"tweetanew-edittooltip": "Objavi informacijo o tem urejanju na Twitterju",
+	"tweetanew-minoredit": "m",
+	"tweetanew-authorcredit": "avtor:",
+	"tweetanew-newdefault": "NOVA STRAN: $1 – $2",
+	"tweetanew-new1": "Videti je, da je bila na naslovu $2 ustvarjena stran $1",
+	"tweetanew-new2": "na naslovu $2 je bila pred kratkim ustvarjena stran $1",
+	"tweetanew-new3": "Oglejte si $2 – ima novo stran $1",
+	"tweetanew-editdefault": "POSODOBLJENA STRAN> $1 – $2",
+	"tweetanew-edit1": "Videti je, da je bila na naslovu $2 posodobljena stran $1",
+	"tweetanew-edit2": "na naslovu $2 je bila pred kratkim spremenjena stran $1",
+	"tweetanew-edit3": "Oglejte si $2 – na strani $1 je nova vsebina"
+}

@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Akapochtli",
+			"Fitoschido",
+			"Fluence",
+			"Languaeditor",
+			"Ricardo gs",
+			"Taresi",
+			"Teòtlalili"
+		]
+	},
+	"wikimediamessages-desc": "San Wikimedia ìtlanawatiliswàn",
+	"sitesupport": "💰 Maktilistli",
+	"tooltip-n-sitesupport": "Xitechpalewi",
+	"grouppage-eliminator": "{{ns:project}}:Tlaixpohpolohuani",
+	"group-filemover-member": "{{GENDER:$1|tlahcuilōlolīniāni}}",
+	"grouppage-filemover": "{{ns:project}}:Tlaehualihcuaniani",
+	"grouppage-flood": "{{ns:project}}:Tlatepostekitkàuhtekìuhtiànimë",
+	"group-founder-member": "{{GENDER:$1|tlatzintiāni}}",
+	"group-patroller": "Tlapîpiànimë",
+	"group-uploader": "Tlaquetzalōnih",
+	"group-staff": "Olōlli",
+	"group-staff-member": "Olōllācatl",
+	"wikimedia-mobile-mainpage-title-loggedin": "¡{{GENDER:$1|Mah kwalli xiwallaw}}, $1!",
+	"wikibase-sitelinks-wikisource": "Wikimeyalli",
+	"wikibase-sitelinks-wikivoyage": "Huiquiyahui",
+	"wikimedia-developers": "Teposnawatianih",
+	"interlanguage-link-sitename-wikipedia": "Huiquipedia, ne ihtonki weyiamochtli"
+}

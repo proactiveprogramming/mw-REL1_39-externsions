@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"basehooks-desc": "<code><nowiki><body></nowiki></code> 태그 끝 바로 앞에 문자열이나 파일을 추가합니다"
+}

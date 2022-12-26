@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"acct_creation_global_hard_throttle_hit": "Ustvarjanje računa je bilo samodejno prekinjeno za nekaj sekund, da se zmanjšajo napadi poplave registracije.\nProsimo, počakajte trenutek in v brskalniku pritisnite »naloži znova« za ponovno oddajo.",
+	"userthrottle-desc": "Omejevanje ustvarjanja uporabnikov"
+}

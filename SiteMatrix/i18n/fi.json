@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crt",
+			"Nike",
+			"Olli",
+			"Pyscowicz",
+			"Stryn"
+		]
+	},
+	"sitematrix-desc": "Näyttää [[Special:SiteMatrix|luettelon wikeistä]].",
+	"sitematrix-language": "Kieli",
+	"sitematrix-project": "Projektin nimi, projektienvälinen linkki ja interwiki-linkki",
+	"sitematrix-other-projects": "Projekti",
+	"sitematrix-other-projects-language": "Kieli",
+	"sitematrix-total": "'''Wikejä yhteensä: $1'''",
+	"sitematrix-sitetotal": "Yhteensä",
+	"sitematrix-closed": "ei kirjoitusoikeutta, täysi lukuoikeus",
+	"sitematrix-private": "luku- ja kirjoitusoikeuksia rajoitettu",
+	"sitematrix-fishbowl": "kirjoitusoikeutta rajoitettu, täysi lukuoikeus",
+	"sitematrix-nonglobal": "julkinen, mutta vaatii rekisteröitymisen"
+}

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kunal Mehta"
+		]
+	},
+	"mwversioninfo-desc": "Manage MediaWiki version information",
+	"mwversioninfo.json": "{\"releases\": [], \"beta\": null}",
+	"apihelp-mwversioninfo-summary": "Gets version information about MediaWiki branches",
+	"apihelp-mwversioninfo-param-version": "MediaWiki version",
+	"apihelp-mwversioninfo-example": "Gets information about MediaWiki 1.27"
+}

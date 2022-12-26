@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"ديفيد"
+		]
+	},
+	"bs-notifications-addaccount": "تم إنشاء المستخدم \"$1\".",
+	"bs-notifications-email-addaccount-subject": "تم إنشاء {{GENDER:$1|المستخدم|المستخدمة}} \"$2\"",
+	"bs-notifications-email-addaccount-body": "تم إنشاء {{GENDER:$1|المستخدم|المستخدمة}} \"$2\"\n\nيمكنك زيارة صفحة المستخدم الخاصة {{GENDER:$1|به|بها|بـ}} بواسطة اتباع الرابط أدناه",
+	"bs-notifications-web-addaccount-body": "تم إنشاء {{GENDER:$1|المستخدم|المستخدمة}} \"$2\"",
+	"bs-notifications-addaccout-performer": "{{GENDER:$1|منشئ|منشئة}}: $1",
+	"bs-notifications-addaccount-performer": "{{GENDER:$1|منشئ|منشئة}}: $1",
+	"bs-notifications-registeruser": "أنشأ المستخدم \"$1\" حسابا.",
+	"bs-notifications-email-registeruser-subject": "{{GENDER:$1|المستخدم|المستخدمة}} \"$2\" قد {{GENDER:$1|أنشأ|أنشأ}} حسابا",
+	"bs-notifications-email-registeruser-body": "{{GENDER:$1|المستخدم|المستخدمة}} \"$2\" قد {{GENDER:$1|أنشأ|أنشأ}} حسابا\n\nيمكنك زيارة صفحة المستخدم الخاصة {{GENDER:$1|به|بها}} من خلال اتباع الرابط أدناه",
+	"bs-notifications-web-registeruser-body": "{{GENDER:$1|المستخدم|المستخدمة}} \"$2\" قد {{GENDER:$1|أنشأ|أنشأ}} حسابا",
+	"bs-notifications-edit": "تم تعديل الصفحة \"$1\"",
+	"bs-notifications-edit-bundle": "تم تعديل الصفحة \"$2\" {{PLURAL:$1|$1 مرة|$1 مرات}}",
+	"bs-notifications-email-edit-subject": "الصفحة \" $1 \" {{GENDER:$2| تم تحريره}} بسعر $4 دولارات بواسطة $3",
+	"bs-notifications-email-edit-body": "الصفحة \"$1\" كانت {{GENDER:$2|تم تحريره}} بسعر $5 $4.\n\nالتعليق:\n$3",
+	"bs-notifications-web-edit-body": "تم تعديل الصفحة $1 بواسطة {{GENDER:$2|المستخدم|المستخدمة}} \"$3\"",
+	"bs-notifications-create": "تم إنشاء الصفحة \"$1\"",
+	"bs-notifications-email-create-subject": "الصفحة \" $1 \" {{GENDER:$2| تم إنشاؤه}} بسعر $4 دولارات بواسطة $3",
+	"bs-notifications-email-create-body": "الصفحة \"$1\" كانت {{GENDER:$2|تم إنشاؤه}} بسعر $5 $3.\n\nالتعليق:\n$4\nيمكنك زيارة الصفحة التالية على الرابط أدناه",
+	"bs-notifications-web-create-body": "تم إنشاء الصفحة $1 بواسطة {{GENDER:$2|المستخدم|المستخدمة}} \"$3\"",
+	"bs-notifications-delete": "تم حذف الصفحة \"$1\"",
+	"bs-notifications-email-delete-subject": "الصفحة \" $1 \" {{GENDER:$2| تم حذفه}} بسعر $4 دولارات بواسطة $3",
+	"bs-notifications-email-delete-body": "الصفحة \"$1\" كانت {{GENDER:$2|تم حذفه}} بسعر $5 $3.\n\nكان هذا هو السبب:\n$4",
+	"bs-notifications-web-delete-body": "تم حذف الصفحة $1 بواسطة {{GENDER:$2|المستخدم|المستخدمة}} $3",
+	"bs-notifications-move": "تم نقل الصفحة \"$1\"",
+	"bs-notifications-email-move-subject": "الصفحة \" $1 \" {{GENDER:$2| انتقل}} بسعر $5 إلى \" $3 \" بمقدار $4",
+	"bs-notifications-email-move-body": "الصفحة \" $1 \" كانت {{GENDER:$2| انتقل}} إلى \" $3 \" بسعر $6 $4 .! N !! N! السبب كان:! N! $5 ! N !! N! يمكنك زيارة الصفحة التالية على الرابط أدناه",
+	"bs-notifications-web-move-body": "تم نقل الصفحة $1 إلى \"$3\" بواسطة {{GENDER:$2|المستخدم|المستخدمة}} $4",
+	"bs-notifications-edit-difflink-label": "انظر الفرق",
+	"bs-notifications-htmlmail-greeting": "{{GENDER:$1|مرحبا بك}} $1",
+	"bs-notifications-htmlmail-sender-info": "نظام الإخطار $1",
+	"bs-notifications-mail-additional-links-label": "وصلات إضافية"
+}

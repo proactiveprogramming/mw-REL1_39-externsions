@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			")8",
+			"A Chinese Wikipedian",
+			"Ken418",
+			"Lakejason0",
+			"Liuxinyu970226",
+			"沈澄心"
+		]
+	},
+	"bs-socialblog-type": "博客",
+	"blog": "博客",
+	"bs-socialblog-var-blogtitle": "职位",
+	"bs-socialblog-entityblog-content-more-btn-more": "更多",
+	"bs-socialblog-entityblog-content-more-btn-less": "更少",
+	"bs-socialblog-special-blog-heading": "博客",
+	"bs-social-notification-blog-primary-link-label": "查看博客",
+	"action-social-blog": "创建和编辑博客",
+	"action-social-blog-comment": "评论博客",
+	"right-social-blog": "创建和编辑博客",
+	"right-social-blog-comment": "评论博客"
+}

@@ -1,0 +1,238 @@
+{
+    "analyzer": {
+        "ch_plain": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "ch_plain_search": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "ch_text": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "ch_text_search": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "fy_plain": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "fy_plain_search": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "fy_text": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "fy_text_search": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "kab_plain": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "kab_plain_search": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "kab_text": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "kab_text_search": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "ti_plain": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "ti_plain_search": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "ti_text": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "ti_text_search": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "xmf_plain": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "xmf_plain_search": {
+            "char_filter": [
+                "nnbsp_norm",
+                "word_break_helper"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "xmf_text": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        },
+        "xmf_text_search": {
+            "char_filter": [
+                "nnbsp_norm"
+            ],
+            "filter": [
+                "icu_normalizer"
+            ],
+            "tokenizer": "standard",
+            "type": "custom"
+        }
+    },
+    "char_filter": {
+        "nnbsp_norm": {
+            "mappings": [
+                "\\u202F=>\\u0020"
+            ],
+            "type": "mapping"
+        },
+        "word_break_helper": {
+            "mappings": [
+                "_=>\\u0020",
+                ".=>\\u0020",
+                "(=>\\u0020",
+                ")=>\\u0020"
+            ],
+            "type": "mapping"
+        }
+    },
+    "filter": {
+        "icu_normalizer": {
+            "name": "nfkc_cf",
+            "type": "icu_normalizer"
+        }
+    },
+    "tokenizer": []
+}

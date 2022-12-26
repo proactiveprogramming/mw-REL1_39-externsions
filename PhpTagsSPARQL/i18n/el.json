@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"phptagssparql-desc": "Πελάτης PhpTags Sparql HTTP για το SPARQL1.1's Endpoint"
+}

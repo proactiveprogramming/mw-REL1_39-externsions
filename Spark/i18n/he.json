@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"spark-desc": "הוספת תג <code><nowiki><spark /></nowiki></code> שמפעיל הטבעת ערבולים של [http://km.aifb.kit.edu/sites/spark/ ספארק].",
+	"spark-missing-query": "יש להזין שאילתה באמצעות הפרמטר \"data-spark-query\"."
+}

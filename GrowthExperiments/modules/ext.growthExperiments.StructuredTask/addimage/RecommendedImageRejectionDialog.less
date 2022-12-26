@@ -1,0 +1,25 @@
+@import '../../lib/wikimedia-ui-base/wikimedia-ui-base.less';
+@import 'mediawiki.ui/variables.less';
+@import '../../utils/mixins.less';
+
+.mw-ge-recommendedLinkRejectionDialog {
+	.oo-ui-messageDialog-title {
+		color: @wmui-color-base10;
+		text-align: left;
+		font-weight: bold;
+		.rel-font-size( @parentFontSize: 14px, @targetFontSize: 14px );
+	}
+
+	.oo-ui-window-body {
+		padding: 20px;
+	}
+
+	.oo-ui-messageDialog-message {
+		margin: 0.25em 0 1em;
+		color: @colorGray5;
+	}
+
+	.oo-ui-checkboxMultioptionWidget {
+		padding: 6px 0;
+	}
+}

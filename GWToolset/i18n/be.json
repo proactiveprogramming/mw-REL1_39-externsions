@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"ZlyiLev"
+		]
+	},
+	"gwtoolset-mediafile-duplicate-another-title": "Ідэнтычны медыяфайл ужо ёсць пад назвай \"$1\".",
+	"gwtoolset-mediafile-duplicate-same-title": "Гэты мультымедыйны файл ужо ёсць і мае такую самую назву \"$1\".",
+	"gwtoolset-mediafile-other-contributors": "Медыяфайл з ідэнтычнай назвай \"$1\" ужо ёсць у Вікі. Ён быў зменены або створаны кімсьці іншым."
+}

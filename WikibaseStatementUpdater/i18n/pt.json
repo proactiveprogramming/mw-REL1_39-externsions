@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"wsu-desc": "Ferramenta para atualizar e adicionar declarações Wikibase",
+	"wsu-special-wikibasestatementupdater": "Atualização em massa de declarações",
+	"wsu-wsu-batch-title": "Nome do conjunto",
+	"wsu-wsu-batch-contents": "Comandos no formato Quick Statements V1",
+	"wsu-wsu-error": "Não foi possível fazer a análise sintática dos comandos: $1",
+	"wsu-wsu-error-linetooshort": "A linha $1 é demasiado curta.",
+	"wsu-wsu-error-noqualifiers": "Ainda não são suportados qualificadores.",
+	"wsu-wsu-error-onlyq": "Só são suportados elementos-Q.",
+	"wsu-wsu-error-unsupportedcommand": "Comando desconhecido.",
+	"wsu-your-batches": "Criou os seguintes conjuntos:",
+	"wsu-unknown-batch": "Conjunto desconhecido",
+	"wsu-goback": "Voltar à listagem",
+	"wsu-start": "Começar ou recomeçar a edição",
+	"wsu-stop": "Parar a edição",
+	"wsu-updater-api-failure": "Não foi possível fazer a análise sintática da resposta da API",
+	"wsu-updater-ambiguous-update": "A propriedade tem várias declarações",
+	"wsu-give-permission": "Esta ferramenta precisa de permissão para fazer edições em seu nome. [[$1|Conceder permissões]].",
+	"wsu-create-batch": "Criar um conjunto novo",
+	"wsu-command-P": "Propriedade",
+	"wsu-batchtable-subject": "Elemento",
+	"wsu-batchtable-command": "Comando",
+	"wsu-batchtable-id": "Identificador",
+	"wsu-batchtable-value": "Valor",
+	"wsu-batchtable-status": "Estado",
+	"wsu-js-batchtable-status": "$1% concluído. {{PLURAL:$2|0=|1=$2 falhou.|$2 falharam.}}",
+	"apihelp-wikibasestatementupdater-summary": "Gerir os conjuntos do Atualizador de Declarações Wikibase"
+}

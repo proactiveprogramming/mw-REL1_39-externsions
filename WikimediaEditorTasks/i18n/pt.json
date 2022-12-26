@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"wikimediaeditortasks-desc": "Geração de tarefas, armazenamento e módulos API para microcontribuições.",
+	"tag-apps-suggested-edits": "Edição vinda das edições sugeridas",
+	"tag-apps-suggested-edits-description": "Edições realizadas com a funcionalidade de edições sugeridas das aplicações Wikimedia"
+}

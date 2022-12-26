@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"gwtoolset-mediawiki-template": "Myenster $1",
+	"gwtoolset-cancel": "Jooskâ",
+	"gwtoolset-save": "Vuorkkii",
+	"gwtoolset-json-error-unknown": "Tubdâmettum feilâ.",
+	"gwtoolset-category": "Luokka"
+}

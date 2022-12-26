@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"flexiskin-ui-error-preview-fail": "Predogled preobleke ni uspel!",
+	"flexiskin-ui-error-save-fail": "Shranjevanje preobleke ni uspelo!",
+	"flexiskin-ui-plugin-layout-label": "Postavitev",
+	"flexiskin-ui-error-disable-fail": "Onemogočenje preobleke ni uspelo",
+	"flexiskin-ui-plugin-content-header-color-label": "Barva",
+	"flexiskin-font-weight-regular": "Običajna",
+	"flexiskin-ui-plugin-content-colors-label": "Barve"
+}

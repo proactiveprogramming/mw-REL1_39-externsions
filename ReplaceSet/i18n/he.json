@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Inkbug",
+			"Rotemliss",
+			"YaronSh"
+		]
+	},
+	"replaceset-desc": "הוספת התגית <nowiki>{{#replaceset}}</nowiki> המשמשת להחלפת מקטעים של טקסט בנתונים מעוצבים",
+	"replaceset-error-calllimit": "הושגה מגבלת הקריאה ל־ReplaceSet‏ ($1).",
+	"replaceset-error-regexnoend": "לתבנית הביטוי הרגולרי \"$1\" חסר התוחם המסיים \"$2\"",
+	"replaceset-error-regexbadmodifier": "מאייך הביטוי הרגולרי \"$1\" אינו תקין."
+}

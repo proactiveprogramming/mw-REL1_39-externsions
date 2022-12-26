@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"right-wikispeech-sdc-record": "Optag stemme",
+	"action-wikispeech-sdc-record": "Optag stemme",
+	"wikispeech-sdc-record": "Optag",
+	"wikispeech-sdc-save": "Gem",
+	"wikispeech-sdc-skip": "Spring over",
+	"wikispeech-sdc-status-ready": "Klar"
+}

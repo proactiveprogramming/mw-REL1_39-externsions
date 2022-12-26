@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"prefs-contextmenu": "Контекстан меню",
+	"bs-contextmenu-page-edit": "АгӀо тойан",
+	"bs-contextmenu-page-delete": "ДӀайаккха агӀо",
+	"bs-contextmenu-page-move": "АгӀонан цӀе хийца",
+	"bs-contextmenu-page-protect": "Ларъе агӀо",
+	"bs-contextmenu-page-info": "Хааман агӀоне хьажа",
+	"bs-contextmenu-media-reupload": "Чуйаккха керла верси",
+	"bs-contextmenu-user-mail": "Кехат дахьийтар",
+	"bs-contextmenu-file-download": "Файл чуйаккхар"
+}

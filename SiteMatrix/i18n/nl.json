@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"Optilete",
+			"SPQRobin",
+			"Siebrand",
+			"Sjoerddebruin"
+		]
+	},
+	"sitematrix": "Lijst met wiki's",
+	"sitematrix-desc": "Toont een [[Special:SiteMatrix|lijst van wiki's]]",
+	"sitematrix-language": "Taal",
+	"sitematrix-project": "Naam van het project, interprojectkoppeling en interwikikoppeling",
+	"sitematrix-others": "Andere projecten",
+	"sitematrix-other-projects": "Project",
+	"sitematrix-other-projects-language": "Taal",
+	"sitematrix-total": "'''Totaal aantal: $1'''",
+	"sitematrix-sitetotal": "Totaal",
+	"sitematrix-closed": "geen schrijftoegang, volledige leestoegang",
+	"sitematrix-private": "lees- en schrijftoegang is beperkt",
+	"sitematrix-fishbowl": "beperkte schrijftoegang, volledige leestoegang",
+	"sitematrix-nonglobal": "openbaar, maar registratie is vereist"
+}

@@ -1,0 +1,22 @@
+These are the release notes for the Spark extension.
+
+Extension page on mediawiki.org: https://www.mediawiki.org/wiki/Extension:Spark
+Latest version of the release notes: https://phabricator.wikimedia.org/diffusion/ESPK/browse/master/RELEASE-NOTES
+
+
+=== Version 0.2 ===
+==== 2011-10-16 ====
+* Added CHANGELOG
+* Added support for older versions of MW that do not have a resource loader
+* Spark sometimes needs additional JavaScript. IT can be given in LocalSettings.php using the variable $wgResourceModules
+
+==== 2011-0x-xx ====
+
+* Added README, INSTALL, COPYTING and RELEASE-NOTES
+
+=== Version 0.1 ===
+==== 2011-05-30 ====
+
+Initial release with these features:
+
+* <spark> tag

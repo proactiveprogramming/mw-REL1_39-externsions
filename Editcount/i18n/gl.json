@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alma",
+			"Elisardojm",
+			"Xosé"
+		]
+	},
+	"editcount-desc": "Amosa [[Special:Editcount|a conta de edicións]] dun usuario",
+	"editcount_username": "Usuario:",
+	"editcount_submit": "Enviar",
+	"editcount_total": "Total"
+}

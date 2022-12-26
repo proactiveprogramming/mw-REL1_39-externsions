@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"onlinestatus-tab": "Stanje",
+	"onlinestatus-toggles-desc": "Vaše stanje:",
+	"onlinestatus-toggle-offline": "Brez povezave"
+}

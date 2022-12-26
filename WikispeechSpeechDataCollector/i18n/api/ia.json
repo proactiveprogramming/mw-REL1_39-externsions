@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "API de accesso a objectos generic de dominio persistente.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "Non poteva de-serialisar le JSON del transaction.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "Non poteva de-serialisar le transaction.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "Non poteva executar le transaction.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "Non poteva serialisar le responsa.",
+	"apihelp-wikispeech-sdc-crud-example-1": "Crear un singule requesta nove de usator.",
+	"apihelp-wikispeech-sdc-crud-example-2": "Leger un singule requesta de usator.",
+	"apihelp-wikispeech-sdc-crud-example-3": "Deler un singule requesta de usator."
+}

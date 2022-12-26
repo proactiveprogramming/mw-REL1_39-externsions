@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Guycn2",
+			"שוקו מוקה"
+		]
+	},
+	"bs-echoconnector-extension-description": "חיבור ההרחבה BlueSpice להרחבה Echo",
+	"echo-category-title-bs-admin-cat": "משימות ניהוליות",
+	"echo-pref-tooltip-bs-admin-cat": "להודיע לי כשנוצר חשבון משתמש חדש",
+	"echo-pref-tooltip-bs-page-actions-cat": "להודיע לי כשמישהו עורך, מעביר, או מוחק דף ברשימת המעקב שלי",
+	"echo-pref-tooltip-bs-page-create-cat": "להודיע לי כשנוצר דף חדש",
+	"echo-category-title-bs-page-actions-cat": "פעולות בדפים ברשימת מעקב",
+	"echo-category-title-bs-page-create-cat": "יצירות דפים",
+	"prefs-namespace-notifications": "התראות על פעולות במרחב שם",
+	"prefs-category-notifications": "התראות על קטגוריות",
+	"echo-category-title-bs-namespace-category-notify-cat": "שינויים במרחבי השם ובקטגוריות שיש עליהם מינוי",
+	"bs-echoconnector-personalurl-notifications": "הודעות ($1)"
+}

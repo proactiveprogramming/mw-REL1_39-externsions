@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"linkedwiki-refresh": "Aktualiséieren",
+	"linkedwiki-specialrdfsave": "Datebank aktualiséieren",
+	"linkedwiki-category-rdf-page": "RDF-Säit",
+	"linkedwiki-category-query-error": "Defekt SPARQL Ufro",
+	"linkedwiki-specialsparqlquery_options": "Optiounen",
+	"linkedwiki-specialsparqlquery_visualization": "Visualisatioun",
+	"linkedwiki-specialsparqlquery_seethedoc": "Kuckt d'Dokumentatioun",
+	"linkedwiki-specialsparqlquery_result": "Resultat",
+	"linkedwiki-col-pages": "Titel",
+	"linkedwiki-col-page-date-touched": "Lescht Ännerung",
+	"linkedwiki-col-page-current-state": "Aktuelle Status",
+	"linkedwiki-lua-tooltip-db-currently-unknown-value": "Aktuell an der Datebank: onbekannte Wäert",
+	"linkedwiki-lua-tooltip-db-currently-value": "Aktuell an der Datebank: $1",
+	"linkedwiki-lua-tooltip-db-currently-date-unknown": "Aktuell an der Datebank: onbekannten Datum",
+	"linkedwiki-lua-tooltip-db-currently-date-wrong": "Aktuell an der Datebank: keen Datum"
+}

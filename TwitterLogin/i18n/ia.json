@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"twitterlogin": "Aperir session con Twitter",
+	"twitterlogin-signup": "Tu pote inscriber te a iste wiki con un conto de Twitter.",
+	"twiterlogin-tietoaccount": "Tu es actualmente in session in iste wiki como $1. Tu pote aperir session con Twitter pro ligar tu conto de Twitter a tu conto existente de MediaWiki.",
+	"twitterlogin-desc": "Inscriber se e aperir session a MediaWiki usante un conto de Twitter",
+	"twitterlogin-alreadyloggedin": "Tu ha jam aperite session.",
+	"twitterlogin-couldnotconnect": "Non poteva connecter a Twitter. Refresca le pagina o tenta lo de novo plus tarde."
+}

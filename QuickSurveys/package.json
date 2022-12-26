@@ -1,0 +1,26 @@
+{
+	"name": "QuickSurveys",
+	"private": true,
+	"scripts": {
+		"lint:i18n": "banana-checker --requireLowerCase=0 i18n/",
+		"lint:js:fix": "npm -s run lint:js -- --fix",
+		"lint:js": "eslint --cache .",
+		"lint:styles": "stylelint --cache --report-needless-disables --max-warnings 0 \"**/*.{less,css,vue}\"",
+		"lint": "npm -s run lint:js && npm run -s lint:styles && npm -s run lint:i18n",
+		"test:unit": "jest --testRegex tests/jest/*.test.js",
+		"test": "npm run lint && npm run test:unit"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "7.16.11",
+		"@vue/test-utils": "2.0.0-rc.17",
+		"@vue/vue3-jest": "27.0.0-alpha.4",
+		"@wikimedia/codex": "0.1.0-alpha.8",
+		"@wikimedia/mw-node-qunit": "6.2.1",
+		"babel-core": "6.26.3",
+		"eslint-config-wikimedia": "0.22.1",
+		"grunt-banana-checker": "0.10.0",
+		"jest": "27.4.7",
+		"stylelint-config-wikimedia": "0.13.1",
+		"vue": "3.2.33"
+	}
+}

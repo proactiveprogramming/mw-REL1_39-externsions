@@ -1,0 +1,20 @@
+{
+	"name": "Collection",
+	"private": true,
+	"scripts": {
+		"test": "grunt test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Collection"
+	},
+	"license": "GPLv2",
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.22.1",
+		"grunt": "1.5.3",
+		"grunt-banana-checker": "0.10.0",
+		"grunt-eslint": "24.0.0",
+		"grunt-stylelint": "0.17.0",
+		"stylelint-config-wikimedia": "0.13.0"
+	}
+}

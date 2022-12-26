@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"packages": "الحزم",
+	"pageexchange-package-website": "موقع الويب:",
+	"pageexchange-package-version": "الإصدار:",
+	"pageexchange-package-language": "اللغة:",
+	"pageexchange-package-license": "الترخيص:"
+}

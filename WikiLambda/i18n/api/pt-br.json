@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Mariagarbin"
+		]
+	},
+	"apihelp-wikilambda_fetch-summary": "Busque o modelo JSON de ZObjects.",
+	"apihelp-wikilambda_fetch-param-zids": "O ZObject ZIDs para buscar",
+	"apihelp-wikilambda_fetch-param-language": "O idioma no qual os resultados serão retornados.",
+	"apihelp-wikilambda_fetch-example-single": "Fetch a single ZObject, Z1.",
+	"apihelp-wikilambda_fetch-example-multiple": "Obtenha três ZObjects: Z1, Z2 e Z3.",
+	"apierror-wikilambda_fetch-missingzid": "O ZID '$1' fornecido não existe nessa wiki.",
+	"apihelp-wikilambda_function_call-param-zobject": "ZObject para chamada de função",
+	"apihelp-wikilambda_function_call-example-if": "Invoque Z802 (If) com falso predicado",
+	"apihelp-wikilambda_function_call-example-native-js-code": "Invoque o código JavaScript escrito pelo usuário",
+	"apihelp-wikilambda_function_call-example-native-python-code": "Invoque o código Python 3 escrito pelo usuário",
+	"apihelp-wikilambda_function_call-summary": "Chame uma função chamando o orquestrador de funções",
+	"apihelp-query+wikilambdasearch_labels-summary": "Este gerador de lista de consulta API permite pesquisar ZObjects para rótulos em um determinado idioma. Ele existe principalmente para oferecer suporte ao sistema de pesquisa antecipada.",
+	"apihelp-query+wikilambdasearch_labels-param-search": "O termo de pesquisa",
+	"apihelp-query+wikilambdasearch_labels-param-language": "O código do idioma MediaWiki no qual pesquisar",
+	"apihelp-query+wikilambdasearch_labels-param-nofallback": "Se deve pesquisar apenas no idioma fornecido e não em seus idiomas substitutos",
+	"apihelp-query+wikilambdasearch_labels-param-exact": "Se deve pesquisar correspondências exatas. Se desativado, a entrada será considerada como uma pesquisa normalizada Unicode sem distinção entre maiúsculas e minúsculas, com acentos em caracteres latinos ignorados.",
+	"apihelp-query+wikilambdasearch_labels-param-type": "Restringir correspondências a um tipo específico de ZObject.",
+	"apihelp-query+wikilambdasearch_labels-param-limit": "Número máximo de resultados na exibição",
+	"apihelp-query+wikilambda-example-simple": "Procure por ZObjects cujo rótulo corresponda a 'foo' em inglês",
+	"apihelp-query+wikilambda-example-nofallback": "Procure por ZObjects cujo rótulo corresponda a 'foo' em francês e não aceite idiomas substitutos",
+	"apihelp-query+wikilambda-example-type": "Pesquise ZObjects do tipo 'Z4', retornando rótulos em inglês",
+	"apihelp-query+wikilambdaload_zobjects-example-canonical": "Pesquise ZObject Z12 e retorne sua representação canônica JSON.",
+	"apihelp-wikilambda_edit-example-create": "Crie um novo ZObject do tipo Z6, com o valor 'value' e rotulado como 'label'",
+	"apihelp-wikilambda_edit-example-edit-incorrect": "Tentativa de atualizar o ZObject Z010 com dados incorretos",
+	"apihelp-wikilambda_edit-summary": "Criar ou editar um ZObject",
+	"apihelp-wikilambda_edit-param-summary": "Editar mensagem de resumo",
+	"apihelp-wikilambda_edit-param-zid": "ZID do ZObject a ser editado. Se nulo, o ZObject será criado novamente",
+	"apihelp-wikilambda_edit-param-zobject": "Representação JSON do ZObject para salvar",
+	"apierror-wikilambda_function_call-not-connected": "Não foi possível resolver o host '$1', provavelmente porque o orquestrador não está funcionando. Consulte o README para adicionar o orquestrador à configuração do docker-compose.",
+	"apierror-wikilambda_edit-invalidjson": "Não foi possível criar ZObject para a entrada fornecida '$1'; JSON inválido.",
+	"apierror-wikilambda_perform_test-not-connected": "Não foi possível resolver o host '$1', provavelmente porque o orquestrador não está funcionando. Consulte o README para adicionar o orquestrador à configuração do docker-compose."
+}

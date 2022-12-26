@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"FiberAhmed",
+			"أَحمد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"cpd-yes": "نعم",
+	"cpd-no": "لا",
+	"cpd-show-details": "أظهر التفاصيل",
+	"cpd-keyboard-shortcuts": "اختصارات لوحة المفاتيح",
+	"cpd-keyboard-shortcuts-undo": "تراجع",
+	"cpd-keyboard-shortcuts-redo": "إعادة",
+	"cpd-keyboard-shortcuts-select-all": "تحديد الكل",
+	"cpd-keyboard-shortcuts-direct-editing": "التعديل المباشر",
+	"cpd-ve-bpmn-name-title": "الاسم"
+}

@@ -1,0 +1,33 @@
+{
+	"name": "Insider",
+	"url": "https://www.mediawiki.org/wiki/Extension:Insider",
+	"descriptionmsg": "insider-desc",
+	"author": [
+		"Roland Unger",
+		"Hans Musil",
+		"Matthias Mullie"
+	],
+	"version": "1.3.0",
+	"license-name": "GPL-2.0-only",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Insider\\": "includes/"
+	},
+	"MessagesDirs": {
+		"Insider": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"InsiderMagic": "Insider.i18n.magic.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\Insider\\Hooks::onParserFirstCallInit",
+		"OutputPageParserOutput": "MediaWiki\\Extension\\Insider\\Hooks::onOutputPageParserOutput",
+		"SidebarBeforeOutput": "MediaWiki\\Extension\\Insider\\Hooks::onSidebarBeforeOutput"
+	},
+	"manifest_version": 2
+}

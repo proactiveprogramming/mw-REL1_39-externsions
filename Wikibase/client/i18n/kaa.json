@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajiniyaz Nurniyazov",
+			"Nurlan"
+		]
+	},
+	"wikibase-comment-update": "{{WBREPONAME}} element ózgertildi",
+	"wikibase-comment-multi": "$1 {{PLURAL:$1|ózgeris|ózgerisler}}",
+	"wikibase-dataitem": "{{WBREPONAME}} elementi",
+	"wikibase-editlinks": "Siltemeni redaktorlaw",
+	"wikibase-editlinkstitle": "Tiller aralıq siltemeni redaktorlaw",
+	"wikibase-addlinkstitle": "Tiller aralıq siltemeni qosıw",
+	"wikibase-linkitem-addlinks": "Silteme qosıw",
+	"wikibase-linkitem-title": "Betke silteme",
+	"wikibase-linkitem-linkpage": "Betke silteme",
+	"wikibase-linkitem-selectlink": "Bul betke baylanıstırmaqshı bolǵan sayttı hám betti tańlań",
+	"wikibase-linkitem-input-site": "Til:",
+	"wikibase-linkitem-input-page": "Bet:",
+	"wikibase-rc-hide-wikidata-hide": "Jasırıw",
+	"wikibase-rc-hide-wikidata-show": "Kórsetiw",
+	"wikibase-otherprojects": "Basqa joybarlarda",
+	"wikibase-sitelinks-sitename-columnheading": "Til",
+	"wikibase-sitelinks-link-columnheading": "Siltemelengen bet"
+}

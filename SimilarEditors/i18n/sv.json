@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"action-similareditors": "komma åt [[Special:SimilarEditors]]",
+	"right-similareditors": "Komma åt [[Special:SimilarEditors]]",
+	"similareditors": "Liknande redigerare",
+	"similareditors-desc": "Tillhandahåller detaljer om användare med liknande redigeringshistoriker.",
+	"similareditors-form-field-target-label": "Användarnamn eller IP-adress:",
+	"similareditors-form-field-target-placeholder": "Användarnamn eller 1.1.1.1",
+	"similareditors-form-legend": "Hitta liknande redigerare",
+	"similareditors-form-submit": "Hitta",
+	"similareditors-no-results": "Det finns inga resultat.",
+	"similareditors-overlap-level-high": "Hög",
+	"similareditors-overlap-level-low": "Låg",
+	"similareditors-overlap-level-medium": "Medel",
+	"similareditors-overlap-level-no-overlap": "Ingen överlappning",
+	"similareditors-results-day-overlap": "Dagsöverlappning",
+	"similareditors-results-edit-overlap": "Redigeringsöverlappning",
+	"similareditors-results-edits": "Redigeringar i data",
+	"similareditors-results-hour-overlap": "Timöverlappning",
+	"similareditors-results-inverse-edit-overlap": "Invertera redigeringsöverlappning",
+	"similareditors-results-user": "Användare",
+	"similareditors-results-user-timeline": "tidslinje",
+	"similareditors-summary": "Hitta de redigerare som är mest lika varandra baserat på deras redigeringshistorik.",
+	"similareditors-survey-question": "Var resultaten till hjälp? Vilken annan information letade du efter när du letade efter marionetter?"
+}

@@ -1,0 +1,54 @@
+{
+	"name": "Inbox",
+	"descriptionmsg": "inbox-desc",
+	"license-name": "GPL-3.0-or-later",
+	"author": [
+		"Stephane Bisson"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Inbox",
+	"requires": {
+		"MediaWiki": ">= 1.35.3"
+	},
+	"AutoloadNamespaces": {
+		"Inbox\\": "includes/"
+	},
+	"MessagesDirs": {
+		"Inbox": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"InboxAlias": "Inbox.alias.php"
+	},
+	"SpecialPages": {
+		"Inbox": "Inbox\\Specials\\SpecialInbox"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "Inbox\\Hooks::onLoadExtensionSchemaUpdates",
+		"AlternateUserMailer": "Inbox\\Hooks::onAlternateUserMailer",
+		"SkinTemplateNavigation::Universal": "Inbox\\Hooks::onSkinTemplateNavigationUniversal",
+		"OutputPageCheckLastModified": "Inbox\\Hooks::onOutputPageCheckLastModified"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Inbox/modules"
+	},
+	"ResourceModules": {
+		"inbox.style": {
+			"styles": [
+				"inbox.less"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"config": {
+		"InboxEnabled": {
+			"description": "Global ON/OFF switch for the Inbox features.",
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

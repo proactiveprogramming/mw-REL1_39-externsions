@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-description": "Ovaj priložnik služi za dobivanje spiska s jednom ili više stranica povezanih s određenim zadatkom GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-summary": "Ovaj priložnik služi za dobivanje spiska s jednom ili više stranica povezanih s određenim zadatkom GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Naziv zadatka, općenito ili \"copyedit\" (prijedlozi za lekturu) ili \"morelike\" (stranice slične osnovnoj stranici/izuzeti naslov)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Puni nasklov stranice što treba das e isključi sa spiska; također se koristi kao osnovni naslov za preporuke, na temelju određene stranice",
+	"apihelp-query+gettingstartedgetpages-param-count": "Traženi broj; pokušava dohvatiti točan broj, ali može dohvatiti manje, ako se ne pronađe više nakon više pokušaja"
+}

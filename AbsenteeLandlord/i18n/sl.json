@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"absenteelandlord-reason": "Zbirka podatkov je bila samodejno zaklenjena zaradi neaktivnosti administratorjev.",
+	"absenteelandlord-desc": "Samodejno zaklene zbirke podatkov vikija, če so vsi administratorji nekaj časa neaktivni"
+}

@@ -1,0 +1,165 @@
+{
+	"name": "SearchVue",
+	"type": "other",
+	"author": [
+		"Cormac Parle",
+		"Joseph Seddon",
+		"Marco Fossati",
+		"Matthias Mullie",
+		"Mark Shenoda"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SearchVue",
+	"descriptionmsg": "searchvue-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"AutoloadNamespaces": {
+		"SearchVue\\": "src/"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "SearchVue\\Hooks"
+		}
+	},
+	"Hooks": {
+		"SpecialPageBeforeExecute": "main",
+		"SpecialSearchResults": "main",
+		"SpecialSearchResultsAppend": "main",
+		"GetPreferences": [ "SearchVue\\Hooks::onGetPreferences" ]
+
+	},
+	"MessagesDirs": {
+		"SearchVue": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SearchVue"
+	},
+	"ResourceModules": {
+		"searchVue": {
+			"packageFiles": [
+				"resources/init.js",
+				"resources/components/App.vue",
+				"resources/components/Tutorial.vue",
+				"resources/components/QuickViewTutorialPopup.vue",
+				"resources/components/generic/ImageWithLoadingBackground.vue",
+				"resources/components/generic/ContentSkeleton.vue",
+				"resources/components/generic/LoadingDots.vue",
+				"resources/components/sections/QuickView.vue",
+				"resources/components/sections/QuickViewImage.vue",
+				"resources/components/sections/QuickViewDescription.vue",
+				"resources/components/sections/QuickViewSnippet.vue",
+				"resources/components/sections/QuickViewSections.vue",
+				"resources/components/sections/QuickViewCommons.vue",
+				"resources/composables/onDocumentResize.js",
+				"resources/composables/onDocumentScroll.js",
+				"resources/composables/onResizeObserver.js",
+				"resources/store/index.js",
+				"resources/store/state.js",
+				"resources/store/mutations.js",
+				"resources/store/getters.js",
+				"resources/store/actions.js",
+				"resources/store/modules/Event.js"
+			],
+			"dependencies": [
+				"mediawiki.Uri",
+				"mediawiki.jqueryMsg",
+				"mediawiki.api",
+				"mediawiki.storage",
+				"mediawiki.ForeignApi",
+				"mediawiki.user",
+				"vue",
+				"@vue/composition-api",
+				"vuex",
+				"web2017-polyfills"
+			],
+			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"messages": [
+				"searchvue-close",
+				"searchvue-previous",
+				"searchvue-next",
+				"searchvue-commons-viewmore",
+				"searchvue-commons-viewmore-mobile",
+				"searchvue-commons-footnote",
+				"searchvue-commons-heading",
+				"searchvue-commons-heading-mobile",
+				"searchvue-article-sections-heading",
+				"searchvue-article-sections-heading-ns0",
+				"searchvue-more-sections",
+				"searchvue-snippet-gotofullpage",
+				"searchvue-snippet-gotofullpage-ns0",
+				"searchvue-description-mobile",
+				"ellipsis",
+				"tutorial-popup-title",
+				"tutorial-popup-text1",
+				"tutorial-popup-text2",
+				"tutorial-popup-text-mobile",
+				"tutorial-popup-preferences",
+				"tutorial-popup-close"
+			]
+		},
+		"searchVue.styles": {
+			"styles": [
+				"resources/styles/SearchVue-immediate.less"
+			]
+		},
+		"searchVue.mobile.styles": {
+			"targets": [
+				"mobile"
+			],
+			"styles": [
+				"resources/styles/SearchVue-result-mobile-immediate.less"
+			]
+		}
+	},
+	"DefaultUserOptions": {
+		"searchpreview": true,
+		"searchpreview-tutorial-enabled": 1
+	},
+	"manifest_version": 2,
+	"config": {
+		"QuickViewMediaRepositoryApiBaseUri": {
+			"description": "Url to API of Commons repository used to fetch images for the selected page. If not set, the 'related images' section will not appear.",
+			"value": "https://commons.wikimedia.org/w/api.php"
+		},
+		"QuickViewMediaRepositorySearchUri": {
+			"description": "Url to Commons search page.",
+			"value": "https://commons.wikimedia.org/wiki/Special:MediaSearch?search=%s"
+		},
+		"QuickViewMediaRepositoryUri": {
+			"description": "Url to Commons home page.",
+			"value": "https://commons.wikimedia.org"
+		},
+		"QuickViewSearchFilterForQID": {
+			"description": "The search parameter used to link the current page with a QID to ensure that the search result are relevant to your search.",
+			"value": "custommatch:depicts_or_linked_from=%s"
+		},
+		"QuickViewEnableMobile": {
+			"description": "True to enable mobile, false to disable.",
+			"value": false
+		}
+	},
+	"RestRoutes": [
+		{
+			"path": "/searchvue/v0/page/{page_title}",
+			"method": "GET",
+			"class": "SearchVue\\Rest\\GetSearchVueResultInfo"
+		},
+		{
+			"path": "/searchvue/v0/media/{qid}",
+			"method": "GET",
+			"class": "SearchVue\\Rest\\GetSearchVueMedia",
+			"services": [
+				"MainConfig",
+				"HttpRequestFactory"
+			]
+		}
+	]
+}

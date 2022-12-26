@@ -1,0 +1,44 @@
+{
+	"name": "mediawiki/google-doc-creator",
+	"type": "mediawiki-extension",
+	"description": "The GoogleDocCreator extension lets you create a Google Doc and embeds it to a wiki page.",
+	"keywords": [
+		"Google Doc Creator",
+		"Wiki",
+		"MediaWiki"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Extension:GoogleDocCreator",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Nischay Nahata",
+			"role": "Developer"
+		},
+		{
+			"name": "Sanjay Thiyagarajan",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"google/apiclient": "^2.12.1"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"minus-x check .",
+			"@phpcs"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf .",
+			"phpcbf"
+		],
+		"phpcs": "phpcs -p -s ."
+	}
+}

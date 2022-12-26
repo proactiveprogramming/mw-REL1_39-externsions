@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"wsu-wsu-error-linetooshort": "Linn $1 ass ze kuerz.",
+	"wsu-wsu-error-onlyq": "Nëmme Q-Elementer ginn ënnerstëtzt.",
+	"wsu-command-P": "Eegenschaft",
+	"wsu-batchtable-subject": "Sujet",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Wäert"
+}

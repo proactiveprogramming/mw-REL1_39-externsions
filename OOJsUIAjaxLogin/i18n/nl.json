@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"Mainframe98",
+			"McDutchie"
+		]
+	},
+	"oojsuiajaxlogin-desc": "Voegt een Ajax aanmeld-overlay aan MediaWiki toe",
+	"oojsuiajaxlogin-loading": "Bezig met laden…"
+}

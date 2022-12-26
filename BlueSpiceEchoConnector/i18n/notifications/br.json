@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Huñvreüs"
+		]
+	},
+	"bs-notifications-email-addaccount-subject": "Implijer \"$2\" {{GENDER:$1|krouet}}",
+	"bs-notifications-email-addaccount-body": "An implijer{{GENDER:$1||ez}} $2 zo bet krouet.\n\nGallout a rit mont d’{{GENDER:$1|e bajenn|he fajenn}} implijer dre al liamm a-is",
+	"bs-notifications-edit": "Kemmet eo bet ar bajenn \"$1\"",
+	"bs-notifications-email-edit-subject": "Kemmet eo bet ar bajenn \"$1\" gant {{GENDER:$2|}} da $4 gant $3",
+	"bs-notifications-create": "Krouet eo bet ar bajenn \"$1\"",
+	"bs-notifications-email-create-subject": "Pajenn \"$1\" {{GENDER:$2|krouet}} gant da $4 $3",
+	"bs-notifications-delete": "Diverket eo bet ar bajenn \"$1\"",
+	"bs-notifications-email-delete-subject": "Pajenn \"$1\" {{GENDER:$2|diverket}} da $4 gant $3",
+	"bs-notifications-email-delete-body": "{{GENDER:$2|Diverket}} eo bet ar bajenn \"$1\" da $5 gant $3.\n\nSetu amañ an abeg :\n$4",
+	"bs-notifications-move": "Dilec'hiet eo bet ar bajenn \"$1\"",
+	"bs-notifications-email-move-subject": "Pajenn \"$1\" {{GENDER:$2|dilec'hiet}} da $5 davet \"$3\" gant $4"
+}

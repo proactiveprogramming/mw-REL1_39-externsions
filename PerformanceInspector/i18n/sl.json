@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Janezdrilc"
+		]
+	},
+	"performanceinspector-dialog-summary": "Povzetek",
+	"performanceinspector-dialog-cancel": "Prekliči",
+	"performanceinspector-modules-css-column-module": "Modul",
+	"performanceinspector-modules-css-column-source": "Vir",
+	"performanceinspector-imagesize-column-image-name": "Ime",
+	"performanceinspector-imagesize-column-size": "Velikost",
+	"performanceinspector-imagesize-too-big": "Opozorilo",
+	"performanceinspector-newpp-column-name": "Ime",
+	"performanceinspector-newpp-column-value": "Vrednost",
+	"performanceinspector-newpp-template-time-report-column-name": "Ime",
+	"performanceinspector-newpp-cachereport-now": "Zdaj"
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Teitei Para"
+		]
+	},
+	"wikilambda-publishnew": "Pazaw",
+	"wikilambda-savenew": "Pachô",
+	"wikilambda-savechanges": "A pathlainazy pachô",
+	"wikilambda-summarylabel": "Biechuapa:",
+	"wikilambda-editor-label-addlanguage-label": "Reihchâ atlyh teh",
+	"wikilambda-editor-label-removelanguage-tooltip": "He label tawhta he reihchâ he thy teih",
+	"wikilambda-editor-zobject-addkey": "Châhbi khô:",
+	"wikilambda-function-implementation-name-label": "Moh",
+	"wikilambda-function-implementation-language-label": "Reihchâ",
+	"wikilambda-function-implementation-state-label": "State",
+	"wikilambda-function-implementation-state-available": "Âhmô",
+	"wikilambda-function-implementation-state-proposed": "Ahaw hawpa"
+}

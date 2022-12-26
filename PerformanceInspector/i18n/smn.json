@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"performanceinspector-dialog-cancel": "Jooskâ",
+	"performanceinspector-modules-css-name": "CSS",
+	"performanceinspector-modules-css-label": "CSS",
+	"performanceinspector-modules-css-column-module": "Mooduul",
+	"performanceinspector-modules-css-column-source": "Käldee",
+	"performanceinspector-imagesize-name": "Kove stuárudâh",
+	"performanceinspector-imagesize-label": "Kove stuárudâh",
+	"performanceinspector-imagesize-column-image-name": "Nommâ",
+	"performanceinspector-imagesize-too-big": "Váruttâs",
+	"performanceinspector-newpp-column-name": "Nommâ",
+	"performanceinspector-newpp-template-time-report-column-name": "Nommâ"
+}

@@ -1,0 +1,39 @@
+{
+	"name": "NewUserActions",
+	"author": [
+		"Sébastien Santoro aka Dereckson"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NewUserActions",
+	"descriptionmsg": "newuseractions-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
+	"MessagesDirs": {
+		"NewUserActions": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\NewUserActions\\Actions": "src/Actions.php",
+		"MediaWiki\\Extension\\NewUserActions\\Config": "src/Config.php",
+		"MediaWiki\\Extension\\NewUserActions\\Hooks": "src/Hooks.php",
+		"MediaWiki\\Extension\\NewUserActions\\Actions\\Action": "src/Actions/Action.php",
+		"MediaWiki\\Extension\\NewUserActions\\Actions\\CreateNewUserPage": "src/Actions/CreateNewUserPage.php",
+		"MediaWiki\\Extension\\NewUserActions\\Actions\\CreateWikiPage": "src/Actions/CreateWikiPage.php"
+	},
+	"Hooks": {
+		"AddNewAccount": "MediaWiki\\Extension\\NewUserActions\\Hooks::onAddNewAccount",
+		"LocalUserCreated": "MediaWiki\\Extension\\NewUserActions\\Hooks::onLocalUserCreated",
+		"UserGetReservedNames": "MediaWiki\\Extension\\NewUserActions\\Hooks::onUserGetReservedNames"
+	},
+	"load_composer_autoloader": true,
+	"config": {
+		"NewUserActionsSuppressRC": false,
+		"NewUserActionsMinorEdit": true,
+		"NewUserActionsOnAutoCreate": false,
+		"NewUserActionsCreateUserPage": false
+	},
+	"manifest_version": 1
+}

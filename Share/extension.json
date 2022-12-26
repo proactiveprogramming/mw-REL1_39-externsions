@@ -1,0 +1,91 @@
+{
+	"name": "Share",
+	"version": "1.1",
+	"author": [
+		"[https://meta.miraheze.org/wiki/User:Agent_Isai Agent Isai]"
+	],
+	"url": "https://github.com/AgentIsai/Share",
+	"descriptionmsg": "share-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"AutoloadClasses": {
+		"ShareHooks": "includes/Share.php"
+	},
+	"AvailableRights": [
+		"viewsharelinks"
+	],
+	"config": {
+		"ShareEmail": {
+			"description": "Enable share via email link in the sidebar?",
+			"descriptionmsg": "share-email-desc",
+			"public": true,
+			"value": false
+		},
+		"ShareLinkedIn": {
+			"description": "Enable share to LinkedIn link in the sidebar?",
+			"descriptionmsg": "share-linkedin-desc",
+			"public": true,
+			"value": false
+		},
+		"ShareReddit": {
+			"description": "Enable share to Reddit link in the sidebar?",
+			"descriptionmsg": "share-reddit-desc",
+			"public": true,
+			"value": false
+		},
+		"ShareTumblr": {
+			"description": "Enable share to Tumblr link in the sidebar?",
+			"descriptionmsg": "share-tumblr-desc",
+			"public": true,
+			"value": false
+		},
+		"ShareTwitter": {
+			"description": "Enable share to Twitter link in the sidebar?",
+			"descriptionmsg": "share-twitter-desc",
+			"public": true,
+			"value": true
+		},
+		"ShareFacebook": {
+			"description": "Enable share to Facebook link in the sidebar?",
+			"descriptionmsg": "share-facebook-desc",
+			"public": true,
+			"value": true
+		},
+		"ShareUseBasicButtons": {
+			"description": "Use Basic Buttons (read README for more information)?",
+			"descriptionmsg": "share-sidebar-basicbuttons",
+			"public": true,
+			"value": false
+		},
+		"ShareUsePlainLinks": {
+			"description": "Use only plain links in the sidebar?",
+			"descriptionmsg": "share-sidebar-plainlinks",
+			"public": true,
+			"value": true
+		}
+	},
+	"DefaultUserOptions": {
+		"sharesidebar": 0
+	},
+	"GroupPermissions": {
+		"*": {
+			"viewsharelinks": true
+		},
+		"user": {
+			"viewsharelinks": true
+		}
+	},
+	"Hooks": {
+		"GetPreferences": "ShareHooks::onGetPreferences",
+		"SidebarBeforeOutput": "ShareHooks::onSidebarBeforeOutput"
+	},
+	"MessagesDirs": {
+		"Share": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

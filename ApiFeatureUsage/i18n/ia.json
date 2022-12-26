@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apifeatureusage": "Uso de functiones API",
+	"apifeatureusage-desc": "Obtener un summario de usos de functiones API registrate pro un agente usator",
+	"apifeatureusage-elasticsearch-error": "Error de Elasticsearch: $1",
+	"apifeatureusage-legend": "Uso de functiones API",
+	"apifeatureusage-agent-label": "Agente usator:",
+	"apifeatureusage-startdate-label": "Data de initio:",
+	"apifeatureusage-enddate-label": "Data de fin:",
+	"apifeatureusage-submit": "Obtener datos",
+	"apifeatureusage-no-indexes": "Nulle datos es disponibile pro le periodo specificate.",
+	"apifeatureusage-missing-indexes": "Nulle datos es disponibile pro un parte del periodo specificate.",
+	"apifeatureusage-warnings": "Aviso: $1",
+	"apifeatureusage-column-feature": "Function",
+	"apifeatureusage-column-date": "Data",
+	"apifeatureusage-column-uses": "Usos",
+	"apifeatureusage-deprecation-help": "Usa [[Special:ApiFeatureUsage]] pro vider le uso de functiones obsolescente in tu application."
+}

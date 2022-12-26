@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Markos90",
+			"Melos",
+			"Pippinu",
+			"Sarvaturi"
+		]
+	},
+	"edituser": "Cancia utenti",
+	"edituser-desc": "Pirmetti a l'utenti chî pirmissi nicissarî di canciari li prifirenzi di l'àutri utenti",
+	"edituser-username": "Nomu utenti:",
+	"edituser-dosearch": "Arricerca",
+	"edituser-nouser": "L’utenti «$1» nun esisti.",
+	"edituser-exempt": "L’utenti «$1» nun si pò canciari.",
+	"right-edituser": "Canciari li prifirenzi di l'àutri utenti",
+	"right-edituser-exempt": "L'àutri nun ponnu canciari li sò prifirenzi",
+	"action-edituser": "canciari li prifirenzi di l'àutri utenti",
+	"action-edituser-exempt": "canciari li prifirenzi di st'utenti"
+}

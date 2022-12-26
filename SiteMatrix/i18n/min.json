@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Iwan Novirion"
+		]
+	},
+	"sitematrix-desc": "Manampilan [[Special:SiteMatrix|daftar proyek wiki Wikimedia]]",
+	"sitematrix-language": "Bahaso",
+	"sitematrix-project": "Namo proyek, pautan interproyek jo pautan interwiki",
+	"sitematrix-other-projects": "Proyek lain",
+	"sitematrix-total": "'''Jumlah total: $1'''",
+	"sitematrix-sitetotal": "Total",
+	"sitematrix-private": "privat",
+	"sitematrix-fishbowl": "indak buliah disuntiang"
+}

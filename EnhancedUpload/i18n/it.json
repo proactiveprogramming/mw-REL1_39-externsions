@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"enhancedupload-attachments-add-new-media-button-title": "Aggiungi nuovi file al wiki",
+	"enhancedupload-attachments-tag-grid-remove-title": "Rimuovi",
+	"enhancedupload-attachments-confirm-remove": "Rimuovi il file \"$1\" dall'elenco?"
+}

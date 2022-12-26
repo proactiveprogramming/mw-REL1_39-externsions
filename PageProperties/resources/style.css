@@ -1,0 +1,218 @@
+/* stylelint-disable selector-max-id */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable color-named */
+
+.ItemWidget {
+	padding: 12px 0;
+	display: block;
+}
+
+.oo-ui-fieldLayout.oo-ui-labelElement.ItemWidget {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.InnerItemWidget {
+	padding-bottom: 8px;
+	display: block;
+}
+
+.mw-prefs-buttons {
+	z-index: 10;
+}
+
+.pageproperties_dynamictable {
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.pageproperties_dynamictable label {
+	display: inline;
+}
+
+.pageproperties_dynamictable_key_cell {
+	/* stylelint-disable-next-line declaration-property-unit-disallowed-list */
+	width: 50%;
+}
+
+.pageproperties_dynamictable_key_cell,
+.pageproperties_dynamictable_value_cell,
+.pageproperties_dynamictable_cancel_cell {
+	padding: 2px;
+}
+
+.pageproperties_dynamictable_row {
+	vertical-align: top;
+}
+
+.pageproperties_dynamictable_row .oo-ui-fieldLayout:before,
+.oo-ui-fieldLayout:after {
+	display: inline;
+}
+
+.oo-ui-comboBoxInputWidget-field {
+	/* border-spacing: 0; */
+}
+
+.pageproperties_dynamictable td {
+	padding-top: 4px;
+}
+
+.pageproperties-datatable tr td {
+	cursor: pointer;
+}
+
+.pageproperties-datatable-left {
+	float: left;
+}
+
+.pageproperties-datatable-right {
+	float: right;
+}
+
+#semantic-properties-wrapper .oo-ui-panelLayout-expanded {
+	position: relative;
+}
+
+#semantic-properties-wrapper .oo-ui-actionFieldLayout-button,
+.pageproperties-ooui-window .oo-ui-actionFieldLayout-button {
+	vertical-align: top;
+}
+
+#semantic-properties-wrapper [ class*='inputName-mw.widgets.DateInputWidget' ] {
+	max-width: 24em;
+}
+
+#semantic-properties-wrapper .PanelProperties {
+	min-height: 160px;
+	overflow-x: hidden;
+}
+
+.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-messageWidget-showClose {
+	padding-right: 56px;
+}
+
+.oo-ui-messageWidget.oo-ui-messageWidget-block > .oo-ui-messageWidget-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.pageproperties-ooui-window {
+	z-index: 10000;
+}
+
+#semantic-properties-wrapper .oo-ui-labelElement-label {
+	display: inline;
+}
+
+#import-wrapper .oo-ui-panelLayout-expanded {
+	position: relative;
+}
+
+#import-wrapper .oo-ui-layout {
+	display: block;
+}
+
+#import-wrapper .oo-ui-menuLayout-content {
+	display: block;
+	position: relative;
+}
+
+.pageproperties-import-dialog .oo-ui-selectWidget {
+	display: table;
+	width: 100%;
+}
+
+.pageproperties-import-dialog .oo-ui-selectWidget .oo-ui-menuOptionWidget {
+	display: table-row;
+}
+
+.pageproperties-import-dialog .oo-ui-selectWidget .oo-ui-menuOptionWidget .oo-ui-labelElement-label {
+	display: table-cell;
+	padding: 8px;
+}
+
+.pageproperties-import-dialog .oo-ui-selectWidget .oo-ui-menuOptionWidget .oo-ui-labelElement-label.right {
+	text-align: right;
+	color: gray;
+}
+
+.pageproperties-import-toolbar-action-button {
+	margin-right: 0;
+}
+
+.pageproperties-import-toolbar-action-button .oo-ui-buttonElement-button {
+	border: 0;
+	/* stylelint-disable-next-line declaration-no-important */
+	border-width: 0 !important;
+}
+
+.pageproperties-import-dialog .oo-ui-pageLayout {
+	font-family: monospace;
+	white-space: pre-wrap;
+	background: #f7f7f7;
+	padding: 8px;
+	font-size: 1.1em;
+}
+
+.pageproperties-import-saved-content {
+	height: 280px;
+	overflow-y: auto;
+	background: #f7f7f7;
+	padding: 8px;
+}
+
+.oo-ui-bookletLayout-stackLayout > .oo-ui-panelLayout.pageproperties-forms-fields-panel {
+	padding: 0;
+}
+
+.pageproperties-forms-fields-actionwidget {
+	background-color: #f5f5f5;
+	border-bottom: 1px dotted #aaa;
+	margin-top: 0;
+	padding: 0;
+}
+
+.pageproperties-ooui-window .pageproperties-forms-fields-actionwidget .oo-ui-actionFieldLayout-button {
+	vertical-align: middle;
+}
+
+.pageproperties-forms-fields-contentframe {
+	padding: 16px 18px 18px;
+}
+
+#import-datatable td {
+	vertical-align: top;
+}
+
+#pageproperties-forms-datatable-dialog .buttons-wrapper {
+	white-space: nowrap;
+}
+
+#form-section-properties .oo-ui-menuLayout-expanded {
+	position: static;
+}
+
+#form-section-properties .oo-ui-menuLayout-expanded > .oo-ui-menuLayout-menu {
+	position: static;
+}
+
+#form-section-properties .oo-ui-menuLayout-expanded > .oo-ui-menuLayout-content {
+	position: static;
+}
+
+#form-section-properties #pageproperties-import-search-widget {
+	height: 280px;
+}
+
+.PanelProperties-panel-section {
+	border: 1px solid #ccc;
+	border-top: 0;
+	border-bottom: 1px dotted #ccc;
+	background: #f8f9fa;
+}
+
+.PanelProperties-panel-section:last-child {
+	border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"similareditors-error-user-bot": "$1 사용자는 봇이므로 범위를 벗어납니다.",
+	"similareditors-error-user-no-account": "$1 사용자는 영어 위키백과에 계정이 없는 것 같습니다.",
+	"similareditors-error-user-no-edits": "$1 사용자는 영어 위키백과에서 계정(또는 범위 내 편집)이 없는 것 같습니다.",
+	"similareditors-results-user-timeline": "타임라인"
+}

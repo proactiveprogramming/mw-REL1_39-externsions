@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Filzstift"
+		]
+	},
+	"bs-insertmagic-end": "Definiert explizit das Ende einer Seite und verhindert damit das Entfernen von schliessenden Leerschlägen."
+}

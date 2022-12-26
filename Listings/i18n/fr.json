@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"McDutchie",
+			"Urhixidur",
+			"Verdy p"
+		]
+	},
+	"listings-desc": "Ajouter les balises pour lister les emplacements",
+	"listings-unknown": "Destination inconnue",
+	"listings-phone": "tél.",
+	"listings-phone-symbol": "☎",
+	"listings-fax": "fax",
+	"listings-email": "courriel",
+	"listings-tollfree": "gratuit",
+	"listings-checkin": "Arrivée : $1",
+	"listings-checkout": "Départ : $1",
+	"listings-position": "situation: $1"
+}

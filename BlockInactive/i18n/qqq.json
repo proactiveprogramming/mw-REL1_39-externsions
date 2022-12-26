@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Robby",
+			"Shirayuki",
+			"Umherirrender",
+			"WikiWorks team",
+			"孟天皓"
+		]
+	},
+	"blockinactive-desc": "{{desc|name=BlockInactive|url=https://www.mediawiki.org/wiki/Extension:BlockInactive}}",
+	"blockinactive-special-intro": "Special page intro text",
+	"blockinactive": "Special page title",
+	"blockinactive-table-username": "username column\n{{identical|Username}}",
+	"blockinactive-table-userid": "userid column",
+	"blockinactive-table-inactivetime": "inactivetime column",
+	"blockinactive-table-emailsent": "emailsent column",
+	"blockinactive-table-actions": "actions column\n{{identical|Action}}",
+	"blockinactive-action-block": "block action\n{{identical|Block}}",
+	"blockinactive-config-threshold": "threshold setting",
+	"blockinactive-config-daysblock": "daysblock setting",
+	"blockinactive-config-warningdaysleft": "warningdaysleft setting",
+	"blockinactive-config-mail-subject": "Subject for account expiration warning email",
+	"blockinactive-config-mail-body": "Text for account expiration warning email",
+	"blockinactive-config-mail-block-subject": "Subject for account blocking warning email",
+	"blockinactive-config-mail-block-body": "Text for account blocking warning email",
+	"action-blockinactive": "{{doc-action|blockinactive}}",
+	"right-blockinactive": "{{doc-right|blockinactive}}",
+	"right-alwaysactive": "{{doc-right|alwaysactive}}",
+	"action-alwaysactive": "{{doc-action|alwaysactive}}"
+}

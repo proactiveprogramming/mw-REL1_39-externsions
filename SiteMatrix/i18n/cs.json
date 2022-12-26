@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Danny B.",
+			"Li-sung",
+			"Matěj Grabovský",
+			"Mormegil",
+			"Patriccck",
+			"לערי ריינהארט"
+		]
+	},
+	"sitematrix-desc": "Zobrazuje [[Special:SiteMatrix|seznam projektů nadace Wikimedia]]",
+	"sitematrix-language": "Jazyk",
+	"sitematrix-project": "Jméno projektu, meziprojektový odkaz a mezijazykový odkaz",
+	"sitematrix-other-projects": "Ostatní projekty",
+	"sitematrix-other-projects-language": "Jazyk",
+	"sitematrix-total": "'''Celkový počet: $1'''",
+	"sitematrix-sitetotal": "Celkem",
+	"sitematrix-closed": "bez přístupu k editaci, plný přístup ke čtení",
+	"sitematrix-private": "čtení i editace omezeno",
+	"sitematrix-fishbowl": "editování omezeno, plný přístup ke čtení",
+	"sitematrix-nonglobal": "veřejná, ale vyžadována registrace"
+}

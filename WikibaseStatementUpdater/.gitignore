@@ -1,0 +1,5 @@
+vendor/
+update-*.sh
+node_modules/
+/.eslintcache
+composer.lock

@@ -1,0 +1,138 @@
+@import '../../lib/wikimedia-ui-base/wikimedia-ui-base.less';
+@import '../../utils/mixins';
+
+.mw-ge-recommendedImage {
+	position: relative;
+
+	&.ve-ce-mwBlockImageNode {
+		margin-bottom: 16px;
+		max-width: 500px;
+	}
+
+	.mw-ge-recommendedImage-loading-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background-color: @wmui-color-base80;
+		transition: background-color 300ms ease-out;
+		pointer-events: none;
+
+		&--image-shown {
+			background-color: transparent;
+		}
+	}
+
+	&-imageWrapper {
+		position: relative;
+		display: block;
+		min-height: 4em; // make sure the details button doesn't cover the entire image
+		text-align: center;
+	}
+
+	.mw-ge-recommendedImage-detailsButton {
+		pointer-events: auto;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 8px;
+		color: @wmui-color-base100;
+		background: rgba( 0, 0, 0, 0.5 );
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		.rel-font-size-and-line-height( @parentFontSize: 16px, @targetFontSize: 13px, @targetLineHeight: 19.5px );
+	}
+
+	.mw-ge-recommendedImage-detailsIcon {
+		margin-right: 8px;
+		background-size: 16px;
+		// Invert icon color from black to white
+		-webkit-filter: invert( 100% );
+		filter: invert( 100% );
+	}
+
+	.mw-ge-recommendedImageCaption-warning {
+		margin-top: 4px;
+		margin-bottom: 38px;
+		.rel-font-size-and-line-height( @parentFontSize: 16px, @targetFontSize: 14.8px, @targetLineHeight: 22px );
+	}
+
+	.mw-ge-recommendedImageCaption {
+		margin-top: 4px;
+	}
+}
+
+// Desktop styles are nested for additional specificity to win over styles set via "figure[typeof~='mw:File/Thumb'] >"
+.mw-ge-structuredTaskDesktopArticleTarget {
+	.mw-ge-recommendedImage {
+		display: flex;
+		flex-direction: column;
+		padding: 7px 8px;
+		border: 1px solid @wmui-color-base70;
+		background: @wmui-color-base100;
+
+		&:not( [ typeof~='mw:Error' ] ) > a:after {
+			content: unset;
+		}
+
+		.image {
+			.ve-ce-mwBlockImageNode-thumbimage {
+				box-sizing: border-box;
+				margin: 0;
+			}
+		}
+
+		&-detailsButton,
+		&-header,
+		.mw-ge-recommendedImageCaption {
+			.rel-font-size-and-line-height( @parentFontSize: 14px, @targetFontSize: 14px, @targetLineHeight: 20px );
+		}
+
+		&-header {
+			font-weight: bold;
+			color: @wmui-color-base10;
+			display: flex;
+			align-items: center;
+			margin-bottom: 8px;
+			justify-content: space-between;
+
+			// Override width from figure[typeof~='mw:File/Thumb'] > *:first-child > span:first-child
+			.mw-ge-recommendedImage-deleteButton:first-child {
+				width: auto;
+			}
+		}
+	}
+
+	.mw-ge-recommendedImageCaption {
+		:before {
+			content: unset;
+		}
+		border: 2px solid @wmui-color-base70;
+		padding: 0;
+		border-radius: 2px;
+
+		// Same as mobile but needs to win over figure[typeof~='mw:File/Thumb'] > figcaption
+		&--with-placeholder {
+			border-color: @wmui-color-accent50;
+			background-color: @wmui-color-accent90;
+		}
+
+		&--with-warning {
+			border-color: @wmui-color-red50;
+		}
+	}
+
+	.mw-ge-recommendedImageCaption-warning {
+		position: relative;
+		margin: 6px 0;
+		text-align: left;
+
+		.oo-ui-iconElement-icon {
+			left: 0;
+		}
+	}
+}

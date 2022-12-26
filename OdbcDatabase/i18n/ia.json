@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"odbcdatabase": "Base de datos ODBC",
+	"odbcdatabase-desc": "Controlator que usa le bibliotheca de commandos PHP <code>odbc_*</code> pro supportar le extension de datos externe",
+	"odbcdatabase-odbc-missing": "Manca functiones ODBC. Assecura te que <code>PHP:ODBC</code> es installate.",
+	"odbcdatabase-connection-error": "Error al connexion al servitor [{{1}}]: {{2}}",
+	"odbcdatabase-free-error": "Impossibile liberar le resultato ODBC",
+	"odbcdatabase-fetch-object-error": "Error al obtention del objecto: [{{1}}] {{2}}",
+	"odbcdatabase-fetch-row-error": "Error al obtention del linea: [{{1}}] {{2}}",
+	"odbcdatabase-insert-id-unsupported": "Le function insertId() non es supportate.",
+	"odbcdatabase-unknown-server-version": "Le version del servitor ODBC non es cognoscite."
+}

@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"apifeatureusage": "Usu de funciones de la API",
+	"apifeatureusage-desc": "Recibir un resume de los usos rexistraos de les funciones de la API pa un axente d'usuariu.",
+	"apifeatureusage-elasticsearch-error": "Error de Elasticsearch: $1",
+	"apifeatureusage-legend": "Usu de funciones de la API",
+	"apifeatureusage-agent-label": "Axente d'usuariu:",
+	"apifeatureusage-startdate-label": "Data d'aniciu:",
+	"apifeatureusage-enddate-label": "Data final:",
+	"apifeatureusage-submit": "Recibir datos",
+	"apifeatureusage-no-indexes": "Nun hai datos disponibles pal intervalu de feches especificáu.",
+	"apifeatureusage-missing-indexes": "Nun hai datos disponibles pa una parte del intervalu de feches especificáu.",
+	"apifeatureusage-warnings": "Avisu: $1",
+	"apifeatureusage-column-feature": "Carauterística",
+	"apifeatureusage-column-date": "Data",
+	"apifeatureusage-column-uses": "Usos",
+	"apifeatureusage-deprecation-help": "Usa [[Special:ApiFeatureUsage]] pa ver l'usu de carauterístiques anticuaes que fai la to aplicación."
+}

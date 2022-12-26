@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aotake",
+			"Azeha",
+			"Fievarsty",
+			"Fryed-peach",
+			"Shirayuki"
+		]
+	},
+	"stalkerlog-desc": "利用者のログインとログアウトの[[Special:Log/stalkerlog|記録]]を追加する",
+	"stalkerlog-log-login": "ログインしました。",
+	"stalkerlog-log-logout": "ログアウトしました。",
+	"stalkerlog-log-type": "利用者認証記録",
+	"stalkerlog-log-text": "これは、利用者のログインとログアウトの記録です。",
+	"action-stalkerlog-view-log": "利用者のログイン/ログアウトの記録の閲覧",
+	"right-stalkerlog-view-log": "利用者のログイン/ログアウトの記録を閲覧"
+}

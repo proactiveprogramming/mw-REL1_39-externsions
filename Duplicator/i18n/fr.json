@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crochet.david",
+			"Gomoko",
+			"Grondin",
+			"IAlex",
+			"Pols12",
+			"Verdy p"
+		]
+	},
+	"duplicator": "Dupliquer une page",
+	"duplicator-desc": "Créer des [[Special:Duplicate|copies distinctes de pages]] avec l’historique complet des modifications.",
+	"duplicator-toolbox": "Dupliquer cette page",
+	"duplicator-header": "Cette page permet la duplication complète d’une page, en créant deux versions indépendantes de l’historique complet. Il sert par exemple à séparer une page en deux.",
+	"duplicator-options": "Options",
+	"duplicator-source": "Source :",
+	"duplicator-dest": "Destination :",
+	"duplicator-dotalk": "Dupliquer la page de discussion (s’il y en a une)",
+	"duplicator-dosubpages": "Dupliquer les sous-pages (s’il y en a)",
+	"duplicator-dohistory": "Dupliquer l’historique complet de la page",
+	"duplicator-submit": "Dupliquer",
+	"duplicator-summary": "Copié depuis [[$1]], version [[$2]]",
+	"duplicator-success": "[[$1]] a été copié vers [[$2]].",
+	"duplicator-success-revisions": "$1 {{PLURAL:$1|version a été copiée|versions ont été copiées}}.",
+	"duplicator-success-talknotcopied": "La page de discussion n’a pas pu être copiée.",
+	"duplicator-failed": "La page n’a pas pu être dupliquée.\nUne erreur inconnue s’est produite.",
+	"duplicator-failed-toolong": "[[$1]] n’a pas été dupliqué. Le titre de destination est trop long.",
+	"duplicator-failed-dest-exists": "[[$1]] n’a pas été dupliqué. La destination [[$2]] existe déjà.",
+	"duplicator-source-invalid": "Veuillez donner un titre valide pour la page source.",
+	"duplicator-source-notexist": "[[$1]] n’existe pas. Veuillez donner le titre d’une page existante.",
+	"duplicator-dest-invalid": "Veuillez donner un titre valide pour la page de destination.",
+	"duplicator-dest-exists": "[[$1]] existe déjà. Veuillez donner un titre de page de destination qui n’existe pas encore.",
+	"action-duplicate": "dupliquer des pages",
+	"right-duplicate": "Dupliquer des pages"
+}

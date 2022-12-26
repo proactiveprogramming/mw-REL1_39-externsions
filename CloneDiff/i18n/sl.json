@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"clonediff-import": "Uvozi",
+	"clonediff-continue": "Nadaljuj",
+	"right-clonediff": "Zamenjevanje nizov v vsem vikiju",
+	"action-clonediff": "zamenjevati nizov v vsem vikiju"
+}

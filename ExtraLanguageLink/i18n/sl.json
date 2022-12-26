@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"extralanguagelink-param-lang": "jezik",
+	"extralanguagelink-param-title": "naslov",
+	"extralanguagelink-badtitle": "Naslova strani »$1« ni mogoče razčleniti."
+}

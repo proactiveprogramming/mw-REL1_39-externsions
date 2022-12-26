@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"Derbeth",
+			"Mateon1",
+			"Rail",
+			"Railfail536",
+			"Sp5uhe",
+			"Woytecr"
+		]
+	},
+	"sitematrix": "Spis wiki",
+	"sitematrix-summary": "Ta strona specjalna wymienia wszystkie wiki w obrębie farmy.",
+	"sitematrix-desc": "Pokazuje [[Special:SiteMatrix|spis wiki]]",
+	"sitematrix-language": "Język",
+	"sitematrix-project": "Nazwa projektu, link do projektu oraz link interwiki",
+	"sitematrix-others": "Inne projekty",
+	"sitematrix-other-projects": "Projekt",
+	"sitematrix-other-projects-language": "Język",
+	"sitematrix-total": "'''Ogólna liczba: $1'''",
+	"sitematrix-sitetotal": "Łącznie",
+	"sitematrix-closed": "brak dostępu do zapisu, pełny dostęp do odczytu",
+	"sitematrix-private": "dostęp do odczytu i zapisu jest ograniczony",
+	"sitematrix-fishbowl": "dostęp do zapisu ograniczony, pełny dostęp do odczytu",
+	"sitematrix-nonglobal": "publiczna, ale wymagana rejestracja"
+}

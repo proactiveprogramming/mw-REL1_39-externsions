@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"googleanalyticstoppages-desc": "אספקת רשימת דפים מובילים עם שימוש בנתוני Google Analytics",
+	"apihelp-googlepagestatsupdate-param-key": "ערך של [[mw:Special:MyLanguage/Manual:$wgSecretKey|$wgSecretKey]]",
+	"apihelp-googlepagestatsupdate-description": "עדכון רשימת הדפים המובילים (מופעל על־ידי נתונים המסופקים על־ידי Google Analytics).",
+	"apihelp-googlepagestatsupdate-summary": "עדכון רשימת הדפים המובילים (מופעל על־ידי נתונים המסופקים על־ידי Google Analytics)."
+}

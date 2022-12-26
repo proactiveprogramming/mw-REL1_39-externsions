@@ -1,0 +1,298 @@
+{
+	"name": "Liquid Threads",
+	"version": "2.3-alpha",
+	"author": [
+		"David McCabe",
+		"Andrew Garrett"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:LiquidThreads",
+	"descriptionmsg": "lqt-desc",
+	"type": "other",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"namespaces": [
+		{
+			"id": 90,
+			"constant": "NS_LQT_THREAD",
+			"name": "Thread"
+		},
+		{
+			"id": 91,
+			"constant": "NS_LQT_THREAD_TALK",
+			"name": "Thread_talk"
+		},
+		{
+			"id": 92,
+			"constant": "NS_LQT_SUMMARY",
+			"name": "Summary"
+		},
+		{
+			"id": 93,
+			"constant": "NS_LQT_SUMMARY_TALK",
+			"name": "Summary_talk"
+		}
+	],
+	"GroupPermissions": {
+		"user": {
+			"lqt-split": true,
+			"lqt-merge": true,
+			"lqt-react": true
+		}
+	},
+	"DefaultUserOptions": {
+		"lqtnotifytalk": false,
+		"lqtdisplaydepth": 5,
+		"lqtdisplaycount": 25,
+		"lqt-watch-threads": true
+	},
+	"AvailableRights": [
+		"lqt-split",
+		"lqt-merge",
+		"lqt-react"
+	],
+	"SpecialPages": {
+		"MoveThread": "SpecialMoveThread",
+		"NewMessages": "SpecialNewMessages",
+		"SplitThread": "SpecialSplitThread",
+		"MergeThread": "SpecialMergeThread"
+	},
+	"JobClasses": {
+		"synchroniseThreadArticleData": "SynchroniseThreadArticleDataJob"
+	},
+	"LogTypes": [
+		"liquidthreads"
+	],
+	"LogNames": {
+		"liquidthreads": "lqt-log-name"
+	},
+	"LogHeaders": {
+		"liquidthreads": "lqt-log-header"
+	},
+	"LogActionsHandlers": {
+		"liquidthreads/move": "LqtLogFormatter::formatLogEntry",
+		"liquidthreads/split": "LqtLogFormatter::formatLogEntry",
+		"liquidthreads/merge": "LqtLogFormatter::formatLogEntry",
+		"liquidthreads/subjectedit": "LqtLogFormatter::formatLogEntry",
+		"liquidthreads/resort": "LqtLogFormatter::formatLogEntry",
+		"liquidthreads/signatureedit": "LqtLogFormatter::formatLogEntry"
+	},
+	"APIModules": {
+		"feedthreads": {
+			"class": "MediaWiki\\Extension\\LiquidThreads\\Api\\ApiFeedLQTThreads",
+			"services": [
+				"LinkRenderer",
+				"WikiPageFactory"
+			]
+		},
+		"threadaction": "MediaWiki\\Extension\\LiquidThreads\\Api\\ApiThreadAction"
+	},
+	"APIListModules": {
+		"threads": "MediaWiki\\Extension\\LiquidThreads\\Api\\ApiQueryLQTThreads"
+	},
+	"MessagesDirs": {
+		"LiquidThreads": [
+			"i18n",
+			"i18n/api"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"LiquidThreadsMagic": "i18n/LiquidThreads.magic.php",
+		"LiquidThreadsNamespaces": "i18n/Lqt.namespaces.php",
+		"LiquidThreadsAlias": "i18n/Lqt.alias.php"
+	},
+	"AutoloadClasses": {
+		"IndividualThreadHistoryView": "includes/Pages/IndividualThreadHistoryView.php",
+		"LqtDeletionController": "includes/LqtDeletionController.php",
+		"LqtDiscussionPager": "includes/Pages/LqtDiscussionPager.php",
+		"LqtDispatch": "includes/LqtDispatch.php",
+		"LqtLogFormatter": "includes/LqtLogFormatter.php",
+		"LqtNewMessagesPager": "includes/Pages/LqtNewMessagesPager.php",
+		"LqtParserFunctions": "includes/LqtParserFunctions.php",
+		"LqtView": "includes/LqtView.php",
+		"NewMessages": "includes/NewMessages.php",
+		"NewUserMessagesView": "includes/Pages/NewUserMessagesView.php",
+		"SpecialMergeThread": "includes/Pages/SpecialMergeThread.php",
+		"SpecialMoveThread": "includes/Pages/SpecialMoveThread.php",
+		"SpecialNewMessages": "includes/Pages/SpecialNewMessages.php",
+		"SpecialSplitThread": "includes/Pages/SpecialSplitThread.php",
+		"SummaryPageView": "includes/Pages/SummaryPageView.php",
+		"SynchroniseThreadArticleDataJob": "includes/SynchroniseThreadArticleDataJob.php",
+		"TalkpageHeaderView": "includes/Pages/TalkpageHeaderView.php",
+		"TalkpageHistoryPager": "includes/Pages/TalkpageHistoryPager.php",
+		"TalkpageHistoryView": "includes/Pages/TalkpageHistoryView.php",
+		"TalkpageView": "includes/Pages/TalkpageView.php",
+		"Thread": "includes/Thread.php",
+		"ThreadActionPage": "includes/Pages/ThreadActionPage.php",
+		"ThreadDiffView": "includes/Pages/ThreadDiffView.php",
+		"ThreadHistoricalRevisionView": "includes/Pages/ThreadHistoricalRevisionView.php",
+		"ThreadHistoryListingView": "includes/Pages/ThreadHistoryListingView.php",
+		"ThreadHistoryPager": "includes/ThreadHistoryPager.php",
+		"ThreadPermalinkView": "includes/Pages/ThreadPermalinkView.php",
+		"ThreadProtectionFormView": "includes/Pages/ThreadProtectionFormView.php",
+		"ThreadRevision": "includes/ThreadRevision.php",
+		"ThreadWatchView": "includes/Pages/ThreadWatchView.php",
+		"Threads": "includes/Threads.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\LiquidThreads\\": "includes/"
+	},
+	"ResourceModules": {
+		"ext.liquidThreads": {
+			"styles": [
+				"lqt.css",
+				"jquery/jquery.thread_collapse.css",
+				"lqt.dialogs.css"
+			],
+			"scripts": [
+				"lqt.js",
+				"jquery/jquery.thread_collapse.js"
+			],
+			"dependencies": [
+				"jquery.ui",
+				"mediawiki.action.edit.preview",
+				"mediawiki.api",
+				"user.options",
+				"mediawiki.api",
+				"mediawiki.util"
+			],
+			"messages": [
+				"lqt-ajax-updated",
+				"lqt-ajax-update-link",
+				"watch",
+				"unwatch",
+				"lqt-thread-link-url",
+				"lqt-thread-link-title",
+				"lqt-thread-link-copy",
+				"lqt-sign-not-necessary",
+				"lqt-summary-sign-not-necessary",
+				"lqt-marked-as-read-placeholder",
+				"lqt-email-undo",
+				"lqt-change-subject",
+				"lqt-save-subject",
+				"lqt-ajax-no-subject",
+				"lqt-ajax-invalid-subject",
+				"lqt-save-subject-error-unknown",
+				"lqt-cancel-subject-edit",
+				"lqt-drag-activate",
+				"lqt-drag-drop-zone",
+				"lqt-drag-confirm",
+				"lqt-drag-reparent",
+				"lqt-drag-split",
+				"lqt-drag-setsortkey",
+				"lqt-drag-bump",
+				"lqt-drag-save",
+				"lqt-drag-reason",
+				"lqt-drag-subject",
+				"lqt-edit-signature",
+				"lqt-preview-signature",
+				"lqt_contents_title",
+				"lqt-empty-text",
+				"lqt-pagechange-editformopen"
+			]
+		},
+		"ext.liquidThreads.newMessages": {
+			"scripts": [
+				"newmessages.js"
+			],
+			"dependencies": [
+				"ext.liquidThreads"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "LiquidThreads"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onParserFirstCallInit",
+		"CanonicalNamespaces": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onCanonicalNamespaces",
+		"MediaWikiPerformAction": "LqtDispatch::tryPage",
+		"SkinTemplateNavigation::Universal": [
+			"LqtDispatch::onSkinTemplateNavigation",
+			"MediaWiki\\Extension\\LiquidThreads\\Hooks::onSkinTemplateNavigation"
+		],
+		"PageContentLanguage": "LqtDispatch::onPageContentLanguage",
+		"OldChangesListRecentChangesLine": "MediaWiki\\Extension\\LiquidThreads\\Hooks::customizeOldChangesList",
+		"GetNewMessagesAlert": "MediaWiki\\Extension\\LiquidThreads\\Hooks::setNewtalkHTML",
+		"ChangesListSpecialPageQuery": "MediaWiki\\Extension\\LiquidThreads\\Hooks::beforeWatchlist",
+		"ArticleEditUpdateNewTalk": "MediaWiki\\Extension\\LiquidThreads\\Hooks::updateNewtalkOnEdit",
+		"GetPreferences": "MediaWiki\\Extension\\LiquidThreads\\Hooks::getPreferences",
+		"XmlDumpWriterOpenPage": "MediaWiki\\Extension\\LiquidThreads\\Hooks::dumpThreadData",
+		"ModifyExportQuery": "MediaWiki\\Extension\\LiquidThreads\\Hooks::modifyExportQuery",
+		"ImportHandlePageXMLTag": "MediaWiki\\Extension\\LiquidThreads\\Hooks::handlePageXMLTag",
+		"AfterImportPage": "MediaWiki\\Extension\\LiquidThreads\\Hooks::afterImportPage",
+		"ArticleDeleteComplete": "LqtDeletionController::onArticleDeleteComplete",
+		"RevisionUndeleted": "LqtDeletionController::onRevisionUndeleted",
+		"ArticleUndelete": "LqtDeletionController::onArticleUndelete",
+		"ArticleConfirmDelete": "LqtDeletionController::onArticleConfirmDelete",
+		"ArticleDelete": "LqtDeletionController::onArticleDelete",
+		"PageMoveComplete": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onPageMoveComplete",
+		"MovePageIsValidMove": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onMovePageIsValidMove",
+		"ShowSearchHitTitle": "MediaWiki\\Extension\\LiquidThreads\\Hooks::customiseSearchResultTitle",
+		"SpecialSearchProfiles": "MediaWiki\\Extension\\LiquidThreads\\Hooks::customiseSearchProfiles",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onLoadExtensionSchemaUpdates",
+		"RenameUserSQL": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onUserRename",
+		"UserMergeAccountFields": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onUserMergeAccountFields",
+		"EditPageGetCheckboxesDefinition": "MediaWiki\\Extension\\LiquidThreads\\Hooks::editCheckBoxes",
+		"PageSaveComplete": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onPageSaveComplete",
+		"UserIsBlockedFrom": "MediaWiki\\Extension\\LiquidThreads\\Hooks::userIsBlockedFrom",
+		"TitleGetRestrictionTypes": "MediaWiki\\Extension\\LiquidThreads\\Hooks::getProtectionTypes",
+		"SetupNewUserMessageSubject": "MediaWiki\\Extension\\LiquidThreads\\Hooks::setupNewUserMessageSubject",
+		"SetupNewUserMessageBody": "MediaWiki\\Extension\\LiquidThreads\\Hooks::setupNewUserMessageBody",
+		"APIQueryAfterExecute": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onAPIQueryAfterExecute",
+		"InfoAction": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onInfoAction",
+		"SpecialPage_initList": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onSpecialPage_initList",
+		"OutputPageParserOutput": "LqtParserFunctions::onAddParserOutput",
+		"OutputPageBeforeHTML": "LqtParserFunctions::onAddHTML",
+		"getUserPermissionsErrors": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onGetUserPermissionsErrors",
+		"PreferencesGetIcon": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onPreferencesGetIcon"
+	},
+	"callback": "MediaWiki\\Extension\\LiquidThreads\\Hooks::onRegistration",
+	"config": {
+		"LqtPages": {
+			"value": []
+		},
+		"LqtTalkPages": {
+			"value": true
+		},
+		"LqtEnotif": {
+			"value": true
+		},
+		"ThreadActionsNoBump": {
+			"value": [
+				3,
+				10,
+				12,
+				2,
+				14
+			]
+		},
+		"LiquidThreadsMigrate": {
+			"value": false
+		},
+		"LiquidThreadsDefaultPageLimit": {
+			"value": 20
+		},
+		"LiquidThreadsAllowUserControl": {
+			"value": true
+		},
+		"LiquidThreadsAllowUserControlNamespaces": {
+			"value": null
+		},
+		"LiquidThreadsAllowEmbedding": {
+			"value": true
+		},
+		"LqtNamespaces": {
+			"value": []
+		},
+		"LiquidThreadsShowBumpCheckbox": {
+			"value": false
+		},
+		"LiquidThreadsEnableNewMessages": {
+			"value": true
+		}
+	},
+	"manifest_version": 2
+}

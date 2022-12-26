@@ -1,0 +1,38 @@
+{
+	"name": "DiscussionThreading",
+	"version": "1.6.1",
+	"author": [
+		"Jack D. Pond",
+		"Daniel Brice"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:DiscussionThreading",
+	"descriptionmsg": "discussionthreading-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"DiscussionThreading": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"DiscussionThreading": "src/DiscussionThreading.php"
+	},
+	"Hooks": {
+		"EditPage::showEditForm:initial": [
+			"DiscussionThreading::efDiscussionThread",
+			"DiscussionThreading::efDiscussionThreadEdit"
+		],
+		"EditPage::attemptSave": "DiscussionThreading::onAttemptSave",
+		"AlternateEdit": "DiscussionThreading::efDiscussionThreadEdit",
+		"SkinEditSectionLinks": "DiscussionThreading::onSkinEditSectionLinks"
+	},
+	"config": {
+		"SectionThreadingOn": {
+			"value": true
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"menueditor-ui-menu-keyword-label": "מילת מפתח",
+	"menueditor-ui-menu-keyword-label-edit": "עריכת מילת מפתח",
+	"menueditor-ui-menu-keyword-help": "אחת מ'''מילות המפתח''' הזמינות, שתציג כלי מתאים",
+	"menueditor-ui-edit-node-label": "עריכת צומת",
+	"menueditor-ui-form-field-keyword": "מילת מפתח",
+	"menueditor-ui-form-field-text": "טקסט או מפתח הודעה",
+	"menueditor-ui-form-field-target": "יעד הקישור",
+	"menueditor-ui-form-field-label": "תווית הקישור",
+	"menueditor-ui-dialog-action-done": "בוצע",
+	"menueditor-ui-dialog-action-cancel": "ביטול",
+	"menueditor-ui-node-type-selector-label": "סוג צומת",
+	"menueditor-ui-submit": "שמירה",
+	"menueditor-ui-cancel": "ביטול",
+	"menueditor-ui-redlink-notice": "התפריט הזה עדיין לא קיים!",
+	"menueditor-action-menueditsource": "עריכת קוד מקור",
+	"menueditor-action-menuedit": "עריכה",
+	"menueditor-ui-dialog-title": "עריכת רכיב",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "עריכת מילת מפתח",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "מילת מפתח",
+	"menueditor-toolbar-submit": "שמירת השינויים",
+	"menueditor-toolbar-cancel": "ביטול עריכה",
+	"menueditor-toolbar-add": "הוסף רכיב חדש"
+}

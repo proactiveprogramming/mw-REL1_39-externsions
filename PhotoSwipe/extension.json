@@ -1,0 +1,137 @@
+{
+	"name": "PhotoSwipe",
+	"version": "1.0.0",
+	"author": [
+		"Jason Khanlar"
+	],
+	"descriptionmsg": "photoswipe-desc",
+	"license-name": "GPL-3.0-or-later",
+	"load_composer_autoloader": true,
+	"requires": {
+		"MediaWiki": ">= 1.37.1"
+	},
+	"type": "parserhook",
+	"url": "https://www.mediawiki.org/wiki/Extension:PhotoSwipe",
+	"AutoloadClasses": {
+		"PhotoSwipe": "includes/PhotoSwipe.php"
+	},
+	"ConfigRegistry": {
+		"PhotoSwipe": "GlobalVarConfig::newInstance"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "PhotoSwipe::onParserFirstCallInit"
+	},
+	"MessagesDirs": {
+		"PhotoSwipe": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "PhotoSwipe/modules"
+	},
+	"ResourceModules": {
+		"ext.photoSwipe": {
+			"localBasePath": "modules/ext.photoSwipe",
+			"remoteExtPath": "PhotoSwipe/modules/ext.photoSwipe",
+			"packageFiles": [
+				"ext.photoSwipe.js"
+			],
+			"dependencies": [
+				"js.photoswipe",
+				"js.photoswipe-lightbox",
+				"js.photoswipe-deep-zoom-plugin",
+				"js.photoswipe-dynamic-caption-plugin",
+				"js.photoswipe-video-plugin",
+				"jquery.cookie",
+				"mediawiki.util"
+			]
+		},
+		"js.photoswipe": {
+			"packageFiles": [
+				"ext.photoSwipe/lib/photoswipe.cjs.js"
+			]
+		},
+		"js.photoswipe-lightbox": {
+			"packageFiles": [
+				"ext.photoSwipe/lib/photoswipe-lightbox.cjs.js"
+			]
+		},
+		"js.photoswipe-deep-zoom-plugin": {
+			"dependencies": [
+				"js.photoswipe-lightbox"
+			],
+			"packageFiles": [
+				"ext.photoSwipe/lib/photoswipe-deep-zoom-plugin.cjs.js"
+			]
+		},
+		"js.photoswipe-dynamic-caption-plugin": {
+			"dependencies": [
+				"js.photoswipe-lightbox"
+			],
+			"packageFiles": [
+				"ext.photoSwipe/lib/photoswipe-dynamic-caption-plugin.cjs.js"
+			]
+		},
+		"js.photoswipe-video-plugin": {
+			"dependencies": [
+				"js.photoswipe-lightbox"
+			],
+			"packageFiles": [
+				"ext.photoSwipe/lib/photoswipe-video-plugin.cjs.js"
+			]
+		}
+	},
+	"config": {
+		"PhotoSwipeConfig": {
+			"value": {
+				"mode": "recommended",
+				"options": {
+					"gallery": "table.gallery",
+					"children": "a.img",
+					"thumbSelector": "a.img",
+					"pswpModule": "() => require( 'js.photoswipe' )",
+					"allowPanToNext": false,
+					"allowMouseDrag": true,
+					"wheelToZoom": true,
+					"zoom": false
+				},
+				"addBeginning": [
+					"document.querySelectorAll( 'table.gallery img' ).forEach( ( e, i ) => { if ( e.parentElement.tagName !== 'A' ) { document.querySelectorAll( 'img' )[ i ].outerHTML = `<a class='img' href='${e.src}'; data-my-size='${e.naturalWidth}x${e.naturalHeight}'>${e.outerHTML}</a>`; } } );"
+				],
+				"addEventables": [
+					"const backEasing = { in: 'cubic-bezier(0.6, -0.28, 0.7, 1)', out: 'cubic-bezier(0.3, 0, 0.32, 1.275)', inOut: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)' }",
+					"lightbox.on( 'firstUpdate', () => { lightbox.pswp.options.easing = backEasing.out; } );",
+					"lightbox.on( 'initialZoomInEnd', () => { lightbox.pswp.options.easing = backEasing.inOut; } );",
+					"lightbox.on( 'close', () => { lightbox.pswp.options.easing = backEasing.in; } );",
+					"lightbox.addFilter( 'domItemData', ( itemData, element, linkEl ) => { if ( linkEl ) { const sizeAttr = linkEl.dataset.mySize; itemData.src = linkEl.href; itemData.w = Number( sizeAttr.split( 'x' )[ 0 ] ); itemData.h = Number( sizeAttr.split( 'x' )[ 1 ] ); itemData.msrc = linkEl.dataset.thumbSrc; itemData.thumbCropped = true; } return itemData; } );"
+				],
+				"addEnd": [],
+				"plugins": {
+					"DeepZoomPlugin": {
+						"enabled": true,
+						"options": {
+							"tileSize": 256
+						}
+					},
+					"DynamicCaption": {
+						"enabled": true,
+						"options": {
+							"captionContent": ".pswp-caption-content",
+							"horizontalEdgeThreshold": 20,
+							"mobileCaptionOverlapRatio": 0.3,
+							"mobileLayoutBreakpoint": 600,
+							"type": "auto"
+						}
+					},
+					"VideoPlugin": {
+						"enabled": true,
+						"options": {}
+					}
+				}
+			},
+			"description": "Configuration for loading the PhotoSwipe JS library and plugins"
+		}
+	},
+	"manifest_version": 2
+}

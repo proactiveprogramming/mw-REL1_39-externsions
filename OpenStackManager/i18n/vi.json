@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen",
+			"NguoiDungKhongDinhDanh",
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"openstackmanager-desc": "Cho phép người dùng quản lý Nova và Swift",
+	"openstackmanager": "OpenStackManager",
+	"novakey": "Quản lý khóa SSH công khai",
+	"specialpages-group-nova": "OpenStack Nova",
+	"openstackmanager-novakey": "Khóa Nova",
+	"openstackmanager-delete": "xóa",
+	"openstackmanager-actions": "Tác vụ",
+	"openstackmanager-notloggedin": "Cần đăng nhập",
+	"openstackmanager-mustbeloggedin": "Bạn phải đăng nhập để thực hiện tác vụ này.",
+	"openstackmanager-novapublickey": "Khóa SSH công khai:",
+	"openstackmanager-prefs-novapublickey": "Khóa SSH công khai:",
+	"openstackmanager-deletekey": "Xóa khóa SSH công khai",
+	"openstackmanager-deletekeyconfirm": "Bạn có chắc chắn muốn xóa khóa ở trên?",
+	"openstackmanager-keylist": "Danh sách khóa SSH công khai",
+	"openstackmanager-addkey": "Thêm khóa SSH công khai",
+	"openstackmanager-name": "Tên",
+	"openstackmanager-keys": "Khóa",
+	"openstackmanager-deletedkey": "Đã xóa khóa.",
+	"openstackmanager-deletedkeyfailed": "Không thể xóa khóa.",
+	"openstackmanager-shellaccountname": "Tên tài khoản trên dòng lệnh của thực thể",
+	"openstackmanager-shellaccountnamehelp": "Cần nhập tên tài khoản trên dòng lệnh.\nTên phải bắt đầu với chữ a–z và chỉ được có các chữ thường a–z, số 0–9, và dấu gạch ngang “-”.",
+	"prefs-openstack": "OpenStack",
+	"prefs-openstack-keys": "Danh sách chìa khóa"
+}

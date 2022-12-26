@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"vikisemantictitle-desc": "תוסף VIKI לטיפול בדפי ויקי באמצעות ההרחבה Semantic Title",
+	"vikisemantictitle-error-displaytitle-fetch": "שגיאה באחזור נתוני כותרת התצוגה עבור הצומת: $1."
+}

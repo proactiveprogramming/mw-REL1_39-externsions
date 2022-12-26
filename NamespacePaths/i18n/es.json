@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Armando-Martin",
+			"Jakeukalane"
+		]
+	},
+	"namespacepaths-desc": "Permite poner en correspondencia rutas personalizadas de artículo con los espacios de nombres de la wiki. Por ejemplo: haciendo corresponder páginas como Help:Page en /help/Page en lugar de /wiki/Help:Page."
+}

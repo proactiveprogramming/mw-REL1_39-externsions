@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"autogallery-desc": "Dodaje nowy tryb (<code>auto</code>) do składni znacznika <code>&lt;gallery&gt;</code>"
+}

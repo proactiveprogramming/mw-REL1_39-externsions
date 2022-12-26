@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"LNDDYL",
+			"LaMagiaaa",
+			"Yfdyh000"
+		]
+	},
+	"page-creation-notif-desc": "当创建新页面时发送电子邮件通知",
+	"page-creation-notification": "当创建了一个新页面时发电子邮件给我",
+	"page-creation-email-subject": "新页面 - $1 由 $3 {{GENDER:$3|创建于}} $2",
+	"page-creation-email-body": "您好 $1，\n\n本通知来自 {{SITENAME}}，一个新页面 $2 已由用户 $3 {{Gender:$3|创建}}。\n\n您可以于此查看：\n$4\n\n该页面的文本是：\n$5\n\n通知来自您的友好的{{SITENAME}}通知系统。\n\n要更改您的电子邮件通知设置，请访问\n{{canonicalurl:{{#special:Preferences}}}}"
+}

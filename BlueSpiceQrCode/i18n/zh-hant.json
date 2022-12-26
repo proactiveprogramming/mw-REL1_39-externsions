@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly",
+			"Winston Sung"
+		]
+	},
+	"bs-qr-code-extension-description": "顯示連結至在工具列的目前頁面的 QR 碼。",
+	"bs-qr-code-title": "QR 碼",
+	"bs-qr-code-text": "掃描 QR 碼來在移動裝置上開啟此頁面",
+	"bs-qr-code-action-qr-code-title": "開啟QR碼對話框",
+	"bs-qr-code-action-qr-code-text": "QR碼",
+	"bs-qr-code-action-qr-code-dialog-title": "QR碼",
+	"bs-qr-code-action-qr-code-dialog-alt": "$1的 QR 碼",
+	"bs-qr-code-api-no-page": "參數「page」為空",
+	"apihelp-bs-qr-code-summary": "取得 QR 碼作為頁面的 base64 資料 URI",
+	"apihelp-bs-qr-code-param-revid": "用於產生固定連結的頁面之修訂 ID",
+	"apihelp-bs-qr-code-param-page": "產生 base64 資料 URI 的頁面之頁面名稱",
+	"apihelp-bs-qr-code-param-size": "QR碼尺寸",
+	"apihelp-bs-qr-code-example-bs-qr-code": "預設 API 呼叫",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "某 revid 的 API 呼叫",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "自定義 size 的 API 呼叫"
+}

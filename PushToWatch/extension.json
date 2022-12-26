@@ -1,0 +1,32 @@
+{
+	"name": "PushToWatch",
+	"version": "0.3.0",
+	"author": "cloudyks",
+	"url": "https://www.mediawiki.org/wiki/Extension:PushToWatch",
+	"descriptionmsg": "pushtowatch-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.37.0"
+	},
+	"MessagesDirs": {
+		"PushToWatch": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"PushToWatch": "src/PushToWatch.php"
+	},
+	"Hooks": {
+		"SkinAddFooterLinks": "PushToWatch::onSkinAddFooterLinks"
+	},
+	"AvailableRights": [
+		"pushtowatch"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"pushtowatch": true
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Robby"
+		]
+	},
+	"action-similareditors": "{{doc-action|similareditors}}",
+	"right-similareditors": "{{doc-right|similareditors}}",
+	"similareditors": "Title for Special:SimilarEditors",
+	"similareditors-desc": "{{desc|name=SimilarEditors|url=https://www.mediawiki.org/wiki/Extension:SimilarEditors}}",
+	"similareditors-error-database-refresh": "Error message displayed when there is a database refresh in progress, temporarily blocking access",
+	"similareditors-error-default": "Error message displayed when no error key is specified",
+	"similareditors-error-user-bot": "Error message displayed when the target is a bot",
+	"similareditors-error-user-no-account": "Error message displayed when the target has no account",
+	"similareditors-error-user-no-edits": "Error message displayed when the target has no relevant edits, or perhaps no account",
+	"similareditors-extensionname": "{{name}}\nThe name of the extension",
+	"similareditors-form-field-target-label": "Label for a form field on [[Special:SimilarEditors]]",
+	"similareditors-form-field-target-placeholder": "Placeholder for a text input on [[Special:SimilarEditors]]",
+	"similareditors-form-legend": "Legend for the form on [[Special:SimilarEditors]]",
+	"similareditors-form-submit": "Label for the submit button on [[Special:SimilarEditors]]",
+	"similareditors-no-results": "Notice that might display on [[Special:SimilarEditors]] after form submission",
+	"similareditors-overlap-level-high": "Qualitative description of a similarity score between two editors. Adjective that describes \"overlap\". See also:\n* {{msg-mw|similareditors-overlap-level-low}}\n* {{msg-mw|similareditors-overlap-level-medium}}\n* {{msg-mw|similareditors-overlap-level-none}}",
+	"similareditors-overlap-level-low": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-medium}}, {{msg-mw|similareditors-overlap-level-none}}.",
+	"similareditors-overlap-level-medium": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-low}}, {{msg-mw|similareditors-overlap-level-none}}.\n{{identical|Medium}}",
+	"similareditors-overlap-level-no-overlap": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-low}}, {{msg-mw|similareditors-overlap-level-medium}}.",
+	"similareditors-results-day-overlap": "Column heading in results table",
+	"similareditors-results-edit-overlap": "Column heading in results table",
+	"similareditors-results-edits": "Column heading in results table",
+	"similareditors-results-hour-overlap": "Column heading in results table",
+	"similareditors-results-inverse-edit-overlap": "Column heading in results table",
+	"similareditors-results-user": "Column heading in results table\n{{identical|User}}",
+	"similareditors-results-user-timeline": "Link text for additional information related to the user",
+	"similareditors-summary": "Description of what SimilarEditors does, displayed on [[Special:SimilarEditors]]",
+	"similareditors-survey-freeform-text-label": "Placeholder for a text input in the feedback survey on [[Special:SimilarEditors]]. The placeholder should be blank, but the message must be defined (and not be an empty string) in order for the input to display.",
+	"similareditors-survey-question": "Question asked in the feedback survey on [[Special:SimilarEditors]]"
+}

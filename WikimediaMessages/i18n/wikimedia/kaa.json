@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajiniyaz Nurniyazov",
+			"AlefZet",
+			"Emperyan",
+			"Inabat Allanova",
+			"Nurlan"
+		]
+	},
+	"wikimediamessages-desc": "Wikipediya arnawlı xabarları",
+	"sitesupport-url": "https://donate.wikimedia.org/?utm_source=donate&utm_medium=sidebar&utm_campaign=spontaneous&uselang=en",
+	"sitesupport": "Joybarǵa járdem",
+	"tooltip-n-sitesupport": "Bizge járdem beriń",
+	"nstab-creator": "Avtor",
+	"group-steward": "Styuardlar",
+	"wikimedia-copyright": "Tekst <a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.ru\">Creative Commons Attribution-ShareAlike licenziyası</a> boyınsha ǵalabalastırılmaqta, qosımsha shártler qollanıwı múmkin (<a href=\"https://foundation.wikimedia.org/wiki/Terms_of_Use\">qollanıw shártleri</a>).",
+	"wikimedia-copyrightwarning": "Ózgerislerdi saqlaw arqalı siz [https://foundation.wikimedia.org/wiki/Terms_of_Use Paydalanıw shártleri]ne razılıq bildiresiz hám siz óz úlesńizdi [https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License CC BY-SA 3.0 License] hám [https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License GFDL]. Silteme yamasa URL Creative Commons litsenziyası boyınsha jetkilikli atribut bolıwına razılıq bildiresiz.",
+	"wikimedia-mobile-mainpage-title-loggedin": "{{GENDER:$1|Xosh keldińiz}}, $1!",
+	"wikibase-repo-name": "Wikimaǵlıwmat",
+	"wikibase-sitelinks-wikinews": "Wikijańalıq",
+	"wikibase-sitelinks-wikiquote": "Wikicitata",
+	"wikibase-sitelinks-wikisource": "Wikiderek",
+	"wikibase-sitelinks-wikivoyage": "Wikigid",
+	"wikibase-otherprojects-commons": "Wikiqoyma",
+	"wikibase-otherprojects-testwikidata": "Wikimaǵlıwmat",
+	"wikibase-otherprojects-wikidata": "Wikimaǵlıwmat",
+	"wikibase-sitelinks-sitename-wikidatawiki": "Wikimaǵlıwmat",
+	"wikimedia-developers": "Programmistler",
+	"wikimedia-globalblocking-ipblocked": "'''Siziń IP mánzilińiz [[m:Special:MyLanguage/Global blocks|bárshe Wikilarda bloklanǵan]].'''\n\nBloklanıw $1 ($2) tárepinen ámelge asırıldı.\nKórsetilgen sebep ''$3''.\n\n* Bloklanıwdıń baslanıwı: $4\n* Bloklanıwdıń ámel qılıw múddeti: $5\n\nSiziń ámeldegi IP mánzilińiz $6.\nMárhámát, joqarıdaǵı barlıq maǵlıwmatlardı sorawıńızǵa tolıq kiritiń..\n\nEger bloklanıw qátelik sebepli bolǵan dep esaplasańız, qosımsha maǵlıwmat hám kórsetpelerdi [[m:Special:MyLanguage/No open proxies|No open proxies]] global siyasatında tabıwıńız múmkin.\nKeri jaǵdayda, bloklanıwdı talqılaw ushın [[m:Steward requests/Global|Meta-Wikide kórip shıǵıw ushın soraw jiberiń]].",
+	"wikimedia-globalblocking-ipblocked-xff": "'''Sorawıńız boyınsha paydalanılatuǵın bir yamasa birneshe proksi-serverler [[m:Special:MyLanguage/Global blocks|global tárizde bloklanǵan]].'''\n\nBloklanıw $1 ($2) tárepinen ámelge asırıldı.\nKórsetilgen sebep ''$3''.\n\n* Bloklanıwdıń baslanıwı: $4\n* Bloklanıwdıń ámel qılıw múddeti: $5\n\nBloklanǵan proksi-mánzil $6 edi.\nMárhámát, joqarıdaǵı barlıq maǵlıwmatlardı sorawıńızǵa tolıq kiritiń.\n\nEgerde siz bloklanıw qátelik sebepli bolǵan dep esaplasańız, qosımsha maǵlıwmat hám kórsetpelerdi [[m:Special:MyLanguage/No open proxies|No open proxies]] global siyasatında tabıwıńız múmkin.\nKeri jaǵdayda, bloklanıwdı talqılaw ushın [[m:Steward requests/Global|Meta-Wikide kórip shıǵıw ushın soraw jiberiń]].",
+	"interlanguage-link-commons": "Wikiqoyma",
+	"wikimedia-statslink": "Statistika",
+	"wikimedia-cookiestatement": "Cookie bayanatı",
+	"ext-campaignevents-register-policy": "Dizimnen ótiw arqalı siz [https://foundation.wikimedia.org/wiki/Terms_of_Use Paydalanıw shártleri], [https://foundation.wikimedia.org/wiki/Privacy_policy Jasırınlıq siyasatı], [https://foundation.wikimedia.org/wiki/Universal_Code_of_Conduct Universal minez-qulıq kodeksi] hám ilaj shólkemlestiriwshileri tárepinen usınıs etilgen hár qanday Jergilikli doslıq aymaǵı siyasatına razılıq bildiresiz."
+}

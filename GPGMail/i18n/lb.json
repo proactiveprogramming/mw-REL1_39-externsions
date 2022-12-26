@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Soued031"
+		]
+	},
+	"gpgmail-desc": "E-Maile mat GPG verschlësselen",
+	"gpgmail-pref-enable": "E-Maile mat GPG verschlësselen",
+	"gpgmail-pref-key": "GPG ëffentleche Schlëssel",
+	"gpgmail-encrypt-error": "Beim Verschlëssele vun der E-Mail ass e Feeler geschitt."
+}

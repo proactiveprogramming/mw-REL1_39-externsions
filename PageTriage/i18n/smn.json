@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"pagetriage-author-bot": "Botti",
+	"pagetriage-filter-predicted-issues-vandalism": "Vandalism",
+	"pagetriage-filter-show-heading": "Tile:",
+	"pagetriage-filter-username": "Kevtteenommâ",
+	"pagetriage-filter-ns-all": "Puoh",
+	"pagetriage-filter-stat-all": "Puoh",
+	"pagetriage-filter-stat-predicted-issues-vandalism": "Vandalism",
+	"pagetriage-tags-title": "Lasseet kilgolijd",
+	"pagetriage-tags-cat-writingstyle-label": "Čäällimstijlâ",
+	"pagetriage-tags-cat-moretags-label": "Lase kilgoleh",
+	"pagetriage-tags-cat-all-label": "Puoh kilgoleh",
+	"pagetriage-tags-param-date-label": "Peivim:",
+	"pagetriage-info-history-header": "Historjá",
+	"pagetriage-info-help": "iše",
+	"pagetriage-toolbar-close": "Toopâ",
+	"pagetriage-afc-state-all": "Puoh"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"mwversioninfo-desc": "管理 MediaWiki 版本資訊",
+	"apihelp-mwversioninfo-summary": "取得關於 MediaWiki 分支的資訊",
+	"apihelp-mwversioninfo-param-version": "MediaWiki 版本",
+	"apihelp-mwversioninfo-example": "取得關於 MediaWiki 1.27 的資訊"
+}

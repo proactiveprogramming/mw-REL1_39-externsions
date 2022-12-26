@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"mwversioninfo-desc": "MediaWiki Veriounsinformatioun geréieren",
+	"apihelp-mwversioninfo-param-version": "MediaWiki Versioun"
+}

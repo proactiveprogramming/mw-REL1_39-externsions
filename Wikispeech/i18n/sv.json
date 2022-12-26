@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jopparn",
+			"Sabelöga",
+			"WikiPhoenix"
+		]
+	},
+	"wikispeech": "Wikispeech",
+	"wikispeech-desc": "Ett text-till-tal-verktyg som gör Wikimedias projekt tillgängliga för personer som av olika anledningar har lässvårigheter.",
+	"prefs-wikispeech": "Wikispeech",
+	"prefs-wikispeech-voice": "Röst",
+	"prefs-wikispeech-speech-rate": "Talhastighet",
+	"prefs-wikispeech-speech-rate-percent": "Talhastighet (i procent)",
+	"prefs-wikispeech-enable": "Aktivera Wikispeech",
+	"prefs-wikispeech-show-player": "Visa alltid spelare",
+	"right-wikispeech-listen": "Lyssna på sidan",
+	"right-wikispeech-read-lexicon": "Läs Wikispeehs lexikon",
+	"right-wikispeech-edit-lexicon": "Redigera Wikispeechs lexikon",
+	"action-wikispeech-listen": "lyssna på sidan",
+	"action-wikispeech-read-lexicon": "läs Wikispeechs lexikon",
+	"action-wikispeech-edit-lexicon": "redigera Wikispeechs lexikon",
+	"wikispeech-listen": "Lyssna",
+	"wikispeech-dont-listen": "Lyssna inte",
+	"wikispeech-error-loading-audio-title": "Kunde inte ladda ljud",
+	"wikispeech-error-loading-audio-message": "Detta kan ske på grund av en dålig internetanslutning eller ett fel på servern. Vill du försöka igen eller stoppa uppspelningen?",
+	"wikispeech-retry": "Försök igen",
+	"wikispeech-stop": "Stopp",
+	"editlexicon": "Redigera lexikon",
+	"wikispeech-language": "Språk",
+	"wikispeech-word": "Ord",
+	"wikispeech-transcription": "Transkribering",
+	"wikispeech-item-id": "ID",
+	"wikispeech-preview": "Förhandsgranska",
+	"wikispeech-lexicon-add-entry-success": "Uppslagsord har lagts till i lexikonet.",
+	"wikispeech-lexicon-new": "Ny",
+	"wikispeech-lexicon-edit-entry-success": "Uppslagsord redigerat.",
+	"wikispeech-lexicon-copyrightnote": "Genom att spara dina ändringar godkänner du att ditt bidrag släpps under [https://creativecommons.org/publicdomain/zero/1.0/ CC0].",
+	"group-wikispeech-edit-lexicon": "Wikispeech-lexikonredigerare",
+	"group-wikispeech-edit-lexicon-member": "{{GENDER:$1|Wikispeech-lexikonredigerare}}"
+}

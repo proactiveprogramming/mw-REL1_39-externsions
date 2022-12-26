@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe",
+			"McDutchie"
+		]
+	},
+	"testlanguagenamegrammar": "Prueba de formas gramaticales con nombres de idiomas",
+	"testlanguagenamegrammar-desc": "Añade una [[Special:TestLanguageNameGrammar|página especial]] para probar formas gramaticales con nombres de idiomas.",
+	"testlanguagenamegrammar-language": "Idioma",
+	"testlanguagenamegrammar-grammarform": "Forma gramatical",
+	"testlanguagenamegrammar-submit": "Enviar"
+}

@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"FiberAhmed",
+			"Meno25",
+			"أَحمد",
+			"ديفيد"
+		]
+	},
+	"bs-qr-code-extension-description": "يعرض رمز استجابة سريعة مع رابط إلى الصفحة الحالية في شريط الأدوات.",
+	"bs-qr-code-title": "كود QR",
+	"bs-qr-code-text": "امسح رمز الاستجابة السريعة ضوئيًا لفتح هذه الصفحة على جهاز محمول",
+	"bs-qr-code-action-qr-code-title": "فتح مربع الحوار باستخدام رمز الاستجابة السريعة",
+	"bs-qr-code-action-qr-code-text": "رمز الاستجابة السريعة",
+	"bs-qr-code-action-qr-code-dialog-title": "رمز الاستجابة السريعة",
+	"bs-qr-code-action-qr-code-dialog-alt": "رمز الاستجابة السريعة لـ $1",
+	"bs-qr-code-api-no-page": "المعلمة \"صفحة\" فارغة",
+	"apihelp-bs-qr-code-summary": "الحصول على رمز الاستجابة السريعة كقاعدة بيانات URI للصفحة",
+	"apihelp-bs-qr-code-param-revid": "معرّف المراجعة للصفحة لإنشاء رابط ثابت",
+	"apihelp-bs-qr-code-param-page": "اسم الصفحة للصفحة لتوليد بيانات Base64 URI",
+	"apihelp-bs-qr-code-param-size": "حجم رمز الاستجابة السريعة",
+	"apihelp-bs-qr-code-example-bs-qr-code": "استدعاء API الافتراضي",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "استدعاء API لمراجعة معينة",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "استدعاء API مع حجم مخصص"
+}

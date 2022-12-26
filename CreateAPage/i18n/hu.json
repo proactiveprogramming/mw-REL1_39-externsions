@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Glanthor Reviol",
+			"Tacsipacsi"
+		]
+	},
+	"createpage-hide": "Elrejtés",
+	"createpage-show": "Megjelenítés",
+	"createpage": "Új szócikk létrehozása",
+	"createpage-yes": "Igen",
+	"createpage-no": "Nem",
+	"createpage-categories": "Kategóriák",
+	"createpage-addcategory": "Kategória hozzáadása"
+}

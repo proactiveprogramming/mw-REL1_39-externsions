@@ -1,0 +1,320 @@
+{
+	"name": "BlueSpiceReminder",
+	"version": "4.2.0-alpha",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:Reminder",
+	"author": [ "Sebastian Ulbricht", "Stephan Muggli", "Tobias Weichart", "Markus Glaser", "Peter Böhm" ],
+	"descriptionmsg": "bs-reminder-extension-description",
+	"license-name": "GPL-3.0-only",
+	"requires": {
+		"MediaWiki": ">= 1.36.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 4.1"
+		}
+	},
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceReminder": {
+					"className": "\\BlueSpice\\Reminder\\Extension",
+					"extPath": "/BlueSpiceReminder",
+					"package": "BlueSpice Pro"
+				}
+			},
+			"PermissionRegistry": {
+				"remindereditall": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
+				}
+			},
+			"NotificationRegistrationFunctions": [
+				"\\BlueSpice\\Reminder\\Notification\\Registrator::registerNotifications"
+			],
+			"RunJobsTriggerHandlerRegistry": {
+				"bs-reminder-send-daily": "BlueSpice\\Reminder\\RunJobsTriggerHandler\\SendTodayReminderNotification::factory",
+				"bs-reminder-send-weekly": "BlueSpice\\Reminder\\RunJobsTriggerHandler\\SendInOneWeekReminderNotification::factory"
+			},
+			"AdminToolRegistry": {
+				"bs-reminder-manager": "BlueSpice\\Reminder\\AdminTool"
+			}
+		},
+		"BlueSpiceEchoConnector": {
+			"NotificationIcons": {
+				"reminder": {
+					"path": "BlueSpiceReminder/resources/images/userbar-icon-reminder.png"
+				}
+			}
+		},
+		"BlueSpicePrivacy": {
+			"Handlers": [
+				"\\BlueSpice\\Reminder\\Privacy\\Handler"
+			]
+		},
+		"BlueSpiceReminder": {
+			"Registry": {
+				"page": "\\BlueSpice\\Reminder\\Reminder\\Page::factory"
+			}
+		},
+		"BlueSpiceDiscovery": {
+			"AttentionIndicatorRegistry": {
+				"reminder": "\\BlueSpice\\Reminder\\AttentionIndicator\\Reminder::factory"
+			}
+		},
+		"Workflows": {
+			"LogicObjects": {
+				"ActivityRegistry": {
+					"set_reminder": {
+						"class": "\\BlueSpice\\Reminder\\Activity\\SetReminderActivity",
+						"services": [
+							"TitleFactory",
+							"UserFactory",
+							"DBLoadBalancer"
+						]
+					}
+				}
+			}
+		}
+	},
+	"GroupPermissions": {
+		"*": {
+			"remindereditall": false
+		},
+		"user": {
+			"remindereditall": false
+		},
+		"sysop": {
+			"remindereditall": true
+		}
+	},
+	"AvailableRights": [
+		"remindereditall"
+	],
+	"SpecialPages": {
+		"Reminder": "SpecialReminder"
+	},
+	"APIModules": {
+		"bs-reminder-store": "ApiReminderStore",
+		"bs-reminder-tasks": "ApiReminderTasks"
+	},
+	"MessagesDirs": {
+		"BlueSpiceReminder": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ReminderAlias": "languages/SpecialReminder.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\Reminder\\": "src/"
+	},
+	"AutoloadClasses": {
+		"SpecialReminder": "includes/specials/SpecialReminder.class.php",
+		"ApiReminderStore": "includes/api/ApiReminderStore.php",
+		"ApiReminderTasks": "includes/api/ApiReminderTasks.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.reminder.special": {
+			"scripts": "bluespice.reminder.special.js",
+			"styles": "bluespice.reminder.css",
+			"messages": [
+				"bs-reminder-header-pagename",
+				"bs-reminder-header-username",
+				"bs-reminder-header-date",
+				"bs-reminder-text-delete",
+				"bs-reminder-title-delete",
+				"bs-reminder-header-is-repeating",
+				"bs-reminder-no",
+				"bs-reminder-date-repeat-ends-on-label",
+				"bs-reminder-header-type"
+			],
+			"dependencies": [
+				"mediawiki.user",
+				"ext.bluespice.extjs",
+				"ext.bluespice.reminder.dialog.pages"
+			]
+		},
+		"ext.bluespice.reminder": {
+			"scripts": [
+				"bluespice.reminder.js"
+			],
+			"styles": "bluespice.reminder.css",
+			"dependencies": [
+				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.reminder.dialog.pages": {
+			"scripts": [
+				"ui/mixin/RepeatLayout.js",
+				"ui/page/ReminderPage.js",
+				"ui/page/CreateReminderForPage.js"
+			],
+			"messages": [
+				"bs-reminder-date-label",
+				"bs-reminder-create-title",
+				"bs-reminder-user-label",
+				"bs-reminder-comment-label",
+				"bs-reminder-header-comment",
+				"bs-reminder-article-label",
+				"bs-reminder-dlg-btn-manager-label",
+				"bs-reminder-create-reminder-label",
+				"bs-reminder-repeat-label",
+				"bs-reminder-repeat-every-title",
+				"bs-reminder-repeat-on-title",
+				"bs-reminder-ordinal-first",
+				"bs-reminder-ordinal-second",
+				"bs-reminder-ordinal-third",
+				"bs-reminder-ordinal-fourth",
+				"bs-reminder-ordinal-last",
+				"bs-reminder-monthly-on-the-prefix",
+				"bs-reminder-monthly-on-day-prefix",
+				"bs-reminder-repeat-interval-day",
+				"bs-reminder-repeat-interval-week",
+				"bs-reminder-repeat-interval-month",
+				"bs-reminder-repeat-interval-year",
+				"bs-reminder-sunday-abbr",
+				"bs-reminder-monday-abbr",
+				"bs-reminder-tuesday-abbr",
+				"bs-reminder-wednesday-abbr",
+				"bs-reminder-thursday-abbr",
+				"bs-reminder-friday-abbr",
+				"bs-reminder-saturday-abbr",
+				"bs-reminder-date-repeat-ends-on-label",
+				"bs-reminder-header-type",
+				"bs-reminder-dialog-page-action-my-reminders",
+				"bs-reminder-dialog-page-action-all-reminders",
+				"bs-reminder-dialog-page-action-page-reminders"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.oOJSPlus.dialogs",
+				"ext.oOJSPlus.widgets",
+				"mediawiki.widgets.DateInputWidget",
+				"mediawiki.widgets"
+			]
+		},
+		"ext.bluespice.reminder.flyout": {
+			"scripts": "bluespice.reminder.flyout.js",
+			"messages": [
+				"bs-reminder-header-pagename",
+				"bs-reminder-header-username",
+				"bs-reminder-header-date",
+				"bs-reminder-flyout-upcoming",
+				"bs-reminder-flyout-upcoming-due",
+				"bs-reminder-flyout-upcoming-none",
+				"bs-reminder-flyout-form-title",
+				"bs-reminder-flyout-grid-title",
+				"bs-reminder-flyout-manager-btn-label",
+				"bs-reminder-flyout-manager-my-reminder-btn-label",
+				"bs-reminder-date-label",
+				"bs-reminder-create-title",
+				"bs-reminder-user-label",
+				"bs-reminder-comment-label",
+				"bs-reminder-header-comment",
+				"bs-reminder-article-label",
+				"bs-reminder-dlg-btn-manager-label",
+				"bs-reminder-create-reminder-label",
+				"bs-reminder-repeat-label",
+				"bs-reminder-repeat-every-title",
+				"bs-reminder-repeat-on-title",
+				"bs-reminder-ordinal-first",
+				"bs-reminder-ordinal-second",
+				"bs-reminder-ordinal-third",
+				"bs-reminder-ordinal-fourth",
+				"bs-reminder-ordinal-last",
+				"bs-reminder-monthly-on-the-prefix",
+				"bs-reminder-monthly-on-day-prefix",
+				"bs-reminder-repeat-interval-day",
+				"bs-reminder-repeat-interval-week",
+				"bs-reminder-repeat-interval-month",
+				"bs-reminder-repeat-interval-year",
+				"bs-reminder-sunday-abbr",
+				"bs-reminder-monday-abbr",
+				"bs-reminder-tuesday-abbr",
+				"bs-reminder-wednesday-abbr",
+				"bs-reminder-thursday-abbr",
+				"bs-reminder-friday-abbr",
+				"bs-reminder-saturday-abbr",
+				"bs-reminder-date-repeat-ends-on-label",
+				"bs-reminder-header-type"
+			],
+			"dependencies": [
+				"mediawiki.jqueryMsg",
+				"ext.bluespice.reminder",
+				"ext.bluespice.extjs",
+				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.reminder.infodialog": {
+			"scripts": [
+				"bluespice.reminder.ReminderInformationPage.js"
+			],
+			"styles": [
+				"bluespice.reminder.css"
+			],
+			"messages": [
+				"bs-reminder-info-dialog",
+				"bs-reminder-info-dialog-button-label"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "/resources",
+		"remoteExtPath": "/BlueSpiceReminder/resources"
+	},
+	"DefaultUserOptions": {
+		"bs-reminder-oncreate": false,
+		"bs-reminder-forns": "",
+		"bs-reminder-period": 6,
+		"echo-subscriptions-web-notification-bs-reminder-cat": 1,
+		"echo-subscriptions-email-notification-bs-reminder-cat": 1
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\CommonUserInterface"
+		},
+		"discovery-skin": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\DiscoverySkin"
+		},
+		"standard-dialogs": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\StandardDialogs"
+		},
+		"addReminderUrl": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\SkinTemplateNavigation\\AddReminderUrl"
+		},
+		"addReminderEntry": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\SkinTemplateNavigation\\AddReminderEntry"
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Reminder\\Hook\\LoadExtensionSchemaUpdates\\AddReminderTable::callback",
+		"GetPreferences": [
+			"\\BlueSpice\\Reminder\\Hook\\GetPreferences\\AddDefaultReminderPeriod::callback",
+			"\\BlueSpice\\Reminder\\Hook\\GetPreferences\\AddSetReminderOnCreate::callback",
+			"\\BlueSpice\\Reminder\\Hook\\GetPreferences\\AddDisableReminderForNS::callback"
+		],
+		"ChameleonSkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
+		],
+		"SkinTemplateNavigation::Universal": [
+			"addReminderUrl",
+			"addReminderEntry"
+		],
+		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"PageSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageSaveComplete\\SetReminderOnCreate::callback",
+		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback",
+		"UserMergeAccountFields": "\\BlueSpice\\Reminder\\Hook\\UserMergeAccountFields\\MergeReminderDBFields::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"manifest_version": 2
+}

@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"pgftikz-desc": "Generar grapicos PGF/TikZ sur le wiki",
+	"pgftikz-error-title": "Error del analysator syntactic de PGFTikZ:",
+	"pgftikz-error-emptyinput": "Entrata vacue.",
+	"pgftikz-error-imagelineparse": "Non poteva interpretar le linea de imagine. Es expectate un linea como ([[File:Image filename.ext|ligamine al file]]).",
+	"pgftikz-error-apigetpagecontent": "Non poteva obtener le contento del pagina del imagine pro comparar.",
+	"pgftikz-error-apiedit": "Non poteva actualisar le pagina wiki del file.",
+	"pgftikz-error-apidelete": "Non poteva deler le pagina wiki de previsualisation.",
+	"pgftikz-error-nonpgffile": "Le file existente non ha essite generate per PGF/TikZ; non es superscribite.",
+	"pgftikz-error-preambleparse": "Error interpretante le preambulo LaTeX.",
+	"pgftikz-error-tmpdircreate": "Error creante le directorio temporari.",
+	"pgftikz-error-texfilecreate": "Error creante le file de codice fonte LaTeX.",
+	"pgftikz-error-latexnoout": "Error executante LaTeX (nulle sortita producite, es LaTeX presente?).",
+	"pgftikz-error-latexcompil": "Error executante LaTeX (error de compilation).",
+	"pgftikz-error-dvipsnoout": "Error executante dvips (nulle sortita producite, es dvips presente?).",
+	"pgftikz-error-dvipscompil": "Error executante dvips (error de functionamento).",
+	"pgftikz-error-epstoolnoout": "Error executante epstool (nulle sortita producite, es epstool presente?).",
+	"pgftikz-error-epstoolrun": "Error executante epstool (error de functionamento).",
+	"pgftikz-error-convertnoout": "Error executante convert (nulle sortita producite, es convert presente?).",
+	"pgftikz-error-convertrun": "Error executante convert (error de functionamento).",
+	"pgftikz-error-ghostscriptnoout": "Error executante ghostscript (nulle sortita producite, es gs presente?).",
+	"pgftikz-error-ghostscriptrun": "Error executante ghostscript (error de functionamento).",
+	"pgftikz-error-uploadlocal_error_empty": "Error durante le incargamento (file vacue).",
+	"pgftikz-error-uploadlocal_error_missing": "Error durante le incargamento (typo de file mancante).",
+	"pgftikz-error-uploadlocal_error_badtype": "Error durante le incargamento (mal typo de file).",
+	"pgftikz-error-uploadlocal_error_tooshort": "Error durante le incargamento (nomine de file troppo curte).",
+	"pgftikz-error-uploadlocal_error_illegal": "Error durante le incargamento (nomine de file non permittite).",
+	"pgftikz-error-uploadlocal_error_overwrite": "Error durante le incargamento (non es permittite superscriber un file existente).",
+	"pgftikz-error-uploadlocal_error_verify": "Error durante le incargamento (error de verification): $1",
+	"pgftikz-error-uploadlocal_error_hook": "Error durante le incargamento (''hook'' abortate).",
+	"pgftikz-error-uploadlocal_error_unknown": "Error durante le incargamento (error incognite)."
+}

@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agusbou2015",
+			"Francodiaz7",
+			"MarcoAurelio"
+		]
+	},
+	"blockinactive-desc": "Bloquea a todos los usuarios que no hayan iniciado sesión antes de un determinado número de días desde su último inicio de sesión.",
+	"blockinactive-special-intro": "Más abajo se muestra un listado de usuarios pendientes de bloqueo por inactividad. Los usuarios que no han iniciado sesión desde hace >='''$1''' días serán tratados como usuarios inactivos y serán bloqueados tras '''$2''' días desde su último inicio de sesión. Dichos usuarios recibirán correos electrónicos de advertencia con '''$3''' día(s) de antelación antes de ser bloqueados, así como un correo electrónico informativo tras el bloqueo por inactividad.",
+	"blockinactive": "Bloquear cuentas inactivas",
+	"blockinactive-table-username": "Nombre de usuario",
+	"blockinactive-table-userid": "Identificador del usuario",
+	"blockinactive-table-inactivetime": "Tiempo de inactividad",
+	"blockinactive-table-emailsent": "Correo electrónico enviado",
+	"blockinactive-table-actions": "Acciones",
+	"blockinactive-action-block": "Bloquear",
+	"blockinactive-config-threshold": "Días que han de transcurrir para consider una cuenta como inactiva",
+	"blockinactive-config-daysblock": "Días para empezar a bloquear",
+	"blockinactive-config-warningdaysleft": "Días para enviar el aviso de precaución de bloqueo",
+	"blockinactive-config-mail-subject": "¡Aviso! Tu cuenta será bloqueada en breve",
+	"blockinactive-config-mail-body": "Tu cuenta wiki se bloqueará automáticamente en breve ya que ha estado inactiva. Para evitarlo, inicia sesión en {{SITENAME}}, lo que hará que tu cuenta esté activa y evitará que se produzca el bloqueo.",
+	"blockinactive-config-mail-block-subject": "Tu cuenta wiki ha sido bloqueada",
+	"blockinactive-config-mail-block-body": "Tu cuenta wiki ha sido bloqueada automáticamente por estar inactiva. Para restablecer tu cuenta, ponte en contacto con un administrador del sistema de {{SITENAME}}.",
+	"action-blockinactive": "Bloquear cuentas inactivas",
+	"right-blockinactive": "Bloquear cuentas inactivas",
+	"right-alwaysactive": "Eludir bloqueos por inactividad",
+	"action-alwaysactive": "Evitar el bloqueo por inactividad"
+}

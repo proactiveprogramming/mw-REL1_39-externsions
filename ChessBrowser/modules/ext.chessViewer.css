@@ -1,0 +1,139 @@
+.pgn-movelink:not( .pgn-current-move ) {
+	cursor: alias;
+}
+
+.pgn-image-button {
+	box-sizing: content-box;
+	height: 26px;
+	width: 26px;
+	margin: 0.25em;
+	padding: 3px;
+	border: 1px solid #a2a9b1;
+	border-radius: 6px;
+	cursor: pointer;
+	background-color: #f8f9fa;
+	background-size: cover;
+}
+
+.pgn-image-button:hover {
+	background-color: #fff;
+}
+
+.pgn-image-button[ aria-checked='true' ] {
+	/* @noflip */
+	box-shadow: inset 0 0 0 1px #36c;
+}
+
+/* buttons images */
+.pgn-button-tostart {
+	/* @embed */
+	background-image: url( ../resources/button-first.svg );
+}
+
+.pgn-button-toend {
+	/* @embed */
+	background-image: url( ../resources/button-last.svg );
+}
+
+.pgn-button-play {
+	/* @embed */
+	background-image: url( ../resources/button-play.svg );
+}
+
+.pgn-button-advance {
+	/* @embed */
+	background-image: url( ../resources/button-next.svg );
+}
+
+.pgn-button-retreat {
+	/* @embed */
+	background-image: url( ../resources/button-previous.svg );
+}
+
+.pgn-button-faster {
+	/* @embed */
+	background-image: url( ../resources/button-faster.svg );
+}
+
+.pgn-button-slower {
+	/* @embed */
+	background-image: url( ../resources/button-slower.svg );
+}
+
+.pgn-button-flip {
+	/* @embed */
+	background-image: url( ../resources/button-flip.svg );
+	transition: 500ms;
+}
+
+.pgn-button-play[ aria-checked='true' ] {
+	/* @embed */
+	background-image: url( ../resources/button-pause.svg );
+}
+
+.pgn-image-button:disabled {
+	opacity: 0.3;
+	cursor: auto;
+}
+
+.pgn-grid {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 20px;
+	/* @noflip */
+	left: 20px;
+	width: 208px;
+	height: 208px;
+}
+
+.pgn-grid > div {
+	display: flex;
+	flex: 0 0 26px;
+	flex-direction: row;
+	text-align: center;
+}
+
+.pgn-grid .pgn-grid-cell {
+	flex: 0 0 26px;
+	opacity: 0;
+	overflow: hidden;
+	height: 26px;
+	cursor: default;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* Flipping */
+.pgn-flip .pgn-board-div,
+.pgn-flip .pgn-board-div div.pgn-row-legend span,
+.pgn-flip .pgn-board-div div.pgn-file-legend span,
+.pgn-flip .pgn-board-div .pgn-chessPiece,
+.pgn-button-flip[ aria-checked='true' ] {
+	transform: rotate( 180deg );
+}
+
+.notransition > .pgn-board-div {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+.pgn-piece-hidden {
+	opacity: 0;
+}
+
+.pgn-piece-visible {
+	opacity: 1;
+}
+
+.pgn-captioning {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: -1000px;
+	overflow: hidden;
+}
+
+/* [[קטגוריה:דפי סגנון של תבניות]] */

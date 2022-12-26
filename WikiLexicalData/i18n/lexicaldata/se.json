@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
+		]
+	},
+	"datasearch_language": "Giella:",
+	"ow_exporttsv_languages": "Gielat:",
+	"ow_save": "Vurke",
+	"ow_transaction_remove": "Sihko",
+	"ow_Language": "Giella",
+	"ow_OtherLanguages": "Eará gielat:",
+	"ow_Remove": "Sihko",
+	"ow_TranslatedText": "Jorgaluvvon teaksta",
+	"ow_Link": "Liŋka",
+	"ow_LinkAttributeValues": "Liŋkkat",
+	"ow_removed": "Sihkkojuvvon",
+	"ow_class_attr_type_link": "Liŋka",
+	"ow_show": "Čájet",
+	"ow_suggest_next": "Čuovvovaš",
+	"action-addlanguage": "lasihit ja molsut giellaasáhusaid",
+	"right-addlanguage": "Lasihit ja molsut giellaasáhusaid",
+	"prefs-ow-lang": "Gielat",
+	"ow-stat-languages": "{{PLURAL:$1|Giella|Giela}}"
+}

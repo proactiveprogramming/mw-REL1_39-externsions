@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"loopfunc-desc": "Forni un functionalitate de bucla limitate in le wikitexto",
+	"loopfunc_max_loops": "Numero maxime de buclas permittite attingite"
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Ex-Diktator",
+			"Neriah"
+		]
+	},
+	"legallogin-true-answer-label": "נכון",
+	"legallogin-false-answer-label": "שגוי",
+	"legallogin-submit": "שליחה",
+	"legallogin-close": "סגירה",
+	"legallogin-yes": "כן",
+	"legallogin-no": "לא"
+}

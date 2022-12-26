@@ -1,0 +1,10 @@
+/node_modules/
+/vendor/
+
+/.eslintcache
+/composer.lock
+
+*.kate-swp
+*~
+.*.swp
+.DS_Store

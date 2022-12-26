@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cruccone",
+			"FiloSottile",
+			"Gianfranco",
+			"Pietrodn"
+		]
+	},
+	"ajaxshoweditors-desc": "Mostra gli utenti che stanno modificando la stessa pagina",
+	"ajax-se-title": "Modifica in corso:",
+	"ajax-se-pending": "in attesa di aggiornamento ... (fare clic su questa casella o iniziare la modifica)",
+	"ajax-se-idling": "(da $1 s)",
+	"ajax-se-pagedoesnotexist": "La pagina non esiste",
+	"ajax-se-usernotfound": "Errore: utente non trovato",
+	"apihelp-ajaxshoweditors-summary": "Ottieni l'elenco di utenti che attualmente stanno modificando la pagina data",
+	"apihelp-ajaxshoweditors-param-pageid": "Identificatore numerico per la pagina che si sta modificando",
+	"apihelp-ajaxshoweditors-param-username": "Nome dell'utente che sta modificando la pagina adesso",
+	"apihelp-ajaxshoweditors-example-1": "Ottieni l'elenco di utenti (in HTML) che stanno modificando la pagina con ID #666"
+}

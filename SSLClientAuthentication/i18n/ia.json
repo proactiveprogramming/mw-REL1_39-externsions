@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"sslauth-desc": "Permitte que usatores incarga certificatos SSL a usar pro authentication",
+	"sslauth-title-enable": "Activar authentication cliente SSL",
+	"sslauth-title-disable": "Disactivar authentication cliente SSL",
+	"sslauth-enable": "Activar",
+	"sslauth-disable": "Disactivar",
+	"sslauth-cn": "Nomine commun",
+	"sslauth-email": "Adresse de e-mail",
+	"sslauth-serial": "Numero de serie",
+	"sslauth-response-enable": "Le authentication SSL ha essite activate. Ora, quandocunque tu te connecte a {{SITENAME}} per medio de HTTPS con tu certificato de cliente, tu session essera aperite automaticamente.",
+	"sslauth-response-disable": "Le authentication SSL ha essite disactivate.",
+	"sslauth-invalidrequest-title": "Requesta invalide",
+	"sslauth-invalidrequest": "Un certificato de cliente SSL valide debe esser fornite pro render iste pagina utile.",
+	"clientssl-legend": "Authentication SSL",
+	"clientssl-text": "Usa iste pagina pro (dis)activar le authentication con certificatos de cliente SSL.",
+	"sslauth-prefs-name": "Authentication SSL",
+	"sslauth-prefs-linktospecial": "Activar/Disactivar certificatos de cliente"
+}

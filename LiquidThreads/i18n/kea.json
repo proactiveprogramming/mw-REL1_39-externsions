@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Waldyrious"
+		]
+	},
+	"lqt_discussion_link": "diskuson",
+	"lqt_youhavenewmessages": "Bu ten [[$1|mensajens nobu]].",
+	"lqt-newmessages-n": "{{PLURAL:$1|Mensajen nobu|Mensajens nobu}} ($1)",
+	"lqt_newmessages-title": "Mensajens nobu",
+	"nstab-summary": "Sumáriu"
+}

@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Creepario",
+			"Debenben",
+			"Geitost",
+			"Kghbln",
+			"Metalhead64",
+			"Predatorix",
+			"Raimond Spekking",
+			"לערי ריינהארט"
+		]
+	},
+	"sitematrix": "Liste der Wikis",
+	"sitematrix-summary": "Diese Spezialseite listet alle Wikis in dieser Wikifarm auf.",
+	"sitematrix-desc": "Zeigt eine [[Special:SiteMatrix|Liste der Wikis]]",
+	"sitematrix-language": "Sprache",
+	"sitematrix-project": "Projektname, Interprojektlink und Interwikilink",
+	"sitematrix-others": "Andere Projekte",
+	"sitematrix-other-projects": "Projekt",
+	"sitematrix-other-projects-language": "Sprache",
+	"sitematrix-total": "'''Gesamtanzahl: $1'''",
+	"sitematrix-sitetotal": "Insgesamt",
+	"sitematrix-closed": "Kein Schreibzugriff, voller Lesezugriff",
+	"sitematrix-private": "Beschränkter Lese- und Schreibzugriff",
+	"sitematrix-fishbowl": "Beschränkter Schreibzugriff, voller Lesezugriff",
+	"sitematrix-nonglobal": "Öffentlich, aber Registrierung erforderlich"
+}

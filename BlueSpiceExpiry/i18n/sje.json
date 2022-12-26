@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Olve Utne"
+		]
+	},
+	"bs-expiry-header-comment": "Målgedibme",
+	"bs-expiry-comment-label": "Målgedibme",
+	"bs-expiry-flyout-next-comment": "Målgedibme: $1",
+	"bs-expiry-edit-grid-header-comment": "Målgedibme"
+}

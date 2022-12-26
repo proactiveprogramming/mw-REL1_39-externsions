@@ -1,0 +1,53 @@
+{
+	"name": "SecurityApi",
+	"url": "https://www.mediawiki.org/wiki/Extension:SecurityApi",
+	"description": "Provides a proxy to security-api",
+	"version": "1.0",
+	"license-name": "MIT",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.33.0"
+	},
+	"MessagesDirs": {
+		"SecurityApi": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\SecurityApi\\": "includes/"
+	},
+	"AvailableRights": [
+		"securityapi-feed"
+	],
+	"RestRoutes": [
+		{
+			"path": "/securityapi/feed/v1/all",
+			"method": "GET",
+			"services": [
+				"MainConfig",
+				"HttpRequestFactory",
+				"PermissionManager",
+				"UserFactory"
+			],
+			"factory": "MediaWiki\\SecurityApi\\Rest\\Feed\\AllHandler::factory"
+		},
+		{
+			"path": "/securityapi/feed/v1/ip/{ip}",
+			"method": "GET",
+			"services": [
+				"MainConfig",
+				"HttpRequestFactory",
+				"PermissionManager",
+				"UserFactory"
+			],
+			"factory": "MediaWiki\\SecurityApi\\Rest\\Feed\\IpHandler::factory"
+		}
+	],
+	"config": {
+		"wgSecurityApiUrl": {
+			"description": "Base URL of security-api to be called",
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

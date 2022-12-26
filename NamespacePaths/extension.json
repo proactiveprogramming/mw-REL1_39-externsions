@@ -1,0 +1,32 @@
+{
+	"name": "NamespacePaths",
+	"author": [
+		"[http://danf.ca/mw/ Daniel Friesen]",
+		"[http://redwerks.org/mediawiki/ Redwerks]"
+	],
+	"version": "1.2.0",
+	"url": "https://www.mediawiki.org/wiki/Extension:NamespacePaths",
+	"descriptionmsg": "namespacepaths-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"NamespacePaths": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NamespacePaths": "src/NamespacePaths.php"
+	},
+	"Hooks": {
+		"WebRequestPathInfoRouter": "NamespacePaths::onWebRequestPathInfoRouter",
+		"GetLocalURL::Article": "NamespacePaths::onGetLocalURLArticle"
+	},
+	"config": {
+		"NamespacePaths": {
+			"value": {}
+		}
+	},
+	"manifest_version": 2
+}

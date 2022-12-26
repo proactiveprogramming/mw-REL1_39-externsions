@@ -1,0 +1,15 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/mediawiki"
+	],
+	"globals": {
+		"jQuery": false
+	},
+	"rules": {
+		"wrap-iife": "off",
+		"no-use-before-define": "off",
+		"computed-property-spacing": "off"
+	}
+}

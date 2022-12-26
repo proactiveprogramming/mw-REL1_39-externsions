@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Growingup"
+		]
+	},
+	"revreview-toggle-show": "(+)",
+	"revreview-toggle-hide": "(-)",
+	"revreview-restriction-any": "каалаган",
+	"revreview-restriction-none": "жок"
+}

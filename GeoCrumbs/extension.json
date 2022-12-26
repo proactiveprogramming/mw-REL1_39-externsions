@@ -1,0 +1,33 @@
+{
+	"name": "GeoCrumbs",
+	"version": "2.0.1",
+	"author": [
+		"Roland Unger",
+		"Hans Musil",
+		"Matthias Mullie"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:GeoCrumbs",
+	"license-name": "GPL-2.0-or-later",
+	"descriptionmsg": "geocrumbs-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"MessagesDirs": {
+		"GeoCrumbs": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"GeoCrumbsMagic": "GeoCrumbs.i18n.magic.php"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\GeoCrumbs\\": "includes/"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\GeoCrumbs\\Hooks::onParserFirstCallInit",
+		"ParserAfterTidy": "MediaWiki\\Extension\\GeoCrumbs\\Hooks::onParserAfterTidy",
+		"OutputPageParserOutput": "MediaWiki\\Extension\\GeoCrumbs\\Hooks::onOutputPageParserOutput"
+	},
+	"manifest_version": 2
+}

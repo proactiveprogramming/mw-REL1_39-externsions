@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"noteslink-desc": "Adde le elemento <code><nowiki><NDL></NDL></nowiki></code> que permitte presentar codice NDL (''Notes Data Link'') in forma de un hyperligamine accessibile per internet"
+}

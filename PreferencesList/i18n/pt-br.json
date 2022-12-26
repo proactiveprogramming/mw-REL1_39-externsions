@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"McDutchie"
+		]
+	},
+	"preferenceslist-desc": "Gerar uma lista de todas as configurações do usuário para uma preferência específica",
+	"preferenceslist-preferenceslist": "Lista de preferências",
+	"preferenceslist-preferenceslist-intro": "Abaixo está uma lista de preferências. Escolha um ou mais para ver uma lista de todos os usuários com suas preferências.",
+	"preferenceslist": "Lista de preferências",
+	"action-preferenceslist": "listar as preferências de todos os usuários",
+	"preferenceslist-csv": "Baixar como CSV",
+	"preferenceslist-nofields": "Nenhum campo foi selecionado.",
+	"right-preferenceslist": "Abra a página Special:PreferencesList"
+}

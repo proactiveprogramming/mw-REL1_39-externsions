@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Romaine"
+		]
+	},
+	"wsu-command-P": "Eigenschap",
+	"wsu-batchtable-subject": "Onderwerp",
+	"wsu-batchtable-command": "Commando",
+	"wsu-batchtable-id": "ID",
+	"wsu-batchtable-value": "Waarde",
+	"wsu-batchtable-status": "Status",
+	"wsu-js-batchtable-status": "$1% compleet. {{PLURAL:$2|0=|$2 gefaald.}}"
+}

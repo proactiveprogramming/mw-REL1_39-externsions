@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"wikispeech-sdc": "Wikispeech-Sprachdatensammler",
+	"wikispeech-sdc-desc": "Ein Werkzeug zum Aufnehmen, Überprüfen und Kommentieren von gesprochenen Stimmen.",
+	"right-wikispeech-sdc-record": "Sprache aufzeichnen",
+	"action-wikispeech-sdc-record": "Sprache aufzeichnen",
+	"recordspeech": "Sprache aufzeichnen",
+	"wikispeech-sdc-record": "Aufzeichnen",
+	"wikispeech-sdc-save": "Speichern",
+	"wikispeech-sdc-skip": "Überspringen",
+	"right-wikispeech-sdc-speech-recording": "Sprachaufnahme bearbeiten",
+	"action-wikispeech-sdc-speech-recording": "Sprachaufnahme bearbeiten",
+	"right-wikispeech-sdc-speech-recording-talk": "Sprachaufnahme diskutieren",
+	"action-wikispeech-sdc-speech-recording-talk": "Sprachaufnahme diskutieren",
+	"wikispeech-sdc-status-starting": "Starten",
+	"wikispeech-sdc-status-ready": "Bereit",
+	"wikispeech-sdc-status-listening": "Abhören",
+	"wikispeech-sdc-status-recording": "Aufnahme"
+}

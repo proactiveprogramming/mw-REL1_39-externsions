@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16",
+			"Gianfranco",
+			"GpieroMW",
+			"TheRukk",
+			"ValeJappo"
+		]
+	},
+	"bs-echoconnector-extension-description": "Connette BlueSpice con Echo",
+	"echo-category-title-bs-admin-cat": "Attività di amministrazione",
+	"echo-pref-tooltip-bs-admin-cat": "Avvisami quando viene creato una nuova utenza",
+	"echo-pref-tooltip-bs-page-actions-cat": "Avvisami quando una pagina che osservo viene modificata, spostata o eliminata",
+	"echo-pref-tooltip-bs-page-create-cat": "Avvisami quando viene creata una nuova pagina",
+	"echo-category-title-bs-page-actions-cat": "Azione sulle pagine tra gli osservati speciali",
+	"echo-category-title-bs-page-create-cat": "Creazioni di pagine",
+	"prefs-namespace-notifications": "Notifiche su eventi di namespace",
+	"prefs-category-notifications": "Notifiche sulle categorie",
+	"echo-category-title-bs-namespace-category-notify-cat": "Modifiche ai namespace e alle categorie sottoscritti",
+	"bs-echoconnector-personalurl-notifications": "Notifiche ($1)"
+}

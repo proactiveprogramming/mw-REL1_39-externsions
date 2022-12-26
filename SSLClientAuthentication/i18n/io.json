@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"sslauth-enable": "Permisar",
+	"sslauth-disable": "Despermisar",
+	"sslauth-email": "E-postal adreso"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"nsfilerepo-move-file-namespace-dialog-button-cancel": "Prekliči",
+	"nsfilerepo-move-file-namespace-dialog-namespaceselector-label": "Imenski prostor",
+	"nsfilerepo-upload-file-namespace-namespaceselector-label": "Imenski prostor"
+}

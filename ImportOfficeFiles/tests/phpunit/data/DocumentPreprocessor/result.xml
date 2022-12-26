@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+	<w:body>
+		<w:p>123</w:p>
+		<w:tbl>
+			<w:tr>456</w:tr>
+		</w:tbl>
+		<w:p w:rsidR="0092125E" w:rsidRPr="0027060F" w:rsidRDefault="0093272B" w:rsidP="0092125E">
+			<w:pPr>
+				<w:pStyle w:val="Titel"/>
+				<w:rPr>
+					<w:noProof/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidR="1234567E" w:rsidRPr="134567F">
+						<w:rPr>
+							<w:noProof/>
+							<w:lang w:bidi="de-DE"/>
+						</w:rPr>
+						<w:t>789</w:t>
+					</w:r>
+		</w:p>
+	</w:body>
+</w:document>

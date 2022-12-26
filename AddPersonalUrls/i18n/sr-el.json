@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"addpersonalurls-userpages": "Moje stranice",
+	"addpersonalurls-home": "Početna stranica",
+	"addpersonalurls-home-preload": "Možete da koristite ovu stranicu kao ličnu početnu stranicu.",
+	"addpersonalurls-favorites": "Omiljeno",
+	"addpersonalurls-sandbox": "Pesak",
+	"addpersonalurls-sandbox-preload": "Možete koristiti ovu stranicu da biste testirali viki kod.",
+	"addpersonalurls-notes": "Napomene",
+	"addpersonalurls-notes-preload": "Možete koristiti ovu stranicu za svoje lične napomene."
+}

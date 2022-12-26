@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nayvik",
+			"ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ"
+		]
+	},
+	"langman_langname": "ಭಾಷೆಯ ಹೆಸರು:",
+	"langman_field_optional": "(ಐಚ್ಛಿಕ)",
+	"langman_addlang": "ಭಾಷೆಯ ಹೆಸರು",
+	"datasearch_language": "ಭಾಷೆ:",
+	"datasearch_meaning": "ಅರ್ಥ",
+	"ow_exporttsv_languages": "ಭಾಷೆಗಳು:",
+	"ow_save": "ಉಳಿಸಿ",
+	"ow_history": "ಇತಿಹಾಸ",
+	"ow_transaction_summary": "ಸಾರಾಂಶ",
+	"ow_Definition": "ವ್ಯಾಖ್ಯಾನ",
+	"ow_Language": "ಭಾಷೆ",
+	"ow_Text": "ಪಠ್ಯ",
+	"ow_Time": "ಸಮಯ",
+	"ow_TranslatedTextAttributeValue": "ಪಠ್ಯ",
+	"ow_show": "ತೋರಿಸು"
+}

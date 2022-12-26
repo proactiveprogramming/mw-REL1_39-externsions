@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elroy",
+			"McDutchie",
+			"Nickthijssen1994",
+			"Romaine"
+		]
+	},
+	"bs-qr-code-extension-description": "Deze uitbreiding geeft een QR-code met een koppeling weer in de taakbalk van de huidige pagina.",
+	"bs-qr-code-title": "QR-code",
+	"bs-qr-code-text": "Registreer de QR-code om deze pagina op een mobiel apparaat te openen",
+	"bs-qr-code-action-qr-code-title": "Dialoogvenster openen met QR-code",
+	"bs-qr-code-action-qr-code-text": "QR-code",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-code",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-code voor $1",
+	"bs-qr-code-api-no-page": "Parameter 'page' leeg",
+	"apihelp-bs-qr-code-summary": "QR-code ontvangen als base64-gegevens-URI voor een pagina",
+	"apihelp-bs-qr-code-param-revid": "Versie-ID van de pagina om een permalink te genereren",
+	"apihelp-bs-qr-code-param-page": "Paginanaam van de pagina om base64-gegevens-URI te genereren",
+	"apihelp-bs-qr-code-param-size": "Grootte van de QR code",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Standaard API-aanroep",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "API-aanroep voor een bepaalde revid",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API-aanroep met eigen grootte"
+}

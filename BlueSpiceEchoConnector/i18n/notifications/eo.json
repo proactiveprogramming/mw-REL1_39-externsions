@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jakub Fabijan",
+			"Mirin"
+		]
+	},
+	"bs-notifications-addaccount": "La uzanto \"$1\" kreiĝis.",
+	"bs-notifications-email-addaccount-subject": "La uzanto \"$2\" {{GENDER:$1|kreiĝis}}",
+	"bs-notifications-web-addaccount-body": "La {{GENDER:$1|uzanto|uzantino}} $2 kreita.",
+	"bs-notifications-addaccout-performer": "{{GENDER:$1|Kreinto}}: $1",
+	"bs-notifications-addaccount-performer": "{{GENDER:$1|Kreinto}}: $1",
+	"bs-notifications-registeruser": "La uzanto \"$1\" kreis konton.",
+	"bs-notifications-email-registeruser-subject": "{{GENDER:$1|La uzanto}} \"$2\" {{GENDER:$1|kreis}} konton",
+	"bs-notifications-web-registeruser-body": "La {{GENDER:$1|uzanto|uzantino}} $2  {{GENDER:$1|kreis}} konton.",
+	"bs-notifications-edit": "La paĝo \"$1\" estis ŝanĝita",
+	"bs-notifications-edit-bundle": "La paĝo \"$2\" estis ŝanĝita {{PLURAL:$1|$1 foje}}",
+	"bs-notifications-email-edit-subject": "Paĝo \"$1\" {{GENDER:$2|redaktita}} je $4 de $3",
+	"bs-notifications-email-edit-body": "La paĝo \"$1\" estis {{GENDER:$2|redaktita}} je $5 de $4.\n\nKomento:\n $3",
+	"bs-notifications-web-edit-body": "La paĝo \"$1\" estis {{GENDER:$2|redaktita}} de $3.",
+	"bs-notifications-create": "La paĝo \"$1\" estis kreita",
+	"bs-notifications-email-create-subject": "Paĝo \"$1\" {{GENDER:$2|kreita}} je $4 de $3",
+	"bs-notifications-web-create-body": "La paĝo\"$1\" estis {{GENDER:$2|kreita}} de $3.",
+	"bs-notifications-delete": "La paĝo \"$1\" estis forigita",
+	"bs-notifications-email-delete-subject": "Paĝo \"$1\" {{GENDER:$2|forigita}} je $4 de $3",
+	"bs-notifications-email-delete-body": "La paĝo \"$1\" esit {{GENDER:$2|forigita}} je $5 de $3.\n\nTio ĉi estis la kialo:\n$4",
+	"bs-notifications-web-delete-body": "La paĝo \"$1\" estis {{GENDER:$2|forigita}} de $3.",
+	"bs-notifications-edit-difflink-label": "Vidi diferencon",
+	"bs-notifications-htmlmail-greeting": "{{GENDER:$1|Saluton}}, $1",
+	"bs-notifications-mail-additional-links-label": "Pliaj ligiloj"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"しぃ"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-description": "このAPIは、特定のGettingStartedタスクに関連する1つ以上のページのリストを取得するためのものです。",
+	"apihelp-query+gettingstartedgetpages-summary": "このAPIは、特定のGettingStartedタスクに関連する1つ以上のページのリストを取得するためのものです。",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "タスク名（一般的には「copyedit」（コピー編集の提案）または「morelike」（ベースページに似たページ／除外タイトル）のいずれか。",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "リストから除外するページのフルタイトル。指定されたページに基づく推奨事項のベースタイトルとしても使用されます。",
+	"apihelp-query+gettingstartedgetpages-param-count": "要求された数。正確な数を取得しようとしますが、複数回試行しても数が見つからない場合は、より少ない数を取得することもあります。",
+	"apierror-gettingstarted-nosuggester": "提案者を構築できませんでした。有効な <var>taskname</var> パラメータを使用し、必要な依存関係を提供し（CirrusSearch は <var>morelike</var> に必要です）、タスクが必要とする場合は <var>excludedtitle</var> を含めます。"
+}

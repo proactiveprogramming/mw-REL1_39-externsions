@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Athena in Wonderland",
+			"Fúlvio",
+			"Giro720",
+			"Hamilton Abreu",
+			"Luckas",
+			"Malafaya",
+			"Mansil",
+			"לערי ריינהארט"
+		]
+	},
+	"sitematrix": "Lista de wikis",
+	"sitematrix-summary": "Esta página especial lista todas as wikis deste serviço de alojamento.",
+	"sitematrix-desc": "Apresenta uma [[Special:SiteMatrix|lista de wikis]]",
+	"sitematrix-language": "Língua",
+	"sitematrix-project": "Nome do projeto, hiperligação interprojetos e hiperligação interwikis",
+	"sitematrix-others": "Outros projetos",
+	"sitematrix-other-projects": "Projeto",
+	"sitematrix-other-projects-language": "Língua",
+	"sitematrix-total": "'''Contagem total: $1'''",
+	"sitematrix-sitetotal": "Total",
+	"sitematrix-closed": "sem acesso de escrita, acesso completo de leitura",
+	"sitematrix-private": "acesso restrito de leitura e escrita",
+	"sitematrix-fishbowl": "acesso restrito de escrita, acesso completo de leitura",
+	"sitematrix-nonglobal": "público, mas registo necessário"
+}

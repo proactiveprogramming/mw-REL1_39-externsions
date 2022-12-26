@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"configmanager-admintool-label": "Upravljanje konfiguracijom",
+	"action-configmanager-viewspecialpage": "vidite posebnu stranicu „{{int:configmanager}}”",
+	"configmanager": "Upravljanje konfiguracijom",
+	"configmanager-desc": "Pruža mogućost administratorima da konfigurišu ceo viki s jedne posebne stranice",
+	"configmanager-discardchanges": "Odbaci promene?",
+	"configmanager-noentry": "Nisu pronađeni unosi",
+	"apihelp-configmanager-tasks-summary": "Upravljaj zadacima",
+	"apihelp-configmanager-store-summary": "Upravljaj prodavnicama",
+	"right-configmanager-viewspecialpage": "pristup posebnoj stranici [[Special:ConfigManager]]"
+}

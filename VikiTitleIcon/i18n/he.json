@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Guycn2"
+		]
+	},
+	"vikititleicon-desc": "תוסף VIKI להצגת סמל מדפים באמצעות הרחבת Title Icon",
+	"vikititleicon-error-fetch": "שגיאה באחזור נתוני כותרת התצוגה עבור הצומת: $1.",
+	"apihelp-getTitleIcons-description": "לקבל את כתובות ה־URL של כל סמלי הכותרות בדף, אם קיימות.",
+	"apihelp-getTitleIcons-summary": "לקבל את כתובות ה־URL של כל סמלי הכותרות בדף, אם קיימות.",
+	"apihelp-getTitleIcons-param-pageTitle": "שם הדף שעבורו יוחזרו סמלי הכותרות"
+}

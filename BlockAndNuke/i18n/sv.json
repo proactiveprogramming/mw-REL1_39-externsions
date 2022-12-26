@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mjälten",
+			"Technic2",
+			"WikiPhoenix"
+		]
+	},
+	"action-blockandnuke": "Blockera och rensa",
+	"blockandnuke": "Blockera och rensa",
+	"blockandnuke-confirm": "Klicka på BlockeraOchFörinta-knappen för att blockera de valda användarna och radera alla deras redigeringar.\n\n(Klicka ej ur någon av boxarna nedan)",
+	"blockandnuke-desc": "Ger administratörer möjligheten att [[Special:BlockandNuke|Blockera och Förinta]] sidor",
+	"blockandnuke-nopages": "Inga nya sidor av [[Special:Contributions/$1|$1]] bland de senaste ändringarna.",
+	"blockandnuke-list": "De följande sidorna skapades nyligen av [[Special:Contributions/$1|$1]]; skriv en kommentar och tryck på knappen för att radera dem.",
+	"blockandnuke-defaultreason": "Massborttagning av sidor tillagd av $1",
+	"blockandnuke-delete-file": "BlockeraochFörinta-raderingsspam",
+	"blockandnuke-delete-article": "BlockeraochFörinta-radera spamartiklar.",
+	"blockandnuke-tools": "Lista över Användare som nyligen har bidragit och inte finns på Vitlistan:\n\nFör att lägga till en användare till vitlistan, redigera extensions/BlockandNuke/whitelist.txt",
+	"blockandnuke-submit-user": "Blockera användare",
+	"blockandnuke-submit-delete": "Blockera och förstör",
+	"blockandnuke-block": "Utvalda användare har blockerats and deras bidrag har raderats",
+	"blockandnuke-message": "Användare som blockerats av BlockandNuke.",
+	"blockandnuke-banhammer": "För att blockera utvalda användare och radera deras bidrag klicka knappen nedan",
+	"blockandnuke-nothing-to-do": "Inget att göra!",
+	"blockandnuke-banning": "Bannlyser...",
+	"blockandnuke-deleted-page": "Raderade $1",
+	"blockandnuke-banned-ip": "Bannlyste IP-adressen $1",
+	"blockandnuke-ip-addresses": "IP-adresser",
+	"blockandnuke-users": "Användare",
+	"blockandnuke-pages": "Sidor",
+	"right-blockandnuke": "Blockera en lista över användare och radera alla deras bidrag"
+}

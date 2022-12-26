@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"Mainframe98",
+			"McDutchie",
+			"Sjoerddebruin"
+		]
+	},
+	"maintenanceshell": "Onderhoudsshell",
+	"maintenanceshell-desc": "Wiki-interface voor onderhoudsscripts",
+	"right-maintenanceshell": "Onderhoudsscripts uitvoeren",
+	"action-maintenanceshell": "de onderhoudsshell uit te voeren",
+	"maintenanceshell-legend": "Onderhoudsshell",
+	"maintenanceshell-text": "<strong>Waarschuwing:</strong> Gebruik deze scripts met zorg. Ze zijn bedoeld voor ontwikkelaars alleen.\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Maintenance_scripts Handboek:Onderhoud scripts]\n* [https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:MaintenanceShell Uitbreiding:MaintenanceShell]",
+	"maintenanceshell-return": "Terug naar [[{{#special:maintenanceshell}}]].",
+	"maintenanceshell-error-scriptname": "Script niet gevonden",
+	"maintenanceshell-error-rawsubmit": "Voor veiligheidsredenen, vereist deze pagina dat JavaScript is ingeschakeld.",
+	"maintenanceshell-available": "Beschikbare onderhoudsscripts:",
+	"maintenanceshell-field-scriptname": "Scriptnaam:",
+	"maintenanceshell-field-args": "Opdrachtregel opties:",
+	"maintenanceshell-field-submit": "Script uitvoeren"
+}

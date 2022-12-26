@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Person or Persons Unknown"
+		]
+	},
+	"enhancedupload-attachments-tag-grid-details-title": "Подробности",
+	"enhancedupload-tab-updated-upload": "Обновлённые файлы",
+	"enhancedupload-updated-dialog-label": "Файл «$1» был обновлён",
+	"enhancedupload-finished-dialog-action-close": "Закрыть"
+}

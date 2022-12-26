@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"phptagssparql-desc": "לקוח HTTP של PhpTags Sparql עבור נקודת קצה של SPARQL1.1"
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-bookshelf-specialpage-allpages-ns-book-text": "Knjižnica",
+	"bs-bookshelf-add-to-book-added": "Stran je bila dodana knjigi »$1«.",
+	"bs-bookshelf-setting-path-feature": "Knjiga",
+	"bs-bookshelf-action-editbook": "Uredi vir",
+	"bs-bookshelf-action-editbook-create": "Uredi vir",
+	"bs-bookshelf-book-grid-title": "Knjige",
+	"bs-bookshelf-ga-manager-label": "Knjige",
+	"bs-bookshelf-ve-bookmeta-attr-title-label": "Naslov",
+	"bs-bookshelf-ve-bookmeta-attr-author-label": "Avtor",
+	"bs-bookshelf-ve-bookmeta-attr-version-label": "Redakcija",
+	"bs-bookshelf-ve-bookshelf-attr-book-label": "Knjiga"
+}

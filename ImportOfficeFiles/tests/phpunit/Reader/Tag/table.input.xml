@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+	<w:body>
+		<w:tbl>
+			<w:tblPr>
+				<w:tblStyle w:val="TableGrid"/>
+				<w:tblW w:w="5000" w:type="pct"/>
+			</w:tblPr>
+			<w:tblGrid>
+				<w:gridCol w:w="2880"/>
+				<w:gridCol w:w="2880"/>
+				<w:gridCol w:w="2880"/>
+			</w:tblGrid>
+			<w:tr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<wikitext>AAA</wikitext>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<wikitext>BBB</wikitext>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<wikitext>CCC</wikitext>
+				</w:tc>
+			</w:tr>
+			<w:tr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<wikitext>DDD</wikitext>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<wikitext>EEE</wikitext>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<w:tbl>
+						<w:tblPr>
+							<w:tblStyle w:val="TableGrid"/>
+							<w:tblW w:w="5000" w:type="pct"/>
+						</w:tblPr>
+						<w:tblGrid>
+							<w:gridCol w:w="2880"/>
+							<w:gridCol w:w="2880"/>
+							<w:gridCol w:w="2880"/>
+						</w:tblGrid>
+						<w:tr>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="2880" w:type="dxa"/>
+								</w:tcPr>
+								<wikitext>GGG</wikitext>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="2880" w:type="dxa"/>
+								</w:tcPr>
+								<wikitext>HHH</wikitext>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="2880" w:type="dxa"/>
+								</w:tcPr>
+								<wikitext>III</wikitext>
+							</w:tc>
+						</w:tr>
+						<w:tr>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="2880" w:type="dxa"/>
+								</w:tcPr>
+								<wikitext>JJJ</wikitext>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="2880" w:type="dxa"/>
+								</w:tcPr>
+								<wikitext>KKK</wikitext>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="2880" w:type="dxa"/>
+								</w:tcPr>
+								<wikitext>LLL</wikitext>
+							</w:tc>
+						</w:tr>
+					</w:tbl>
+				</w:tc>
+			</w:tr>
+			<w:tr>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<wikitext>MMM</wikitext>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<wikitext>NNN</wikitext>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2880" w:type="dxa"/>
+					</w:tcPr>
+					<wikitext>OOO</wikitext>
+				</w:tc>
+			</w:tr>
+		</w:tbl>
+	</w:body>
+</w:document>

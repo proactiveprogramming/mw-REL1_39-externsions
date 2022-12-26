@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"metamaster-desc": "Un function analysator que permitte adder etiquettas HTML <code><meta></code> al capite del pagina"
+}

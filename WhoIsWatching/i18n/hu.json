@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dani",
+			"Tacsipacsi"
+		]
+	},
+	"whoiswatching": "Ki figyel egy adott oldalt",
+	"whoiswatching-desc": "Megmutatja az adott lapot néző szerkesztők neveit",
+	"specialwhoiswatchingusage": "Ez a speciális lap nem használható önmagában.",
+	"specialwhoiswatchingaddusers": "Szerkesztők hozzáadása a lap figyeléséhez",
+	"specialwhoiswatchingaddbtn": "Összes kiválasztott felhasználó hozzáadása"
+}

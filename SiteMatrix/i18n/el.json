@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Badseed",
+			"Consta",
+			"Dead3y3",
+			"Geraki",
+			"Giannaras99",
+			"Glavkos",
+			"Omnipaedista",
+			"ZaDiak"
+		]
+	},
+	"sitematrix-desc": "Εμφανίζει μία [[Special:SiteMatrix|λίστα με wikis του Wikimedia]]",
+	"sitematrix-language": "Γλώσσα",
+	"sitematrix-project": "Όνομα εγχειρήματος, διαεγχειρηματικός (interproject) σύνδεσμος και διαγλωσσικός (interwiki) σύνδεσμος",
+	"sitematrix-other-projects": "Εγχείρημα",
+	"sitematrix-total": "'''Συνολικός αριθμός: $1'''",
+	"sitematrix-sitetotal": "Συνολικά",
+	"sitematrix-private": "πρόσβαση ανάγνωσης και εγγραφής περιορισμένη",
+	"sitematrix-fishbowl": "περιορισμένη πρόσβαση εγγραφής, πλήρης πρόσβαση ανάγνωσης"
+}

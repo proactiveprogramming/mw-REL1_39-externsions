@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"centralnotice-modify": "Vuolgât",
+	"centralnotice-save-banner": "Vuorkkii",
+	"centralnotice-remove": "Siho",
+	"centralnotice-add": "Lasseet",
+	"centralnotice-add-notice-button": "Räähti",
+	"centralnotice-add-notice-cancel-button": "Jooskâ",
+	"centralnotice-translations": "Jurgâlusah",
+	"centralnotice-translate-to": "Puátukielâ:",
+	"centralnotice-translate": "Jurgâl",
+	"centralnotice-english": "Eŋgâlâskielân",
+	"centralnotice-month": "Mánuppaje",
+	"centralnotice-select-all": "Valjii puoh",
+	"centralnotice-settings": "Asâttâsah",
+	"centralnotice-preview-loader-error-dialog-ok": "OK",
+	"centralnotice-clone-name": "Nommâ:",
+	"centralnotice-clone-cancel": "Jooskâ",
+	"centralnotice-close-title": "Toopâ",
+	"centralnotice-banner-cdn-dialog-ok": "OK",
+	"centralnotice-languages": "Kielah",
+	"centralnotice-language": "Kielâ",
+	"centralnotice-user": "Kevttee",
+	"centralnotice-action-removed": "sikkum",
+	"centralnotice-talk-link": "savâstâllâm",
+	"centralnotice-date": "Peivimeeri",
+	"centralnotice-prioritylangs": "Vuosâsajasiih kielah",
+	"centralnotice-all": "Puoh",
+	"centralnotice-banner-class": "Luokka",
+	"centralnotice-archive-banner-cancel": "Jooskâ",
+	"centralnotice-archive-campaign-cancel": "Jooskâ",
+	"centralnotice-delete-banner": "Siho",
+	"centralnotice-delete-banner-cancel": "Jooskâ",
+	"centralnotice-banner-template-info": "(myenster)"
+}

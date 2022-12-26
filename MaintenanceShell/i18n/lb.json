@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Soued031"
+		]
+	},
+	"maintenanceshell-error-scriptname": "Skript net fonnt",
+	"maintenanceshell-error-rawsubmit": "Aus Sécherheetsgrënn muss JavaScript fir dës Säit aktivéiert sinn.",
+	"maintenanceshell-field-scriptname": "Numm vum Skript:",
+	"maintenanceshell-field-submit": "Skript ausféieren"
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "存取 API 的通用固定網域對象。",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "反序列化處置 JSON 失敗。",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "反序列化處置失敗。",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "執行處置失敗。",
+	"apierror-wikispeech-sdc-crud-serialize-response": "序列化回應失敗。",
+	"apihelp-wikispeech-sdc-crud-example-1": "建立新的單一使用者請求。",
+	"apihelp-wikispeech-sdc-crud-example-2": "讀取單一使用者請求。",
+	"apihelp-wikispeech-sdc-crud-example-3": "刪除單一使用者請求。"
+}

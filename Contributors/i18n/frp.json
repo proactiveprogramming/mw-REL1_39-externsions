@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"contributors": "Contributors",
+	"contributors-toolbox": "Contributors principâls",
+	"contributors-legend": "Listar los contributors principâls d’una pâge",
+	"contributors-target": "Titro :",
+	"contributors-submit": "Montrar",
+	"contributors-subtitle": "Contributors principâls de $1",
+	"contributors-badtitle": "Titro envalido.",
+	"contributors-nosuchpage": "La pâge $1 ègziste pas."
+}

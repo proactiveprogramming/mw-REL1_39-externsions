@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"semanticinternalobjects-desc": "Configuration de objectos interne in Semantic MediaWiki",
+	"semanticinternalobjects-internalproperty": "Proprietate interne",
+	"semanticinternalobjects-mainpropertyname": "Nomine del proprietate pro connecter le campos de iste patrono al resto del pagina:",
+	"semanticinternalobjects-propnamewarning": "(deberea solmente esser usate si il pote haber plure instantias de iste patrono)"
+}

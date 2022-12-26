@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"apifeatureusage": "Употреба на извршнички функции",
+	"apifeatureusage-desc": "Дава преглед на заведени употреби на извршнички функции за даден кориснички вршител.",
+	"apifeatureusage-elasticsearch-error": "Грешка во Elasticsearch: $1",
+	"apifeatureusage-legend": "Употреба на функциите на извршникот",
+	"apifeatureusage-agent-label": "Кориснички вршител:",
+	"apifeatureusage-startdate-label": "Почетен датум:",
+	"apifeatureusage-enddate-label": "Завршен датум",
+	"apifeatureusage-submit": "Преземи податоци",
+	"apifeatureusage-no-indexes": "Нема податоци за укажаниот датумски опсег.",
+	"apifeatureusage-missing-indexes": "Нема податоци за дел од укажаниот датумски опсег.",
+	"apifeatureusage-warnings": "Предупредување: $1",
+	"apifeatureusage-column-feature": "Функција",
+	"apifeatureusage-column-date": "Датум",
+	"apifeatureusage-column-uses": "Користи",
+	"apifeatureusage-deprecation-help": "Користете „[[Special:ApiFeatureUsage|Употреба на извршнички функции]]“ за преглед на употребата на застарени функции на вашиот прилог."
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saurmandal"
+		]
+	},
+	"preferenceslist-desc": "किसी विशिष्ट वरीयता के लिए सभी सदस्य सेटिंग्स की सूची बनाता है",
+	"preferenceslist-preferenceslist": "वरीयता सूची",
+	"preferenceslist-preferenceslist-intro": "नीचे वरीयताओं की एक सूची है। किसी विशिष्ट वरीयता वाले सभी सदस्य देखने के लिए एक या एकाधिक वरीयता(एँ) चुनें।",
+	"preferenceslist": "वरीयता सूची",
+	"action-preferenceslist": "सभी सदस्यों की वरीयताओं की सूची देखने",
+	"preferenceslist-csv": "CSV के रूप में डाउनलोड करें",
+	"preferenceslist-nofields": "कई फ़ील्ड चुना नहीं गया है।",
+	"right-preferenceslist": "Special:PreferencesList पृष्ठ खोलें"
+}

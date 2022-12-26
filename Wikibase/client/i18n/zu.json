@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"3atbulletz",
+			"Irus",
+			"Nkankane",
+			"Weather Top Wizard"
+		]
+	},
+	"tooltip-t-wikibase": "Xhumanisa nento yenqolobane yemininingwane",
+	"wikibase-dataitem": "{{WBREPONAME}} into",
+	"wikibase-editlinks": "Hlela links",
+	"wikibase-editlinkstitle": "Hlela interlanguage links",
+	"wikibase-linkitem-addlinks": "Faka ama-links",
+	"wikibase-rc-hide-wikidata-show": "Khombisa"
+}

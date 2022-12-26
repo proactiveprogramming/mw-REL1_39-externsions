@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geraki",
+			"Giannaras99",
+			"NikosLikomitros",
+			"Nikosgranturismogt",
+			"Protnet"
+		]
+	},
+	"bs-echoconnector-extension-description": "Συνδέει το BlueSpice με το Echo",
+	"echo-category-title-bs-admin-cat": "Kαθήκοντα για Διαχειριστές",
+	"echo-category-title-bs-page-actions-cat": "Ενέργειες σε σελίδες που βρίσκονται στη λίστα παρακολούθησης",
+	"echo-category-title-bs-page-create-cat": "Δημιουργία σελίδας",
+	"prefs-namespace-notifications": "Ειδοποιήσεις για συμβάντα ονοματοχώρου"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"datediff-desc": "Παίρνει δύο ημερομηνίες και επιστρέφει όλες τις ενδιάμεσες ημέρες"
+}

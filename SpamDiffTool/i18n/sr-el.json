@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello"
+		]
+	},
+	"spamdifftool-block": "Blok:",
+	"spamdifftool-no-urls-detected": "Nisu pronađene veb-adrese. <a href='$1'>Nazad</a>.",
+	"spamdifftool-option-domain": "sve od ovog domena",
+	"spamdifftool-option-subdomain": "sve od ovog poddomena",
+	"spamdifftool-option-directory": "ovaj poddomen i direktorijum",
+	"spamdifftool-option-none": "ništa",
+	"spamdifftool-spam-link-text": "dodaj kao spam",
+	"spamdifftool-submit": "Pošalji"
+}

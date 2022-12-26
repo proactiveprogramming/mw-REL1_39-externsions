@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Taavi Väänänen"
+		]
+	},
+	"prefs-userpage": "Section header on Special:Preferences",
+	"realme-desc": "{{desc|name=RealMe|url=https://www.mediawiki.org/wiki/Extension:RealMe}}",
+	"realme-preference-desc": "Used as a preference name.",
+	"realme-preference-help": "Used as a preference help text."
+}

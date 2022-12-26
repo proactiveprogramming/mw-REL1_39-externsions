@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"gwtoolset-fsfile-retrieval-failure": "Teâttõõzz ooccmõš URL-addrõõzzâst $1 ij oʹnnstam.",
+	"gwtoolset-mediawiki-template": "Mall $1",
+	"gwtoolset-submit": "Vuõlttâd",
+	"gwtoolset-summary-heading": "Õʹhtteǩeässmõš",
+	"gwtoolset-cancel": "Jõõsk",
+	"gwtoolset-save": "Ruõkk",
+	"gwtoolset-json-error-unknown": "Toobdteʹmes vââʹǩǩ.",
+	"gwtoolset-mediawiki-template-not-found": "MediaWiki-mall \"$1\" ij käunnʼjam.",
+	"gwtoolset-category": "Kategoria",
+	"gwtoolset-global-categories": "Riâžldõkveiddsõs kategoria",
+	"gwtoolset-metadata-file": "Metateâđteâttõs",
+	"gwtoolset-wrap-language-heading": "Ǩiõllmall",
+	"gwtoolset-detect-license-heading": "Liseʹnssmall",
+	"gwtoolset-select-template": "Vaʹlljed maall:"
+}

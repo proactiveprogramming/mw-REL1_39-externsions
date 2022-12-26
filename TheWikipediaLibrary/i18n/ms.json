@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tofeiku",
+			"Zulfadli51"
+		]
+	},
+	"thewikipedialibrary": "PerpustakaanWikipedia",
+	"thewikipedialibrary-desc": "Sistem untuk memberitahu Pengguna Wikipedia",
+	"notification-header-twl-eligiblity": "Tahniah! Anda layak untuk Perpustakaan Wikipedia",
+	"notification-body-twl-eligiblity": "Mohon untuk mendapatkan akses percuma ke pangkalan data penyelidikan",
+	"notification-twl-eligiblity-secondarylink-text": "Perpustakaan Wikipedia"
+}

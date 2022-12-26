@@ -1,0 +1,52 @@
+{
+	"name": "mediawiki/semantic-genealogy",
+	"type": "mediawiki-extension",
+	"description": "The Semantic Genealogy extension provides the ability to view genealogy trees and export GEDCOM files.",
+	"minimum-stability": "dev",
+	"keywords": [
+		"Semantic",
+		"Genealogy",
+		"GEDCOM"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Extension:Semantic_Genealogy",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Thomas Pellissier Tanon",
+			"email": "thomaspt@hotmail.fr",
+			"role": "Developer"
+		},
+		{
+			"name": "Thibault Taillandier",
+			"email": "thibault@taillandier.name",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"mediawiki/semantic-media-wiki": ">=1.7"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules --exclude extensions",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phpcs": "phpcs -sp --cache"
+	},
+	"autoload": {
+		"files": [],
+		"classmap": [
+			"src/"
+		]
+	}
+}

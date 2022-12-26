@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"fileimporter-api-file-notfound": "Teâttõs ij käunnʼjam: $1.",
+	"fileimporter-exampleprefix": "Ouddmiârkk",
+	"fileimporter-submit": "Vuõlttâd",
+	"fileimporter-cancel": "Jõõsk",
+	"fileimporter-newfilename": "Ođđ teâttõsnõmm:",
+	"fileimporter-editsummary": "Õʹhtteǩeässmõš:",
+	"fileimporter-heading-filehistory": "Teâttõõzz historia",
+	"fileimporter-go-to-original-file-button": "Määʹcc alggveärlaž teâttõʹsse",
+	"fileimporter-viewdiff": "Čuäʹjet muttsid"
+}

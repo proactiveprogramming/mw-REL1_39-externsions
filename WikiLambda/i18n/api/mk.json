@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Vlad5250"
+		]
+	},
+	"apihelp-wikilambda_fetch-summary": "Дај го JSON-моделот на ZObjects.",
+	"apihelp-wikilambda_fetch-param-zids": "ZID-ја за ZObject-от што се добиваат.",
+	"apihelp-wikilambda_fetch-param-language": "На кој јазик да се даде исходот.",
+	"apihelp-wikilambda_fetch-example-single": "Дај еден ZObject, Z1.",
+	"apihelp-wikilambda_fetch-example-multiple": "Дај три ZObjects: Z1, Z2 и Z3.",
+	"apierror-wikilambda_fetch-missingzid": "Дадениот ZID „$1“ не постои на ова вики.",
+	"apihelp-wikilambda_function_call-param-zobject": "ZObject за повик на функција",
+	"apihelp-wikilambda_function_call-example-if": "Повикајте го вградениот Z802 (If) со лажен прирок",
+	"apihelp-wikilambda_function_call-example-native-js-code": "Повикајте го кориснички напишаниот JavaScript-код",
+	"apihelp-wikilambda_function_call-example-native-python-code": "Повикајте го кориснички напишаниот  Python 3-код",
+	"apihelp-wikilambda_function_call-summary": "Повикајте функција со оркестратор",
+	"apihelp-query+wikilambdasearch_labels-summary": "Создавачот на списоци за барања до приложникот ви овозможува пребарување на ZObjects за натписи на даден јазик. Има главна цел да пружа поддршка на системот за предвидувачко пребарување.",
+	"apihelp-query+wikilambdasearch_labels-param-search": "Поимот за пребарување",
+	"apihelp-query+wikilambdasearch_labels-param-language": "На кој јазичен код да се пребарува",
+	"apihelp-query+wikilambdasearch_labels-param-nofallback": "Дали дас е пребарува само на дадениот јазик, а не на резервните јазици",
+	"apihelp-query+wikilambdasearch_labels-param-exact": "Дали да пребарува точни совпаѓања. Ако е оневозможено, ќе се подразбира дека вносот разликува големи и мали букви, а уникодно нормализираното пребарување со акценти врз латиничните знаци ќе се занемари.",
+	"apihelp-query+wikilambdasearch_labels-param-type": "Ограничи ги совпаѓањата на извесен вид на ZObject.",
+	"apihelp-query+wikilambdasearch_labels-param-limit": "Највеќе ставки во исходот за прикажување",
+	"apihelp-query+wikilambda-example-simple": "Пребарување на ZObjects чиј натпис одговара на „foo“ на англиски",
+	"apihelp-query+wikilambda-example-nofallback": "Пребарување на ZObjects чиј натпис одговара на „foo“ на француски, и не прифаќај резервни јазици",
+	"apihelp-query+wikilambda-example-type": "Пребарај ZObjects од видот „Z4“, давајќи натписи на англиски",
+	"apihelp-query+wikilambdaload_zobjects-param-zids": "ZID-ја за ZObject-от што се добиваат.",
+	"apihelp-wikilambda_perform_test-param-nocache": "Дали да се користи меѓускладот или не"
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Facenapalm",
+			"Movses",
+			"Pacha Tchernof",
+			"Stjn",
+			"Vlad5250"
+		]
+	},
+	"fileexporter": "FileExporter",
+	"fileexporter-desc": "Лёгкий экспорт файлов на другую вики",
+	"fileexporter-text": "Экспортировать файл",
+	"fileexporter-to-wikimedia-commons": "Экспорт на Викисклад",
+	"tag-fileimporter-remote": "Изменено через FileImporter",
+	"tag-fileimporter-remote-description": "Правки, сделанные расширением [[mw:Extension:FileImporter|FileImporter]] после успешного импортирования файла из другой вики."
+}

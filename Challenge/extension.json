@@ -1,0 +1,127 @@
+{
+	"name": "Challenge",
+	"version": "1.5",
+	"author": [
+		"Aaron Wright",
+		"David Pean",
+		"Jack Phoenix"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Challenge",
+	"descriptionmsg": "challenge-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.3"
+	},
+	"DefaultUserOptions": {
+		"echo-subscriptions-web-challenge-received": true,
+		"echo-subscriptions-email-challenge-received": false,
+		"echo-subscriptions-web-challenge-accepted": true,
+		"echo-subscriptions-email-challenge-accepted": false,
+		"echo-subscriptions-web-challenge-rejected": true,
+		"echo-subscriptions-email-challenge-rejected": false,
+		"echo-subscriptions-web-challenge-lost": true,
+		"echo-subscriptions-email-challenge-lost": false,
+		"echo-subscriptions-web-challenge-won": true,
+		"echo-subscriptions-email-challenge-won": false
+	},
+	"GroupPermissions": {
+		"sysop": {
+			"challengeadmin": true
+		}
+	},
+	"AvailableRights": [
+		"challengeadmin"
+	],
+	"SpecialPages": {
+		"ChallengeAction": "ChallengeAction",
+		"ChallengeHistory": "ChallengeHistory",
+		"ChallengeStandings": "ChallengeStandings",
+		"ChallengeUser": "ChallengeUser",
+		"ChallengeView": "ChallengeView"
+	},
+	"MessagesDirs": {
+		"Challenge": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ChallengeAliases": "includes/Challenge.alias.php"
+	},
+	"AutoloadClasses": {
+		"Challenge": "includes/Challenge.class.php",
+		"ChallengeDateValidator": "includes/ChallengeDateValidator.php",
+		"ChallengeAction": "includes/specials/SpecialChallengeAction.php",
+		"ChallengeHistory": "includes/specials/SpecialChallengeHistory.php",
+		"ChallengeStandings": "includes/specials/SpecialChallengeStandings.php",
+		"ChallengeUser": "includes/specials/SpecialChallengeUser.php",
+		"ChallengeView": "includes/specials/SpecialChallengeView.php",
+		"ChallengeUserTemplate": "includes/templates/ChallengeUser.template.php",
+		"ChallengeViewTemplate": "includes/templates/ChallengeView.template.php",
+		"ChallengeHooks": "includes/Challenge.hooks.php",
+		"EchoReceivedChallengePresentationModel": "includes/notifications/EchoReceivedChallengePresentationModel.php",
+		"EchoAcceptedChallengePresentationModel": "includes/notifications/EchoAcceptedChallengePresentationModel.php",
+		"EchoRejectedChallengePresentationModel": "includes/notifications/EchoRejectedChallengePresentationModel.php",
+		"EchoLostChallengePresentationModel": "includes/notifications/EchoLostChallengePresentationModel.php",
+		"EchoWonChallengePresentationModel": "includes/notifications/EchoWonChallengePresentationModel.php"
+	},
+	"ResourceModules": {
+		"ext.challenge.history": {
+			"styles": "resources/css/ext.challenge.history.css"
+		},
+		"ext.challenge.user": {
+			"styles": "resources/css/ext.challenge.user.css"
+		},
+		"ext.challenge.standings": {
+			"styles": "resources/css/ext.challenge.standings.css"
+		},
+		"ext.challenge.view": {
+			"styles": "resources/css/ext.challenge.view.css"
+		},
+		"ext.challenge.js.main": {
+			"scripts": "resources/js/Challenge.js",
+			"messages": [
+				"challenge-js-event-required",
+				"challenge-js-date-required",
+				"challenge-js-description-required",
+				"challenge-js-win-terms-required",
+				"challenge-js-lose-terms-required",
+				"challenge-js-challenge-removed",
+				"challenge-js-accepted",
+				"challenge-js-rejected",
+				"challenge-js-countered",
+				"challenge-js-winner-recorded",
+				"challenge-js-rating-submitted"
+			],
+			"dependencies": "mediawiki.util"
+		},
+		"ext.challenge.js.datevalidator": {
+			"scripts": "resources/js/ValidateDate.js",
+			"messages": [
+				"challenge-js-error-date-format",
+				"challenge-js-error-invalid-month",
+				"challenge-js-error-invalid-day",
+				"challenge-js-error-invalid-year",
+				"challenge-js-error-invalid-date",
+				"challenge-js-error-future-date",
+				"challenge-js-error-is-backwards"
+			]
+		},
+		"ext.challenge.js.datepicker": {
+			"scripts": "resources/js/DatePicker.js",
+			"dependencies": "jquery.ui"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Challenge"
+	},
+	"Hooks": {
+		"BeforeCreateEchoEvent": "ChallengeHooks::onBeforeCreateEchoEvent",
+		"EchoGetBundleRules": "ChallengeHooks::onEchoGetBundleRules",
+		"EchoGetDefaultNotifiedUsers": "ChallengeHooks::onEchoGetDefaultNotifiedUsers",
+		"LoadExtensionSchemaUpdates": "ChallengeHooks::onLoadExtensionSchemaUpdates",
+		"UserProfileGetProfileHeaderLinks": "ChallengeHooks::onUserProfileGetProfileHeaderLinks"
+	},
+	"manifest_version": 1
+}

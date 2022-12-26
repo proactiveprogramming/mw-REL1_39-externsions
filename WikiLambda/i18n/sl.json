@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"wikilambda-persistentzobject-contents": "Vsebina",
+	"wikilambda-helplink-button": "Pomoč",
+	"wikilambda-helplink-tooltip": "Preberete lahko stran s pomočjo, na kateri so pojasnjeni ti metapodatki",
+	"wikilambda-special-edit-function-definition-description": "Urejate stran z opredelitvijo funkcije. Opredelitev funkcije lahko spremeni $1. Oznake lahko ureja vsakdo. Svoje delo shranite s klikom spodnjega modrega gumba Objavi.",
+	"wikilambda-speciallistduplicatezobjectlabels-language": "Jezik",
+	"wikilambda-publishnew": "Objavi",
+	"wikilambda-cancel": "Prekliči",
+	"wikilambda-savenew": "Shrani",
+	"wikilambda-summarylabel": "Povzetek:",
+	"wikilambda-publish-input-changed-impact-prompt": "Spremenili ste vrsto vhoda te funkcije. Vse obstoječe izvedbe in preizkusi bodo ločeni od trenutne funkcije. Želite nadaljevati?",
+	"wikilambda-publish-output-changed-impact-prompt": "Spremenili ste vrsto izhoda te funkcije. Vse obstoječe izvedbe in testi bodo ločeni od trenutne funkcije. Želite nadaljevati?",
+	"wikilambda-publish-input-and-output-changed-impact-prompt": "Spremenili ste vrsto vhoda in izhoda te funkcije. Vse obstoječe izvedbe in preizkusi bodo ločeni od trenutne funkcije. Želite nadaljevati?",
+	"wikilambda-functioncall-metadata-implementation-id": "ID izvedbe",
+	"wikilambda-functioncall-metadata-implementation-type": "Vrsta izvedbe",
+	"wikilambda-functioncall-metadata-orchestration-hostname": "Orkestracijski strežnik",
+	"wikilambda-functioncall-metadata-evaluation-hostname": "Ocenjevalni strežnik",
+	"wikilambda-functioncall-metadata-expected-result": "Pričakovani rezultat",
+	"wikilambda-functioncall-metadata-actual-result": "Dejanski rezultat",
+	"wikilambda-functioncall-metadata-validator-errors": "{{PLURAL:$1|Napaka|Napake}} validatorja",
+	"wikilambda-editor-tester-list-label": "Seznam preizkusov",
+	"wikilambda-tester-selector": "Izberite preizkus",
+	"wikilambda-tester-results-title": "Rezultati preizkusov",
+	"wikilambda-tester-results-caption": "Rezultati preizkusov funkcij glede na uvedbo",
+	"wikilambda-tester-no-results": "Ni rezultatov preizkusov. Za ogled rezultatov dodajte izvedbo in preizkus.",
+	"wikilambda-tester-results-percentage-label": "Skupno opravljenih preizkusov",
+	"wikilambda-tester-run-testers": "Izvedi vse preizkuse",
+	"wikilambda-tester-run-tester": "Zaženi preizkus",
+	"wikilambda-metadata-duplicate-alias-error": "»$1« že obstaja",
+	"wikilambda-metadata-all-languages": "Prikaži vse vnesene jezike",
+	"wikilambda-persistentobject-details-label": "Podrobnosti",
+	"wikilambda-editor-fn-step-function-details": "Podrobnosti"
+}

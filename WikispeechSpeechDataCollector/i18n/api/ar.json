@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"apihelp-wikispeech-sdc-crud-summary": "واجهة برمجة تطبيقات الوصول إلى كائن المجال الدائم العام.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction-json": "فشل إلغاء تسلسل المعاملة JSON.",
+	"apierror-wikispeech-sdc-crud-deserialize-transaction": "فشل إلغاء تسلسل المعاملة.",
+	"apierror-wikispeech-sdc-crud-execute-transaction": "فشل تنفيذ المعاملة.",
+	"apierror-wikispeech-sdc-crud-serialize-response": "فشل إجراء تسلسل للاستجابة.",
+	"apihelp-wikispeech-sdc-crud-example-1": "إنشاء طلب مستخدم واحد جديد.",
+	"apihelp-wikispeech-sdc-crud-example-2": "اقرأ طلب مستخدم واحد.",
+	"apihelp-wikispeech-sdc-crud-example-3": "حذف طلب مستخدم واحد."
+}

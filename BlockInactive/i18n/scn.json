@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"blockinactive-table-username": "Nomu utenti",
+	"blockinactive-table-userid": "ID utenti",
+	"blockinactive-table-actions": "Azzioni",
+	"blockinactive-action-block": "Blocca"
+}

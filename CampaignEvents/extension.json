@@ -1,0 +1,463 @@
+{
+	"name": "CampaignEvents",
+	"author": [
+		"[https://meta.wikimedia.org/wiki/Campaigns/Foundation_Product_Team WMF Campaigns Team]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CampaignEvents",
+	"descriptionmsg": "campaignevents-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.40.0"
+	},
+	"attributes": {
+		"VisualEditor": {
+			"AvailableNamespaces": {
+				"Event": true
+			}
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\CampaignEvents\\": "src/",
+		"MediaWiki\\Extension\\CampaignEvents\\Maintenance\\": "maintenance/"
+	},
+	"AvailableRights": [
+		"campaignevents-enable-registration",
+		"campaignevents-delete-registration"
+	],
+	"config": {
+		"CampaignEventsDatabaseCluster": {
+			"description": "The database cluster to use. False means the cluster of the current wiki will be used.",
+			"value": false
+		},
+		"CampaignEventsDatabaseName": {
+			"description": "The database to use. False means the database of the current wiki will be used.",
+			"value": false
+		},
+		"CampaignEventsProgramsAndEventsDashboardInstance": {
+			"description": "Determines which instance of the P&E Dashboard should be used, if any. Supported values are 'production', 'staging', or null to not use the dashboard.",
+			"value": null
+		},
+		"CampaignEventsProgramsAndEventsDashboardAPISecret": {
+			"description": "API secret to use with the selected P&E Dashboard instance. Must be configured if you intend to use the P&E Dashboard.",
+			"value": null
+		}
+	},
+	"DefaultUserOptions": {
+		"echo-subscriptions-email-campaign-events-notification-registration": true,
+		"echo-subscriptions-web-campaign-events-notification-registration": false
+	},
+	"GroupPermissions": {
+		"user": {
+			"campaignevents-enable-registration": true
+		},
+		"sysop": {
+			"campaignevents-delete-registration": true
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"CampaignEventsAliases": "CampaignEvents.alias.php",
+		"CampaignEventsNamespaces": "CampaignEvents.namespaces.php"
+	},
+	"HookHandlers": {
+		"SchemaChanges": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Hooks\\Handlers\\SchemaChangesHandler"
+		},
+		"ArticleViewHeader": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Hooks\\Handlers\\ArticleViewHeaderHandler",
+			"services": [
+				"CampaignEventsEventPageDecorator"
+			]
+		},
+		"PageMoveAndDeleteHandler": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Hooks\\Handlers\\PageMoveAndDeleteHandler",
+			"services": [
+				"CampaignEventsMWEventLookupFromPage",
+				"CampaignEventsEventStore",
+				"PageStore",
+				"TitleFormatter"
+			]
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "SchemaChanges",
+		"ArticleViewHeader": "ArticleViewHeader",
+		"PageMoveComplete": "PageMoveAndDeleteHandler",
+		"PageDeleteComplete": "PageMoveAndDeleteHandler",
+		"BeforeCreateEchoEvent": "MediaWiki\\Extension\\CampaignEvents\\Hooks\\Handlers\\EchoHooksHandler::onBeforeCreateEchoEvent"
+	},
+	"MessagesDirs": {
+		"CampaignEvents": [
+			"i18n"
+		]
+	},
+	"namespaces": [
+		{
+			"id": 1728,
+			"constant": "NS_EVENT",
+			"name": "Event"
+		},
+		{
+			"id": 1729,
+			"constant": "NS_EVENT_TALK",
+			"name": "Event_talk"
+		}
+	],
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "CampaignEvents/resources"
+	},
+	"ResourceModules": {
+		"ext.campaignEvents.specialmyevents.styles": {
+			"localBasePath": "resources/ext.campaignEvents.specialmyevents.styles",
+			"remoteExtPath": "CampaignEvents/resources/ext.campaignEvents.specialmyevents.styles",
+			"styles": [
+				"EventsPager.less",
+				"SpecialMyEvents.less"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+		"ext.campaignEvents.specialmyevents": {
+			"localBasePath": "resources/ext.campaignEvents.specialmyevents",
+			"remoteExtPath": "CampaignEvents/resources/ext.campaignEvents.specialmyevents",
+			"packageFiles": [
+				"index.js",
+				"ConfirmEventDeletionDialog.js",
+				"FilterEventsWidget.js",
+				"EventKebabMenu.js"
+			],
+			"messages": [
+				"campaignevents-myevents-filter-btn-label",
+				"campaignevents-eventslist-menu-edit",
+				"campaignevents-eventslist-menu-view-eventpage",
+				"campaignevents-eventslist-menu-close",
+				"campaignevents-eventslist-menu-close-success",
+				"campaignevents-eventslist-menu-open",
+				"campaignevents-eventslist-menu-open-success",
+				"campaignevents-eventslist-menu-delete",
+				"campaignevents-eventslist-delete-dialog-title",
+				"campaignevents-eventslist-delete-dialog-body",
+				"campaignevents-eventslist-delete-dialog-cancel",
+				"campaignevents-eventslist-delete-dialog-delete",
+				"campaignevents-eventslist-delete-success"
+			],
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.jqueryMsg",
+				"mediawiki.Uri",
+				"mediawiki.util",
+				"oojs-ui-widgets",
+				"oojs-ui-windows",
+				"oojs-ui.styles.icons-interactions"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+		"ext.campaignEvents.eventpage.styles": {
+			"styles": [
+				"ext.campaignEvents.eventpage.styles.less",
+				"ext.campaignEvents.TextWithIconWidget.less",
+				"ext.campaignEvents.userlinks.styles.less"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+		"ext.campaignEvents.eventpage": {
+			"localBasePath": "resources/ext.campaignEvents.eventpage",
+			"remoteExtPath": "CampaignEvents/resources/ext.campaignEvents.eventpage",
+			"packageFiles": [
+				"index.js",
+				"ConfirmUnregistrationDialog.js",
+				"EnableRegistrationDialog.js",
+				"EventDetailsDialog.js",
+				"RegistrationConfirmationDialog.js",
+				{
+					"name": "data.json",
+					"callback": "MediaWiki\\Extension\\CampaignEvents\\Hooks\\ResourceLoaderCallbacks::getEventPageData"
+				}
+			],
+			"styles": [
+				"EventDetailsDialog.less",
+				"RegistrationConfirmationDialog.less"
+			],
+			"messages": [
+				"campaignevents-eventpage-dialog-title",
+				"campaignevents-eventpage-dialog-action-close",
+				"campaignevents-eventpage-register-notification",
+				"campaignevents-eventpage-unregister-confirmation-title",
+				"campaignevents-eventpage-unregister-confirmation-body",
+				"campaignevents-eventpage-unregister-confirmation-confirm",
+				"campaignevents-eventpage-unregister-confirmation-dismiss",
+				"campaignevents-eventpage-register-confirmation-confirm",
+				"campaignevents-eventpage-enable-registration-dialog-title",
+				"campaignevents-eventpage-enable-registration-dialog-body",
+				"campaignevents-eventpage-enable-registration-dialog-dismiss",
+				"campaignevents-eventpage-enable-registration-dialog-confirm",
+				"campaignevents-registration-confirmation-helptext-public",
+				"campaignevents-registration-confirmation-helptext-private",
+				"campaignevents-registration-confirmation-toggle-private",
+				"campaignevents-registration-confirmation-toggle-public",
+				"campaignevents-eventpage-register-confirmation-title"
+			],
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.cookie",
+				"mediawiki.user",
+				"mediawiki.util",
+				"mediawiki.Uri",
+				"oojs-ui-core",
+				"oojs-ui-windows",
+				"oojs-ui-widgets"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+		"ext.campaignEvents.specialeventdetails": {
+			"localBasePath": "resources/ext.campaignEvents.specialeventdetails",
+			"remoteExtPath": "CampaignEvents/resources/ext.campaignEvents.specialeventdetails",
+			"packageFiles": [
+				"index.js",
+				"OrganizersLoader.js",
+				"ParticipantsManager.js",
+				"RemoveParticipantDialog.js",
+				"ScrollDownObserver.js"
+			],
+			"messages": [
+				"campaignevents-event-details-select-all",
+				"campaignevents-event-details-participants-checkboxes-selected",
+				"campaignevents-event-details-remove-participant-confirmation-title",
+				"campaignevents-event-details-remove-participant-confirmation-msg",
+				"campaignevents-event-details-remove-participant-remove-btn",
+				"campaignevents-event-details-remove-participant-cancel-btn",
+				"campaignevents-event-details-remove-participant-notification",
+				"campaignevents-event-details-remove-all-participant-notification",
+				"campaignevents-event-details-remove-participant-notification-error",
+				"campaignevents-event-details-header-participants",
+				"campaignevents-userlink-suppressed-user",
+				"campaignevents-userlink-deleted-user"
+			],
+			"dependencies": [
+				"mediawiki.language",
+				"oojs-ui-core",
+				"oojs-ui-windows",
+				"mediawiki.api",
+				"mediawiki.user",
+				"mediawiki.util"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+		"ext.campaignEvents.specialeventdetails.styles": {
+			"styles": [
+				"ext.campaignEvents.specialeventdetails.styles.less",
+				"ext.campaignEvents.TextWithIconWidget.less",
+				"ext.campaignEvents.userlinks.styles.less"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+		"ext.campaignEvents.editeventregistration": {
+			"localBasePath": "resources/ext.campaignEvents.editeventregistration",
+			"remoteExtPath": "CampaignEvents/resources/ext.campaignEvents.editeventregistration",
+			"packageFiles": [
+				"index.js"
+			],
+			"dependencies": [
+				"mediawiki.widgets.datetime"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+		"ext.campaignEvents.specialregisterforevent.styles": {
+			"localBasePath": "resources/ext.campaignEvents.specialregisterforevent.styles",
+			"remoteExtPath": "CampaignEvents/resources/ext.campaignEvents.specialregisterforevent.styles",
+			"styles": [
+				"RegisterForEvent.styles.less"
+			],
+			"targets": [ "desktop", "mobile" ]
+		}
+	},
+	"RestRoutes": [
+		{
+			"path": "/campaignevents/v0/event_registration",
+			"method": "POST",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\EnableEventRegistrationHandler",
+			"services": [
+				"CampaignEventsEventFactory",
+				"CampaignEventsPermissionChecker",
+				"CampaignEventsEditEventCommand",
+				"UserFactory"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/event_registration/{id}",
+			"method": "GET",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\GetEventRegistrationHandler",
+			"services": [
+				"CampaignEventsEventLookup"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/event_registration/{id}",
+			"method": "DELETE",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\DeleteEventRegistrationHandler",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsDeleteEventCommand",
+				"UserFactory"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/event_registration/{id}/participants/self",
+			"method": "PUT",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\RegisterForEventHandler",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsRegisterParticipantCommand",
+				"UserFactory"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/event_registration/{id}/participants/self",
+			"method": "DELETE",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\CancelEventRegistrationHandler",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsUnregisterParticipantCommand",
+				"UserFactory"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/event_registration/{id}",
+			"method": "PUT",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\UpdateEventRegistrationHandler",
+			"services": [
+				"CampaignEventsEventFactory",
+				"CampaignEventsPermissionChecker",
+				"CampaignEventsEditEventCommand",
+				"UserFactory",
+				"CampaignEventsEventLookup"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/event_registration/{id}/organizers",
+			"method": "GET",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\ListOrganizersHandler",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsOrganizersStore",
+				"CampaignEventsRoleFormatter",
+				"CampaignEventsCentralUserLookup",
+				"CampaignEventsUserLinker"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/event_registration/{id}/participants",
+			"method": "GET",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\ListParticipantsHandler",
+			"services": [
+				"CampaignEventsPermissionChecker",
+				"CampaignEventsEventLookup",
+				"CampaignEventsParticipantsStore",
+				"CampaignEventsCentralUserLookup",
+				"CampaignEventsUserLinker"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/organizer/{userid}/event_registrations",
+			"method": "GET",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\ListEventsByOrganizerHandler",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsCentralUserLookup"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/participant/{userid}/event_registrations",
+			"method": "GET",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\ListEventsByParticipantHandler",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsCentralUserLookup"
+			]
+		},
+		{
+			"path": "/campaignevents/v0/event_registration/{id}/participants",
+			"method": "DELETE",
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Rest\\RemoveParticipantsFromEventHandler",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsUnregisterParticipantCommand",
+				"UserFactory"
+			]
+		}
+	],
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"SpecialPages": {
+		"EnableEventRegistration": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Special\\SpecialEnableEventRegistration",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsEventFactory",
+				"CampaignEventsEditEventCommand",
+				"CampaignEventsPolicyMessagesLookup"
+			]
+		},
+		"EditEventRegistration": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Special\\SpecialEditEventRegistration",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsEventFactory",
+				"CampaignEventsEditEventCommand",
+				"CampaignEventsPermissionChecker",
+				"CampaignEventsPolicyMessagesLookup"
+			]
+		},
+		"DeleteEventRegistration": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Special\\SpecialDeleteEventRegistration",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsDeleteEventCommand",
+				"CampaignEventsPermissionChecker"
+			]
+		},
+		"RegisterForEvent": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Special\\SpecialRegisterForEvent",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsCentralUserLookup",
+				"CampaignEventsRegisterParticipantCommand",
+				"CampaignEventsParticipantsStore",
+				"CampaignEventsPolicyMessagesLookup"
+			]
+		},
+		"CancelEventRegistration": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Special\\SpecialCancelEventRegistration",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsCentralUserLookup",
+				"CampaignEventsUnregisterParticipantCommand",
+				"CampaignEventsParticipantsStore"
+			]
+		},
+		"MyEvents": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Special\\SpecialMyEvents",
+			"services": [
+				"CampaignEventsEventsPagerFactory",
+				"CampaignEventsCentralUserLookup"
+			]
+		},
+		"EventDetails": {
+			"class": "MediaWiki\\Extension\\CampaignEvents\\Special\\SpecialEventDetails",
+			"services": [
+				"CampaignEventsEventLookup",
+				"CampaignEventsParticipantsStore",
+				"CampaignEventsOrganizersStore",
+				"MessageFormatterFactory",
+				"CampaignEventsCentralUserLookup",
+				"CampaignEventsFrontendModulesFactory"
+			]
+		}
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\CampaignEvents\\Tests\\Unit\\": "tests/phpunit/unit/",
+		"MediaWiki\\Extension\\CampaignEvents\\Tests\\Integration\\": "tests/phpunit/integration/"
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"right-wikispeech-sdc-record": "ხონარიშ დინოჭარუა",
+	"action-wikispeech-sdc-record": "ხონარიშ დინოჭარუა",
+	"recordspeech": "რაგადიშ დინოჭარუა",
+	"wikispeech-sdc-record": "დინოჭარუა",
+	"wikispeech-sdc-save": "ჩუალა",
+	"wikispeech-sdc-skip": "გიშატება",
+	"right-wikispeech-sdc-speech-recording": "რაგადიშ დინოჭარუაშ რედაქტირაფა",
+	"action-wikispeech-sdc-speech-recording": "რაგადიშ დინოჭარუაშ რედაქტირაფა",
+	"wikispeech-sdc-status-starting": "დოჭყაფა",
+	"wikispeech-sdc-status-ready": "ზათი",
+	"wikispeech-sdc-status-listening": "გირჩქილეთ",
+	"wikispeech-sdc-status-recording": "ინმიჭარანს"
+}

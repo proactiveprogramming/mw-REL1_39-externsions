@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaganer",
+			"Mouse21",
+			"Okras",
+			"Otogi"
+		]
+	},
+	"apifeatureusage": "Использование функций API",
+	"apifeatureusage-desc": "Получить краткое изложение используемых функций API для пользовательского агента",
+	"apifeatureusage-elasticsearch-error": "Ошибка Elasticsearch: $1",
+	"apifeatureusage-legend": "Использование функций API",
+	"apifeatureusage-agent-label": "Браузер:",
+	"apifeatureusage-startdate-label": "Дата начала:",
+	"apifeatureusage-enddate-label": "Дата окончания:",
+	"apifeatureusage-submit": "Выбрать данные",
+	"apifeatureusage-no-indexes": "Нет данных за указанный диапазон дат.",
+	"apifeatureusage-missing-indexes": "Нет данных за часть указанного диапазона дат.",
+	"apifeatureusage-warnings": "Предупреждение: $1",
+	"apifeatureusage-column-feature": "Функция",
+	"apifeatureusage-column-date": "Дата",
+	"apifeatureusage-column-uses": "Использования",
+	"apifeatureusage-deprecation-help": "Использование [[Special:ApiFeatureUsage]] просмотреть использование устаревших функций вашим приложением."
+}

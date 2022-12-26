@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Assele",
+			"Ләйсән"
+		]
+	},
+	"contributors": "Өлөш индереүселәр",
+	"contributors-desc": "Биткә төп өлөш индереүселәрҙе билдәләй",
+	"contributors-toolbox": "Бит авторҙары",
+	"contributors-legend": "Биткә төп өлөш индереүселәр исемлеге",
+	"contributors-target": "Исем:",
+	"contributors-submit": "Күрһәтергә",
+	"contributors-subtitle": "$1 битенә төп өлөш индереүселәр",
+	"contributors-badtitle": "Исем дөрөҫ түгел.",
+	"contributors-nosuchpage": "$1 бите юҡ."
+}

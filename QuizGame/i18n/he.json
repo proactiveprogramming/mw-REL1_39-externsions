@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Ex-Diktator"
+		]
+	},
+	"quizgame-edit": "עריכה",
+	"quizgame-delete": "מחיקה",
+	"quizgame-admin-permission": "אין לך הרשאה לערוך.",
+	"quizgame-edit-picture-link": "עריכת תמונה",
+	"quizgame-flagged-reason": "סיבה",
+	"quizgame-submitted-by": "נשלח על־ידי",
+	"quizgame-save-page-button": "שמירת הדף",
+	"quizgame-cancel-button": "ביטול",
+	"quizgame-submit": "שליחה",
+	"quizgame-playneverending": "לשחק בשעשועון ידע שאין לו סוף",
+	"quizgame-play-quiz": "לשחק בשעשועון ידע שאין לו סוף",
+	"quizgame-create-edit-picture": "עריכת תמונה",
+	"quizgame-create-play": "ליצור ולשחק!",
+	"apihelp-quizgame-param-comment": "סיבה לסימון (משמש רק ב־flagItem)."
+}

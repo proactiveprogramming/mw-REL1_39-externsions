@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"contributors": "Pśinosowarje",
+	"contributors-desc": "Zespominujo głownych pśinosowarjow boka",
+	"contributors-toolbox": "Głowne pśinosowarje",
+	"contributors-legend": "Głowne pśinosowarje boka pokazaś",
+	"contributors-target": "Titel",
+	"contributors-submit": "Pokazaś",
+	"contributors-subtitle": "Głowne pśinosowarje wót $1",
+	"contributors-badtitle": "Njepłaśiwy titel.",
+	"contributors-nosuchpage": "Bok $1 njeeksistěrujo."
+}

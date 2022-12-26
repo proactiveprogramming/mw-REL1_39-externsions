@@ -1,0 +1,27 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	],
+	"globals": {
+		"Ext": "readonly",
+		"jQuery": "readonly",
+		"BS": "readonly",
+		"bs": "readonly",
+		"mediaWiki": "readonly",
+		"enhancedUpload": "readonly",
+		"ve": "readonly",
+		"OOJSPlus": "readonly",
+		"blueSpice": "readonly",
+		"QUnit": "readonly"
+	},
+	"rules": {
+		"no-implicit-globals": "off"
+	},
+	"env": {
+		"browser": true,
+		"es6": true
+	}
+}

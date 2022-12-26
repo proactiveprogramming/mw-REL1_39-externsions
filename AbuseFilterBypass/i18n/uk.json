@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion"
+		]
+	},
+	"abusefilterbypass-desc": "Дозволяє привілейованим користувачам обходити всі фільтри зловживань",
+	"right-abusefilter-bypass": "Обхід всіх фільтрів зловживань",
+	"action-abusefilter-bypass": "обхід всіх фільтрів зловживань"
+}

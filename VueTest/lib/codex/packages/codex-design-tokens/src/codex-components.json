@@ -1,0 +1,233 @@
+{
+	"background-color": {
+		"button": {
+			"quiet--hover": {
+				"value": "{ color.modifier-gray100-translucent }"
+			},
+			"quiet--active": {
+				"value": "{ color.modifier-gray200-translucent }"
+			}
+		},
+		"input-binary--checked": {
+			"value": "{ color.blue600 }"
+		},
+		"primary": {
+			"deprecated": "Use `background-color-progressive` instead.",
+			"value": "{ background-color.progressive }"
+		},
+		"primary--hover": {
+			"deprecated": "No replacement for this token. Only used in non-Codex products and design decision is to need to rely on background for this state.",
+			"value": "{ color.modifier-blue600-translucent }"
+		},
+		"quiet": {
+			"deprecated": "Use `background-color-transparent` instead.",
+			"value": "{ background-color.transparent }"
+		},
+		"quiet--hover": {
+			"deprecated": "Use `background-color-button-quiet--hover` instead.",
+			"value": "{ color.modifier-gray100-translucent }"
+		},
+		"quiet--active": {
+			"deprecated": "Use `background-color-button-quiet--active` instead.",
+			"value": "{ color.modifier-gray200-translucent }"
+		},
+		"message": {
+			"comment": "User system messages (errors, warnings, successes, notices).",
+			"notice": {
+				"deprecated": "Use `background-color-notice-subtle` instead.",
+				"value": "{ color.gray200 }"
+			},
+			"error": {
+				"deprecated": "Use `background-color-error-subtle` instead.",
+				"value": "{ color.red100 }"
+			},
+			"warning": {
+				"deprecated": "Use `background-color-warning-subtle` instead.",
+				"value": "{ color.yellow100 }"
+			},
+			"success": {
+				"deprecated": "Use `background-color-success-subtle` instead.",
+				"value": "{ color.green100 }"
+			}
+		},
+		"tabs-framed": {
+			"deprecated": "Former Tabs bar background color token. Use `background-color-interactive` instead.",
+			"value": "{ color.gray200 }"
+		},
+		"toolbar": {
+			"deprecated": "Former Toolbar background color token. Use `background-color-base` instead.",
+			"value": "{ background-color.base }"
+		},
+		"tool--hover": {
+			"deprecated": "Former Toolbar tools background color token. Use `background-color-base` instead.",
+			"value": "{ background-color.base--hover }"
+		},
+		"tool--active": {
+			"deprecated": "Use `background-color-progressive` instead.",
+			"value": "{ background-color.progressive }"
+		},
+		"tool--active-hover": {
+			"deprecated": "Use `background-color-progressive--hover` instead.",
+			"value": "{ background-color.progressive--hover }"
+		}
+	},
+	"color": {
+		"primary": {
+			"deprecated": "In use in many non-button applications as references in WikimediaUI Base. Note that we have to replace those before removing tokens group here.",
+			"value": "{ color.progressive }"
+		},
+		"primary--hover": {
+			"deprecated": true,
+			"value": "{ color.progressive--hover }"
+		},
+		"primary--active": {
+			"deprecated": true,
+			"value": "{ color.progressive--active }"
+		},
+		"primary--focus": {
+			"deprecated": true,
+			"value": "{ color.progressive--focus }"
+		},
+		"link-red": {
+			"comment": "Red ('new') Link color and states",
+			"value": "{ color.red600 }"
+		},
+		"link-red--hover": {
+			"value": "{ color.red500 }"
+		},
+		"link-red--active": {
+			"value": "{ color.red700 }"
+		},
+		"link-red--focus": {
+			"value": "{ color.red600 }"
+		},
+		"link-red--visited": {
+			"value": "{ color.maroon }"
+		}
+	},
+	"position": {
+		"offset": {
+			"input-radio--focus": {
+				"comment": "TODO: This has to be a relative value, for design reasons.",
+				"value": "-{ dimension.25 }{ unit.system }"
+			}
+		}
+	},
+	"min-size": {
+		"icon": {
+			"value": "{ dimension.125 }{ unit.system }"
+		}
+	},
+	"size": {
+		"icon": {
+			"comment": "TODO: This has to be a relative value, for accessibility reasons.",
+			"value": "{ dimension.125 }{ unit.system }"
+		},
+		"indicator": {
+			"comment": "TODO: This has to be a relative value, for accessibility reasons.",
+			"value": "{ dimension.75 }{ unit.system }"
+		}
+	},
+	"max-width": {
+		"button": {
+			"comment": "Note, that this is a slight amendment from WikimediaUI Base from `28.75em` = `460px` to `448px` – `dimension.2800`",
+			"value": "{ dimension.2800 }{ unit.system }"
+		}
+	},
+	"border": {
+		"input-binary": {
+			"deprecated": "Legacy `border-input-binary` for non-Codex products using WikimediaUI Base. Use sub-property tokens with `border-color-input-binary` instead.",
+			"value": "{ border-width.base } { border-style.base } { border-color.input-binary }"
+		}
+	},
+	"border-color": {
+		"divider": {
+			"value": "{ color.gray400 }"
+		},
+		"input--hover": {
+			"value": "{ border-color.base--active }"
+		},
+		"input-binary": {
+			"value": "{ border-color.base--active }"
+		},
+		"input-binary--hover": {
+			"value": "{ border-color.progressive--hover }"
+		},
+		"input-binary--active": {
+			"value": "{ border-color.progressive--active }"
+		},
+		"input-binary--focus": {
+			"value": "{ border-color.progressive--focus }"
+		},
+		"input-binary--checked": {
+			"value": "{ border-color.progressive }"
+		},
+		"primary": {
+			"deprecated": true,
+			"value": "{ border-color.progressive }"
+		},
+		"primary--hover": {
+			"deprecated": true,
+			"value": "{ border-color.progressive--hover }"
+		},
+		"primary--active": {
+			"deprecated": true,
+			"value": "{ border-color.progressive--active }"
+		},
+		"primary--focus": {
+			"deprecated": true,
+			"value": "{ border-color.progressive--focus }"
+		}
+	},
+	"padding": {
+		"input-text": {
+			"deprecated": "Legacy padding for use in non-Codex products. Use `spacing-25 spacing-50` instead.",
+			"value": "{ padding.vertical.base } { padding.horizontal.input-text }"
+		},
+		"horizontal": {
+			"input-text": {
+				"deprecated": "Legacy padding for use in non-Codex products. Use `spacing-50` instead.",
+				"value": "{ dimension.50 }{ unit.system }"
+			}
+		},
+		"vertical": {
+			"menu": {
+				"comment": "Note, that we need to rely on `calc()` for cross-stylesheet format output. Not perfectly aligned to current basic browser support.",
+				"deprecated": "Legacy padding for use in non-Codex products.",
+				"value": "calc( { dimension.25 }{ unit.system } + { border-width.base } )"
+			}
+		}
+	},
+	"box-shadow": {
+		"card": {
+			"deprecated": true,
+			"value": "{ box-shadow.drop-small }"
+		},
+		"dialog": {
+			"deprecated": true,
+			"value": "{ box-shadow.drop-medium }"
+		},
+		"menu": {
+			"deprecated": true,
+			"value": "{ box-shadow.drop-medium }"
+		},
+		"progress-bar": {
+			"deprecated": true,
+			"value": "{ box-shadow.drop-small }"
+		}
+	},
+	"font-family": {
+		"heading-main": {
+			"comment": "Legacy value from WikimediaUI Base. Use for first heading special treatment.",
+			"value": "{ font-family.serif.100 }"
+		}
+	},
+	"transition-property": {
+		"icon": {
+			"value": "{ transition-property.color }"
+		},
+		"toggle-switch-grip": {
+			"value": "{ transition-property.background-color }, { transition-property.border-color }, { transition-property.left }"
+		}
+	}
+}

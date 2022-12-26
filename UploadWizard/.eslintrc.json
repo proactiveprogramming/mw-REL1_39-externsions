@@ -1,0 +1,39 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	],
+	"globals": {
+		"wikibase": "readonly"
+	},
+	"rules": {
+		"max-len": "off",
+		"mediawiki/class-doc": "warn",
+		"mediawiki/msg-doc": "warn",
+		"jquery/no-each-util": "off",
+		"jquery/no-map-util": "off",
+		"jsdoc/no-undefined-types": [
+			"warn",
+			{
+				"definedTypes": [
+					"uw"
+				]
+			}
+		],
+		"no-shadow": "warn",
+		"es-x/no-array-prototype-keys": "warn",
+		"es-x/no-array-prototype-values": "warn",
+		"es-x/no-symbol-prototype-description": "warn",
+		"es-x/no-typed-arrays": "warn"
+	},
+	"settings": {
+		"jsdoc": {
+			"preferredTypes": {
+				"StatementWidget": "StatementWidget",
+				"wikibaseDatamodel": "wikibaseDatamodel"
+			}
+		}
+	}
+}

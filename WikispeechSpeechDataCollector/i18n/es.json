@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rodney Araujo"
+		]
+	},
+	"wikispeech-sdc-desc": "Una herramienta para grabar, revisar y anotar voces habladas.",
+	"right-wikispeech-sdc-record": "Grabar voz",
+	"action-wikispeech-sdc-record": "Grabar voz",
+	"recordspeech": "Grabar discurso",
+	"wikispeech-sdc-record": "Grabar",
+	"wikispeech-sdc-save": "Guardar",
+	"wikispeech-sdc-skip": "Omitir"
+}

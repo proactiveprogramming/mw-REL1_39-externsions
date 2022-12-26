@@ -1,0 +1,6 @@
+## Directory-based project format:
+node_modules/
+/composer.lock
+/vendor
+/.eslintcache
+/.idea

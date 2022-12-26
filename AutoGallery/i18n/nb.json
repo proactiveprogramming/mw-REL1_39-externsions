@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"autogallery-desc": "Legger til en ny gallerimodus (<code>auto</code>) til <code><nowiki><gallery></nowiki></code>-taggen."
+}

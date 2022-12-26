@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Ата"
+		]
+	},
+	"anchorhandler-desc": "Дозволяє вставляти теги-якорі <nowiki><</nowiki>a> у вікітекст"
+}

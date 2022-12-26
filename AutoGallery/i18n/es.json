@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agent"
+		]
+	},
+	"autogallery-desc": "Agrega un nuevo modo de galleria (<code>auto</code>) al wikitext markup  <code><nowiki><gallery></nowiki></code>"
+}

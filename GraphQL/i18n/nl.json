@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Romaine"
+		]
+	},
+	"graphql-special-query": "Query",
+	"graphql-special-variables": "Variabelen",
+	"graphql-special-result": "Resultaat"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion"
+		]
+	},
+	"generatemochaconfig-extensionname": "GenerateMochaConfig",
+	"generatemochaconfig-desc": "Скрипт, що генерує JSON, який можна використати для виконання Mocha-тестувань для всіх увімкнених розширень"
+}

@@ -1,0 +1,18 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es6",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	],
+	"env": {
+		"browser": true,
+		"commonjs": true
+	},
+	"rules": {
+		"compat/compat": "off",
+		"vue/no-boolean-default": "warn",
+		"no-undef": "warn",
+		"no-restricted-syntax": "warn"
+	}
+}

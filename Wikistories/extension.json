@@ -1,0 +1,304 @@
+{
+	"name": "Wikistories",
+	"namemsg": "wikistories-extensionname",
+	"descriptionmsg": "wikistories-extensiondesc",
+	"license-name": "MIT",
+	"url": "https://www.mediawiki.org/wiki/Extension:Wikistories",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Wikistories\\": "includes/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\Wikistories\\Tests\\": "tests/phpunit/"
+	},
+	"ContentHandlers": {
+		"story": {
+			"class": "MediaWiki\\Extension\\Wikistories\\StoryContentHandler",
+			"services": [
+				"Wikistories.StoryConverter",
+				"Wikistories.StoryValidator",
+				"Wikistories.Cache",
+				"Wikistories.StoryRenderer"
+			]
+		}
+	},
+	"SpecialPages": {
+		"StoryBuilder": {
+			"class": "MediaWiki\\Extension\\Wikistories\\SpecialStoryBuilder",
+			"services": [
+				"WikiPageFactory",
+				"Wikistories.StoryRenderer",
+				"PageStore"
+			]
+		}
+	},
+	"Hooks": {
+		"GetBetaFeaturePreferences": "MediaWiki\\Extension\\Wikistories\\Hooks::onGetBetaFeaturePreferences",
+		"BeforePageDisplayMobile": "MediaWiki\\Extension\\Wikistories\\Hooks::onBeforePageDisplayMobile",
+		"LoginFormValidErrorMessages": "MediaWiki\\Extension\\Wikistories\\Hooks::onLoginFormValidErrorMessages",
+		"PageSaveComplete": "MediaWiki\\Extension\\Wikistories\\Hooks::onPageSaveComplete",
+		"PageDeleteComplete": "MediaWiki\\Extension\\Wikistories\\Hooks::onPageDeleteComplete",
+		"GetPreferences": "MediaWiki\\Extension\\Wikistories\\Hooks::onGetPreferences"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"ExtensionMessagesFiles": {
+		"WikistoriesAliasSpecial": "Wikistories.alias.special.php",
+		"WikistoriesNamespaces": "Wikistories.i18n.namespaces.php"
+	},
+	"MessagesDirs": {
+		"Wikistories": [ "i18n", "i18n/api" ]
+	},
+	"config": {
+		"WikistoriesMinFrames": {
+			"description": "Minimum number of frames a story needs to have to be valid.",
+			"value": 2
+		},
+		"WikistoriesMaxFrames": {
+			"description": "Maximum number of frames a story needs to have to be valid.",
+			"value": 10
+		},
+		"WikistoriesMaxTextLength": {
+			"description": "Maximum number of characters a story frame can have.",
+			"value": 1000
+		},
+		"WikistoriesDiscoveryMode": {
+			"description": "Defines how is the discovery module activated. 'beta' means it is a beta feature. 'public' means it is available by default to everyone, including anons. Any other value means the discovery feature is disabled. ",
+			"value": "off"
+		}
+	},
+	"DefaultUserOptions": {
+		"wikistories-pref-showdiscovery": true
+	},
+	"namespaces": [
+		{
+			"id": 1704,
+			"constant": "NS_STORY",
+			"name": "Story",
+			"content": true,
+			"defaultcontentmodel": "story",
+			"protection": "edit-story"
+		},
+		{
+			"id": 1705,
+			"constant": "NS_STORY_TALK",
+			"name": "Story_Talk",
+			"content": true,
+			"defaultcontentmodel": "wikitext"
+		}
+	],
+	"AvailableRights": [
+		"edit-story"
+	],
+	"GroupPermissions": {
+		"user": {
+			"edit-story": true
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Wikistories/resources"
+	},
+	"ResourceModules": {
+		"ext.wikistories.viewer-nojs": {
+			"targets": [ "desktop", "mobile" ],
+			"styles": [
+				"ext.wikistories.viewer-nojs/viewer-nojs.less"
+			]
+		},
+		"ext.wikistories.viewer": {
+			"localBasePath": "resources/ext.wikistories.viewer",
+			"targets": [ "desktop", "mobile" ],
+			"packageFiles": [
+				"index.js",
+				"StoryViewer.vue",
+				"components/ImageAttribution.vue",
+				"components/Textbox.vue",
+				"store/index.js",
+				"store/story.js",
+				"util/isTouchDevice.js",
+				"util/timer.js",
+				{ "name": "ConfirmDialog.vue", "file": "../components/ConfirmDialog.vue" },
+				{ "name": "DotsMenu.vue", "file": "../components/DotsMenu.vue" },
+				{ "name": "DotsMenuItem.vue", "file": "../components/DotsMenuItem.vue" }
+			],
+			"styles": [
+				"viewer.less"
+			],
+			"es6": true,
+			"dependencies": [ "vue", "vuex" ],
+			"messages": [
+				"wikistories-storyviewer-next-story-header",
+				"wikistories-storyviewer-next-story-viewtext",
+				"wikistories-storyviewer-textsize",
+				"wikistories-storyviewer-edit",
+				"wikistories-storyviewer-talk",
+				"wikistories-storyviewer-cover-page-heading",
+				"wikistories-imageattribution-author-unknown",
+				"wikistories-storyviewer-textsize-title",
+				"wikistories-storyviewer-textsize-label-small",
+				"wikistories-storyviewer-textsize-label-regular",
+				"wikistories-storyviewer-textsize-label-large",
+				"wikistories-confirmdialog-cancel",
+				"wikistories-confirmdialog-ok"
+			]
+		},
+		"ext.wikistories.builder.styles": {
+			"localBasePath": "resources/ext.wikistories.builder",
+			"targets": [ "desktop", "mobile" ],
+			"styles": [
+				"builder.less"
+			],
+			"skinStyles": {
+				"minerva": [
+					"builder.minerva.less"
+				]
+			}
+		},
+		"ext.wikistories.builder": {
+			"localBasePath": "resources/ext.wikistories.builder",
+			"targets": [ "desktop", "mobile" ],
+			"packageFiles": [
+				"index.js",
+				"contributionEvents.js",
+				"App.vue",
+				"api/getPageInfo.js",
+				"api/saveStory.js",
+				"api/searchImages.js",
+				"components/Alert.vue",
+				"components/ConfirmDialog.vue",
+				"components/CurrentFrame.vue",
+				"components/AutoHeightTextarea.vue",
+				"components/Frames.vue",
+				"components/ListImage.vue",
+				"components/ImageAttribution.vue",
+				"components/ImageListView.vue",
+				"components/Navigator.vue",
+				"components/PrimaryButton.vue",
+				"components/RouterView.vue",
+				"components/Toast.vue",
+				"plugins/config.js",
+				"mixins/observer.js",
+				"store/article.js",
+				"store/index.js",
+				"store/router.js",
+				"store/search.js",
+				"store/story.js",
+				"util/convertUrlToMobile.js",
+				"util/safeAssignString.js",
+				"util/sortableFrames.js",
+				"util/strip.js",
+				"util/validateTitle.js",
+				"views/Article.vue",
+				"views/PublishForm.vue",
+				"views/Search.vue",
+				"views/Story.vue",
+				{ "name": "DotsMenu.vue", "file": "../components/DotsMenu.vue" },
+				{ "name": "DotsMenuItem.vue", "file": "../components/DotsMenuItem.vue" }
+			],
+			"dependencies": [
+				"vue",
+				"vuex",
+				"mediawiki.Title",
+				"mediawiki.api",
+				"mediawiki.ForeignApi",
+				"mediawiki.util",
+				"ext.eventLogging"
+			],
+			"messages": [
+				"wikistories-search-inputplaceholder",
+				"wikistories-search-cuetext",
+				"wikistories-search-noresultstext",
+				"wikistories-search-navigator-title",
+				"wikistories-search-navigator-title-selected-info",
+				"wikistories-story-goto-publish",
+				"wikistories-story-selecttext",
+				"wikistories-story-editdone",
+				"wikistories-story-replaceimage",
+				"wikistories-story-deleteframe",
+				"wikistories-story-feedback",
+				"wikistories-story-navigator-title",
+				"wikistories-story-navigator-title-edit",
+				"wikistories-imageattribution-author-unknown",
+				"wikistories-article-navigator-title",
+				"wikistories-article-cancelselection",
+				"wikistories-article-loading",
+				"wikistories-article-usetext",
+				"wikistories-article-info-banner",
+				"wikistories-article-info-expanded-banner",
+				"wikistories-alert-okbuttontext",
+				"wikistories-confirmdialog-delete-title",
+				"wikistories-confirmdialog-delete-message",
+				"wikistories-confirmdialog-delete-accept",
+				"wikistories-confirmdialog-delete-cancel",
+				"wikistories-confirmdialog-discardstory-title",
+				"wikistories-confirmdialog-discardstory-message",
+				"wikistories-confirmdialog-discardedits-title",
+				"wikistories-confirmdialog-discardedits-message",
+				"wikistories-confirmdialog-discardstory-accept",
+				"wikistories-toast-maxframes-addingmore",
+				"wikistories-toast-maxframes-selecting",
+				"wikistories-error-notenoughframes-title",
+				"wikistories-error-notenoughframes-message",
+				"wikistories-error-frameswithouttext-title",
+				"wikistories-error-frameswithouttext-message",
+				"wikistories-builder-publishform-navigator-title",
+				"wikistories-builder-publishform-placeholder",
+				"wikistories-builder-publishform-publishbutton",
+				"wikistories-builder-publishform-info",
+				"wikistories-builder-publishform-invalidtitle-empty",
+				"wikistories-builder-publishform-invalidtitle-format",
+				"wikistories-builder-publishform-invalidtitle-duplicate",
+				"wikistories-builder-publishform-invalidtitle-notfound",
+				"wikistories-builder-publishform-saveerror",
+				"wikistories-builder-publishform-saving",
+				"wikistories-builder-licensing-with-terms"
+			],
+			"es6": true
+		},
+		"ext.wikistories.discover": {
+			"localBasePath": "resources/ext.wikistories.discover",
+			"targets": [ "mobile" ],
+			"dependencies": [ "mediawiki.api", "mediawiki.Title", "mediawiki.util", "ext.eventLogging" ],
+			"packageFiles": [
+				"index.js",
+				"consumptionEvents.js",
+				"Discover.js",
+				"api/getStories.js",
+				"util/convertUrlToThumbnail.js",
+				{ "name": "data.json", "callback": "MediaWiki\\Extension\\Wikistories\\Hooks::getDiscoverBundleData" }
+			],
+			"styles": [
+				"discover.less"
+			],
+			"messages": [
+				"wikistories-discover-cta-text",
+				"wikistories-discover-cta-text-subheader"
+			]
+		},
+		"ext.wikistories.discover.styles": {
+			"localBasePath": "resources/ext.wikistories.discover",
+			"targets": [ "mobile" ],
+			"styles": [
+				"discover-initial.less"
+			]
+		}
+	},
+	"RestRoutes": [
+		{
+			"path": "/wikistories/v0/page/{title}/stories",
+			"method": "GET",
+			"class": "MediaWiki\\Extension\\Wikistories\\RelatedStoriesRestRoutes",
+			"services": [
+				"TitleFormatter",
+				"TitleParser",
+				"PageStore",
+				"Wikistories.Cache"
+			]
+		}
+	],
+	"manifest_version": 2
+}

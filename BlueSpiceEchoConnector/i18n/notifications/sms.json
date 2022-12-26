@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-notifications-email-move-subject": "$4 {{GENDER:$2|siiʹrdi}} seeid $1 ođđ nõʹmme $3 $5",
+	"bs-notifications-web-move-body": "$4 {{GENDER:$2|siiʹrdi}} seeid $1 ođđ nõʹmme $3",
+	"bs-notifications-edit-difflink-label": "Čuäʹjet jeäʹrdõõzz",
+	"bs-notifications-mail-additional-links-label": "Lââʹssliiŋk"
+}

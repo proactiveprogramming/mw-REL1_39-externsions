@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO"
+		]
+	},
+	"mwversioninfo-desc": "Hallinnoi MediaWiki-version tietoja",
+	"apihelp-mwversioninfo-param-version": "MediaWiki-versio",
+	"apihelp-mwversioninfo-example": "Lisätietoja MediaWiki-versiosta 1.27"
+}

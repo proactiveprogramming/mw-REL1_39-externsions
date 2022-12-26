@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"translatesvg-desc": "Mae hwn yn defnyddio rhyngwyneb brodorol i gyfieithu ffeiliau SVG yn unol â chanllawiau SVG1.1",
+	"translate-svg-thumbnail": "Ffeil wreiddiol",
+	"translate-svg-js-thumbnail": "(mae'r bawd yn diweddaru'n awtomatig)",
+	"translate-page-description-legend-svgmg": "Gwybodaeth am y ffeil hon",
+	"translate-taction-mstats-svgmg": "Ystadegau'r ffeil",
+	"translate-svg-filepage-edit": "golygu",
+	"translate-svg-filepage-finish": "gorffen",
+	"translate-svg-filepage-another": "iaith arall",
+	"translate-svg-filepage-other": "ieithoedd eraill",
+	"translate-svg-upload-none": "(dim)",
+	"translate-svg-new-label": "Iaith:",
+	"translate-js-properties-legend": "Priodweddau",
+	"translate-js-label-x": "Cyfesuryn X:",
+	"translate-js-label-y": "Cyfesuryn Y:",
+	"translate-js-label-color": "Lliw:",
+	"translate-js-label-font-family": "Ffont:",
+	"translate-js-label-bold": "Trwm",
+	"translate-js-label-italic": "Italig",
+	"translate-js-label-underline": "Tanlinellu"
+}

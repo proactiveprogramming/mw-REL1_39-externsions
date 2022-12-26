@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"importfreeimages": "Uvoz prostih slik",
+	"importfreeimages-desc": "Omogoča [[Special:ImportFreeImages|uvoz ustrezno licenciranih fotografij]] s [http://www.flickr.com Flickra]",
+	"importfreeimages_description": "Stran vam omogoča iskanje ustrezno licenciranih fotografij na Flickru in njihov uvoz v vaš wiki.",
+	"importfreeimages_nophotosfound": "Za vaš iskalni pogoj '$1' ni bila najdena nobena fotografija; prosimo, poskusite znova.",
+	"importfreeimages_owner": "Avtor",
+	"importfreeimages_importthis": "uvozi to",
+	"importfreeimages_next": "Naslednjih $1",
+	"importfreeimages_size_square": "Kvadrat",
+	"importfreeimages_size_thumbnail": "Sličica",
+	"importfreeimages_size_small": "Majhno",
+	"importfreeimages_size_medium": "Srednje",
+	"importfreeimages_size_large": "Veliko",
+	"importfreeimages_size_original": "Izvorna"
+}

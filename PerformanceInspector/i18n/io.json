@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"performanceinspector-dialog-summary": "Rezumo",
+	"performanceinspector-dialog-cancel": "Nuligar",
+	"performanceinspector-imagesize-column-image-name": "Nomo",
+	"performanceinspector-imagesize-column-size": "Grandeso",
+	"performanceinspector-newpp-column-name": "Nomo",
+	"performanceinspector-newpp-column-value": "Valoro",
+	"performanceinspector-newpp-template-time-report-column-name": "Nomo"
+}

@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeeputer",
+			"Leyth",
+			"Reza1615"
+		]
+	},
+	"debugtemplates": "عیب‌یابی الگوها",
+	"debugtemplates-args-title": "پارامترها",
+	"debugtemplates-args-name": "نام",
+	"debugtemplates-args-eval": "ارزیابی همه",
+	"debugtemplates-args-set": "تنظیم‌شده؟",
+	"debugtemplates-args-value": "مقدار",
+	"debugtemplates-args-eval-all": "ارزیابی",
+	"debugtemplates-args-value-clear": "پاک کردن همه",
+	"debugtemplates-error-button": "پاکسازی پیام‌های خطا",
+	"debugtemplates-eval": "ارزیابی همه",
+	"debugtemplates-input": "متن ورودی",
+	"debugtemplates-radio-select": "هیچ‌چیز",
+	"debugtemplates-radio-eval": "ارزیابی",
+	"debugtemplates-warning-template-not-a-template": "ناتوان در یافتن الگو:"
+}

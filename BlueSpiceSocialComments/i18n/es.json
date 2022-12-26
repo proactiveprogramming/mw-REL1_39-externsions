@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio",
+			"Fitoschido",
+			"MarcoAurelio"
+		]
+	},
+	"bs-socialcomments-type": "Comentario",
+	"bs-socialcomments-commenttext": "{{PLURAL:$1|Comentario|Comentarios}} ($1)",
+	"bs-socialcomments-header-create": "Respuesta aquí...",
+	"bs-socialcomments-var-commentcount": "Recuento de comentarios",
+	"echo-category-title-bs-social-comment-cat": "Comentarios sobre las entidades vigiladas",
+	"bs-social-notification-comment-primary-link-label": "Ver comentario",
+	"bs-social-notification-comment-parententity-label": "Ver publicación"
+}

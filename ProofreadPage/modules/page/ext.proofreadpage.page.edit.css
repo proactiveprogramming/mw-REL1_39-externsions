@@ -1,0 +1,64 @@
+/* stylelint-disable selector-class-pattern */
+/* Adjustments for WikiEditor extension */
+.wikiEditor-ui-view,
+.prp-page-image {
+	background-color: #e8f2f8;
+}
+
+.wikiEditor-ui-text textarea {
+	border: 0;
+	padding: 0;
+	line-height: 1.5em;
+	margin: 0;
+	/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+	resize: none;
+}
+
+/* stylelint-disable-next-line selector-max-id */
+.mw-editform #wpTextbox1 {
+	max-height: none;
+}
+
+.prp-page-content {
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid #c8ccd1;
+}
+
+.prp-page-edit-header {
+	flex: 1;
+}
+
+.prp-page-edit-body {
+	flex: 6;
+}
+
+.prp-page-edit-area-label {
+	color: #808080;
+	font-size: 80%;
+}
+
+.prp-edit-area {
+	display: flex;
+	flex-direction: column;
+}
+
+.prp-edit-area textarea {
+	flex: 1;
+}
+
+.prp-page-edit-footer {
+	flex: 1;
+}
+
+.group-proofreadpage-secondary .tool {
+	display: inline-block;
+}
+
+#editform .prp-page-content { /* stylelint-disable-line selector-max-id */
+	line-height: 1.5em;
+}
+
+.prp-page-content .CodeMirror {
+	flex-grow: 1;
+}

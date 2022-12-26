@@ -1,0 +1,47 @@
+{
+	"name": "Patroller",
+	"version": "2.1",
+	"author": [
+		"Rob Church",
+		"Kris Blair (Developaws)"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Patroller",
+	"descriptionmsg": "patrol-desc",
+	"license-name": "GPL-2.0-only",
+	"type": "special",
+	"requires": {
+		"MediaWiki": ">= 1.35.3"
+	},
+	"GroupPermissions": {
+		"sysop": {
+			"patroller": true
+		},
+		"patroller": {
+			"patroller": true
+		}
+	},
+	"AvailableRights": [
+		"patroller"
+	],
+	"MessagesDirs": {
+		"Patroller": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"PatrollerAlias": "Patroller.alias.php"
+	},
+	"AutoloadClasses": {
+		"PatrollerHooks": "includes/PatrollerHooks.php",
+		"SpecialPatroller": "includes/specials/SpecialPatroller.php"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"PatrollerHooks::onLoadExtensionSchemaUpdates"
+		]
+	},
+	"SpecialPages": {
+		"Patrol": "SpecialPatroller"
+	},
+	"manifest_version": 1
+}

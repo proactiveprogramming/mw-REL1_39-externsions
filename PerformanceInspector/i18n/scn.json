@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"performanceinspector-dialog-cancel": "Annulla",
+	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 di $3)",
+	"performanceinspector-imagesize-column-image-name": "Nomu",
+	"performanceinspector-imagesize-too-big": "Accura",
+	"performanceinspector-newpp-column-name": "Nomu",
+	"performanceinspector-newpp-template-time-report-column-name": "Nomu",
+	"performanceinspector-newpp-cachereport-now": "Ora"
+}

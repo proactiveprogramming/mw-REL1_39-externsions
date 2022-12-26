@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joanmp17"
+		]
+	},
+	"sitesettings": "ምምዕርራያት መካን",
+	"sitesettings-maintab": "መበገሲ",
+	"sitesettings-update": "ኣሓድስ",
+	"sitesettings-privacytab": "ስትረት",
+	"sitesettings-public": "ህዝባዊ",
+	"sitesettings-private": "ብሕታዊ",
+	"sitesettings-registrationpolicy": "ምዝጋበ",
+	"sitesettings-openreg": "ክፈት",
+	"sitesettings-closedreg": "ዝተዓጽወ",
+	"sitesettings-editingpolicy": "ኣርትዖት",
+	"sitesettings-openediting": "ክፈት",
+	"sitesettings-closedediting": "ዝተዓጽወ",
+	"sitesettings-sitelogo": "ኣርማ"
+}

@@ -1,0 +1,27 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-common",
+		"wikimedia/language/es6",
+		"wikimedia/vue3-es6",
+		"wikimedia/mediawiki"
+	],
+	"globals": {
+		"mw": false,
+		"OO": false,
+		"require": "readonly",
+		"module": false,
+		"exports": "writable"
+	},
+	"rules": {
+		"vue/html-indent": [ "warn", "tab" ]
+	},
+	"overrides": [
+		{
+			"files": [ "**/*.test.js" ],
+			"env": {
+				"jest": true
+			}
+		}
+	]
+}

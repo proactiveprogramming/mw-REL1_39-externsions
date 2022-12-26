@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bdijkstra",
+			"Mainframe98",
+			"McDutchie",
+			"Nickthijssen1994",
+			"Nieuwsgierige Gebruiker"
+		]
+	},
+	"action-blockandnuke": "te blokkeren en massaal te verwijderen",
+	"blockandnuke": "Blokkeren en massaal verwijderen",
+	"blockandnuke-confirm": "Klik op de knop \"{{int:Blockandnuke-submit-delete}}\" om de geselecteerde gebruikers te blokkeren en al hun bijdragen te verwijderen.\n\n(Vink geen van de onderstaande vakjes uit)",
+	"blockandnuke-desc": "Geeft beheerders de mogelijkheid om pagina's te [[Special:BlockandNuke|blokkeren en massaal te verwijderen]]",
+	"blockandnuke-nopages": "Er zijn in de recente wijzigingen geen nieuwe pagina's van [[Special:Contributions/$1|$1]].",
+	"blockandnuke-list": "De volgende pagina's zijn recent aangemaakt door [[Special:Contributions/$1|$1]]. Voer een reden in en klik op de knop om ze te verwijderen.",
+	"blockandnuke-defaultreason": "Massale verwijdering van door $1 aangemaakte pagina's",
+	"blockandnuke-delete-file": "Spam blokkeren en massaal verwijderen",
+	"blockandnuke-delete-article": "Spamartikelen blokkeren en massaal verwijderen.",
+	"blockandnuke-tools": "Lijst met gebruikers die onlangs hebben bijgedragen en niet op de witte lijst staan:\n\nOm een gebruiker aan de witte lijst toe te voegen bewerkt u het bestand extensions/BlockandNuke/whitelist.txt",
+	"blockandnuke-submit-user": "Gebruiker blokkeren",
+	"blockandnuke-submit-delete": "Weg ermee!",
+	"blockandnuke-block": "De geselecteerde gebruikers zijn geblokkeerd en hun bijdragen zijn verwijderd.",
+	"blockandnuke-message": "Door BlockandNuke geblokkeerde gebruikers.",
+	"blockandnuke-banhammer": "Klik op de knop hieronder om de geselecteerde gebruikers te blokkeren en al hun bijdragen te verwijderen.",
+	"blockandnuke-nothing-to-do": "Niets te doen!",
+	"blockandnuke-banning": "Aan het verbannen...",
+	"blockandnuke-deleted-page": "$1 verwijderd",
+	"blockandnuke-banned-ip": "IP-adres $1 geblokkeerd",
+	"blockandnuke-ip-addresses": "IP-adressen",
+	"blockandnuke-users": "Gebruikers",
+	"blockandnuke-pages": "Pagina's",
+	"right-blockandnuke": "Blokkeer een lijst van gebruikers en verwijder al hun bijdragen"
+}

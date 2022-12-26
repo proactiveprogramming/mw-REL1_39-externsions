@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-subpagetree-desc": "Voegt de tag <code>subpagetree</code> toe met configuratieparameters waarmee een ExtJS-boomstructuurpaneel met subpaginastructuur overal op een wikipagina kan woren weergegeven."
+}
