@@ -30,7 +30,9 @@
 		"CachedStatJob": "CachedStatJob"
 	},
 	"config": {
-		"MainPageImages": []
+		"MainPageImages": {
+			"value": []
+		}
 	},
 	"MessagesDirs": {
 		"MainPage": [
@@ -69,7 +71,10 @@
 			]
 		},
 		"ext.translate.mainpage.styles": {
-			"targets": [ "desktop", "mobile" ],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
 			"styles": "resources/css/ext.translate.mainpage.css"
 		},
 		"ext.translate.mainpage.icons": {
@@ -83,5 +88,5 @@
 	"SpecialPages": {
 		"TwnMainPage": "SpecialTwnMainPage"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

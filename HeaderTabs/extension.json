@@ -44,16 +44,32 @@
 		"ResourceLoaderGetConfigVars": "HeaderTabsHooks::addConfigVarsToJS"
 	},
 	"config": {
-		"HeaderTabsUseHistory": true,
-		"HeaderTabsRenderSingleTab": false,
-		"HeaderTabsAutomaticNamespaces": [],
-		"HeaderTabsDefaultFirstTab": false,
-		"HeaderTabsDisableDefaultToc": true,
-		"HeaderTabsGenerateTabTocs": false,
-		"HeaderTabsEditTabLink": true,
-		"HeaderTabsNoTabsInToc": false
+		"HeaderTabsUseHistory": {
+			"value": true
+		},
+		"HeaderTabsRenderSingleTab": {
+			"value": false
+		},
+		"HeaderTabsAutomaticNamespaces": {
+			"value": []
+		},
+		"HeaderTabsDefaultFirstTab": {
+			"value": false
+		},
+		"HeaderTabsDisableDefaultToc": {
+			"value": true
+		},
+		"HeaderTabsGenerateTabTocs": {
+			"value": false
+		},
+		"HeaderTabsEditTabLink": {
+			"value": true
+		},
+		"HeaderTabsNoTabsInToc": {
+			"value": false
+		}
 	},
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"requires": {
 		"MediaWiki": ">= 1.33"
 	}

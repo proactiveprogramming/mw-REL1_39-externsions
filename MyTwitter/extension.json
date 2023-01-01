@@ -5,45 +5,48 @@
 		"[http://www.axllent.org/code/mytwit/ Ralph Slooten]",
 		"페네트-"
 	],
-	"url": "https://github.com/wiki-chan/MyTwitter",
+	"url": "http://wiki-chan.net/",
 	"description": "Show twitter widget in mediawiki, using Ralph's MyTwit class.",
 	"license-name": "MIT",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"ExtensionFunctions": [
 		"MyTwitWrapper::registerTwitterTag"
 	],
-	"Hooks": {
-		"OutputPageParserOutput": [
-			"MyTwitWrapper::OutputPageParser"
-		]
-	},
-	"ResourceModules": {
-		"ext.mytwitter.css": {
-			"styles": {
-				"MyTwitter.css": [
-					"screen"
-				]
-			},
-			"position": "top"
-		}
-	},
-	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "MyTwitter"
-	},
 	"AutoloadClasses": {
 		"MyTwitWrapper": "MyTwitter.class.php",
 		"MyTwit": "mytwit.inc.php"
 	},
 	"config": {
-		"TwitterUser": "",
-		"TwitterConsumerKey": "",
-		"TwitterConsumerSecret": "",
-		"TwitterOAUTHAccessToken": "",
-		"TwitterOAUTHAccessTokenSecret": "",
-		"TwitterCacheExpire": 600,
-		"TwitterPostLimit": 5,
-		"TwitterExcludeReplies": true,
-		"TwitterOpenLinksInBlank": true
-	}
+		"TwitterUser": {
+			"value": ""
+		},
+		"TwitterConsumerKey": {
+			"value": ""
+		},
+		"TwitterConsumerSecret": {
+			"value": ""
+		},
+		"TwitterOAUTHAccessToken": {
+			"value": ""
+		},
+		"TwitterOAUTHAccessTokenSecret": {
+			"value": ""
+		},
+		"TwitterCacheExpire": {
+			"value": 600
+		},
+		"TwitterPostLimit": {
+			"value": 5
+		},
+		"TwitterExcludeReplies": {
+			"value": true
+		},
+		"TwitterOpenLinksInBlank": {
+			"value": true
+		}
+	},
+	"manifest_version": 2
 }

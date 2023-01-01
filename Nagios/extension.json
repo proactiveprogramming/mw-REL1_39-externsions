@@ -1,0 +1,65 @@
+{
+	"name": "Nagios (version 1.00)",
+	"version": "1.00",
+	"author": "Edward Quick (email: edwardquick@hotmail.com)",
+	"url": "http://linuxproblems.org",
+	"description": "Add Nagios Service Groups to mediawiki pages",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AutoloadClasses": {
+		"Nagios": "Nagios.body.php",
+		"NagiosHooks": "Nagios.hooks.php"
+	},
+	"ResourceModules": {
+		"ext.nagios.common": {
+			"styles": [
+				"modules/css/ext.nagios.custom.css",
+				"modules/css/jquery.qtip.css"
+			],
+			"scripts": [
+				"modules/js/ext.nagios.refresh.js",
+				"modules/js/jquery.qtip.min.js",
+				"modules/js/ext.nagios.jquery.mouseover.js"
+			],
+			"position": "top"
+		},
+		"ext.nagios.status": {
+			"styles": [
+				"modules/nagios-3.5.1-1.el6.x86_64/ext.nagios.common.css",
+				"modules/nagios-3.5.1-1.el6.x86_64/ext.nagios.status.css"
+			],
+			"position": "top"
+		},
+		"ext.nagios.extinfo": {
+			"styles": [
+				"modules/nagios-3.5.1-1.el6.x86_64/ext.nagios.extinfo.css"
+			],
+			"position": "bottom"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Nagios"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "Nagios::init",
+		"ResourceLoaderGetConfigVars": "NagiosHooks::onResourceLoaderGetConfigVars"
+	},
+	"config": {
+		"NagiosRefresh": {
+			"value": 60
+		},
+		"NagiosLiveStatus": {
+			"value": false
+		},
+		"NagiosPnp4Nagios": {
+			"value": false
+		},
+		"NagiosVersion": {
+			"value": "nagios-3.5.1-1.el6.x86_64"
+		}
+	},
+	"manifest_version": 2
+}

@@ -68,9 +68,15 @@
 		]
 	},
 	"config": {
-		"VIKI_Hidden_Categories": [],
-		"VIKI_Second_Order_Links": false,
-		"VIKI_Function_Hooks": []
+		"VIKI_Hidden_Categories": {
+			"value": []
+		},
+		"VIKI_Second_Order_Links": {
+			"value": false
+		},
+		"VIKI_Function_Hooks": {
+			"value": []
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

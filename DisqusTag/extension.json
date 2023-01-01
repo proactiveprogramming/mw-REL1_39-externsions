@@ -37,8 +37,10 @@
 		"SkinAfterContent": "DisqusTag::addDisqusElements"
 	},
 	"config": {
-		"_prefix": "eg",
-		"DisqusShortname": "your-disqus-shortname"
+		"DisqusShortname": {
+			"value": "your-disqus-shortname"
+		}
 	},
-	"manifest_version": 1
+	"config_prefix": "eg",
+	"manifest_version": 2
 }

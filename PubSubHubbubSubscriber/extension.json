@@ -1,0 +1,57 @@
+{
+	"name": "PubSubHubbubSubscriber",
+	"version": 0.1,
+	"author": [
+		"BP2013N2"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:PubSubHubbubSubscriber",
+	"descriptionmsg": "pubsubhubbubsubscriber-desc",
+	"license-name": "GPLv2",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"APIModules": {
+		"pushcallback": "PubSubHubbubSubscriber\\ApiSubscription"
+	},
+	"MessagesDirs": {
+		"MinervaNeue": [
+			"/var/www/w39.local/w/skins/MinervaNeue/i18n"
+		],
+		"MonoBook": [
+			"/var/www/w39.local/w/skins/MonoBook/i18n"
+		],
+		"Timeless": [
+			"/var/www/w39.local/w/skins/Timeless/i18n"
+		],
+		"Vector": [
+			"/var/www/w39.local/w/skins/Vector/i18n"
+		],
+		"PubSubHubbubSubscriber": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"PubSubHubbubSubscriber\\ApiSubscription": "src/ApiSubscription.php",
+		"PubSubHubbubSubscriber\\HookHandler": "src/HookHandler.php",
+		"PubSubHubbubSubscriber\\Subscription": "src/Subscription.php",
+		"PubSubHubbubSubscriber\\SubscriptionHandler": "src/SubscriptionHandler.php",
+		"PubSubHubbubSubscriber\\SubscriberClient": "src/SubscriberClient.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Minerva\\Hooks::onBeforePageDisplay",
+		"ResourceLoaderRegisterModules": "MediaWiki\\Minerva\\Hooks::onResourceLoaderRegisterModules",
+		"SkinPageReadyConfig": "MediaWiki\\Minerva\\Hooks::onSkinPageReadyConfig",
+		"UserLogoutComplete": "MediaWiki\\Minerva\\Hooks::onUserLogoutComplete",
+		"FetchChangesList": "MediaWiki\\Minerva\\Hooks::onFetchChangesList",
+		"MobileFrontendBeforeDOM": "MediaWiki\\Minerva\\Hooks::onMobileFrontendBeforeDOM",
+		"MobileFrontendFeaturesRegistration": "MediaWiki\\Minerva\\Hooks::onMobileFrontendFeaturesRegistration",
+		"RequestContextCreateSkinMobile": "MediaWiki\\Minerva\\Hooks::onRequestContextCreateSkinMobile",
+		"SpecialPageBeforeExecute": "MediaWiki\\Minerva\\Hooks::onSpecialPageBeforeExecute",
+		"ResourceLoaderGetConfigVars": "MediaWiki\\Minerva\\Hooks::onResourceLoaderGetConfigVars",
+		"OutputPageBodyAttributes": "MediaWiki\\Minerva\\Hooks::onOutputPageBodyAttributes",
+		"LoadExtensionSchemaUpdates": "PubSubHubbubSubscriber\\HookHandler::onLoadExtensionSchemaUpdates",
+		"UnitTestsList": "PubSubHubbubSubscriber\\HookHandler::onUnitTestsList"
+	},
+	"manifest_version": 2
+}

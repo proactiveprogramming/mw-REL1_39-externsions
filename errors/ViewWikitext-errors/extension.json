@@ -1,0 +1,26 @@
+{
+	"name": "ViewWikitext",
+	"version": "1.0.0",
+	"author": "Nathan Larson",
+	"url": "https://mediawiki.org/wiki/Extension:ViewWikitext",
+	"descriptionmsg": "viewwikitext-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"ViewWikitext": "SpecialViewWikitext"
+	},
+	"ExtensionMessagesFiles": {
+		"ViewWikitext": "ViewWikitext.i18n.php"
+	},
+	"AutoloadClasses": {
+		"SpecialViewWikitext": "SpecialViewWikitext.php"
+	},
+	"config": {
+		"ViewWikitextRobotPolicy": {
+			"value": "index,follow"
+		}
+	},
+	"manifest_version": 2
+}

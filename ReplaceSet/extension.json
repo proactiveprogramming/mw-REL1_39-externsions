@@ -28,9 +28,13 @@
 		"ParserFirstCallInit": "ReplaceSetHooks::efReplaceSetRegisterParser"
 	},
 	"config": {
-		"_prefix": "eg",
-		"ReplaceSetCallLimit": 25,
-		"ReplaceSetPregLimit": 50
+		"ReplaceSetCallLimit": {
+			"value": 25
+		},
+		"ReplaceSetPregLimit": {
+			"value": 50
+		}
 	},
-	"manifest_version": 1
+	"config_prefix": "eg",
+	"manifest_version": 2
 }

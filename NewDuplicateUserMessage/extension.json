@@ -1,39 +1,48 @@
 {
-    "name": "NewDuplicateUserMessage",
-    "version": "3.6.0, 2016-10-31",
-    "author": [
-        "[https://www.organicdesign.co.nz/User:Nad Aran Dunkley]",
-        "Siebrand Mazeland",
-        "David Wong"
-    ],
-    "url": "https://www.mediawiki.org/wiki/Extension:NewDuplicateUserMessage",
-    "descriptionmsg": "newduplicateusermessage-description",
-    "license-name": "GPL-2.0-or-later",
-    "type": "other",
-    "MessagesDirs": {
-        "NewDuplicateUserMessage": [
-            "i18n"
-        ]
-    },
-    "AutoloadClasses": {
-        "NewDuplicateUserMessage": "includes/NewDuplicateUserMessage.php",
-        "NewDuplicateUserMessageJob": "includes/NewDuplicateUserMessageJob.php"
-    },
-    "JobClasses": {
-        "newDuplicateUserMessageJob": "NewDuplicateUserMessageJob"
-    },
-    "Hooks": {
-        "LocalUserCreated": [
-            "NewDuplicateUserMessage::onLocalUserCreated"
-        ],
-        "UserGetReservedNames": [
-            "NewDuplicateUserMessage::onUserGetReservedNames"
-        ]
-    },
-    "config": {
-        "NewDuplicateUserSuppressRC": false,
-        "NewDuplicateUserMinorEdit": true,
-        "NewDuplicateUserMessageOnAutoCreate": false
-    },
-    "manifest_version": 1
+	"name": "NewDuplicateUserMessage",
+	"version": "3.6.0, 2016-10-31",
+	"author": [
+		"[https://www.organicdesign.co.nz/User:Nad Aran Dunkley]",
+		"Siebrand Mazeland",
+		"David Wong"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NewDuplicateUserMessage",
+	"descriptionmsg": "newduplicateusermessage-description",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"MessagesDirs": {
+		"NewDuplicateUserMessage": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NewDuplicateUserMessage": "includes/NewDuplicateUserMessage.php",
+		"NewDuplicateUserMessageJob": "includes/NewDuplicateUserMessageJob.php"
+	},
+	"JobClasses": {
+		"newDuplicateUserMessageJob": "NewDuplicateUserMessageJob"
+	},
+	"Hooks": {
+		"LocalUserCreated": [
+			"NewDuplicateUserMessage::onLocalUserCreated"
+		],
+		"UserGetReservedNames": [
+			"NewDuplicateUserMessage::onUserGetReservedNames"
+		]
+	},
+	"config": {
+		"NewDuplicateUserSuppressRC": {
+			"value": false
+		},
+		"NewDuplicateUserMinorEdit": {
+			"value": true
+		},
+		"NewDuplicateUserMessageOnAutoCreate": {
+			"value": false
+		}
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

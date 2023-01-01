@@ -1,0 +1,29 @@
+{
+	"name": "Mp3Handler",
+	"author": "Conrad Irwin",
+	"url": "http://mediawiki.org/wiki/Extension:Mp3Handler",
+	"description": "Handler for MP3 files and flash player, based on Extension:OggHandler and Extension:Mp3",
+	"type": "media",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"FileExtensions": [
+		"mp3"
+	],
+	"MediaHandlers": {
+		"audio/mp3": "Mp3Handler",
+		"audio/mpeg": "Mp3Handler"
+	},
+	"config": {
+		"Mp3playerPath": {
+			"value": false
+		},
+		"Mp3DownloadIcon": {
+			"value": false
+		},
+		"Mp3DownloadPath": {
+			"value": "$1"
+		}
+	},
+	"manifest_version": 2
+}

@@ -23,5 +23,5 @@
 		"GetPreferences": "EditcountAdditions::onGetPreferences",
 		"PageSaveComplete": "EditcountAdditions::onPageSaveComplete"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

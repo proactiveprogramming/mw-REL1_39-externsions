@@ -68,19 +68,45 @@
 		"ArticleUndelete": "MathSearchHooks::onArticleUndelete"
 	},
 	"config": {
-		"MathAnalysisTableName": "mathlatexml",
-		"MathDebug": false,
-		"MathSearchBaseXBackendUrl": "http://localhost:10043/",
-		"MathSearchMWSUrl": "http://localhost:9090/",
-		"MathSearchTranslationUrl": "http://vmext-demo.wmflabs.org/math/translation",
-		"MathUpdateObservations": false,
-		"MathUploadEnabled": false,
-		"MathWmcMaxResults": 10000,
-		"MathWmcServer": false,
-		"MathSearchWikidataUrl": "https://wikidata.org",
-		"ContentMathEnableWikibaseDataType": true,
-		"MathSearchContentTexMaxLength": 5000,
-		"MathSearchInfoPage": "FormulaInfo"
+		"MathAnalysisTableName": {
+			"value": "mathlatexml"
+		},
+		"MathDebug": {
+			"value": false
+		},
+		"MathSearchBaseXBackendUrl": {
+			"value": "http://localhost:10043/"
+		},
+		"MathSearchMWSUrl": {
+			"value": "http://localhost:9090/"
+		},
+		"MathSearchTranslationUrl": {
+			"value": "http://vmext-demo.wmflabs.org/math/translation"
+		},
+		"MathUpdateObservations": {
+			"value": false
+		},
+		"MathUploadEnabled": {
+			"value": false
+		},
+		"MathWmcMaxResults": {
+			"value": 10000
+		},
+		"MathWmcServer": {
+			"value": false
+		},
+		"MathSearchWikidataUrl": {
+			"value": "https://wikidata.org"
+		},
+		"ContentMathEnableWikibaseDataType": {
+			"value": true
+		},
+		"MathSearchContentTexMaxLength": {
+			"value": 5000
+		},
+		"MathSearchInfoPage": {
+			"value": "FormulaInfo"
+		}
 	},
 	"MessagesDirs": {
 		"MathSearch": [
@@ -148,5 +174,5 @@
 			]
 		}
 	],
-	"manifest_version": 1
+	"manifest_version": 2
 }

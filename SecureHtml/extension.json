@@ -25,13 +25,21 @@
 		"ParserFirstCallInit": "SecureHTML::parserInit"
 	},
 	"config": {
-		"SecureHTMLSecrets": {},
-		"SecureHTMLSpecialRight": "edit",
-		"SecureHTMLSpecialDropdown": true,
-		"SecureHTMLTag": "shtml"
+		"SecureHTMLSecrets": {
+			"value": []
+		},
+		"SecureHTMLSpecialRight": {
+			"value": "edit"
+		},
+		"SecureHTMLSpecialDropdown": {
+			"value": true
+		},
+		"SecureHTMLTag": {
+			"value": "shtml"
+		}
 	},
 	"requires": {
 		"MediaWiki": ">= 1.32.0"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

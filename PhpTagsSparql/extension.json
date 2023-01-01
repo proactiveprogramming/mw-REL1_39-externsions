@@ -24,10 +24,14 @@
 		"PhpTagsRuntimeFirstInit": "PhpTagsSPARQLHooks::onPhpTagsRuntimeFirstInit"
 	},
 	"config": {
-		"PhpTagsSPARQLDefaultEndpoint": "https://query.wikidata.org/bigdata/namespace/wdq/sparql",
+		"PhpTagsSPARQLDefaultEndpoint": {
+			"value": "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
+		},
 		"PhpTagsSPARQLEndpointsThatUseGetHttpMethod": {
-			"https://query.wikidata.org/bigdata/namespace/wdq/sparql": 1
+			"value": {
+				"https://query.wikidata.org/bigdata/namespace/wdq/sparql": 1
+			}
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

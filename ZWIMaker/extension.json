@@ -26,9 +26,10 @@
 		"SkinTemplateTabs": "MzwiHooks::onSkinTemplateTabs"
 	},
 	"config": {
-		"MzwiTab": true 
+		"MzwiTab": {
+			"value": true
+		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }
-

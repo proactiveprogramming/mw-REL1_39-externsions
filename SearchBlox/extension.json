@@ -1,0 +1,77 @@
+{
+	"name": "SearchBlox Search",
+	"version": "0.1.0",
+	"author": [
+		"Michael Overmeyer"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SearchBlox",
+	"descriptionmsg": "searchblox-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"SearchBlox": "SearchBlox.i18n.php",
+		"SearchBloxAlias": "SearchBlox.i18n.alias.php"
+	},
+	"AutoloadClasses": {
+		"SearchBloxHooks": "SearchBlox.hooks.php"
+	},
+	"ResourceModules": {
+		"ext.SearchBlox.query": {
+			"scripts": [
+				"modules/ext.SearchBlox.query.js"
+			],
+			"styles": [],
+			"messages": [
+				"searchblox-results-header",
+				"searchblox-loading",
+				"searchblox-results",
+				"searchblox-noresults",
+				"searchblox-error",
+				"searchblox-timeout",
+				"size-gigabytes",
+				"size-megabytes",
+				"size-kilobytes",
+				"size-bytes"
+			],
+			"dependencies": [],
+			"configurations": [
+				"wgSearchBloxHost"
+			]
+		},
+		"ext.SearchBlox.query.init": {
+			"scripts": "modules/ext.SearchBlox.query.init.js",
+			"dependencies": [
+				"ext.SearchBlox.query"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SearchBlox/"
+	},
+	"Hooks": {
+		"SpecialSearchNoResults": "SearchBloxHooks::onSpecialSearchNoResults",
+		"SpecialSearchResults": "SearchBloxHooks::onSpecialSearchResults",
+		"ResourceLoaderGetConfigVars": "SearchBloxHooks::resourceLoaderGetConfigVars"
+	},
+	"config": {
+		"SearchBloxOrganizationName": {
+			"value": "Example Inc."
+		},
+		"SearchBloxOrganizationWebsite": {
+			"value": "http://example.com"
+		},
+		"SearchBloxHost": {
+			"value": "http://searchblox.example.com"
+		},
+		"SearchBloxServletUrl": {
+			"value": "http://searchblox.example.com/searchblox/servlet/SearchServlet"
+		},
+		"SearchBloxFrontendUrl": {
+			"value": "http://searchblox.example.com/searchblox/plugin/index.html"
+		}
+	},
+	"manifest_version": 2
+}

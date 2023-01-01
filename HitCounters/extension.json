@@ -45,10 +45,18 @@
 		"HitCounters\\HCUpdater": "includes/HCUpdater.php"
 	},
 	"config": {
-		"HitcounterUpdateFreq": 1,
-		"DisableCounters": false,
-		"EnableAddTextLength": false,
-		"EnableAddPageId": false
+		"HitcounterUpdateFreq": {
+			"value": 1
+		},
+		"DisableCounters": {
+			"value": false
+		},
+		"EnableAddTextLength": {
+			"value": false
+		},
+		"EnableAddPageId": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

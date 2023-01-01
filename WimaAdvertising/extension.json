@@ -7,24 +7,56 @@
 	"namemsg": "wimaadvertising-msg",
 	"descriptionmsg": "wimaadvertising-desc",
 	"config": {
-		"BannerBottomCode": "",
-		"BannerBottomStyle": "border:1px solid black; text-align:center;",
-		"BannerBottomType": "advertising",
-		"BannerTopCode": "",
-		"BannerTopStyle": "border:1px solid black; text-align:center;",
-		"BannerTopType": "advertising",
-		"SidebarAd1Code": "",
-		"SidebarAd1Type": "advertising",
-		"SidebarAd2Code": "",
-		"SidebarAd2Type": "advertising",
-		"WimaAdvertisingAnonOnly": false,
-		"WimaGoogleAdSenseClient": "none",
-		"WimaGoogleAdSenseSlot": "none",
-		"WimaGoogleAdSenseSrc": "//pagead2.googlesyndication.com/pagead/show_ads.js",
-		"WimaGoogleAdSenseID": "none",
-		"WimaGoogleAdSenseAnonOnly": false
+		"BannerBottomCode": {
+			"value": ""
+		},
+		"BannerBottomStyle": {
+			"value": "border:1px solid black; text-align:center;"
+		},
+		"BannerBottomType": {
+			"value": "advertising"
+		},
+		"BannerTopCode": {
+			"value": ""
+		},
+		"BannerTopStyle": {
+			"value": "border:1px solid black; text-align:center;"
+		},
+		"BannerTopType": {
+			"value": "advertising"
+		},
+		"SidebarAd1Code": {
+			"value": ""
+		},
+		"SidebarAd1Type": {
+			"value": "advertising"
+		},
+		"SidebarAd2Code": {
+			"value": ""
+		},
+		"SidebarAd2Type": {
+			"value": "advertising"
+		},
+		"WimaAdvertisingAnonOnly": {
+			"value": false
+		},
+		"WimaGoogleAdSenseClient": {
+			"value": "none"
+		},
+		"WimaGoogleAdSenseSlot": {
+			"value": "none"
+		},
+		"WimaGoogleAdSenseSrc": {
+			"value": "//pagead2.googlesyndication.com/pagead/show_ads.js"
+		},
+		"WimaGoogleAdSenseID": {
+			"value": "none"
+		},
+		"WimaGoogleAdSenseAnonOnly": {
+			"value": false
+		}
 	},
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"type": "other",
 	"AutoloadClasses": {
 		"CustomAdvertisingSettings": "includes/CustomAdvertisingSettings.php",
@@ -32,13 +64,15 @@
 		"WimaAdvertisingHooks": "includes/specials/HooksWimaAdvertising.php"
 	},
 	"Hooks": {
-	    "BeforePageDisplay": "WimaAdvertisingHooks::onBeforePageDisplay",
+		"BeforePageDisplay": "WimaAdvertisingHooks::onBeforePageDisplay",
 		"SidebarBeforeOutput": "WimaAdvertisingHooks::onSidebarBeforeOutput",
 		"SiteNoticeAfter": "WimaAdvertisingHooks::onSiteNoticeAfter",
-	    "SkinAfterContent": "WimaAdvertisingHooks::onSkinAfterContent"
+		"SkinAfterContent": "WimaAdvertisingHooks::onSkinAfterContent"
 	},
 	"MessagesDirs": {
-		"WimaAdvertising": [ "i18n" ]
+		"WimaAdvertising": [
+			"i18n"
+		]
 	},
 	"ResourceModules": {
 		"ext.wimaadvertising.common": {
@@ -69,5 +103,8 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "WimaAdvertising/resources"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
 	}
 }

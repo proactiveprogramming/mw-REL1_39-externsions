@@ -31,20 +31,31 @@
 		"chemical/x-mdl-rxnfile": "RxnMediaHandler"
 	},
 	"config": {
-		"MolConverterPath": "/usr/bin",
+		"MolConverterPath": {
+			"value": "/usr/bin"
+		},
 		"MolConvertCommands": {
-			"babel": {
-				"command": "$path/babel -i$format $input $output",
-				"supportedFormats": [ "mol" ],
-				"memory": 204800
-			},
-			"indigo": {
-				"command": "$path/indigo-depict $input $output",
-				"supportedFormats": [ "mol", "rxn" ],
-				"memory": 204800
+			"value": {
+				"babel": {
+					"command": "$path/babel -i$format $input $output",
+					"supportedFormats": [
+						"mol"
+					],
+					"memory": 204800
+				},
+				"indigo": {
+					"command": "$path/indigo-depict $input $output",
+					"supportedFormats": [
+						"mol",
+						"rxn"
+					],
+					"memory": 204800
+				}
 			}
 		},
-		"MolConverter": "indigo"
+		"MolConverter": {
+			"value": "indigo"
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

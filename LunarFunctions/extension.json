@@ -25,5 +25,5 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extensions\\LunarFunctions\\": "src/"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

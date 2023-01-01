@@ -1,0 +1,32 @@
+{
+	"name": "SummaryRequired",
+	"version": "0.3",
+	"author": [
+		"Solomon Kinard"
+	],
+	"url": "http://www.solomonkinard.com",
+	"description": "Require summary when editing a page",
+	"descriptionmsg": "Require summary when editing a page",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"SummaryRequired": "SummaryRequired.i18n.php"
+	},
+	"AutoloadClasses": {
+		"SummaryRequired": "SummaryRequired_body.php"
+	},
+	"Hooks": {
+		"EditPage::showEditForm:initial": "SummaryRequired::fnMyHook"
+	},
+	"config": {
+		"ExtensionAliasesFiles": {
+			"value": {
+				"SummaryRequired": "SummaryRequired.alias.php"
+			},
+			"path": true
+		}
+	},
+	"manifest_version": 2
+}

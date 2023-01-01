@@ -30,8 +30,12 @@
 		"PhpTagsRuntimeFirstInit": "PhpTagsFunctionsHooks::onPhpTagsRuntimeFirstInit"
 	},
 	"config": {
-		"PhpTagsFunctionDumpDepth": 3,
-		"PhpTagsFunctionDumpAmount": 10
+		"PhpTagsFunctionDumpDepth": {
+			"value": 3
+		},
+		"PhpTagsFunctionDumpAmount": {
+			"value": 10
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -7,8 +7,8 @@
 	"type": "antispam",
 	"license-name": "GPL-2.0+",
 	"callback": "WikiBanHammer::registerExtension",
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }
-
-
-

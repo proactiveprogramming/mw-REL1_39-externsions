@@ -83,8 +83,12 @@
 		"wikiforum": true
 	},
 	"config": {
-		"WikiForumAllowAnonymous": true,
-		"WikiForumLogInRC": true
+		"WikiForumAllowAnonymous": {
+			"value": true
+		},
+		"WikiForumLogInRC": {
+			"value": true
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

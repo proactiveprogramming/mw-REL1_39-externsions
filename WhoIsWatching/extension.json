@@ -77,16 +77,28 @@
 		"echo-subscriptions-web-whoiswatching": true
 	},
 	"config": {
-		"_prefix": "whoiswatching_",
-		"nametype": "RealName",
-		"allowaddingpeople": false,
-		"showifzero": true,
-		"showwatchingusers": false,
-		"maxPicklistUsers": 10,
+		"nametype": {
+			"value": "RealName"
+		},
+		"allowaddingpeople": {
+			"value": false
+		},
+		"showifzero": {
+			"value": true
+		},
+		"showwatchingusers": {
+			"value": false
+		},
+		"maxPicklistUsers": {
+			"value": 10
+		},
 		"notificationTypes": {
-			"add": true,
-			"remove": true
+			"value": {
+				"add": true,
+				"remove": true
+			}
 		}
 	},
-	"manifest_version": 1
+	"config_prefix": "whoiswatching_",
+	"manifest_version": 2
 }

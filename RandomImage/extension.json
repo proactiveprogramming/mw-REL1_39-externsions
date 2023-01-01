@@ -10,7 +10,9 @@
 	"type": "parserhook",
 	"callback": "RandomImage::onRegistration",
 	"config": {
-		"RandomImageNoCache": false
+		"RandomImageNoCache": {
+			"value": false
+		}
 	},
 	"AutoloadClasses": {
 		"RandomImage": "includes/RandomImage.php"
@@ -25,7 +27,7 @@
 		"ParserBeforeInternalParse": "RandomImage::stripHook",
 		"ParserFirstCallInit": "RandomImage::onParserFirstCallInit"
 	},
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"requires": {
 		"MediaWiki": ">= 1.35"
 	}

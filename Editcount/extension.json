@@ -23,5 +23,5 @@
 		"Editcount": "src/Editcount.php",
 		"EditcountHTML": "src/EditcountHTML.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

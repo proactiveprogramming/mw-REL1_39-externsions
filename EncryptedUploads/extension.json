@@ -15,11 +15,21 @@
 		"EncryptedUploads\\": "src/"
 	},
 	"config": {
-		"EncryptedUploadsSendMail": false,
-		"EncryptedUploadsSMWBasedRestrictionsEnabled": false,
-		"EncryptedUploadsSMWFilePropertyName": "",
-		"EncryptedUploadsSMWFilePropertyNameDeep": false,
-		"EncryptedUploadsSMWTargetPropertiesNames": []
+		"EncryptedUploadsSendMail": {
+			"value": false
+		},
+		"EncryptedUploadsSMWBasedRestrictionsEnabled": {
+			"value": false
+		},
+		"EncryptedUploadsSMWFilePropertyName": {
+			"value": ""
+		},
+		"EncryptedUploadsSMWFilePropertyNameDeep": {
+			"value": false
+		},
+		"EncryptedUploadsSMWTargetPropertiesNames": {
+			"value": []
+		}
 	},
 	"Hooks": {
 		"UploadComplete": [
@@ -74,9 +84,7 @@
 			"scripts": [
 				"modules/ext.EncryptedUploads.UploadWizard.js"
 			],
-			"styles": [
-
-			],
+			"styles": [],
 			"messages": [
 				"mwe-upwiz-encrypt",
 				"mwe-upwiz-thanks-secret"
@@ -102,5 +110,5 @@
 		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

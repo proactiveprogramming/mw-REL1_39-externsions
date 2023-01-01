@@ -1,275 +1,285 @@
 {
-    "name":"CourseEditor",
-    "version":"0.1.0",
-    "author":[
-        "Alessandro Tundo",
-        "Gianluca Rigoletti",
-        "Riccardo Iaconelli"
-    ],
-    "url":"https://github.com/WikiToLearn/CourseEditor",
-    "descriptionmsg":"",
-    "license-name":"GPLv3",
-    "type":"special",
-    "APIModules": {
-        "coursetree": "CourseEditorApi"
-    },
-    "AutoloadClasses":{
-        "CourseEditorApi" : "CourseEditorApi.php",
-        "CourseEditor":"CourseEditor.php",
-        "CourseEditorOperations":"CourseEditorOperations.php",
-        "CourseEditorUtils":"CourseEditorUtils.php",
-        "LevelTwoEditorTemplate":"CourseEditorTemplates.php",
-        "CourseEditorTemplate" : "CourseEditorTemplates.php",
-        "CourseCreatorTemplate" : "CourseEditorTemplates.php",
-        "ManageMetadataTemplate" : "CourseEditorTemplates.php",
-        "PublishCourseTemplate" : "CourseEditorTemplates.php",
-        "SpecialCourseEditor":"SpecialCourseEditor.php"
-    },
-    "MessagesDirs":{
-        "CourseEditor":[
-            "i18n"
-        ]
-    },
-    "ExtensionMessagesFiles": {
-        "CourseEditorAlias": "CourseEditor.alias.php",
-        "CourseEditorNamespaces": "CourseEditor.namespaces.php"
-    },
-    "ResourceFileModulePaths": {
-        "localBasePath": ""
-    },
-    "ResourceModules": {
-        "ext.courseEditor.publish": {
-          "scripts":[
-            "modules/publishCourse.js",
-            "modules/commonFunctions.js"
-          ],
-          "dependencies": [
-             "oojs-ui",
-             "mediawiki.util"
-          ],
-          "messages": [
-            "courseeditor",
-            "courseeditor-add-new-levelThree",
-            "courseeditor-save-levelTwo",
-            "courseeditor-cancel",
-            "courseeditor-rename",
-            "courseeditor-edit-dialog",
-            "courseeditor-message-dialog-title",
-            "courseeditor-message-dialog-message",
-            "courseeditor-message-dialog-cancel",
-            "courseeditor-message-dialog-restore",
-            "courseeditor-message-dialog-create-new",
-            "courseeditor-error-operation",
-            "courseeditor-operation-action-add",
-            "courseeditor-operation-action-delete",
-            "courseeditor-operation-action-delete-levelsThree-task",
-            "courseeditor-operation-action-delete-levelTwo-task",
-            "courseeditor-operation-action-rename",
-            "courseeditor-operation-action-rename-move-task",
-            "courseeditor-operation-action-rename-update-task",
-            "courseeditor-operation-action-purge",
-            "courseeditor-operation-action-update",
-            "courseeditor-operation-action-move-root",
-            "courseeditor-operation-action-move-metadata",
-            "courseeditor-operation-action-remove-ready-texts",
-            "courseeditor-operation-action-update-collection",
-            "courseeditor-error-operation-fail"
-          ]
-        },
-        "ext.courseEditor.manageMetadata": {
-          "scripts":[
-            "modules/manageMetadata.js",
-            "modules/commonFunctions.js"
-          ],
-          "dependencies": [
-            "oojs-ui",
-            "mediawiki.util"
-          ],
-          "messages": [
-            "courseeditor",
-            "courseeditor-add-new-levelThree",
-            "courseeditor-save-levelTwo",
-            "courseeditor-cancel",
-            "courseeditor-rename",
-            "courseeditor-edit-dialog",
-            "courseeditor-message-dialog-title",
-            "courseeditor-message-dialog-message",
-            "courseeditor-message-dialog-cancel",
-            "courseeditor-message-dialog-restore",
-            "courseeditor-message-dialog-create-new",
-            "courseeditor-error-operation",
-            "courseeditor-operation-action-add",
-            "courseeditor-operation-action-delete",
-            "courseeditor-operation-action-delete-levelsThree-task",
-            "courseeditor-operation-action-delete-levelTwo-task",
-            "courseeditor-operation-action-rename",
-            "courseeditor-operation-action-rename-move-task",
-            "courseeditor-operation-action-rename-update-task",
-            "courseeditor-operation-action-purge",
-            "courseeditor-operation-action-update",
-            "courseeditor-operation-action-move-root",
-            "courseeditor-operation-action-move-metadata",
-            "courseeditor-operation-action-remove-ready-texts",
-            "courseeditor-operation-action-update-collection",
-            "courseeditor-operation-action-remove-from-topic-page",
-            "courseeditor-operation-action-append-to-topic-page",
-            "courseeditor-operation-action-update-topic-page",
-            "courseeditor-operation-action-update-user-page",
-            "courseeditor-error-operation-fail",
-            "courseeditor-confirmation-dialog-title",
-            "courseeditor-confirmation-dialog-message",
-            "courseeditor-alert-dialog-title",
-            "courseeditor-alert-dialog-message",
-            "courseeditor-alert-dialog-button",
-            "courseeditor-alert-dialog-badtitle"
-
-          ]
-        },
-        "ext.courseEditor.create": {
-          "scripts":[
-            "modules/commonFunctions.js",
-            "modules/createCourse.js"
-          ],
-          "dependencies": [
-             "oojs-ui",
-             "mediawiki.util"
-          ],
-          "messages": [
-              "courseeditor-progressdialog-wait",
-              "courseeditor-alert-dialog-badtitle"
-          ]
-        },
-        "ext.courseEditor.levelTwo": {
-           "scripts":[
-             "modules/commonFunctions.js",
-             "modules/levelTwoEditor.js"
-           ],
-            "dependencies": [
-                "oojs-ui",
-                "mediawiki.util"
-            ],
-            "styles": [
-              "modules/styles/style.css"
-            ],
-            "messages": [
-                "courseeditor",
-                "courseeditor-add-new-levelThree",
-                "courseeditor-save-levelTwo",
-                "courseeditor-cancel",
-                "courseeditor-rename",
-                "courseeditor-edit-dialog",
-                "courseeditor-message-dialog-title",
-                "courseeditor-message-dialog-message",
-                "courseeditor-message-dialog-cancel",
-                "courseeditor-message-dialog-restore",
-                "courseeditor-message-dialog-create-new",
-                "courseeditor-error-operation",
-                "courseeditor-operation-action-add",
-                "courseeditor-operation-action-delete",
-                "courseeditor-operation-action-delete-levelsThree-task",
-                "courseeditor-operation-action-delete-levelTwo-task",
-                "courseeditor-operation-action-rename",
-                "courseeditor-operation-action-rename-move-task",
-                "courseeditor-operation-action-rename-update-task",
-                "courseeditor-operation-action-purge",
-                "courseeditor-operation-action-update",
-                "courseeditor-operation-action-update-collection",
-                "courseeditor-error-operation-fail",
-                "courseeditor-alert-dialog-badtitle"
-            ]
-        },
-        "ext.courseEditor.course": {
-           "scripts":[
-             "modules/commonFunctions.js",
-             "modules/courseEditor.js"
-           ],
-            "dependencies": [
-                "oojs-ui",
-                "mediawiki.util"
-            ],
-            "styles": [
-              "modules/styles/style.css"
-            ],
-            "messages": [
-                "courseeditor",
-                "courseeditor-add-new-levelTwo",
-                "courseeditor-save-course",
-                "courseeditor-cancel",
-                "courseeditor-rename",
-                "courseeditor-edit-dialog",
-                "courseeditor-message-dialog-title",
-                "courseeditor-message-dialog-message",
-                "courseeditor-message-dialog-cancel",
-                "courseeditor-message-dialog-restore",
-                "courseeditor-message-dialog-create-new",
-                "courseeditor-error-operation",
-                "courseeditor-operation-action-add",
-                "courseeditor-operation-action-delete",
-                "courseeditor-operation-action-delete-levelsThree-task",
-                "courseeditor-operation-action-delete-levelTwo-task",
-                "courseeditor-operation-action-rename",
-                "courseeditor-operation-action-rename-move-task",
-                "courseeditor-operation-action-rename-update-task",
-                "courseeditor-operation-action-purge",
-                "courseeditor-operation-action-update",
-                "courseeditor-operation-action-update-collection",
-                "courseeditor-error-operation-fail",
-                "courseeditor-alert-dialog-badtitle"
-            ]
-        }
-    },
-    "namespaces": [
-  		{
-  			"id": 2800,
-  			"constant": "NS_COURSE",
-  			"name": "Course",
-        "subpages" : true
-  		},
-  		{
-  			"id": 2801,
-  			"constant": "NS_COURSE_TALK",
-  			"name": "Course_talk",
-        "subpages" : true
-  		},
-      {
-  			"id": 2900,
-  			"constant": "NS_COURSEMETADATA",
-  			"name": "CourseMetadata"
-  		}
-    ],
-    "config": {
-      "CourseEditorTemplates":{
-        "Topic" : "Topic",
-        "Course" : "Course",
-        "CourseRoot" : "CourseRoot",
-        "CourseLevelTwo" : "CourseLevelTwo",
-        "ReadyToBePublished": "ReadyToBePublished",
-        "DeleteMe" : "DeleteMe"
-      },
-      "CourseEditorCategories":{
-        "CourseRoot" : "CourseRoot",
-        "CourseLevelTwo" : "CourseLevelTwo",
-        "ReadyToBePublished": "ReadyToBePublished"
-      },
-      "CourseEditorNamespaces":{
-        "Course" : "Course",
-        "CourseMetadata" : "CourseMetadata"
-      },
-  		"AjaxExportList": [
-        "CourseEditorOperations::manageCourseMetadataOp",
-        "CourseEditorOperations::createCourseOp",
-        "CourseEditorUtils::getLevelsTwoJson",
-        "CourseEditorUtils::purgeWrapper",
-        "CourseEditorOperations::applyLevelTwoOp",
-        "CourseEditorOperations::applyCourseOp",
-        "CourseEditorOperations::publishCourseOp",
-        "CourseEditorOperations::undoPublishCourseOp",
-        "CourseEditorOperations::applyPublishCourseOp",
-        "CourseEditorUtils::getCourseTree"
-  		]
-    },
-    "SpecialPages": {
-        "CourseEditor": "SpecialCourseEditor"
-    },
-    "manifest_version":1
+	"name": "CourseEditor",
+	"version": "0.1.0",
+	"author": [
+		"Alessandro Tundo",
+		"Gianluca Rigoletti",
+		"Riccardo Iaconelli"
+	],
+	"url": "https://github.com/WikiToLearn/CourseEditor",
+	"descriptionmsg": "",
+	"license-name": "GPLv3",
+	"type": "special",
+	"APIModules": {
+		"coursetree": "CourseEditorApi"
+	},
+	"AutoloadClasses": {
+		"CourseEditorApi": "CourseEditorApi.php",
+		"CourseEditor": "CourseEditor.php",
+		"CourseEditorOperations": "CourseEditorOperations.php",
+		"CourseEditorUtils": "CourseEditorUtils.php",
+		"LevelTwoEditorTemplate": "CourseEditorTemplates.php",
+		"CourseEditorTemplate": "CourseEditorTemplates.php",
+		"CourseCreatorTemplate": "CourseEditorTemplates.php",
+		"ManageMetadataTemplate": "CourseEditorTemplates.php",
+		"PublishCourseTemplate": "CourseEditorTemplates.php",
+		"SpecialCourseEditor": "SpecialCourseEditor.php"
+	},
+	"MessagesDirs": {
+		"CourseEditor": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"CourseEditorAlias": "CourseEditor.alias.php",
+		"CourseEditorNamespaces": "CourseEditor.namespaces.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": ""
+	},
+	"ResourceModules": {
+		"ext.courseEditor.publish": {
+			"scripts": [
+				"modules/publishCourse.js",
+				"modules/commonFunctions.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"mediawiki.util"
+			],
+			"messages": [
+				"courseeditor",
+				"courseeditor-add-new-levelThree",
+				"courseeditor-save-levelTwo",
+				"courseeditor-cancel",
+				"courseeditor-rename",
+				"courseeditor-edit-dialog",
+				"courseeditor-message-dialog-title",
+				"courseeditor-message-dialog-message",
+				"courseeditor-message-dialog-cancel",
+				"courseeditor-message-dialog-restore",
+				"courseeditor-message-dialog-create-new",
+				"courseeditor-error-operation",
+				"courseeditor-operation-action-add",
+				"courseeditor-operation-action-delete",
+				"courseeditor-operation-action-delete-levelsThree-task",
+				"courseeditor-operation-action-delete-levelTwo-task",
+				"courseeditor-operation-action-rename",
+				"courseeditor-operation-action-rename-move-task",
+				"courseeditor-operation-action-rename-update-task",
+				"courseeditor-operation-action-purge",
+				"courseeditor-operation-action-update",
+				"courseeditor-operation-action-move-root",
+				"courseeditor-operation-action-move-metadata",
+				"courseeditor-operation-action-remove-ready-texts",
+				"courseeditor-operation-action-update-collection",
+				"courseeditor-error-operation-fail"
+			]
+		},
+		"ext.courseEditor.manageMetadata": {
+			"scripts": [
+				"modules/manageMetadata.js",
+				"modules/commonFunctions.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"mediawiki.util"
+			],
+			"messages": [
+				"courseeditor",
+				"courseeditor-add-new-levelThree",
+				"courseeditor-save-levelTwo",
+				"courseeditor-cancel",
+				"courseeditor-rename",
+				"courseeditor-edit-dialog",
+				"courseeditor-message-dialog-title",
+				"courseeditor-message-dialog-message",
+				"courseeditor-message-dialog-cancel",
+				"courseeditor-message-dialog-restore",
+				"courseeditor-message-dialog-create-new",
+				"courseeditor-error-operation",
+				"courseeditor-operation-action-add",
+				"courseeditor-operation-action-delete",
+				"courseeditor-operation-action-delete-levelsThree-task",
+				"courseeditor-operation-action-delete-levelTwo-task",
+				"courseeditor-operation-action-rename",
+				"courseeditor-operation-action-rename-move-task",
+				"courseeditor-operation-action-rename-update-task",
+				"courseeditor-operation-action-purge",
+				"courseeditor-operation-action-update",
+				"courseeditor-operation-action-move-root",
+				"courseeditor-operation-action-move-metadata",
+				"courseeditor-operation-action-remove-ready-texts",
+				"courseeditor-operation-action-update-collection",
+				"courseeditor-operation-action-remove-from-topic-page",
+				"courseeditor-operation-action-append-to-topic-page",
+				"courseeditor-operation-action-update-topic-page",
+				"courseeditor-operation-action-update-user-page",
+				"courseeditor-error-operation-fail",
+				"courseeditor-confirmation-dialog-title",
+				"courseeditor-confirmation-dialog-message",
+				"courseeditor-alert-dialog-title",
+				"courseeditor-alert-dialog-message",
+				"courseeditor-alert-dialog-button",
+				"courseeditor-alert-dialog-badtitle"
+			]
+		},
+		"ext.courseEditor.create": {
+			"scripts": [
+				"modules/commonFunctions.js",
+				"modules/createCourse.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"mediawiki.util"
+			],
+			"messages": [
+				"courseeditor-progressdialog-wait",
+				"courseeditor-alert-dialog-badtitle"
+			]
+		},
+		"ext.courseEditor.levelTwo": {
+			"scripts": [
+				"modules/commonFunctions.js",
+				"modules/levelTwoEditor.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"mediawiki.util"
+			],
+			"styles": [
+				"modules/styles/style.css"
+			],
+			"messages": [
+				"courseeditor",
+				"courseeditor-add-new-levelThree",
+				"courseeditor-save-levelTwo",
+				"courseeditor-cancel",
+				"courseeditor-rename",
+				"courseeditor-edit-dialog",
+				"courseeditor-message-dialog-title",
+				"courseeditor-message-dialog-message",
+				"courseeditor-message-dialog-cancel",
+				"courseeditor-message-dialog-restore",
+				"courseeditor-message-dialog-create-new",
+				"courseeditor-error-operation",
+				"courseeditor-operation-action-add",
+				"courseeditor-operation-action-delete",
+				"courseeditor-operation-action-delete-levelsThree-task",
+				"courseeditor-operation-action-delete-levelTwo-task",
+				"courseeditor-operation-action-rename",
+				"courseeditor-operation-action-rename-move-task",
+				"courseeditor-operation-action-rename-update-task",
+				"courseeditor-operation-action-purge",
+				"courseeditor-operation-action-update",
+				"courseeditor-operation-action-update-collection",
+				"courseeditor-error-operation-fail",
+				"courseeditor-alert-dialog-badtitle"
+			]
+		},
+		"ext.courseEditor.course": {
+			"scripts": [
+				"modules/commonFunctions.js",
+				"modules/courseEditor.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"mediawiki.util"
+			],
+			"styles": [
+				"modules/styles/style.css"
+			],
+			"messages": [
+				"courseeditor",
+				"courseeditor-add-new-levelTwo",
+				"courseeditor-save-course",
+				"courseeditor-cancel",
+				"courseeditor-rename",
+				"courseeditor-edit-dialog",
+				"courseeditor-message-dialog-title",
+				"courseeditor-message-dialog-message",
+				"courseeditor-message-dialog-cancel",
+				"courseeditor-message-dialog-restore",
+				"courseeditor-message-dialog-create-new",
+				"courseeditor-error-operation",
+				"courseeditor-operation-action-add",
+				"courseeditor-operation-action-delete",
+				"courseeditor-operation-action-delete-levelsThree-task",
+				"courseeditor-operation-action-delete-levelTwo-task",
+				"courseeditor-operation-action-rename",
+				"courseeditor-operation-action-rename-move-task",
+				"courseeditor-operation-action-rename-update-task",
+				"courseeditor-operation-action-purge",
+				"courseeditor-operation-action-update",
+				"courseeditor-operation-action-update-collection",
+				"courseeditor-error-operation-fail",
+				"courseeditor-alert-dialog-badtitle"
+			]
+		}
+	},
+	"namespaces": [
+		{
+			"id": 2800,
+			"constant": "NS_COURSE",
+			"name": "Course",
+			"subpages": true
+		},
+		{
+			"id": 2801,
+			"constant": "NS_COURSE_TALK",
+			"name": "Course_talk",
+			"subpages": true
+		},
+		{
+			"id": 2900,
+			"constant": "NS_COURSEMETADATA",
+			"name": "CourseMetadata"
+		}
+	],
+	"config": {
+		"CourseEditorTemplates": {
+			"value": {
+				"Topic": "Topic",
+				"Course": "Course",
+				"CourseRoot": "CourseRoot",
+				"CourseLevelTwo": "CourseLevelTwo",
+				"ReadyToBePublished": "ReadyToBePublished",
+				"DeleteMe": "DeleteMe"
+			}
+		},
+		"CourseEditorCategories": {
+			"value": {
+				"CourseRoot": "CourseRoot",
+				"CourseLevelTwo": "CourseLevelTwo",
+				"ReadyToBePublished": "ReadyToBePublished"
+			}
+		},
+		"CourseEditorNamespaces": {
+			"value": {
+				"Course": "Course",
+				"CourseMetadata": "CourseMetadata"
+			}
+		},
+		"AjaxExportList": {
+			"value": [
+				"CourseEditorOperations::manageCourseMetadataOp",
+				"CourseEditorOperations::createCourseOp",
+				"CourseEditorUtils::getLevelsTwoJson",
+				"CourseEditorUtils::purgeWrapper",
+				"CourseEditorOperations::applyLevelTwoOp",
+				"CourseEditorOperations::applyCourseOp",
+				"CourseEditorOperations::publishCourseOp",
+				"CourseEditorOperations::undoPublishCourseOp",
+				"CourseEditorOperations::applyPublishCourseOp",
+				"CourseEditorUtils::getCourseTree"
+			]
+		}
+	},
+	"SpecialPages": {
+		"CourseEditor": "SpecialCourseEditor"
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

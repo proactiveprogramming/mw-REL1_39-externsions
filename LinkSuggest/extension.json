@@ -33,9 +33,11 @@
 		"GetPreferences": "LinkSuggest::onGetPreferences"
 	},
 	"config": {
-		"LinkSuggestFromNamespaces": [
-			0
-		]
+		"LinkSuggestFromNamespaces": {
+			"value": [
+				0
+			]
+		}
 	},
 	"ConfigRegistry": {
 		"linksuggest": "GlobalVarConfig::newInstance"
@@ -47,8 +49,11 @@
 	"ResourceModules": {
 		"ext.LinkSuggest": {
 			"scripts": "jquery.mw.linksuggest.js",
-			"dependencies": [ "jquery.ui", "mediawiki.api" ]
+			"dependencies": [
+				"jquery.ui",
+				"mediawiki.api"
+			]
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

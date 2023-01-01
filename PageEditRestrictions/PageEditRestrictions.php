@@ -30,7 +30,7 @@ $wgAutoloadClasses['PageEditRestrictions'] = __DIR__ . '/PageEditRestrictions.cl
 
 // Register extension messages
 $wgMessagesDirs['PageEditRestrictions'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['PageEditRestrictions'] = __DIR__ . '/PageEditRestrictions.i18n.php';
+#$wgExtensionMessagesFiles['PageEditRestrictions'] = __DIR__ . '/PageEditRestrictions.i18n.php';
 
 // Add user permission
 $wgAvailableRights[] = 'editrestrictedpages';

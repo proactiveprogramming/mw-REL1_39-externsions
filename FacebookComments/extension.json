@@ -1,0 +1,29 @@
+{
+	"name": "FacebookComments",
+	"version": "1.1.2",
+	"author": "Jmkim dot com",
+	"url": "http://www.mediawiki.org/wiki/Extension:FacebookComments",
+	"description": "Facebook Comments Extension",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AutoloadClasses": {
+		"FacebookComments": "FacebookComments.class.php"
+	},
+	"Hooks": {
+		"SkinAfterBottomScripts": "FacebookComments::renderFacebookComments"
+	},
+	"config": {
+		"FacebookCommentsNumPosts": {
+			"value": 5
+		},
+		"FacebookCommentsWidth": {
+			"value": 470
+		},
+		"FacebookCommentsColorscheme": {
+			"value": "light"
+		}
+	},
+	"manifest_version": 2
+}

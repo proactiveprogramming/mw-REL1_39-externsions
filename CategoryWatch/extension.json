@@ -31,5 +31,5 @@
 		"CategoryAfterPageRemoved": "CategoryWatch\\Hook::onCategoryAfterPageRemoved",
 		"GetPreferences": "CategoryWatch\\Hook::onGetPreferences"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -8,44 +8,37 @@
 	"descriptionmsg": "OfflineExtension-desc",
 	"license-name": "MIT",
 	"type": "other",
-	"AutoloadClasses":{
-        "OfflineExtension":"OfflineExtension.php",
-        "OfflineExtensionHooks":"OfflineExtension.hooks.php",
-        "SpecialOfflineExtension":"specials/SpecialOfflineExtension.php"
-    },
-		"MessagesDirs":{
-			"OfflineExtension":[
-					"i18n"
-			]
-	},
-	"ExtensionMessagesFiles": {
-			"OfflineExtensionAlias": "OfflineExtension.i18n.alias.php"
-	},
-	"ResourceFileModulePaths": {
-        "localBasePath": "",
-				"remoteExtPath": "OfflineExtension"
-			},
-
-	"config": {
-		"OfflineExtensionEnableFoo": true
-	},
-	"ExtensionMessagesFiles": {
-		"OfflineExtensionAlias": "OfflineExtension.i18n.alias.php"
-	},
-	"Hooks": {
-		"BeforePageDisplay": [
-			"OfflineExtensionHooks::onBeforePageDisplay"
-		]
+	"AutoloadClasses": {
+		"OfflineExtension": "OfflineExtension.php",
+		"OfflineExtensionHooks": "OfflineExtension.hooks.php",
+		"SpecialOfflineExtension": "specials/SpecialOfflineExtension.php"
 	},
 	"MessagesDirs": {
 		"OfflineExtension": [
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"OfflineExtensionAlias": "OfflineExtension.i18n.alias.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "OfflineExtension"
+	},
+	"config": {
+		"OfflineExtensionEnableFoo": {
+			"value": true
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"OfflineExtensionHooks::onBeforePageDisplay"
+		]
+	},
 	"ResourceModules": {
 		"ext.OfflineExtension": {
 			"position": "top",
-			"scripts":[
+			"scripts": [
 				"modules/OfflineExtension.js",
 				"modules/OfflineExtension.wiki.js",
 				"modules/wiky.js",
@@ -59,11 +52,13 @@
 				"modules/wiky.css",
 				"modules/wiky.lang.css",
 				"modules/wiky.math.css"
-
 			],
 			"messages": [],
 			"dependencies": []
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

@@ -6,7 +6,9 @@
 		"[https://mediawiki.org/wiki/User:Bawolff Brian Wolff]",
 		"[http://mwstake.org Mark A. Hershberger]"
 	],
-	"require": [ "1.26" ],
+	"require": [
+		"1.26"
+	],
 	"url": "https://www.mediawiki.org/wiki/Extension:SubpageWatchlist",
 	"descriptionmsg": "subpagewatchlist-desc",
 	"type": "specialpage",
@@ -29,5 +31,8 @@
 			"SubpageWatchlist\\Hooks::onGetPreferences"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

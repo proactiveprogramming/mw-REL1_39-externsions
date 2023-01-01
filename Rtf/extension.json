@@ -1,26 +1,26 @@
 {
-    "name": "Rtf",
-    "author": "Hunter Turcin",
-    "url": "https://gitlab.com/huntertur/mw-rtf",
-    "version": "1.1",
-    "license-name": "GPL-2.0-or-later",
-    "type": "other",
-    "namemsg": "rtf-extensionname",
-    "descriptionmsg": "rtf-desc",
-    "requires": {
-        "MediaWiki": ">= 1.35.0"
-    },
-    "AutoloadNamespaces": {
-        "MwRtf\\": "includes/"
-    },
-    "ContentHandlers": {
-        "rtf": "MwRtf\\RtfContentHandler"
-    },
-    "MessagesDirs": {
-        "Rtf": [
-            "i18n"
-        ]
-    },
-    "load_composer_autoloader": true,
-    "manifest_version": 1
+	"name": "Rtf",
+	"author": "Hunter Turcin",
+	"url": "https://gitlab.com/huntertur/mw-rtf",
+	"version": "1.1",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"namemsg": "rtf-extensionname",
+	"descriptionmsg": "rtf-desc",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MwRtf\\": "includes/"
+	},
+	"ContentHandlers": {
+		"rtf": "MwRtf\\RtfContentHandler"
+	},
+	"MessagesDirs": {
+		"Rtf": [
+			"i18n"
+		]
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
 }

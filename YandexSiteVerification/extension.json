@@ -1,24 +1,27 @@
 {
-  "name": "YandexSiteVerification",
-  "author": [
-    "Dolfinus",
-    "Adam Shorland"
-   ],
-  "url": "https://www.mediawiki.org/wiki/Extension:YandexSiteVerification",
-  "descriptionmsg": "yav-desc",
-  "version": "1.0",
-  "license-name": "MIT",
-  "type": "other",
-  "ExtensionMessagesFiles": {
-    "YandexSiteVerification": "YandexSiteVerification.i18n.php"
-  },
-  "AutoloadClasses": {
-    "YandexSiteVerification": "YandexSiteVerification_body.php"
-  },
-  "Hooks": {
-    "BeforePageDisplay" : [
-	    "YandexSiteVerification::onBeforePageDisplay"
-    ]
-  },
-  "manifest_version": 1
+	"name": "YandexSiteVerification",
+	"author": [
+		"Dolfinus",
+		"Adam Shorland"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:YandexSiteVerification",
+	"descriptionmsg": "yav-desc",
+	"version": "1.0",
+	"license-name": "MIT",
+	"type": "other",
+	"ExtensionMessagesFiles": {
+		"YandexSiteVerification": "YandexSiteVerification.i18n.php"
+	},
+	"AutoloadClasses": {
+		"YandexSiteVerification": "YandexSiteVerification_body.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"YandexSiteVerification::onBeforePageDisplay"
+		]
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

@@ -463,70 +463,130 @@
 		"ScribuntoExternalLibraries": "CargoHooks::addLuaLibrary"
 	},
 	"config": {
-		"CargoDecimalMark": ".",
-		"CargoDigitGroupingCharacter": ",",
-		"CargoRecurringEventMaxInstances": 100,
-		"CargoDBtype": null,
-		"CargoDBserver": null,
-		"CargoDBname": null,
-		"CargoDBuser": null,
-		"CargoDBpassword": null,
-		"CargoDBprefix": null,
-		"CargoDBRowFormat": null,
-		"CargoDefaultStringBytes": 300,
-		"CargoDefaultQueryLimit": 100,
-		"CargoMaxQueryLimit": 5000,
-		"Cargo24HourTime": false,
-		"CargoDefaultMapService": "OpenLayers",
-		"CargoGoogleMapsKey": null,
-		"CargoMapClusteringMinimum": 80,
-		"CargoDrilldownUseTabs": true,
-		"CargoDrilldownSmallestFontSize": -1,
-		"CargoDrilldownLargestFontSize": -1,
-		"CargoDrilldownMinValuesForComboBox": 40,
-		"CargoDrilldownNumRangesForNumbers": 5,
-		"CargoMaxVisibleHierarchyDrilldownValues": 30,
-		"CargoTablesPrioritizeReplacements": false,
-		"CargoLegacyNullLuaFieldsAsEmptyString": false,
-		"CargoStoreUseTemplateArgsFallback": true,
-		"CargoPageDataColumns": [],
-		"CargoFileDataColumns": [],
-		"CargoHideNamespaceName": [
-			6
-		],
-		"CargoAllowedSQLFunctions": [
-			"AVG",
-			"CEIL",
-			"CONCAT",
-			"COUNT",
-			"DATE",
-			"DATE_ADD",
-			"DATE_FORMAT",
-			"DATE_SUB",
-			"DATEDIFF",
-			"DAYOFMONTH",
-			"FLOOR",
-			"FORMAT",
-			"GROUP_CONCAT",
-			"IF",
-			"LCASE",
-			"LN",
-			"LOG",
-			"LOWER",
-			"MAX",
-			"MIN",
-			"MONTH",
-			"NEAR",
-			"NOW",
-			"POWER",
-			"ROUND",
-			"SUBSTRING",
-			"SUM",
-			"TRIM",
-			"UCASE",
-			"UPPER",
-			"YEAR"
-		]
+		"CargoDecimalMark": {
+			"value": "."
+		},
+		"CargoDigitGroupingCharacter": {
+			"value": ","
+		},
+		"CargoRecurringEventMaxInstances": {
+			"value": 100
+		},
+		"CargoDBtype": {
+			"value": null
+		},
+		"CargoDBserver": {
+			"value": null
+		},
+		"CargoDBname": {
+			"value": null
+		},
+		"CargoDBuser": {
+			"value": null
+		},
+		"CargoDBpassword": {
+			"value": null
+		},
+		"CargoDBprefix": {
+			"value": null
+		},
+		"CargoDBRowFormat": {
+			"value": null
+		},
+		"CargoDefaultStringBytes": {
+			"value": 300
+		},
+		"CargoDefaultQueryLimit": {
+			"value": 100
+		},
+		"CargoMaxQueryLimit": {
+			"value": 5000
+		},
+		"Cargo24HourTime": {
+			"value": false
+		},
+		"CargoDefaultMapService": {
+			"value": "OpenLayers"
+		},
+		"CargoGoogleMapsKey": {
+			"value": null
+		},
+		"CargoMapClusteringMinimum": {
+			"value": 80
+		},
+		"CargoDrilldownUseTabs": {
+			"value": true
+		},
+		"CargoDrilldownSmallestFontSize": {
+			"value": -1
+		},
+		"CargoDrilldownLargestFontSize": {
+			"value": -1
+		},
+		"CargoDrilldownMinValuesForComboBox": {
+			"value": 40
+		},
+		"CargoDrilldownNumRangesForNumbers": {
+			"value": 5
+		},
+		"CargoMaxVisibleHierarchyDrilldownValues": {
+			"value": 30
+		},
+		"CargoTablesPrioritizeReplacements": {
+			"value": false
+		},
+		"CargoLegacyNullLuaFieldsAsEmptyString": {
+			"value": false
+		},
+		"CargoStoreUseTemplateArgsFallback": {
+			"value": true
+		},
+		"CargoPageDataColumns": {
+			"value": []
+		},
+		"CargoFileDataColumns": {
+			"value": []
+		},
+		"CargoHideNamespaceName": {
+			"value": [
+				6
+			]
+		},
+		"CargoAllowedSQLFunctions": {
+			"value": [
+				"AVG",
+				"CEIL",
+				"CONCAT",
+				"COUNT",
+				"DATE",
+				"DATE_ADD",
+				"DATE_FORMAT",
+				"DATE_SUB",
+				"DATEDIFF",
+				"DAYOFMONTH",
+				"FLOOR",
+				"FORMAT",
+				"GROUP_CONCAT",
+				"IF",
+				"LCASE",
+				"LN",
+				"LOG",
+				"LOWER",
+				"MAX",
+				"MIN",
+				"MONTH",
+				"NEAR",
+				"NOW",
+				"POWER",
+				"ROUND",
+				"SUBSTRING",
+				"SUM",
+				"TRIM",
+				"UCASE",
+				"UPPER",
+				"YEAR"
+			]
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

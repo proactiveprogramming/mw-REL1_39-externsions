@@ -3,7 +3,7 @@
 	"author": [
 		"Jinho Yun"
 	],
-	"version":"0.2.0",
+	"version": "0.2.0",
 	"url": "https://www.mediawiki.org/wiki/Extension:QuickUploadZone",
 	"descriptionmsg": "Easy and quick File Upload by drag&drop",
 	"license-name": "MIT",
@@ -12,39 +12,51 @@
 		"QuickUploadZoneHooks": "QuickUploadZone.hooks.php"
 	},
 	"Hooks": {
-		"BeforeInitialize":["QuickUploadZoneHooks::onBeforeInitialize"]
+		"BeforeInitialize": [
+			"QuickUploadZoneHooks::onBeforeInitialize"
+		]
 	},
-	"manifest_version":1,
-
+	"manifest_version": 2,
 	"MessagesDirs": {
-                "QuickUploadZone": [
-                        "i18n"
-                ]
-        },
-
+		"QuickUploadZone": [
+			"i18n"
+		]
+	},
 	"ResourceFileModulePaths": {
-                "localBasePath": "modules",
-                "remoteExtPath": "QuickUploadZone/modules"
-        },
-
+		"localBasePath": "modules",
+		"remoteExtPath": "QuickUploadZone/modules"
+	},
 	"ResourceModules": {
 		"net.owlfamily.mwdropzone.deps": {
-                        "scripts": ["dropzone.js","clipboard.min.js"],
-                        "styles": ["dropzone.css"]
-                },
-                "net.owlfamily.mwdropzone": {
-                        "scripts": ["net.owlfamily.mwdropzone.js"],
-                        "styles": ["mwdropzone.css"],
-			"dependencies":[
-                                "net.owlfamily.mwdropzone.deps"
-                        ]
-                },
-		"net.owlfamily.mwdropzone.init":{
-			"scripts": ["net.owlfamily.mwdropzone.init.js"],
-			"dependencies":[
+			"scripts": [
+				"dropzone.js",
+				"clipboard.min.js"
+			],
+			"styles": [
+				"dropzone.css"
+			]
+		},
+		"net.owlfamily.mwdropzone": {
+			"scripts": [
+				"net.owlfamily.mwdropzone.js"
+			],
+			"styles": [
+				"mwdropzone.css"
+			],
+			"dependencies": [
+				"net.owlfamily.mwdropzone.deps"
+			]
+		},
+		"net.owlfamily.mwdropzone.init": {
+			"scripts": [
+				"net.owlfamily.mwdropzone.init.js"
+			],
+			"dependencies": [
 				"net.owlfamily.mwdropzone"
 			]
 		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
 	}
-	
 }

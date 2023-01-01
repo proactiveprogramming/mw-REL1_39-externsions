@@ -1,31 +1,31 @@
 {
-    "name": "ListDuplicateUsers",
-    "version": "1.0.0",
-    "author": [
-        "David Wong",
-        "..."
-    ],
-    "url": "https://www.mediawiki.org/wiki/Extension:ListDuplicateUsers",
-    "descriptionmsg": "listduplicateusers-description",
-    "license-name": "GPL-2.0-or-later",
-    "type": "specialpage",
-    "requires": {
-        "MediaWiki": ">= 1.25.0"
-    },
-    "AvailableRights": [
-        "listduplicateusers"
-    ],
-    "SpecialPages": {
-        "ListDuplicateUsers": "SpecialListDuplicateUsers"
-    },
-    "MessagesDirs": {
-        "ListDuplicateUsers": [
-            "i18n"
-        ]
-    },
-    "AutoloadClasses": {
-        "SpecialListDuplicateUsers": "SpecialListDuplicateUsers.php",
-        "DuplicateUsersPager": "pagers/DuplicateUsersPager.php"
-    },
-    "manifest_version": 1
+	"name": "ListDuplicateUsers",
+	"version": "1.0.0",
+	"author": [
+		"David Wong",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ListDuplicateUsers",
+	"descriptionmsg": "listduplicateusers-description",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AvailableRights": [
+		"listduplicateusers"
+	],
+	"SpecialPages": {
+		"ListDuplicateUsers": "SpecialListDuplicateUsers"
+	},
+	"MessagesDirs": {
+		"ListDuplicateUsers": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SpecialListDuplicateUsers": "SpecialListDuplicateUsers.php",
+		"DuplicateUsersPager": "pagers/DuplicateUsersPager.php"
+	},
+	"manifest_version": 2
 }

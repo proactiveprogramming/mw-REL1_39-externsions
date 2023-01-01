@@ -9,9 +9,11 @@
 	"namemsg": "advancedBacklinks",
 	"descriptionmsg": "advancedBacklinks-desc",
 	"url": "https://www.mediawiki.org/wiki/Extension:AdvancedBacklinks",
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"MessagesDirs": {
-		"AdvancedBacklinks": [ "i18n" ]
+		"AdvancedBacklinks": [
+			"i18n"
+		]
 	},
 	"AutoloadClasses": {
 		"AdvancedBacklinksUtils": "includes/AdvancedBacklinksUtils.php",
@@ -33,7 +35,9 @@
 		"ApiQueryAbLinkStatsProp": "includes/api/ApiQueryAbLinkStatsProp.php"
 	},
 	"config": {
-		"AdvancedBacklinksTrackExtlinks": true
+		"AdvancedBacklinksTrackExtlinks": {
+			"value": true
+		}
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "AdvancedBacklinksHooks::onLoadExtensionSchemaUpdates",
@@ -48,7 +52,6 @@
 		"PPFrameAfterExpansion": "PPFrameHooks::onPPFrameAfterExpansion",
 		"ParserClearState": "PPFrameHooks::onParserClearState",
 		"InternalParseBeforeLinks": "PPFrameHooks::onInternalParseBeforeLinks",
-
 		"AbuseFilter-builder": "AbAfHooks::onAbuseFilterBuilder",
 		"AbuseFilter-generateTitleVars": "AbAfHooks::onAbuseFilterGenerateTitleVars",
 		"AbuseFilter-computeVariable": "AbAfHooks::onAbuseFilterComputeVariable"

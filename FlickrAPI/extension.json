@@ -26,14 +26,20 @@
 		"ParserFirstCallInit": "FlickrAPIHooks::onParserFirstCallInit"
 	},
 	"config": {
-		"FlickrAPIKey": "",
-		"FlickrAPISecret": "",
+		"FlickrAPIKey": {
+			"value": ""
+		},
+		"FlickrAPISecret": {
+			"value": ""
+		},
 		"FlickrAPIDefaults": {
-			"type": "frameless",
-			"location": "right",
-			"size": "-"
+			"value": {
+				"type": "frameless",
+				"location": "right",
+				"size": "-"
+			}
 		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

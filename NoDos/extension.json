@@ -13,14 +13,14 @@
 		"SpecialNodos": "specials/SpecialNodos.php"
 	},
 	"config": {
-		"nodosEnableFoo": true
+		"nodosEnableFoo": {
+			"value": true
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"nodosAlias": "nodos.i18n.alias.php"
 	},
-	"Hooks": {
-		
-	},
+	"Hooks": [],
 	"MessagesDirs": {
 		"nodos": [
 			"i18n"
@@ -46,5 +46,8 @@
 	"SpecialPages": {
 		"Nodos": "SpecialNodos"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

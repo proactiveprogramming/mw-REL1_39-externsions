@@ -1,0 +1,45 @@
+{
+	"name": "UTurn",
+	"version": 1.2,
+	"author": "Tomas Reimers",
+	"url": "https://github.com/berkmancenter/wiki-uturn",
+	"descriptionmsg": "uturn-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AvailableRights": [
+		"uturn"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"uturn": true
+		}
+	},
+	"SpecialPages": {
+		"UTurn": "SpecialUTurn"
+	},
+	"ExtensionMessagesFiles": {
+		"UTurn": "UTurn.i18n.php",
+		"UTurnAlias": "UTurn.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialUTurn": "SpecialUTurn.php"
+	},
+	"ResourceModules": {
+		"ext.uturn": {
+			"scripts": [
+				"ext.uturn.js"
+			],
+			"styles": [
+				"ext.uturn.css"
+			],
+			"messages": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "UTurn"
+	},
+	"manifest_version": 2
+}

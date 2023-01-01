@@ -1,0 +1,26 @@
+{
+	"name": "FormInputMik",
+	"version": "0.1.0",
+	"author": [
+		"Michele Fella"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:FormInputMik",
+	"description": "Checks if the page typed in the input box exists and redirects to either the specified formlink (new page) or forminput (edit page).",
+	"descriptionmsg": "forminputmik-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"FormInputMik": "FormInputMik.i18n.php"
+	},
+	"AutoloadClasses": {
+		"FormInputMikHooks": "FormInputMik.hooks.php",
+		"FormInputMik": "FormInputMik.classes.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "FormInputMikHooks::register",
+		"MediaWikiPerformAction": "FormInputMikHooks::onMediaWikiPerformAction"
+	},
+	"manifest_version": 2
+}

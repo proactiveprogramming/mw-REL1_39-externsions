@@ -12,7 +12,9 @@
 		"MediaWiki": ">= 1.36.0"
 	},
 	"config": {
-		"NewestPagesLimit": 50
+		"NewestPagesLimit": {
+			"value": 50
+		}
 	},
 	"SpecialPages": {
 		"NewestPages": "SpecialNewestPages"
@@ -28,5 +30,5 @@
 	"AutoloadClasses": {
 		"SpecialNewestPages": "SpecialNewestPages.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -1,1 +1,0 @@
-* <?= $name ;?> <?= $lastName ;?> - <?= $birthdate ;?> .php

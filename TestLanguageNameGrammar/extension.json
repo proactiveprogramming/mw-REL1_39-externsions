@@ -25,5 +25,5 @@
 	"AutoloadClasses": {
 		"SpecialTestLanguageNameGrammar": "specials/SpecialTestLanguageNameGrammar.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

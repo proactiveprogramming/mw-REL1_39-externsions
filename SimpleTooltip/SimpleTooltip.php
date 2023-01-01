@@ -75,7 +75,7 @@ $wgResourceModules['ext.SimpleTooltip'] = array(
 
 // Register i18n
 $wgMessagesDirs['SimpleTooltip'] = $dir . '/i18n';
-$wgExtensionMessagesFiles['SimpleTooltip'] = $dir . '/SimpleTooltip.i18n.php';
+#$wgExtensionMessagesFiles['SimpleTooltip'] = $dir . '/SimpleTooltip.i18n.php';
 $wgExtensionMessagesFiles['SimpleTooltipMagic'] = $dir . '/SimpleTooltip.i18n.magic.php';
 
 // Register files

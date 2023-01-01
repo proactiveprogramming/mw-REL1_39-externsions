@@ -70,7 +70,9 @@
 		},
 		"ext.sportsTeams.fanHome": {
 			"scripts": "resources/js/FanHome.js",
-			"dependencies": [ "mediawiki.api" ]
+			"dependencies": [
+				"mediawiki.api"
+			]
 		},
 		"ext.sportsTeams.doubleCombo": {
 			"scripts": "resources/js/DoubleCombo.js"
@@ -88,7 +90,9 @@
 				"sportsteams-profile-characters-remaining",
 				"sportsteams-profile-characters-remaining-hack"
 			],
-			"dependencies": [ "mediawiki.api" ]
+			"dependencies": [
+				"mediawiki.api"
+			]
 		},
 		"ext.sportsTeams.updateFavoriteTeams": {
 			"scripts": [
@@ -117,7 +121,9 @@
 		"LoadExtensionSchemaUpdates": "SportsTeamsHooks::onLoadExtensionSchemaUpdates"
 	},
 	"config": {
-		"SportsTeamsGoogleAPIKey": "ABQIAAAAnfs7bKE82qgb3Zc2YyS-oBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxSySz_REpPq-4WZA27OwgbtyR3VcA"
+		"SportsTeamsGoogleAPIKey": {
+			"value": "ABQIAAAAnfs7bKE82qgb3Zc2YyS-oBT2yXp_ZAY8_ufC3CFXhHIE1NvwkxSySz_REpPq-4WZA27OwgbtyR3VcA"
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

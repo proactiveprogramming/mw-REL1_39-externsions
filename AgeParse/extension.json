@@ -1,0 +1,22 @@
+{
+	"name": "AgeParse",
+	"version": "0.3.1",
+	"author": "Mark Daly, [http://www.daschmedia.de DaSch]",
+	"url": "http://www.mediawiki.org/wiki/Extension:AgeParse",
+	"descriptionmsg": "ageparse-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"AgeParse": "AgeParse.i18n.php",
+		"AgeParseMagic": "AgeParse.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"AgeParseHooks": "AgeParse.hooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "AgeParseHooks::wfAgeParse_Setup"
+	},
+	"manifest_version": 2
+}

@@ -7,7 +7,7 @@
 	"author": "Alphanoob1337",
 	"url": "https://www.mediawiki.org/wiki/Extension:ImapAuthorization",
 	"requires": {
-		"MediaWiki": ">= 1.27.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"AuthManagerAutoConfig": {
 		"primaryauth": {
@@ -17,14 +17,30 @@
 		}
 	},
 	"config": {
-		"ImapAuthorizationActive": false,
-		"ImapAuthorizationSmtpServerAddress": "localhost",
-		"ImapAuthorizationSmtpServerPort": 25,
-		"ImapAuthorizationImapServerAddress": "localhost",
-		"ImapAuthorizationImapServerPort": 143,
-		"ImapAuthorizationImapServerEnforceSsl": false,
-		"ImapAuthorizationImapServerEnforceTls": false,
-		"ImapAuthorizationImapServerVerifyCert": true
+		"ImapAuthorizationActive": {
+			"value": false
+		},
+		"ImapAuthorizationSmtpServerAddress": {
+			"value": "localhost"
+		},
+		"ImapAuthorizationSmtpServerPort": {
+			"value": 25
+		},
+		"ImapAuthorizationImapServerAddress": {
+			"value": "localhost"
+		},
+		"ImapAuthorizationImapServerPort": {
+			"value": 143
+		},
+		"ImapAuthorizationImapServerEnforceSsl": {
+			"value": false
+		},
+		"ImapAuthorizationImapServerEnforceTls": {
+			"value": false
+		},
+		"ImapAuthorizationImapServerVerifyCert": {
+			"value": true
+		}
 	},
 	"MessagesDirs": {
 		"ImapAuthorization": [
@@ -34,5 +50,5 @@
 	"AutoloadClasses": {
 		"ImapAuthenticationProvider": "ImapAuthenticationProvider.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

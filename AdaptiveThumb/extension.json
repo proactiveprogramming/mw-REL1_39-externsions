@@ -1,23 +1,26 @@
 {
 	"name": "AdaptiveThumb",
 	"version": "1.0",
-	"author": [ 
-		"Thorsten Staerk" 
+	"author": [
+		"Thorsten Staerk"
 	],
 	"descriptionmsg": "adaptivethumb-desc",
 	"type": "parserhook",
-	"AutoloadClasses": { 
-		"AdaptiveThumb": "includes/AdaptiveThumb.php"	
+	"AutoloadClasses": {
+		"AdaptiveThumb": "includes/AdaptiveThumb.php"
 	},
-	"Hooks": { 
-		"ParserFirstCallInit": [ 
-			"AdaptiveThumb::onParserFirstCallInit" 
-		] 	
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"AdaptiveThumb::onParserFirstCallInit"
+		]
 	},
-	"MessagesDirs": { 
-		"BoilerPlate": [ 
-			"i18n" 
-		]	
+	"MessagesDirs": {
+		"BoilerPlate": [
+			"i18n"
+		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

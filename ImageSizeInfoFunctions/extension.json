@@ -14,9 +14,9 @@
 		"ImageSizeInfoFunctionsMagic": "ImageSizeInfoFunctions.i18n.magic.php"
 	},
 	"MessagesDirs": {
-	    "ImageSizeInfoFunctions": [
-	        "i18n"
-	    ]
+		"ImageSizeInfoFunctions": [
+			"i18n"
+		]
 	},
 	"AutoloadClasses": {
 		"ImageSizeInfoFunctionsHooks": "ImageSizeInfoFunctions.hooks.php"
@@ -25,5 +25,8 @@
 		"ParserFirstCallInit": "ImageSizeInfoFunctionsHooks::onParserFirstCallInit",
 		"ParserClearState": "ImageSizeInfoFunctionsHooks::onParserClearState"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

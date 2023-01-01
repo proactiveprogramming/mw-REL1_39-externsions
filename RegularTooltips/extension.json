@@ -38,5 +38,5 @@
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

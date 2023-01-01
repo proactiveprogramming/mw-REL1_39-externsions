@@ -25,9 +25,15 @@
 		"SkinAfterContent": "ContributionCredits::onSkinAfterContent"
 	},
 	"config": {
-		"ContributionCreditsHeader": false,
-		"ContributionCreditsUseRealNames": false,
-		"ContributionCreditsExcludedCategories": []
+		"ContributionCreditsHeader": {
+			"value": false
+		},
+		"ContributionCreditsUseRealNames": {
+			"value": false
+		},
+		"ContributionCreditsExcludedCategories": {
+			"value": []
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -30,21 +30,51 @@
 		"MendeleyImportJob": "MendeleyImportJob.php"
 	},
 	"config": {
-		"MendeleyConsumerKey": null,
-		"MendeleyConsumerSecret": null,
-		"MendeleyToken": null,
-		"MendeleyRefreshToken": null,
-		"MendeleyTemplate": "Article",
-		"MendeleyTemplateFields": [],
-		"MendeleyTemplateFieldsMapDelimiter": ";",
-		"MendeleyPageFormula": null,
-		"MendeleyRedirectUrl": null,
-		"MendeleyFieldValuesDelimiter": " ",
-		"MendeleyAppendFieldValuesDelimiter": "/",
-		"MendeleyReplaceUnderscores": false,
-		"MendeleyOverwriteTemplateOnly": false,
-		"MendeleyImportPageLimit": 500,
-		"MendeleyUseJobs": false
+		"MendeleyConsumerKey": {
+			"value": null
+		},
+		"MendeleyConsumerSecret": {
+			"value": null
+		},
+		"MendeleyToken": {
+			"value": null
+		},
+		"MendeleyRefreshToken": {
+			"value": null
+		},
+		"MendeleyTemplate": {
+			"value": "Article"
+		},
+		"MendeleyTemplateFields": {
+			"value": []
+		},
+		"MendeleyTemplateFieldsMapDelimiter": {
+			"value": ";"
+		},
+		"MendeleyPageFormula": {
+			"value": null
+		},
+		"MendeleyRedirectUrl": {
+			"value": null
+		},
+		"MendeleyFieldValuesDelimiter": {
+			"value": " "
+		},
+		"MendeleyAppendFieldValuesDelimiter": {
+			"value": "/"
+		},
+		"MendeleyReplaceUnderscores": {
+			"value": false
+		},
+		"MendeleyOverwriteTemplateOnly": {
+			"value": false
+		},
+		"MendeleyImportPageLimit": {
+			"value": 500
+		},
+		"MendeleyUseJobs": {
+			"value": false
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"MendeleyHooksMagic": "Mendeley.i18n.magic.php"
@@ -78,5 +108,8 @@
 	"JobClasses": {
 		"MendeleyImportJob": "MendeleyImportJob"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

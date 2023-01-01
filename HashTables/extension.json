@@ -1,0 +1,28 @@
+{
+	"name": "HashTables",
+	"version": "1.2.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:HashTables",
+	"descriptionmsg": "hashtables-desc",
+	"license-name": "ISC",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"HashTables": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"HashTablesMagic": "HashTables.i18n.magic.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "ExtHashTables::init",
+		"ParserClearState": "ExtHashTables::onParserClearState"
+	},
+	"manifest_version": 2
+}

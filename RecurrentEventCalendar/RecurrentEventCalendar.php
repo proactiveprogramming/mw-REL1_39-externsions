@@ -18,6 +18,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'This file is part of a MediaWiki extension, it is not a valid entry point.' );
 }
 
+/*
 if ( !defined( 'SMW_VERSION' ) ) {
 	die( '<b>Error:</b> <a href="https://www.mediawiki.org/wiki/Extension:RecurrentEventCalendar">RecurrentEventCalendar</a> depends on the Semantic MediaWiki extension. You need to install <a href="https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki">Semantic MediaWiki</a> first.' );
 }
@@ -25,6 +26,7 @@ if ( !defined( 'SMW_VERSION' ) ) {
 if ( !defined( 'SF_VERSION' ) ) {
 	die( '<b>Error:</b> <a href="https://www.mediawiki.org/wiki/Extension:RecurrentEventCalendar">RecurrentEventCalendar</a> depends on the Semantic Forms extension. You need to install <a href="https://www.mediawiki.org/wiki/Extension:Semantic_Forms">Semantic Forms</a> first.' );
 }
+ */
 
 /**
  * The Semantic Page Series version
@@ -47,7 +49,7 @@ $dir = dirname( __FILE__ );
 
 // register message files
 $wgMessagesDirs['RecurrentEventCalendar'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['RecurrentEventCalendar'] = $dir . '/RecurrentEventCalendar.i18n.php';
+#$wgExtensionMessagesFiles['RecurrentEventCalendar'] = $dir . '/RecurrentEventCalendar.i18n.php';
 $wgExtensionMessagesFiles['RecurrentEventCalendarMagic'] = $dir . '/RecurrentEventCalendar.magic.php';
 $wgExtensionMessagesFiles['RecurrentEventCalendarAlias'] = $dir . '/RecurrentEventCalendar.alias.php';
 

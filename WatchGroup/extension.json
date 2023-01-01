@@ -1,0 +1,59 @@
+{
+	"name": "WatchGroup",
+	"version": 0,
+	"author": [
+		"[http://www.mediawiki.org/wiki/User:Bagariavivek Vivek Kumar Bagaria]"
+	],
+	"url": "http://www.mediawiki.org/wiki/Extension:WatchGroup",
+	"descriptionmsg": "watchgroup-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"Actions": {
+		"watchgroup": "WatchGroupAction",
+		"unwatchgroup": "UnWatchGroupAction"
+	},
+	"APIListModules": {
+		"watchgroups": "ApiQueryWatchGroup",
+		"watchgrouppages": "ApiQueryWatchGroupPages"
+	},
+	"SpecialPages": {
+		"WatchGroups": "SpecialWatchGroups",
+		"WatchGroupPages": "SpecialWatchGroupPages",
+		"EditWatchGroups": "SpecialEditWatchGroups",
+		"EditWatchGroupPages": "SpecialEditWatchGroupPages",
+		"WatchListToWatchGroup": "SpecialWatchListToWatchGroup"
+	},
+	"ExtensionMessagesFiles": {
+		"WatchGroup": "/WatchGroup.i18n.php"
+	},
+	"AutoloadClasses": {
+		"WatchGroupHooks": "WatchGroup.hooks.php",
+		"ApiQueryWatchGroup": "api/ApiQueryWatchGroup.php",
+		"ApiQueryWatchGroupPages": "api/ApiQueryWatchGroupPages.php",
+		"SpecialWatchGroups": "special/SpecialWatchGroups.php",
+		"SpecialWatchGroupPages": "special/SpecialWatchGroupPages.php",
+		"SpecialWatchListToWatchGroup": "special/SpecialWatchListToWatchGroup.php",
+		"SpecialEditWatchGroups": "special/SpecialEditWatchGroups.php",
+		"SpecialEditWatchGroupPages": "special/SpecialEditWatchGroupPages.php",
+		"WatchedGroupItem": "WatchedGroupItem.php",
+		"WatchGroupAction": "action/WatchGroupAction.php",
+		"UnWatchGroupAction": "action/WatchGroupAction.php"
+	},
+	"ResourceModules": {
+		"watchgroup.table": {
+			"styles": [
+				"watchgroup.table.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "WatchGroup/resources"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "WatchGroupHooks::onSchemaUpdate"
+	},
+	"manifest_version": 2
+}

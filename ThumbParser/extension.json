@@ -1,0 +1,23 @@
+{
+	"name": "ThumbParser",
+	"version": "0.2",
+	"author": "[http://www.dasch-tour.de DaSch]",
+	"url": "http://www.mediawiki.org/wiki/Extension:ThumbParser",
+	"description": "Prints users Thumb size",
+	"descriptionmsg": "thumbparser-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"ThumbParser": "ThumbParser.i18n.php",
+		"ThumbParserMagic": "ThumbParser.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"ThumbParserHooks": "/ThumbParser.hooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "ThumbParserHooks::efThumbParserFunction_Setup"
+	},
+	"manifest_version": 2
+}

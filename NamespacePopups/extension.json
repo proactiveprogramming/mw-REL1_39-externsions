@@ -30,6 +30,6 @@
 		"localBasePath": "",
 		"remoteExtPath": "NamespacePopups"
 	},
-	"config": {},
-	"manifest_version": 1
+	"config": [],
+	"manifest_version": 2
 }

@@ -1,0 +1,21 @@
+{
+	"name": "OneColumnAllUsers",
+	"version": "1.0.0",
+	"author": "Nathan Larson",
+	"url": "https://mediawiki.org/wiki/Extension:OneColumnAllUsers",
+	"descriptionmsg": "onecolumnallusers-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"OneColumnAllUsers": "SpecialOneColumnAllUsers"
+	},
+	"ExtensionMessagesFiles": {
+		"OneColumnAllUsers": "OneColumnAllUsers.i18n.php"
+	},
+	"AutoloadClasses": {
+		"SpecialOneColumnAllUsers": "SpecialOneColumnAllUsers.php"
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,32 @@
+{
+	"name": "SocialLogin",
+	"version": "0.11.0",
+	"author": "Luft-on",
+	"url": "https://www.mediawiki.org/wiki/Extension:SocialLogin",
+	"descriptionmsg": "sl-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"SocialLogin": "SocialLogin"
+	},
+	"MessagesDirs": {
+		"SocialLogin": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"SocialLoginAlias": "SocialLogin.alias.php"
+	},
+	"AutoloadClasses": {
+		"SocialLogin": "SocialLogin.body.php",
+		"SocialLoginPlugin": "SocialLogin.body.php"
+	},
+	"config": {
+		"SocialLoginServices": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}

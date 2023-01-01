@@ -127,8 +127,12 @@
 		"PageForms::FormPrinterSetup": "MintyDocsHooks::registerPageFormsInputs"
 	},
 	"config": {
-		"MintyDocsDisplayFooterElementsInSidebar": false,
-		"MintyDocsShowBreadcrumbs": true
+		"MintyDocsDisplayFooterElementsInSidebar": {
+			"value": false
+		},
+		"MintyDocsShowBreadcrumbs": {
+			"value": true
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

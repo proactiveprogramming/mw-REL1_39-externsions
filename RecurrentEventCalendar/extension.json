@@ -1,0 +1,38 @@
+{
+	"name": "Recurrent Event Calendar",
+	"version": "0.1.0 alpha",
+	"author": "[http://www.mediawiki.org/wiki/User:Michele.Fella Michele Fella]",
+	"url": "https://www.mediawiki.org/wiki/Extension:RecurrentEventCalendar",
+	"descriptionmsg": "RecurrentEventCalendar-desc",
+	"type": "semantic",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"JobClasses": {
+		"recCreatePage": "RECPageCreationJob"
+	},
+	"SpecialPages": {
+		"recurrenteventcalendaredit": "RECSpecialRECEdit"
+	},
+	"MessagesDirs": {
+		"RecurrentEventCalendar": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"RecurrentEventCalendarMagic": "RecurrentEventCalendar.magic.php",
+		"RecurrentEventCalendarAlias": "RecurrentEventCalendar.alias.php"
+	},
+	"AutoloadClasses": {
+		"RECUtils": "includes/RECUtils.php",
+		"RECSpecialRECEdit": "includes/RECSpecialRECEdit.php",
+		"RECException": "includes/RECException.php",
+		"RECPageCreationJob": "includes/RECPageCreationJob.php",
+		"RECIterator": "includes/iterators/RECIterator.php",
+		"RECDateIterator": "includes/iterators/RECDateIterator.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "RECUtils::initParserFunction"
+	},
+	"manifest_version": 2
+}

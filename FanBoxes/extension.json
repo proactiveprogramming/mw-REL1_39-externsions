@@ -16,7 +16,9 @@
 	},
 	"config": {
 		"FanBoxPageDisplay": {
-			"comments": true
+			"value": {
+				"comments": true
+			}
 		}
 	},
 	"SpecialPages": {
@@ -141,5 +143,5 @@
 			"create-userbox": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -1,0 +1,31 @@
+{
+	"name": "ViewTable",
+	"version": "1.0.0",
+	"author": "Nathan Larson",
+	"url": "https://mediawiki.org/wiki/Extension:ViewTable",
+	"descriptionmsg": "viewtable-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"GroupPermissions": {
+		"bureaucrat": {
+			"viewtable": true
+		}
+	},
+	"SpecialPages": {
+		"ViewTable": "SpecialViewTable"
+	},
+	"MessagesDirs": {
+		"ViewTable": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ViewTableAlias": "ViewTable.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialViewTable": "SpecialViewTable.php"
+	},
+	"manifest_version": 2
+}

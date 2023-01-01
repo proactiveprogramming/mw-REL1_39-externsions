@@ -123,5 +123,5 @@
 		"LoadExtensionSchemaUpdates": "ChallengeHooks::onLoadExtensionSchemaUpdates",
 		"UserProfileGetProfileHeaderLinks": "ChallengeHooks::onUserProfileGetProfileHeaderLinks"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

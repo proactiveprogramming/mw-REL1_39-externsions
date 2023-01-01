@@ -1,11 +1,34 @@
-"ResourceModules": {
-	"ext.PageEditRestrictions": {
-		"messages": [
-			"pageeditrestrictions-desc",
-			"right-editrestrictedpages",
-			"action-editrestrictedpages",
-			"pageeditrestrictions-condition",
-			"pageeditrestrictions-restricted-pages"
+{
+	"name": "PageEditRestrictions",
+	"version": "1.0.0",
+	"author": [
+		"Pim Bax"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:PageEditRestrictions",
+	"descriptionmsg": "pageeditrestrictions-desc",
+	"license-name": "GPL-3.0+",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AvailableRights": [
+		"editrestrictedpages"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"editrestrictedpages": true
+		}
+	},
+	"MessagesDirs": {
+		"PageEditRestrictions": [
+			"i18n"
 		]
-	}
+	},
+	"AutoloadClasses": {
+		"PageEditRestrictions": "PageEditRestrictions.class.php"
+	},
+	"Hooks": {
+		"userCan": "PageEditRestrictions::onUserCan"
+	},
+	"manifest_version": 2
 }

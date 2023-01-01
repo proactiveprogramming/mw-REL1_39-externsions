@@ -9,19 +9,25 @@
 	"descriptionmsg": "WikiRating-desc",
 	"license-name": "MIT",
 	"type": "other",
-	"AutoloadClasses":{
-		"WikiRating" : "WikiRating.php",
-		"PageRatingApi" : "api/PageRatingApi.php",
-		"WikiRatingHooks" : "WikiRating.hooks.php",
-		"SpecialWikiRating" : "specials/SpecialWikiRating.php",
-		"WikiRatingRestClient" : "WikiRatingRestClient.php"
+	"AutoloadClasses": {
+		"WikiRating": "WikiRating.php",
+		"PageRatingApi": "api/PageRatingApi.php",
+		"WikiRatingHooks": "WikiRating.hooks.php",
+		"SpecialWikiRating": "specials/SpecialWikiRating.php",
+		"WikiRatingRestClient": "WikiRatingRestClient.php"
 	},
 	"config": {
-		"WikiRatingNamespaces" : [2800],
-		"WikiRatingRestApi" : "http://wikirating:8080/"
+		"WikiRatingNamespaces": {
+			"value": [
+				2800
+			]
+		},
+		"WikiRatingRestApi": {
+			"value": "http://wikirating:8080/"
+		}
 	},
 	"APIModules": {
-		"pagerating" : "PageRatingApi"
+		"pagerating": "PageRatingApi"
 	},
 	"ExtensionMessagesFiles": {
 		"WikiRatingAlias": "WikiRating.i18n.alias.php"
@@ -42,7 +48,7 @@
 	"ResourceModules": {
 		"ext.WikiRating": {
 			"position": "top",
-			"scripts":[
+			"scripts": [
 				"modules/WikiRating.js",
 				"modules/WikiRating.widget.js"
 			],
@@ -54,5 +60,8 @@
 	"SpecialPages": {
 		"WikiRating": "SpecialWikiRating"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

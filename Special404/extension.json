@@ -22,5 +22,5 @@
 	"AutoloadClasses": {
 		"Special404": "includes/Special404.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

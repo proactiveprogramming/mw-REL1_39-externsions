@@ -45,7 +45,9 @@
 		"ParserFirstCallInit": "ContributorsHooks::setupParserFunction"
 	},
 	"config": {
-		"ContributorsLinkUsers": true
+		"ContributorsLinkUsers": {
+			"value": true
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

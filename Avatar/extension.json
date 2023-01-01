@@ -27,10 +27,10 @@
 			"dependencies": [
 				"mediawiki.user"
 			],
-			"scripts":[
+			"scripts": [
 				"assets/upload.js"
 			],
-			"styles":[
+			"styles": [
 				"assets/upload.css"
 			],
 			"messages": [
@@ -77,16 +77,42 @@
 		"avatar/delete": "LogFormatter"
 	},
 	"config": {
-		"DefaultAvatar": "http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y",
-		"MaxAvatarResolution": 256,
-		"AllowedAvatarRes": [64, 128], 
-		"DefaultAvatarRes": 128,
-		"UseAvatar": true,
-		"VersionAvatar": false,
-		"AvatarServingMethod": "redirect",
-		"AvatarLogInRC": true,
-		"AvatarUploadPath": false,
-		"AvatarUploadDirectory": false
+		"DefaultAvatar": {
+			"value": "http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y"
+		},
+		"MaxAvatarResolution": {
+			"value": 256
+		},
+		"AllowedAvatarRes": {
+			"value": [
+				64,
+				128
+			]
+		},
+		"DefaultAvatarRes": {
+			"value": 128
+		},
+		"UseAvatar": {
+			"value": true
+		},
+		"VersionAvatar": {
+			"value": false
+		},
+		"AvatarServingMethod": {
+			"value": "redirect"
+		},
+		"AvatarLogInRC": {
+			"value": true
+		},
+		"AvatarUploadPath": {
+			"value": false
+		},
+		"AvatarUploadDirectory": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

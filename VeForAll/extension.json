@@ -2,7 +2,11 @@
 	"name": "VEForAll",
 	"version": "0.4.1",
 	"author": [
-		"Pierre Boutet", "Clément Flipo", "Ike Hecht", "Yaron Koren", "Cindy Cicalese"
+		"Pierre Boutet",
+		"Clément Flipo",
+		"Ike Hecht",
+		"Yaron Koren",
+		"Cindy Cicalese"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:VEForAll",
 	"descriptionmsg": "veforall-desc",
@@ -73,5 +77,5 @@
 		"localBasePath": "",
 		"remoteExtPath": "VEForAll"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

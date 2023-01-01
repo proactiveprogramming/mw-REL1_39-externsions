@@ -40,5 +40,5 @@
 	"Hooks": {
 		"SkinTemplateNavigation::Universal": "AdminLinks::addURLToUserLinks"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

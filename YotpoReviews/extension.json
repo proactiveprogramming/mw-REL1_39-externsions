@@ -23,7 +23,9 @@
 		"SkinAfterContent": "YotpoReviews::onSkinAfterContent"
 	},
 	"config": {
-		"YotpoAppKey": "your-yotpo-app-key"
+		"YotpoAppKey": {
+			"value": "your-yotpo-app-key"
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

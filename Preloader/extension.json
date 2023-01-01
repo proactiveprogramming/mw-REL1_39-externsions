@@ -12,8 +12,10 @@
 	"type": "parserhook",
 	"config": {
 		"PreloaderSource": {
-			"0": "Template:Preload",
-			"_merge_strategy": "array_plus"
+			"value": [
+				"Template:Preload"
+			],
+			"merge_strategy": "array_plus"
 		}
 	},
 	"MessagesDirs": {
@@ -27,5 +29,8 @@
 	"Hooks": {
 		"EditFormPreloadText": "Preloader::mainHook"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

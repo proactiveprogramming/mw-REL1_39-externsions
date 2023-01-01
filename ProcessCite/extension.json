@@ -1,10 +1,10 @@
 {
 	"name": "ProcessCite",
 	"description": "Modifies Cite citations based on customizable content.",
-	"author":	[
-					"[mailto:jimhu@tamu.edu Jim Hu]"
-				],	
-	"version": "0.3",	
+	"author": [
+		"[mailto:jimhu@tamu.edu Jim Hu]"
+	],
+	"version": "0.3",
 	"url": "https://github.com/jimhu-tamu/hulab_wiki-extensions/tree/master/ProcessCite",
 	"Hooks": {
 		"CiteBeforeStackEntry": "ProcessCite::processCitation"
@@ -17,5 +17,8 @@
 			"i18n"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

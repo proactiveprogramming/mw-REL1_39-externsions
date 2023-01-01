@@ -1,0 +1,21 @@
+{
+	"name": "RelationLinks",
+	"version": "0.4.0",
+	"author": "[http://www.dasch-tour.de DaSch]",
+	"url": "https://www.mediawiki.org/wiki/Extension:RelationLinks",
+	"descriptionmsg": "relationlinks-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"RelationLinks": "RelationLinks.i18n.php"
+	},
+	"AutoloadClasses": {
+		"RelationLinksHooks": "RelationLinks.hooks.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "RelationLinksHooks::addRelationLinks"
+	},
+	"manifest_version": 2
+}

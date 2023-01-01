@@ -38,10 +38,29 @@
 	},
 	"config": {
 		"PagePermissionsRoles": {
-			"reader": [ "read" ],
-			"editor": [ "read", "edit" ],
-			"manager": [ "read", "edit", "move", "rollback" ],
-			"owner": [ "read", "edit", "move", "rollback", "delete", "pagepermissions" ]
+			"value": {
+				"reader": [
+					"read"
+				],
+				"editor": [
+					"read",
+					"edit"
+				],
+				"manager": [
+					"read",
+					"edit",
+					"move",
+					"rollback"
+				],
+				"owner": [
+					"read",
+					"edit",
+					"move",
+					"rollback",
+					"delete",
+					"pagepermissions"
+				]
+			}
 		}
 	},
 	"ResourceModules": {
@@ -69,5 +88,5 @@
 	"requires": {
 		"MediaWiki": ">= 1.38.0"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

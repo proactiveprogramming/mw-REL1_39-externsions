@@ -12,16 +12,36 @@
 		"MediaWiki": ">=1.35.3"
 	},
 	"config": {
-		"ChatKicks": true,
-		"ChatRichMessages": true,
-		"ChatSidebarPortlet": true,
-		"ChatOnlineTimeout": 6000,
-		"ChatFloodMessages": 3,
-		"ChatFloodSeconds": 5,
-		"ChatLinkUsernames": false,
-		"ChatMeCommand": false,
-		"ChatUseStyleAttribute": true,
-		"ChatMaxMessageLength": 1000
+		"ChatKicks": {
+			"value": true
+		},
+		"ChatRichMessages": {
+			"value": true
+		},
+		"ChatSidebarPortlet": {
+			"value": true
+		},
+		"ChatOnlineTimeout": {
+			"value": 6000
+		},
+		"ChatFloodMessages": {
+			"value": 3
+		},
+		"ChatFloodSeconds": {
+			"value": 5
+		},
+		"ChatLinkUsernames": {
+			"value": false
+		},
+		"ChatMeCommand": {
+			"value": false
+		},
+		"ChatUseStyleAttribute": {
+			"value": true
+		},
+		"ChatMaxMessageLength": {
+			"value": 1000
+		}
 	},
 	"SpecialPages": {
 		"Chat": {
@@ -89,25 +109,73 @@
 		"ext.mediawikichat.js": {
 			"scripts": "MediaWikiChat.js",
 			"messages": [
-				"january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
-				"november", "december", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday",
-				"sunday", "chat-type-your-private-message", "chat-no-other-users", "chat-blocked-from-chat",
-				"just-now", "chat-a-minute-ago", "minutes-ago", "chat-youve-been-kicked", "chat-you-kicked",
-				"chat-kicked", "chat-kick", "chat-youve-been-blocked", "chat-you-blocked", "chat-blocked",
-				"chat-block", "chat-private-message", "chat-user-is-moderator", "chat-you-are-moderator",
-				"chat-joined", "chat-left", "chat-mod-image", "chat-yesterday", "chat-flood", "chat-too-long",
-				"chat-idle-minutes", "chat-idle-hours", "chat-idle-more", "chat-today", "chat-message-from",
-				"chat-private-message-from", "chat-mentioned-by"
+				"january",
+				"february",
+				"march",
+				"april",
+				"may",
+				"june",
+				"july",
+				"august",
+				"september",
+				"october",
+				"november",
+				"december",
+				"monday",
+				"tuesday",
+				"wednesday",
+				"thursday",
+				"friday",
+				"saturday",
+				"sunday",
+				"chat-type-your-private-message",
+				"chat-no-other-users",
+				"chat-blocked-from-chat",
+				"just-now",
+				"chat-a-minute-ago",
+				"minutes-ago",
+				"chat-youve-been-kicked",
+				"chat-you-kicked",
+				"chat-kicked",
+				"chat-kick",
+				"chat-youve-been-blocked",
+				"chat-you-blocked",
+				"chat-blocked",
+				"chat-block",
+				"chat-private-message",
+				"chat-user-is-moderator",
+				"chat-you-are-moderator",
+				"chat-joined",
+				"chat-left",
+				"chat-mod-image",
+				"chat-yesterday",
+				"chat-flood",
+				"chat-too-long",
+				"chat-idle-minutes",
+				"chat-idle-hours",
+				"chat-idle-more",
+				"chat-today",
+				"chat-message-from",
+				"chat-private-message-from",
+				"chat-mentioned-by"
 			],
-			"dependencies": [ "mediawiki.jqueryMsg", "mediawiki.user", "mediawiki.util" ]
+			"dependencies": [
+				"mediawiki.jqueryMsg",
+				"mediawiki.user",
+				"mediawiki.util"
+			]
 		},
 		"ext.mediawikichat.site": {
 			"class": "ResourceLoaderWikiModule",
-			"scripts": [ "MediaWiki:Chat.js" ]
+			"scripts": [
+				"MediaWiki:Chat.js"
+			]
 		},
 		"ext.mediawikichat.site.styles": {
 			"class": "ResourceLoaderWikiModule",
-			"styles": [ "MediaWiki:Chat.css" ]
+			"styles": [
+				"MediaWiki:Chat.css"
+			]
 		}
 	},
 	"AvailableRights": [
@@ -157,5 +225,5 @@
 		"chat-notify-mention": 1,
 		"chat-notify-pm": 1
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

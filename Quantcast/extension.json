@@ -8,7 +8,11 @@
 	"descriptionmsg": "quantcast-desc",
 	"type": "other",
 	"config": {
-		"QuantcastTrackingExcludedGroups": [ "staff" ]
+		"QuantcastTrackingExcludedGroups": {
+			"value": [
+				"staff"
+			]
+		}
 	},
 	"requires": {
 		"MediaWiki": ">= 1.36.0"
@@ -24,5 +28,5 @@
 	"Hooks": {
 		"SkinAfterBottomScripts": "QuantcastTracking::onSkinAfterBottomScripts"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

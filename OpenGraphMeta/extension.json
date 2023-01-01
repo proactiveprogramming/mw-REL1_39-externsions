@@ -15,10 +15,14 @@
 		"MediaWiki": ">= 1.34.0"
 	},
 	"config": {
-		"_prefix": "eg",
-		"FacebookAppId": null,
-		"FacebookAdmins": null
+		"FacebookAppId": {
+			"value": null
+		},
+		"FacebookAdmins": {
+			"value": null
+		}
 	},
+	"config_prefix": "eg",
 	"AutoloadClasses": {
 		"OpenGraphMeta": "OpenGraphMeta.class.php"
 	},
@@ -34,5 +38,5 @@
 		"OutputPageParserOutput": "OpenGraphMeta::onOutputPageParserOutput",
 		"ParserFirstCallInit": "OpenGraphMeta::onParserFirstCallInit"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

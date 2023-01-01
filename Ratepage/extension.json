@@ -12,7 +12,7 @@
 	"namemsg": "ratePage",
 	"descriptionmsg": "ratePage-desc",
 	"url": "https://www.mediawiki.org/wiki/Extension:RatePage",
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"MessagesDirs": {
 		"RatePage": [
 			"i18n",
@@ -20,18 +20,42 @@
 		]
 	},
 	"config": {
-		"RPRatingAllowedNamespaces": null,
-		"RPRatingPageBlacklist": [],
-		"RPSidebarPosition": 2,
-		"RPRatingMin": 1,
-		"RPRatingMax": 5,
-		"RPFrontendEnabled": true,
-		"RPAddSidebarSection": true,
-		"RPUseMMVModule": true,
-		"RPEnableSMWRatings": true,
-		"RPEnableSMWContests": true,
-		"RPShowResultsBeforeVoting": false,
-		"RPImmediateSMWUpdate": false
+		"RPRatingAllowedNamespaces": {
+			"value": null
+		},
+		"RPRatingPageBlacklist": {
+			"value": []
+		},
+		"RPSidebarPosition": {
+			"value": 2
+		},
+		"RPRatingMin": {
+			"value": 1
+		},
+		"RPRatingMax": {
+			"value": 5
+		},
+		"RPFrontendEnabled": {
+			"value": true
+		},
+		"RPAddSidebarSection": {
+			"value": true
+		},
+		"RPUseMMVModule": {
+			"value": true
+		},
+		"RPEnableSMWRatings": {
+			"value": true
+		},
+		"RPEnableSMWContests": {
+			"value": true
+		},
+		"RPShowResultsBeforeVoting": {
+			"value": false
+		},
+		"RPImmediateSMWUpdate": {
+			"value": false
+		}
 	},
 	"GroupPermissions": {
 		"*": {
@@ -146,7 +170,9 @@
 	"APIPropModules": {
 		"pagerating": "RatePage\\Api\\QueryPageRatingProp"
 	},
-	"LogTypes": [ "ratepage-contest" ],
+	"LogTypes": [
+		"ratepage-contest"
+	],
 	"LogNames": {
 		"ratepage-contest": "ratePage-contest-log"
 	},

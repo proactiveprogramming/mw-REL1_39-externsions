@@ -7,7 +7,14 @@
 	"version": "0.1.0",
 	"description": "Syntax highlight pages based on title suffixes",
 	"config": {
-		"SyntaxHighlightPagesSuffixes": ["java", "pl", "py", "tex"]
+		"SyntaxHighlightPagesSuffixes": {
+			"value": [
+				"java",
+				"pl",
+				"py",
+				"tex"
+			]
+		}
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\SyntaxHighlightPages\\": "includes/"
@@ -19,5 +26,8 @@
 		"ContentHandlerDefaultModelFor": "MediaWiki\\Extension\\SyntaxHighlightPages\\Hooks::onContentHandlerDefaultModelFor",
 		"BaseTemplateToolbox": "MediaWiki\\Extension\\SyntaxHighlightPages\\Hooks::onBaseTemplateToolbox"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

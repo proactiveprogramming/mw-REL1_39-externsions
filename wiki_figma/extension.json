@@ -6,14 +6,12 @@
 	"descriptionmsg": "figma-desc",
 	"license-name": "GPL-2.0+",
 	"type": "parserhook",
-	
 	"AutoloadClasses": {
-        "FigmaHooks": "FigmaHooks.php",
-        "FigmaFuncs": "FigmaFuncs.php",
-        "FigmaSpecial": "FigmaSpecial.php",
-        "WikiFiles": "WikiFiles.php"
+		"FigmaHooks": "FigmaHooks.php",
+		"FigmaFuncs": "FigmaFuncs.php",
+		"FigmaSpecial": "FigmaSpecial.php",
+		"WikiFiles": "WikiFiles.php"
 	},
-	
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
 		"remoteExtPath": "Figma/modules"
@@ -33,30 +31,33 @@
 			"dependencies": [
 				"ext.visualEditor.mwcore"
 			],
-			"messages": [
-			],
+			"messages": [],
 			"targets": [
 				"desktop",
 				"mobile"
 			]
 		}
 	},
-	"VisualEditorPluginModules": [
-		"ext.figma.visualEditor"
-	],
-	
 	"ExtensionMessagesFiles": {
 		"FigmaMessages": "Figma.i18n.php"
-    },
-    "SpecialPages": {
+	},
+	"SpecialPages": {
 		"FigmaSpecial": "FigmaSpecial"
 	},
-	
 	"Hooks": {
 		"ParserFirstCallInit": [
 			"FigmaHooks::efFigmaParserFirstCallInit"
-        ]
+		]
 	},
-	
-	"manifest_version": 1
+	"manifest_version": 2,
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.figma.visualEditor"
+			]
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

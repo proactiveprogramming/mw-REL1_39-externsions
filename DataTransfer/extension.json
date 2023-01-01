@@ -65,9 +65,13 @@
 		"AdminLinks": "DTHooks::addToAdminLinks"
 	},
 	"config": {
-		"DataTransferViewXMLParseFields": false,
-		"DataTransferViewXMLParseFreeText": true
+		"DataTransferViewXMLParseFields": {
+			"value": false
+		},
+		"DataTransferViewXMLParseFreeText": {
+			"value": true
+		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

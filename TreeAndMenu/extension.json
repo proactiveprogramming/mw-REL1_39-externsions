@@ -11,9 +11,15 @@
 	"type": "parserhook",
 	"callback": "TreeAndMenu::onRegistration",
 	"config": {
-		"TreeAndMenuPersistIfId": false,           "@": "Makes trees with id attributes have persistent state",
-		"TreeAndMenuSidebarMenuPage": false,           "@": "Specify menu page to be used as a sidebar menu",
-		"TreeAndMenuSidebarMenuHeading": false,           "@": "Specify the heading line for sidebar menu"
+		"TreeAndMenuPersistIfId": {
+			"value": false
+		},
+		"TreeAndMenuSidebarMenuPage": {
+			"value": false
+		},
+		"TreeAndMenuSidebarMenuHeading": {
+			"value": false
+		}
 	},
 	"AutoloadClasses": {
 		"TreeAndMenu": "TreeAndMenu_body.php"
@@ -22,7 +28,9 @@
 		"TreeAndMenuMagic": "TreeAndMenu.i18n.magic.php"
 	},
 	"MessagesDirs": {
-		"TreeAndMenu": ["i18n"]
+		"TreeAndMenu": [
+			"i18n"
+		]
 	},
 	"Hooks": {
 		"SkinBuildSidebar": [
@@ -31,7 +39,10 @@
 	},
 	"ResourceModules": {
 		"ext.treeandmenu": {
-			"styles": ["fancytree/fancytree.css", "suckerfish/suckerfish.css"],
+			"styles": [
+				"fancytree/fancytree.css",
+				"suckerfish/suckerfish.css"
+			],
 			"scripts": [
 				"fancytree/jquery.fancytree.js",
 				"fancytree/jquery.fancytree.persist.js",
@@ -54,5 +65,8 @@
 		"localBasePath": "",
 		"remoteExtPath": "TreeAndMenu"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

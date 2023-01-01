@@ -15,7 +15,9 @@
 	"descriptionmsg": "picturegame-desc",
 	"type": "other",
 	"config": {
-		"CreatePictureGameThresholds": []
+		"CreatePictureGameThresholds": {
+			"value": []
+		}
 	},
 	"SpecialPages": {
 		"PictureGameHome": "SpecialPictureGameHome",
@@ -126,5 +128,5 @@
 			"picturegameadmin": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

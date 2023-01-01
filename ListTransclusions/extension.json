@@ -4,14 +4,12 @@
 	"version": "2.1",
 	"url": "http://mediawiki.org/wiki/Extension:ListTransclusions",
 	"license-name": "MPL-2.0",
-
 	"description": "Lists all transcluded templates and used images of a given page",
 	"descriptionmsg": "listtransclusions-desc",
 	"type": "specialpage",
 	"requires": {
-        "MediaWiki": ">= 1.25.0"
-    },
-
+		"MediaWiki": ">= 1.29.0"
+	},
 	"AutoloadClasses": {
 		"ListTransclusionsHooks": "ListTransclusions.hooks.php",
 		"SpecialListTransclusions": "SpecialListTransclusions.php"
@@ -24,13 +22,11 @@
 			"i18n"
 		]
 	},
-
 	"Hooks": {
 		"SidebarBeforeOutput": "ListTransclusionsHooks::onSidebarBeforeOutput"
 	},
 	"SpecialPages": {
 		"ListTransclusions": "SpecialListTransclusions"
 	},
-
-	"manifest_version": 1
+	"manifest_version": 2
 }

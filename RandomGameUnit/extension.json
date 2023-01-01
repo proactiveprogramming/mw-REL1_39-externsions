@@ -15,11 +15,15 @@
 	},
 	"config": {
 		"RandomGameDisplay": {
-			"random_poll": true,
-			"random_quiz": true,
-			"random_picturegame": true
+			"value": {
+				"random_poll": true,
+				"random_quiz": true,
+				"random_picturegame": true
+			}
 		},
-		"RandomImageSize": 50
+		"RandomImageSize": {
+			"value": 50
+		}
 	},
 	"MessagesDirs": {
 		"RandomGameUnit": [
@@ -41,5 +45,5 @@
 		"localBasePath": "",
 		"remoteExtPath": "RandomGameUnit"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

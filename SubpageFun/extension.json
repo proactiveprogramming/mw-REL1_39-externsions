@@ -26,5 +26,5 @@
 		"ParserGetVariableValueSwitch": "ExtSubpageFun::onParserGetVariableValueSwitch",
 		"GetThisVariableValueSwitch": "ExtSubpageFun::onGetThisVariableValueSwitch"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -78,8 +78,12 @@
 		]
 	},
 	"config": {
-		"ReplaceTextResultsLimit": 250,
-		"ReplaceTextUser": null
+		"ReplaceTextResultsLimit": {
+			"value": 250
+		},
+		"ReplaceTextUser": {
+			"value": null
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -25,15 +25,24 @@
 	"SessionProviders": {
 		"PluggableSSO\\SessionProvider": {
 			"class": "PluggableSSO\\SessionProvider",
-			"args": [ {
-				"priority": 50,
-				"callUserSetCookiesHook": true
-			} ]
+			"args": [
+				{
+					"priority": 50,
+					"callUserSetCookiesHook": true
+				}
+			]
 		}
 	},
 	"config": {
-		"SSOHeader": "REMOTE_USER",
-		"AuthRemoteuserDomain": "example.wiki"
+		"SSOHeader": {
+			"value": "REMOTE_USER"
+		},
+		"AuthRemoteuserDomain": {
+			"value": "example.wiki"
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

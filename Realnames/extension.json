@@ -1,7 +1,10 @@
 {
 	"name": "Realnames",
 	"type": "parserhook",
-	"author": ["[https://ofbeaton.com/ Finlay Beaton]", "..."],
+	"author": [
+		"[https://ofbeaton.com/ Finlay Beaton]",
+		"..."
+	],
 	"version": "0.8.0",
 	"url": "https://www.mediawiki.org/wiki/Extension:Realnames",
 	"description": "Displays a user's real name everywhere",
@@ -10,33 +13,55 @@
 		"MediaWiki": ">= 1.39.0"
 	},
 	"config": {
-		"RealnamesLinkStyle": "paren-reverse",
-		"RealnamesLinkStyleBlankName": "standard",
-		"RealnamesLinkStyleSameName": "standard",
-		"RealnamesBareStyle": false,
-		"RealnamesBareStyleBlankName": false,
-		"RealnamesBareStyleSameName": false,
-		"RealnamesBlank": false,
+		"RealnamesLinkStyle": {
+			"value": "paren-reverse"
+		},
+		"RealnamesLinkStyleBlankName": {
+			"value": "standard"
+		},
+		"RealnamesLinkStyleSameName": {
+			"value": "standard"
+		},
+		"RealnamesBareStyle": {
+			"value": false
+		},
+		"RealnamesBareStyleBlankName": {
+			"value": false
+		},
+		"RealnamesBareStyleSameName": {
+			"value": false
+		},
+		"RealnamesBlank": {
+			"value": false
+		},
 		"RealnamesReplacements": {
-			"title": true,
-			"subtitle": true,
-			"personnal": true,
-			"body": true
+			"value": {
+				"title": true,
+				"subtitle": true,
+				"personnal": true,
+				"body": true
+			}
 		},
 		"RealnamesStyles": {
-			"standard": "$1$2$4",
-			"append": "$1$2 [$3]$4",
-			"replace": "$1$3$4",
-			"reverse": "$1$3 [$2]$4",
-			"dash": "$1$2 &ndash; $3$4",
-			"dash-reverse": "$1$3$4 &ndash; $2",
-			"paren-append": "$1$2 ($3)$4",
-			"paren-reverse": "$1$3 ($2)$4"
+			"value": {
+				"standard": "$1$2$4",
+				"append": "$1$2 [$3]$4",
+				"replace": "$1$3$4",
+				"reverse": "$1$3 [$2]$4",
+				"dash": "$1$2 &ndash; $3$4",
+				"dash-reverse": "$1$3$4 &ndash; $2",
+				"paren-append": "$1$2 ($3)$4",
+				"paren-reverse": "$1$3 ($2)$4"
+			}
 		},
 		"RealnamesSmart": {
-			"same": true
+			"value": {
+				"same": true
+			}
 		},
-		"RealnamesNamespaces": {}
+		"RealnamesNamespaces": {
+			"value": []
+		}
 	},
 	"AutoloadClasses": {
 		"MediaWiki\\Extension\\Realnames\\Realnames": "src/Realnames.php"
@@ -45,5 +70,5 @@
 		"BeforePageDisplay": "\\MediaWiki\\Extension\\Realnames\\Realnames::hookBeforePageDisplay",
 		"SkinTemplateNavigation::Universal": "\\MediaWiki\\Extension\\Realnames\\Realnames::onSkinTemplateNavigation__Universal"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -13,8 +13,12 @@
 		"CCFilters": "includes/CCFilters.php"
 	},
 	"config": {
-		"CCTrailerFilter": false,
-		"CCUserFilter": true
+		"CCTrailerFilter": {
+			"value": false
+		},
+		"CCUserFilter": {
+			"value": true
+		}
 	},
 	"Hooks": {
 		"FetchChangesList": "CCFilters::hook",
@@ -42,5 +46,5 @@
 		"localBasePath": "",
 		"remoteExtPath": "CleanChanges"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

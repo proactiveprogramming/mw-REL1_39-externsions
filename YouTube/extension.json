@@ -33,11 +33,13 @@
 		}
 	},
 	"config": {
-		"YouTubeEnableLazyLoad": false
+		"YouTubeEnableLazyLoad": {
+			"value": false
+		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
 		"remoteExtPath": "YouTube/modules"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

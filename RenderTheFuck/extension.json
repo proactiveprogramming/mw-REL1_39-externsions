@@ -10,7 +10,9 @@
 		"MediaWiki": ">= 1.25"
 	},
 	"MessagesDirs": {
-		"RenderTheFuck": ["i18n"]
+		"RenderTheFuck": [
+			"i18n"
+		]
 	},
 	"AutoloadClasses": {
 		"RenderTheFuck": "RenderTheFuck.class.php"
@@ -27,9 +29,9 @@
 			],
 			"styles": [
 				"modules/target/common.min.css",
-        "modules/target/line.min.css",
-        "modules/target/stack.min.css",
-        "modules/target/timeline.min.css"
+				"modules/target/line.min.css",
+				"modules/target/stack.min.css",
+				"modules/target/timeline.min.css"
 			]
 		}
 	},
@@ -37,5 +39,8 @@
 		"localBasePath": "",
 		"remoteExtPath": "RenderTheFuck"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

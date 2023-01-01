@@ -12,21 +12,45 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.25.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"config": {
-		"MatomoIDSite": "",
-		"MatomoURL": "",
-		"MatomoIgnoreSysops": true,
-		"MatomoIgnoreBots": true,
-		"MatomoCustomJS": "",
-		"MatomoUsePageTitle": false,
-		"MatomoActionName": "",
-		"MatomoDisableCookies": false,
-		"MatomoProtocol": "auto",
-		"MatomoUsernameCustomVariable": [],
-		"MatomoTrackUsernames": false,
-		"MatomoJSFileURL": null
+		"MatomoIDSite": {
+			"value": ""
+		},
+		"MatomoURL": {
+			"value": ""
+		},
+		"MatomoIgnoreSysops": {
+			"value": true
+		},
+		"MatomoIgnoreBots": {
+			"value": true
+		},
+		"MatomoCustomJS": {
+			"value": ""
+		},
+		"MatomoUsePageTitle": {
+			"value": false
+		},
+		"MatomoActionName": {
+			"value": ""
+		},
+		"MatomoDisableCookies": {
+			"value": false
+		},
+		"MatomoProtocol": {
+			"value": "auto"
+		},
+		"MatomoUsernameCustomVariable": {
+			"value": []
+		},
+		"MatomoTrackUsernames": {
+			"value": false
+		},
+		"MatomoJSFileURL": {
+			"value": null
+		}
 	},
 	"Hooks": {
 		"SkinAfterBottomScripts": [
@@ -42,5 +66,5 @@
 	"AutoloadClasses": {
 		"MediaWiki\\Extension\\Matomo\\Hooks": "src/Hooks.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

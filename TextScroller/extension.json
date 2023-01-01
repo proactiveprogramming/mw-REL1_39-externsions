@@ -37,5 +37,5 @@
 			"scripts": "textscroller.js"
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -8,9 +8,15 @@
 	"description": "An application form and review tools for Aineeton kulttuuriperintö",
 	"license-name": "GPL-2.0-or-later",
 	"config": {
-		"AinutApplicationsOpen": false,
-		"AinutReviewsOpen": false,
-		"AinutResultsOpen": false
+		"AinutApplicationsOpen": {
+			"value": false
+		},
+		"AinutReviewsOpen": {
+			"value": false
+		},
+		"AinutResultsOpen": {
+			"value": false
+		}
 	},
 	"MessagesDirs": {
 		"Ainut": "i18n"
@@ -72,5 +78,8 @@
 			"remoteExtPath": "Ainut/libs/select2"
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

@@ -13,9 +13,15 @@
 		"MediaWiki": ">= 1.36.0"
 	},
 	"config": {
-		"ImageTweaksEnabled": false,
-		"ImageTweaksInBeta": false,
-		"ImageTweaksThumborURL": "http://localhost:8888/unsafe/"
+		"ImageTweaksEnabled": {
+			"value": false
+		},
+		"ImageTweaksInBeta": {
+			"value": false
+		},
+		"ImageTweaksThumborURL": {
+			"value": "http://localhost:8888/unsafe/"
+		}
 	},
 	"APIModules": {
 		"imagetweaks": {
@@ -36,11 +42,9 @@
 			"scripts": [
 				"resources/src/imagetweaks.bootstrap.js"
 			],
-
 			"styles": [
 				"resources/src/imagetweaks.css"
 			],
-
 			"messages": [
 				"imagetweaks-editor-open",
 				"imagetweaks-editor-save",
@@ -54,21 +58,17 @@
 				"imagetweaks-editor-crop-button",
 				"imagetweaks-editor-cancel"
 			],
-
 			"dependencies": [
 				"mediawiki.Title"
 			]
 		},
-
 		"ImageEditor": {
 			"scripts": [
 				"resources/src/imageeditor.js"
 			],
-
 			"styles": [
 				"resources/src/master.css"
 			],
-
 			"dependencies": [
 				"mediawiki.Upload",
 				"oojs-ui",
@@ -79,31 +79,26 @@
 				"jquery.ui"
 			]
 		},
-
 		"caman": {
 			"scripts": [
 				"node_modules/caman-dist-only/dist/caman.full.min.js",
 				"resources/src/caman.fix.js"
 			]
 		},
-
 		"caman-flip": {
 			"scripts": [
 				"resources/src/caman.flip.js"
 			]
 		},
-
 		"exifrestorer": {
 			"scripts": [
 				"resources/lib/ExifRestorer.js"
 			]
 		},
-
 		"imagetool": {
 			"scripts": [
 				"resources/src/imagetool.js"
 			],
-
 			"dependencies": [
 				"oojs"
 			]
@@ -126,5 +121,5 @@
 	"ConfigRegistry": {
 		"imagetweaks": "GlobalVarConfig::newInstance"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

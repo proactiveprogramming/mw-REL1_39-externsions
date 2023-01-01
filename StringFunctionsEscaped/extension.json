@@ -1,0 +1,20 @@
+{
+	"name": "StringFunctionsEscaped",
+	"version": "1.0.1",
+	"author": [
+		"Jack D. Pond"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:StringFunctionsEscaped",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"StringFunctionsEscapedMagic": "StringFunctionsEscaped.i18n.magic.php"
+	},
+	"license": "GNU Version 2",
+	"Hooks": {
+		"ParserFirstCallInit": "ExtStringFunctionsEscaped::onParserFirstCallInit"
+	},
+	"manifest_version": 2
+}

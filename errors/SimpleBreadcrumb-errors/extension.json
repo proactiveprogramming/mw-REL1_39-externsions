@@ -1,0 +1,24 @@
+{
+	"name": "Simple Breadcrumb",
+	"version": "1.0",
+	"author": "[http://techblog.bernier.re Nicolas Bernier]",
+	"url": "http://www.mediawiki.org/wiki/Extension:Simple_Breadcrumb",
+	"description": "Parser function implementing a hierarchical breadcumb.",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"SimpleBreadcrumb": "SimpleBreadcrumb.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "SimpleBreadCrumb::init",
+		"ParserBeforeTidy": "SimpleBreadCrumb::onParserBeforeTidy",
+		"OutputPageBeforeHTML": "SimpleBreadCrumb::onOutputPageBeforeHtml",
+		"EditFormPreloadText": [
+			"SimpleBreadCrumb::editFormSetParent"
+		],
+		"ArticleSaveComplete": "SimpleBreadCrumb::onPageContentSaveComplete"
+	},
+	"manifest_version": 2
+}

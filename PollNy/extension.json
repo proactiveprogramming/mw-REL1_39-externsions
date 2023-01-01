@@ -14,9 +14,13 @@
 	"descriptionmsg": "poll-desc",
 	"type": "other",
 	"config": {
-		"CreatePollThresholds": [],
+		"CreatePollThresholds": {
+			"value": []
+		},
 		"PollDisplay": {
-			"comments": true
+			"value": {
+				"comments": true
+			}
 		}
 	},
 	"SpecialPages": {
@@ -86,12 +90,20 @@
 		"ext.pollNY": {
 			"scripts": "resources/js/Poll.js",
 			"messages": [
-				"poll-open-message", "poll-close-message", "poll-flagged-message",
+				"poll-open-message",
+				"poll-close-message",
+				"poll-flagged-message",
 				"poll-finished",
-				"poll-open-message", "poll-close-message", "poll-flagged-message",
-				"poll-delete-message", "poll-js-action-complete",
-				"poll-createpoll-error-nomore", "poll-upload-new-image",
-				"poll-atleast", "poll-enterquestion", "poll-hash",
+				"poll-open-message",
+				"poll-close-message",
+				"poll-flagged-message",
+				"poll-delete-message",
+				"poll-js-action-complete",
+				"poll-createpoll-error-nomore",
+				"poll-upload-new-image",
+				"poll-atleast",
+				"poll-enterquestion",
+				"poll-hash",
 				"poll-pleasechoose"
 			],
 			"dependencies": [
@@ -137,5 +149,5 @@
 			"polladmin": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

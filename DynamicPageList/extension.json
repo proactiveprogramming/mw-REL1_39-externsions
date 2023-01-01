@@ -1,0 +1,26 @@
+{
+	"name": "DynamicPageList (third party)",
+	"version": "2.3.0",
+	"author": "[http://de.wikipedia.org/wiki/Benutzer:Algorithmix Gero Scholz]",
+	"url": "https://www.mediawiki.org/wiki/Extension:DynamicPageList_(third-party)",
+	"descriptionmsg": "dpl-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionFunctions": [
+		[
+			"ExtDynamicPageList",
+			"setupDPL"
+		]
+	],
+	"MessagesDirs": {
+		"DynamicPageList": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"DynamicPageListMagic": "DynamicPageList.i18n.magic.php"
+	},
+	"manifest_version": 2
+}

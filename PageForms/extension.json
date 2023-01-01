@@ -685,45 +685,125 @@
 		"ResourceLoaderRegisterModules": "PFHooks::registerModules"
 	},
 	"config": {
-		"PageFormsVisualEditorMaxHeight": 400,
-		"PageFormsUseDisplayTitle": true,
-		"PageFormsShowExpandAllLink": false,
-		"PageFormsSimpleUpload": false,
-		"PageFormsMaxAutocompleteValues": 1000,
-		"PageFormsMaxLocalAutocompleteValues": 100,
-		"PageFormsAutocompleteOnAllChars": false,
-		"PageFormsCacheAutocompleteValues": false,
-		"PageFormsAutocompleteCacheTimeout": null,
-		"PageFormsRenameEditTabs": false,
-		"PageFormsRenameMainEditTab": false,
-		"PageFormsListSeparator":  ",",
-		"PageForms24HourTime": false,
-		"PageFormsCacheFormDefinitions": false,
-		"PageFormsFormCacheType": null,
-		"PageFormsDisableOutsideServices": false,
-		"PageFormsLinkAllRedLinksToForms": false,
-		"PageFormsShowTabsForAllHelperForms": true,
-		"PageFormsRunQueryFormAtTop": false,
-		"PageFormsGoogleMapsKey": null,
-		"PageFormsShowOnSelect": [],
-		"PageFormsAutocompleteValues": [],
-		"PageFormsCalendarParams": [],
-		"PageFormsCalendarValues": [],
-		"PageFormsGridValues": [],
-		"PageFormsGridParams": [],
-		"PageFormsContLangYes": null,
-		"PageFormsContLangNo": null,
-		"PageFormsContLangMonths": [],
-		"PageFormsHeightForMinimizingInstances": 800,
-		"PageFormsFieldProperties": [],
-		"PageFormsCargoFields": [],
-		"PageFormsDependentFields": [],
-		"PageFormsCheckboxesSelectAllMinimum": 10,
-		"PageFormsMapsWithFeeders": [],
-		"PageFormsAutoeditNamespaces": [ 0 ],
-		"PageFormsIgnoreTitlePattern": [],
-		"PageFormsEmbeddedTemplates": [],
-		"PageFormsEmbedQueryCacheTTL": 0
+		"PageFormsVisualEditorMaxHeight": {
+			"value": 400
+		},
+		"PageFormsUseDisplayTitle": {
+			"value": true
+		},
+		"PageFormsShowExpandAllLink": {
+			"value": false
+		},
+		"PageFormsSimpleUpload": {
+			"value": false
+		},
+		"PageFormsMaxAutocompleteValues": {
+			"value": 1000
+		},
+		"PageFormsMaxLocalAutocompleteValues": {
+			"value": 100
+		},
+		"PageFormsAutocompleteOnAllChars": {
+			"value": false
+		},
+		"PageFormsCacheAutocompleteValues": {
+			"value": false
+		},
+		"PageFormsAutocompleteCacheTimeout": {
+			"value": null
+		},
+		"PageFormsRenameEditTabs": {
+			"value": false
+		},
+		"PageFormsRenameMainEditTab": {
+			"value": false
+		},
+		"PageFormsListSeparator": {
+			"value": ","
+		},
+		"PageForms24HourTime": {
+			"value": false
+		},
+		"PageFormsCacheFormDefinitions": {
+			"value": false
+		},
+		"PageFormsFormCacheType": {
+			"value": null
+		},
+		"PageFormsDisableOutsideServices": {
+			"value": false
+		},
+		"PageFormsLinkAllRedLinksToForms": {
+			"value": false
+		},
+		"PageFormsShowTabsForAllHelperForms": {
+			"value": true
+		},
+		"PageFormsRunQueryFormAtTop": {
+			"value": false
+		},
+		"PageFormsGoogleMapsKey": {
+			"value": null
+		},
+		"PageFormsShowOnSelect": {
+			"value": []
+		},
+		"PageFormsAutocompleteValues": {
+			"value": []
+		},
+		"PageFormsCalendarParams": {
+			"value": []
+		},
+		"PageFormsCalendarValues": {
+			"value": []
+		},
+		"PageFormsGridValues": {
+			"value": []
+		},
+		"PageFormsGridParams": {
+			"value": []
+		},
+		"PageFormsContLangYes": {
+			"value": null
+		},
+		"PageFormsContLangNo": {
+			"value": null
+		},
+		"PageFormsContLangMonths": {
+			"value": []
+		},
+		"PageFormsHeightForMinimizingInstances": {
+			"value": 800
+		},
+		"PageFormsFieldProperties": {
+			"value": []
+		},
+		"PageFormsCargoFields": {
+			"value": []
+		},
+		"PageFormsDependentFields": {
+			"value": []
+		},
+		"PageFormsCheckboxesSelectAllMinimum": {
+			"value": 10
+		},
+		"PageFormsMapsWithFeeders": {
+			"value": []
+		},
+		"PageFormsAutoeditNamespaces": {
+			"value": [
+				0
+			]
+		},
+		"PageFormsIgnoreTitlePattern": {
+			"value": []
+		},
+		"PageFormsEmbeddedTemplates": {
+			"value": []
+		},
+		"PageFormsEmbedQueryCacheTTL": {
+			"value": 0
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

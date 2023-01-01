@@ -43,8 +43,12 @@
 		"wgQueryPages": "main"
 	},
 	"config": {
-		"OrphanedTalkPagesExemptedNamespaces": [],
-		"OrphanedTalkPagesIgnoreUserTalk": true
+		"OrphanedTalkPagesExemptedNamespaces": {
+			"value": []
+		},
+		"OrphanedTalkPagesIgnoreUserTalk": {
+			"value": true
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

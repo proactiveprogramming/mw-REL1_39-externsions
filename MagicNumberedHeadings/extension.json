@@ -27,5 +27,5 @@
 		"MagicWordwgVariableIDs": "MagicNumberedHeadings::onMagicWordwgVariableIDs",
 		"ParserBeforeInternalParse": "MagicNumberedHeadings::onParserBeforeInternalParse"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

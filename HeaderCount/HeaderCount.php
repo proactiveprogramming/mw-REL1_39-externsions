@@ -19,7 +19,7 @@ $wgExtensionCredits['parserhooks'][] = array(
 $wgAutoloadClasses['HeaderCountHooks'] = __DIR__ . '/HeaderCount.hooks.php';
 
 $wgMessagesDirs['HeaderCount'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['HeaderCount'] = __DIR__ . '/HeaderCount.i18n.php';
+#$wgExtensionMessagesFiles['HeaderCount'] = __DIR__ . '/HeaderCount.i18n.php';
 $wgExtensionMessagesFiles['HeaderCountMagic'] = __DIR__ . '/HeaderCount.i18n.magic.php';
 
 $wgHooks['ParserFirstCallInit'][] = 'HeaderCountHooks::setupParser';

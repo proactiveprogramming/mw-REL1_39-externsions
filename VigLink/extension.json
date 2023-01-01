@@ -1,0 +1,18 @@
+{
+	"name": "VigLink",
+	"version": "0.9",
+	"author": "[http://www.daschmedia.de DaSch]",
+	"url": "http://www.mediawiki.org/wiki/Extension:VigLink",
+	"description": "Earn money with [http://www.viglink.com/?vgref=1051863 VigLink].",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AutoloadClasses": {
+		"VigLinkHooks": "VigLink.hooks.php"
+	},
+	"Hooks": {
+		"SkinAfterBottomScripts": "VigLinkHooks::setupVigLink"
+	},
+	"manifest_version": 2
+}

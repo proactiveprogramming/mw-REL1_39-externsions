@@ -11,7 +11,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.25.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "ExtGeoGebra::init",
@@ -25,5 +25,5 @@
 	"AutoloadClasses": {
 		"ExtGeoGebra": "GeoGebra.body.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

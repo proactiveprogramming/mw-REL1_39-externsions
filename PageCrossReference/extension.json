@@ -1,0 +1,35 @@
+{
+	"name": "PageCrossReference",
+	"version": "0.062",
+	"author": "Jesse B. Dooley",
+	"url": "http://www.mediawiki.org/wiki/Extension:PageCrossReference",
+	"descriptionmsg": "pagecrossreference-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionFunctions": [
+		"PageCrossReference::PageCrossReferenceSetup"
+	],
+	"ExtensionMessagesFiles": {
+		"PageCrossReference": "PageCrossReference.i18n.php"
+	},
+	"AutoloadClasses": {
+		"PageCrossReference": "PageCrossReference.body.php"
+	},
+	"Hooks": {
+		"ArticleSaveComplete": "PageCrossReference::onArticleSaveComplete"
+	},
+	"config": {
+		"PageCrossReferenceMinimumWordLength": {
+			"value": 2
+		},
+		"PageCrossReferenceSkipHeaders": {
+			"value": false
+		},
+		"PageCrossReferenceBlackList": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}

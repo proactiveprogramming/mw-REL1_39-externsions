@@ -30,5 +30,5 @@
 		"ParserFirstCallInit": "PhpTagsSMWHooks::onParserFirstCallInit",
 		"PhpTagsRuntimeFirstInit": "PhpTagsSMWHooks::onPhpTagsRuntimeFirstInit"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

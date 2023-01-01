@@ -15,7 +15,9 @@
 		"MediaWiki": ">= 1.38.0"
 	},
 	"config": {
-		"PageInCatUseAccuratePreview": true
+		"PageInCatUseAccuratePreview": {
+			"value": true
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"PageInCatMagic": "PageInCat.i18n.magic.php"
@@ -40,5 +42,5 @@
 			"PageInCat::onParserBeforeInternalParse"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

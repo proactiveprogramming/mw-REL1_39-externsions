@@ -1,6 +1,0 @@
-{
-  "packagePath": "Swagger",
-  "srcBasePath": "src",
-  "modelPackage": "Swagger\\Client\\Discussion\\Models",
-  "apiPackage": "Swagger\\Client\\Discussion\\Api"
-}

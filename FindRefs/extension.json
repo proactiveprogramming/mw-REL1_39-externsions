@@ -11,15 +11,16 @@
 	"AutoloadClasses": {
 		"SpecialFindRefs": "specials/SpecialFindRefs.php"
 	},
-
 	"MessagesDirs": {
 		"FindRefs": [
 			"i18n"
 		]
 	},
-
 	"SpecialPages": {
 		"FindRefs": "SpecialFindRefs"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

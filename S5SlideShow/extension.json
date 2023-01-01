@@ -57,14 +57,28 @@
 		"S5SlideShow\\Skin": "src/Skin.php"
 	},
 	"config": {
-		"_prefix": "egS5",
-		"Scaled": false,
-		"DefaultStyle": "default",
-		"BrowserScaleHack": true,
-		"SlideTemplateFile": "extensions/S5SlideShow/slide.htm",
-		"SlideCenterMark": "(center)",
-		"SlideHeadingMark": false,
-		"SlideIncMark": "(step)"
+		"Scaled": {
+			"value": false
+		},
+		"DefaultStyle": {
+			"value": "default"
+		},
+		"BrowserScaleHack": {
+			"value": true
+		},
+		"SlideTemplateFile": {
+			"value": "extensions/S5SlideShow/slide.htm"
+		},
+		"SlideCenterMark": {
+			"value": "(center)"
+		},
+		"SlideHeadingMark": {
+			"value": false
+		},
+		"SlideIncMark": {
+			"value": "(step)"
+		}
 	},
-	"manifest_version": 1
+	"config_prefix": "egS5",
+	"manifest_version": 2
 }

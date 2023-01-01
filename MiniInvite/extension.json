@@ -15,7 +15,9 @@
 		"MediaWiki": ">= 1.35.3"
 	},
 	"config": {
-		"SendNewArticleToFriends": false
+		"SendNewArticleToFriends": {
+			"value": false
+		}
 	},
 	"SpecialPages": {
 		"EmailNewArticle": "EmailNewArticle",
@@ -60,5 +62,5 @@
 			"scripts": "resources/js/DisplayInviteLinks.js"
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

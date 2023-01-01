@@ -28,8 +28,12 @@
 		"RawPageViewBeforeOutput": "CSS::onRawPageViewBeforeOutput"
 	},
 	"config": {
-		"CSSPath": false,
-		"CSSIdentifier": "css-extension"
+		"CSSPath": {
+			"value": false
+		},
+		"CSSIdentifier": {
+			"value": "css-extension"
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

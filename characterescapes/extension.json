@@ -18,5 +18,8 @@
 			"CharacterEscapesHooks::onParserFirstCallInit"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

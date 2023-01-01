@@ -1,0 +1,67 @@
+{
+	"name": "PerPageLicense",
+	"version": "1.1.0",
+	"author": "[https://mediawiki.org/User:Leucosticte Leucosticte]",
+	"url": "https://mediawiki.org/wiki/Extension:PerPageLicense",
+	"descriptionmsg": "perpagelicense-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"PerPageLicense": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"ParserBeforePreprocess": "PerPageLicense::getLicense",
+		"ParserBeforeInternalParse": "PerPageLicense::getLicense"
+	},
+	"config": {
+		"PerPageLicenseTemplatePage": {
+			"value": "MediaWiki:License-templates"
+		},
+		"PerPageLicensePath": {
+			"value": "/common/images"
+		},
+		"PerPageLicenseLicenses": {
+			"value": {
+				"cc-0": {
+					"url": "http://creativecommons.org/publicdomain/zero/1.0/",
+					"src": "/common/images/cc-by-sa.png",
+					"alt": "Creative Commons 0"
+				},
+				"cc-by-nc-sa": {
+					"url": "http://creativecommons.org/licenses/by-nc/3.0/",
+					"src": "/common/images/cc-by-nc-sa.png",
+					"alt": "Creative Commons Attribution-NonCommercial 3.0 Unported"
+				},
+				"cc-by": {
+					"url": "http://creativecommons.org/licenses/by/3.0/",
+					"src": "/common/images/cc-by.png",
+					"alt": "Creative Commons Attribution 3.0 Unported"
+				},
+				"cc-by-sa": {
+					"url": "http://creativecommons.org/licenses/by-sa/3.0/",
+					"src": "/common/images/cc-by-sa.png",
+					"alt": "Creative Commons Attribution Share-Alike 3.0 Unported"
+				},
+				"gnu-fdl": {
+					"url": "http://www.gnu.org/copyleft/fdl.html",
+					"src": "/common/images/gnu-fdl.png",
+					"alt": "GNU Free Documentation License"
+				},
+				"public-domain": {
+					"url": "http://creativecommons.org/licenses/publicdomain/",
+					"src": "/common/images/public-domain.png",
+					"alt": "public domain"
+				}
+			},
+			"path": true
+		},
+		"PerPageLicenseNamespaces": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}

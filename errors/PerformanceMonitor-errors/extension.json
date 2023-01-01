@@ -1,0 +1,40 @@
+{
+	"name": "PerformanceMonitor",
+	"version": 0.1,
+	"author": "Achim Bode",
+	"url": "https://www.mediawiki.org/wiki/Extension:PerformanceMonitor",
+	"description": "Visualize where all the time is used up you need to wait for the server",
+	"license-name": "",
+	"type": "validextensionclass",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"PerformanceMonitor": "SpecialPerformanceMonitor"
+	},
+	"AutoloadClasses": {
+		"LocalServer": "LocalServer.php",
+		"SpecialPerformanceMonitor": "SpecialPerformanceMonitor.php"
+	},
+	"ResourceModules": {
+		"ext.performancemonitor.jit": {
+			"scripts": [
+				"js-includes/jit-2.0.1/jit.js",
+				"js-includes/bootstrap-3.1.1-dist/js/bootstrap.min.js"
+			],
+			"styles": [
+				"js-includes/jit-2.0.1/Examples/css/base.css",
+				"js-includes/bootstrap-3.1.1-dist/css/bootstrap.min.css",
+				"js-includes/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "PerformanceMonitor"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "SpecialPerformanceMonitor::onBeforePageDisplay"
+	},
+	"manifest_version": 2
+}

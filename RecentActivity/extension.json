@@ -1,32 +1,37 @@
 {
-  "name": "RecentActivity",
-  "author": [
-    "[https://www.lucamauri.com/ Luca Mauri]",
-    "[http://www.mediawiki.org/wiki/User:Nad Aran Dunkley]"
-  ],
-  "version": "1.6.1, 2020-05-31",
-  "url": "https://gitlab.com/lucamauri/recentactivity",
-  "description": "Adds parser functions for listing recently created and edited articles. Fork of http://www.mediawiki.org/wiki/Extension:RecentActivity",
-  "license-name": "GPL-2.0-or-later",
-  "type": "parserhook",
-  "manifest_version": 1,
-  "AutoloadClasses": {
-    "RecentActivity": "RecentActivity.php"
-  },
-  "ExtensionMessagesFiles": {
-    "RecentActivity": "RecentActivity.i18n.magic.php"
-  },
-  "Hooks": {
-    "ParserFirstCallInit": "RecentActivity::onParserFirstCallInit"
-  },
-  "config": {
-    "RAExclusionsCat": {
-      "description": "Page in this category will be ignored by extension",
-      "descriptionmsg": "ra-config-category",
-      "value": "Excluded from RecentActivity"
-    }
-  },
-  "ConfigRegistry": {
-    "RecentActivity": "GlobalVarConfig::newInstance"
-  }
+	"name": "RecentActivity",
+	"author": [
+		"[https://www.lucamauri.com/ Luca Mauri]",
+		"[http://www.mediawiki.org/wiki/User:Nad Aran Dunkley]"
+	],
+	"version": "1.6.1, 2020-05-31",
+	"url": "https://gitlab.com/lucamauri/recentactivity",
+	"description": "Adds parser functions for listing recently created and edited articles. Fork of http://www.mediawiki.org/wiki/Extension:RecentActivity",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+	"manifest_version": 2,
+	"AutoloadClasses": {
+		"RecentActivity": "RecentActivity.php"
+	},
+	"ExtensionMessagesFiles": {
+		"RecentActivity": "RecentActivity.i18n.magic.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "RecentActivity::onParserFirstCallInit"
+	},
+	"config": {
+		"RAExclusionsCat": {
+			"value": {
+				"description": "Page in this category will be ignored by extension",
+				"descriptionmsg": "ra-config-category",
+				"value": "Excluded from RecentActivity"
+			}
+		}
+	},
+	"ConfigRegistry": {
+		"RecentActivity": "GlobalVarConfig::newInstance"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

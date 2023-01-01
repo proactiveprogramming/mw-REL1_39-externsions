@@ -1,0 +1,21 @@
+{
+	"name": "UserRightsList",
+	"version": "0.54",
+	"author": "Jim Hu",
+	"url": "http://www.mediawiki.org/wiki/Extension:UserRightsList",
+	"description": "list-based user rights management",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"UserRightsList": "UserRightsList"
+	},
+	"ExtensionMessagesFiles": {
+		"UserRightsList": "SpecialUserRightsList.i18n.php"
+	},
+	"AutoloadClasses": {
+		"UserRightsList": "SpecialUserRightsList.body.php"
+	},
+	"manifest_version": 2
+}

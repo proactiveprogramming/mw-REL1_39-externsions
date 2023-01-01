@@ -1,0 +1,78 @@
+{
+	"name": "InterwikiMap",
+	"version": "1.0.6",
+	"author": "[https://mediawiki.org/User:Leucosticte Leucosticte]",
+	"url": "https://mediawiki.org/wiki/Extension:InterwikiMap",
+	"descriptionmsg": "interwikimap-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AvailableRights": [
+		"interwikimap"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"interwikimap": true
+		},
+		"bureaucrat": {
+			"interwikimapnoratelimit": true
+		}
+	},
+	"SpecialPages": {
+		"InterwikiMap": "SpecialInterwikiMap"
+	},
+	"ExtensionMessagesFiles": {
+		"InterwikiMap": "InterwikiMap.i18n.php",
+		"InterwikiMapAlias": "InterwikiMap.alias.php"
+	},
+	"AutoloadClasses": {
+		"InterwikiMap": "InterwikiMap.classes.php",
+		"SpecialInterwikiMap": "SpecialInterwikiMap.php"
+	},
+	"Hooks": {
+		"ArticleSaveComplete": "InterwikiMap::onArticleSaveComplete"
+	},
+	"config": {
+		"InterwikiMapSeconds": {
+			"value": 86400
+		},
+		"InterwikiMapMinimumSeconds": {
+			"value": 60
+		},
+		"InterwikiMapOdds": {
+			"value": 360
+		},
+		"InterwikiMapWhitelistPage": {
+			"value": "MediaWiki:Interwiki-whitelist"
+		},
+		"InterwikiMapBlacklistPage": {
+			"value": "MediaWiki:Interwiki-blacklist"
+		},
+		"InterwikiMapRemoteWikiUrls": {
+			"value": "https://meta.wikimedia.org/w/api.php"
+		},
+		"InterwikiMapApiArgs": {
+			"value": "?action=query&meta=siteinfo&siprop=interwikimap&format=json"
+		},
+		"InterwikiMapUserAgent": {
+			"value": "User-Agent: 's InterwikiMap. Contact info: URL:  Email: "
+		},
+		"InterwikiMapBackupPage": {
+			"value": "MediaWiki:InterwikiMapBackup"
+		},
+		"InterwikiMapBackupDescPage": {
+			"value": "MediaWiki:interwikimap-backup-desc"
+		},
+		"InterwikiMapBackupText": {
+			"value": ""
+		},
+		"InterwikiMapBackupUser": {
+			"value": "Maintenance script"
+		},
+		"InterwikiMapBackupSummary": {
+			"value": "Robot: $1"
+		}
+	},
+	"manifest_version": 2
+}

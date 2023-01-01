@@ -1,17 +1,6 @@
 {
-        "name": "SimpleTable",
-        "author": "Johan the Ghost and John Bray",
-        "url": "https://github.com/jrbray1/SimpleTable",
-        "description": "Convert tab-separated or similar data into a Wiki table",
-        "type": "parserhook",
-        "requires": {
-                "MediaWiki": ">= 1.35.0"
-        },
-        "AutoloadClasses": {
-                "SimpleTable": "SimpleTable.php"
-        },
-        "Hooks": {
-        "ParserFirstCallInit": "SimpleTable::onParserFirstCallInit"
-        },
-        "manifest_version": 2
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"manifest_version": 2
 }

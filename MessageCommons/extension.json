@@ -20,9 +20,15 @@
 	},
 	"callback": "MessageCommons::onRegistration",
 	"config": {
-		"MessageCommonsDatabase": "mwmsgwiki",
-		"MessageCommonsLang": "en",
-		"MessageCommonsIsCommons": false
+		"MessageCommonsDatabase": {
+			"value": "mwmsgwiki"
+		},
+		"MessageCommonsLang": {
+			"value": "en"
+		},
+		"MessageCommonsIsCommons": {
+			"value": false
+		}
 	},
 	"AutoloadClasses": {
 		"MessageCommons": "src/MessageCommons.php"
@@ -31,5 +37,5 @@
 		"MessagesPreLoad": "MessageCommons::onMessagesPreLoad",
 		"EditPage::showEditForm:initial": "MessageCommons::onEditPage"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

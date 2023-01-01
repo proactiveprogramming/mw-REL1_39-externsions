@@ -1,45 +1,48 @@
 {
-  "name": "AutoSitemap",
-  "author": "Dolfinus",
-  "url": "https://www.mediawiki.org/wiki/Extension:AutoSitemap",
-  "description": "Creates a XML Sitemap file automatically.",
-  "version": "1.7.1",
-  "license-name": "GPL-3.0+",
-  "type": "other",
-  "ExtensionMessagesFiles": {
-    "AutoSitemap": "AutoSitemap.i18n.php"
-  },
-  "AutoloadClasses": {
-    "AutoSitemap": "AutoSitemap_body.php"
-  },
-  "Hooks": {
-    "AfterImportPage": [
-      "AutoSitemap::writeSitemap"
-    ],
-    "PageDeleteComplete": [
-      "AutoSitemap::writeSitemap"
-    ],
-    "ArticleUndelete": [
-      "AutoSitemap::writeSitemap"
-    ],
-    "PageMoveComplete": [
-      "AutoSitemap::writeSitemap"
-    ],
-    "ArticleMergeComplete": [
-      "AutoSitemap::writeSitemap"
-    ],
-    "UploadComplete": [
-      "AutoSitemap::writeSitemap"
-    ],
-    "RevisionUndeleted": [
-      "AutoSitemap::writeSitemap"
-    ],
-    "RevisionRecordInserted": [
-      "AutoSitemap::writeSitemap"
-    ],
-    "PageSaveComplete": [
-      "AutoSitemap::writeSitemap"
-    ]
-  },
-  "manifest_version": 1
+	"name": "AutoSitemap",
+	"author": "Dolfinus",
+	"url": "https://www.mediawiki.org/wiki/Extension:AutoSitemap",
+	"description": "Creates a XML Sitemap file automatically.",
+	"version": "1.7.1",
+	"license-name": "GPL-3.0+",
+	"type": "other",
+	"ExtensionMessagesFiles": {
+		"AutoSitemap": "AutoSitemap.i18n.php"
+	},
+	"AutoloadClasses": {
+		"AutoSitemap": "AutoSitemap_body.php"
+	},
+	"Hooks": {
+		"AfterImportPage": [
+			"AutoSitemap::writeSitemap"
+		],
+		"PageDeleteComplete": [
+			"AutoSitemap::writeSitemap"
+		],
+		"ArticleUndelete": [
+			"AutoSitemap::writeSitemap"
+		],
+		"PageMoveComplete": [
+			"AutoSitemap::writeSitemap"
+		],
+		"ArticleMergeComplete": [
+			"AutoSitemap::writeSitemap"
+		],
+		"UploadComplete": [
+			"AutoSitemap::writeSitemap"
+		],
+		"RevisionUndeleted": [
+			"AutoSitemap::writeSitemap"
+		],
+		"RevisionRecordInserted": [
+			"AutoSitemap::writeSitemap"
+		],
+		"PageSaveComplete": [
+			"AutoSitemap::writeSitemap"
+		]
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

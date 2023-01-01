@@ -1,5 +1,5 @@
 {
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"name": "Expressions",
 	"namemsg": "expressions-extensionname",
 	"type": "parserhook",
@@ -11,7 +11,7 @@
 	"descriptionmsg": "expressions-desc",
 	"license-name": "MIT",
 	"requires": {
-		"MediaWiki": ">= 1.27.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"MessagesDirs": {
 		"Expressions": [

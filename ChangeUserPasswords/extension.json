@@ -25,7 +25,9 @@
 		"SpecialChangeUserPasswords": "includes/specials/SpecialChangeUserPasswords.php"
 	},
 	"config": {
-		"ChangeUserPasswordsEnableFoo": true
+		"ChangeUserPasswordsEnableFoo": {
+			"value": true
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"ChangeUserPasswordsAlias": "ChangeUserPasswords.i18n.alias.php"
@@ -41,5 +43,5 @@
 	"Hooks": {
 		"AdminLinks": "ChangeUserPasswordsHooks::addToAdminLinks"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

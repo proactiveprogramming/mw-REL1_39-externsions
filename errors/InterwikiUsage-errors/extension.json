@@ -1,0 +1,21 @@
+{
+	"name": "InterwikiUsage",
+	"version": "1.0.1",
+	"author": "Nathan Larson",
+	"url": "https://www.mediawiki.org/wiki/Extension:InterwikiUsage",
+	"descriptionmsg": "interwikiusage-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"InterwikiUsage": "SpecialInterwikiUsage"
+	},
+	"ExtensionMessagesFiles": {
+		"InterwikiUsage": "InterwikiUsage.i18n.php"
+	},
+	"AutoloadClasses": {
+		"SpecialInterwikiUsage": "SpecialInterwikiUsage.php"
+	},
+	"manifest_version": 2
+}

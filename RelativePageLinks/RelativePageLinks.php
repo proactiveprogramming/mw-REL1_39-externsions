@@ -63,7 +63,7 @@ $wgHooks['BeforePageDisplay'][] = 'RelativePageLinksOnBeforePageDisplay';
 
 // Register extension messages
 $wgMessagesDirs['RelativePageLinks'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['RelativePageLinks'] = __DIR__ . '/RelativePageLinks.i18n.php';
+#$wgExtensionMessagesFiles['RelativePageLinks'] = __DIR__ . '/RelativePageLinks.i18n.php';
 
 
 //////////////////////////////////////////

@@ -45,7 +45,7 @@ $wgExtensionCredits['other'][] = array(
 $dir = __DIR__ . '/';
 
 $wgMessagesDirs['PubSubHubbubSubscriber'] = $dir . 'i18n';
-$wgExtensionMessagesFiles['PubSubHubbubSubscriber'] = $dir . 'PubSubHubbubSubscriber.i18n.php';
+#$wgExtensionMessagesFiles['PubSubHubbubSubscriber'] = $dir . 'PubSubHubbubSubscriber.i18n.php';
 
 $wgAutoloadClasses['PubSubHubbubSubscriber\\ApiSubscription'] = $dir . 'src/ApiSubscription.php';
 $wgAutoloadClasses['PubSubHubbubSubscriber\\HookHandler'] = $dir . 'src/HookHandler.php';

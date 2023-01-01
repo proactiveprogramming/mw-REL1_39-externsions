@@ -15,12 +15,24 @@
 		"NCBITaxonomyLookup\\NCBITaxonomyLookup": "includes/NCBITaxonomyLookup.php"
 	},
 	"config": {
-		"NCBITaxonomyLookupApiURL": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
-		"NCBITaxonomyLookupCacheTTL": 0,
-		"NCBITaxonomyLookupCacheRandomizeTTL": false,
-		"NCBITaxonomyApiTimeoutFallbackToCache": false,
-		"NCBITaxonomyApiTimeout": 60,
-		"NCBITaxonomyApiKey": false
+		"NCBITaxonomyLookupApiURL": {
+			"value": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+		},
+		"NCBITaxonomyLookupCacheTTL": {
+			"value": 0
+		},
+		"NCBITaxonomyLookupCacheRandomizeTTL": {
+			"value": false
+		},
+		"NCBITaxonomyApiTimeoutFallbackToCache": {
+			"value": false
+		},
+		"NCBITaxonomyApiTimeout": {
+			"value": 60
+		},
+		"NCBITaxonomyApiKey": {
+			"value": false
+		}
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
@@ -35,5 +47,5 @@
 	"ExtensionMessagesFiles": {
 		"NCBITaxonomyLookupMagic": "NCBITaxonomyLookup.i18n.magic.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

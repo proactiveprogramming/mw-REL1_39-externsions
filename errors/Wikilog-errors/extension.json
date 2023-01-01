@@ -1,0 +1,236 @@
+{
+	"name": "Wikilog",
+	"version": "2.0.1",
+	"author": "Juliano F. Ravasi, Vitaliy Filippov",
+	"url": "https://www.mediawiki.org/wiki/Extension:Wikilog",
+	"descriptionmsg": "wikilog-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AvailableRights": [
+		"wl-postcomment",
+		"wl-moderation"
+	],
+	"ExtensionFunctions": [
+		[
+			"WlFeed",
+			"ExtensionInit"
+		],
+		[
+			"Wikilog",
+			"ExtensionInit"
+		]
+	],
+	"GroupPermissions": {
+		"user": {
+			"wl-postcomment": true
+		},
+		"sysop": {
+			"wl-moderation": true
+		}
+	},
+	"LogActions": {
+		"wikilog/c-approv": "wikilog-log-cmt-approve",
+		"wikilog/c-reject": "wikilog-log-cmt-reject"
+	},
+	"LogHeaders": {
+		"wikilog": "wikilog-log-pagetext"
+	},
+	"LogNames": {
+		"wikilog": "wikilog-log-pagename"
+	},
+	"LogTypes": [
+		"wikilog"
+	],
+	"SpecialPages": {
+		"Wikilog": "SpecialWikilog",
+		"WikilogComments": "SpecialWikilogComments",
+		"WikilogSubscriptions": "SpecialWikilogSubscriptions"
+	},
+	"ExtensionMessagesFiles": {
+		"WlFeed": "WlFeed.i18n.php",
+		"Wikilog": "Wikilog.i18n.php",
+		"WikilogMagic": "Wikilog.i18n.magic.php",
+		"WikilogAlias": "Wikilog.i18n.alias.php"
+	},
+	"AutoloadClasses": {
+		"WlSyndicationBase": "WlFeed.body.php",
+		"WlSyndicationFeed": "WlFeed.body.php",
+		"WlSyndicationEntry": "WlFeed.body.php",
+		"WlTextConstruct": "WlFeed.body.php",
+		"WlAtomFeed": "WlFeed.body.php",
+		"WlRSSFeed": "WlFeed.body.php",
+		"WlFeedItemCompat": "WlFeed.body.php",
+		"WlAtomFeedCompat": "WlFeed.body.php",
+		"WlRSSFeedCompat": "WlFeed.body.php",
+		"WikilogHooks": "WikilogHooks.php",
+		"WikilogLinksUpdate": "WikilogLinksUpdate.php",
+		"WikilogUtils": "WikilogUtils.php",
+		"WikilogNavbar": "WikilogUtils.php",
+		"SpecialWikilog": "SpecialWikilog.php",
+		"SpecialWikilogComments": "WikilogCommentsPage.php",
+		"SpecialWikilogSubscriptions": "SpecialWikilogSubscriptions.php",
+		"WikilogItem": "WikilogItem.php",
+		"WikilogComment": "WikilogComment.php",
+		"WikilogCommentFormatter": "WikilogComment.php",
+		"WikilogParser": "WikilogParser.php",
+		"WikilogParserOutput": "WikilogParser.php",
+		"WikilogItemPager": "WikilogItemPager.php",
+		"WikilogSummaryPager": "WikilogItemPager.php",
+		"WikilogTemplatePager": "WikilogItemPager.php",
+		"WikilogArchivesPager": "WikilogItemPager.php",
+		"WikilogCommentPager": "WikilogCommentPager.php",
+		"WikilogCommentListPager": "WikilogCommentPager.php",
+		"WikilogCommentThreadPager": "WikilogCommentPager.php",
+		"WikilogCommentPagerSwitcher": "WikilogCommentPagerSwitcher.php",
+		"WikilogFeed": "WikilogFeed.php",
+		"WikilogItemFeed": "WikilogFeed.php",
+		"WikilogCommentFeed": "WikilogFeed.php",
+		"WikilogQuery": "WikilogQuery.php",
+		"WikilogItemQuery": "WikilogQuery.php",
+		"WikilogCommentQuery": "WikilogQuery.php",
+		"WikilogMainPage": "WikilogMainPage.php",
+		"WikilogItemPage": "WikilogItemPage.php",
+		"WikilogWikiItemPage": "WikilogItemPage.php",
+		"WikilogCommentsPage": "WikilogCommentsPage.php",
+		"WlCaptcha": "WlCaptchaAdapter.php",
+		"WlCaptchaAdapter": "WlCaptchaAdapter.php",
+		"HtmlToMediaWiki": "HtmlToMediaWiki.php",
+		"WikilogBloggerImport": "WikilogBloggerImport.php",
+		"WikilogCalendar": "WikilogCalendar.php"
+	},
+	"ResourceModules": {
+		"ext.wikilog": {
+			"scripts": [
+				"wikilog.js"
+			],
+			"styles": [
+				"wikilog.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "style",
+		"remoteExtPath": "Wikilog/style"
+	},
+	"Hooks": {
+		"ArticleFromTitle": "Wikilog::ArticleFromTitle",
+		"ArticleViewHeader": "Wikilog::ArticleViewHeader",
+		"ArticleViewFooter": "Wikilog::ArticleViewFooter",
+		"BeforePageDisplay": "Wikilog::BeforePageDisplay",
+		"LinkBegin": "Wikilog::LinkBegin",
+		"SkinTemplateTabAction": "Wikilog::SkinTemplateTabAction",
+		"SkinTemplateTabs": "Wikilog::SkinTemplateTabs",
+		"SkinTemplateNavigation": "Wikilog::SkinTemplateNavigation",
+		"GetPreferences": "Wikilog::getPreferences",
+		"SkinBuildSidebar": "Wikilog::SkinBuildSidebar",
+		"ArticleEditUpdates": "WikilogHooks::ArticleEditUpdates",
+		"ArticleDelete": "WikilogHooks::ArticleDelete",
+		"ArticleSave": "WikilogHooks::ArticleSave",
+		"TitleMoveComplete": "WikilogHooks::TitleMoveComplete",
+		"EditPage::attemptSave": "WikilogHooks::EditPageAttemptSave",
+		"EditPage::showEditForm:fields": "WikilogHooks::EditPageEditFormFields",
+		"EditPage::importFormData": "WikilogHooks::EditPageImportFormData",
+		"LoadExtensionSchemaUpdates": "WikilogHooks::ExtensionSchemaUpdates",
+		"UnknownAction": "WikilogHooks::UnknownAction",
+		"EnhancedChangesListGroupBy": "WikilogHooks::EnhancedChangesListGroupBy",
+		"LinksUpdate": "WikilogLinksUpdate::LinksUpdate",
+		"ParserFirstCallInit": "WikilogParser::FirstCallInit",
+		"ParserClearState": "WikilogParser::ClearState",
+		"ParserBeforeStrip": "WikilogParser::BeforeStrip",
+		"ParserAfterTidy": "WikilogParser::AfterTidy",
+		"InternalParseBeforeLinks": "WikilogParser::InternalParseBeforeLinks",
+		"GetLocalURL": "WikilogParser::GetLocalURL",
+		"GetFullURL": "WikilogParser::GetFullURL"
+	},
+	"config": {
+		"EnableSidebarCache": {
+			"value": false
+		},
+		"ReservedUsernames": {
+			"value": [
+				"msg:wikilog-auto"
+			]
+		},
+		"TaggingEntity": {
+			"value": false
+		},
+		"WikilogStylePath": {
+			"value": false
+		},
+		"WikilogExpensiveLimit": {
+			"value": null
+		},
+		"WikilogNumArticles": {
+			"value": 20
+		},
+		"WikilogNumComments": {
+			"value": 50
+		},
+		"WikilogExtSummaries": {
+			"value": false
+		},
+		"WikilogPagerDateFormat": {
+			"value": false
+		},
+		"WikilogDefaultNotCategory": {
+			"value": false
+		},
+		"WikilogSearchDropdowns": {
+			"value": true
+		},
+		"WikilogSignAndPublishDefault": {
+			"value": false
+		},
+		"WikilogMaxAuthors": {
+			"value": 6
+		},
+		"WikilogEnableTags": {
+			"value": false
+		},
+		"WikilogMaxTags": {
+			"value": 25
+		},
+		"WikilogEnableComments": {
+			"value": true
+		},
+		"WikilogCommentNamespaces": {
+			"value": []
+		},
+		"WikilogCommentsOnItemPage": {
+			"value": []
+		},
+		"WikilogMaxCommentSize": {
+			"value": 2147483647
+		},
+		"WikilogModerateAnonymous": {
+			"value": false
+		},
+		"WikilogFeedClasses": {
+			"value": {
+				"atom": "WlAtomFeed",
+				"rss": "WlRSSFeed"
+			}
+		},
+		"WikilogFeedSummary": {
+			"value": true
+		},
+		"WikilogFeedContent": {
+			"value": true
+		},
+		"WikilogFeedCategories": {
+			"value": true
+		},
+		"WikilogFeedRelated": {
+			"value": false
+		},
+		"WikilogNamespaces": {
+			"value": []
+		},
+		"WikilogCloneParser": {
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

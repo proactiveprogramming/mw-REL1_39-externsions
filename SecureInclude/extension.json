@@ -11,7 +11,7 @@
 	"license-name": "GPL-3.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.25"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"MessagesDirs": {
 		"SecureInclude": [
@@ -26,5 +26,5 @@
 			"SecureInclude::onParserFirstCallInit"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

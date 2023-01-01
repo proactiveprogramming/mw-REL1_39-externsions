@@ -6,7 +6,7 @@
 	"descriptionmsg": "mpdf-desc",
 	"license-name": "GPL-2.0+",
 	"requires": {
-		"MediaWiki": ">= 1.25.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"callback": "MpdfHooks::registerExtension",
 	"MessagesDirs": {
@@ -30,10 +30,16 @@
 		"mpdf": "MpdfAction"
 	},
 	"config": {
-		"MpdfTab": false,
-		"MpdfToolboxLink": false,
-		"MpdfSimpleOutput": false
+		"MpdfTab": {
+			"value": false
+		},
+		"MpdfToolboxLink": {
+			"value": false
+		},
+		"MpdfSimpleOutput": {
+			"value": false
+		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -1,0 +1,37 @@
+{
+	"name": "WikiStatistics",
+	"version": "0.0.1",
+	"author": [
+		"[https://wikitech.wikimedia.org/wiki/User:Emijrp emijrp]",
+		"mangelrp"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:WikiStatistics",
+	"descriptionmsg": "wikistatistics-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"WikiStatistics": "SpecialWikiStatistics"
+	},
+	"ExtensionMessagesFiles": {
+		"WikiStatistics": "WikiStatistics.i18n.php"
+	},
+	"AutoloadClasses": {
+		"SpecialWikiStatistics": "WikiStatistics.body.php"
+	},
+	"ResourceModules": {
+		"ext.WikiStatistics": {
+			"scripts": [
+				"modules/jquery.js",
+				"modules/jquery.flot.js"
+			],
+			"styles": "modules/layout.css",
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": ""
+	},
+	"manifest_version": 2
+}

@@ -45,8 +45,13 @@
 		},
 		"ext.imagerating.js": {
 			"scripts": "resources/js/ImageRating.js",
-			"dependencies": [ "mediawiki.api", "mediawiki.util" ],
-			"messages": [ "imagerating-category" ]
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.util"
+			],
+			"messages": [
+				"imagerating-category"
+			]
 		}
 	},
 	"AvailableRights": [
@@ -57,5 +62,5 @@
 			"rateimage": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

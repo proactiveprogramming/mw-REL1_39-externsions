@@ -17,8 +17,12 @@
 		"MediaWiki": ">=1.35.3"
 	},
 	"config": {
-		"ContactLink": "Special:Contact",
-		"RegexBlockDatabase": false
+		"ContactLink": {
+			"value": "Special:Contact"
+		},
+		"RegexBlockDatabase": {
+			"value": false
+		}
 	},
 	"SpecialPages": {
 		"RegexBlock": "RegexBlockForm"
@@ -73,5 +77,5 @@
 			"regexblock-exempt": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

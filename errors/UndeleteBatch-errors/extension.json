@@ -1,0 +1,33 @@
+{
+	"name": "Undelete Batch",
+	"version": "1.0.0",
+	"author": "Nathan Larson",
+	"url": "https://www.mediawiki.org/wiki/Extension:UndeleteBatch",
+	"descriptionmsg": "undeletebatch-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AvailableRights": [
+		"undeletebatch"
+	],
+	"GroupPermissions": {
+		"bureaucrat": {
+			"undeletebatch": true
+		}
+	},
+	"SpecialPages": {
+		"UndeleteBatch": "SpecialUndeleteBatch"
+	},
+	"ExtensionMessagesFiles": {
+		"UndeleteBatch": "UndeleteBatch.i18n.php",
+		"UndeleteBatchAlias": "UndeleteBatch.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialUndeleteBatch": "UndeleteBatch.body.php"
+	},
+	"Hooks": {
+		"AdminLinks": "SpecialUndeleteBatch::addToAdminLinks"
+	},
+	"manifest_version": 2
+}

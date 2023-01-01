@@ -15,7 +15,9 @@
 		"VoiceCommander": "VoiceCommander.php"
 	},
 	"config": {
-		"BoilerPlateEnableFoo": true
+		"BoilerPlateEnableFoo": {
+			"value": true
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"VoiceCommanderAlias": "VoiceCommander.i18n.alias.php"
@@ -49,11 +51,8 @@
 				"modules/ext.voicecommander.functionality.js",
 				"modules/ext.voicecommander.module.api.js"
 			],
-			"styles": [
-			],
-			"messages": [
-
-			],
+			"styles": [],
+			"messages": [],
 			"dependencies": []
 		},
 		"ext.voicecommander.special": {
@@ -61,11 +60,8 @@
 				"modules/lib/annyang.js",
 				"modules/ext.voicecommander.special.js"
 			],
-			"styles": [
-			],
-			"messages": [
-
-			],
+			"styles": [],
+			"messages": [],
 			"dependencies": []
 		}
 	},
@@ -76,8 +72,10 @@
 	"SpecialPages": {
 		"VoiceCommander": "VoiceCommanderSpecial"
 	},
-	"namespaces": [
-	],
+	"namespaces": [],
 	"callback": "VoiceCommanderHooks::afterInit",
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

@@ -7,7 +7,9 @@
 	"version": "0.1.0",
 	"descriptionmsg": "flexiblelinks-desc",
 	"config": {
-		"FlexiblePrefixNamespaces": []
+		"FlexiblePrefixNamespaces": {
+			"value": []
+		}
 	},
 	"AutoloadClasses": {
 		"SpecialFlexiblePrefix": "SpecialFlexiblePrefix.php"
@@ -15,8 +17,13 @@
 	"SpecialPages": {
 		"FlexiblePrefix": "SpecialFlexiblePrefix"
 	},
-	"MessagesDirs" : {
-		"FlexiblePrefix": ["i18n"]
+	"MessagesDirs": {
+		"FlexiblePrefix": [
+			"i18n"
+		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

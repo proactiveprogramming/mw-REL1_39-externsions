@@ -1,0 +1,21 @@
+{
+	"name": "Semantic Bundle",
+	"version": "1.9.2",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Yaron_Koren Yaron Koren]",
+		"[https://www.mediawiki.org/wiki/User:Jeroen_De_Dauw Jeroen De Dauw]",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Semantic_Bundle",
+	"descriptionmsg": "semanticbundle-desc",
+	"type": "semantic",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"SemanticBundle": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

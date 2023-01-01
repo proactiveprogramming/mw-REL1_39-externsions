@@ -50,8 +50,12 @@
 		},
 		"ext.userStatus.scripts": {
 			"scripts": "resources/js/UserStatus.js",
-			"dependencies": [ "mediawiki.api" ],
-			"messages": [ "userstatus-confirm-delete" ]
+			"dependencies": [
+				"mediawiki.api"
+			],
+			"messages": [
+				"userstatus-confirm-delete"
+			]
 		},
 		"ext.userStatus.viewThought": {
 			"styles": "resources/css/ViewThought.css"
@@ -68,5 +72,5 @@
 			"delete-status-updates": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -1,0 +1,22 @@
+{
+	"name": "SortChars",
+	"version": "0.1",
+	"author": "[http://www.daschmedia.de DaSch]",
+	"url": "http://www.mediawiki.org/wiki/Extension:SortChars",
+	"descriptionmsg": "sortchars-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"SortChars": "SortChars.i18n.php",
+		"SortCharsMagic": "SortChars.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"SortCharsHooks": "SortChars.hooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "SortCharsHooks::parser_setup"
+	},
+	"manifest_version": 2
+}

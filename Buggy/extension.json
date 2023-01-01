@@ -61,5 +61,5 @@
 		"BuggyHooks": "Buggy.hooks.php",
 		"ApiBuggy": "ApiBuggy.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

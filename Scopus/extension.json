@@ -18,7 +18,9 @@
 		"ScopusHooks": "Scopus.hooks.php"
 	},
 	"config": {
-		"wgScopusApiKey": null
+		"wgScopusApiKey": {
+			"value": null
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"ScopusHooksMagic": "Scopus.i18n.magic.php"
@@ -28,5 +30,8 @@
 			"ScopusHooks::onParserFirstCallInit"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

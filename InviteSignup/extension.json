@@ -30,8 +30,12 @@
 		"UserGetRights": "InviteSignupHooks::onUserGetRights"
 	},
 	"config": {
-		"ISGroups": [],
-		"InviteSignupHash": null
+		"ISGroups": {
+			"value": []
+		},
+		"InviteSignupHash": {
+			"value": null
+		}
 	},
 	"MessagesDirs": {
 		"InviteSignup": [
@@ -41,5 +45,5 @@
 	"SpecialPages": {
 		"InviteSignup": "SpecialInviteSignup"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

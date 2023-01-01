@@ -26,26 +26,60 @@
 		]
 	},
 	"config": {
-		"SphinxSearch_host": "127.0.0.1",
-		"SphinxSearch_port": 9312,
-		"SphinxSearch_index": "wiki_main",
-		"SphinxSearch_index_list": "*",
-		"SphinxSearch_index_weights": "null",
-		"SphinxSearch_mode": 4,
-		"SphinxSearch_sortmode": 0,
-		"SphinxSearch_sortby": "",
-		"SphinxSearch_maxmatches": 1000,
-		"SphinxSearch_cutoff": 0,
-		"SphinxSearch_weights": {
-			"old_text": 1,
-			"page_title": 100
+		"SphinxSearch_host": {
+			"value": "127.0.0.1"
 		},
-		"SphinxSearchMWHighlighter": false,
-		"SphinxSuggestMode": "",
-		"SphinxSearchAspellPath": "aspell",
-		"SphinxSearchPersonalDictionary": "",
-		"EnableSphinxInfixSearch": false,
-		"EnableSphinxPrefixSearch": false
+		"SphinxSearch_port": {
+			"value": 9312
+		},
+		"SphinxSearch_index": {
+			"value": "wiki_main"
+		},
+		"SphinxSearch_index_list": {
+			"value": "*"
+		},
+		"SphinxSearch_index_weights": {
+			"value": "null"
+		},
+		"SphinxSearch_mode": {
+			"value": 4
+		},
+		"SphinxSearch_sortmode": {
+			"value": 0
+		},
+		"SphinxSearch_sortby": {
+			"value": ""
+		},
+		"SphinxSearch_maxmatches": {
+			"value": 1000
+		},
+		"SphinxSearch_cutoff": {
+			"value": 0
+		},
+		"SphinxSearch_weights": {
+			"value": {
+				"old_text": 1,
+				"page_title": 100
+			}
+		},
+		"SphinxSearchMWHighlighter": {
+			"value": false
+		},
+		"SphinxSuggestMode": {
+			"value": ""
+		},
+		"SphinxSearchAspellPath": {
+			"value": "aspell"
+		},
+		"SphinxSearchPersonalDictionary": {
+			"value": ""
+		},
+		"EnableSphinxInfixSearch": {
+			"value": false
+		},
+		"EnableSphinxPrefixSearch": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

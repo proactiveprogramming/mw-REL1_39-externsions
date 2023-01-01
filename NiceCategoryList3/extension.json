@@ -5,7 +5,7 @@
 		"Kichik, Johan the Ghost",
 		"JLTRY"
 	],
-	"url":  "http://www.mediawiki.org/wiki/Extension:NiceCategoryList3",
+	"url": "http://www.mediawiki.org/wiki/Extension:NiceCategoryList3",
 	"descriptionmsg": "Generates a category list showing all subcategories and pages in a category.",
 	"namemsg": "smw-title",
 	"license-name": "GPL-2.0-or-later",
@@ -30,5 +30,5 @@
 		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -1,0 +1,109 @@
+{
+	"name": "HipChat Notifications",
+	"version": "1.06",
+	"author": "Aleksi Postari",
+	"url": "https://github.com/kulttuuri/hipchat_mediawiki",
+	"description": "Sends HipChat notifications for selected actions that have occurred in your MediaWiki sites.",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"Hooks": {
+		"ArticleSaveComplete": [
+			"article_saved"
+		],
+		"ArticleInsertComplete": [
+			"article_inserted"
+		],
+		"ArticleDeleteComplete": [
+			"article_deleted"
+		],
+		"TitleMoveComplete": [
+			"article_moved"
+		],
+		"AddNewAccount": [
+			"new_user_account"
+		],
+		"BlockIpComplete": [
+			"user_blocked"
+		],
+		"UploadComplete": [
+			"file_uploaded"
+		]
+	},
+	"config": {
+		"HipchatNotificationEditedArticle": {
+			"value": true
+		},
+		"HipchatNotificationAddedArticle": {
+			"value": true
+		},
+		"HipchatNotificationRemovedArticle": {
+			"value": true
+		},
+		"HipchatNotificationMovedArticle": {
+			"value": true
+		},
+		"HipchatNotificationNewUser": {
+			"value": true
+		},
+		"HipchatNotificationBlockedUser": {
+			"value": true
+		},
+		"HipchatNotificationFileUpload": {
+			"value": true
+		},
+		"HipchatToken": {
+			"value": ""
+		},
+		"HipchatRoomID": {
+			"value": "0"
+		},
+		"HipchatFromName": {
+			"value": "Wiki"
+		},
+		"HipchatNotification": {
+			"value": false
+		},
+		"HipchatRoomMessageApiUrl": {
+			"value": "https://api.hipchat.com/v2/room"
+		},
+		"HipchatSendMethod": {
+			"value": "curl"
+		},
+		"WikiUrl": {
+			"value": ""
+		},
+		"WikiUrlEnding": {
+			"value": "index.php?title="
+		},
+		"WikiUrlEndingUserRights": {
+			"value": "Special%3AUserRights&user="
+		},
+		"WikiUrlEndingBlockUser": {
+			"value": "Special:Block/"
+		},
+		"WikiUrlEndingUserPage": {
+			"value": "User:"
+		},
+		"WikiUrlEndingUserTalkPage": {
+			"value": "User_talk:"
+		},
+		"WikiUrlEndingUserContributions": {
+			"value": "Special:Contributions/"
+		},
+		"WikiUrlEndingBlockList": {
+			"value": "Special:BlockList"
+		},
+		"WikiUrlEndingEditArticle": {
+			"value": "action=edit"
+		},
+		"WikiUrlEndingDeleteArticle": {
+			"value": "action=delete"
+		},
+		"WikiUrlEndingHistory": {
+			"value": "action=history"
+		}
+	},
+	"manifest_version": 2
+}

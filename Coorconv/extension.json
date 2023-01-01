@@ -21,15 +21,17 @@
 		"EPSGIO": "includes/epsg.php"
 	},
 	"config": {
-		"CoordinateConversionEnableFoo": true,
-		"EPSG_URL": "http://epsg.io/trans"
+		"CoordinateConversionEnableFoo": {
+			"value": true
+		},
+		"EPSG_URL": {
+			"value": "http://epsg.io/trans"
+		}
 	},
 	"ExtensionMessagesFiles": {
-		"CoordinateConversionAlias": "CoordinateConversion.i18n.alias.php",
-                "CoordinateConversionAlias": "CoordinateConversion.i18n.magic.php"
+		"CoordinateConversionAlias": "CoordinateConversion.i18n.magic.php"
 	},
 	"Hooks": {
-
 		"ParserFirstCallInit": [
 			"CoordinateConversionHooks::onParserFirstCallInit"
 		]
@@ -53,7 +55,9 @@
 	},
 	"SpecialPages": {
 		"CCTest": "SpecialCCTest"
-
-        },
-	"manifest_version": 1
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

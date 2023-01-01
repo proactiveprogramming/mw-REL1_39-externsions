@@ -27,5 +27,5 @@
 	"Hooks": {
 		"InternalParseBeforeLinks": "MagicNoCacheHooks::magicwordCheck"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

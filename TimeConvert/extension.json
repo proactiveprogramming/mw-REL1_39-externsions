@@ -1,0 +1,21 @@
+{
+	"name": "TimeConvert",
+	"author": "dlh",
+	"url": "http://github.com/dlh/MediaWiki-TimeConvert",
+	"description": "Provides a parser function and Scribunto Lua library to convert a time to a different time zone",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"TimeConvert": "TimeConvert.i18n.php"
+	},
+	"AutoloadClasses": {
+		"TimeConvertLua": "TimeConvertLua.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "TimeConvert::onParserFirstCallInit",
+		"ScribuntoExternalLibraries": "TimeConvert::onScribuntoExternalLibraries"
+	},
+	"manifest_version": 2
+}

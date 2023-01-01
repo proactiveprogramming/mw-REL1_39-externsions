@@ -1,0 +1,14 @@
+{
+	"name": "RecentChangesOption",
+	"author": "dlh",
+	"url": "http://github.com/dlh/MediaWiki-RecentChangesOption",
+	"description": "Adds options to manage the default visibility of certain log types or namespaces on the Recent Changes page.",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"RecentChangesOption": "RecentChangesOption.i18n.php"
+	},
+	"manifest_version": 2
+}

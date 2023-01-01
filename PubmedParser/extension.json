@@ -1,47 +1,59 @@
 {
-  "author": [
-    "[https://github.com/bovender Daniel Kraus (bovender)]",
-    "[https://github.com/kghbln Karsten Hoffmeyer (kghbln)]",
-    "[https://github.com/jeffw16 Jeffrey Wang (jeffw16)]"
-  ],
-  "name": "PubmedParser",
-  "type": "parserhook",
-  "url": "https://www.mediawiki.org/wiki/Extension:PubmedParser",
-  "version": "5.1",
-  "license-name": "GPL-2.0-or-later",
-  "descriptionmsg": "pubmedparser-desc",
-  "requires": {
-    "MediaWiki": ">= 1.28.0"
-  },
-  "AutoloadClasses": {
-    "PubmedParser\\Extension": "includes/PubmedParser_Extension.php",
-    "PubmedParser\\Core": "includes/PubmedParser_Core.php",
-    "PubmedParser\\Article": "includes/PubmedParser_Article.php",
-    "PubmedParser\\Helpers": "includes/PubmedParser_Helpers.php"
-  },
-  "Hooks": {
-    "ParserFirstCallInit": ["PubmedParser\\Extension::setup"],
-    "LoadExtensionSchemaUpdates": ["PubmedParser\\Extension::createTable"],
-    "UnitTestsList": ["PubmedParser\\Extension::onUnitTestsList"]
-  },
-  "ExtensionMessagesFiles": {
-    "PubmedParserMagic": "includes/PubmedParser_Magic.php"
-  },
-  "MessagesDirs": {
-    "PubmedParser": ["i18n"]
-  },
-  "ConfigRegistry": {
-    "PubmedParser": "GlobalVarConfig::newInstance"
-  },
-  "config": {
-    "PubmedParserApiKey": {
-      "value": "",
-      "description": "Optional site-wide NCBI API key to lift the rate limit."
-    },
-    "PubmedParserRemoteFetchMethod": {
-      "value": "file_get_contents",
-      "description": "Use either 'file_get_contents' (default) or 'curl' to fetch article data."
-    }
-  },
-  "manifest_version": 1
+	"author": [
+		"[https://github.com/bovender Daniel Kraus (bovender)]",
+		"[https://github.com/kghbln Karsten Hoffmeyer (kghbln)]",
+		"[https://github.com/jeffw16 Jeffrey Wang (jeffw16)]"
+	],
+	"name": "PubmedParser",
+	"type": "parserhook",
+	"url": "https://www.mediawiki.org/wiki/Extension:PubmedParser",
+	"version": "5.1",
+	"license-name": "GPL-2.0-or-later",
+	"descriptionmsg": "pubmedparser-desc",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AutoloadClasses": {
+		"PubmedParser\\Extension": "includes/PubmedParser_Extension.php",
+		"PubmedParser\\Core": "includes/PubmedParser_Core.php",
+		"PubmedParser\\Article": "includes/PubmedParser_Article.php",
+		"PubmedParser\\Helpers": "includes/PubmedParser_Helpers.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"PubmedParser\\Extension::setup"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"PubmedParser\\Extension::createTable"
+		],
+		"UnitTestsList": [
+			"PubmedParser\\Extension::onUnitTestsList"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"PubmedParserMagic": "includes/PubmedParser_Magic.php"
+	},
+	"MessagesDirs": {
+		"PubmedParser": [
+			"i18n"
+		]
+	},
+	"ConfigRegistry": {
+		"PubmedParser": "GlobalVarConfig::newInstance"
+	},
+	"config": {
+		"PubmedParserApiKey": {
+			"value": {
+				"value": "",
+				"description": "Optional site-wide NCBI API key to lift the rate limit."
+			}
+		},
+		"PubmedParserRemoteFetchMethod": {
+			"value": {
+				"value": "file_get_contents",
+				"description": "Use either 'file_get_contents' (default) or 'curl' to fetch article data."
+			}
+		}
+	},
+	"manifest_version": 2
 }

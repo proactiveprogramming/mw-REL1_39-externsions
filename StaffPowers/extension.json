@@ -35,8 +35,12 @@
 		}
 	},
 	"config": {
-		"StaffPowersStewardGroupName": "steward",
-		"StaffPowersShoutWikiMessages": true
+		"StaffPowersStewardGroupName": {
+			"value": "steward"
+		},
+		"StaffPowersShoutWikiMessages": {
+			"value": true
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

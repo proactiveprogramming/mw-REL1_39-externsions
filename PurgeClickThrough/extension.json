@@ -1,0 +1,20 @@
+{
+	"name": "PurgeClickThrough",
+	"version": "0.1",
+	"author": "Brian Wolff",
+	"url": "https://www.mediawiki.org/wiki/Extension:PurgeClickThrough",
+	"descriptionmsg": "purgeclickthrough-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"Actions": {
+		"purge": "PurgeClickThrough"
+	},
+	"MessagesDirs": {
+		"PurgeClickThrough": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

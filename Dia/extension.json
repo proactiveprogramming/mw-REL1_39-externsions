@@ -1,0 +1,44 @@
+{
+	"name": "Dia",
+	"author": "Marcel Toele, Vitaliy Filippov",
+	"url": "http://wiki.4intra.net/Dia",
+	"description": "Allows Dia diagrams to be rendered inside MediaWiki pages.",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"FileExtensions": [
+		"dia"
+	],
+	"MediaHandlers": {
+		"application/x-dia-diagram": "DiaHandler"
+	},
+	"ExtensionMessagesFiles": {
+		"Dia": "Dia.i18n.php"
+	},
+	"AutoloadClasses": {
+		"DiaHandler": "Dia.body.php"
+	},
+	"config": {
+		"DIAConverters": {
+			"value": {
+				"dia": "$path/dia -n -e $output -t $type -s $width $input"
+			}
+		},
+		"DIAConverter": {
+			"value": "dia"
+		},
+		"DIAConverterPath": {
+			"value": ""
+		},
+		"DIAMaxSize": {
+			"value": 1024
+		},
+		"XMLMimeTypes": {
+			"value": {
+				"http://www.lysator.liu.se/~alla/dia/:diagram": "application/x-dia-diagram"
+			}
+		}
+	},
+	"manifest_version": 2
+}

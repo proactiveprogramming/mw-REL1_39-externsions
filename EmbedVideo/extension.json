@@ -77,15 +77,23 @@
 		"remoteExtPath": "EmbedVideo"
 	},
 	"config": {
-		"EmbedVideoAddFileExtensions": true,
-		"EmbedVideoEnableVideoHandler": true,
-		"EmbedVideoEnableAudioHandler": true,
-		"FFprobeLocation": "/usr/bin/ffprobe"
+		"EmbedVideoAddFileExtensions": {
+			"value": true
+		},
+		"EmbedVideoEnableVideoHandler": {
+			"value": true
+		},
+		"EmbedVideoEnableAudioHandler": {
+			"value": true
+		},
+		"FFprobeLocation": {
+			"value": "/usr/bin/ffprobe"
+		}
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
 			"EmbedVideoHooks::onParserFirstCallInit"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

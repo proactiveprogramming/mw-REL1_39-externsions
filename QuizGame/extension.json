@@ -15,8 +15,12 @@
 		"MediaWiki": ">= 1.35.3"
 	},
 	"config": {
-		"CreateQuizThresholds": [],
-		"QuizLogs": true
+		"CreateQuizThresholds": {
+			"value": []
+		},
+		"QuizLogs": {
+			"value": true
+		}
 	},
 	"callback": "QuizGameHooks::onRegisterExtension",
 	"SpecialPages": {
@@ -67,20 +71,37 @@
 		"ext.quizGame": {
 			"scripts": "resources/js/QuizGame.js",
 			"messages": [
-				"quizgame-create-error-numanswers", "quizgame-create-error-noquestion",
-				"quizgame-create-error-numcorrect", "quizgame-js-reloading",
-				"quizgame-js-timesup", "quizgame-js-points",
-				"quizgame-pause-continue", "quizgame-pause-view-leaderboard",
-				"quizgame-pause-create-question", "quizgame-main-page-button",
-				"quizgame-js-loading", "quizgame-lightbox-pause-quiz",
-				"quizgame-lightbox-breakdown", "quizgame-lightbox-breakdown-percent",
-				"quizgame-lightbox-correct", "quizgame-lightbox-incorrect",
-				"quizgame-lightbox-correct-points", "quizgame-lightbox-incorrect-correct",
-				"quizgame-create-edit-picture", "quizgame-edit",
-				"quizgame-ajax-nonnumeric-answer", "quizgame-ajax-already-answered",
-				"quizgame-ajax-invalid-id", "quizgame-delete-confirm", "quizgame-delete",
-				"cancel", "quizgame-unflag", "quizgame-unflag-confirm", "quizgame-flag-confirm",
-				"quizgame-flag", "quizgame-flagged-reason",
+				"quizgame-create-error-numanswers",
+				"quizgame-create-error-noquestion",
+				"quizgame-create-error-numcorrect",
+				"quizgame-js-reloading",
+				"quizgame-js-timesup",
+				"quizgame-js-points",
+				"quizgame-pause-continue",
+				"quizgame-pause-view-leaderboard",
+				"quizgame-pause-create-question",
+				"quizgame-main-page-button",
+				"quizgame-js-loading",
+				"quizgame-lightbox-pause-quiz",
+				"quizgame-lightbox-breakdown",
+				"quizgame-lightbox-breakdown-percent",
+				"quizgame-lightbox-correct",
+				"quizgame-lightbox-incorrect",
+				"quizgame-lightbox-correct-points",
+				"quizgame-lightbox-incorrect-correct",
+				"quizgame-create-edit-picture",
+				"quizgame-edit",
+				"quizgame-ajax-nonnumeric-answer",
+				"quizgame-ajax-already-answered",
+				"quizgame-ajax-invalid-id",
+				"quizgame-delete-confirm",
+				"quizgame-delete",
+				"cancel",
+				"quizgame-unflag",
+				"quizgame-unflag-confirm",
+				"quizgame-flag-confirm",
+				"quizgame-flag",
+				"quizgame-flagged-reason",
 				"quizgame-edit-picture-link"
 			],
 			"dependencies": [
@@ -131,5 +152,5 @@
 			"quizadmin": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

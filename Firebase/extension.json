@@ -1,0 +1,34 @@
+{
+	"name": "Firebase",
+	"version": "1.0",
+	"author": "Benny Lichtner",
+	"url": "https://www.mediawiki.org/wiki/Extension:Firebase",
+	"description": "This extension allows wiki pages to read live data from Firebase references",
+	"descriptionmsg": "firebase-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"Firebase": "Firebase.i18n.php"
+	},
+	"AutoloadClasses": {
+		"FirebaseHooks": "Firebase.hooks.php"
+	},
+	"ResourceModules": {
+		"ext.Firebase": {
+			"scripts": "modules/ext.Firebase.js",
+			"styles": "modules/ext.Firebase.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Firebase"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "FirebaseHooks::onBeforePageDisplay",
+		"ParserFirstCallInit": "FirebaseHooks::onParserFirstCallInit",
+		"ParserBeforeStrip": "FirebaseHooks::onParserBeforeStrip"
+	},
+	"manifest_version": 2
+}

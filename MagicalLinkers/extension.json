@@ -5,20 +5,26 @@
 	"descriptionmsg": "magicallinkers-desc",
 	"license-name": "GPL-2.0",
 	"type": "parserhook",
-	"ConfigRegistry": {
-	},
+	"ConfigRegistry": [],
 	"ExtensionFunctions": [
-        "MagicalLinkers::performInit"
+		"MagicalLinkers::performInit"
 	],
 	"AutoloadClasses": {
-        "MagicalLinkers": "MagicalLinkers.php"
+		"MagicalLinkers": "MagicalLinkers.php"
 	},
 	"Hooks": {
-        "ParserBeforeTidy": "MagicalLinkers::parserBeforeTidyHook"
+		"ParserBeforeTidy": "MagicalLinkers::parserBeforeTidyHook"
 	},
 	"config": {
-        "wgMagicalClassic": false,
-        "wgMagicalLinkers": []
+		"wgMagicalClassic": {
+			"value": false
+		},
+		"wgMagicalLinkers": {
+			"value": []
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

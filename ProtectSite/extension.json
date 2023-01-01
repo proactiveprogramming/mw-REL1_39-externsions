@@ -15,9 +15,15 @@
 		"MediaWiki": ">= 1.31.0"
 	},
 	"config": {
-		"ProtectSiteExempt": [],
-		"ProtectsiteDefaultTimeout": "1 hour",
-		"ProtectSiteLimit": "1 week"
+		"ProtectSiteExempt": {
+			"value": []
+		},
+		"ProtectsiteDefaultTimeout": {
+			"value": "1 hour"
+		},
+		"ProtectSiteLimit": {
+			"value": "1 week"
+		}
 	},
 	"SpecialPages": {
 		"ProtectSite": "ProtectSite"
@@ -45,5 +51,5 @@
 	"ExtensionFunctions": [
 		"ProtectSite::setup"
 	],
-	"manifest_version": 1
+	"manifest_version": 2
 }

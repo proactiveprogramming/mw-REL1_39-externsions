@@ -1,0 +1,37 @@
+{
+	"name": "PhpTags Storage",
+	"version": "0.1.1",
+	"author": "[https://www.mediawiki.org/wiki/User:Pastakhov Pavel Astakhov]",
+	"url": "https://www.mediawiki.org/wiki/Extension:PhpTags_Storage",
+	"descriptionmsg": "phptagsstorage-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "phptags",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"PhpTagsStorage": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"PhpTagsStorageHooks": "PhpTagsStorage.hooks.php",
+		"PhpTagsObjects\\Storage": "includes/Storage.php",
+		"PhpTagsObjects\\PageData": "includes/PageData.php",
+		"PhpTagsStorage\\Schema": "includes/Storage/Schema.php",
+		"PhpTagsStorage\\SchemaUpdate": "includes/Storage/SchemaUpdate.php",
+		"PhpTagsStorage\\PageDataUpdate": "includes/Storage/PageDataUpdate.php",
+		"PhpTagsStorage\\PageTemplatesUpdate": "includes/Storage/PageTemplatesUpdate.php",
+		"PhpTagsStorage\\Field": "includes/Storage/Field.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "PhpTagsStorageHooks::onParserFirstCallInit",
+		"PhpTagsRuntimeFirstInit": "PhpTagsStorageHooks::onPhpTagsRuntimeFirstInit",
+		"LoadExtensionSchemaUpdates": "PhpTagsStorageHooks::onLoadExtensionSchemaUpdates",
+		"SecondaryDataUpdates": "PhpTagsStorageHooks::onSecondaryDataUpdates",
+		"WikiPageDeletionUpdates": "PhpTagsStorageHooks::onWikiPageDeletionUpdates",
+		"UnitTestsList": "PhpTagsStorageHooks::onUnitTestsList",
+		"ParserTestTables": "PhpTagsStorageHooks::onParserTestTables"
+	},
+	"manifest_version": 2
+}

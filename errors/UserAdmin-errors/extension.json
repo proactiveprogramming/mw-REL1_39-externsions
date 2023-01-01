@@ -1,0 +1,42 @@
+{
+	"name": "User Administration",
+	"version": "0.9.2",
+	"author": "Lance Gatlin",
+	"url": "http://www.mediawiki.org/w/index.php?title=Extension:UserAdmin",
+	"descriptionmsg": "useradmin-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"LogActionsHandlers": {
+		"rights/uadm-changeduserpasswordlog": "UADMLogActionHandler::logActionHandler",
+		"rights/uadm-changeduseremaillog": "UADMLogActionHandler::logActionHandler",
+		"rights/uadm-changedusernamelog": "UADMLogActionHandler::logActionHandler",
+		"rights/uadm-changeduserrealnamelog": "UADMLogActionHandler::logActionHandler",
+		"rights/uadm-emailpasswordlog": "UADMLogActionHandler::logActionHandler",
+		"rights/uadm-emailwelcomelog": "UADMLogActionHandler::logActionHandler",
+		"rights/uadm-userspurgedlog": "UADMLogActionHandler::logActionHandler"
+	},
+	"SpecialPages": {
+		"UserAdmin": "SpecialUserAdminPanel",
+		"AddUser": "SpecialAddUser",
+		"PurgeUser": "SpecialPurgeUser",
+		"EditUser": "SpecialEditUser"
+	},
+	"ExtensionMessagesFiles": {
+		"UserAdmin": "UserAdmin.i18n.php"
+	},
+	"AutoloadClasses": {
+		"SpecialUserAdminPanel": "SpecialUserAdminPanel.class.php",
+		"SpecialAddUser": "SpecialAddUser.class.php",
+		"SpecialPurgeUser": "SpecialPurgeUser.class.php",
+		"MWPurge_1_16": "MWPurge_1_16.class.php",
+		"MWPurge": "MWPurge.class.php",
+		"SpecialMassBlock": "SpecialMassBlock.class.php",
+		"SpecialEditUser": "SpecialEditUser.class.php",
+		"SpecialUADMBase": "SpecialUADMBase.class.php",
+		"UADMLogActionHandler": "UserAdminLogActionHandler.class.php"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

@@ -29,5 +29,5 @@
 		"FormField": "includes/FormField.php",
 		"SpecialForm": "includes/specials/SpecialForm.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

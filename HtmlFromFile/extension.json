@@ -1,0 +1,20 @@
+{
+	"name": "htmlfromfile",
+	"version": "1.0",
+	"author": "Constantin Berhard",
+	"url": "https://gitlab.com/Thunis/HtmlFromFile",
+	"description": "Allows for inclusion of raw html from local files on the server (and accidentally also remote files via https)",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "HtmlFromFile::onParserSetup"
+	},
+	"config": {
+		"HtmlFromFileMappings": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}

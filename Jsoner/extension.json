@@ -1,31 +1,36 @@
-{	"name": "Jsoner",
+{
+	"name": "Jsoner",
 	"version": "1.1.9",
 	"author": [
-      "Jonas Gröger ([mailto:jonas.groeger@noris.de Mail], [https://noris.de Web])",
-	  "Andreas Fink ([mailto:andreas.fink@noris.de Mail], [https://noris.de Web])"
+		"Jonas Gröger ([mailto:jonas.groeger@noris.de Mail], [https://noris.de Web])",
+		"Andreas Fink ([mailto:andreas.fink@noris.de Mail], [https://noris.de Web])"
 	],
 	"url": "https://github.com/noris-network/jsoner",
 	"descriptionmsg": "jsoner-desc",
 	"license-name": "GPL-3.0",
 	"type": "parserhook",
 	"config": {
-		"_prefix": "jsoner",
-		"BaseUrl": null,
-		"User": null,
-		"Pass": null
+		"BaseUrl": {
+			"value": null
+		},
+		"User": {
+			"value": null
+		},
+		"Pass": {
+			"value": null
+		}
 	},
+	"config_prefix": "jsoner",
 	"ConfigRegistry": {
 		"jsoner": "JsonerHooks::buildConfig"
 	},
 	"AutoloadClasses": {
 		"JsonerHooks": "Jsoner.hooks.php",
-
 		"jsoner\\exceptions\\CurlException": "src/exceptions/CurlException.php",
 		"jsoner\\exceptions\\FilterException": "src/exceptions/FilterException.php",
 		"jsoner\\exceptions\\HttpUriFormatException": "src/exceptions/HttpUriFormatException.php",
 		"jsoner\\exceptions\\ParserException": "src/exceptions/ParserException.php",
 		"jsoner\\exceptions\\TransformerException": "src/exceptions/TransformerException.php",
-
 		"jsoner\\filter\\CensorKeysFilter": "src/filter/CensorKeysFilter.php",
 		"jsoner\\filter\\Filter": "src/filter/Filter.php",
 		"jsoner\\filter\\FilterHelper": "src/filter/FilterHelper.php",
@@ -34,7 +39,6 @@
 		"jsoner\\filter\\SelectKeysFilter": "src/filter/SelectKeysFilter.php",
 		"jsoner\\filter\\SelectSubtreeFilter": "src/filter/SelectSubtreeFilter.php",
 		"jsoner\\filter\\SelectRecordFilter": "src/filter/SelectRecordFilter.php",
-
 		"jsoner\\transformer\\AbstractTransformer": "src/transformer/AbstractTransformer.php",
 		"jsoner\\transformer\\InlineListTransformer": "src/transformer/InlineListTransformer.php",
 		"jsoner\\transformer\\JsonDumpTransformer": "src/transformer/JsonDumpTransformer.php",
@@ -44,8 +48,7 @@
 		"jsoner\\transformer\\Transformer": "src/transformer/Transformer.php",
 		"jsoner\\transformer\\WikitextTransformer": "src/transformer/WikitextTransformer.php",
 		"jsoner\\transformer\\MediaWikiTemplateTransformer": "src/transformer/MediaWikiTemplateTransformer.php",
-    	"jsoner\\transformer\\MediaWikiTemplateTransformerAnonymous": "src/transformer/MediaWikiTemplateTransformerAnonymous.php",
-
+		"jsoner\\transformer\\MediaWikiTemplateTransformerAnonymous": "src/transformer/MediaWikiTemplateTransformerAnonymous.php",
 		"jsoner\\Config": "src/Config.php",
 		"jsoner\\FilterRegistry": "src/FilterRegistry.php",
 		"jsoner\\Helper": "src/Helper.php",
@@ -70,5 +73,8 @@
 	"ResourceFileModulePaths": {
 		"remoteExtPath": "Jsoner"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

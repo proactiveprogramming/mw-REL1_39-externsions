@@ -14,7 +14,9 @@
 	},
 	"callback": "Git2PagesHooks::setGit2PagesDataDir",
 	"config": {
-		"Git2PagesDataDir": null
+		"Git2PagesDataDir": {
+			"value": null
+		}
 	},
 	"MessagesDirs": {
 		"Git2Pages": [
@@ -31,5 +33,5 @@
 		"Git2PagesHooks": "Git2Pages.body.php",
 		"GitRepository": "GitRepository.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

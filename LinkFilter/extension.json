@@ -15,27 +15,31 @@
 	},
 	"config": {
 		"LinkFilterTypes": {
-			"1": "Arrest Report",
-			"2": "Awesome",
-			"3": "Cool",
-			"4": "Funny",
-			"6": "Interesting",
-			"7": "Obvious",
-			"8": "OMG WTF?!?",
-			"9": "Rumor",
-			"10": "Scary",
-			"11": "Stupid"
+			"value": {
+				"1": "Arrest Report",
+				"2": "Awesome",
+				"3": "Cool",
+				"4": "Funny",
+				"6": "Interesting",
+				"7": "Obvious",
+				"8": "OMG WTF?!?",
+				"9": "Rumor",
+				"10": "Scary",
+				"11": "Stupid"
+			}
 		},
 		"LinkPageDisplay": {
-			"leftcolumn": true,
-			"rightcolumn": false,
-			"author": true,
-			"left_ad": false,
-			"popular_articles": false,
-			"in_the_news": false,
-			"comments_of_day": true,
-			"games": true,
-			"new_links": false
+			"value": {
+				"leftcolumn": true,
+				"rightcolumn": false,
+				"author": true,
+				"left_ad": false,
+				"popular_articles": false,
+				"in_the_news": false,
+				"comments_of_day": true,
+				"games": true,
+				"new_links": false
+			}
 		}
 	},
 	"SpecialPages": {
@@ -107,9 +111,12 @@
 				"mediawiki.util"
 			],
 			"messages": [
-				"linkfilter-admin-accept-success", "linkfilter-admin-reject-success",
-				"linkfilter-submit-no-title", "linkfilter-submit-no-type",
-				"linkfilter-submit-no-desc", "linkfilter-submit-no-url"
+				"linkfilter-admin-accept-success",
+				"linkfilter-admin-reject-success",
+				"linkfilter-submit-no-title",
+				"linkfilter-submit-no-type",
+				"linkfilter-submit-no-desc",
+				"linkfilter-submit-no-url"
 			]
 		}
 	},
@@ -127,5 +134,5 @@
 			"linkadmin": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

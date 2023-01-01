@@ -37,7 +37,9 @@
 		"TopTenPagesHooks": "includes/TopTenPagesHooks.php"
 	},
 	"config": {
-		"TopTenPagesStartAtOne": false
+		"TopTenPagesStartAtOne": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

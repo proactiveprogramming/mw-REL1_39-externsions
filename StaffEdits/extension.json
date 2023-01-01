@@ -11,7 +11,9 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"config": {
-		"StaffEditsMessagePrefix": "sw"
+		"StaffEditsMessagePrefix": {
+			"value": "sw"
+		}
 	},
 	"MessagesDirs": {
 		"StaffEdits": [
@@ -43,5 +45,5 @@
 			"staffedit": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -17,8 +17,10 @@
 		"UploadVerification": "UploadBlacklistHooks::onUploadVerification"
 	},
 	"config": {
-		"_prefix": "ub",
-		"UploadBlacklist": false
+		"UploadBlacklist": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"config_prefix": "ub",
+	"manifest_version": 2
 }

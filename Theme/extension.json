@@ -14,7 +14,9 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"config": {
-		"DefaultTheme": "default"
+		"DefaultTheme": {
+			"value": "default"
+		}
 	},
 	"MessagesDirs": {
 		"Theme": [
@@ -22,8 +24,16 @@
 		]
 	},
 	"ThemeModules": {
-		"monobook": [ "dark", "pink", "stellarbook" ],
-		"vector": [ "dark", "dark-grey", "deepsea" ]
+		"monobook": [
+			"dark",
+			"pink",
+			"stellarbook"
+		],
+		"vector": [
+			"dark",
+			"dark-grey",
+			"deepsea"
+		]
 	},
 	"APIModules": {
 		"themelist": {
@@ -45,7 +55,9 @@
 				"oojs-ui-core",
 				"user.options"
 			],
-			"messages": [ "theme-livepreview-note" ]
+			"messages": [
+				"theme-livepreview-note"
+			]
 		},
 		"themeloader.skins.monobook.dark": {
 			"styles": {
@@ -130,5 +142,5 @@
 			]
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

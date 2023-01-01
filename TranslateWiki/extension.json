@@ -24,13 +24,22 @@
 		"TranslationCache": "includes/TranslationCache.php"
 	},
 	"config": {
-		"TranslateWikiNamespaces": [ 0 ],
-		"TranslateWikiLanguages": []
+		"TranslateWikiNamespaces": {
+			"value": [
+				0
+			]
+		},
+		"TranslateWikiLanguages": {
+			"value": []
+		}
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": [
 			"TranslateWikiHooks::onLoadExtensionSchemaUpdates"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

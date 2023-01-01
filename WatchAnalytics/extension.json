@@ -187,39 +187,71 @@
 			"WatchAnalyticsUpdaterHooks::addSchemaUpdates"
 		]
 	},
-	"LogTypes": [ "pendingreviews" ],
+	"LogTypes": [
+		"pendingreviews"
+	],
 	"LogNames": {
-			"pendingreviews": "pendingreviews"
+		"pendingreviews": "pendingreviews"
 	},
 	"LogHeaders": {
-			"pendingreviews": "pendingreviews-header"
+		"pendingreviews": "pendingreviews-header"
 	},
 	"LogActionsHandlers": {
-			"pendingreviews/*": "LogFormatter"
+		"pendingreviews/*": "LogFormatter"
 	},
 	"config": {
-		"_prefix": "eg",
-		"WatchAnalyticsPageCounter": false,
-		"WatchAnalyticsShowUnreviewDiff": true,
-		"PendingReviewMaxDiffChar": 3500,
-		"PendingReviewMaxDiffRows": 15,
-		"PendingReviewsEmphasizeDays": 7,
-		"PendingReviewsRedPagesThreshold": 2,
-		"PendingReviewsOrangePagesThreshold": 4,
-		"PendingReviewsNumberWatchSuggestions": 20,
-		"PendingReviewsShowWatchSuggestionsIfReviewsUnder": 5,
-		"WatchAnalyticsPageScoreNamespaces": [0, 1],
+		"WatchAnalyticsPageCounter": {
+			"value": false
+		},
+		"WatchAnalyticsShowUnreviewDiff": {
+			"value": true
+		},
+		"PendingReviewMaxDiffChar": {
+			"value": 3500
+		},
+		"PendingReviewMaxDiffRows": {
+			"value": 15
+		},
+		"PendingReviewsEmphasizeDays": {
+			"value": 7
+		},
+		"PendingReviewsRedPagesThreshold": {
+			"value": 2
+		},
+		"PendingReviewsOrangePagesThreshold": {
+			"value": 4
+		},
+		"PendingReviewsNumberWatchSuggestions": {
+			"value": 20
+		},
+		"PendingReviewsShowWatchSuggestionsIfReviewsUnder": {
+			"value": 5
+		},
+		"WatchAnalyticsPageScoreNamespaces": {
+			"value": [
+				0,
+				1
+			]
+		},
 		"WatchAnalyticsWatchQualityColors": {
-			"50" : "plaid",
-			"5" : "excellent",
-			"1.5" : "okay",
-			"_merge_strategy": "array_plus"
+			"value": {
+				"50": "plaid",
+				"5": "excellent",
+				"1.5": "okay"
+			},
+			"merge_strategy": "array_plus"
 		},
 		"WatchAnalyticsReviewStatusColors": {
-			"5" : "excellent",
-			"3" : "okay",
-			"_merge_strategy": "array_plus"
+			"value": {
+				"5": "excellent",
+				"3": "okay"
+			},
+			"merge_strategy": "array_plus"
 		}
 	},
-	"manifest_version": 1
+	"config_prefix": "eg",
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

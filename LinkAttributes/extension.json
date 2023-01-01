@@ -1,0 +1,39 @@
+{
+	"name": "LinkAttributes",
+	"version": "0.5",
+	"author": [
+		"Stano Lacko, Leo Wallentin",
+		"Sinscerly"
+	],
+	"url": "http://www.mediawiki.org/wiki/Extension:LinkAttributes",
+	"descriptionmsg": "linkattr-desc",
+	"license-name": "BSD",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"LinkAttributes": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"LinkAttributes": "LinkAttributes.body.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Minerva\\Hooks::onBeforePageDisplay",
+		"ResourceLoaderRegisterModules": "MediaWiki\\Minerva\\Hooks::onResourceLoaderRegisterModules",
+		"SkinPageReadyConfig": "MediaWiki\\Minerva\\Hooks::onSkinPageReadyConfig",
+		"UserLogoutComplete": "MediaWiki\\Minerva\\Hooks::onUserLogoutComplete",
+		"FetchChangesList": "MediaWiki\\Minerva\\Hooks::onFetchChangesList",
+		"MobileFrontendBeforeDOM": "MediaWiki\\Minerva\\Hooks::onMobileFrontendBeforeDOM",
+		"MobileFrontendFeaturesRegistration": "MediaWiki\\Minerva\\Hooks::onMobileFrontendFeaturesRegistration",
+		"RequestContextCreateSkinMobile": "MediaWiki\\Minerva\\Hooks::onRequestContextCreateSkinMobile",
+		"SpecialPageBeforeExecute": "MediaWiki\\Minerva\\Hooks::onSpecialPageBeforeExecute",
+		"ResourceLoaderGetConfigVars": "MediaWiki\\Minerva\\Hooks::onResourceLoaderGetConfigVars",
+		"OutputPageBodyAttributes": "MediaWiki\\Minerva\\Hooks::onOutputPageBodyAttributes",
+		"LinkerMakeExternalLink": "LinkAttributes::ExternalLink",
+		"HtmlPageLinkRendererEnd": "LinkAttributes::InternalLink"
+	},
+	"manifest_version": 2
+}

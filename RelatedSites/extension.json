@@ -30,7 +30,9 @@
 		"relatedsites-tracking-category"
 	],
 	"config": {
-		"RelatedSitesPrefixes": []
+		"RelatedSitesPrefixes": {
+			"value": []
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

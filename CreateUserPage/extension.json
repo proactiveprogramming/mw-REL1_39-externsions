@@ -24,9 +24,15 @@
 		"OutputPageParserOutput": "CreateUserPageHooks::onOutputPageParserOutput"
 	},
 	"config": {
-		"CreateUserPage_PageContent": "{{User}}",
-		"CreateUserPage_OnLogin": true,
-		"CreateUserPage_AutoCreateUser": null
+		"CreateUserPage_PageContent": {
+			"value": "{{User}}"
+		},
+		"CreateUserPage_OnLogin": {
+			"value": true
+		},
+		"CreateUserPage_AutoCreateUser": {
+			"value": null
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

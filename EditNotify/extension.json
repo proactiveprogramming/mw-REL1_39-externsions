@@ -30,8 +30,12 @@
 		"EchoEditNotifyTemplateFormatter": "includes/formatters/EchoEditNotifyTemplateFormatter.php"
 	},
 	"config": {
-		"EditNotifyEnableFoo": true,
-		"EditNotifyAlerts": []
+		"EditNotifyEnableFoo": {
+			"value": true
+		},
+		"EditNotifyAlerts": {
+			"value": []
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"EditNotifyAlias": "EditNotify.i18n.alias.php"
@@ -59,5 +63,5 @@
 		"localBasePath": "",
 		"remoteExtPath": "EditNotify"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

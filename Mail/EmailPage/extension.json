@@ -1,0 +1,63 @@
+{
+	"name": "EmailPage",
+	"version": "2.5.1, 2021-02-13",
+	"author": [
+		"[http://www.organicdesign.co.nz/aran Aran Dunkley]",
+		"[http://absorto.dev/ Igor Absorto]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:EmailPage",
+	"descriptionmsg": "ea-desc",
+	"license-name": "GPL-2.0+",
+	"type": "specialpage",
+	"callback": "EmailPage::onRegistration",
+	"AutoloadClasses": {
+		"EmailPage": "EmailPage_body.php",
+		"SpecialEmailPage": "SpecialEmailPage.php"
+	},
+	"config": {
+		"EmailPageGroup": {
+			"value": "sysop"
+		},
+		"EmailPageCss": {
+			"value": false
+		},
+		"EmailPageAllowRemoteAddr": {
+			"value": [
+				"127.0.0.1"
+			]
+		},
+		"EmailPageAllowAllUsers": {
+			"value": false
+		},
+		"EmailPageToolboxLink": {
+			"value": true
+		},
+		"EmailPageActionLink": {
+			"value": true
+		},
+		"EmailPageSepPattern": {
+			"value": "|[\r\n ,;*]+|"
+		},
+		"EmailPageNoLinks": {
+			"value": false
+		},
+		"EmailPageCharSet": {
+			"value": "utf-8"
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"EmailPageAlias": "EmailPage.alias.php"
+	},
+	"MessagesDirs": {
+		"EmailPage": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+		"EmailPage": "SpecialEmailPage"
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
+}

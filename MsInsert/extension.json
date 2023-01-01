@@ -37,7 +37,9 @@
 		"EditPage::showEditForm:initial": "MsInsert::start"
 	},
 	"config": {
-		"Templates": []
+		"Templates": {
+			"value": []
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -57,12 +57,18 @@
 		"welcomeexempt"
 	],
 	"config": {
-		"HAWelcomeWelcomeUsername": "ShoutWiki",
-		"HAWelcomeStaffGroupName": "staff",
-		"HAWelcomeSignatureFromPreferences": false
+		"HAWelcomeWelcomeUsername": {
+			"value": "ShoutWiki"
+		},
+		"HAWelcomeStaffGroupName": {
+			"value": "staff"
+		},
+		"HAWelcomeSignatureFromPreferences": {
+			"value": false
+		}
 	},
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

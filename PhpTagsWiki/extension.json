@@ -36,9 +36,15 @@
 		"LoadExtensionSchemaUpdates": "PhpTagsWikiHooks::onLoadExtensionSchemaUpdates"
 	},
 	"config": {
-		"PhpTagsWikiExtract": false,
-		"PhpTagsWikiExtractAnything": false,
-		"PhpTagsWikiExtractOnParserOutput": false
+		"PhpTagsWikiExtract": {
+			"value": false
+		},
+		"PhpTagsWikiExtractAnything": {
+			"value": false
+		},
+		"PhpTagsWikiExtractOnParserOutput": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -15,18 +15,20 @@
 		"EPSGIO": "includes/epsg.php"
 	},
 	"config": {
-		"EPSGEnableFoo": true,
-		"EPSG_URL": "https://epsg.io/trans"
+		"EPSGEnableFoo": {
+			"value": true
+		},
+		"EPSG_URL": {
+			"value": "https://epsg.io/trans"
+		}
 	},
 	"ConfigRegistry": {
 		"EPSG": "GlobalVarConfig::newInstance"
 	},
 	"ExtensionMessagesFiles": {
-		"EPSGAlias": "EPSG.i18n.alias.php",
-    "EPSGAlias": "EPSG.i18n.magic.php"
+		"EPSGAlias": "EPSG.i18n.magic.php"
 	},
 	"Hooks": {
-
 		"ParserFirstCallInit": [
 			"EPSGHooks::onParserFirstCallInit"
 		]
@@ -50,7 +52,9 @@
 	},
 	"SpecialPages": {
 		"EPSGTest": "SpecialEPSGTest"
-
-        },
-	"manifest_version": 1
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

@@ -31,9 +31,9 @@
 	},
 	"ResourceModules": {
 		"ext.slideshow.main": {
-			"dependencies":[
-                "mediawiki.jqueryMsg"
-        	],
+			"dependencies": [
+				"mediawiki.jqueryMsg"
+			],
 			"scripts": [
 				"js/slideshow.js"
 			],
@@ -55,5 +55,5 @@
 			"JavascriptSlideshowHooks::wfSlideshowExtension"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

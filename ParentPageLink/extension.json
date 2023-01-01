@@ -1,0 +1,18 @@
+{
+	"name": "ParentPageLink",
+	"version": "0.057",
+	"author": "Jesse B. Dooley",
+	"url": "http://www.mediawiki.org/wiki/Extension:ParentPageLink",
+	"description": "Adds a Parent Article Link",
+	"descriptionmsg": "Adds a Parent Article Link as boilerplate",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"Hooks": {
+		"EditPage::showEditForm:initial": [
+			"ParentPageLink"
+		]
+	},
+	"manifest_version": 2
+}

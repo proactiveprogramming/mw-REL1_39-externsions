@@ -13,7 +13,9 @@
 		"MediaWiki": ">= 1.39.0"
 	},
 	"config": {
-		"AbsenteeLandlordMaxDays": 90
+		"AbsenteeLandlordMaxDays": {
+			"value": 90
+		}
 	},
 	"MessagesDirs": {
 		"AbsenteeLandlord": [
@@ -28,5 +30,5 @@
 		"BeforePageDisplay": "AbsenteeLandlord::maybeDoTouch",
 		"MediaWikiServices": "AbsenteeLandlord::onMediaWikiServices"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

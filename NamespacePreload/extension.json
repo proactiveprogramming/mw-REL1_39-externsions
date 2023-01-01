@@ -1,24 +1,33 @@
 {
-  "name": "NamespacePreload",
-  "author": "Ostrzyciel",
-  "license-name": "GPL-2.0-or-later",
-  "version": "1.2.0",
-  "namemsg": "namespacePreload",
-  "descriptionmsg": "namespacePreload-desc",
-  "url": "https://www.mediawiki.org/wiki/Extension:NamespacePreload",
-  "manifest_version": 1,
-  "MessagesDirs": {
-	"NamespacePreload": [ "i18n" ]
-  },
-  "AutoloadClasses": {
-	"NamespacePreloadHooks": "includes/NamespacePreloadHooks.php"
-  },
-  "Hooks": {
-	"EditFormPreloadText": "NamespacePreloadHooks::onEditFormPreloadText"
-  },
-  "config": {
-    "NamespacePreloadDoPreSaveTransform": false,
-    "NamespacePreloadDoExpansion": true
-  },
-  "type": "other"
+	"name": "NamespacePreload",
+	"author": "Ostrzyciel",
+	"license-name": "GPL-2.0-or-later",
+	"version": "1.2.0",
+	"namemsg": "namespacePreload",
+	"descriptionmsg": "namespacePreload-desc",
+	"url": "https://www.mediawiki.org/wiki/Extension:NamespacePreload",
+	"manifest_version": 2,
+	"MessagesDirs": {
+		"NamespacePreload": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NamespacePreloadHooks": "includes/NamespacePreloadHooks.php"
+	},
+	"Hooks": {
+		"EditFormPreloadText": "NamespacePreloadHooks::onEditFormPreloadText"
+	},
+	"config": {
+		"NamespacePreloadDoPreSaveTransform": {
+			"value": false
+		},
+		"NamespacePreloadDoExpansion": {
+			"value": true
+		}
+	},
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

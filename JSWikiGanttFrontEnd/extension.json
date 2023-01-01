@@ -3,18 +3,21 @@
 	"version": "1.0.0",
 	"author": [
 		"Muhammad Taseer",
-        	"Maciej 'Nux' Jaros"
+		"Maciej 'Nux' Jaros"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:JSGanttFrontEnd",
 	"descriptionmsg": "This extension complements JSWikiGantt; gives a nice user interface to edit tasks right on the wiki",
 	"license-name": "BSD 2-clause",
 	"AutoloadClasses": {
-        	"LoadJS": "loading.php"
+		"LoadJS": "loading.php"
 	},
-    "Hooks": {
-        "BeforePageDisplay": [
-            "LoadJS::setup"
-        ]
-    },
-	"manifest_version": 1
+	"Hooks": {
+		"BeforePageDisplay": [
+			"LoadJS::setup"
+		]
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

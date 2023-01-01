@@ -1,31 +1,33 @@
 {
 	"name": "TimelineStats",
 	"version": "0.1",
-	"author": ["Serge I. Zolotukhin"],
+	"author": [
+		"Serge I. Zolotukhin"
+	],
 	"url": "",
 	"description": "Timeline statistics instead of original Mediawiki special page.",
 	"descriptionmsg": "timelinestats-desc",
 	"license-name": "MIT",
 	"type": "",
-
 	"MessagesDirs": {
-		"timelinestats": ["i18n"]
+		"timelinestats": [
+			"i18n"
+		]
 	},
-
 	"AutoloadClasses": {
 		"TimelineStats": "TimelineStats.php",
 		"TimelineStatsHooks": "TimelineStatsHooks.php",
 		"SpecialTimelineStats": "specials/SpecialTimelineStats.php",
 		"TimelineStatsUpdateMaintenance": "maintenance/update.php"
 	},
-	
 	"SpecialPages": {
 		"TimelineStats": "SpecialTimelineStats"
 	},
-
 	"ResourceModules": {
 		"ext.TimelineStats.js": {
-			"scripts": [ "modules/TimelineStats.js" ],
+			"scripts": [
+				"modules/TimelineStats.js"
+			],
 			"messages": [
 				"timelinestats-users-total",
 				"timelinestats-users-active",
@@ -35,22 +37,27 @@
 			]
 		},
 		"ext.TimelineStats.css": {
-			"styles": [ "modules/TimelineStats.css" ],
+			"styles": [
+				"modules/TimelineStats.css"
+			],
 			"position": "top",
-			"targets": [ "desktop", "mobile" ]
+			"targets": [
+				"desktop",
+				"mobile"
+			]
 		}
 	},
-
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": [
 			"TimelineStatsHooks::onLoadExtensionSchemaUpdates"
 		]
 	},
-
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteExtPath": "TimelineStats"
 	},
-
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

@@ -245,21 +245,49 @@
 		"remoteExtPath": "LiveChat/modules"
 	},
 	"config": {
-		"LiveChatPidPath": "/tmp",
-		"LiveChatSystemUser": "",
-		"LiveChatSystemGroup": "",
-		"LiveChatLogFile": "",
-		"LiveChatDebugLogFile": "",
-		"LiveChatManagerSocketName": "tcp://127.0.0.1:2345",
-		"LiveChatStorageSocketName": "tcp://127.0.0.1:2344",
-		"LiveChatServerAddress": "0.0.0.0",
-		"LiveChatServerPort": "2346",
-		"LiveChatServerThreads": 1,
-		"LiveChatClientDomain": "",
-		"LiveChatClientPort": "2346",
-		"LiveChatClientPath": "",
-		"LiveChatClientTLS": false
+		"LiveChatPidPath": {
+			"value": "/tmp"
+		},
+		"LiveChatSystemUser": {
+			"value": ""
+		},
+		"LiveChatSystemGroup": {
+			"value": ""
+		},
+		"LiveChatLogFile": {
+			"value": ""
+		},
+		"LiveChatDebugLogFile": {
+			"value": ""
+		},
+		"LiveChatManagerSocketName": {
+			"value": "tcp://127.0.0.1:2345"
+		},
+		"LiveChatStorageSocketName": {
+			"value": "tcp://127.0.0.1:2344"
+		},
+		"LiveChatServerAddress": {
+			"value": "0.0.0.0"
+		},
+		"LiveChatServerPort": {
+			"value": "2346"
+		},
+		"LiveChatServerThreads": {
+			"value": 1
+		},
+		"LiveChatClientDomain": {
+			"value": ""
+		},
+		"LiveChatClientPort": {
+			"value": "2346"
+		},
+		"LiveChatClientPath": {
+			"value": ""
+		},
+		"LiveChatClientTLS": {
+			"value": false
+		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

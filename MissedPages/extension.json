@@ -35,10 +35,17 @@
 	},
 	"ResourceModules": {
 		"ext.missedpages": {
-			"styles": [ "resources/ext.missedpages.less" ],
-			"scripts": [ "resources/ext.missedpages.js" ],
+			"styles": [
+				"resources/ext.missedpages.less"
+			],
+			"scripts": [
+				"resources/ext.missedpages.js"
+			],
 			"messages": [],
-			"dependencies": [ "mediawiki.widgets", "oojs-ui-core" ]
+			"dependencies": [
+				"mediawiki.widgets",
+				"oojs-ui-core"
+			]
 		}
 	},
 	"SpecialPages": {
@@ -48,5 +55,5 @@
 		"localBasePath": "",
 		"remoteExtPath": "MissedPages"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

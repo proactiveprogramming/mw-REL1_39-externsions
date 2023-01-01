@@ -34,8 +34,12 @@
 		"EditPage::showEditForm:initial": "MsWikiEditor::init"
 	},
 	"config": {
-		"MSWE_add": [],
-		"MSWE_remove": []
+		"MSWE_add": {
+			"value": []
+		},
+		"MSWE_remove": {
+			"value": []
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

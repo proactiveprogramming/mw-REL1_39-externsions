@@ -1,0 +1,15 @@
+{
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "SyntaxHighlighter::setHooks"
+	},
+	"config": {
+		"SyntaxHighlighterOptions": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}

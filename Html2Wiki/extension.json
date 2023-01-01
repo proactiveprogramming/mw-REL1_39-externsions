@@ -67,10 +67,14 @@
 		"remoteExtPath": "Html2Wiki/"
 	},
 	"config": {
-		"H2WEliminateDuplicateImages": false,
-		"H2WProcessImages": true
+		"H2WEliminateDuplicateImages": {
+			"value": false
+		},
+		"H2WProcessImages": {
+			"value": true
+		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"callback": "SpecialHtml2Wiki::checkEnvironment"
 }

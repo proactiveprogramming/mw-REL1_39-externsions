@@ -17,11 +17,21 @@
 		"SpecialGetDocbook": "SpecialGetDocbook.php"
 	},
 	"config": {
-		"DocbookExportPandocServerPath": "",
-		"DocbookDownloadServerPath": "",
-		"DocBookExportXSLRepository": "",
-		"DocBookExportImportXSLRepoPathPDF": "",
-		"DocBookExportImportXSLRepoPathHTML": ""
+		"DocbookExportPandocServerPath": {
+			"value": ""
+		},
+		"DocbookDownloadServerPath": {
+			"value": ""
+		},
+		"DocBookExportXSLRepository": {
+			"value": ""
+		},
+		"DocBookExportImportXSLRepoPathPDF": {
+			"value": ""
+		},
+		"DocBookExportImportXSLRepoPathHTML": {
+			"value": ""
+		}
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "DocBookExport::onParserSetup"
@@ -38,5 +48,5 @@
 		"DocBookExportMagic": "DocBookExport.i18n.magic.php",
 		"DocBookExportAlias": "DocBookExport.i18n.alias.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

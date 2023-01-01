@@ -8,11 +8,18 @@
 	"descriptionmsg": "attachments-desc",
 	"config": {
 		"AttachmentsNamespaces": {
-			"_merge_strategy": "array_plus"
+			"value": [],
+			"merge_strategy": "array_plus"
 		},
-		"AttachmentsChunkListByLetter": true,
-		"AttachmentsShowSubpageForm": true,
-		"AttachmentsShowLinkForm": true
+		"AttachmentsChunkListByLetter": {
+			"value": true
+		},
+		"AttachmentsShowSubpageForm": {
+			"value": true
+		},
+		"AttachmentsShowLinkForm": {
+			"value": true
+		}
 	},
 	"AutoloadClasses": {
 		"Attachments": "includes/Attachments.php",
@@ -35,8 +42,10 @@
 	"Actions": {
 		"attach": "AttachAction"
 	},
-	"MessagesDirs" : {
-		"Attachments": ["i18n"]
+	"MessagesDirs": {
+		"Attachments": [
+			"i18n"
+		]
 	},
 	"TrackingCategories": [
 		"attachments-category-attached-files",
@@ -57,5 +66,8 @@
 		"localBasePath": "",
 		"remoteSkinPath": "Attachments"
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

@@ -1,0 +1,54 @@
+{
+	"name": "Stick to That Language",
+	"version": "0.2.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Stick_to_That_Language",
+	"descriptionmsg": "sticktothatlanguage-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"StickToThatLanguage": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"STTLanguage\\Hooks": "StickToThatLanguage.hooks.php"
+	},
+	"ResourceModules": {
+		"sticktothatlanguage": {
+			"scripts": [
+				"resources/StickToThatLanguage.js"
+			],
+			"styles": [
+				"resources/StickToThatLanguage.css"
+			],
+			"messages": [
+				"sttl-languages-more-link"
+			],
+			"dependencies": [
+				"jquery.ui"
+			],
+			"group": "ext.sticktothatlanguage"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "StickToThatLanguage"
+	},
+	"Hooks": {
+		"UnitTestsList": "STTLanguage\\Hooks::registerUnitTests",
+		"GetPreferences": "STTLanguage\\Hooks::onGetPreferences",
+		"UserGetDefaultOptions": "STTLanguage\\Hooks::onUserGetDefaultOptions",
+		"SkinTemplateOutputPageBeforeExec": "STTLanguage\\Hooks::onSkinTemplateOutputPageBeforeExec",
+		"BeforePageDisplay": "STTLanguage\\Hooks::onBeforePageDisplay",
+		"GetLocalURL::Internal": "STTLanguage\\Hooks::onGetLocalUrlInternally",
+		"LinkBegin": "STTLanguage\\Hooks::onLinkBegin",
+		"AfterFinalPageOutput": "STTLanguage\\Hooks::onAfterFinalPageOutput"
+	},
+	"manifest_version": 2
+}

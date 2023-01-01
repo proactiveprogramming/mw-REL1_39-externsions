@@ -7,21 +7,29 @@
 	"namemsg": "ageclassification-msg",
 	"descriptionmsg": "ageclassification-desc",
 	"config": {
-		"AgeClassificationButtonURL": "https://www.altersklassifizierung.de/",
-		"AgeClassificationMetaName": "age-de-meta-label",
-		"AgeClassificationMetaContent": "age=0 hash: yourdigitalcode v=1.0 kind=sl protocol=all"
+		"AgeClassificationButtonURL": {
+			"value": "https://www.altersklassifizierung.de/"
+		},
+		"AgeClassificationMetaName": {
+			"value": "age-de-meta-label"
+		},
+		"AgeClassificationMetaContent": {
+			"value": "age=0 hash: yourdigitalcode v=1.0 kind=sl protocol=all"
+		}
 	},
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"type": "other",
 	"AutoloadClasses": {
 		"AgeClassificationHooks": "includes/specials/HooksAgeClassification.php"
 	},
 	"Hooks": {
-	    "BeforePageDisplay": "AgeClassificationHooks::onBeforePageDisplay",
+		"BeforePageDisplay": "AgeClassificationHooks::onBeforePageDisplay",
 		"SkinBuildSidebar": "AgeClassificationHooks::onSkinBuildSidebar"
 	},
 	"MessagesDirs": {
-		"AgeClassification": [ "i18n" ]
+		"AgeClassification": [
+			"i18n"
+		]
 	},
 	"ResourceModules": {
 		"ext.ageclassification.common": {
@@ -46,5 +54,8 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "AgeClassification/resources"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
 	}
 }

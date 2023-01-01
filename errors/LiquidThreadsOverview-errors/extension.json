@@ -1,0 +1,33 @@
+{
+	"name": "LiquidThreadsOverview",
+	"version": "1.0",
+	"author": "VolkoV",
+	"url": "https://www.mediawiki.org/wiki/Extension:LiquidThreadsOverview",
+	"descriptionmsg": "lqto-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"LiquidThreadsOverview": "SpecialLiquidThreadsOverview"
+	},
+	"ExtensionMessagesFiles": {
+		"LiquidThreadsOverview": "LiquidThreadsOverview.i18n.php",
+		"LiquidThreadsOverviewAlias": "LiquidThreadsOverview.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialLiquidThreadsOverview": "SpecialLiquidThreadsOverview.php"
+	},
+	"config": {
+		"lqtoCss": {
+			"value": "sortable"
+		},
+		"lqtoUseIcons": {
+			"value": false
+		},
+		"lqtoIconType": {
+			"value": "svg"
+		}
+	},
+	"manifest_version": 2
+}

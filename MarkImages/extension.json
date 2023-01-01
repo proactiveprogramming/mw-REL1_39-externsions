@@ -1,30 +1,37 @@
 {
-    "name": "MarkImages",
-    "author": "Ostrzyciel",
-    "url": "https://www.mediawiki.org/wiki/Extension:MarkImages",
-    "license-name": "MIT",
-    "version": "1.1.2",
-    "namemsg": "markImages",
-    "descriptionmsg": "markImages-desc",
-    "manifest_version": 1,
-    "MessagesDirs": {
-        "MarkImages": [ "i18n" ]
-    },
-    "AutoloadClasses": {
-        "MarkImages": "includes/MarkImages.php",
-        "MarkImagesDB": "includes/MarkImagesDB.php",
-        "MarkImagesHooks": "includes/MarkImagesHooks.php"
-    },
-    "config": {
-        "MarkImagesCategories": {
-            "recursive": [],
-            "nonrecursive": []
-        }
-    },
-    "Hooks": {
-        "LinksUpdateComplete": "MarkImagesHooks::onLinksUpdateComplete",
-        "InfoAction": "MarkImagesHooks::onInfoAction",
-        "BeforePageDisplay": "MarkImagesHooks::onBeforePageDisplay"
+	"name": "MarkImages",
+	"author": "Ostrzyciel",
+	"url": "https://www.mediawiki.org/wiki/Extension:MarkImages",
+	"license-name": "MIT",
+	"version": "1.1.2",
+	"namemsg": "markImages",
+	"descriptionmsg": "markImages-desc",
+	"manifest_version": 2,
+	"MessagesDirs": {
+		"MarkImages": [
+			"i18n"
+		]
 	},
-    "type": "other"
+	"AutoloadClasses": {
+		"MarkImages": "includes/MarkImages.php",
+		"MarkImagesDB": "includes/MarkImagesDB.php",
+		"MarkImagesHooks": "includes/MarkImagesHooks.php"
+	},
+	"config": {
+		"MarkImagesCategories": {
+			"value": {
+				"recursive": [],
+				"nonrecursive": []
+			}
+		}
+	},
+	"Hooks": {
+		"LinksUpdateComplete": "MarkImagesHooks::onLinksUpdateComplete",
+		"InfoAction": "MarkImagesHooks::onInfoAction",
+		"BeforePageDisplay": "MarkImagesHooks::onBeforePageDisplay"
+	},
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

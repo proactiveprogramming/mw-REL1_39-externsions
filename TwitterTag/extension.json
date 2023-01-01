@@ -12,7 +12,7 @@
 	"license-name": "GPL-3.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.27.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"AutoloadClasses": {
 		"TwitterTagController": "TwitterTagController.php"
@@ -43,5 +43,5 @@
 	"TrackingCategories": [
 		"twitter-tag-likes-category"
 	],
-	"manifest_version": 1
+	"manifest_version": 2
 }

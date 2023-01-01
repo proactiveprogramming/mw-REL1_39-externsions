@@ -48,16 +48,26 @@
 		"phptags-runtime-error-category"
 	],
 	"config": {
-		"PhpTagsNamespaces": true,
-		"PhpTagsMaxLoops": 1000,
-		"PhpTagsBytecodeExptime": 2592000
+		"PhpTagsNamespaces": {
+			"value": true
+		},
+		"PhpTagsMaxLoops": {
+			"value": 1000
+		},
+		"PhpTagsBytecodeExptime": {
+			"value": 2592000
+		}
 	},
-	"CodeMirrorTagModes": {
-		"phptag": "text/x-php"
-	},
-	"CodeMirrorPluginModules": [
-		"ext.CodeMirror.lib.mode.php"
-	],
 	"callback": "PhpTagsHooks::onRegistration",
-	"manifest_version": 1
+	"manifest_version": 2,
+	"attributes": {
+		"CodeMirror": {
+			"PluginModules": [
+				"ext.CodeMirror.lib.mode.php"
+			],
+			"TagModes": {
+				"phptag": "text/x-php"
+			}
+		}
+	}
 }

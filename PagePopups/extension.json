@@ -41,6 +41,6 @@
 		"localBasePath": "",
 		"remoteExtPath": "PagePopups"
 	},
-	"config": {},
-	"manifest_version": 1
+	"config": [],
+	"manifest_version": 2
 }

@@ -7,7 +7,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:PageNameFormula",
 	"requires": {
-		"MediaWiki": ">=1.28"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"descriptionmsg": "pagenameformula-desc",
 	"type": "parserhook",
@@ -30,8 +30,7 @@
 			"PageNameFormula\\Hook::onParserFirstCallInit"
 		]
 	},
-	"config": {
-		"_prefix": "PageNameFormula"
-	},
-	"manifest_version": 1
+	"config": [],
+	"config_prefix": "PageNameFormula",
+	"manifest_version": 2
 }

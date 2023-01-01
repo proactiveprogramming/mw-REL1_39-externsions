@@ -8,15 +8,19 @@
 		"MediaWiki": ">= 1.31.0"
 	},
 	"config": {
-		"HreflangPages": [
-			"en:Pope Francis",
-			"en:Charleston church shooting",
-			"en:Terminator Genisys",
-			"en:Mad Max: Fury Road",
-			"en:Caitlyn Jenner",
-			"en:Deaths in 2015"
-		],
-		"HreflangGenerate": true
+		"HreflangPages": {
+			"value": [
+				"en:Pope Francis",
+				"en:Charleston church shooting",
+				"en:Terminator Genisys",
+				"en:Mad Max: Fury Road",
+				"en:Caitlyn Jenner",
+				"en:Deaths in 2015"
+			]
+		},
+		"HreflangGenerate": {
+			"value": true
+		}
 	},
 	"MessagesDirs": {
 		"Hreflang": [
@@ -29,5 +33,5 @@
 	"Hooks": {
 		"BeforePageDisplay": "HreflangHooks::onBeforePageDisplay"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

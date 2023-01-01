@@ -18,7 +18,9 @@
 		]
 	},
 	"config": {
-		"EditSubpagesDefaultFlags": "+scte-buinrw"
+		"EditSubpagesDefaultFlags": {
+			"value": "+scte-buinrw"
+		}
 	},
 	"AutoloadClasses": {
 		"ExtEditSubpages": "ExtEditSubpages.php"
@@ -33,5 +35,5 @@
 			"createtalk": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

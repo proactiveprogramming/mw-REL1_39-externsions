@@ -1,0 +1,22 @@
+{
+	"name": "EmailDeletedPages",
+	"version": "1.0.0",
+	"author": "Nathan Larson",
+	"url": "https://www.mediawiki.org/wiki/Extension:EmailDeletedPages",
+	"descriptionmsg": "emaildeletedpages-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"EmailDeletedPages": "EmailDeletedPages.i18n.php"
+	},
+	"AutoloadClasses": {
+		"EmailDeletedPages": "EmailDeletedPages.classes.php"
+	},
+	"Hooks": {
+		"GetPreferences": "EmailDeletedPages::togglify",
+		"ArticleDelete": "EmailDeletedPages::onArticleDelete"
+	},
+	"manifest_version": 2
+}

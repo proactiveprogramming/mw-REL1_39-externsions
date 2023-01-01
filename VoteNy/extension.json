@@ -57,7 +57,9 @@
 				"voteny-link",
 				"voteny-unvote-link"
 			],
-			"dependencies": [ "mediawiki.api" ]
+			"dependencies": [
+				"mediawiki.api"
+			]
 		},
 		"ext.voteNY.styles": {
 			"styles": "resources/css/Vote.css"
@@ -74,5 +76,5 @@
 			"voteny": true
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

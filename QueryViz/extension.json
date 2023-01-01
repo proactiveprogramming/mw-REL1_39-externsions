@@ -1,39 +1,41 @@
 {
-    "name": "QueryViz",
-    "version": "0.1.0",
-    "author": [
-        "Antoine Lamielle"
-    ],
-    "url": "https://www.mediawiki.org/wiki/Extension:QueryViz",
-    "namemsg": "queryviz",
-    "descriptionmsg": "queryviz-desc",
-    "license-name": "GPL-2.0+",
-    "type": "other",
-    "manifest_version": 1,
-    "config": {
-        "wgQueryVizEndpoint": ""
-    },
-    "MessagesDirs": {
-        "QueryViz": [
-            "i18n"
-        ]
-    },
-    "AutoloadClasses": {
-        "QueryViz\\Hooks": "Hooks.php",
-        "QueryViz\\TagHandler": "includes/TagHandler.php"
-    },
-    "ResourceModules": {
-        "ext.queryviz": {
-            "scripts": [
-                "ext.queryViz.js",
-                "ext.queryViz.WikidataSearchWidget.js",
-                "ext.queryViz.QueryViz.js"
-            ],
-            "messages": [
+	"name": "QueryViz",
+	"version": "0.1.0",
+	"author": [
+		"Antoine Lamielle"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:QueryViz",
+	"namemsg": "queryviz",
+	"descriptionmsg": "queryviz-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"manifest_version": 2,
+	"config": {
+		"wgQueryVizEndpoint": {
+			"value": ""
+		}
+	},
+	"MessagesDirs": {
+		"QueryViz": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"QueryViz\\Hooks": "Hooks.php",
+		"QueryViz\\TagHandler": "includes/TagHandler.php"
+	},
+	"ResourceModules": {
+		"ext.queryviz": {
+			"scripts": [
+				"ext.queryViz.js",
+				"ext.queryViz.WikidataSearchWidget.js",
+				"ext.queryViz.QueryViz.js"
+			],
+			"messages": [
 				"mwe-queryviz-loading",
 				"mwe-queryviz-nofilters"
-            ],
-            "dependencies": [
+			],
+			"dependencies": [
 				"jquery.tablesorter",
 				"jquery.pagination",
 				"oojs-ui",
@@ -41,38 +43,41 @@
 				"mediawiki.widgets",
 				"mediawiki.ForeignApi",
 				"ext.queryviz.style"
-            ]
-        },
-        "ext.queryviz.leaflet": {
-            "scripts": [
-                "leaflet/leaflet.js"
-            ],
-            "styles": [
-                "leaflet/leaflet.css"
-            ],
-		    "localBasePath": "lib",
-		    "remoteExtPath": "QueryViz/lib"
-        },
-        "jquery.pagination": {
-            "scripts": [
-                "jquery.twbsPagination.min.js"
-            ],
-		    "localBasePath": "lib",
-		    "remoteExtPath": "QueryViz/lib"
-        },
-        "ext.queryviz.style": {
-            "styles": [
-                "ext.queryViz.css"
-            ]
-        }
-    },
-    "ResourceFileModulePaths": {
-        "localBasePath": "modules",
-        "remoteExtPath": "QueryViz/modules"
-    },
-    "Hooks": {
-        "ParserFirstCallInit": [
-            "QueryViz\\Hooks::onParserFirstCallInit"
-        ]
-    }
+			]
+		},
+		"ext.queryviz.leaflet": {
+			"scripts": [
+				"leaflet/leaflet.js"
+			],
+			"styles": [
+				"leaflet/leaflet.css"
+			],
+			"localBasePath": "lib",
+			"remoteExtPath": "QueryViz/lib"
+		},
+		"jquery.pagination": {
+			"scripts": [
+				"jquery.twbsPagination.min.js"
+			],
+			"localBasePath": "lib",
+			"remoteExtPath": "QueryViz/lib"
+		},
+		"ext.queryviz.style": {
+			"styles": [
+				"ext.queryViz.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "QueryViz/modules"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"QueryViz\\Hooks::onParserFirstCallInit"
+		]
+	},
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

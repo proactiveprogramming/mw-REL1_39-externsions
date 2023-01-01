@@ -63,5 +63,5 @@
 		"CloseAccount": "includes/specials/SpecialCloseAccount.php",
 		"EditAccount": "includes/specials/SpecialEditAccount.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

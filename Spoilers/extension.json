@@ -10,7 +10,7 @@
 	"license-name": "MIT",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.27.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"MessagesDirs": {
 		"Spoilers": [
@@ -49,5 +49,5 @@
 			"Spoilers\\SpoilersHooks::onParserFirstCallInit"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -40,6 +40,6 @@
 		"EditUser": "includes/EditUser.php",
 		"EditUserPreferencesForm": "includes/EditUserPreferencesForm.php"
 	},
-	"config": {},
-	"manifest_version": 1
+	"config": [],
+	"manifest_version": 2
 }

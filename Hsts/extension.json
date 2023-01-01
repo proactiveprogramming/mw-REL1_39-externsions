@@ -26,11 +26,21 @@
 		"BeforePageDisplay": "HSTSExtension::addHeader"
 	},
 	"config": {
-		"HSTSForAnons": false,
-		"HSTSForUsers": false,
-		"HSTSMaxAge": 2592000,
-		"HSTSIncludeSubdomains": false,
-		"HSTSBetaFeature": false
+		"HSTSForAnons": {
+			"value": false
+		},
+		"HSTSForUsers": {
+			"value": false
+		},
+		"HSTSMaxAge": {
+			"value": 2592000
+		},
+		"HSTSIncludeSubdomains": {
+			"value": false
+		},
+		"HSTSBetaFeature": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

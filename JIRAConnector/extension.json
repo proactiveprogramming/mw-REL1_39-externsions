@@ -1,0 +1,22 @@
+{
+	"name": "JIRAConnector",
+	"version": 0.1,
+	"author": "Swetlana Stickhof",
+	"url": "https://www.mediawiki.org/wiki/Extension:JIRAConnector",
+	"description": "This extension can be used to transfer data from and to a JIRA instance.",
+	"license-name": "GNU GPL",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"JIRAConnector": "JIRAConnector.i18n.php"
+	},
+	"AutoloadClasses": {
+		"JIRAConnector": "JIRAConnector.body.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "JIRAConnector::RegisterParserFunctions"
+	},
+	"manifest_version": 2
+}

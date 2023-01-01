@@ -1,0 +1,22 @@
+{
+	"name": "DynamicRedirect",
+	"version": "0.2.0",
+	"author": "Petr Kadlec",
+	"url": "https://www.mediawiki.org/wiki/Extension:DynamicRedirect",
+	"descriptionmsg": "dynamicredirect-desc",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"DynamicRedirect": "SpecialDynamicRedirect"
+	},
+	"ExtensionMessagesFiles": {
+		"DynamicRedirect": "DynamicRedirect.i18n.php",
+		"DynamicRedirectAlias": "DynamicRedirect.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialDynamicRedirect": "SpecialDynamicRedirect.php"
+	},
+	"manifest_version": 2
+}

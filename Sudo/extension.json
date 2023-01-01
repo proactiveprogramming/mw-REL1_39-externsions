@@ -46,5 +46,5 @@
 		"UserLogoutComplete": "SudoHooks::onUserLogoutComplete",
 		"PersonalUrls": "SudoHooks::onPersonalUrls"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

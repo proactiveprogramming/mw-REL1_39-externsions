@@ -20,5 +20,5 @@
 	"Hooks": {
 		"ParserFirstCallInit": "AllTimeZonesHooks::wfTimezoneSetup"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

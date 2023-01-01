@@ -1,0 +1,14 @@
+{
+	"name": "PMID",
+	"version": "0.1",
+	"author": "Jim Hu &lt;jimhu@tamu.edu&gt;",
+	"description": "Object classes for using National Library of Medicine PubMed database via NCBI EUtils.",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AutoloadClasses": {
+		"PMIDeFetch": "class.PMIDeFetch.php"
+	},
+	"manifest_version": 2
+}

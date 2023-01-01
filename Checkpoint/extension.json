@@ -22,5 +22,5 @@
 		"PageContentSave": "CheckpointHooks::efCheckpointSave",
 		"GetFullURL": "CheckpointHooks::efCheckpointReturn"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

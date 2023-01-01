@@ -8,7 +8,7 @@
 		"..."
 	],
 	"requires": {
-		"MediaWiki": ">= 1.27.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"url": "https://www.mediawiki.org/wiki/Extension:Minimum_Name_Length",
 	"descriptionmsg": "minimumnamelength-desc",
@@ -30,7 +30,9 @@
 		}
 	},
 	"config": {
-		"MinimumUsernameLength": 10
+		"MinimumUsernameLength": {
+			"value": 10
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

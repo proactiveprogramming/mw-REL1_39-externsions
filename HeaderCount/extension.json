@@ -1,26 +1,25 @@
 {
-    "name": "HeaderCount",
-    "version": "1.0.4",
-    "author": "Eli Foster",
-    "url": "https://mediawiki.org/wiki/Extension:HeaderCount",
-    "descriptionmsg": "headercount-desc",
-    "type": "parserhook",
-    "license-name": "MIT",
-    "MessageDirs": {
-        "HeaderCount": [
-            "i18n"
-        ]
-    },
-    "AutoloadClasses": {
-        "HeaderCountHooks": "HeaderCount.hooks.php"
-    },
-    "Hooks": {
-        "ParserFirstCallInit": [
-            "HeaderCountHooks::setupParser"
-        ]
-    },
-    "ExtensionMessagesFiles": {
-        "HeaderCount": "HeaderCount.i18n.php",
-        "HeaderCountMagic": "HeaderCount.i18n.magic.php"
-    }
+	"name": "HeaderCount",
+	"author": "Eli Foster",
+	"url": "https://github.com/elifoster/HeaderCount",
+	"descriptionmsg": "headercount-desc",
+	"type": "parserhooks",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"HeaderCount": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"HeaderCountMagic": "HeaderCount.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"HeaderCountHooks": "HeaderCount.hooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "HeaderCountHooks::setupParser"
+	},
+	"manifest_version": 2
 }

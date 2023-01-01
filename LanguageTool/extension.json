@@ -40,8 +40,12 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "LanguageTool/modules"
 	},
-	"VisualEditorPluginModules": [
-		"ext.LanguageTool"
-	],
-	"manifest_version": 1
+	"manifest_version": 2,
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.LanguageTool"
+			]
+		}
+	}
 }

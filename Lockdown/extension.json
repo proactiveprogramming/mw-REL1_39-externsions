@@ -37,10 +37,15 @@
 	},
 	"config": {
 		"NamespacePermissionLockdown": {
-			"_merge_strategy": "array_plus"
+			"value": [],
+			"merge_strategy": "array_plus"
 		},
-		"SpecialPageLockdown": [],
-		"ActionLockdown": []
+		"SpecialPageLockdown": {
+			"value": []
+		},
+		"ActionLockdown": {
+			"value": []
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

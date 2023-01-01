@@ -23,11 +23,18 @@
 		]
 	},
 	"config": {
-		"AllPagesAmp": false,
+		"AllPagesAmp": {
+			"value": false
+		},
 		"AmpFooterLinks": {
-			"left": [],
-			"right": []
+			"value": {
+				"left": [],
+				"right": []
+			}
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

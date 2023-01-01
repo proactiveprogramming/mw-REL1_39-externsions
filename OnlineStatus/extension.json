@@ -1,0 +1,60 @@
+{
+	"name": "OnlineStatus",
+	"version": "2014-04-01",
+	"author": "Alexandre Emsenhuber",
+	"url": "https://www.mediawiki.org/wiki/Extension:OnlineStatus",
+	"descriptionmsg": "onlinestatus-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"DefaultUserOptions": {
+		"online": "online",
+		"showonline": 0,
+		"onlineonlogin": 1,
+		"offlineonlogout": 1
+	},
+	"MessagesDirs": {
+		"OnlineStatus": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"OnlineStatusMagic": "OnlineStatus.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"OnlineStatus": "OnlineStatus.body.php"
+	},
+	"ResourceModules": {
+		"ext.onlineStatus": {
+			"scripts": "OnlineStatus.js",
+			"styles": "OnlineStatus.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "OnlineStatus"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "OnlineStatus::ParserFirstCallInit",
+		"MagicWordwgVariableIDs": "OnlineStatus::MagicWordVariable",
+		"ParserGetVariableValueSwitch": "OnlineStatus::ParserGetVariable",
+		"GetPreferences": "OnlineStatus::GetPreferences",
+		"UserLoginComplete": "OnlineStatus::UserLoginComplete",
+		"UserLogoutComplete": "OnlineStatus::UserLogoutComplete",
+		"BeforePageDisplay": "OnlineStatus::BeforePageDisplay",
+		"PersonalUrls": "OnlineStatus::PersonalUrls"
+	},
+	"config": {
+		"AllowAnyUserOnlineStatusFunction": {
+			"value": true
+		},
+		"AjaxExportList": {
+			"value": [
+				"OnlineStatus::Ajax"
+			]
+		}
+	},
+	"manifest_version": 2
+}

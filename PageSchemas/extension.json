@@ -76,10 +76,14 @@
 		]
 	},
 	"config": {
-		"PageSchemasFieldNum": 0,
-		"PageSchemasHandlerClasses": []
+		"PageSchemasFieldNum": {
+			"value": 0
+		},
+		"PageSchemasHandlerClasses": {
+			"value": []
+		}
 	},
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"requires": {
 		"MediaWiki": ">= 1.33"
 	}

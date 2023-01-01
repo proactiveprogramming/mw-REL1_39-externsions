@@ -7,21 +7,29 @@
 	"namemsg": "donatebutton-msg",
 	"descriptionmsg": "donatebutton-desc",
 	"config": {
-		"DonateButtonEnabledPaypal": false,
-		"DonateButtonURL": "https://yourdomain.org/donationpage.php?lang=",
-		"DonateButtonLangArray": "de, en, es, fr, it, pt, ru"
+		"DonateButtonEnabledPaypal": {
+			"value": false
+		},
+		"DonateButtonURL": {
+			"value": "https://yourdomain.org/donationpage.php?lang="
+		},
+		"DonateButtonLangArray": {
+			"value": "de, en, es, fr, it, pt, ru"
+		}
 	},
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"type": "other",
 	"AutoloadClasses": {
 		"DonateButtonHooks": "includes/specials/HooksDonateButton.php"
 	},
 	"Hooks": {
-	    "BeforePageDisplay": "DonateButtonHooks::onBeforePageDisplay",
+		"BeforePageDisplay": "DonateButtonHooks::onBeforePageDisplay",
 		"SkinBuildSidebar": "DonateButtonHooks::onSkinBuildSidebar"
 	},
 	"MessagesDirs": {
-		"DonateButton": [ "i18n" ]
+		"DonateButton": [
+			"i18n"
+		]
 	},
 	"ResourceModules": {
 		"ext.donatebutton.common": {
@@ -46,5 +54,8 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "DonateButton/resources"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
 	}
 }

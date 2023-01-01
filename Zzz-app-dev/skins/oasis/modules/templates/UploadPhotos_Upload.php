@@ -1,1 +1,0 @@
-<?= json_encode(array('status' => $status, 'statusMessage' => $statusMessage )) ?>

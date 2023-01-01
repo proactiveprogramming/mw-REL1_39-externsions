@@ -15,7 +15,9 @@
 		"MetaMasterHooks": "includes/MetaMasterHooks.php"
 	},
 	"config": {
-		"MetaMasterEnableFoo": true
+		"MetaMasterEnableFoo": {
+			"value": true
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"MetaMasterMagic": "MetaMaster.i18n.magic.php"
@@ -29,5 +31,5 @@
 			"i18n"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

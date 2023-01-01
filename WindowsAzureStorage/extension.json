@@ -23,5 +23,5 @@
 		"AzureFileBackendDirList": "includes/AzureFileBackendDirList.php",
 		"AzureFileBackendFileList": "includes/AzureFileBackendFileList.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

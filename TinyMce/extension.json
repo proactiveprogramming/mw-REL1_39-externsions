@@ -193,15 +193,36 @@
 		"tinymce-use": 1
 	},
 	"config": {
-		"TinyMCETemplates": [],
-		"TinyMCEDefaultTags": [],
-		"TinyMCEExtensionTags": [],
-		"TinyMCEPreservedTags": [],
-		"TinyMCEEnabled": false,
-		"TinyMCEDisabledNamespaces": [ 8, 10 ],
-		"TinyMCEUnhandledStrings": [],
-		"TinyMCELoadOnView": false,
-		"wgTinyMCESettings": []
+		"TinyMCETemplates": {
+			"value": []
+		},
+		"TinyMCEDefaultTags": {
+			"value": []
+		},
+		"TinyMCEExtensionTags": {
+			"value": []
+		},
+		"TinyMCEPreservedTags": {
+			"value": []
+		},
+		"TinyMCEEnabled": {
+			"value": false
+		},
+		"TinyMCEDisabledNamespaces": {
+			"value": [
+				8,
+				10
+			]
+		},
+		"TinyMCEUnhandledStrings": {
+			"value": []
+		},
+		"TinyMCELoadOnView": {
+			"value": false
+		},
+		"wgTinyMCESettings": {
+			"value": []
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

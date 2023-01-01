@@ -6,8 +6,8 @@
 	"version": "0.1",
 	"license-name": "",
 	"type": "validextensionclass",
-	"manifest_version": 1,
-    "AutoloadClasses": {
+	"manifest_version": 2,
+	"AutoloadClasses": {
 		"MinervaMenuHooks": "includes/MinervaMenuHooks.php"
 	},
 	"HookHandlers": {
@@ -15,7 +15,10 @@
 			"class": "MinervaMenuHooks"
 		}
 	},
-    "Hooks": {
-        "MobileMenu": "MinervaMenuHooks"
-    }
+	"Hooks": {
+		"MobileMenu": "MinervaMenuHooks"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	}
 }

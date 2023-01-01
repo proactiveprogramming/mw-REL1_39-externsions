@@ -23,5 +23,5 @@
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "DeviceMapLogCaptureHooks::loadExtensionSchemaUpdates"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

@@ -1,0 +1,10 @@
+{
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"Hooks": {
+		"UnitTestsList": "RDFIOHooks::onUnitTestsList",
+		"loadExtensionSchemaUpdate": "RDFIOCreatePagesOnInstall::create"
+	},
+	"manifest_version": 2
+}

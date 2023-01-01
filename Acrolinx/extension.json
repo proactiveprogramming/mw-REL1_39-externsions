@@ -48,10 +48,20 @@
 		"UnitTestsList": "AcrolinxHooks::onUnitTestsList"
 	},
 	"config": {
-		"AcrolinxServerAddress": null,
-		"AcrolinxClientSignature": null,
-		"AcrolinxNamespaces": [ 0 ],
-		"AcrolinxPageLocationID": null
+		"AcrolinxServerAddress": {
+			"value": null
+		},
+		"AcrolinxClientSignature": {
+			"value": null
+		},
+		"AcrolinxNamespaces": {
+			"value": [
+				0
+			]
+		},
+		"AcrolinxPageLocationID": {
+			"value": null
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

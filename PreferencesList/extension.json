@@ -47,5 +47,5 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "PreferencesList/modules"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

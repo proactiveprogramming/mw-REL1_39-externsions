@@ -1,0 +1,26 @@
+{
+	"name": "AddBodyClass",
+	"version": "1.2",
+	"author": "Povilas Kanapickas & Will Stott",
+	"url": "https://github.com/p12tic/AddBodyClass",
+	"descriptionmsg": "addbodyclass_desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"AddBodyClassMagic": "AddBodyClass.i18n.magic.php",
+		"AddBodyClass": "AddBodyClass.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "AddBodyClass::setup",
+		"OutputPageBodyAttributes": "AddBodyClass::add_attrs",
+		"OutputPageBeforeHTML": "AddBodyClass::on_output_before_html"
+	},
+	"config": {
+		"CategoriesAsBodyClasses": {
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

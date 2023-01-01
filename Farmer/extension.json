@@ -1,0 +1,100 @@
+{
+	"name": "Farmer",
+	"version": "0.1.2",
+	"author": [
+		"Gregory Szorc <gregory.szorc@case.edu>",
+		"Alexandre Emsenhuber"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Farmer",
+	"descriptionmsg": "farmer-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"AvailableRights": [
+		"farmeradmin",
+		"createwiki"
+	],
+	"GroupPermissions": {
+		"*": {
+			"farmeradmin": false,
+			"createwiki": false
+		},
+		"sysop": {
+			"farmeradmin": true,
+			"createwiki": true
+		}
+	},
+	"LogActions": {
+		"farmer/create": "farmer-log-create",
+		"farmer/delete": "farmer-log-delete"
+	},
+	"LogHeaders": {
+		"farmer": "farmer-log-header"
+	},
+	"LogNames": {
+		"farmer": "farmer-log-name"
+	},
+	"LogTypes": [
+		"farmer"
+	],
+	"SpecialPages": {
+		"Farmer": "SpecialFarmer"
+	},
+	"MessagesDirs": {
+		"MediaWikiFarmer": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"MediaWikiFarmerAlias": "Farmer.alias.php"
+	},
+	"AutoloadClasses": {
+		"FarmerUpdaterHooks": "FarmerUpdater.hooks.php",
+		"MediaWikiFarmer": "MediaWikiFarmer.php",
+		"MediaWikiFarmer_Extension": "MediaWikiFarmer_Extension.php",
+		"MediaWikiFarmer_Wiki": "MediaWikiFarmer_Wiki.php",
+		"SpecialFarmer": "SpecialFarmer.php"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "FarmerUpdaterHooks::addSchemaUpdates"
+	},
+	"config": {
+		"FarmerSettings": {
+			"value": {
+				"configDirectory": "configs/",
+				"databaseName": null,
+				"defaultWiki": "",
+				"wikiIdentifierFunction": [
+					"MediaWikiFarmer",
+					"matchByURLHostname"
+				],
+				"matchRegExp": "",
+				"matchOffset": null,
+				"matchServerNameSuffix": "",
+				"onUnknownWiki": [
+					"MediaWikiFarmer",
+					"redirectTo"
+				],
+				"redirectToURL": "",
+				"useWgConf": true,
+				"initCallback": null,
+				"newDbSourceFile": "/maintenance/tables.sql",
+				"dbFromWikiFunction": [
+					"MediaWikiFarmer",
+					"prefixTable"
+				],
+				"dbTablePrefixSeparator": "",
+				"dbTablePrefix": "",
+				"dbAdminUser": "root",
+				"dbAdminPassword": "",
+				"perWikiStorageRoot": "/images/",
+				"perWikiStorageUrl": "/images/",
+				"defaultSkin": "vector"
+			},
+			"path": true
+		}
+	},
+	"manifest_version": 2
+}
