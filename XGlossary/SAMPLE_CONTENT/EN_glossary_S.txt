@@ -1,0 +1,16 @@
+{{#glossary_entry:
+ |langs=EN
+ |title=Sensor
+ |ref=sensor
+ |shortdesc=A sensor is a logic brick that acts like a sense of a lifeform. It reacts to touch, vision, collision, etc.
+ |longdesc=See also the [[Doc:Manual/Game Engine/Logic/Sensors|sensor page]], and the {{Glossary/Link|ref=logic brick|txt=Logic Brick}} entry.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Sub-Context
+ |ref=sub context
+ |shortdesc=A subdivision of a context.
+ |longdesc=For example, the {{Literal|Shading}} {{Glossary/Link|ref=context|txt=context}} ({{Shortcut|F5}}) has five sub-contexts: {{Literal|Lamp}}, {{Literal|Material}}, {{Literal|Texture}}, {{Literal|Radiosity}} and {{Literal|World}}…
+ }}
+

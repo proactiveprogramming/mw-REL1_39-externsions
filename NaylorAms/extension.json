@@ -1,0 +1,40 @@
+{
+	"name": "Naylor AMS SSO Integration",
+	"version": "0.1.0",
+	"author": [
+		"[https://github.com/mywikis MyWikis LLC]"
+	],
+	"url": "https://github.com/mywikis/NaylorAMS",
+	"descriptionmsg": "naylorams-desc",
+	"license-name": "GPL-2.0",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"PluggableAuth": ">= 5.1"
+		}
+	},
+	"MessagesDirs": {
+		"NaylorAMS": [
+			"i18n"
+		]
+	},
+	"ExtensionFunctions": [
+		"MediaWiki\\Extension\\NaylorAMS\\Setup::init"
+	],
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\NaylorAMS\\": "includes/"
+	},
+	"config": {
+		"PluggableAuth_Class": {
+			"value": "MediaWiki\\Extension\\NaylorAMS\\NaylorAMS"
+		},
+		"PluggableAuth_ButtonLabelMessage": {
+			"value": "naylorams-loginbtn-text"
+		},
+		"NaylorAMS_UsernameDenyList": {
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}

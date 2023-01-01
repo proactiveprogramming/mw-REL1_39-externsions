@@ -1,0 +1,33 @@
+{
+  "name": "WSArrays",
+  "namemsg": "ca-name",
+  "author": "Xxmarijnw",
+  "version": "5.5.3",
+  "url": "https://www.mediawiki.org/wiki/Extension:WSArrays",
+  "descriptionmsg": "ca-description",
+  "license-name": "GPL-2.0-or-later",
+  "type": "parserhook",
+  "MessagesDirs": {
+    "WSArrays": [
+      "i18n"
+    ]
+  },
+  "AutoloadClasses": {
+    "WSArrays": "src/WSArrays.php",
+    "ComplexArrayWrapper": "ComplexArrayWrapper.php"
+  },
+  "ExtensionMessagesFiles": {
+    "WSArraysMagic": "WSArrays.i18n.php"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": [
+      "WSArrays::onParserFirstCallInit"
+    ]
+  },
+  "config": {
+    "SkipVersionControl": false,
+    "EnableResultPrinter": false,
+    "DefinedArraysGlobal": []
+  },
+  "manifest_version": 1
+}

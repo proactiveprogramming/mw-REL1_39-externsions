@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"ديفيد"
+		]
+	},
+	"katsa-desc": "يوفر spies للاستخدام في وحدات لوا",
+	"katsa-carp-final": "دعا الكارب",
+	"katsa-cluck-final": "دعا القرق",
+	"katsa-croak-final": "نقيق دعا",
+	"katsa-confess-final": "دعا الاعتراف"
+}

@@ -1,0 +1,12 @@
+<includeonly>{{#switch:
+{{#titleparts:{{PAGENAME}}|1}}
+|AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|TR|UK|ZH={{#titleparts:{{PAGENAME}}|1|2}}
+|{{#titleparts:{{PAGENAME}}|1|1}}
+}}</includeonly><noinclude>=What does this template do?=
+Gives the first pagename element taking apart the eventual language
+code.
+Examples:
+# if put in Doc:FR/Manual/Data_System/Scene_Creation it gives: Manual
+# if put in Doc:Manual/Data_System/Scene_Creation it gives: Manual
+</noinclude>
+

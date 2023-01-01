@@ -1,0 +1,22 @@
+{
+	"name": "Character Escapes",
+	"version": "1.0.0",
+	"author": "David M. Sledge",
+	"url": "http://www.mediawiki.org/wiki/Extension:Character_Escapes",
+	"descriptionmsg": "characterescapes_description",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"CharacterEscapes": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"CharacterEscapesHooks": "CharacterEscapes.hooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"CharacterEscapesHooks::onParserFirstCallInit"
+		]
+	},
+	"manifest_version": 1
+}

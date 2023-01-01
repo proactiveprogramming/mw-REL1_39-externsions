@@ -1,0 +1,358 @@
+{
+    "name": "RecordWizard",
+    "version": "0.1.0",
+    "author": [
+        "Antoine Lamielle"
+    ],
+    "url": "https://www.mediawiki.org/wiki/Extension:RecorderWizard",
+    "namemsg": "recordWizard",
+    "descriptionmsg": "recordWizard-desc",
+    "license-name": "GPL-2.0+",
+    "type": "other",
+    "manifest_version": 1,
+    "config": {
+        "wgRecordWizardConfig": {
+            "properties": {
+                "langCode": "",
+                "iso3": "",
+                "gender": "",
+                "spokenLanguages": "",
+                "instanceOf": "",
+                "linkedUser": "",
+                "subclassOf": "",
+                "audioRecord": "",
+                "speaker": "",
+                "date": "",
+                "transcription": "",
+                "wikidataId": "",
+                "mediaType": "",
+                "languageLevel": "",
+                "residencePlace": "",
+                "learningPlace": ""
+            },
+            "items": {
+                "genderMale": "",
+                "genderFemale": "",
+                "genderOther": "",
+                "language": "",
+                "speaker": "",
+                "record": "",
+                "word": "",
+                "langLevelNative": "",
+                "langLevelGood": "",
+                "langLevelAverage": "",
+                "langLevelBeginner": "",
+                "mediaTypeAudio": "",
+                "mediaTypeVideo": ""
+            },
+            "listNamespace": 0
+        }
+    },
+    "DefaultUserOptions": {
+        "recwiz-lang": ""
+    },
+    "MessagesDirs": {
+        "RecordWizard": [
+            "i18n",
+            "i18n/api"
+        ]
+    },
+    "AutoloadNamespaces": {
+        "RecordWizard\\": "includes/"
+    },
+    "AutoloadClasses": {
+        "SpecialRecordWizard": "specials/SpecialRecordWizard.php",
+        "RecordWizardHooks": "Hooks.php",
+        "RecordWizard\\ApiQueryRwRecords": "includes/ApiQueryRwRecords.php"
+    },
+    "APIListModules": {
+        "rwrecords": "RecordWizard\\ApiQueryRwRecords"
+    },
+    "ResourceModules": {
+        "ext.recordWizard": {
+            "scripts": [
+                "modules/rw.Record.js",
+                "modules/rw.RecordWizard.js"
+            ],
+            "dependencies": [
+                "oojs-ui",
+                "mediawiki.util",
+                "ext.recordWizard.base",
+                "ext.recordWizard.styles",
+                "ext.recordWizard.store",
+                "ext.recordWizard.vues",
+                "ext.recordWizard.upload"
+            ]
+        },
+        "ext.recordWizard.base": {
+            "scripts": [
+                "modules/rw.js"
+            ]
+        },
+        "ext.recordWizard.styles": {
+            "styles": [
+                "stylesheets/ext.recordWizard.css",
+                "stylesheets/ext.tutorial.css",
+                "stylesheets/ext.speaker.css",
+                "stylesheets/ext.details.css",
+                "stylesheets/ext.studio.css",
+                "stylesheets/ext.publish.css"
+            ]
+        },
+        "ext.recordWizard.upload":{
+            "scripts": [
+                "modules/rw.RequestQueue.js"
+            ],
+            "dependencies": [
+                "mediawiki.api",
+                "ext.recordWizard.base"
+            ]
+        },
+        "ext.recordWizard.recorder": {
+            "scripts": [
+                "lib/lingua-recorder/AudioRecord.js",
+                "lib/lingua-recorder/LinguaRecorder.js",
+                "modules/rw.VideoRecorder.js"
+            ],
+            "dependencies": [
+                "oojs-ui",
+                "ext.recordWizard.base"
+            ]
+        },
+        "ext.recordWizard.generator":{
+            "scripts": [
+                "modules/generator/rw.generator.Generic.js",
+                "modules/generator/rw.generator.List.js",
+                "modules/generator/rw.generator.Nearby.js",
+                "modules/generator/rw.generator.WMCategories.js",
+                "modules/generator/rw.generator.ExternalTools.js"
+            ],
+            "dependencies": [
+                "oojs-ui",
+                "mediawiki.ForeignApi",
+                "mediawiki.widgets",
+                "oojs-ui.styles.icons-location"
+            ],
+            "messages": [
+                "mwe-recwiz-generator-nearby",
+                "mwe-recwiz-generator-list",
+                "mwe-recwiz-generator-wmcategory",
+                "mwe-recwiz-nearby-coordinates",
+                "mwe-recwiz-nearby-coordinates-help",
+                "mwe-recwiz-nearby-limit",
+                "mwe-recwiz-nearby-limit-help",
+                "mwe-recwiz-nearby-latitude",
+                "mwe-recwiz-nearby-longitude",
+                "mwe-recwiz-nearby-getcoordinates",
+                "mwe-recwiz-nearby-source",
+                "mwe-recwiz-nearby-deduplicate",
+                "mwe-recwiz-error-nolanguages",
+                "mwe-recwiz-error-unsupportedlanguage",
+                "mwe-recwiz-error-cantgetposition",
+                "mwe-recwiz-warning-noresults",
+                "mwe-recwiz-list-title",
+                "mwe-recwiz-list-title-help",
+                "mwe-recwiz-list-deduplicate",
+                "mwe-recwiz-wmcategory-title",
+                "mwe-recwiz-wmcategory-title-help",
+                "mwe-recwiz-wmcategory-source",
+                "mwe-recwiz-wmcategory-wikipedia",
+                "mwe-recwiz-wmcategory-wiktionary",
+                "mwe-recwiz-wmcategory-deduplicate",
+                "mwe-recwiz-wmcategory-limit",
+                "mwe-recwiz-wmcategory-limit-help",
+                "mwe-recwiz-list-error-nopage",
+                "mwe-recwiz-error-pagemissing",
+                "mwe-recwiz-error-nowiki"
+            ]
+        },
+        "ext.recordWizard.store":{
+            "scripts": [
+                "modules/store/rw.store.config.js",
+                "modules/store/rw.store.state.js",
+                "modules/store/rw.store.record.js",
+                "modules/store/rw.store.generator.js"
+            ],
+            "dependencies": [
+                "mediawiki.api"
+            ]
+        },
+        "ext.recordWizard.vuejs":{
+            "scripts": [
+                "lib/vue.min.js"
+            ]
+        },
+        "ext.recordWizard.components":{
+            "scripts": [
+                "modules/components/rw.components.ooui-button.js",
+                "modules/components/rw.components.ooui-buttonselect.js",
+                "modules/components/rw.components.ooui-checkbox.js",
+                "modules/components/rw.components.ooui-dropdown.js",
+                "modules/components/rw.components.ooui-numberinput.js",
+                "modules/components/rw.components.ooui-popup.js",
+                "modules/components/rw.components.ooui-progressbar.js",
+                "modules/components/rw.components.ooui-simpledialog.js",
+                "modules/components/rw.components.ooui-textinput.js",
+                "modules/components/rw.components.ll-draggablelist.js",
+                "modules/components/rw.components.ll-langselector.js",
+                "modules/components/rw.components.ll-listitem.js",
+                "modules/components/rw.components.ll-vumeter.js",
+                "modules/components/rw.components.ll-wdsearch.js"
+            ],
+            "dependencies": [
+                "oojs-ui",
+                "ext.recordWizard.vuejs",
+                "ext.recordWizard.widgets",
+                "oojs-ui.styles.icons-media",
+                "oojs-ui.styles.icons-content",
+                "oojs-ui.styles.icons-movement",
+                "oojs-ui.styles.icons-wikimedia",
+                "oojs-ui.styles.icons-interactions"
+            ]
+        },
+        "ext.recordWizard.vues":{
+            "scripts": [
+                "modules/vue/rw.vue.mixins.js",
+                "modules/vue/rw.vue.sidebar.js",
+                "modules/vue/rw.vue.navigation.js",
+                "modules/vue/rw.vue.tutorial.js",
+                "modules/vue/rw.vue.speaker.js",
+                "modules/vue/rw.vue.details.js",
+                "modules/vue/rw.vue.studio.js",
+                "modules/vue/rw.vue.publish.js"
+            ],
+            "dependencies": [
+                "ext.recordWizard.vuejs",
+                "ext.recordWizard.store",
+                "ext.recordWizard.recorder",
+                "ext.recordWizard.wikibase",
+                "ext.recordWizard.components",
+                "ext.recordWizard.generator"
+            ],
+            "messages": [
+                "mwe-recwiz-error-mediastream-notallowed",
+                "mwe-recwiz-error-mediastream-notfound",
+                "mwe-recwiz-error-mediastream-technical",
+                "mwe-recwiz-error-mediastream-unknow",
+                "mwe-recwiz-prevent-close",
+                "mwe-recwiz-speaker-profilemain",
+                "mwe-recwiz-speaker-profileother",
+                "mwe-recwiz-speaker-profilenew",
+                "mwe-recwiz-gender-male",
+                "mwe-recwiz-gender-female",
+                "mwe-recwiz-gender-other",
+                "mwe-recwiz-speaker-licensecontent",
+                "mwe-recwiz-speaker-languages",
+                "mwe-recwiz-speaker-languagedialog",
+                "mwe-recwiz-speaker-languagelevel",
+                "mwe-recwiz-speaker-languagelevel-native",
+                "mwe-recwiz-speaker-languagelevel-good",
+                "mwe-recwiz-speaker-languagelevel-average",
+                "mwe-recwiz-speaker-languagelevel-beginner",
+                "mwe-recwiz-speaker-languagelocation",
+                "mwe-recwiz-details-placeholder",
+                "mwe-recwiz-warning-wordsleft",
+                "mwe-recwiz-warning-pendinguploads",
+                "mwe-recwiz-warning-faileduploads",
+                "mwe-recwiz-error-emptylist",
+                "mwe-recwiz-error-network"
+            ]
+        },
+        "ext.recordWizard.widgets":{
+            "scripts": [
+                "modules/widgets/rw.widgets.DraggableListWidget.js",
+                "modules/widgets/rw.widgets.LanguagesSelectorWidget.js",
+                "modules/widgets/rw.widgets.WikidataSearchWidget.js"
+            ],
+            "dependencies": [
+                "oojs-ui",
+                "oojs-ui.styles.icons-wikimedia",
+                "mediawiki.storage"
+            ]
+        },
+        "ext.recordWizard.wikibase": {
+            "scripts": [
+                "modules/wikibase/rw.wikibase.Snak.js",
+                "modules/wikibase/rw.wikibase.Reference.js",
+                "modules/wikibase/rw.wikibase.Statement.js",
+                "modules/wikibase/rw.wikibase.Item.js"
+            ],
+            "dependencies": [
+                "ext.recordWizard.base",
+                "wikibase.api.RepoApi",
+                "wikibase.datamodel",
+                "ext.recordWizard.wikibase.serialization"
+            ]
+        },
+        "ext.recordWizard.wikibase.serialization": {
+            "packageFiles": [
+                "modules/wikibase-serialization/src/index.js",
+                "modules/wikibase-serialization/src/Deserializers/Deserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/SnakDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/StatementGroupSetDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/StatementGroupDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/StatementListDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/StatementDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/ClaimDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/TermDeserializer.js",
+                "modules/wikibase-serialization/src/Serializers/ClaimSerializer.js",
+                "modules/wikibase-serialization/src/Deserializers/ReferenceListDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/ReferenceDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/SnakListDeserializer.js",
+                "modules/wikibase-serialization/src/Serializers/TermMapSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/TermSerializer.js",
+                "modules/wikibase-serialization/src/Deserializers/TermMapDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/EntityDeserializer.js",
+                "modules/wikibase-serialization/src/StrategyProvider.js",
+                "modules/wikibase-serialization/src/Deserializers/ItemDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/PropertyDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/SiteLinkSetDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/SiteLinkDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/FingerprintDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/MultiTermMapDeserializer.js",
+                "modules/wikibase-serialization/src/Deserializers/MultiTermDeserializer.js",
+                "modules/wikibase-serialization/src/Serializers/StatementSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/StatementListSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/ReferenceListSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/ReferenceSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/Serializer.js",
+                "modules/wikibase-serialization/src/Serializers/SnakListSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/SnakSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/ItemSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/FingerprintSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/SiteLinkSetSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/SiteLinkSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/StatementGroupSetSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/StatementGroupSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/MultiTermMapSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/MultiTermSerializer.js",
+                "modules/wikibase-serialization/src/Serializers/PropertySerializer.js",
+                "modules/wikibase-serialization/src/Serializers/EntitySerializer.js"
+            ],
+            "dependencies": [
+                "util.inherit",
+                "wikibase.datamodel",
+                "dataValues",
+                "dataValues.values"
+            ]
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": ".",
+        "remoteExtPath": "RecordWizard"
+    },
+    "SpecialPages": {
+        "RecordWizard": "SpecialRecordWizard"
+    },
+    "ExtensionMessagesFiles": {
+        "RecordWizardAlias": "RecordWizard.alias.php"
+    },
+    "Hooks": {
+        "ResourceLoaderTestModules": [
+            "RecordWizardHooks::onResourceLoaderTestModules"
+        ],
+        "GetPreferences": [
+            "RecordWizardHooks::onGetPreferences"
+        ]
+    }
+}

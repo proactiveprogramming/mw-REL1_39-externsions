@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "M. Falda"
+        ]
+    },
+    "propChainsHelper": "Property Chains Helper",
+    "propChainsHelper-desc": "Modulo di supporto per completare le catene di proprietà",
+    "special-propChainsHelper-title": "Property Chains Helper",
+    "special-propChainsHelper-intro": "Specificare una categoria e le proprietà separate da ', '; i criteri possono essere specificati utilizzando gli operatori di confronto ('=', '>', '<', ..., '<>': diverso; '~': simile, '!~': non simile, anche con wildcard). Quindi preparare la query e le catene di proprietà verranno opportunamente aggiunte." 
+}

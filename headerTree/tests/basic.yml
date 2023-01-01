@@ -1,0 +1,19 @@
+special:
+  is: my special title
+  attr:
+    class: special
+
+pattern:
+  match: ^Question [0-9]+$
+  attr:
+    class: question
+
+with-id:
+  is: my title with id
+  attr:
+    id: with-id-[COUNTER]
+
+code-color:
+  match: ^Code\s+(.*)$
+  attr:
+    class: code-$1

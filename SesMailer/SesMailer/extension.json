@@ -1,0 +1,22 @@
+{
+  "manifest_version": 1,
+  "name": "SesMailer",
+  "type": "other",
+  "author": "Janos Ronkay",
+  "url": "https://github.com/hangya/mw-ses-mailer",
+  "license-name": "GPL-2.0+",
+  "version": "1.0",
+  "AutoloadClasses": {
+    "SesMailer": "SesMailer_body.php"
+  },
+  "Hooks": {
+    "AlternateUserMailer": [
+      "SesMailer::wfSesMailer"
+    ]
+  },
+  "config": {
+    "SesMailerRegion": "eu-west-1",
+    "SesMailerKey": "",
+    "SesMailerSecret": ""
+  }
+}

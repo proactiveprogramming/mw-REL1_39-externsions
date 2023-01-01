@@ -1,0 +1,27 @@
+{
+  "name": "mediawiki-email-login",
+  "description": "MediaWiki extension that allows user to login with their e-mail address",
+  "version": "1.0.1",
+  "author": "Pierre Rudloff",
+  "bugs": "https://github.com/Archi-Strasbourg/mediawiki-email-login/issues",
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-fixpack": "~0.1.0",
+    "grunt-jslint": "~1.1.0",
+    "grunt-jsonlint": "~1.1.0",
+    "grunt-phpcs": "~0.4.0",
+    "grunt-phpunit": "~0.3.6"
+  },
+  "homepage": "https://github.com/Archi-Strasbourg/mediawiki-email-login",
+  "keywords": [
+    "email",
+    "login",
+    "mediawiki"
+  ],
+  "license": "GPL-3.0",
+  "main": "classes/EmailPasswordAuthenticationProvider.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Archi-Strasbourg/mediawiki-email-login.git"
+  }
+}

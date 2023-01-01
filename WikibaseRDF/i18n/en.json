@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeroen De Dauw"
+		]
+	},
+	"wikibase-rdf-name": "Wikibase RDF",
+	"wikibase-rdf-description": "Allows defining RDF mappings for Wikibase Entities",
+
+	"wikibase-rdf-mappings-toggler": "Mapping to other ontologies",
+	"wikibase-rdf-mappings-predicate-heading": "Predicate",
+	"wikibase-rdf-mappings-object-heading": "URL",
+	"wikibase-rdf-mappings-action-save": "save",
+	"wikibase-rdf-mappings-action-remove": "remove",
+	"wikibase-rdf-mappings-action-cancel": "cancel",
+	"wikibase-rdf-mappings-action-edit": "edit",
+	"wikibase-rdf-mappings-action-add": "add mapping",
+
+	"wikibase-rdf-save-mappings-invalid-mappings": "Some of the mappings you specified are invalid",
+	"wikibase-rdf-save-mappings-save-failed": "Save failed",
+	"wikibase-rdf-entity-id-invalid": "The entity ID you specified is invalid",
+	"wikibase-rdf-permission-denied": "You do not have permission to edit this entity's mappings",
+
+	"wikibase-rdf-config-intro": "",
+	"wikibase-rdf-config-invalid": "Invalid {{PLURAL:$1|predicate|predicates}}:\n$2. Your changes were not saved.",
+
+	"wikibase-rdf-config-list-intro": "This page defines which predicates can be used in mappings to other ontologies. This functionality is part of the <a href=\"https://www.mediawiki.org/wiki/Extension:WikibaseRDF\">Wikibase RDF extension</a>.",
+	"wikibase-rdf-config-list-heading": "Allowed {{PLURAL:$1|predicate|predicates}}:",
+	"wikibase-rdf-config-list-empty": "No predicates are defined.",
+	"wikibase-rdf-config-list-footer": "Defined in LocalSettings.php, cannot be modified via this page.",
+
+	"wikibase-rdf-property-edit-warning": "By clicking \"$1\" you are creating a permanent statement in the triplestore. Please be advised that any subsequent edits to the property will require a reset of the triplestore in order to clear outdated mappings. This does not apply to item mappings",
+	"wikibase-rdf-property-edit-warning-version": "wikibase-rdf-1",
+	"wikibase-rdf-property-edit-warning-acknowledge": "Do not show this message again.",
+
+	"special-mapping-predicates": "Mapping predicates"
+}

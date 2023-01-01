@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config ../../vendor/vimeo/psalm/config.xsd"
+	hideExternalErrors="true"
+>
+    <projectFiles>
+        <directory name="src" />
+		<directory name="tests" />
+		<ignoreFiles>
+			<file name="src/DataAccess/RulesDeserializer.php" />
+			<file name="src/Hooks.php" />
+			<file name="src/AutomatedValuesFactory.php" />
+			<directory name="tests/MediaWiki" />
+		</ignoreFiles>
+    </projectFiles>
+
+	<stubs>
+		<file name="src/DataAccess/RulesDeserializer.php" />
+	</stubs>
+
+	<extraFiles>
+		<directory name="../../includes" />
+		<directory name="../../vendor/wikimedia" />
+		<directory name="../../vendor/wikibase" />
+		<directory name="../../vendor/data-values" />
+		<directory name="../../extensions/Wikibase" />
+	</extraFiles>
+
+	<issueHandlers>
+		<PropertyNotSetInConstructor>
+			<errorLevel type="suppress">
+				<directory name="tests" />
+				<file name="src/SpecialAutomatedValues.php" />
+			</errorLevel>
+		</PropertyNotSetInConstructor>
+		<UndefinedConstant errorLevel="suppress" />
+		<UndefinedClass>
+			<errorLevel type="suppress">
+				<directory name="tests" />
+			</errorLevel>
+		</UndefinedClass>
+	</issueHandlers>
+</psalm>

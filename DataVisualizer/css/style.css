@@ -1,0 +1,30 @@
+.node circle {
+  fill: #8BD7F4;
+  stroke: #8BD7F4;
+  stroke-width: 1.5px;
+}
+
+.node circle:hover {cursor: hand; cursor: pointer;}
+.node body:hover {cursor: hand; cursor: pointer;}
+
+.node circle:hover{
+	fill: #fff;
+}
+
+.node {
+/*
+  font: 20px sans-serif;
+  */
+}
+
+.link {
+  fill: none;
+  stroke: #988F86;
+  stroke-width: 2.5px;
+  stroke-dasharray: 3,1;
+}
+
+.node a:hover{
+	fill:#8BD7F4;
+}
+

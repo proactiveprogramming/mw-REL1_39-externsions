@@ -1,0 +1,1684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>BCmath documentation</title>
+    <link rel="stylesheet" href="ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>BCmath</h1>
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>BCmath</strong></li>
+</ul>
+<h2>Manual</h2>
+<ul class="nowrap">
+  <li><a href="manual/introduction.md.html">Introduction</a></li>
+  <li><a href="manual/wikibase.md.html">Wikibase</a></li>
+  <li><a href="manual/databases.md.html">Databases</a></li>
+  <li><a href="manual/non-pure.md.html">Non-pure</a></li>
+  <li><a href="manual/vagrant.md.html">Vagrant</a></li>
+  <li><a href="manual/vscode.md.html">VScode</a></li>
+  <li><a href="manual/sources.md.html">Sources</a></li>
+  <li><a href="manual/CONTRIBUTING.md.html">Contributing</a></li>
+  <li><a href="manual/CODE_OF_CONDUCT.md.html">Code of Conduct</a></li>
+  <li><a href="manual/SECURITY.md.html">Security</a></li>
+  <li><a href="manual/TRANSLATING.md.html">Translating</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="examples/export-bcmath.lua.html">export-bcmath.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>BCmath</code></h1>
+<p>Register functions for the bcmath api.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:__call">bcmath:__call ()</a></td>
+	<td class="summary">Instance is callable.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:__tostring">bcmath:__tostring ()</a></td>
+	<td class="summary">Instance is stringable.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:scale">bcmath:scale ()</a></td>
+	<td class="summary">Get scale from self.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:value">bcmath:value ()</a></td>
+	<td class="summary">Get value from self.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:payload">bcmath:payload ()</a></td>
+	<td class="summary">Get payload from self.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:getInfinite">bcmath:getInfinite ()</a></td>
+	<td class="summary">Get infinite.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:isInfinite">bcmath:isInfinite ()</a></td>
+	<td class="summary">Is infinite.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:isFinite">bcmath:isFinite ()</a></td>
+	<td class="summary">Is finite.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:getZero">bcmath:getZero ()</a></td>
+	<td class="summary">Get zero.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:isZero">bcmath:isZero ()</a></td>
+	<td class="summary">Is zero.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:isNaN">bcmath:isNaN ()</a></td>
+	<td class="summary">Is a NaN.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:exists">bcmath:exists ()</a></td>
+	<td class="summary">Has a value.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:neg">bcmath:neg ()</a></td>
+	<td class="summary">Negates self.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:add">bcmath:add ()</a></td>
+	<td class="summary">Add self with addend.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:sub">bcmath:sub ()</a></td>
+	<td class="summary">Subtract self with subtrahend.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:mul">bcmath:mul ()</a></td>
+	<td class="summary">Multiply self with multiplicator.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:div">bcmath:div ()</a></td>
+	<td class="summary">Divide self with divisor.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:mod">bcmath:mod ()</a></td>
+	<td class="summary">Modulus self with divisor.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:pow">bcmath:pow ()</a></td>
+	<td class="summary">Power self with exponent.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:powmod">bcmath:powmod ()</a></td>
+	<td class="summary">Power-modulus self with exponent and divisor.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:sqrt">bcmath:sqrt ()</a></td>
+	<td class="summary">Square root self.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:comp">bcmath:comp ()</a></td>
+	<td class="summary">Compare self with operand.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#bcmath:round">bcmath:round ()</a></td>
+	<td class="summary">Round self to given precision.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.new">mw.bcmath.new ()</a></td>
+	<td class="summary">Create new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.getZero">mw.bcmath.getZero ()</a></td>
+	<td class="summary">Get the string zero.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.isZero">mw.bcmath.isZero ()</a></td>
+	<td class="summary">Is the string zero.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.getInfinity">mw.bcmath.getInfinity ()</a></td>
+	<td class="summary">Get the strings infinite part.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.isInfinite">mw.bcmath.isInfinite ()</a></td>
+	<td class="summary">Is the string infinite.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.isFinite">mw.bcmath.isFinite ()</a></td>
+	<td class="summary">Is the string finite.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.neg">mw.bcmath.neg ()</a></td>
+	<td class="summary">Negates the string representation of the number</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.add">mw.bcmath.add ()</a></td>
+	<td class="summary">Add the addend to augend.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.sub">mw.bcmath.sub ()</a></td>
+	<td class="summary">Subtract the subtrahend from minuend.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.mul">mw.bcmath.mul ()</a></td>
+	<td class="summary">Multiply the multiplicator with multiplier.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.div">mw.bcmath.div ()</a></td>
+	<td class="summary">Divide the divisor from dividend.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.mod">mw.bcmath.mod ()</a></td>
+	<td class="summary">Modulus the divisor from dividend.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.pow">mw.bcmath.pow ()</a></td>
+	<td class="summary">Power the base to exponent.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.powmod">mw.bcmath.powmod ()</a></td>
+	<td class="summary">Power-modulus the base to exponent.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.sqrt">mw.bcmath.sqrt ()</a></td>
+	<td class="summary">Square root of the operand.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.comp">mw.bcmath.comp ()</a></td>
+	<td class="summary">Compare the left operand with the right operand.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.eq">mw.bcmath.eq ()</a></td>
+	<td class="summary">Check if left operand is equal to right operand.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.lt">mw.bcmath.lt ()</a></td>
+	<td class="summary">Check if left operand is less than right operand.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.ge">mw.bcmath.ge ()</a></td>
+	<td class="summary">Check if left operand is greater or equal to right operand.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.le">mw.bcmath.le ()</a></td>
+	<td class="summary">Check if left operand is less than or equal to right operand.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.gt">mw.bcmath.gt ()</a></td>
+	<td class="summary">Check if left operand is equal to right operand.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.bcmath.round">mw.bcmath.round ()</a></td>
+	<td class="summary">Round the value to given precision.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "bcmath:__call"></a>
+    <strong>bcmath:__call ()</strong>
+    </dt>
+    <dd>
+    Instance is callable.
+ This will format according to given style and precision.
+ Unless overridden <code>style</code> will be set to <code>&apos;fix&apos;</code>.
+ Available notations are at least <code>&apos;fix&apos;</code>, <code>&apos;eng&apos;</code>, and <code>&apos;sci&apos;</code>.
+ Unless overridden <code>precision</code> will not be set, and it will use the full precission.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         dispatch on type or table field name
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:__tostring"></a>
+    <strong>bcmath:__tostring ()</strong>
+    </dt>
+    <dd>
+    Instance is stringable.
+ This will only create a minimal representation, suitable for further formatting.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:scale"></a>
+    <strong>bcmath:scale ()</strong>
+    </dt>
+    <dd>
+    Get scale from self.
+ The scale is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         bcmath:getScale
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:value"></a>
+    <strong>bcmath:value ()</strong>
+    </dt>
+    <dd>
+    Get value from self.
+ The value is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         <li>bcmath:number</li>
+         <li>bcmath:getNumber</li>
+         <li>bcmath:getValue</li>
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:payload"></a>
+    <strong>bcmath:payload ()</strong>
+    </dt>
+    <dd>
+    Get payload from self.
+ The payload is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         <li>bcmath:payloads</li>
+         <li>bcmath:hasPayload</li>
+         <li>bcmath:hasPayloads</li>
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+        none, one or several keys
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:getInfinite"></a>
+    <strong>bcmath:getInfinite ()</strong>
+    </dt>
+    <dd>
+    Get infinite.
+ The value is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         bcmath:getInf
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:isInfinite"></a>
+    <strong>bcmath:isInfinite ()</strong>
+    </dt>
+    <dd>
+    Is infinite.
+ The value is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         bcmath:isInf
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:isFinite"></a>
+    <strong>bcmath:isFinite ()</strong>
+    </dt>
+    <dd>
+    Is finite.
+ The value is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         bcmath:isFin
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:getZero"></a>
+    <strong>bcmath:getZero ()</strong>
+    </dt>
+    <dd>
+    Get zero.
+ The value is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         bcmath:getNull
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:isZero"></a>
+    <strong>bcmath:isZero ()</strong>
+    </dt>
+    <dd>
+    Is zero.
+ The value is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         bcmath:isNull
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:isNaN"></a>
+    <strong>bcmath:isNaN ()</strong>
+    </dt>
+    <dd>
+    Is a NaN.
+ The value is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         bcmath:isNan
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:exists"></a>
+    <strong>bcmath:exists ()</strong>
+    </dt>
+    <dd>
+    Has a value.
+ The value is stored in the closure.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         <li>bcmath:exist</li>
+         <li>bcmath:hasNumber</li>
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:neg"></a>
+    <strong>bcmath:neg ()</strong>
+    </dt>
+    <dd>
+    Negates self.
+
+
+
+    <h3>Returns:</h3>
+
+        self
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:add"></a>
+    <strong>bcmath:add ()</strong>
+    </dt>
+    <dd>
+    Add self with addend.
+ This method will store result in self, and then return self to facilitate chaining.
+ See <a href="https://www.php.net/manual/en/function.bcadd.php">PHP: bcadd</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">addend</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:sub"></a>
+    <strong>bcmath:sub ()</strong>
+    </dt>
+    <dd>
+    Subtract self with subtrahend.
+ This method will store result in self, and then return self to facilitate chaining.
+ See <a href="https://www.php.net/manual/en/function.bcsub.php">PHP: bcsub</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">subtrahend</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:mul"></a>
+    <strong>bcmath:mul ()</strong>
+    </dt>
+    <dd>
+    Multiply self with multiplicator.
+ This method will store result in self, and then return self to facilitate chaining.
+ See <a href="https://www.php.net/manual/en/function.bcmul.php">PHP: bcmul</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">multiplicator</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:div"></a>
+    <strong>bcmath:div ()</strong>
+    </dt>
+    <dd>
+    Divide self with divisor.
+ This method will store result in self, and then return self to facilitate chaining.
+ See <a href="https://www.php.net/manual/en/function.bcdiv.php">PHP: bcdiv</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">divisor</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:mod"></a>
+    <strong>bcmath:mod ()</strong>
+    </dt>
+    <dd>
+    Modulus self with divisor.
+ This method will store result in self, and then return self to facilitate chaining.
+ See <a href="https://www.php.net/manual/en/function.bcmod.php">PHP: bcmod</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">divisor</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:pow"></a>
+    <strong>bcmath:pow ()</strong>
+    </dt>
+    <dd>
+    Power self with exponent.
+ This method will store result in self, and then return self to facilitate chaining.
+ See <a href="https://www.php.net/manual/en/function.bcpow.php">PHP: bcpow</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">exponent</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:powmod"></a>
+    <strong>bcmath:powmod ()</strong>
+    </dt>
+    <dd>
+    Power-modulus self with exponent and divisor.
+ This method will store result in self, and then return self to facilitate chaining.
+ See <a href="https://www.php.net/manual/en/function.bcpowmod.php">PHP: bcpowmod</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">exponent</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">divisor</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:sqrt"></a>
+    <strong>bcmath:sqrt ()</strong>
+    </dt>
+    <dd>
+    Square root self.
+ This method will store result in self, and then return self to facilitate chaining.
+ See <a href="https://www.php.net/manual/en/function.bcsqrt.php">PHP: bcsqrt</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:comp"></a>
+    <strong>bcmath:comp ()</strong>
+    </dt>
+    <dd>
+    Compare self with operand.
+ All <a href="https://en.wikipedia.org/wiki/NaN#Comparison_with_NaN">comparisons involving a NaN</a> will
+ fail silently and return false.
+ See <a href="https://www.php.net/manual/en/function.bccomp.php">PHP: bccomp</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">operand</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+
+
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "bcmath:round"></a>
+    <strong>bcmath:round ()</strong>
+    </dt>
+    <dd>
+    Round self to given precision.
+ This returns the rounded value as a new bcmath object, it does not change self.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">precision</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits (forwarded to bcmath object)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.new"></a>
+    <strong>mw.bcmath.new ()</strong>
+    </dt>
+    <dd>
+    Create new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.getZero"></a>
+    <strong>mw.bcmath.getZero ()</strong>
+    </dt>
+    <dd>
+    Get the string zero.
+ Returned string is normalized,
+ and nil if no zero is found.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be parsed
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.isZero"></a>
+    <strong>mw.bcmath.isZero ()</strong>
+    </dt>
+    <dd>
+    Is the string zero.
+ Returns true if zero is found.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be parsed
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">nil</span> or <span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.getInfinity"></a>
+    <strong>mw.bcmath.getInfinity ()</strong>
+    </dt>
+    <dd>
+    Get the strings infinite part.
+ Returned string is normalized,
+ and nil if no infinity is found.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be parsed
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.isInfinite"></a>
+    <strong>mw.bcmath.isInfinite ()</strong>
+    </dt>
+    <dd>
+    Is the string infinite.
+ Returned string is normalized.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be parsed
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.isFinite"></a>
+    <strong>mw.bcmath.isFinite ()</strong>
+    </dt>
+    <dd>
+    Is the string finite.
+ Returned string is normalized.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be parsed
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.neg"></a>
+    <strong>mw.bcmath.neg ()</strong>
+    </dt>
+    <dd>
+    Negates the string representation of the number
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">operand</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.add"></a>
+    <strong>mw.bcmath.add ()</strong>
+    </dt>
+    <dd>
+    Add the addend to augend.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bcadd.php">PHP: bcadd</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">augend</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">addend</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.sub"></a>
+    <strong>mw.bcmath.sub ()</strong>
+    </dt>
+    <dd>
+    Subtract the subtrahend from minuend.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bcsub.php">PHP: bcsub</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">minuend</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">subtrahend</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.mul"></a>
+    <strong>mw.bcmath.mul ()</strong>
+    </dt>
+    <dd>
+    Multiply the multiplicator with multiplier.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bcmul.php">PHP: bcmul</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">multiplier</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">multiplicator</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.div"></a>
+    <strong>mw.bcmath.div ()</strong>
+    </dt>
+    <dd>
+    Divide the divisor from dividend.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bcdiv.php">PHP: bcdiv</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">dividend</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">divisor</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.mod"></a>
+    <strong>mw.bcmath.mod ()</strong>
+    </dt>
+    <dd>
+    Modulus the divisor from dividend.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bcmod.php">PHP: bcmod</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">dividend</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">divisor</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.pow"></a>
+    <strong>mw.bcmath.pow ()</strong>
+    </dt>
+    <dd>
+    Power the base to exponent.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bcpow.php">PHP: bcpow</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">base</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">exponent</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.powmod"></a>
+    <strong>mw.bcmath.powmod ()</strong>
+    </dt>
+    <dd>
+    Power-modulus the base to exponent.
+ This function is not available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bcpowmod.php">PHP: bcpowmod</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">base</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">exponent</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">divisor</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.sqrt"></a>
+    <strong>mw.bcmath.sqrt ()</strong>
+    </dt>
+    <dd>
+    Square root of the operand.
+ This function is not available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bcsqrt.php">PHP: bcsqrt</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">an</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.comp"></a>
+    <strong>mw.bcmath.comp ()</strong>
+    </dt>
+    <dd>
+    Compare the left operand with the right operand.
+ This function is not available as a metamethod.
+ All <a href="https://en.wikipedia.org/wiki/NaN#Comparison_with_NaN">comparisons involving a NaN</a> will
+ fail silently and return false.
+ See <a href="https://www.php.net/manual/en/function.bccomp.php">PHP: bccomp</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">left</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">right</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.eq"></a>
+    <strong>mw.bcmath.eq ()</strong>
+    </dt>
+    <dd>
+    Check if left operand is equal to right operand.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bccomp.php">PHP: bccomp</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">left</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">right</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.lt"></a>
+    <strong>mw.bcmath.lt ()</strong>
+    </dt>
+    <dd>
+    Check if left operand is less than right operand.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bccomp.php">PHP: bccomp</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">left</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">right</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.ge"></a>
+    <strong>mw.bcmath.ge ()</strong>
+    </dt>
+    <dd>
+    Check if left operand is greater or equal to right operand.
+ This function is not available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bccomp.php">PHP: bccomp</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">left</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">right</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.le"></a>
+    <strong>mw.bcmath.le ()</strong>
+    </dt>
+    <dd>
+    Check if left operand is less than or equal to right operand.
+ This function is available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bccomp.php">PHP: bccomp</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">left</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">right</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.gt"></a>
+    <strong>mw.bcmath.gt ()</strong>
+    </dt>
+    <dd>
+    Check if left operand is equal to right operand.
+ This function is not available as a metamethod.
+ See <a href="https://www.php.net/manual/en/function.bccomp.php">PHP: bccomp</a> for further documentation.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">left</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">right</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         an operand
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.bcmath.round"></a>
+    <strong>mw.bcmath.round ()</strong>
+    </dt>
+    <dd>
+    Round the value to given precision.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">number</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+
+
+
+        </li>
+        <li><span class="parameter">precision</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits
+        </li>
+        <li><span class="parameter">scale</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         of decimal digits (forwarded to bcmath object)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">bcmath</span></span>
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc TESTING</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

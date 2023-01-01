@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Suriyaa Sundararuban\r */\r"
+		]
+	},
+	"info": "Seiteninfos anzeigen",
+	"descriptionmsg": "Ergänzt den Reiter „Info“, der die schnelle Anzeige der Seiteninformationen ermöglicht",
+	"info-failed": "Info fehlgeschlagen"
+}

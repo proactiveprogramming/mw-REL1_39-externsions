@@ -1,0 +1,9 @@
+Just a small test: {{Glossary/Link|ref=controleur|txt=Contrôleur}}
+
+*{{Glossary/Link|ref=sensor|txt=Sensor}} is “capteur” in english…
+*{{Glossary/Link|ref=capteur|txt=Capteur}}
+
+{|align=right
+ |And with a synonym: We can {{Glossary/Link|ref=pre calculer|txt=pré-calculer}} all this…
+ |}
+

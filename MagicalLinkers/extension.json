@@ -1,0 +1,24 @@
+{
+	"name": "MagicalLinkers",
+	"author": "wsd, from phab:T28207",
+	"url": "https://www.mediawiki.org/wiki/Extension:MagicalLinkers",
+	"descriptionmsg": "magicallinkers-desc",
+	"license-name": "GPL-2.0",
+	"type": "parserhook",
+	"ConfigRegistry": {
+	},
+	"ExtensionFunctions": [
+        "MagicalLinkers::performInit"
+	],
+	"AutoloadClasses": {
+        "MagicalLinkers": "MagicalLinkers.php"
+	},
+	"Hooks": {
+        "ParserBeforeTidy": "MagicalLinkers::parserBeforeTidyHook"
+	},
+	"config": {
+        "wgMagicalClassic": false,
+        "wgMagicalLinkers": []
+	},
+	"manifest_version": 1
+}

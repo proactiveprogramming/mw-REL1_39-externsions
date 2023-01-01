@@ -1,0 +1,57 @@
+{
+	"rules": [
+		{
+			"ruleName": "Cities should use their Official Name property as label",
+			"when": [
+				{
+					"statement": "P1",
+					"equalTo": "Q1"
+				}
+			],
+			"buildLabel": {
+				"en": {
+					"P2": "$"
+				}
+			}
+		},
+
+		{
+			"ruleName": "Persons should have a label composed of their first and last name and have their nicknames as aliases",
+			"when": [
+				{
+					"statement": "P1",
+					"equalTo": "Q2"
+				}
+			],
+			"buildLabel": {
+				"*": {
+					"P5": "$ ",
+					"P6": "$"
+				}
+			},
+			"buildAliases": {
+				"en": {
+					"P7.P8": "The Great ",
+					"P7": "$",
+					"P7.P9": " $"
+				},
+				"de": {
+					"P7.P8": "Der große ",
+					"P7": "$",
+					"P7.P9": " $"
+				}
+			}
+		},
+
+		{
+			"ruleName": "P42 should always be the label, doh",
+			"when": [
+			],
+			"buildLabel": {
+				"en": {
+					"P42": "$"
+				}
+			}
+		}
+	]
+}

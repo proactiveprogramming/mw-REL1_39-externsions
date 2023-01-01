@@ -1,0 +1,1 @@
+ALTER TABLE /*_*/spritename ADD `edited` INT( 14 ) NOT NULL DEFAULT '0', ADD INDEX ( `edited` );

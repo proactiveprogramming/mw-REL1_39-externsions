@@ -1,0 +1,86 @@
+/* errors */
+.gantt_error {
+	font-family:tahoma, arial, verdana;
+	font-size:12px;
+	color: #c00;
+}
+
+/* general styles */
+.ganttchart {
+	font-family:tahoma, arial, verdana;
+	font-size:12px;
+}
+.ganttchart table.ganttchartmaintable {
+	width:100%;
+}
+.ganttchart table {
+	border-collapse:collapse;
+}
+.ganttchart table th,
+.ganttchart table td {
+	vertical-align:top;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #efefef;
+	border-left: 1px solid #efefef;
+}
+.ganttchart table th {
+	font-weight: normal;
+	font-size: 11px;
+}
+
+/* tasks area (left side) */
+.ganttchart .tasksarea table {
+	width: 100%
+}
+.ganttchart .tasksarea th,
+.ganttchart .tasksarea td.gtaskdesc {
+	text-align:center;
+	white-space:nowrap;
+}
+.ganttchart .tasksarea th {
+	background-color: #d8d8f0;
+}
+/*
+.ganttchart .tasksarea th,
+.ganttchart .tasksarea td.gtaskdesc {
+	background-color: #e8e8f0;
+}
+.ganttchart .tasksarea th:nth-child(odd),
+.ganttchart .tasksarea td.gtaskdesc:nth-child(odd) {
+	background-color: #f0f0f8;
+}
+*/
+.ganttchart .tasksarea a {
+	cursor:pointer;
+	background-image:url("task_link_ico.png");
+	background-position:right center;
+	background-repeat:no-repeat;
+	padding-right:19px;
+}
+.ganttchart .tasksarea .ggroup_opener {
+	cursor:pointer;
+}
+.ganttchart .tasksarea .ggroup {
+	display:inline-block;
+	width:14px;
+	text-align:center;
+	color:#000000;
+	font-weight:bold;
+}
+
+/* chart area (right side) */
+.ganttchart .chartarea {
+	position:relative;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+
+/* chart headers */
+.ganttchart .gheadwkend {
+	background-color: #cfcfcf;
+}
+
+.ganttchart .gdatehead {
+	white-space:nowrap;	/* fixes problems left/righ header size difference when chart ends in the midddle of the week */
+}

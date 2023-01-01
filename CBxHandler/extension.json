@@ -1,0 +1,49 @@
+{
+	"name": "CBX Handler",
+	"author": [
+		"Maysara Abdulhaq"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CbxHandler",
+	"descriptionmsg": "cbx-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "media",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
+	"config": {
+		"CbxOutputExtension": "jpg",
+		"CbxHandlerDpi": 150,
+		"CbxCreateThumbnailsInJobQueue": false,
+		"CbxPostProcessor": "/usr/bin/convert",
+		"CbxHandlerJpegQuality": 95,
+		"CbxProcessor": "/usr/bin/cbx-extractor.sh",
+		"CbxInfo": "/usr/bin/cbx-info.sh"
+	},
+	"MessagesDirs": {
+		"CbxHandler": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"UploadVerifyFile": [
+			"CreateCbxThumbnailsJob::insertJobs"
+		]
+	},
+	"JobClasses": {
+		"createCbxThumbnailsJob": "CreateCbxThumbnailsJob"
+	},
+	"MediaHandlers": {
+		"application/x-cbz": "CbxHandler",
+		"application/vnd.rar": "CbxHandler",
+		"application/vnd.comicbook-rar": "CbxHandler"
+	},
+	"AutoloadClasses": {
+		"CreateCbxThumbnailsJob": "includes/CreateCbxThumbnailsJob.php",
+		"CbxHandler": "includes/CbxHandler.php",
+		"CbxImage": "includes/CbxImage.php"
+	},
+        "FileExtensions": [
+		"cbr"
+	],
+	"manifest_version": 1
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	},
+	"nsdata-desc": "Créer un onglet Data pour les pages principales et utilisateurs afin d'ouvrir les pages dans l'espace de noms Data et UserData"
+}

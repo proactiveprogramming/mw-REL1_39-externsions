@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Александр Сигачёв"
+        ]
+    },
+    "newduplicateusermessage-description": "Добавляет сообщение на страницу обсуждения недавно зарегистрированного участника",
+    "newduplicateusermessage-edit-summary": "Добавление [[{{int:newduplicateusermessage-template}}|приветствия]] на страницу обсуждения нового участника"
+}

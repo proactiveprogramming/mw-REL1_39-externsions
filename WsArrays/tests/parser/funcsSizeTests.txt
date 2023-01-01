@@ -1,0 +1,52 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraysize
+!! endfunctionhooks
+
+# This test tests the ComplexArraySize parser function
+
+!! test
+Test one-dimensional simple array
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d}}
+{{#complexarraysize:example}}
+!! html
+<p>4
+</p>
+!! end
+
+!! test
+Test two-dimensional list
+!! wikitext
+{{#complexarraydefine:example|[["a", "b", "c"], ["d", "e", "f"]]}}
+{{#complexarraysize:example}}
+!! html
+<p>8
+</p>
+!! end
+
+!! test
+Test two-dimensional list with "top"
+!! wikitext
+{{#complexarraydefine:example|[["a", "b", "c"], ["d", "e", "f"]]}}
+{{#complexarraysize:example|top}}
+!! html
+<p>2
+</p>
+!! end
+
+!! test
+Test non-existent array
+!! wikitext
+{{#complexarraysize:foobar}}
+!! html
+!! end
+
+!! test
+Test non-existent top array
+!! wikitext
+{{#complexarraysize:foobar|top}}
+!! html
+!! end

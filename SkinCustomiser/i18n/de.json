@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [ "WikiMANNia" ]
+	},
+	"skincustomiser-msg": "Oberflächen personalisieren",
+	"skincustomiser-desc": "Bestehende Oberflächen anpassen. Skripte und Meta-Daten im Header-Bereich hinzufügen. Übersetzte Labels für die [https://www.mediawiki.org/wiki/Sidebar/de Navigations&shy;leiste] ergänzen.",
+	"projectabout": "Über Dein Wiki",
+	"projectpage": "Projektseite",
+	"registrate": "Mitarbeit",
+	"contact": "Kontakt",
+	"interaction": "Mitmachen",
+	"portals": "Portale",
+	"portal-1": "Dein persönliches Portal 1",
+	"portal-2": "Dein persönliches Portal 2",
+	"portal-3": "Dein persönliches Portal 3",
+	"tourbus": "TourBusHaltestelle",
+	"createacct-benefit-heading": "{{SITENAME}} wird von Individuen wie dir geschaffen."
+}

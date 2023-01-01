@@ -1,0 +1,11 @@
+{
+  "@metadata": {
+    "authors": [
+      "Marijn van Wezel"
+    ]
+  },
+  "closures-name": "Closures",
+  "closures-desc": "Provides a way for users to define templates on the page they are needed through a parser function",
+  "closures-missing-closure-name": "Missing closure name",
+  "closures-bad-closure-name": "Invalid or malformed closure name"
+}

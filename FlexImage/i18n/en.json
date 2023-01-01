@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jan Boer",
+			"FlexImage"
+		]
+	},
+	"fleximageadmin": 					"FlexImage Administrator page",
+	"fleximageadmin-desc": 				"My Extension does fancy stuff",
+    "fleximageadmin-summary": 			"On this special page, do this simple thing and earn wonders",
+	"fleximage_welcome": 				"Welcome to the FlexImage base extension",
+	"fleximage_upldefimg_ok": 			"Succeeded to check and/or import the required default FlexImage images from allocation:",
+	"fleximage_upldefimg_nok": 			"<span style='color:red'>Failed  to check and/or import the required default FlexImage images from allocation:</span>",
+	"fleximage_upldefimg_noresponce": 	"<span style='color:red'>No responce from the shell command.</span> Most likely the '''php BIN executable''' <code>$wf_QBox_PHP_Bin</code> location is set wrong",
+	"myextension": 						"My Extension"
+}

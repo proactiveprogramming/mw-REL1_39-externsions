@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Gaoxuewei",
+            "Xiaomingyan"
+        ]
+    },
+    "newduplicateusermessage-description": "在新用户的讨论页上添加信息",
+    "newduplicateusermessage-edit-summary": "在新用户的讨论页上添加[[{{int:newduplicateusermessage-template}}|欢迎信息]]"
+}

@@ -1,0 +1,76 @@
+{
+	"name": "ViewProtect",
+	"version": "0.1.0",
+	"author": [
+		"[http://mwstake.org/ Mark A. Hershberger]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ViewProtect",
+	"descriptionmsg": "viewprotect-desc",
+	"license-name": "GPL-3.0+",
+	"type": "other",
+	"SpecialPages": {
+		"ViewProtect": "MediaWiki\\Extension\\ViewProtect\\SpecialViewProtect",
+		"ViewProtectFile": "MediaWiki\\Extension\\ViewProtect\\SpecialViewProtectFile"
+	},
+	"MessagesDirs": {
+		"ViewProtect": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ViewProtectAlias": "src/i18n/Alias.php"
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\ViewProtect\\ViewProtect": "src/ViewProtect.php",
+		"MediaWiki\\Extension\\ViewProtect\\Hooks": "src/Hooks.php",
+		"MediaWiki\\Extension\\ViewProtect\\SpecialViewProtect": "src/SpecialViewProtect.php",
+		"MediaWiki\\Extension\\ViewProtect\\SpecialViewProtectFile": "src/SpecialViewProtectFile.php",
+		"MediaWiki\\Extension\\ViewProtect\\ApiQueryViewProtect": "src/ApiQueryViewProtect.php",
+		"MediaWiki\\Extension\\ViewProtect\\Formatter": "src/LogFormatter.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\ViewProtect\\Hooks::onBeforePageDisplay",
+		"getUserPermissionsErrors": "MediaWiki\\Extension\\ViewProtect\\Hooks::onGetUserPermissionsErrors",
+		"ImgAuthBeforeStream": "MediaWiki\\Extension\\ViewProtect\\Hooks::onImgAuthBeforeStream",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\ViewProtect\\Hooks::onLoadExtensionSchemaUpdates",
+		"PageGroups": "MediaWiki\\Extension\\ViewProtect\\Hooks::onCoPPageGroups",
+		"UpdateUsableLevels": "MediaWiki\\Extension\\ViewProtect\\Hooks::onUpdateUsableLevels"
+	},
+	"AvailableRights": [
+		"viewprotectmanage"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"viewprotectmanage": true
+		}
+	},
+	"ResourceModules": {
+		"ext.ViewProtectFile": {
+			"scripts": "ext.ViewProtectFile.js",
+			"localBasePath": "resources",
+			"messages": [
+				"viewprotectfile-success-add",
+				"viewprotectfile-success-remove"
+			],
+			"dependencies": "mediawiki.notify"
+		}
+	},
+	"LogTypes": [
+		"viewprotect"
+	],
+	"LogRestrictions": {
+		"viewprotect": "viewprotectmanage"
+	},
+	"FilterLogTypes": {
+		"viewprotect": false
+	},
+	"LogActions": {
+		"viewprotect/read": "viewprotect-read",
+		"viewprotect/upload": "viewprotect-upload"
+	},
+	"LogActionsHandlers": {
+		"viewprotect/read": "MediaWiki\\Extension\\ViewProtect\\Formatter",
+		"viewprotect/upload": "MediaWiki\\Extension\\ViewProtect\\Formatter"
+	},
+	"manifest_version": 1
+}

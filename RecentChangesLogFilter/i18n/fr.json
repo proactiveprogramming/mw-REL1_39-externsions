@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+
+	"recentchangeslogfilter-desc": "Cette extension filter les entrées de journeaux de [[Spécial:Modifications récentes]]",
+	"recentchangeslogfilter-hidelogs": "$1 le journal des créations de comptes utilisateur",
+	"recentchangeslogfilter-pref": "Masquer le journal des créations de comptes utilisateur dans les modifications récentes"
+}

@@ -1,0 +1,100 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarrayarraymap
+!! endfunctionhooks
+
+# This test tests the ComplexArrayArrayMap parser function.
+
+!! test
+Test simple three item array map
+!! wikitext
+{{#complexarrayarraymap:a,b,c|,|####|Hello, ####!|<br/>}}
+!! html
+<p>Hello, a!<br />Hello, b!<br />Hello, c!
+</p>
+!! end
+
+!! test
+Test simple three item array map, no delimiter
+!! wikitext
+{{#complexarrayarraymap:a,b,c|,|####|Hello, ####!}}
+!! html
+<p>Hello, a!Hello, b!Hello, c!
+</p>
+!! end
+
+!! test
+Test simple three item array map, broken mapping key
+!! wikitext
+{{#complexarrayarraymap:a,b,c|,||Hello, ####!}}
+!! html
+
+!! end
+
+!! test
+Test simple three item array map, broken delimiter
+!! wikitext
+{{#complexarrayarraymap:a,b,c||####|Hello, ####!}}
+!! html
+<p>Hello, a!Hello, b!Hello, c!
+</p>
+!! end
+
+!! test
+Test simple three item array map, broken delimiter and mapping key
+!! wikitext
+{{#complexarrayarraymap:a,b,c|||Hello, ####!}}
+!! html
+
+!! end
+
+!! test
+Test simple three item array map, no subject
+!! wikitext
+{{#complexarrayarraymap:a,b,c|,|####}}
+!! html
+
+!! end
+
+!! test
+Test empty
+!! wikitext
+{{#complexarrayarraymap:}}
+!! html
+
+!! end
+
+!! test
+Test only array
+!! wikitext
+{{#complexarrayarraymap:a,b,c}}
+!! html
+
+!! end
+
+!! test
+Test empty array
+!! wikitext
+{{#complexarrayarraymap:|,|####|Hello, ####!}}
+!! html
+
+!! end
+
+!! test
+Test template mapping key
+!! wikitext
+{{#complexarrayarraymap:a,b,c|,|{{!}}|Hello, ####!}}
+!! html
+<p>Hello, ####!Hello, ####!Hello, ####!
+</p>
+!! end
+
+!! test
+Test template mapping key 2
+!! wikitext
+{{#complexarrayarraymap:a,b,c|,|{{!}}|Hello, {{!}}!}}
+!! html
+<p>Hello, |!Hello, |!Hello, |!
+</p>
+!! end

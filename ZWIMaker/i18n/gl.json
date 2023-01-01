@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"mzwi-action": "Exportación en ZWI",
+	"mzwi-desc": "Converte a páxina actual nun ZWI e mándalla ao navegador"
+}

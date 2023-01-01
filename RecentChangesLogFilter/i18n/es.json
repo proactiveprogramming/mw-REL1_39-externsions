@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+
+	"recentchangeslogfilter-desc": "Esta extensión filtra las entradas de los registros de [[Especial:CambiosRecientes]].",
+	"recentchangeslogfilter-hidelogs": "$1 registro de creación de usuarios",
+	"recentchangeslogfilter-pref": "Ocultar registro de creación de usuarios en la lista de cambios recientes"
+}

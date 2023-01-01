@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"mzwi-action": "Exportació a ZWI",
+	"mzwi-desc": "Converteix la pàgina actual en ZWI i la envia al navegador"
+}

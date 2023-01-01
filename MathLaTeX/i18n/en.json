@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jesse B. Dooley"
+		]
+	},
+	"mathlatex": "MathLaTeX",
+	"mathlatex-desc": "Adds <code>&lt;mathlatex&gt;</code> tag for rendering formulas in LaTeX.",
+	"mathlatex_documentation": "$1 documentation",
+	"mathlatex_general": "General",
+	"right-mathlatex": "See the link to [[Special:MathLaTeX|MathLaTeX]]",
+	"mathlatex-user": "MW_MATH",
+	"mathlatex-galleryname": "MW_MATH_GALLERY",
+	"mathlatex-packagename": "MW_MATH_PACKAGES",
+	"mathlatex-wrappername": "MW_MATH_WRAPPER",
+	"mathlatex-req-packages": "Required packages are in Green.",
+	"mathlatex-miss-packages": "Missing required packages are in Red.",
+	"mathlatex-extra-packages": "Extra packages are in Black.",
+	"mathlatex-gallery-failed": "Rebuilding MW_MATH_GALLERY failed.",
+	"mathlatex-packages-failed": "Rebuilding MW_MATH_PACKAGES failed.",
+	"mathlatex-wrapper-failed": "Rebuilding MW_MATH_WRAPPER failed.",
+	"mathlatex-tag-start": "<mathlatex",
+	"mathlatex-rebuild-gallery": "Rebuild Math Gallery",
+	"mathlatex-rebuild-packages": "Rebuild Math Packages",
+	"mathlatex-rebuild-wrapper": "Rebuild Math Wrapper",
+	"mathlatex-desc-wrapper": "Default LaTeX packages used in equation rendering.",
+	"mathlatex_sample": "Insert formula here",
+    "mathlatex_tip": "Mathematical formula (LaTeX)"
+
+
+}

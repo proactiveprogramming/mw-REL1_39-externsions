@@ -1,0 +1,36 @@
+{
+	"name": "TranslateWiki",
+	"version": "1.0",
+	"author": "Nischayn22",
+	"url": "https://www.mediawiki.org/wiki/Extension:TranslateWiki",
+	"MessagesDirs": {
+		"TranslateWiki": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+		"ApproveTranslations": "SpecialApproveTranslations",
+		"TranslationCorrections": "SpecialTranslationCorrections",
+		"LinkTranslations": "SpecialLinkTranslations"
+	},
+	"AutoloadClasses": {
+		"SpecialApproveTranslations": "SpecialApproveTranslations.php",
+		"SpecialTranslationCorrections": "SpecialTranslationCorrections.php",
+		"SpecialLinkTranslations": "SpecialLinkTranslations.php",
+		"AutoTranslate": "includes/AutoTranslate.php",
+		"TranslationCorrections": "includes/TranslationCorrections.php",
+		"LinkTranslations": "includes/LinkTranslations.php",
+		"TranslateWikiHooks": "TranslateWiki.hooks.php",
+		"TranslationCache": "includes/TranslationCache.php"
+	},
+	"config": {
+		"TranslateWikiNamespaces": [ 0 ],
+		"TranslateWikiLanguages": []
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"TranslateWikiHooks::onLoadExtensionSchemaUpdates"
+		]
+	},
+	"manifest_version": 1
+}

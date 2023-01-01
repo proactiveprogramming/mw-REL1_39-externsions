@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeroen De Dauw",
+			"Kghbln"
+		]
+	},
+	"wikibase-rdf-name": "{{notranslate}}",
+	"wikibase-rdf-description": "{{Desc|name=Wikibase RDF|url=https://github.com/ProfessionalWiki/WikibaseRDF}}",
+	"wikibase-rdf-mappings-toggler": "This is the text on a button.",
+	"wikibase-rdf-mappings-predicate-heading": "This is a section header.",
+	"wikibase-rdf-mappings-object-heading": "This is a section header.",
+	"wikibase-rdf-mappings-action-save": "This is the text on a button.",
+	"wikibase-rdf-mappings-action-remove": "This is the text on a button.",
+	"wikibase-rdf-mappings-action-cancel": "This is the text on a button.",
+	"wikibase-rdf-mappings-action-edit": "This is the text on a button.",
+	"wikibase-rdf-mappings-action-add": "This is the text on a button.",
+	"wikibase-rdf-save-mappings-invalid-mappings": "This is an error message.",
+	"wikibase-rdf-save-mappings-save-failed": "This is an error message.",
+	"wikibase-rdf-entity-id-invalid": "This is an error message.",
+	"wikibase-rdf-permission-denied": "This is an error message. Mappings as in RDF mappings.",
+	"wikibase-rdf-config-intro": "This is the text shown at the top of the form on \"MediaWiki:MappingPredicates\" when editing.",
+	"wikibase-rdf-config-invalid": "Error message shown when attempting to save invalid configuration on \"MediaWiki:MappingPredicates\"",
+	"wikibase-rdf-config-list-intro": "This is the text shown at the top of \"MediaWiki:MappingPredicates\" when viewing.",
+	"wikibase-rdf-config-list-heading": "This is the text shown before the list of predicates on \"MediaWiki:MappingPredicates\".",
+	"wikibase-rdf-config-list-empty": "This is the text shown on \"MediaWiki:MappingPredicates\" when no predicates are defined.",
+	"wikibase-rdf-config-list-footer": "This is the text shown at the bottom of \"MediaWiki:MappingPredicates\" when viewing.",
+	"wikibase-rdf-property-edit-warning": "This is the text of the popup shown when editing a property mapping",
+	"wikibase-rdf-property-edit-warning-version": "{{notranslate}}The version of the property edit warning message. Used to indicate if a new message should be shown.",
+	"wikibase-rdf-property-edit-warning-acknowledge": "This is the text of the action to acknowledge the property edit warning",
+	"special-mapping-predicates": "This is the label on \"Special:SpecialPages\" linking to \"MediaWiki:MappingPredicates\"."
+}

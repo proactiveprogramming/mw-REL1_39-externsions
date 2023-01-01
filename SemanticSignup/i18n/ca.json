@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toniher"
+		]
+	},
+	"semanticsignup": "Registre semàntic",
+	"ses-desc": "Permet omplir una pàgina d'usuari amb dades semàntiques al moment del registre",
+	"ses-nousername": "No s'ha especificat el nom d'usuari.",
+	"ses-noformname": "Cal especificar un formulari de registre. (vegeu el paràmetre <var>\"$egSemanticSignupSettings\"</var> per a més informació.)",
+	"ses-nobotname": "No s'ha especificat cap usuari privilegiat (bot) per permetre la creació de nous comptes d'usuari (vegeu el paràmetre <var>\"$egSemanticSignupSettings\"</var> per a més informació.)",
+	"ses-nopwdmatch": "La contrasenya i la confirmació de contrasenya no coincideixen.",
+	"ses-norealname": "Cal un nom real per no s'ha especificat.",
+	"ses-userexists": "L'usuari ja existeix.",
+	"ses-emailfailed": "L'enviament del correu de confirmació ha fallat.",
+	"ses-createforbidden": "L'usuari actual no té permisos per crear comptes.",
+	"ses-throttlehit": "Des d'aquesta IP s'ha excedit el nombre màxim de nous usuaris per dia."
+}

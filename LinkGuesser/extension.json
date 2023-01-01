@@ -1,0 +1,44 @@
+{
+    "name": "LinkGuesser",
+    "version": "0.1",
+    "author": [
+        "[https://github.com/mywikis MyWikis LLC]"
+    ],
+    "license-name": "(c) MyWikis LLC",
+    "url": "https://github.com/mywikis/LinkGuesser",
+    "descriptionmsg": "linkguesser-description",
+    "type": "other",
+    "requires": {
+        "MediaWiki": ">= 1.35.0",
+        "extensions": {
+            "CirrusSearch": ">=6.5.4"
+        }
+    },
+    "MessagesDirs": {
+        "LinkGuesser": [
+            "i18n"
+        ]
+    },
+    "AutoloadClasses": {
+        "MediaWiki\\Extension\\LinkGuesser\\LinkGuesserHooks": "includes/LinkGuesser.hooks.php",
+        "MediaWiki\\Extension\\LinkGuesser\\ResultsResolver": "includes/ResultsResolver.php",
+        "MediaWiki\\Extension\\LinkGuesser\\SpecialChangeLink": "includes/SpecialChangeLink.php",
+        "MediaWiki\\Extension\\LinkGuesser\\SpecialResolveLink": "includes/SpecialResolveLink.php"
+    },
+    "SpecialPages": {
+        "ChangeLink": "MediaWiki\\Extension\\LinkGuesser\\SpecialChangeLink",
+        "ResolveLink": "MediaWiki\\Extension\\LinkGuesser\\SpecialResolveLink"
+    },
+    "Hooks": {
+        "HtmlPageLinkRendererEnd": "MediaWiki\\Extension\\LinkGuesser\\LinkGuesserHooks::onHtmlPageLinkRendererEnd"
+    },
+    "ConfigRegistry": {
+        "LinkGuesser": "GlobalVarConfig::newInstance"
+    },
+    "config": {
+        "LinkGuesserResultsLimit": {
+            "value": 25
+        }
+    },
+    "manifest_version": 2
+}

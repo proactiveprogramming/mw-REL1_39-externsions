@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki",
+			"Umherirrender",
+			"Amire80",
+			"Fhocutt",
+			"Liuxinyu970226"
+		]
+	},
+	"coordinateconversion-desc": "{{desc|name=CoordinateConversion|url=https://github.com/WouterRademaker/mediawiki-coorconv.git }}",
+	"coordinateconversion-i18n-welcome": "Used to greet the user when reading the i18n/??.json file.",
+	"coordinateconversion-test": "Page title of the Test special page.\n{{Identical|CCTest}}",
+	"coordinateconversion-test-intro": "Text displayed on the Test SpecialPage.",
+	"cctest": "Text of the link to the Test special page on SpecialPages.\n{{Identical|CCTest}}"
+}

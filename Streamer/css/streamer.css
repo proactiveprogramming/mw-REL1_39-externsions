@@ -1,0 +1,108 @@
+.stream {
+	display: inline-block;
+	position: relative;
+}
+
+.stream .logo {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
+	height: 180px;
+	margin: 5px 0;
+	text-align: center;
+	transform-style: preserve-3d;
+	vertical-align: middle;
+	width: 180px;
+}
+
+.stream .logo img {
+	display: block;
+	margin: auto;
+	max-width: 180px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+/*********************************/
+/* Online Status Display         */
+/*********************************/
+.online {
+	align-content: center;
+	align-items: flex-start;
+	background: linear-gradient(to bottom, #fbfbfb 0%, #f2f3f2 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #d9d9d9;
+	border-radius: 2px;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 1) inset;
+	color: #969696;
+	display: flex;
+	flex-flow: row nowrap;
+	font-family: sans-serif;
+	font-size: 12px;
+	height: 11px;
+	justify-content: flex-start;
+	line-height: 12px;
+	padding: 3px 4.5px;
+	position: relative;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.online.live {
+	color: #282828;
+}
+
+.online.live .dot {
+	background: none repeat scroll 0 0 #fc0f1b;
+}
+
+.online .dot {
+	align-self: auto;
+	background: none repeat scroll 0 0 #979797;
+	border-radius: 9px;
+	content: "";
+	display: inline-block;
+	flex: 0 1 auto;
+	height: 9px;
+	margin: 1px 0 0 1px;
+	order: 0;
+	width: 9px;
+}
+
+.online .text {
+	align-self: auto;
+	display: inline-block;
+	flex: 1 1 auto;
+	height: 12px;
+	line-height: 13px;
+	margin-left: 5px;
+	order: 1;
+}
+
+/*********************************/
+/* Block Template                */
+/*********************************/
+.stream.block {
+	margin: 0 10px;
+	width: 180px;
+}
+
+/*********************************/
+/* Stream Info Flex Display      */
+/*********************************/
+.stream .stream_info {
+	display: flex;
+}
+
+.stream .stream_info .online {
+	flex: 0 1 auto;
+	margin-left: 5px;
+}
+
+.stream .stream_info .name {
+	align-self: auto;
+	flex: 1 1 auto;
+	order: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

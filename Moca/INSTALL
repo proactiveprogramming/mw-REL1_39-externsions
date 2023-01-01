@@ -1,0 +1,50 @@
+[[MOCA 1.0.2]]
+
+Contents:
+* Requirements
+* Installation
+* Upgrading
+* Contact
+
+
+== Requirements ==
+
+- MediaWiki 1.10.* or greater (tested up to 1.10.1)
+- PHP 5.x or greater
+- MySQL 5.x or greater
+- JavaScript and cookies must be enabled on the client broswer
+
+
+== Installation ==
+
+(1)	Create a new folder in the extensions directory located in the root of your mediawiki installation and name it "MOCA". Copy all the extension 
+	files to this folder.
+(2)	Open the LocalSettings.php file found in the root directory of your wiki installation.
+(3)	Make sure that you have already installed the semantic mediawiki extension before continuing further with the installation of this extension. 
+	Follow the semantic mediawiki instructions on how to install the semantic mediawiki extension.
+(4)	Ajax is not enabled by default so you will have to enable it if not already enabled. If you can find the variable $wgUseAjax anywhere in the 
+	LocalSettings.php file make sure that it is set to true.
+	$wgUseAjax = true;
+(5)	Position you indicator after the declaration of the above variable and after the installation line of the semantic mediawiki extension that 
+	usually looks something like this:
+		include_once('extensions/SemanticMediaWiki/includes/SMW_Settings.php');
+		enableSemantics('http://youwikiurl');
+(6)	Finally you can now include the convergence extension with the following include:
+		include_once( 'extensions/MOCA/includes/MOCA_Initialize.php');
+(7)	If everything has gone well then the extension should work fine.
+
+== Upgrading ==
+Just replace all the files of the MOCA extension with the new release.
+
+==Changes from 1.0.0==
++ Changes from 1.0.1
+	* Fixed Add Category bug found in Internet Explorer.
++ Changes from 1.0.0
+	* Fixed help popups bugs found in Internet Expolorer.
+
+== Contact ==
+
+If you have remarks or questions, please send them to
+ valanto@gmail.com
+Bugs can easily be reported at
+ http://sourceforge.net/projects/moca/

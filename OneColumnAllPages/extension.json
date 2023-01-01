@@ -1,0 +1,24 @@
+{
+	"name": "OneColumnAllPages",
+	"version": "1.0.2",
+	"author": [
+		"Nathan Larson"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:OneColumnAllPages",
+	"descriptionmsg": "onecolumnallpages-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "specialpage",
+	"SpecialPages": {
+		"OneColumnAllPages": {
+			"class": "SpecialOneColumnAllPages"
+		}
+	},
+	"AutoloadClasses": {
+		"SpecialOneColumnAllPages": "SpecialOneColumnAllPages.php"
+	},
+	"MessagesDirs": {
+		"OneColumnAllPages": [
+			"i18n"
+		]
+	}
+}

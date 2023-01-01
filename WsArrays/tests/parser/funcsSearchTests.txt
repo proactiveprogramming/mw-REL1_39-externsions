@@ -1,0 +1,55 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraysearch
+!! endfunctionhooks
+
+# This test tests the ComplexArraySearch parser function
+
+!! test
+Test simple one-dimensional array
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g}}
+{{#complexarraysearch:example|d}}
+!! html
+<p>example[3]
+</p>
+!! end
+
+!! test
+Test two-dimensional list
+!! wikitext
+{{#complexarraydefine:example|[["a"], ["b"], ["c"]]}}
+{{#complexarraysearch:example|c}}
+!! html
+<p>example[2][0]
+</p>
+!! end
+
+!! test
+Test not found
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarraysearch:example|d}}
+!! html
+<p><br />
+</p>
+!! end
+
+!! test
+Test multidimensional associative array
+!! wikitext
+{{#complexarraydefine:example|(("a": (("b": "c"))))}}
+{{#complexarraysearch:example|c}}
+!! html
+<p>example[a][b]
+</p>
+!! end
+
+!! test
+Search non-existent array
+!! wikitext
+{{#complexarraysearch:example1234|a}}
+!! html
+!! end

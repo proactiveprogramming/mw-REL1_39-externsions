@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Joseph",
+            "Karduelis"
+        ]
+    },
+    "newduplicateusermessage-description": "Yeni oluşturulmuş kullanıcının tartışma sayfasına bir mesaj ekler",
+    "newduplicateusermessage-edit-summary": "Yeni kullanıcının tartışma sayfasına [[{{int:newduplicateusermessage-template}}|hoşgeldin mesajı]] ekleniyor"
+}

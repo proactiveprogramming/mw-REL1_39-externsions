@@ -1,0 +1,178 @@
+{
+  "name": "Svetovid",
+  "author": "Ostrzyciel",
+  "license-name": "MIT",
+  "version": "1.4.0",
+  "url": "https://www.mediawiki.org/wiki/Extension:Svetovid",
+  "requires": {
+	"MediaWiki": ">= 1.38.0",
+	"extensions": {
+	  "AdvancedBacklinks": ">= 2.7.3",
+	  "CirrusSearch": ">= 6.0.0"
+	}
+  },
+  "namemsg": "svetovid",
+  "descriptionmsg": "svetovid-desc",
+  "manifest_version": 1,
+  "MessagesDirs": {
+	"Svetovid": [ "i18n" ]
+  },
+  "AutoloadClasses": {
+	"SpecialLinkCreator": "includes/SpecialLinkCreator.php",
+	"SvetovidUtilities": "includes/SvetovidUtilities.php",
+	"ApiPolishDeclension": "includes/api/ApiPolishDeclension.php",
+	"ApiSvetovidSearch": "includes/api/ApiSvetovidSearch.php",
+	"SvetovidEditFormInitialTextHook": "includes/SvetovidEditFormInitialTextHook.php",
+	"SvetovidHooks": "includes/SvetovidHooks.php",
+	"SvetovidTextProcessing": "includes/SvetovidTextProcessing.php"
+  },
+  "ResourceFileModulePaths": {
+	"localBasePath": "modules",
+	"remoteExtPath": "Svetovid/modules"
+  },
+  "Hooks": {
+	"EditFormInitialText": "SvetovidEditFormInitialTextHook::run",
+	"GetPreferences": "SvetovidHooks::onGetPreferences",
+	"SidebarBeforeOutput": "SvetovidHooks::onSidebarBeforeOutput"
+  },
+  "ResourceModules": {
+	"ext.svetovid.creator": {
+	  "scripts": [
+		"ext.svetovid.creator.js",
+		"ext.svetovid.creator.GrammarDialog.js",
+		"ext.svetovid.creator.ResultsDialog.js"
+	  ],
+	  "messages": [
+		"svetovid-no-such-page",
+		"svetovid-declension-unavailable",
+		"svetovid-choose-lemmas",
+		"svetovid-lemma-selection",
+		"svetovid-invalid-title",
+		"svetovid-declense",
+
+		"svetovid-grammar-s-sg",
+		"svetovid-grammar-s-pl",
+		"svetovid-grammar-s-nom",
+		"svetovid-grammar-s-gen",
+		"svetovid-grammar-s-dat",
+		"svetovid-grammar-s-acc",
+		"svetovid-grammar-s-inst",
+		"svetovid-grammar-s-loc",
+		"svetovid-grammar-s-voc",
+		"svetovid-grammar-s-subst",
+		"svetovid-grammar-s-depr",
+		"svetovid-grammar-s-adj",
+		"svetovid-grammar-s-adja",
+		"svetovid-grammar-s-adjp",
+		"svetovid-grammar-s-adv",
+		"svetovid-grammar-s-num",
+		"svetovid-grammar-s-ppron12",
+		"svetovid-grammar-s-ppron3",
+		"svetovid-grammar-s-siebie",
+		"svetovid-grammar-s-fin",
+		"svetovid-grammar-s-bedzie",
+		"svetovid-grammar-s-aglt",
+		"svetovid-grammar-s-praet",
+		"svetovid-grammar-s-impt",
+		"svetovid-grammar-s-imps",
+		"svetovid-grammar-s-inf",
+		"svetovid-grammar-s-pcon",
+		"svetovid-grammar-s-pant",
+		"svetovid-grammar-s-ger",
+		"svetovid-grammar-s-pact",
+		"svetovid-grammar-s-ppas",
+		"svetovid-grammar-s-winien",
+		"svetovid-grammar-s-pred",
+		"svetovid-grammar-s-prep",
+		"svetovid-grammar-s-conj",
+		"svetovid-grammar-s-qub",
+		"svetovid-grammar-s-xxs",
+		"svetovid-grammar-s-xxx",
+		"svetovid-grammar-s-m1",
+		"svetovid-grammar-s-m2",
+		"svetovid-grammar-s-m3",
+		"svetovid-grammar-s-f",
+		"svetovid-grammar-s-n",
+		"svetovid-search-error",
+		"svetovid-results-title",
+		"svetovid-edit-button-label",
+		"svetovid-edit-in-new-tab",
+		"svetovid-links-to-from",
+		"svetovid-svsearch-no-results"
+	  ],
+	  "dependencies": [
+		"mediawiki.api",
+		"oojs-ui-core",
+		"oojs-ui-widgets",
+		"oojs-ui-windows",
+		"oojs-ui.styles.icons-editing-core",
+		"mediawiki.widgets",
+		"mediawiki.widgets.NamespacesMultiselectWidget",
+		"mediawiki.jqueryMsg",
+		"mediawiki.util"
+	  ],
+	  "targets": [
+		"desktop",
+		"mobile"
+	  ]
+	},
+	"ext.svetovid.creator.styles": {
+	  "styles": [
+		"ext.svetovid.creator.less"
+	  ],
+	  "targets": [
+		"desktop",
+		"mobile"
+	  ]
+	},
+	"ext.svetovid.editor": {
+	  "scripts": [
+		"ext.svetovid.editor.js"
+	  ],
+	  "messages": [
+		"svetovid-summary-top",
+		"svetovid-edit-summary",
+		"svetovid-remove-link-tooltip",
+		"svetovid-readd-link-tooltip"
+	  ],
+	  "styles": [
+		"ext.svetovid.editor.less"
+	  ],
+	  "dependencies": [
+		"mediawiki.api",
+		"oojs-ui-core",
+		"mediawiki.jqueryMsg"
+	  ],
+	  "targets": [
+		"desktop",
+		"mobile"
+	  ]
+	}
+  },
+  "SpecialPages": {
+	"LinkCreator": "SpecialLinkCreator"
+  },
+  "APIModules": {
+	"polishdecl": "ApiPolishDeclension",
+	"svsearch": "ApiSvetovidSearch"
+  },
+  "config": {
+	"SvetovidMorfeuszURL": "http://localhost:8145/declension",
+	"SvetovidSearchCacheExpiry": 3600,
+	"SvetovidSearchBlacklist": [],
+	"SvetovidDefaultNamespaces": null,
+	"SvetovidMaxSearchResults": 15
+  },
+  "DefaultUserOptions": {
+	"svetovid-show-link-in-sidebar": false
+  },
+  "GroupPermissions": {
+	"user": {
+	  "svetovid-search": true
+	}
+  },
+  "ExtensionMessagesFiles": {
+	"SvetovidAliases": "Svetovid.alias.php"
+  },
+  "type": "other"
+}

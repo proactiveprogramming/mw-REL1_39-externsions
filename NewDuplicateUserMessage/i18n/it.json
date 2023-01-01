@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Darth Kule"
+        ]
+    },
+    "newduplicateusermessage-description": "Aggiunge un messaggio nella pagina di discussione di un utente appena registrato",
+    "newduplicateusermessage-edit-summary": "Aggiungo [[{{int:newduplicateusermessage-template}}|messaggio di benvenuto]] alla pagina di discussione di un nuovo utente"
+}

@@ -1,0 +1,59 @@
+{
+	"name": "ScryfallLinks",
+	"version": "1.7",
+	"author": [
+		"Nils Enevoldsen"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ScryfallLinks",
+	"descriptionmsg": "scryfalllinks-desc",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\ScryfallLinks\\Hooks": "src/Hooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"MediaWiki\\Extension\\ScryfallLinks\\Hooks::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"ScryfallLinks": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.scryfallLinks.tooltip": {
+			"scripts": [
+				"popper.min.js",
+				"tippy.umd.min.js",
+				"ext.scryfallLinks.tooltip.js"
+			],
+			"styles": [
+				"tippy.css",
+				"ext.scryfallLinks.less"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"messages": [
+				"scryfalllinks-unrecognized-card",
+				"scryfalllinks-card-tooltip-error"
+			]
+		},
+		"ext.scryfallLinks.deckExport": {
+			"scripts": [
+				"ext.scryfallLinks.deckExport.js"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "ScryfallLinks/resources"
+	},
+	"manifest_version": 2
+}

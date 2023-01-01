@@ -1,0 +1,31 @@
+{
+  "@metadata": {
+    "authors": [
+      "Marijn van Wezel <marijn@wikibase.nl>"
+    ]
+  },
+  "ca-name": "WSArrays",
+  "ca-description": "Parser functions to allow the creation and traversing of associative and multidimensional arrays",
+  "ca-omitted": "$1 must not be omitted",
+  "ca-map-multidimensional": "You cannot map a multidimensional array",
+  "ca-nonexistent-subarray": "You cannot push to a non-existent subarray",
+  "ca-undefined-array": "This array has not been defined",
+  "ca-subarray-not-provided": "You must provide a subarray",
+  "ca-invalid-name": "This name is invalid",
+  "ca-invalid-wson": "You must provide the array in valid WSON",
+  "ca-max-defined-arrays-reached": "Maximum allowed number of defined arrays ($1) reached ($2)",
+  "ca-sort-missing-key": "Key must not be omitted when using keysort",
+  "ca-sort-array-too-deep": "This array cannot be sorted using keysort (must be 2-dimensional)",
+  "ca-sort-broken": "This array cannot be sorted using $1",
+  "ca-too-little-arrays": "You must provide at least two arrays",
+  "ca-nonexistent-multiple": "One or more arrays has not been defined",
+  "ca-unsupported-version": "This version of $1 is not supported by WSArrays (has version $2, requires at least version $3)",
+  "ca-smw-paramdesc-name": "Defines the name of the array being created",
+  "ca-smw-paramdesc-hide": "Hides all semantic variables in the result",
+  "ca-smw-paramdesc-unassociative": "Converts the named keys to integer keys",
+  "ca-smw-paramdesc-detailed": "Hides more detailed information from the query",
+  "ca-smw-paramdesc-valuesep": "Delimiter between properties of the same name",
+  "ca-invalid-markup": "The markup used is not recognized. Try adding a separator (,) if you are defining a simple array.",
+  "ca-diff-multidimensional": "ComplexArrayDiff can only deal with one-dimensional array. At least one of the array that were given were multidimensional.",
+  "ca-sort-invalid-key": "This sort key is not valid, since it is not available for each sub-array."
+}

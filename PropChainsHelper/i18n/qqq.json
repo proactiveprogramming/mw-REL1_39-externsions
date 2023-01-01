@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Marco Falda"
+        ]
+    },
+    "propChainsHelper": "Property Chains Helper",
+    "propChainsHelper-desc": "{{desc|name=PropChainsHelper|url=}}",
+    "special-propChainsHelper-title": "Property Chains Helper Special:PropChainsHelper",
+    "special-propChainsHelper-intro": "Helper for complete the property chains <tvar|1>Special:{{ll|PropChainsHelper}}</>."
+}

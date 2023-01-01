@@ -1,0 +1,26 @@
+{
+	"name": "NumberedHeadings",
+	"version": "1-beta",
+	"author": [
+		"Purodha Blissenbach",
+		"Stanislav Pika"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MagicNumberedHeadings",
+	"descriptionmsg": "numberedheadings-desc",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"NumberedHeadings": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"NumberedHeadingsMagic": "NumberedHeadings.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"NumberedHeadings": "NumberedHeadings.class.php"
+	},
+	"Hooks": {
+		"InternalParseBeforeLinks": ["NumberedHeadings::onInternalParseBeforeLinks"]
+	},
+	"manifest_version": 1
+}

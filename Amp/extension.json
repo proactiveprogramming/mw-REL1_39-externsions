@@ -1,0 +1,33 @@
+{
+	"name": "Amp",
+	"version": "0.0.0",
+	"author": [
+		"Nischayn22"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Amp",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses": {
+		"Amp": "Amp.php",
+		"RecursiveDOMIterator": "RecursiveDOMIterator.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"Amp::onParserSetup"
+		],
+		"BeforePageDisplay": [
+			"Amp::onBeforePageDisplay"
+		],
+		"PageContentSaveComplete": [
+			"Amp::onPageContentSaveComplete"
+		]
+	},
+	"config": {
+		"AllPagesAmp": false,
+		"AmpFooterLinks": {
+			"left": [],
+			"right": []
+		}
+	},
+	"manifest_version": 1
+}

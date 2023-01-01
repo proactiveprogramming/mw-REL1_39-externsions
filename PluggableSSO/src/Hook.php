@@ -22,6 +22,8 @@
 
 namespace PluggableSSO;
 
+use Hooks;
+
 class Hook {
 
 	/**

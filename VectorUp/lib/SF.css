@@ -1,0 +1,216 @@
+/**
+ * Sets fixed width for SemanticForm input fields
+ */
+
+
+
+
+/** INPUT FIELD STYLE */
+
+#sfForm .sfFormContainer {
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    padding: 4px 10px;
+}
+#sfForm .multipleTemplateInstance .sfFormContainer {
+    border: none;
+    padding: 0;
+}
+#sfForm fieldset {
+  border: 1px solid #DDD;
+  border-radius: 3px;
+}
+#sfForm .createboxInput,
+#sfForm .mandatoryField,
+#sfForm textarea {
+    width: 364px;
+    max-width: 382px !important;
+}
+#sfForm .select2-container {
+    width: 372px !important;
+}
+#sfForm .select2-container-multi {
+    width: 382px !important;
+}
+.sf-select2-dropdown {
+    width: 382px !important;
+}
+.select2-choices,
+.select2-choice, {
+    width: 380px;
+}
+
+.select2-choice {
+    width: 372px;
+}
+.select2-container-multi .select2-choices {
+    border-color: #BBB !important;
+    border-bottom: 3px double #BBB !important;
+}
+
+.autoGrow {
+  width: 276px;
+}
+.multipleTemplateInstance {
+    max-width: 740px;
+}
+#sf_free_text {
+    width: 100% !important;
+    max-width: 800px !important;
+}
+
+/** Responsive Forms */
+
+.sfFieldRow {
+    margin: 8px 0;
+    max-width: 640px;
+}
+
+.sfFieldLabel {
+    display: inline-block;
+    padding-right: 2px;
+    width: 25%;
+    min-width: 80px;
+    max-width: 160px;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.sfFieldLabel::after {
+    content: "*";
+    margin-left: 2px;
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: bold;
+    opacity: 0;
+}
+.sfFieldLabel .simple-tooltip-inline {
+    border-bottom: 1px solid #C8C8C8;
+    padding-bottom: 1px;
+}
+
+
+/** Mobo related styles */
+.mandatoryInput .sfFieldLabel::after {
+    color: #E16761;
+    opacity: 1;
+}
+.recommendedInput .sfFieldLabel::after {
+    color: #FFB93D;
+    opacity: 1;
+}
+#sfForm .inputError {
+    border-color: #E16761 !important;
+}
+#sfForm .errorMessage {
+    color: #CB1209 !important;
+}
+
+
+.sfFieldContent {
+    display: inline-block;
+    width: 70%;
+    max-width: 460px;
+}
+
+@media (max-width: 780px) {
+    .sfFieldLabel {
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        border-bottom: none;
+        text-align: left;
+    }
+    .sfFieldContent {
+        display: inline-block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+/** Special Case: Checlists */
+.checklistForm .sfFormContainer {
+    background: #FBFFF6 !important;
+    border: 1px solid #70C00C !important;
+}
+.checklistForm .sfFieldLabel {
+    min-width: 320px;
+}
+.checklistForm .sfFieldContent {
+    width: auto;
+}
+.checklistForm .sfFieldRow {
+    max-width: none;
+    border-bottom: 1px solid #DDD;
+    margin: 4px 0;
+    padding-bottom: 4px;
+}
+.formdata td.Ja {
+    background-color: #5CA500;
+    color: #FFF;
+}
+.formdata td.Nein {
+    background-color: #9D2114;
+    color: #FFF;
+}
+.formdata td.Unbekannt {
+    background-color: #D19800;
+    color: #FFF;
+}
+
+
+
+table.formdata {
+    min-width: 400px;
+}
+table.formdata td,
+table.formdata th {
+    padding: 2px 4px;
+}
+
+/* HeaderTabs Adjustments */
+.ui-state-active,
+.ui-widget-content {
+  background: #FCFCFC !important;
+}
+
+/* HeaderTabs in reading mode */
+#mw-content-text #headertabs {
+    border: 1px solid #0075C4;
+    padding: 4px 1px 1px 1px;
+    border-radius: 3px;
+    background: #F6FBFF !important;
+}
+#mw-content-text #headertabs .ui-tabs-nav a,
+#mw-content-text #headertabs .ui-tabs-nav a:visited {
+    color: #0075C4 !important;
+}
+
+
+/* HeaderTabs in sfForm Edit mode */
+#sfForm #headertabs {
+    border: 1px solid #BD3212;
+    padding: 4px 1px 1px 1px;
+    border-radius: 3px;
+    background: #FFF2F1 !important;
+}
+
+#sfForm #headertabs .ui-tabs-nav a,
+#sfForm #headertabs .ui-tabs-nav a:visited {
+    color: #BD3212 !important;
+}
+
+#ca-form_edit a,
+#ca-form_edit a:visited  {
+    color: #BD3212 !important;
+}
+
+#ca-form_edit {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABkCAMAAABw8qpSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3NzMxQkFGOEMxQjZFNDExQkRFN0I5OTkwN0IyQjZBMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozNjk0MzcxMEI2QzIxMUU0OTVBOEFCN0E4OEY0MzQ1MSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozNjk0MzcwRkI2QzIxMUU0OTVBOEFCN0E4OEY0MzQ1MSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjc3MzFCQUY4QzFCNkU0MTFCREU3Qjk5OTA3QjJCNkExIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc3MzFCQUY4QzFCNkU0MTFCREU3Qjk5OTA3QjJCNkExIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+LdUZBAAAADBQTFRF/vb2/erq/vj4/e/v/vPz/fHx/e3t/vX1/ejo9qqq/Obm/ezs//7+/vr6//z8////fc+NggAAAC5JREFUeNrEwYcRABAAA8Donf23FS5nBf9Y+LvrfIdaPhI8B3Yc0W7DGVXLFmAALuUE8LGTBcMAAAAASUVORK5CYII=);
+}
+.action-formedit #ca-form_edit {
+    background: #FFF;
+    background-image: none;
+}

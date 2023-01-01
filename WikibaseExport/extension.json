@@ -1,0 +1,119 @@
+{
+	"name": "Wikibase Export",
+	"type": "wikibase",
+
+	"version": "1.0.0-alpha",
+
+	"author": [
+		"[https://Professional.Wiki/ Professional.Wiki]",
+		"[https://www.EntropyWins.wtf/mediawiki Jeroen De Dauw]",
+		"Morne Alberts"
+	],
+
+	"license-name": "GPL-2.0-or-later",
+
+	"url": "https://github.com/ProfessionalWiki/WikibaseExport",
+
+	"descriptionmsg": "wikibase-export-description",
+
+	"requires": {
+		"MediaWiki": ">= 1.37.0",
+		"extensions": {
+			"WikibaseRepository": "*"
+		}
+	},
+
+	"MessagesDirs": {
+		"WikibaseExport": [
+			"i18n"
+		]
+	},
+
+	"AutoloadNamespaces": {
+		"ProfessionalWiki\\WikibaseExport\\": "src/",
+		"ProfessionalWiki\\WikibaseExport\\Tests\\": "tests/"
+	},
+
+	"Hooks": {
+		"AlternateEdit": "ProfessionalWiki\\WikibaseExport\\EntryPoints\\MediaWikiHooks::onAlternateEdit",
+		"BeforePageDisplay": "ProfessionalWiki\\WikibaseExport\\EntryPoints\\MediaWikiHooks::onBeforePageDisplay",
+		"ContentHandlerDefaultModelFor": "ProfessionalWiki\\WikibaseExport\\EntryPoints\\MediaWikiHooks::onContentHandlerDefaultModelFor",
+		"EditFilter": "ProfessionalWiki\\WikibaseExport\\EntryPoints\\MediaWikiHooks::onEditFilter",
+		"EditFormPreloadText": "ProfessionalWiki\\WikibaseExport\\EntryPoints\\MediaWikiHooks::onEditFormPreloadText"
+	},
+
+	"RestRoutes": [
+		{
+			"path": "/wikibase-export/v0/export",
+			"method": [ "GET" ],
+			"factory": "ProfessionalWiki\\WikibaseExport\\WikibaseExportExtension::exportApiFactory"
+		},
+		{
+			"path": "/wikibase-export/v0/search-entities",
+			"method": [ "GET" ],
+			"factory": "ProfessionalWiki\\WikibaseExport\\WikibaseExportExtension::searchEntitiesApiFactory"
+		}
+	],
+
+	"config": {
+		"WikibaseExportEnableInWikiConfig": {
+			"description": "If it should be possible to define configuration via MediaWiki:WikibaseExport",
+			"value": true
+		},
+		"WikibaseExport": {
+			"description": "Config in JSON format, following the JSON Schema at schema.json. Gets combined with config defined on MediaWiki:WikibaseExport",
+			"value": ""
+		}
+	},
+
+	"SpecialPages": {
+		"WikibaseExport": "ProfessionalWiki\\WikibaseExport\\EntryPoints\\SpecialWikibaseExport",
+		"WikibaseExportConfig": "ProfessionalWiki\\WikibaseExport\\EntryPoints\\SpecialWikibaseExportConfig"
+	},
+
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "WikibaseExport/resources"
+	},
+
+	"ResourceModules": {
+		"ext.wikibase.export.styles": {
+			"styles": [
+				"ext.wikibase.export.less"
+			]
+		},
+		"ext.wikibase.export": {
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets"
+			],
+			"scripts": [
+				"mw.widgets.EntitiesMultiselectWidget.js",
+				"ext.wikibase.export.js"
+			],
+			"messages": [
+				"wikibase-export-language-heading",
+				"wikibase-export-subjects-heading",
+				"wikibase-export-subjects-placeholder",
+				"wikibase-export-grouped-statements-heading",
+				"wikibase-export-start-year",
+				"wikibase-export-end-year",
+				"wikibase-export-ungrouped-statements-heading",
+				"wikibase-export-statement-group-all",
+				"wikibase-export-statements-placeholder",
+				"wikibase-export-download",
+				"wikibase-export-config-incomplete",
+				"wikibase-export-config-incomplete-link",
+				"wikibase-export-config-heading",
+				"wikibase-export-config-header-id",
+				"wikibase-export-config-header-label"
+			]
+		}
+	},
+
+	"ExtensionMessagesFiles": {
+		"WikibaseExportAlias": "WikibaseExport.i18n.alias.php"
+	},
+
+	"manifest_version": 2
+}

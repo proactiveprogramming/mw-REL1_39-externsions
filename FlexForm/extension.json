@@ -1,0 +1,130 @@
+{
+  "name": "FlexForm",
+  "version": "1.1.45",
+  "author": [
+    "[https://www.wikibase-solutions.com/author/charlot Sen-Sai]",
+    "[https://www.wikibase-solutions.com/author/marijn Marijn]"
+  ],
+  "url": "https://www.mediawiki.org/wiki/Extension:FlexForm",
+  "descriptionmsg": "flexform-desc",
+  "license-name": "GPL-2.0-or-later",
+  "type": "parserhook",
+  "AutoloadClasses": {
+    "ApiFlexForm": "ApiFlexForm.php",
+    "ApiBotFlexForm": "ApiBotFlexForm.php",
+    "FlexFormHooks": "FlexForm.hooks.php"
+  },
+  "AutoloadNamespaces": {
+    "FlexForm\\": "src/"
+  },
+  "ExtensionMessagesFiles": {
+    "WBFormAlias": "FlexForm.i18n.alias.php"
+  },
+  "APIModules": {
+    "flexform": "ApiFlexForm",
+    "FlexFormBot": "ApiBotFlexForm"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": [
+      "FlexFormHooks::onParserFirstCallInit"
+    ],
+    "AdminLinks": [
+      "FlexFormHooks::addToAdminLinks"
+    ],
+    "AfterFinalPageOutput": [
+      "FlexFormHooks::onAfterFinalPageOutput"
+    ],
+    "BeforePageOutput": [
+      "FlexFormHooks::onBeforePageOutput"
+    ],
+    "SkinTemplateNavigation": [
+      "FlexForm\\Core\\Rights::hideSource"
+    ],
+    "getUserPermissionsErrors": [
+      "FlexForm\\Core\\Rights::disableActions"
+    ]
+  },
+  "MessagesDirs": {
+    "FlexForm": [
+      "i18n"
+    ]
+  },
+  "ServiceWiringFiles": [
+    "FlexForm.ServiceWiring.php"
+  ],
+  "config": {
+    "FlexFormConfig": {
+      "file_temp_path": "",
+      "rc_site_key": "",
+      "rc_secret_key": "",
+      "sec_key": "",
+      "secure": false,
+      "auto_save_interval": 30000,
+      "auto_save_after_change": 3000,
+      "auto_save_btn_on": "Autosave On",
+      "auto_save_btn_off": "Autosave Off",
+      "use_smtp": false,
+      "smtp_host": "",
+      "smtp_authentication": true,
+      "smtp_username": "",
+      "smtp_password": "",
+      "smtp_secure": "TLS",
+      "smtp_port": 587,
+      "debug": false,
+      "FlexFormDefaultTheme": "Plain",
+      "can_create_user": false,
+      "create-seo-titles": false,
+      "filter_input_tags" : false,
+      "CreateAndEditForms" : {
+        "allowedGroups" : [ "sysop" ],
+        "hideEdit" : true
+      }
+    }
+
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "Modules",
+    "remoteExtPath": "FlexForm/Modules"
+  },
+  "ResourceModules": {
+    "ext.wsForm.slim.scripts": {
+      "scripts": "slim/slim/slim.kickstart.min.js",
+      "position": "bottom"
+    },
+    "ext.wsForm.ajax.scripts": {
+      "scripts": "wsform-ajax.js",
+      "position": "bottom"
+    },
+    "ext.wsForm.instance": {
+      "scripts": "instances/wsInstance.js",
+      "position": "top"
+    },
+    "ext.wsForm.scripts": {
+      "scripts": "select2.js",
+      "position": "top"
+    },
+    "ext.wsForm.styles": {
+      "styles": "select2.css",
+      "position": "top"
+    },
+    "ext.wsForm.general.styles": {
+      "styles": "ext.WSForm.css",
+      "position": "top"
+    },
+    "ext.FlexForm.Instance.styles": {
+      "styles": "instances/instance-style.css",
+      "position": "top"
+    },
+    "ext.FlexForm.showOnSelect.script": {
+      "styles": "showOnSelect/WSShowOnSelect.js"
+    },
+    "ext.wsForm.slim.styles": {
+      "styles": "slim/slim/slim.min.css",
+      "position": "top"
+    }
+  },
+  "SpecialPages": {
+    "FlexForm": "\\FlexForm\\Specials\\SpecialFlexForm"
+  },
+  "manifest_version": 1
+}

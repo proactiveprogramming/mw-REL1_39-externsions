@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"mzwi-action": "Εξαγωγή ZWI",
+	"mzwi-desc": "Μετατρέπει την τρέχουσα σελίδα σε ZWI και την στέλνει στο περιηγητή"
+}

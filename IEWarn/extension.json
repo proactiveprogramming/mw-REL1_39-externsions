@@ -1,0 +1,35 @@
+{
+    "name": "IEWarn",
+    "namemsg": "iewarn-name",
+    "url": "https://github.com/MTres19/mw-ext-iewarn",
+    "author": "Matthew Trescott",
+    "description": "Adds a warning when a user is using Internet Explorer or Microsoft Edge.",
+    "descriptionmsg": "iewarn-desc",
+    "version": "1.0",
+    "license-name": "AGPL-3.0+",
+    "requires": {
+        "MediaWiki": ">= 1.25.0"
+    },
+    "MessagesDirs": {
+        "IEWarn": [
+            "i18n"
+        ]
+    },
+    "AutoloadClasses": {
+        "IEWarnHooks": "IEWarnHooks.php"
+    },
+    "Hooks": {
+        "BeforePageDisplay": [
+            "IEWarnHooks::onBeforePageDisplay"
+        ]
+    },
+    "config": {
+        "_prefix": "wgIEWarn",
+        "___comment___": "The styling below is based on the KDE Breeze Color palette and the SuperTuxKart wiki theme.",
+        "OuterBoxStyle": "background-color: #f47750; padding: 10px; padding-left: 20px; font-family: \"Open Sans\", sans-serif; font-weight: bold;",
+        "InnerMessageStyle": "background-color: #fdbc4b; padding: 5px 20px;",
+        "CustomOuterBoxTitle": "",
+        "CustomMessage": ""
+    },
+    "manifest_version": 1
+}

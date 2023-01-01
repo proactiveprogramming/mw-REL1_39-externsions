@@ -1,0 +1,41 @@
+{
+	"name": "mediawiki/iframe-tag",
+	"type": "mediawiki-extension",
+	"license": "gpl-3.0",
+	"require": {
+		"composer/installers": "1.*,>=1.0.1",
+		"nichework/tag-builder": "^1.4",
+		"php": ">=7.3"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "30.0.0",
+		"mediawiki/mediawiki-phan-config": "0.9.1",
+		"mediawiki/minus-x": "1.0.0",
+		"jakub-onderka/php-parallel-lint": "1.0.0",
+		"vimeo/psalm": "^4.6"
+	},
+	"scripts": {
+		"psalm": "psalm --output-format=emacs --show-info=true",
+		"phpcs": "phpcs -p -s --report=emacs",
+		"phan": "phan --no-progress-bar -m text | sed 's, ,:,'",
+		"parallel-lint": "parallel-lint . --exclude vendor --exclude node_modules",
+		"minus-x": "minus-x check .",
+		"lint": [
+			"parallel-lint",
+			"minus-x",
+			"phpcs",
+			"phan",
+			"psalm"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf",
+			"PHAN_DISABLE_XDEBUG_WARN=1 phan --no-progress-bar -m text --automatic-fix",
+			"psalm --alter --issues=all"
+		]
+	},
+	"extra": {
+		"installer-name": "IFrameTag",
+		"phan-taint-check-plugin": "1.2.0"
+	}
+}

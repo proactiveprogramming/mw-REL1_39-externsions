@@ -1,0 +1,116 @@
+#!/bin/bash
+# this is a startup script, to be installed in /etc/init.d and linked into
+# the appropriate startup script directories.
+# It will recreate the mount points needed by the chroot-trap directories
+# (actually, it will set up the chroot-trap directories completely, if needed).
+#
+# Comments to support chkconfig on Mandriva Linux
+# chkconfig: 2345 60 40
+# description: Mounts and unmounts the system directories needed in the \
+#              chroot directories for the MediaWiki WorkingWiki extension
+#
+
+# edit this for your current installation
+if [ `hostname` == "lalashan" ]; then
+  INSTALL_DIRS=/home/wikis/extensions/WorkingWiki;
+else
+  INSTALL_DIRS=/usr/src/WorkingWiki;
+fi
+
+# this is done in the setup script, maybe doesn't need to be duplicated here?
+export PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
+
+if [ -f /etc/rc.d/init.d/functions ]
+then
+  . /etc/rc.d/init.d/functions
+fi
+if [ -f /lib/init/vars.sh ]
+then
+  . /lib/init/vars.sh
+fi
+if [ -f /lib/lsb/init-functions ]
+then
+  . /lib/lsb/init-functions
+fi
+# ensure these functions are defined
+declare -f log_action_begin_msg > /dev/null; if [ $? -ne 0 ]; then
+  log_action_begin_msg()
+  { echo -n "$@..."
+  }
+fi
+declare -f log_daemon_msg > /dev/null; if [ $? -ne 0 ]; then
+  log_daemon_msg()
+  { echo -n "$@:"
+  }
+fi
+declare -f log_action_end_msg > /dev/null; if [ $? -ne 0 ]; then
+  log_action_end_msg()
+  { if [ $1 -eq 0 ]; then
+      echo ' done';
+    else
+      echo ' failed';
+    fi
+  }
+fi
+declare -f log_end_msg > /dev/null; if [ $? -ne 0 ]; then
+  log_end_msg()
+  { if [ $1 -eq 0 ]; then
+      echo ' done';
+    else
+      echo ' failed';
+    fi
+  }
+fi
+
+case "$1" in
+  start|restart|reload|force-reload|"")
+     if [ "$VERBOSE" = no ]
+     then
+       log_action_begin_msg "Remounting system directories for MediaWiki WorkingWiki Extension"
+     else
+       log_daemon_msg "Will now remount system directories for MediaWiki WorkingWiki Extension"
+     fi
+     # probably a better way to OR the error returns
+     success=0
+     for DIR in $INSTALL_DIRS; do
+       /usr/bin/php $DIR/setup-chroot-trap.php -- --silent
+       rv=$?
+       if [ $success -eq 0 ]; then
+         success=$rv
+       fi
+     done
+     if [ "$VERBOSE" = no ]
+     then
+       log_action_end_msg $success
+     else
+       log_end_msg $success
+     fi
+     ;;
+  stop)
+     if [ "$VERBOSE" = no ]
+     then
+       log_action_begin_msg "Unmounting system directories for MediaWiki WorkingWiki Extension"
+     else
+       log_daemon_msg "Will now unmount system directories for MediaWiki WorkingWiki Extension"
+     fi
+     success=0
+     for DIR in $INSTALL_DIRS; do
+       /usr/bin/php $DIR/setup-chroot-trap.php -- --umount --silent
+       rv=$?
+       if [ $success -eq 0 ]; then
+         success=$rv
+       fi
+     done
+     if [ "$VERBOSE" = no ]
+     then
+       log_action_end_msg $success
+     else
+       log_end_msg $success
+     fi
+     ;;
+  *)
+     echo "Usage: workingwiki-mounts [start|stop|restart]" >&2
+     exit 3
+     ;;
+esac
+										:

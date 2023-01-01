@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ebraminio",
+            "Huji"
+        ]
+    },
+    "newduplicateusermessage-description": "یک پیغام در صفحهٔ بحث کاربرهای تازه ایجاد شده می‌افزاید",
+    "newduplicateusermessage-edit-summary": "افزودن [[{{int:newduplicateusermessage-template}}|پیام خوش‌آمد]] به صفحهٔ بحث کاربر تازه"
+}

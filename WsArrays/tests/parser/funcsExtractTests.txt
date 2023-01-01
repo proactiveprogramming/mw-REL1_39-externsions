@@ -1,0 +1,59 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarrayextract
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayExtract parser function
+
+!! test
+Extract item from one-dimensional list
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayextract:example2|example[0]}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+0: a
+</p>
+!! end
+
+!! test
+Extract array from two-dimensional list
+!! wikitext
+{{#complexarraydefine:example|[["a"],["b"],["c"]]}}
+{{#complexarrayextract:example2|example[0]}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+0: a
+</p>
+!! end
+
+!! test
+Extract array with multiple items from two-dimensional list
+!! wikitext
+{{#complexarraydefine:example|[["a", "b"],["b"],["c"]]}}
+{{#complexarrayextract:example2|example[0]}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li></ul>
+
+!! end
+
+!! test
+Extract from non-existant array
+!! wikitext
+{{#complexarrayextract:aaa|example123[0]}}
+{{#complexarrayprint:aaa}}
+!! html
+<p><br />
+</p>
+!! end
+
+

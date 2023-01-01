@@ -1,0 +1,194 @@
+@legend-popup-breakpoint-width: 1200px;
+
+.dmLegendAsPopup() {
+    .datamap-container .datamap-control.datamap-control-legend-toggle {
+        display: block;
+
+        > a {
+            width: auto;
+            padding-left: 0.5em;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .datamap-container-legend {
+        position: absolute;
+        inset: 50px 0 0 0;
+        width: unset;
+        margin: 0 6px 6px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 0 6px #0005;
+        z-index: 4000;
+        transform: translate(-45%, -53%) scale(0);
+        transition: transform .12s ease-in-out;
+
+        .datamap-legend-label {
+            display: none;
+        }
+    }
+
+    .datamap-container-legend.oo-ui-widget-disabled + .oo-ui-layout .datamap-control.datamap-control-legend-toggle {
+        display: none;
+    }
+
+    .datamap-is-legend-toggled-on {
+        .datamap-control.datamap-control-legend-toggle a {
+            color: #36c;
+        }
+
+        .datamap-container-legend {
+            transform: none;
+        }
+    }
+}
+
+.datamap-container-legend {
+    width: 23.7em;
+    max-height: 750px;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    &.oo-ui-widget-disabled {
+        display: none;
+    }
+
+    &,
+    > .oo-ui-layout,
+    > .oo-ui-layout > .oo-ui-menuLayout-content,
+    > .oo-ui-layout > .oo-ui-menuLayout-content > .oo-ui-stackLayout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    > .oo-ui-layout,
+    > .oo-ui-layout > .oo-ui-menuLayout-content {
+        flex-grow: 1;
+    }
+
+    .oo-ui-tabSelectWidget {
+        padding: 4px 0;
+    }
+
+    .oo-ui-tabOptionWidget.oo-ui-optionWidget {
+        border-radius: 6px;
+        border-width: 1px;
+        margin-top: 3px;
+
+        .oo-ui-labelElement-label {
+            padding: 5px 5px 4px;
+        }
+    }
+
+    .datamap-legend-label {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: 12px 16px 0;
+    }
+
+    .oo-ui-panelLayout-scrollable {
+        overflow-x: hidden;
+    }
+
+    .oo-ui-indexLayout-stackLayout > .oo-ui-tabPanelLayout {
+        padding: 9px 16px 16px;
+    }
+    
+    .datamap-container-groups {
+        margin-top: 12px;
+
+        @media screen and (min-width: 1200px) {
+            .oo-ui-fieldLayout.oo-ui-fieldLayout-align-inline {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .datamap-legend-circle {
+        border-style: solid;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 6px;
+        box-shadow: 0 0 1px 1px #0002;
+    }
+
+    .datamap-legend-badge {
+        margin: 0 0.5em;
+        padding: 0 4px;
+        border-radius: 4px;
+        vertical-align: middle;
+        background: #6665;
+        font-size: 0.88em;
+    }
+
+    .datamap-legend-group-icon {
+        margin-right: 6px;
+        vertical-align: middle;
+    }
+
+    .oo-ui-buttonGroupWidget {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* Needed for the popup button to not go under group toggles */
+        z-index: 2;
+    }
+
+    .oo-ui-checkboxInputWidget {
+        line-height: 18px;
+    }
+
+    .oo-ui-labelElement-label {
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .dmLegendAsPopup();
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .datamap-container-legend {
+        width: 25em;
+    }
+}
+
+.datamap-container-collectibles {
+    > .oo-ui-layout {
+        margin: 6px -6px 0;
+    }
+    
+    .datamap-collectible-group-header {
+        padding: 7px 12px;
+        border-bottom: inherit;
+    }
+
+    .datamap-collectible-group-markers {
+        margin-top: 4px;
+
+        .oo-ui-fieldLayout.oo-ui-fieldLayout-align-inline {
+            margin: 3px 8px;
+            padding: 1px 2px 2px;
+            border-radius: 2px;
+    
+            &:hover {
+                background: #36c3;
+            }
+        }
+
+        .oo-ui-fieldLayout.oo-ui-fieldLayout-align-inline > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-field {
+            vertical-align: middle;
+        }
+
+        .oo-ui-labelElement-label > span {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aleator",
+            "Paucabot"
+        ]
+    },
+    "newduplicateusermessage-description": "Afegeix un missatge a les discussions dels nous usuaris.",
+    "newduplicateusermessage-edit-summary": "Afegint [[{{int:newduplicateusermessage-template}}|missatge de benvinguda]] a la pàgina de discussió de l'usuari"
+}

@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Rex"
+        ]
+    },
+    "newduplicateusermessage-description": "Menambahkan sebuah pesan di halaman pembicaraan pengguna baru",
+    "newduplicateusermessage-edit-summary": "Menambahkan [[{{int:newduplicateusermessage-template}}|pesan selamat datang]] ke halaman pembicaraan seorang pengguna baru"
+}

@@ -1,0 +1,5 @@
+=Test=
+Just a small test: {{Glossary/Link|ref=ambient occlusion|txt=Ambient Occlusion}}.
+==Sub-test==
+And with a synonym: With a {{Glossary/Link|ref=skeleton|txt=skeleton}}, you can animate a mesh…
+

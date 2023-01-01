@@ -1,0 +1,40 @@
+@import "skins/shared/color";
+@import 'skins/shared/mixins/flexbox';
+@import 'extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-variables/index';
+
+.watch-show {
+	.WikiaRail &.rail-module .wds-button.wds-is-secondary {
+		// overrides margin-left from skins/oasis/css/core/page.scss
+		margin-left: 0;
+		margin-right: 18px;
+	}
+
+	.WikiaRail &.rail-module &__cta-header {
+		// overrides user font styles
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		font-size: $wds-font-size-base !important;
+		text-align: left !important;
+	}
+
+	&__content {
+		@include align-items(center);
+		@include flexbox();
+	}
+
+	&__disclaimer-message {
+		background-color: rgba($color-text, .1);
+		color: $color-text;
+		font-size: 8px;
+		font-style: italic;
+		letter-spacing: .02px;
+		line-height: 1.5;
+		margin-bottom: 20px;
+		padding: 10px;
+		position: relative;
+	}
+
+	&__image {
+		max-width: 100%;
+		max-height: 37px;
+	}
+}

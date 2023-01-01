@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "BRUTE"
+        ]
+    },
+    "newduplicateusermessage-description": "ამატებს შეტყობინებას ახალ-დარეგისტრირებული მომხმარებლის განხილვის გვერდზე",
+    "newduplicateusermessage-edit-summary": "დაემატა [[{{int:newduplicateusermessage-template}}|მისალმების შეტყობინება]] ახალი მომხმარებლის განხილვის გვერდზე"
+}

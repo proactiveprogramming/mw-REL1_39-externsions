@@ -1,0 +1,16 @@
+parameters:
+	level: 1
+	paths:
+		- src
+		- tests
+	scanDirectories:
+		- ../../includes
+		- ../../vendor
+		- ../SemanticMediaWiki/includes
+		- ../SemanticMediaWiki/src
+		- ../Wikibase/repo/includes
+		- ../Wikibase/lib/includes
+	bootstrapFiles:
+		- phpstan.php
+	ignoreErrors:
+		- '#Constant .+ not found#'

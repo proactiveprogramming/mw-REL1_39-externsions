@@ -1,0 +1,8 @@
+{
+    "@metadata": {
+        "authors": [
+            "MichaelFrey"
+        ]
+    },
+    "newduplicateusermessage-edit-summary": "Begrüsst einen neuen Benutzer auf seiner Diskussionsseite mit einer [[{{int:newduplicateusermessage-template}}|Willkommensnachricht]]"
+}

@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Toliño"
+        ]
+    },
+    "newduplicateusermessage-description": "Engade unha mensaxe ás páxinas de conversa dos usuarios novos",
+    "newduplicateusermessage-edit-summary": "Engadindo [[{{int:newduplicateusermessage-template}}|unha mensaxe de benvida]] ás páxinas dos usuarios novos"
+}

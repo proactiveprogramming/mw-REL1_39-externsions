@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config ../../vendor/vimeo/psalm/config.xsd"
+	hideExternalErrors="true"
+    errorBaseline="psalm-baseline.xml"
+>
+    <projectFiles>
+        <directory name="src" />
+		<directory name="tests" />
+		<ignoreFiles>
+			<file name="src/EntryPoints/MediaWikiHooks.php" />
+		</ignoreFiles>
+    </projectFiles>
+
+	<extraFiles>
+		<directory name="../../includes" />
+		<directory name="../../tests/phpunit" />
+		<directory name="../../vendor/wikimedia" />
+		<directory name="../../vendor/data-values" />
+		<directory name="../../vendor/psr" />
+		<directory name="../../vendor/phpunit/phpunit" />
+		<directory name="../../extensions/Wikibase" />
+	</extraFiles>
+
+	<issueHandlers>
+		<UndefinedConstant errorLevel="suppress" />
+
+		<PossiblyNullReference>
+			<errorLevel type="suppress">
+				<directory name="tests" />
+			</errorLevel>
+		</PossiblyNullReference>
+
+		<PropertyNotSetInConstructor>
+			<errorLevel type="suppress">
+				<directory name="src" />
+				<directory name="tests" />
+			</errorLevel>
+		</PropertyNotSetInConstructor>
+
+		<UndefinedClass>
+			<errorLevel type="suppress">
+				<directory name="tests" />
+			</errorLevel>
+		</UndefinedClass>
+
+		<MixedArrayAccess>
+			<errorLevel type="suppress">
+				<directory name="tests" />
+			</errorLevel>
+		</MixedArrayAccess>
+
+		<MixedArgument>
+			<errorLevel type="suppress">
+				<directory name="tests" />
+			</errorLevel>
+		</MixedArgument>
+
+		<PossiblyNullArgument>
+			<errorLevel type="suppress">
+				<directory name="tests" />
+			</errorLevel>
+		</PossiblyNullArgument>
+
+		<UndefinedFunction>
+			<errorLevel type="suppress">
+				<referencedFunction name="wfMessage"/>
+				<directory name="src" />
+			</errorLevel>
+		</UndefinedFunction>
+	</issueHandlers>
+</psalm>

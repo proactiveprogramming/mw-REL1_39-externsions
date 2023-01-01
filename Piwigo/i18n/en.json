@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Your Name"
+		]
+	},
+	"Piwigo-desc": "This is a mediawiki extension that displays a gallery of images extracted from a Piwigo setup",
+	"apihelp-piwigosearch-summary": "This API serves as a proxy to a piwigo search web service<br>See [https://fr.piwigo.org/doc/doku.php?id=utiliser:utilisation:fonctionnalites:recherche_rapide#syntaxe_pour_recherches_specifiques Piwogo's help] for more information",
+	"apihelp-piwigosearch-param-search": "Search query",
+	"apihelp-piwigosearch-param-count": "Count (nb of images returned)",
+	"apihelp-piwigosearch-example": "Search 20 images on the word clouds with the tag some tag."
+}

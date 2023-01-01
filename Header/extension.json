@@ -1,0 +1,42 @@
+{
+	"name": "HeaderExtension",
+	"version": "2.1.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:JinRyuuNagy JinRyuu]",
+		"[https://www.mediawiki.org/wiki/User:StarHeartHunt StarHeartHunt]",
+		"[https://www.mediawiki.org/wiki/User:WikiForMen WikiForMen]"
+	],
+	"url": "http://www.mediawiki.org/wiki/Extension:HeaderExtension",
+	"descriptionmsg": "headerextension-desc",
+	"type": "other",
+	"license-name": "MIT",
+	"MessagesDirs": {
+		"HeaderExtension": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"HeaderExtension::onBeforePageDisplay"
+		]
+	},
+	"AutoloadClasses": {
+		"HeaderExtension": "src/HeaderExtension.php"
+	},
+	"config_prefix": "wg",
+	"config": {
+		"HeadMetaCode": {
+			"value": "<!-- No Head Meta -->"
+		},
+		"HeadMetaName": {
+			"value": "<!-- No Meta Name -->"
+		},
+		"HeadScriptCode": {
+			"value": "<!-- No Head Script -->"
+		},
+		"HeadScriptName": {
+			"value": "<!-- No Script Name -->"
+		}
+	},
+	"manifest_version": 2
+}

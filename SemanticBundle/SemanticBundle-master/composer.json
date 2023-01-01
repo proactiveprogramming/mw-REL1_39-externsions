@@ -1,0 +1,59 @@
+{
+	"name": "mediawiki/semantic-bundle",
+	"type": "mediawiki-extension",
+	"description": "Bundle extension that installs and loads Semantic MediaWiki and associated extensions",
+	"keywords": [
+		"MediaWiki",
+		"Semantic MediaWiki",
+		"wiki",
+		"structured data",
+		"knowledge management",
+		"result format",
+		"maps",
+		"timeline",
+		"page forms",
+		"semantic forms",
+		"semantic meta tags",
+		"extra special properties",
+		"compound queries",
+		"glossary",
+		"cite",
+		"mermaid",
+		"lua",
+		"breadcrumb links",
+		"interlanguage links"
+	],
+	"homepage": "https://github.com/ProfessionalWiki/SemanticBundle",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Jeroen De Dauw",
+			"email": "jeroendedauw@gmail.com",
+			"homepage": "https://www.entropywins.wtf/mediawiki"
+		},
+		{
+			"name": "Professional.Wiki",
+			"email": "info@professional.wiki",
+			"homepage": "https://professional.wiki"
+		}
+	],
+	"support": {
+		"source": "https://github.com/ProfessionalWiki/SemanticBundle"
+	},
+	"require": {
+		"php": ">=7.4",
+		"composer/installers": "^2|^1.0.1",
+
+		"mediawiki/semantic-media-wiki": "^4.0.1",
+
+		"mediawiki/semantic-result-formats": "^4.0.1",
+		"mediawiki/maps": "^10.0.0",
+		"professional-wiki/modern-timeline": "^1.2.0",
+		"mediawiki/mermaid": "^3.1.0",
+
+		"mediawiki/semantic-extra-special-properties": "^3.0.1",
+		"mediawiki/semantic-compound-queries": "^2.2.0",
+
+		"mediawiki/page-forms": "^5.0.0"
+	}
+}

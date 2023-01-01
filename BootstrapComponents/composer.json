@@ -1,0 +1,58 @@
+{
+	"name": "mediawiki/bootstrap-components",
+	"type": "mediawiki-extension",
+	"description": "A Mediawiki extension to allow for the usage of special bootstrap components inside wiki markup.",
+	"keywords": [
+		"wiki",
+		"mediawiki",
+		"extension",
+		"Bootstrap",
+		"Twitter",
+		"components"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Extension:BootstrapComponents",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Tobias Oetterer",
+			"role": "Creator"
+		}
+	],
+	"support": {
+		"wiki": "https://www.mediawiki.org/wiki/Extension:BootstrapComponents",
+		"issues": "https://github.com/oetterer/BootstrapComponents/issues",
+		"forum": "https://www.mediawiki.org/wiki/Extension_talk:BootstrapComponents",
+		"source": "https://github.com/oetterer/BootstrapComponents"
+	},
+	"require": {
+		"php": ">=7.4",
+		"composer/installers": "^2|^1.0.1",
+		"mediawiki/mw-extension-registry-helper": "^1.0",
+		"mediawiki/bootstrap": "~4.5"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "~2.1",
+		"phpmd/phpmd": "~2.1"
+	},
+	"suggest": {
+		"mediawiki/scribunto": "Framework for embedding scripting languages into MediaWiki pages"
+	},
+	"config": {
+		"process-timeout": 0
+	},
+	"scripts": {
+		"phpunit": "php ../../tests/phpunit/phpunit.php -c phpunit.xml.dist",
+		"unit": "composer phpunit -- --testsuite bootstrap-components-unit",
+		"test": "composer unit",
+		"integration": "composer phpunit -- --testsuite bootstrap-components-integration",
+		"cs": [
+			"vendor/bin/phpcs src/* tests/* --standard=phpcs.xml --extensions=php -sp",
+			"vendor/bin/phpmd src/,tests/ text phpmd.xml"
+		],
+		"ci": [
+			"composer validate --no-interaction",
+			"composer phpunit",
+			"composer cs"
+		]
+	}
+}

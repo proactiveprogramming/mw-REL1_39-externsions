@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bryan Tong Minh",
+            "Malafaya",
+            "Purodha",
+            "Shirayuki",
+            "Siebrand",
+            "The Evil IP address",
+            "Umherirrender"
+        ]
+    },
+    "newduplicateusermessage-description": "{{desc|name=New User Message|url=https://www.mediawiki.org/wiki/Extension:NewUserMessage}}",
+    "newduplicateusermessage-edit-summary": "The edit summary used when placing a new user message.\n\nRefers to {{msg-mw|Newusermessage-template}}.",
+    "newduplicateusermessage-template": "{{notranslate}}\nUsed in {{msg-mw|Newuseredit-summary}}.",
+    "newduplicateusermessage-editor": "{{notranslate}}\n\nUsername for welcoming new users. This user won't be able to login like a regular user.",
+    "newduplicateusermessage-substitute": "{{notranslate}}"
+}

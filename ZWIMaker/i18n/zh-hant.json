@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"mzwi-action": "ZWI 匯出",
+	"mzwi-desc": "將目前頁面轉換成 ZWI 並發送到瀏覽器上"
+}

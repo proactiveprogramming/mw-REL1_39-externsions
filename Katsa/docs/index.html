@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Katsa documentation</title>
+    <link rel="stylesheet" href="ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Katsa</h1>
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>Spy</strong></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="topics/introduction.md.html">Introduction</a></li>
+  <li><a href="topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="topics/vscode.md.html">VScode</a></li>
+  <li><a href="topics/CONTRIBUTING.md.html">Contributing</a></li>
+  <li><a href="topics/CODE_OF_CONDUCT.md.html">Code of Conduct</a></li>
+  <li><a href="topics/SECURITY.md.html">Security</a></li>
+  <li><a href="topics/TRANSLATING.md.html">Translating</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="examples/test.lua.html">test.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>Spy</code></h1>
+<p>Class for spies.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#spy:__call">spy:__call ()</a></td>
+	<td class="summary">Instance is callable.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy:eval">spy:eval ()</a></td>
+	<td class="summary">Evaluate graph.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy:addCallback">spy:addCallback ()</a></td>
+	<td class="summary">Add a callback.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy:log">spy:log ()</a></td>
+	<td class="summary">Log a traceback.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy:raise">spy:raise ()</a></td>
+	<td class="summary">Rise an exception.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy.new">spy.new ()</a></td>
+	<td class="summary">Create a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy.newCarp">spy.newCarp ()</a></td>
+	<td class="summary">Create a new carp instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy.newCluck">spy.newCluck ()</a></td>
+	<td class="summary">Create a new cluck instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy.newCroak">spy.newCroak ()</a></td>
+	<td class="summary">Create a new croak instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#spy.newConfess">spy.newConfess ()</a></td>
+	<td class="summary">Create a new confess instance.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "spy:__call"></a>
+    <strong>spy:__call ()</strong>
+    </dt>
+    <dd>
+    Instance is callable.
+ This call may not return at all.
+ Redirects to objects eval method.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         for a last minute message
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "spy:eval"></a>
+    <strong>spy:eval ()</strong>
+    </dt>
+    <dd>
+    Evaluate graph.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be reported on evaluation of the compute grap
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        zero or more strings
+
+
+
+
+</dd>
+    <dt>
+    <a name = "spy:addCallback"></a>
+    <strong>spy:addCallback ()</strong>
+    </dt>
+    <dd>
+    Add a callback.
+ The function is expected to have a signature on the form <code>function( table, ... )</code>
+ where the table is a list of strings. It may change the content of the table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">func</span>
+            <span class="types"><span class="type">function</span></span>
+         to be registered on the compute graph.
+        </li>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         to inject the callbak
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "spy:log"></a>
+    <strong>spy:log ()</strong>
+    </dt>
+    <dd>
+    Log a traceback.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be reported on evaluation of the compute grap
+        </li>
+        <li><span class="parameter">level</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         to start reporting
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "spy:raise"></a>
+    <strong>spy:raise ()</strong>
+    </dt>
+    <dd>
+    Rise an exception.
+ The Scribunto implementation makes it difficult to do this correctly.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be reported on evaluation of the compute grap
+        </li>
+        <li><span class="parameter">level</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         to start reporting
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "spy.new"></a>
+    <strong>spy.new ()</strong>
+    </dt>
+    <dd>
+    Create a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         arguments to be passed on
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "spy.newCarp"></a>
+    <strong>spy.newCarp ()</strong>
+    </dt>
+    <dd>
+    Create a new carp instance.
+ This convenience function register a log callback.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         arguments to be passed on
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "spy.newCluck"></a>
+    <strong>spy.newCluck ()</strong>
+    </dt>
+    <dd>
+    Create a new cluck instance.
+ This convenience function register a log callback.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         arguments to be passed on
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "spy.newCroak"></a>
+    <strong>spy.newCroak ()</strong>
+    </dt>
+    <dd>
+    Create a new croak instance.
+ This convenience function register a raise callback.
+ The Scribunto implementation makes it difficult to do this correctly.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         arguments to be passed on
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+    <h3>Raises:</h3>
+    unconditionally
+
+
+
+</dd>
+    <dt>
+    <a name = "spy.newConfess"></a>
+    <strong>spy.newConfess ()</strong>
+    </dt>
+    <dd>
+    Create a new confess instance.
+ This convenience function register a raise callback.
+ The Scribunto implementation makes it difficult to do this correctly.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         arguments to be passed on
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+    <h3>Raises:</h3>
+    unconditionally
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc TESTING</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138139619-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+
+	gtag('js', new Date());
+	gtag('config', 'UA-138139619-1');
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Doppelgänger documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Doppelganger</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>Double</strong></li>
+  <li><a href="../modules/Spy.html">Spy</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="../topics/vscode.md.html">VScode extension</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/test-spy.lua.html">test-spy.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>Double</code></h1>
+<p>Class for doubles.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#meta:__call">meta:__call ()</a></td>
+	<td class="summary">Get arguments for a functionlike call.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:setName">obj:setName ()</a></td>
+	<td class="summary">Set identifying name</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:hasName">obj:hasName ()</a></td>
+	<td class="summary">Has set name.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:setLevel">obj:setLevel ()</a></td>
+	<td class="summary">Set stack level.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:hasLevel">obj:hasLevel ()</a></td>
+	<td class="summary">Has set level.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:setOnEmpty">obj:setOnEmpty ()</a></td>
+	<td class="summary">Set on empty fallback.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:hasOnEmpty">obj:hasOnEmpty ()</a></td>
+	<td class="summary">Has set empty fallback.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:isEmpty">obj:isEmpty ()</a></td>
+	<td class="summary">Is the list of values empty.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:depth">obj:depth ()</a></td>
+	<td class="summary">What is the depth of the internal values list.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:layout">obj:layout ()</a></td>
+	<td class="summary">Get the layout of the values list.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:add">obj:add ()</a></td>
+	<td class="summary">Add value(s) to the list of values.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:remove">obj:remove ()</a></td>
+	<td class="summary">Remove value from the list of values.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:stub">obj:stub ()</a></td>
+	<td class="summary">Return a stub function for the object.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:hasStub">obj:hasStub ()</a></td>
+	<td class="summary">Has set stub function.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:export">obj:export ()</a></td>
+	<td class="summary">Export a list of all the contents.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#obj:flush">obj:flush ()</a></td>
+	<td class="summary">Flush all the contents.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#double.new">double.new ()</a></td>
+	<td class="summary">Create a new instance.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "meta:__call"></a>
+    <strong>meta:__call ()</strong>
+    </dt>
+    <dd>
+    Get arguments for a functionlike call.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         pass on to dispatch
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:setName"></a>
+    <strong>obj:setName ()</strong>
+    </dt>
+    <dd>
+    Set identifying name
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         used for error reports
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:hasName"></a>
+    <strong>obj:hasName ()</strong>
+    </dt>
+    <dd>
+    Has set name.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:setLevel"></a>
+    <strong>obj:setLevel ()</strong>
+    </dt>
+    <dd>
+    Set stack level.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">level</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         where to start reporting
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:hasLevel"></a>
+    <strong>obj:hasLevel ()</strong>
+    </dt>
+    <dd>
+    Has set level.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:setOnEmpty"></a>
+    <strong>obj:setOnEmpty ()</strong>
+    </dt>
+    <dd>
+    Set on empty fallback.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">func</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">function</span></span>
+         fallback to be used in place of precomputed values
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:hasOnEmpty"></a>
+    <strong>obj:hasOnEmpty ()</strong>
+    </dt>
+    <dd>
+    Has set empty fallback.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:isEmpty"></a>
+    <strong>obj:isEmpty ()</strong>
+    </dt>
+    <dd>
+    Is the list of values empty.
+ Note that the internal structure is non-empty even if a nil
+ is shifted into the values list.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+        whether the internal values list has length zero
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:depth"></a>
+    <strong>obj:depth ()</strong>
+    </dt>
+    <dd>
+    What is the depth of the internal values list.
+ Note that the internal structure has a depth even if a nil
+ is shifted into the values list.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">number</span></span>
+        how deep is the internal structure
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:layout"></a>
+    <strong>obj:layout ()</strong>
+    </dt>
+    <dd>
+    Get the layout of the values list.
+ This method is used for testing to inspect which types of objects exists in the values list.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        description of the internal structure
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:add"></a>
+    <strong>obj:add ()</strong>
+    </dt>
+    <dd>
+    Add value(s) to the list of values.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+        facilitate chaining
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:remove"></a>
+    <strong>obj:remove ()</strong>
+    </dt>
+    <dd>
+    Remove value from the list of values.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">num</span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">any</span></span>
+        item that can be put on the internal structure
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:stub"></a>
+    <strong>obj:stub ()</strong>
+    </dt>
+    <dd>
+    Return a stub function for the object.
+ Each call to the returned closure will remove one case of values from the internal structure.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">closure</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:hasStub"></a>
+    <strong>obj:hasStub ()</strong>
+    </dt>
+    <dd>
+    Has set stub function.
+ treturn boolean
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:export"></a>
+    <strong>obj:export ()</strong>
+    </dt>
+    <dd>
+    Export a list of all the contents.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        list of values
+
+
+
+
+</dd>
+    <dt>
+    <a name = "obj:flush"></a>
+    <strong>obj:flush ()</strong>
+    </dt>
+    <dd>
+    Flush all the contents.
+ Note that this clears the internal storage.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        list of values
+
+
+
+
+</dd>
+    <dt>
+    <a name = "double.new"></a>
+    <strong>double.new ()</strong>
+    </dt>
+    <dd>
+    Create a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         arguments to be passed on
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc TESTING</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

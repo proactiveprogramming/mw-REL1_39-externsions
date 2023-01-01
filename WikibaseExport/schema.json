@@ -1,0 +1,69 @@
+{
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"defaultSubjects": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"pattern": "^[Q][1-9]\\d{0,9}$"
+			}
+		},
+		"defaultStartYear": {
+			"type": [ "integer", "null" ]
+		},
+		"defaultEndYear": {
+			"type": [ "integer", "null" ]
+		},
+		"startTimePropertyId": {
+			"$ref": "#/$defs/property"
+		},
+		"endTimePropertyId": {
+			"$ref": "#/$defs/property"
+		},
+		"pointInTimePropertyId": {
+			"$ref": "#/$defs/property"
+		},
+		"propertiesToGroupByYear": {
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/property"
+			}
+		},
+		"ungroupedProperties": {
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/property"
+			}
+		},
+		"subjectFilterPropertyId": {
+			"$ref": "#/$defs/property"
+		},
+		"subjectFilterPropertyValue": {
+			"type": [ "string", "null" ]
+		},
+		"exportLanguages": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		}
+	},
+	"dependentSchemas": {
+		"defaultStartYear": {
+			"properties": {
+				"defaultEndYear": {
+					"minimum": {
+						"$data": "1/defaultStartYear"
+					}
+				}
+			}
+		}
+	},
+	"$defs": {
+		"property": {
+			"type": [ "string", "null" ],
+			"pattern": "^[P][1-9]\\d{0,9}$"
+		}
+	}
+}

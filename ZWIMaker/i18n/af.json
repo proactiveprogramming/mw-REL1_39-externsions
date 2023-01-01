@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fwolff"
+		]
+	},
+	"mzwi-action": "ZWI-uitvoer",
+	"mzwi-desc": "Skakel die huidige bladsy om na ZWI en stuur na die blaaier"
+}

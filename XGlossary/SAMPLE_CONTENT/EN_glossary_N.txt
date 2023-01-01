@@ -1,0 +1,16 @@
+{{#glossary_entry:
+ |langs=EN
+ |title=Normal
+ |ref=normal
+ |shortdesc=Surface normal, or just normal to a flat surface, is a three-dimensional vector which is perpendicular to that surface.
+ |longdesc=A normal to a non-flat surface at a point p on the surface is a vector which is perpendicular to the tangent plane to that surface at p.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Normal Mapping
+ |ref=normal mapping
+ |shortdesc=Normal mapping is a technique to simulate relief on smooth surfaces, by modifying their shading.
+ |longdesc=It is similar to {{Glossary/Link|ref=bump mapping|txt=Bump Mapping}}, but instead of the image being a greyscale heightmap, the colours define in which direction the normal should be shifted, the 3 colour channels being mapped to the 3 directions X, Y and Z. This allows more detail and control over the effect.
+ }}
+

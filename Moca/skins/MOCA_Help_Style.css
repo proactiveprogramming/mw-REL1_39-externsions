@@ -1,0 +1,30 @@
+/**
+  * File: MOCA_Help_Style.css
+  *
+  * Description: CSS classes for Help Popup
+  *
+  * @author Chrysovalanto Kousetti
+  * @email valanto@gmail.com
+  *
+  */
+  
+.smwi_help_message_title {
+	font-size: 15px;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+}
+
+.smwi_help_message_text {
+	font-size: 12px;
+	font-family: arial;
+	font-weight: normal;
+}
+
+.smwi_help_message_close {
+	font-size: 13px;
+	font-family: arial;
+	font-weight: bold;
+	text-align:center;
+	cursor: pointer;
+}

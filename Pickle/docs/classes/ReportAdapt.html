@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pickle documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Pickle</h1>
+
+<ul>
+  <li><a href="../mw.pickle.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Metamethods">Metamethods</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Adapt.html">Adapt</a></li>
+  <li><a href="../classes/Bag.html">Bag</a></li>
+  <li><a href="../classes/Case.html">Case</a></li>
+  <li><a href="../classes/Counter.html">Counter</a></li>
+  <li><a href="../classes/Double.html">Double</a></li>
+  <li><a href="../classes/Extractor.html">Extractor</a></li>
+  <li><a href="../classes/Extractors.html">Extractors</a></li>
+  <li><a href="../classes/Spy.html">Spy</a></li>
+  <li><a href="../classes/Translator.html">Translator</a></li>
+  <li><a href="../classes/Translators.html">Translators</a></li>
+  <li><a href="../classes/Render.html">Render</a></li>
+  <li><a href="../classes/RenderAdapt.html">RenderAdapt</a></li>
+  <li><a href="../classes/RenderAdaptCompact.html">RenderAdaptCompact</a></li>
+  <li><a href="../classes/RenderAdaptFull.html">RenderAdaptFull</a></li>
+  <li><a href="../classes/RenderAdaptVivid.html">RenderAdaptVivid</a></li>
+  <li><a href="../classes/RenderCase.html">RenderCase</a></li>
+  <li><a href="../classes/RenderCaseCompact.html">RenderCaseCompact</a></li>
+  <li><a href="../classes/RenderCaseFull.html">RenderCaseFull</a></li>
+  <li><a href="../classes/RenderCaseVivid.html">RenderCaseVivid</a></li>
+  <li><a href="../classes/Renders.html">Renders</a></li>
+  <li><a href="../classes/Report.html">Report</a></li>
+  <li><strong>ReportAdapt</strong></li>
+  <li><a href="../classes/ReportCase.html">ReportCase</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Pickle.html">Pickle</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/activities.md.html">Activities</a></li>
+  <li><a href="../topics/adapt.md.html">Adapt</a></li>
+  <li><a href="../topics/call-style.md.html">Call style</a></li>
+  <li><a href="../topics/change-log.md.html">Log</a></li>
+  <li><a href="../topics/databases.md.html">Databases</a></li>
+  <li><a href="../topics/dataflow.md.html">Dataflow</a></li>
+  <li><a href="../topics/hello-world.md.html">Hello World</a></li>
+  <li><a href="../topics/lua-classes.md.html">Lua classes</a></li>
+  <li><a href="../topics/musings.md.html">Musings</a></li>
+  <li><a href="../topics/page-indicators.md.html">Page indicators</a></li>
+  <li><a href="../topics/sources.md.html">Sources</a></li>
+  <li><a href="../topics/spies.md.html">Spies</a></li>
+  <li><a href="../topics/statistics.md.html">Statistics</a></li>
+  <li><a href="../topics/test-anything-protocol.md.html">Test anything protocol</a></li>
+  <li><a href="../topics/test-case.md.html">Test Case</a></li>
+  <li><a href="../topics/test-doubles.md.html">Test doubles</a></li>
+  <li><a href="../topics/testing.md.html">Testing</a></li>
+  <li><a href="../topics/tracking-categories.md.html">Tracking categories</a></li>
+  <li><a href="../topics/translatewiki.md.html">Translatewiki</a></li>
+  <li><a href="../topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="../topics/vscode-extensions.md.html">VScode extension</a></li>
+  <li><a href="../topics/vscode-snippets.md.html">VScode snippets</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/HelloWorld.pickle.nb.lua.html">HelloWorld.pickle.nb.lua</a></li>
+  <li><a href="../examples/HelloWorld.lua.html">HelloWorld.lua</a></li>
+  <li><a href="../examples/HelloWorld.pickle.lua.html">HelloWorld.pickle.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>ReportAdapt</code></h1>
+<p>Subclass for adapt report.</p>
+<p> This class follows the pattern with inheritance from
+ <a href="../topics/lua-classes.md.html">Lua classes</a>.</p>
+
+
+<h2><a href="#Metamethods">Metamethods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:__index">ReportAdapt:__index (key)</a></td>
+	<td class="summary">Lookup of missing class members.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:create">ReportAdapt:create (...)</a></td>
+	<td class="summary">Create a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:_init">ReportAdapt:_init (...)</a></td>
+	<td class="summary">Initialize a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:lines">ReportAdapt:lines ()</a></td>
+	<td class="summary">Export the lines as an multivalue return.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:numLines">ReportAdapt:numLines ()</a></td>
+	<td class="summary">Get the number of lines.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:isEmpty">ReportAdapt:isEmpty ()</a></td>
+	<td class="summary">Is the report empty?</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:addLine">ReportAdapt:addLine (...)</a></td>
+	<td class="summary">Add a line.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:getLine">ReportAdapt:getLine ([idx=1])</a></td>
+	<td class="summary">Get a line.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportAdapt:realize">ReportAdapt:realize (renders, lang, counter)</a></td>
+	<td class="summary">Realize the data by applying a render.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Metamethods"></a>Metamethods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ReportAdapt:__index"></a>
+    <strong>ReportAdapt:__index (key)</strong>
+    </dt>
+    <dd>
+    Lookup of missing class members.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         lookup of member
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        any
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ReportAdapt:create"></a>
+    <strong>ReportAdapt:create (...)</strong>
+    </dt>
+    <dd>
+    Create a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         forwarded to <a href="../classes/Report.html#Report:create">superclass create method</a>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../classes/Report.html#Report:create">Report:create</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "ReportAdapt:_init"></a>
+    <strong>ReportAdapt:_init (...)</strong>
+    </dt>
+    <dd>
+    Initialize a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         pushed to lines
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportAdapt:lines"></a>
+    <strong>ReportAdapt:lines ()</strong>
+    </dt>
+    <dd>
+    Export the lines as an multivalue return.
+ Note that each line is not unwrapped.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        list of lines
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportAdapt:numLines"></a>
+    <strong>ReportAdapt:numLines ()</strong>
+    </dt>
+    <dd>
+    Get the number of lines.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">number</span></span>
+        of lines
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportAdapt:isEmpty"></a>
+    <strong>ReportAdapt:isEmpty ()</strong>
+    </dt>
+    <dd>
+    Is the report empty?
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+        whether the report is empty
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportAdapt:addLine"></a>
+    <strong>ReportAdapt:addLine (...)</strong>
+    </dt>
+    <dd>
+    Add a line.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         that can be a line
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportAdapt:getLine"></a>
+    <strong>ReportAdapt:getLine ([idx=1])</strong>
+    </dt>
+    <dd>
+    Get a line.
+ Note that all parts will be returned wrapped up in a table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">idx</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         line number
+         (<em>default</em> 1)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        containing list of parts
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportAdapt:realize"></a>
+    <strong>ReportAdapt:realize (renders, lang, counter)</strong>
+    </dt>
+    <dd>
+    Realize the data by applying a render.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">renders</span>
+            <span class="types"><a class="type" href="../classes/Renders.html#">Renders</a></span>
+         to use while realizing the reports
+        </li>
+        <li><span class="parameter">lang</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         holding the language code
+        </li>
+        <li><span class="parameter">counter</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="../classes/Counter.html#">Counter</a></span>
+         holding the running count
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

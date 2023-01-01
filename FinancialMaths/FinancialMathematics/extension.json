@@ -1,0 +1,79 @@
+{
+	"name": "FinancialMathematics",
+	"version": "0.3.12",
+	"author": [
+		"Owen Kellie-Smith"
+	],
+	"url": "https://github.com/owen-kellie-smith/financial-maths-mediawiki/",
+	"descriptionmsg": "financialmathematics-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses": {
+		"HTML_QuickForm2": "PEAR/HTML/QuickForm2.php",
+  		"HTML_Table": "PEAR/HTML/Table.php",
+		"Validate": "PEAR/Validate.php",
+		"FinancialMathematicsHooks": "FinancialMathematics.hooks.php",
+		"SpecialFinancialMathematics": "specials/SpecialFinancialMathematics.php",
+		"FinMathConcept":	"includes/FinMathConcept.php",
+		"FinMathInterest":	"includes/FinMathInterest.php",
+		"FinMathAnnuityEscalating": "includes/FinMathAnnuityEscalating.php",
+		"FinMathAnnuityIncreasing": "includes/FinMathAnnuityIncreasing.php",
+		"FinMathAnnuity": "includes/FinMathAnnuity.php",
+		"FinMathCashflow": "includes/FinMathCashflow.php",
+		"FinMathCashflows": "includes/FinMathCashflows.php",
+		"FinMathCollection": "includes/FinMathCollection.php",
+		"FinMathConceptAll": "includes/FinMathConceptAll.php",
+		"FinMathConceptAnnuityIncreasing": "includes/FinMathConceptAnnuityIncreasing.php",
+		"FinMathConceptAnnuity": "includes/FinMathConceptAnnuity.php",
+		"FinMathConceptCashflows": "includes/FinMathConceptCashflows.php",
+		"FinMathConceptInterest": "includes/FinMathConceptInterest.php",
+		"FinMathConceptMortgage": "includes/FinMathConceptMortgage.php",
+		"FinMathConceptSpotRates": "includes/FinMathConceptSpotRates.php",
+		"FinMathForm": "includes/FinMathForm.php",
+		"FinMathXML": "includes/FinMathXML.php",
+		"FinMathFormXML": "includes/FinMathFormXML.php",
+		"FinMathForwardRate": "includes/FinMathForwardRate.php",
+		"FinMathForwardRates": "includes/FinMathForwardRates.php",
+		"FinMathInterestFormat": "includes/FinMathInterestFormat.php",
+		"FinMathInterest": "includes/FinMathInterest.php",
+		"FinMathMortgage": "includes/FinMathMortgage.php",
+		"FinMathObject": "includes/FinMathObject.php",
+		"FinMathParYield": "includes/FinMathParYield.php",
+		"FinMathParYields": "includes/FinMathParYields.php",
+		"FinMathRender": "includes/FinMathRender.php",
+		"FinMathSingleCashflow": "includes/FinMathSingleCashflow.php",
+		"FinMathSpotRate": "includes/FinMathSpotRate.php",
+		"FinMathSpotRates": "includes/FinMathSpotRates.php"
+	},
+	"config": {
+		"BoilerPlateEnableFoo": true
+	},
+	"ExtensionMessagesFiles": {
+		"FinancialMathematicsAlias": "FinancialMathematics.i18n.alias.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"FinancialMathematicsHooks::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"FinancialMathematics": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "FinancialMathematics"
+	},
+	"ResourceModules": {
+		"ext.FinancialMathematics": {
+			"styles": [
+				"modules/ext.FinancialMathematics.css"
+			]
+		}
+	},
+	"SpecialPages": {
+		"FinancialMathematics": "SpecialFinancialMathematics"
+	},
+	"manifest_version": 1
+}

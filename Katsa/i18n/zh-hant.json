@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"katsa-desc": "提供使用在 Lua 模組的收集點",
+	"katsa-carp-final": "Carp 已呼叫",
+	"katsa-cluck-final": "Cluck 已呼叫",
+	"katsa-croak-final": "Croak 已呼叫",
+	"katsa-confess-final": "Confess 已呼叫"
+}

@@ -1,0 +1,80 @@
+{
+	"name": "External Content",
+	"version": "1.3.0",
+	"license-name": "GPL-2.0-or-later",
+
+	"author": [
+		"[https://www.EntropyWins.wtf/mediawiki Jeroen De Dauw]",
+		"[https://professional.wiki/ Professional.Wiki]"
+	],
+
+	"url": "https://github.com/ProfessionalWiki/ExternalContent",
+
+	"descriptionmsg": "external-content-desc",
+
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"platform": {
+			"php": ">= 7.4"
+		}
+	},
+
+	"config": {
+		"ExternalContentDomainWhitelist": {
+			"description": "List of allowed domains to embed content from. Leave empty to have no restriction.",
+			"value": []
+		},
+		"ExternalContentFileExtensionWhitelist": {
+			"description": "List of allowed file extensions. Empty array for no restriction.",
+			"value": [ "md" ]
+		},
+		"ExternalContentEnableEmbedFunction": {
+			"description": "If the #embed parser function should be enabled.",
+			"value": true
+		},
+		"ExternalContentEnableBitbucketFunction": {
+			"description": "If the #bitbucket parser function should be enabled.",
+			"value": true
+		},
+		"ExternalContentBasicAuthCredentials": {
+			"description": "Per-domain Basic Auth credentials.",
+			"value": []
+		}
+	},
+
+	"MessagesDirs": {
+		"ExternalContent": [
+			"i18n"
+		]
+	},
+
+	"ExtensionMessagesFiles": {
+		"NetworkParserFunction": "i18n/_MagicWords.php"
+	},
+
+	"AutoloadNamespaces": {
+		"ProfessionalWiki\\ExternalContent\\": "src/",
+		"ProfessionalWiki\\ExternalContent\\Tests\\": "tests/"
+	},
+
+	"Hooks": {
+		"ParserFirstCallInit": "ProfessionalWiki\\ExternalContent\\EntryPoints\\MediaWikiHooks::onParserFirstCallInit",
+		"ParserTestGlobals": "ProfessionalWiki\\ExternalContent\\EntryPoints\\MediaWikiHooks::onParserTestGlobals",
+		"SearchDataForIndex": "ProfessionalWiki\\ExternalContent\\EntryPoints\\MediaWikiHooks::onSearchDataForIndex",
+		"SearchIndexFields": "ProfessionalWiki\\ExternalContent\\EntryPoints\\MediaWikiHooks::onSearchIndexFields"
+	},
+
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "ExternalContent/modules"
+	},
+	"ResourceModules": {
+	},
+
+	"TrackingCategories": [
+		"external-content-tracking-category",
+		"external-content-broken-tracking-category"
+	],
+
+	"manifest_version": 2
+}

@@ -1,0 +1,84 @@
+{
+	"name": "Automated Values",
+	"type": "wikibase",
+
+	"version": "1.0.0",
+
+	"author": [
+		"[https://www.EntropyWins.wtf/mediawiki Jeroen De Dauw]",
+		"[https://professional.wiki/ Professional.Wiki]"
+	],
+
+	"license-name": "GPL-2.0-or-later",
+
+	"url": "https://github.com/ProfessionalWiki/AutomatedValues",
+
+	"descriptionmsg": "automated-values-description",
+
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"extensions": {
+			"WikibaseRepository": "*"
+		}
+	},
+
+	"MessagesDirs": {
+		"AutomatedValues": [
+			"i18n"
+		]
+	},
+
+	"ExtensionMessagesFiles": {
+		"AutomatedValuesAliases": "i18n/aliases/Aliases.php"
+	},
+
+	"AutoloadNamespaces": {
+		"ProfessionalWiki\\AutomatedValues\\": "src/",
+		"ProfessionalWiki\\AutomatedValues\\Tests\\": "tests/"
+	},
+
+	"Hooks": {
+		"MultiContentSave": "ProfessionalWiki\\AutomatedValues\\Hooks::onMultiContentSave",
+		"ContentHandlerDefaultModelFor": "ProfessionalWiki\\AutomatedValues\\Hooks::onContentHandlerDefaultModelFor",
+		"EditFilter": "ProfessionalWiki\\AutomatedValues\\Hooks::onEditFilter",
+		"AlternateEdit": "ProfessionalWiki\\AutomatedValues\\Hooks::onAlternateEdit",
+		"EditFormPreloadText": "ProfessionalWiki\\AutomatedValues\\Hooks::onEditFormPreloadText"
+	},
+
+	"config": {
+		"AutomatedValuesDefaultLanguages": {
+			"description": "List of languages to create values for via '*' build specifications. If this value is not an empty list, it will override anything set on MediaWiki:AutomatedValues",
+			"value": []
+		},
+		"AutomatedValuesRules": {
+			"description": "List of rules applied to the wiki. In JSON format, following the JSON Schema at schema.json. Gets combined with rules defined on MediaWiki:AutomatedValues",
+			"value": ""
+		},
+		"AutomatedValuesEnableInWikiConfig": {
+			"description": "If it should be possible to define Rules and configuration via MediaWiki:AutomatedValues",
+			"value": true
+		}
+	},
+
+	"SpecialPages": {
+		"AutomatedValues": "ProfessionalWiki\\AutomatedValues\\SpecialAutomatedValues"
+	},
+
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "AutomatedValues/resources"
+	},
+
+	"ResourceModules": {
+		"ext.automated.values": {
+			"dependencies": [
+			],
+			"scripts": [
+			],
+			"styles": [
+			]
+		}
+	},
+
+	"manifest_version": 2
+}

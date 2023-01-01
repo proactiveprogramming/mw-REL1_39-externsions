@@ -1,0 +1,64 @@
+body {
+  background-color: #eaecf0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em; 
+  margin-top: 25px;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #1C1F50;
+
+}
+
+input[type=button]:hover {
+    background-color: #660000;
+
+}
+
+input[type="text"][disabled] {
+   color: red;
+}
+
+
+input[type=submit], input[type=reset] {
+  background-color: #045f64;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+
+}
+
+
+input[type=button] {
+  background-color: #8B0000;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+}
+
+input[type=submit]:disabled {
+    background: #303030;
+}
+

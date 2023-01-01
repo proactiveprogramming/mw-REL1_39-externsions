@@ -1,0 +1,28 @@
+CHANGELOG
+=========
+
+All notable changes to the Closures MediaWiki extension will be documented in
+this file.
+
+The format is based on Keep a Changelog [0], and this project adheres to
+Semantic Versioning [1].
+
+
+UNRELEASED
+----------
+
+
+1.1.0 - 2021-03-18
+------------------
+
+Changed:
+- The name of the function ClosureStore::registerClosure to ClosureStore::add.
+- The location of the ClosuresServiceWiring file.
+
+Added:
+- Stable interface policy annotations.
+- Dependency injection for the FetchTemplateHandler in the
+  ParserOptionsRegisterHookHandler
+
+[0]: https://keepachangelog.com/en/1.0.0/
+[1]: https://semver.org/spec/v2.0.0.html

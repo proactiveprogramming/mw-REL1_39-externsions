@@ -1,0 +1,50 @@
+{
+	"name": "Slides",
+	"author": [
+		"Pascal Noisette"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Slides",
+	"descriptionmsg": "Create slideshow action from article sections",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Slides\\": "includes/"
+	},
+	"Actions": {
+		"slide": "MediaWiki\\Extension\\Slides\\SlidesAction"
+	},
+	"Hooks": {
+		"BeforePageDisplayMobile": "MediaWiki\\Extension\\Slides\\SlidesHeader::addHeaders",
+		"BeforePageDisplay": "MediaWiki\\Extension\\Slides\\SlidesHeader::addHeaders",
+		"SkinTemplateNavigation": "MediaWiki\\Extension\\Slides\\SlidesTab::addTab"
+	},
+	"MessagesDirs": {
+		"Slides": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Slides"
+	},
+	"ResourceModules": {
+		"ext.slides": {
+			"styles": [
+				"node_modules/reveal.js/dist/reveal.css",
+				"node_modules/reveal.js/dist/theme/white.css",
+				"resources/ext.slides/init.css"
+			],
+			"scripts": [
+				"node_modules/reveal.js/dist/reveal.js",
+				"node_modules/reveal.js/plugin/zoom/zoom.js",
+				"node_modules/reveal.js/plugin/search/search.js",
+				"node_modules/reveal.js/plugin/notes/notes.js",
+				"resources/ext.slides/init.js"
+			]
+		}
+	},
+	"manifest_version": 2
+}

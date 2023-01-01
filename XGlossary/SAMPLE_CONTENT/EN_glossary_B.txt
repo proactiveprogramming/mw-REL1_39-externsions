@@ -1,0 +1,118 @@
+{{#glossary_entry:
+ |langs=EN
+ |title=Background
+ |ref=background
+ |shortdesc=What is at the far end of the scene.
+ |longdesc=In general, nothing important occurs in the background, as the viewer generally does not concentrate on it. However, it may be very important for the credibility of your scene (backgrounds are often retouched photos or mate-paintings, as it would be to much a work to create/render them in “real” 3D).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bake
+ |ref=bake
+ |shortdesc=''To bake'' is to pre-calculate a part of the scene, to avoid the need of re-calculating it each time you render. Useful for compute-intensive effects like softbodies, fluids, …
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bevel
+ |ref=bevel
+ |shortdesc=In CG, a bevel is a narrow face added between two faces that join themselves at a (relatively) sharp angle.
+ |longdesc=They are used to soften a bit objects’ corners. See the [[Doc:Manual/Modifiers/Mesh/Bevel|{{Literal|Bevel}} modifier]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bézier
+ |ref=bezier
+ |dict=(langs=EN;term=Bézier;note=Note that this is a surname, so write “Bézier” and not “bezier”!)
+ |shortdesc=Bézier curves and surfaces are parts of the parametric objects (like NURBS and meta objects).
+ |longdesc=They were first described in 1972 by the French engineer Pierre Bézier, who used them to design automobile bodies. Bézier curves and surfaces can be of any degree, but bicubic generally provide enough degrees of freedom for most applications.<br />Note that Blender does not support Bézier surfaces, only curves…
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blend
+ |ref=blend
+ |shortdesc=''To Blend'', working with Blender; also Blender’s file extension (<code>.blend</code>).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blender Documentation
+ |ref=blender documentation
+ |shortdesc=Well, it’s a never-finished attempt of the Blender community to document the always-richest wonderful features of Blender!
+ |longdesc=The main official documentation is this wiki, but you can find many others on the web (tutorials, video tutorials, …).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blender File
+ |ref=blender file
+ |shortdesc=This is a binary file that contains a whole set of scenes and other (meta)data, in native Blender format (a sort of database).
+ |longdesc=Note that a Blender file not only stores the “useful” data, but also the GUI layouts, settings, and so on…
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blender Foundation (BF)
+ |ref=blender foundation
+ |shortdesc=The non-profit organization created by Ton Roosendaal to free Blender, in 2002. From that day, it has dedicated to promoting and developing Blender.
+ |longdesc=See also [[Doc:Manual/Introduction/History|this page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blender Game Engine (BGE)
+ |ref=blender game engine
+ |shortdesc=The real-time part of Blender. Its main purpose is game creation, but it may be used for things like live demo, interactive visits, and so on.
+ |longdesc=See the [[Doc:Manual/Game Engine|Game Engine chapter]] of the Manual.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bone
+ |ref=bone
+ |shortdesc=The constituting elements of an armature. Each bone of an armature can influence the position/rotation/scale of objects and/or vertices. In fact, there are quite similar to there biological counterpart!
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bounce Light
+ |ref=bounce light
+ |shortdesc=The indirect lighting of shadowed areas.
+ |longdesc=Simple lighting situations have a single light, called a key light, illuminating one side of an object. This creates strong shading and definition of the volume of the object. However, a 3D light will often make the contrast too great -&nbsp;the dark side of the object is completely black since no light is hitting it. In reality it would still be lit a little, just not as much as the brightly lit side, because of light bouncing around the room and hitting the dark side of the object. In realtime 3D, bounce light is not calculated, so you have to create it yourself. Either add a little ambient color, or put a second, less bright directional light pointing the opposite direction to give a little light to (to “fill-in”) the shadows.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bounding Box
+ |ref=bounding box
+ |shortdesc=A bounding box is the rectangular parallelepiped that bounds as tight as possible an object (including those of complex shape, joined objects, boolean unions, etc.), in its local space (i.e. its sides are parallel to its local axes).
+ |longdesc=All Blender objects may be seen as representative bounding boxes by selecting {{Literal|Bounding Box}} drawing mode in the {{Literal|Draw type}} dropdown list on the {{Literal|3D View}} header bar. Hotkey {{Shortcut|Z}} toggles bounding box and solid drawing modes. Bounding boxes can only be viewed in {{Literal|Object}} mode.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Buffer
+ |ref=buffer
+ |shortdesc=A buffer is a particular type of memory object, in general created to temporarily store data.
+ |longdesc=Note that buffers may have a “fixed” size (like the ones for renders, in Blender), or a variable length (like most of the Input/Output buffers in a computer).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bump Mapping
+ |ref=bump mapping
+ |shortdesc=Bump mapping is a technique to simulate relief on smooth surfaces, by modifying their shading.
+ |longdesc=At each pixel, a perturbation to the surface normal of the object being rendered is looked up in a texture map and applied before the illumination calculation is done. Bump Mapping use a gray-scale image map to change the direction of surface normals. You can use this to simulate height, so that you can paint wrinkles and bumps. 50&nbsp;% gray means neutral (no change is made), lighter means higher, darker means lower. Note that the position of faces is not actually changed: by rotating just the normals, lighting will change too, to give the illusion of a height difference. This has downsides too: the outline of objects isn’t changed, so the trick is given away. For similar (but more evolved) effects, you can use {{Glossary/Link|ref=displacement mapping|txt=Displacement Mapping}} and {{Glossary/Link|ref=normal mapping|txt=Normal Mapping}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=“Buttons” window
+ |ref=buttons window
+ |shortdesc=The {{Literal|Buttons}} window is a window type in Blender where most of the options/control/settings of the objects/materials/scenes/… are regrouped.
+ |longdesc=It is subdivided in {{Glossary/Link|ref=context|txt=Contexts}} and {{Glossary/Link|ref=sub context|txt=Sub-Contexts}}.
+ }}
+

@@ -1,0 +1,14 @@
+{
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "*",
+		"php-parallel-lint/php-parallel-lint": "*",
+		"php-parallel-lint/php-console-highlighter": "*"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint --colors --exclude vendor .",
+			"phpcs -p -s"
+		],
+		"fix": "phpcbf"
+	}
+}

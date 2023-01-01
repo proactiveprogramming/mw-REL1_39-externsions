@@ -1,0 +1,40 @@
+{
+	"name": "RecentChangesLogFilter",
+	"author": "Patrick Westerhoff",
+	"version": "1.3",
+	"url": "http://mediawiki.org/wiki/Extension:RecentChangesLogFilter",
+	"license-name": "MPL-2.0",
+
+	"description": "Filters log entries from Special:RecentChanges",
+	"descriptionmsg": "recentchangeslogfilter-desc",
+	"type": "other",
+	"requires": {
+        "MediaWiki": ">= 1.25.0"
+    },
+
+	"AutoloadClasses": {
+		"RecentChangesLogFilterHooks": "RecentChangesLogFilter.hooks.php"
+	},
+	"MessagesDirs": {
+		"RecentChangesLogFilter": [
+			"i18n"
+		]
+	},
+
+	"Hooks": {
+		"ChangesListSpecialPageFilters": "RecentChangesLogFilterHooks::onChangesListSpecialPageFilters",
+		"ChangesListSpecialPageQuery": "RecentChangesLogFilterHooks::onChangesListSpecialPageQuery",
+		"GetPreferences": "RecentChangesLogFilterHooks::onGetPreferences"
+	},
+
+	"DefaultUserOptions": {
+		"rchidelogs": 1
+	},
+	"config": {
+		"RecentChangesLogFilterTypes": [
+			"newusers"
+		]
+	},
+
+	"manifest_version": 1
+}

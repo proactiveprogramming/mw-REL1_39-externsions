@@ -1,0 +1,11 @@
+{{#has-earned-achievements}}
+<ul class="achievement-list">
+{{#data-earned-achievements}}{{>Achievement}}{{/data-earned-achievements}}
+</ul>
+{{/has-earned-achievements}}
+{{#has-not-earning-achievements}}
+{{#has-earned-achievements}}<h2>{{{msg-header-not-earning-achievements}}}</h2>{{/has-earned-achievements}}
+<ul class="achievement-list">
+{{#data-not-earning-achievements}}{{>Achievement}}{{/data-not-earning-achievements}}
+</ul>
+{{/has-not-earning-achievements}}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"cbx-desc": "Handler for viewing PDF files in image mode",
+	"cbx-file-page-warning": "PDF is a complex format that may expose some of your private information in some cases. Make sure to configure your PDF viewer in a safe way.",
+	"cbx-file-page-warning-header": "Privacy considerations",
+	"cbx-file-page-warning-footer": "This issue is not specific to this particular file, but a general issue with the PDF format.",
+	"cbx-file-page-warning-info": "Learn more about this issue.",
+	"cbx_no_metadata": "Cannot get metadata from PDF.",
+	"cbx_page_error": "Page number not in range.",
+	"exif-cbx-producer": "Conversion program",
+	"exif-cbx-version": "Version of PDF format",
+	"exif-cbx-encrypted": "Encrypted",
+	"exif-cbx-pagesize": "Page size"
+}

@@ -1,0 +1,29 @@
+{
+	"name": "mediawiki/semantic-data-import",
+	"type": "mediawiki-extension",
+	"description": "",
+	"keywords": [
+		"MediaWiki",
+		"Semantic MediaWiki",
+		"SMW",
+		"CSV",
+		"TSV"
+	],
+	"homepage": "https://github.com/toniher/SemanticDataImport",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Toni Hermoso Pulido",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.6.0",
+		"mediawiki/semantic-media-wiki": ">=2.5"
+	},
+	"autoload": {
+		"files" : [
+			"SemanticDataImport.php"
+		]
+	}
+}

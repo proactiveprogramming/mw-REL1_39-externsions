@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"nodos-desc": "An extension to create a semantic plugin for the performance arts",
+	"nodos-i18n-welcome": "Welcome to the localization file of the nodos extension.",
+	"nodos-title": "Extensión Nodos",
+	"nodos-intro": "Bienvenido a la página especial del plugin de Nodos",
+	"helloworld": "Hello world"
+}

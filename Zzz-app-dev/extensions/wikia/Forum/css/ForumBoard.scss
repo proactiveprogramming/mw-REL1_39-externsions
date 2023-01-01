@@ -1,0 +1,79 @@
+@import "skins/shared/color";
+@import "skins/shared/mixins/arrow";
+@import "skins/shared/mixins/box-shadow";
+@import "skins/shared/mixins/clearfix";
+
+@import "../../Wall/css/WallColors";
+
+.ContentHeader {
+	@include clearfix;
+	border-bottom: 1px solid $color-page-border-subtle;
+	border-top: 1px solid $color-page-border-subtle;
+	padding: 10px 0;
+
+	&.Topic {
+		border-top: 0px;
+	}
+
+	.activity {
+		float: left;
+	}
+
+	.sorting {
+		cursor: pointer;
+		float: right;
+		position: relative;
+
+		.arrow {
+			@include arrow(4px, $color-text);
+			margin-left: 5px;
+		}
+
+		.menu {
+			@include box-shadow(0px, 2px, 5px, $color-wall-shadow);
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+			border-top: 1px solid $color-page-border-subtle;
+			background: $color-page;
+			display: none;
+			list-style: none;
+			margin: 0;
+			position: absolute;
+			left: -10px;
+			top: 0;
+			z-index: 1;
+
+			li {
+				&:hover {
+					background: $color-wall-bubble;
+				}
+
+				&.current {
+					font-weight: bold;
+				}
+
+				.option {
+					color: $color-text;
+					cursor: pointer;
+					padding: 5px 10px;
+					display: block;
+					text-decoration: none;
+					white-space: nowrap;
+				}
+			}
+		}
+
+		.selected {
+			border-radius: 3px;
+			display: inline-block;
+			vertical-align: center;
+
+			&:hover {
+			}
+		}
+	}
+}
+
+#WallTooltipMeta {
+	display: none;
+}

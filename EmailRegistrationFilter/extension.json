@@ -1,0 +1,44 @@
+{
+	"name": "EmailRegistrationFilter",
+	"author": "gaboflowers",
+	"description": "Allows or denies account registration according to the submitted email account",
+	"descriptionmsg": "emailregistrationfilter-desc",
+	"version": "0.1",
+	"config": {
+		"PatternList": {
+			"value": [
+				"/.*@example.com$/"
+			],
+			"description": "List of patterns to preg_match against a submitted email"
+		},
+		"IsWhiteList": {
+			"value": true,
+			"description": "True only allows a registation if the email matches a pattern in the value. If false, the PatternList becomes a blacklist"
+		},
+		"ErrorMessage": {
+			"value": "emailregistrationfilter-default-error-msg",
+			"description": "Custom error message"
+		}
+	},
+	"ConfigRegistry": {
+		"EmailRegistrationFilter": "GlobalVarConfig::newInstance"
+	},
+	"AutoloadClasses": {
+		"EmailFilterPasswordPrimaryAuthenticationProvider": "includes/EmailFilterPasswordPrimaryAuthenticationProvider.php"
+	},
+	"AuthManagerAutoConfig": {
+		"primaryauth": {
+			"EmailFilterPasswordPrimaryAuthenticationProvider": {
+				"class": "EmailFilterPasswordPrimaryAuthenticationProvider",
+				"sort": 0
+			}
+		}
+	},
+	"MessagesDirs": {
+		"EmailRegistrationFilter": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2,
+	"license-name": "GPL-2.0-or-later"
+}

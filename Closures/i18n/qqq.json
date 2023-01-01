@@ -1,0 +1,11 @@
+{
+  "@metadata": {
+    "authors": [
+      "Marijn van Wezel"
+    ]
+  },
+  "closures-name": "{{notranslate}}\n\nName of the extension as it should be displayed.\n\n{{Identical|Closures}}",
+  "closures-desc": "{{desc|name=Closures|url=https://www.mediawiki.org/wiki/Extension:Closures}}",
+  "closures-missing-closure-name": "This is returned by the parser function when no closure name is given to it.",
+  "closures-bad-closure-name": "This is returned by the parser function when an invalid closure name is given to it."
+}

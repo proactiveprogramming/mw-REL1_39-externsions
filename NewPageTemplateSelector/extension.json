@@ -1,0 +1,43 @@
+{
+	"name": "NewPageTemplateSelector",
+	"version": "0.1.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Urfiner Urfiner]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NewPageTemplateSelector",
+	"descriptionmsg": "newpagetemplateselector-description",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"NewPageTemplateSelector": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NewPageTemplateSelectorHooks": "includes/NewPageTemplateSelector.hooks.php"
+	},
+	"Hooks": {
+		"OutputPageParserOutput": "NewPageTemplateSelectorHooks::onBeforeHtmlAddedToOutput",
+		"ParserFirstCallInit": "NewPageTemplateSelectorHooks::onParserSetup"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "NewPageTemplateSelector/modules"
+	},
+	"ResourceModules": {
+		"ext.NewPageTemplateSelector": {	
+			"localBasePath": "modules/ext.NewPageTemplateSelector",
+			"remoteExtPath": "NewPageTemplateSelector/modules/ext.NewPageTemplateSelector",
+			"styles": [
+				"ext.NewPageTemplateSelector.css"
+			]
+		}
+	},
+	"ConfigRegistry": {
+		"NewPageTemplateSelector": "GlobalVarConfig::newInstance"
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ostrzyciel"
+        ]
+    },
+    "markImages": "MarkImages",
+    "markImages-desc": "Marks images in category pages according to their license status.",
+    "markImages-classes-label": "Marker CSS classes"
+}

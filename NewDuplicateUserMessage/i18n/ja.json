@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aotake",
+            "Fievarsty",
+            "JtFuruhata",
+            "Azeha"
+        ]
+    },
+    "newduplicateusermessage-description": "新規登録利用者の会話ページにメッセージを書き込む",
+    "newduplicateusermessage-edit-summary": "新規利用者の会話ページに[[{{int:newduplicateusermessage-template}}|歓迎のメッセージ]]を記入"
+}

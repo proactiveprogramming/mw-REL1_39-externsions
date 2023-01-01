@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizardist"
+		]
+	},
+	"mzwi-action": "Экспарт ZWI",
+	"mzwi-desc": "Канвэртуе бягучую старонку ў ZWI і аддае яе браўзэру"
+}

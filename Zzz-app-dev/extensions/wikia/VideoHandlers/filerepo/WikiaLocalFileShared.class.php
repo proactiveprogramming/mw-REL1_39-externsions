@@ -1,0 +1,264 @@
+<?php
+/**
+ * Leaf to WikiaLocalFile Composite
+ *
+ * Handles logic shared through Wikia LocalFile Wrappers
+ */
+
+class WikiaLocalFileShared  {
+
+	var $forceMime = '';
+	var $oFile = null;
+	var $videoId = '';
+	var $embedCodeMaxHeight = false;
+	var $metadata = null;
+
+	/**
+	 * @param $oWikiaLocalFile WikiaLocalFile
+	 */
+	function __construct( $oWikiaLocalFile ) {
+		$this->oFile = $oWikiaLocalFile;
+	}
+
+	/**
+	 * Checks if file is a video
+	 * @return boolean true if this file is a video, false otherwise
+	 */
+	public function isVideo() {
+		wfProfileIn( __METHOD__ );
+		$ret = ($this->oFile->getHandler() instanceof VideoHandler);
+		wfProfileOut( __METHOD__ );
+		return $ret;
+	}
+
+	/**
+	 * Embed code max height
+	 */
+	public function setEmbedCodeMaxHeight( $height ) {
+		$this->embedCodeMaxHeight = $height;
+	}
+
+	public function addExtraBorder( $width ) {
+		if ( $this->isVideo() ) {
+			return ($this->oFile->getHandler()->addExtraBorder( $width ));
+		}
+		return 0;
+	}
+
+	/**
+	 * Returns embed HTML
+	 *
+	 * @param string $width Desired width of video player
+	 * @param array $options [optional] associative array which accepts the following keys
+	 *  'autoplay' bool Whether the video should play on page load
+	 *  'isAjax' bool Whether the curent request is part of an ajax call
+	 *  'isInline' bool Is embed video file inline
+	 * @return bool|string
+	 */
+	public function getEmbedCode( $width, array $options = [] ) {
+		wfProfileIn( __METHOD__ );
+
+		$handler = $this->oFile->getHandler();
+		if ( $this->isVideo() && !empty($handler) ) {
+			if ( $this->embedCodeMaxHeight !== false && $this->embedCodeMaxHeight > 0 ) {
+				$handler->setMaxHeight( $this->embedCodeMaxHeight );
+			}
+			$handler->setThumbnailImage( $this->oFile->transform( array( 'width' => $width ) ) );
+
+			$res = $handler->getEmbed( $width, $options );
+
+			$res['title'] = $this->oFile->getTitle()->getDBKey();
+			$res['provider'] = $this->getProviderName();
+		} else {
+			$res = false;
+		}
+		wfProfileOut( __METHOD__ );
+		return $res;
+	}
+
+	public function getVideoUniqueId() {
+		return $this->getProviderName() . $this->getVideoId();
+	}
+
+	public function getProviderName() {
+		return $this->metaValue('provider', $this->oFile->minor_mime);
+	}
+
+	/**
+	 * Get the metadata description field.  There is a description field on the image
+	 * table so this calls out that this grabs the metadata description
+	 */
+	public function getMetaDescription() {
+		return $this->metaValue('description');
+	}
+
+	/**
+	 * get duration from metadata
+	 * @return string
+	 */
+	public function getMetadataDuration() {
+		return $this->metaValue('duration');
+	}
+
+	public function getProviderDetailUrl() {
+		wfProfileIn( __METHOD__ );
+		$handler = $this->oFile->getHandler();
+		if ( $this->isVideo() && !empty( $handler ) ) {
+			$detail = $handler->getProviderDetailUrl();
+			wfProfileOut( __METHOD__ );
+			return $detail;
+		}
+		wfProfileOut( __METHOD__ );
+		return false;
+	}
+
+	public function getProviderHomeUrl() {
+		$handler = $this->oFile->getHandler();
+		if ( $this->isVideo() && !empty( $handler ) ) {
+			return $handler->getProviderHomeUrl();
+		}
+
+		return false;
+	}
+
+	/**
+	 * Force file to use some specyfic mimetype
+	 *
+	 * MediaWiki is getting mime type directly from a file.
+	 * Need to alter this behavior for videos
+	 * as they are represented in filesystem by an image
+	 */
+	function forceMime( $aMime ) {
+		$this->forceMime = $aMime;
+	}
+
+	function setVideoId( $videoId ) {
+		$this->videoId = $videoId;
+	}
+
+	function getVideoId() {
+		if ( empty( $this->videoId ) ) {
+			$this->videoId = $this->metaValue('videoId');
+		}
+
+		return $this->videoId;
+	}
+
+	/**
+	 * Alter LocalFile getHandler logic
+	 *
+	 * @param $handler
+	 */
+	function afterGetHandler( &$handler ) {
+		wfProfileIn( __METHOD__ );
+		if ( !empty($handler) && $handler instanceof VideoHandler ) {
+			// make sure that the new handler ( if video ) will have videoId
+			if ( $this->oFile->media_type == MEDIATYPE_VIDEO ) {
+				$videoId = $this->getVideoId();
+				if ( !empty( $videoId ) ) {
+					$handler->setVideoId( $videoId );
+				}
+				$handler->setTitle($this->oFile->getTitle()->getText());
+				$handler->setMetadata($this->oFile->metadata);
+			}
+		}
+		wfProfileOut( __METHOD__ );
+	}
+
+	/**
+	 * Alter LocalFile setProps logic
+	 */
+	function afterSetProps() {
+		global $wgMediaHandlers;
+
+		if ( $this->forceMime ) {
+			// if mime type was forced, repopulate File with proper data
+			$this->oFile->dataLoaded = true;
+			$this->oFile->mime = $this->forceMime;
+			list( $this->oFile->major_mime, $this->oFile->minor_mime ) = LocalFile::splitMime( $this->oFile->mime );
+			// normally, this kind of method would call
+			// MediaHandler::getHandler(). However, this function
+			// may be called repeatedly in one session (by a video
+			// ingestion script) for different videos. MediaHandler::getHandler()
+			// reads its own cache and returns the same video handler for different videos.
+			// We must create the proper video handler ourselves.
+			$type = $this->oFile->getMimeType();
+			$class = $wgMediaHandlers[$type];
+			/* @var $handler VideoHandler */
+			$handler = new $class();
+			$handler->setVideoId( $this->oFile->videoId );
+
+			$this->oFile->metadata = $handler->getVideoMetadata();
+			$this->oFile->media_type = MEDIATYPE_VIDEO;
+			$this->forceMime = false;
+		}
+	}
+
+	/**
+	 * Alter loadFromFile logic
+	 *
+	 * loadFromFile resets few params in class based on actual file in file system.
+	 * As videos are represented as image files we want some data not to be reseted.
+	 */
+	private $lockedProperties = array( 'metadata', 'minor_mime', 'major_mime', 'mime', 'media_type' );
+	private $lockedPropertiesValues = array();
+
+	function beforeLoadFromFile() {
+		if ( $this->isVideo() ) {
+			$this->lockedPropertiesValues = array();
+			foreach ( $this->lockedProperties as $param ) {
+				$this->lockedPropertiesValues[ $param ] = $this->oFile->$param;
+			}
+		}
+	}
+
+	function afterLoadFromFile() {
+		if ( $this->isVideo() ) {
+			foreach ( $this->lockedProperties as $param ) {
+				$this->oFile->$param = $this->lockedPropertiesValues[ $param ];
+			}
+		}
+	}
+
+	function isBroken() {
+		return 	$this->oFile->getSize() == 0
+			? true
+			: $this->oFile->getHandler()->isBroken();
+	}
+
+	/**
+	 * De-serialize the file metadata once and serve up values when requested
+	 * @param $key string The metadata key to retrieve
+	 * @param $default string What to return if there is no value set
+	 * @return string
+	 */
+	function metaValue( $key, $default = '' ) {
+		wfProfileIn( __METHOD__ );
+
+		if ( empty($this->metadata) ) {
+			if ( !empty( $this->oFile->metadata ) ) {
+				$this->metadata = unserialize( $this->oFile->metadata );
+			}
+		}
+
+		if ( is_array( $this->metadata ) ) {
+			if ( !empty( $this->metadata[$key] ) ) {
+				$value = $this->metadata[$key];
+			} else {
+				$value = $default;
+			}
+		} else {
+			\Wikia\Logger\WikiaLogger::instance()->error(
+				'File metadata not an instance of an array. Expecting array', [
+					'type' => gettype( $this->metadata ),
+					'file' => $this->oFile,
+					'exception' => new Exception()
+				]
+			);
+			$value = $default;
+		}
+
+		wfProfileOut( __METHOD__ );
+		return $value;
+	}
+}

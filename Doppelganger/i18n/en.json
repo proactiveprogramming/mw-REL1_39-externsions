@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"doppelganger-desc": "Provides test stubs and doubles for use in Lua modules",
+	"doppelganger-carp-final": "Carp called",
+	"doppelganger-cluck-final": "Cluck called",
+	"doppelganger-croak-final": "Croak called",
+	"doppelganger-confess-final": "Confess called"
+}

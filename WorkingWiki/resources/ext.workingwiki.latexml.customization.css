@@ -1,0 +1,49 @@
+/* Customizations to the standard LaTeXML.css for embedding into WorkingWiki pages */
+.latexml { font-family:serif }
+
+.ltx_page_main { padding:0 0 0 0 !important; }
+.ltx_page_content { padding-top:0 }
+
+.ltx_page_footer { display:none; }
+
+.latexml h1 {  border-bottom:none; line-height:normal; margin-bottom:0; }
+
+/* stop headers from inheriting odd formatting from mediawiki headers;
+   plus put margins on both sides to keep it centered while leaving room
+   for altlinks element. */
+h1.ltx_title_document { position:relative; text-align:center; 
+	width:90%; padding-left:5% !important; padding-right:5% !important; font-size:188% !important; }
+/* it would be nice to align the altlinks with the 
+ * baseline of the first line of the title */
+h1.ltx_title_document .ww-altlinks
+  { position: absolute; bottom:3px; right:0; /*width:100%; margin-left:0px;
+    text-align:right;*/ font-size:53%; z-index:2; }
+.latexml .ww-altlinks { z-index:2; }
+
+.latexml h1.ltx_title_section { font-size:150%; }
+.latexml h1.ltx_title_subsection { font-size: 125%; }
+.latexml h1.ltx_title_subsubsection { font-size: 100%; font-weight:bold; }
+.latexml h1.ltx_title_paragraph { font-size: 100%; font-weight: bold; display:run-in; }
+
+/* MediaWiki's css appends little icons to some links, like an envelope for
+ * a mailto: link, etc.  Disable those in latexml links.
+ * FIXME: do I need to do something on the left for rtl text? */
+.latexml a { background-image: none !important; padding-right: 0 !important; }
+
+/* MW puts bullet icons on list items, and indents */
+.latexml ul.biblist { list-style-image:none; margin-left:0; }
+
+.ltx_authors { text-align:center; font-family:inherit; font-size:110%; }
+
+.ltx_dedicatory { font-style:italic; } /* TODO is this right? */
+.ltx_abstract { width:90%; padding-left:5%; padding-right:5%; text-align:justify; }
+.ltx_title_abstract { display:inline; font-weight:bold; }
+.ltx_abstract .ltx_title_abstract + p { display:inline; }
+
+.latexml mtd { padding:3px; }
+
+.latexml-inline .ltx_para:first-child,
+  .latexml-inline .ltx_para:first-child .ltx_p:first-child
+  { display:inline; }
+
+/* TODO: everything in the old latexml.css from bib items down.  Equation numbers are okay as is, I think. */

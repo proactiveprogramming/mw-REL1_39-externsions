@@ -1,0 +1,58 @@
+{
+	"name": "AjaxComments",
+	"version": "2.7.4, 2019-07-14",
+	"author": ["[http://www.organicdesign.co.nz/aran Aran Dunkley]"],
+	"url": "http://www.mediawiki.org/wiki/Extension:AjaxComments",
+	"descriptionmsg": "ajaxcomments-desc",
+	"license-name": "[https://www.gnu.org/licenses/gpl-2.0.html GNU General Public Licence 2.0] or later",
+	"type": "other",
+	"callback": "AjaxComments::onRegistration",
+	"config": {
+		"AjaxCommentsLikeDislike": false,       "@": "add a like/dislike link to each comment",
+		"AjaxCommentsAvatars": true,            "@": "use the gravatar service for users icons",
+		"AjaxCommentsPollServer": 0,            "@": "poll the server to see if any changes to comments have been made and update if so",
+		"AjaxCommentsEmailNotify": true,        "@": "is set, sends notification of replies and activity on watched pages to users by email",
+		"AjaxCommentsAdmins": ["sysop"],        "@": "list of groups that have admin priviliges for comments"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": ["AjaxComments::onParserFirstCallInit"]
+	},
+	"AutoloadClasses": {
+		"AjaxComments": "AjaxComments.class.php",
+		"ApiAjaxComments": "AjaxComments.api.php"
+	},
+	"MessagesDirs": {
+		"AjaxComments": ["i18n"]
+	},
+	"ResourceModules": {
+		"ext.ajaxcomments": {
+			"styles": ["styles/ajaxcomments.css"],
+			"scripts": ["modules/ajaxcomments.js"],
+			"dependencies": ["jquery.ui.dialog"],
+			"messages": [
+				"ajaxcomments-add",
+				"ajaxcomments-edit",
+				"ajaxcomments-reply",
+				"ajaxcomments-del",
+				"ajaxcomments-none",
+				"ajaxcomments-anon",
+				"ajaxcomments-sig",
+				"ajaxcomments-confirmdel",
+				"ajaxcomments-confirm",
+				"ajaxcomments-yes",
+				"ajaxcomments-post",
+				"ajaxcomments-cancel",
+				"ajaxcomments-nolike",
+				"ajaxcomments-onelike",
+				"ajaxcomments-manylike",
+				"ajaxcomments-nodislike",
+				"ajaxcomments-onedislike",
+				"ajaxcomments-manydislike"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "AjaxComments"
+	}
+}

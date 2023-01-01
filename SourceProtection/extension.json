@@ -1,0 +1,30 @@
+{
+	"name": "SourceProtection",
+	"version": "1.1.2",
+	"author": [
+		"Sen-Sai"
+	],
+	"license-name": "GPL-2.0+",
+	"url": "https://github.com/Sen-Sai/SourceProtection",
+	"descriptionmsg": "sourceprotection-desc",
+	"MessagesDirs": {
+		"SourceProtection": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SourceProtection": "SourceProtection.class.php"
+	},
+	"Hooks": {
+		"EditPage::showReadOnlyForm:initial": [
+			"SourceProtection::doNotShowReadOnlyForm"
+		],
+		"userCan": [
+			"SourceProtection::disableActions"
+		],
+		"SkinTemplateNavigation": [
+			"SourceProtection::hideSource"
+		]
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,19 @@
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Displacement Mapping
+ |ref=displacement mapping
+ |dict=(langs=FR;term=placage de déplacement;usage=1;approx=Yes;note=Traduction donnée uniquement à titre indicatif, utilisez toujours le terme anglais&nbsp\;!), (langs=EN;term=displacement mapping)
+ |shortdesc=Le ''displacement mapping'' est une technique pour créer du relief sur des surfaces lisses, en déplaçant ses ''vertices''.
+ |longdesc=Il utilise une “carte de relief” en niveaux de gris, comme le {{Glossary/Link|ref=bump mapping|txt=''bump mapping''}}, mais lgimage est utilisée pour physiquement déplacer les ''vertices'' du ''mesh'' au moment du rendu. Ce n’est évidemment utile que si le ''mesh'' dispose de suffisamment de ''vertices'', mais la (relativement) récente option de subdivision de surface {{Literal|Simple Subdiv}} vous permet d’en ajouter au moment du rendu, afin que cet effet puisse les déplacer. Tout cela le rend bien plus lent que le ''bump mapping'', car il doit y avoir beaucoup plus de faces à rendre, mais également bien plus réaliste.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Documentation Blender
+ |ref=documentation blender
+ |syns=(langs=EN;title=Blender Documentation;ref=blender documentation)
+ |dict=(langs=FR;term=documentation \(de\) Blender;usage=4), (langs=EN;term=Blender documentation)
+ |shortdesc=Eh bien, c’est une tentative sans fin de la communauté de Blender pour documenter les fonctionnalités toujours-plus-riches-et-géniales de Blender&nbsp;!
+ |longdesc=La documentation principale et officielle se trouve sur ce wiki, mais vous pouvez en trouver beaucoup d’autres sur le web (tutoriels, tutoriels vidéos, …).
+ }}
+

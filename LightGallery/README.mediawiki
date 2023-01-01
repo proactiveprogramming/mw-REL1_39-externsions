@@ -1,0 +1,41 @@
+== Overview ==
+
+The '''LightGallery''' extension displays thumbnailed images in modal window that floats overtop of web page. This can create a more user friendly environment, where the user doesn't leave the page every time they click a thumbnail.
+
+[https://ru.ironharvest.ru/Якуб_Розальски Example]
+
+== Version 0.0.2 ==
+* Provides ability to customize [https://sachinchoolur.github.io/lightGallery/docs/ LightGallery options]
+
+== Licenses ==
+This Extension is released under the [http://www.gnu.org/licenses/gpl.html GPLv3] license.
+
+This project includes LightGallery is licensed under [http://www.gnu.org/licenses/gpl.html GPLv3 GNU GPL license v3] license.
+You are free to use LightGallery for your personal or non-profit website projects.
+You can get the author's permission to use LightGallery for commercial websites by [https://sachinchoolur.github.io/lightGallery/docs/license.html paying a fee].
+
+== Installation ==
+# [https://github.com/soljdev/mediawiki-extensions-LightGallery/archive/master.zip Download the .zip file]
+# Extract the files to your <code>extensions</code> directory
+# Rename <code>mediawiki-extensions-LightGallery</code> to <code>LightGallery</code>
+# Add to the end of [http://www.mediawiki.org/wiki/Manual:LocalSettings.php LocalSettings.php]: <pre>require_once("$IP/extensions/LightGallery/LightGallery.php");</pre>
+# Installation can now be verified through <code>Special:Version</code> page on your wiki
+
+== Options ==
+You can set [https://sachinchoolur.github.io/lightGallery/docs/ LightGallery options] by setting a <code>$lgLightGalleryOptions</code> variable in [http://www.mediawiki.org/wiki/Manual:LocalSettings.php LocalSettings.php] ''after'' setting the <code>require_once</code> above.
+
+For example:
+
+<pre>require_once("$IP/extensions/LightGallery/LightGallery.php");
+$lgLightGalleryOptions = '{thumbnail: true, mode: "lg-fade", getCaptionFromTitleOrAlt: true, subHtmlSelectorRelative: true, animateThumb: false, showThumbByDefault: false }';</pre>
+
+== Usage ==
+To initialize the gallery, use the class <code>.LightGallery</code> on your <code><gallery></code>.
+
+<pre>
+<gallery class="LightGallery">
+file:images1.png|desc
+file:images2.png
+file:images3.png
+</gallery>
+</pre>

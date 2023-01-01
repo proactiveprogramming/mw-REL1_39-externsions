@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nerogaf",
+			"Red Winged Duck"
+		]
+	},
+	"sil-desc": "Пашырэньне [https://www.semantic-mediawiki.org Semantic MediaWiki] для стварэньня й кіраваньня міжмоўнымі спасылкамі",
+	"sil-property-ill-alias-language": "Мова зьместу старонкі",
+	"sil-property-ill-alias-reference": "Міжмоўная спасылка",
+	"sil-property-iwl-alias-language": "Мова інтэрвікі",
+	"sil-property-iwl-alias-reference": "Interwiki-спасылка",
+	"sil-property-alias-container": "Мае міжмоўную спасылку",
+	"sil-interlanguagelink-invalidlanguagecode": "«$1» ня быў распазнаны як дапушчальны код мовы.",
+	"sil-search-profile": "Паводле мовы",
+	"sil-search-profile-tooltip": "Фільтраваць артыкулы па моўнай анатацыі",
+	"sil-search-languagefilter-label": "Фільтар паводле мовы",
+	"sil-search-nolanguagefilter": "Бяз моўнага фільтру"
+}

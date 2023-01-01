@@ -1,0 +1,73 @@
+{
+	"name": "GND",
+	"type": "wikibase",
+
+	"version": "2021-08-05",
+
+	"author": [
+		"[https://www.EntropyWins.wtf/mediawiki Jeroen De Dauw]",
+		"[https://professional.wiki/ Professional.Wiki]"
+	],
+
+	"url": "https://github.com/ProfessionalWiki/GND",
+
+	"descriptionmsg": "gnd-desc",
+
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"extensions": {
+			"WikibaseRepository": "*"
+		}
+	},
+
+	"MessagesDirs": {
+		"GND": [
+			"i18n"
+		]
+	},
+
+	"ExtensionMessagesFiles": {
+		"GndMagic": "i18n/magic/MagicWords.php"
+	},
+
+	"AutoloadNamespaces": {
+		"DNB\\GND\\": "src/",
+		"DNB\\GND\\Tests\\": "tests/"
+	},
+
+	"Hooks": {
+		"ParserFirstCallInit": "DNB\\GND\\GndDokuFunction::onParserFirstCallInit"
+	},
+
+	"RestRoutes": [
+		{
+			"path": "/gnd/doku/v1/datafields",
+			"method": "GET",
+			"factory": "DNB\\GND\\DokuApi::factory"
+		}
+	],
+
+	"config": {
+	},
+
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "GND/resources"
+	},
+
+	"ResourceModules": {
+		"ext.gnd": {
+			"dependencies": [
+				"jquery.tablesorter"
+			],
+			"scripts": [
+				"gnd-doku-table.js"
+			],
+			"styles": [
+				"gnd-doku-table.css"
+			]
+		}
+	},
+
+	"manifest_version": 2
+}

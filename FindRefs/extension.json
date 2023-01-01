@@ -1,0 +1,25 @@
+{
+	"name": "FindRefs",
+	"version": "0.0.1",
+	"author": [
+		"Srikar Kashyap Pulipaka"
+	],
+	"url": "https://www.github.com/SrikarKashyap/Extension-SpecialFindRefs",
+	"descriptionmsg": "A single stop to find references for a specific topic",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses": {
+		"SpecialFindRefs": "specials/SpecialFindRefs.php"
+	},
+
+	"MessagesDirs": {
+		"FindRefs": [
+			"i18n"
+		]
+	},
+
+	"SpecialPages": {
+		"FindRefs": "SpecialFindRefs"
+	},
+	"manifest_version": 1
+}

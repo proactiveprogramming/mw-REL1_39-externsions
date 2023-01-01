@@ -1,0 +1,82 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarrayaddvalue
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayAddValue parser function
+
+!! test
+Add item to one-dimensional list
+!! wikitext
+{{#complexarraydefine:example|a,b}}
+{{#complexarrayaddvalue:example[2]|c}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>2
+<ul><li>c</li></ul></li></ul>
+
+!! end
+
+!! test
+Add item to one-dimensional list
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayaddvalue:example[2]|["c"]}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>2
+<ul><li>c</li></ul></li></ul>
+
+!! end
+
+!! test
+Add array to one-dimensional list
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayaddvalue:example[2]|["c", "d"]}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>2
+<ul><li>c</li>
+<li>d</li></ul></li></ul>
+
+!! end
+
+!! test
+Replace item in array
+!! wikitext
+{{#complexarraydefine:example|(("a": ["a", "b"]))}}
+{{#complexarrayaddvalue:example[a]|["c", "d"]}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a
+<ul><li>c</li>
+<li>d</li></ul></li></ul>
+
+!! end
+
+!! test
+Add item to non-existent array
+!! wikitext
+{{#complexarrayaddvalue:foobar[a]|["b"]}}
+{{#complexarrayprint:foobar}}
+!! html
+<p><br />
+</p>

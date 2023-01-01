@@ -1,0 +1,26 @@
+{
+    "name": "shanept/ldap-auth",
+    "description": "New LdapAuthentication provider plugin for mediawiki",
+    "type": "project",
+    "require": {
+        "symfony/ldap": "^4.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shane Thompson",
+            "email": "me@shane.pt"
+        }
+    ],
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "mediawiki/mediawiki-codesniffer": "^22.0",
+        "phan/phan": "^1.1"
+    },
+    "scripts": {
+        "test": [
+            "parallel-lint . --exclude vendor",
+            "phpcs -p -s"
+        ]
+    }
+}

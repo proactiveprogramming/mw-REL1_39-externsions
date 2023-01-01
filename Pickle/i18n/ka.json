@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"David1010",
+			"Jeblad",
+			"MIKHEIL"
+		]
+	},
+	"pickle-test-text-good": "კარგი",
+	"pickle-test-text-pending": "განიხილება",
+	"pickle-test-text-fail": "წარუმატებელი",
+	"pickle-test-text-missing": "აკლია",
+	"pickle-test-text-unknown": "უცნობი",
+	"pickle-console-clear": "გასუფთავება",
+	"pickle-report-case-is-ok-keyword": "კარგი",
+	"pickle-report-adapt-is-ok-keyword": "კარგი"
+}

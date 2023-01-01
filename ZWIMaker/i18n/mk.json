@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"mzwi-action": "ZWI-извоз",
+	"mzwi-desc": "Ја претвора тековната страница во ZWI и му ја испраќа на прелистувачот"
+}

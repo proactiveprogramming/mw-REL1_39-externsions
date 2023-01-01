@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pickle documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Pickle</h1>
+
+<ul>
+  <li><a href="../mw.pickle.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Metamethods">Metamethods</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Adapt.html">Adapt</a></li>
+  <li><a href="../classes/Bag.html">Bag</a></li>
+  <li><a href="../classes/Case.html">Case</a></li>
+  <li><a href="../classes/Counter.html">Counter</a></li>
+  <li><a href="../classes/Double.html">Double</a></li>
+  <li><a href="../classes/Extractor.html">Extractor</a></li>
+  <li><a href="../classes/Extractors.html">Extractors</a></li>
+  <li><a href="../classes/Spy.html">Spy</a></li>
+  <li><a href="../classes/Translator.html">Translator</a></li>
+  <li><a href="../classes/Translators.html">Translators</a></li>
+  <li><strong>Render</strong></li>
+  <li><a href="../classes/RenderAdapt.html">RenderAdapt</a></li>
+  <li><a href="../classes/RenderAdaptCompact.html">RenderAdaptCompact</a></li>
+  <li><a href="../classes/RenderAdaptFull.html">RenderAdaptFull</a></li>
+  <li><a href="../classes/RenderAdaptVivid.html">RenderAdaptVivid</a></li>
+  <li><a href="../classes/RenderCase.html">RenderCase</a></li>
+  <li><a href="../classes/RenderCaseCompact.html">RenderCaseCompact</a></li>
+  <li><a href="../classes/RenderCaseFull.html">RenderCaseFull</a></li>
+  <li><a href="../classes/RenderCaseVivid.html">RenderCaseVivid</a></li>
+  <li><a href="../classes/Renders.html">Renders</a></li>
+  <li><a href="../classes/Report.html">Report</a></li>
+  <li><a href="../classes/ReportAdapt.html">ReportAdapt</a></li>
+  <li><a href="../classes/ReportCase.html">ReportCase</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Pickle.html">Pickle</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/activities.md.html">Activities</a></li>
+  <li><a href="../topics/adapt.md.html">Adapt</a></li>
+  <li><a href="../topics/call-style.md.html">Call style</a></li>
+  <li><a href="../topics/change-log.md.html">Log</a></li>
+  <li><a href="../topics/databases.md.html">Databases</a></li>
+  <li><a href="../topics/dataflow.md.html">Dataflow</a></li>
+  <li><a href="../topics/hello-world.md.html">Hello World</a></li>
+  <li><a href="../topics/lua-classes.md.html">Lua classes</a></li>
+  <li><a href="../topics/musings.md.html">Musings</a></li>
+  <li><a href="../topics/page-indicators.md.html">Page indicators</a></li>
+  <li><a href="../topics/sources.md.html">Sources</a></li>
+  <li><a href="../topics/spies.md.html">Spies</a></li>
+  <li><a href="../topics/statistics.md.html">Statistics</a></li>
+  <li><a href="../topics/test-anything-protocol.md.html">Test anything protocol</a></li>
+  <li><a href="../topics/test-case.md.html">Test Case</a></li>
+  <li><a href="../topics/test-doubles.md.html">Test doubles</a></li>
+  <li><a href="../topics/testing.md.html">Testing</a></li>
+  <li><a href="../topics/tracking-categories.md.html">Tracking categories</a></li>
+  <li><a href="../topics/translatewiki.md.html">Translatewiki</a></li>
+  <li><a href="../topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="../topics/vscode-extensions.md.html">VScode extension</a></li>
+  <li><a href="../topics/vscode-snippets.md.html">VScode snippets</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/HelloWorld.pickle.nb.lua.html">HelloWorld.pickle.nb.lua</a></li>
+  <li><a href="../examples/HelloWorld.lua.html">HelloWorld.lua</a></li>
+  <li><a href="../examples/HelloWorld.pickle.lua.html">HelloWorld.pickle.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Render</code></h1>
+<p>Baseclass for renders.</p>
+<p> This class follows the pattern with inheritance from
+ <a href="../topics/lua-classes.md.html">Lua classes</a>.</p>
+
+
+<h2><a href="#Metamethods">Metamethods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#Render:__index">Render:__index (key)</a></td>
+	<td class="summary">Lookup of missing class members.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#Render:create">Render:create (...)</a></td>
+	<td class="summary">Create a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Render:_init">Render:_init (...)</a></td>
+	<td class="summary">Initialize a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Render:cleanKey">Render:cleanKey (str)</a></td>
+	<td class="summary">Clean key.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Render:key">Render:key (str)</a></td>
+	<td class="summary">Override key construction.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Render:type">Render:type ()</a></td>
+	<td class="summary">Get the type of report.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Render:append">Render:append (head, tail)</a></td>
+	<td class="summary">Append same type to first.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Render:realizeClarification">Render:realizeClarification (keyPart, lang, counter)</a></td>
+	<td class="summary">Realize clarification.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Render:realizeComment">Render:realizeComment (src, keyPart, lang)</a></td>
+	<td class="summary">Realize comment.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Metamethods"></a>Metamethods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Render:__index"></a>
+    <strong>Render:__index (key)</strong>
+    </dt>
+    <dd>
+    Lookup of missing class members.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         lookup of member
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        any
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Render:create"></a>
+    <strong>Render:create (...)</strong>
+    </dt>
+    <dd>
+    Create a new instance.
+ Assumption is either to create a new instance from an existing class,
+ or from a previous instance of some kind.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         forwarded to <code>_init()</code>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Render:_init"></a>
+    <strong>Render:_init (...)</strong>
+    </dt>
+    <dd>
+    Initialize a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         unused
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        self
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Render:cleanKey"></a>
+    <strong>Render:cleanKey (str)</strong>
+    </dt>
+    <dd>
+    Clean key.
+ Sole purpose of this is to do assertions and un-tainting.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be appended to a base string
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "Render:key"></a>
+    <strong>Render:key (str)</strong>
+    </dt>
+    <dd>
+    Override key construction.
+ Sole purpose of this is to do assertions, and the provided key is never be used.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to be appended to a base string
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "Render:type"></a>
+    <strong>Render:type ()</strong>
+    </dt>
+    <dd>
+    Get the type of report.
+ All reports has an explicit type name.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Render:append"></a>
+    <strong>Render:append (head, tail)</strong>
+    </dt>
+    <dd>
+    Append same type to first.
+ The base version only concatenates strings.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">head</span>
+            <span class="types"><span class="type">any</span></span>
+         to act as the head
+        </li>
+        <li><span class="parameter">tail</span>
+            <span class="types"><span class="type">any</span></span>
+         to act as the tail
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        any
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "Render:realizeClarification"></a>
+    <strong>Render:realizeClarification (keyPart, lang, counter)</strong>
+    </dt>
+    <dd>
+    Realize clarification.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">keyPart</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         of a message key
+        </li>
+        <li><span class="parameter">lang</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         code
+        </li>
+        <li><span class="parameter">counter</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="../classes/Counter.html#">Counter</a></span>
+         holding the running count
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "Render:realizeComment"></a>
+    <strong>Render:realizeComment (src, keyPart, lang)</strong>
+    </dt>
+    <dd>
+    Realize comment.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">src</span>
+            <span class="types"><a class="type" href="../classes/Report.html#">Report</a></span>
+         that shall be realized
+        </li>
+        <li><span class="parameter">keyPart</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         of a message key
+        </li>
+        <li><span class="parameter">lang</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         code
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

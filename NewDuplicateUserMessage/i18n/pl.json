@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Derbeth"
+        ]
+    },
+    "newduplicateusermessage-description": "Dodaje wiadomość do strony dyskusji nowego użytkownika",
+    "newduplicateusermessage-edit-summary": "Dodanie [[{{int:newduplicateusermessage-template}}|wiadomości powitalnej]] do strony dyskusji nowego użytkownika"
+}

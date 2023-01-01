@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Verdy p"
+		]
+	},
+	"id-generator-desc": "Fournit une fonction d’analyse pour générer des identifiants numériques incrémentaux."
+}

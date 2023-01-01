@@ -1,0 +1,446 @@
+{
+	"name": "Interactive Data Maps",
+	"version": "0.14.3",
+
+	"author": [
+		"alex4401"
+	],
+	"url": "https://mediawiki.org/wiki/Extension:DataMaps",
+	"descriptionmsg": "datamap-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+
+	"requires": {
+		"MediaWiki": ">= 1.39.0",
+		"platform": {
+			"php": ">= 7.4"
+		}
+	},
+
+	"MessagesDirs": {
+		"DataMaps": [
+			"i18n/core",
+			"i18n/createmap",
+			"i18n/ve"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"DataMapsMagic": "DataMaps.magic.php"
+	},
+
+	"TrackingCategories": [
+		"datamap-category-pages-including-maps"
+	],
+
+	"namespaces": [
+		{
+			"id": 2900,
+			"constant": "NS_MAP",
+			"name": "Map",
+			"defaultcontentmodel": "wikitext",
+			"subpages": true,
+			"conditional": true
+		},
+		{
+			"id": 2901,
+			"constant": "NS_MAP_TALK",
+			"name": "Map_talk",
+			"subpages": true,
+			"conditional": true
+		}
+	],
+
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "DataMaps/modules"
+	},
+
+	"ResourceModules": {
+		"ext.datamaps.leaflet": {
+			"es6": true,
+			"packageFiles": [
+				"leafletPkg/index.js",
+				"vendor/leaflet/leaflet.js",
+				"leafletPkg/iconMarker.js",
+				"leafletPkg/circleMarker.js",
+				"leafletPkg/popup.js",
+				"leafletPkg/interaction.js",
+				"leafletPkg/pinIcon.js"
+			],
+			"styles": [
+				"vendor/leaflet/leaflet.css"
+			],
+			"messages": [
+				"datamap-interact-touch",
+				"datamap-interact-scroll",
+				"datamap-interact-scroll-mac"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+
+		"ext.datamaps.icons": {
+			"class": "ResourceLoaderOOUIIconPackModule",
+			"icons": [
+				"exitFullscreen",
+				"fullScreen",
+				"imageLayoutFrame",
+				"alignCenter",
+				"expand",
+				"link",
+				"search",
+				"edit",
+				"funnel"
+			]
+		},
+
+		"ext.datamaps.core": {
+			"es6": true,
+			"dependencies": [
+				"mediawiki.api",
+				"ext.datamaps.icons"
+			],
+			"packageFiles": [
+				"core/index.js",
+				"core/enums.js",
+				"core/events.js",
+				"core/storage.js",
+				"core/stream.js",
+				"core/layerManager.js",
+				"core/map.js",
+				"core/legend.js",
+				"core/markerLegend.js",
+				"core/popup.js",
+				"core/dismissables.js",
+				{
+					"name": "core/settings.json",
+					"config": [
+						"DataMapsAllowExperimentalFeatures"
+					]
+				},
+				"core/util.js"
+			],
+			"styles": [
+				"core/css/main.less",
+				"core/css/legend.less",
+				"core/css/controls.less",
+				"core/css/popups.less"
+			],
+			"messages": [
+				"datamap-error-dataload",
+				"datamap-legend-label",
+				"datamap-legend-tab-locations",
+				"datamap-legend-tab-checklist",
+				"datamap-toggle-show-all",
+				"datamap-toggle-hide-all",
+				"datamap-toggle-caves",
+				"datamap-layer-control",
+				"datamap-layer-surface",
+				"datamap-layer-cave",
+				"datamap-popup-related-article",
+				"datamap-popup-dismissed",
+				"datamap-popup-mark-as-dismissed",
+				"datamap-popup-marker-link-get",
+				"datamap-popup-marker-link-copied",
+				"datamap-coordinate-control-text",
+				"datamap-coordinate-control-text-xy",
+				"datamap-control-zoom-in",
+				"datamap-control-zoom-out",
+				"datamap-control-toggle-legend",
+				"datamap-control-reset-view",
+				"datamap-control-centre-view",
+				"datamap-control-edit",
+				"datamap-checklist-prelude"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+
+		"ext.datamaps.bootstrap": {
+			"es6": true,
+			"dependencies": [
+				"ext.datamaps.core"
+			],
+			"packageFiles": [
+				"bootstrap/main.js"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+
+		"ext.datamaps.site": {
+			"class": "MediaWiki\\Extension\\DataMaps\\Rendering\\ResourceLoaderDataMapsSiteModule"
+		},
+
+		"ext.datamaps.inlineloader": {
+			"es6": true,
+			"dependencies": [
+				"ext.datamaps.core",
+				"ext.datamaps.bootstrap"
+			],
+			"packageFiles": [
+				"inlineLoader/main.js"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+
+		"ext.datamaps.fuzzysort": {
+			"packageFiles": [
+				"vendor/fuzzysort/fuzzysort.min.js"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+
+		"ext.datamaps.search": {
+			"es6": true,
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"ext.datamaps.core",
+				"ext.datamaps.bootstrap",
+				"ext.datamaps.leaflet",
+				"ext.datamaps.fuzzysort"
+			],
+			"packageFiles": [
+				"search/main.js",
+				"search/indexing.js",
+				"search/menu.js",
+				"search/option.js",
+				"search/util.js"
+			],
+			"styles": [
+				"search/css/styles.less"
+			],
+			"messages": [
+				"datamap-control-search",
+				"datamap-control-search-toggle-sharing"
+			],
+			"targets": [ "desktop", "mobile" ]
+		},
+
+		"ext.datamaps.ve.icons": {
+			"class": "ResourceLoaderOOUIIconPackModule",
+			"icons": [
+				"code",
+				"noWikiText",
+				"wikiText",
+				"check",
+				"close",
+				"menu",
+				"required",
+				"trash",
+				"speechBubbleAdd"
+			]
+		},
+
+		"ext.datamaps.ve": {
+			"es6": true,
+			"dependencies": [
+				"oojs-ui-toolbars",
+				"oojs-ui-windows",
+				"mediawiki.widgets",
+				"ext.datamaps.core",
+				"ext.datamaps.leaflet",
+				"ext.datamaps.ve.icons"
+			],
+			"packageFiles": [
+				"ve/main.js",
+				"ve/editor.js",
+				"ve/editablePopup.js",
+				"ve/veControl.js",
+				"ve/widgets/markerGroupEditor.js",
+				"ve/tools/commit.js",
+				"ve/tools/sourceEditor.js",
+				"ve/tools/addMarker.js",
+				"ve/dialogs/commit.js",
+				"ve/dialogs/confirmDelete.js",
+				"ve/dialogs/addMarker.js",
+				"ve/dialogs/editMarker.js",
+				"ve/dialogs/betaWarning.js"
+			],
+			"styles": [
+				"ve/css/placeholder.less",
+				"ve/css/bars.less",
+				"ve/css/toolbar.less",
+				"ve/css/groups.less",
+				"ve/css/extension.less",
+				"ve/css/popup.less",
+				"ve/css/control.less",
+				"ve/css/markerPopup.less"
+			],
+			"messages": [
+				"datamap-ve-beta-notice",
+				"datamap-ve-limited-preview-notice",
+
+				"datamap-ve-legend-tab-marker-groups",
+				"datamap-ve-group-id",
+				"datamap-ve-group-id-cannot-modify",
+				"datamap-ve-group-article-link",
+				"datamap-ve-group-article-link-subtext",
+				"datamap-ve-group-collectible-mode",
+
+				"datamap-ve-legend-tab-marker-layers",
+
+				"datamap-ve-cancel",
+				"datamap-ve-tool-delete",
+				"datamap-ve-tool-source-editor",
+				"datamap-ve-tool-commit",
+				"datamap-ve-tool-commit-continue",
+				"datamap-ve-tool-commit-edit-summary",
+				"datamap-ve-tool-commit-edit-summary-subtext",
+
+				"datamap-ve-dialog-beta-warning",
+				"datamap-ve-dialog-beta-warning-text",
+
+				"datamap-ve-tool-add-marker",
+				"datamap-ve-tool-add-marker-continue"
+			],
+			"targets": [ "desktop" ]
+		},
+
+		"ext.datamaps.createMap": {
+			"es6": true,
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui-windows",
+				"mediawiki.widgets",
+				"ext.datamaps.ve.icons"
+			],
+			"packageFiles": [
+				"createMap/main.js",
+				"createMap/creationDialog.js",
+				"core/enums.js"
+			],
+			"styles": [
+				"ve/css/collapsibles.less",
+				"createMap/css/all.less"
+			],
+			"messages": [
+				"datamap-vec-beta-notice",
+
+				"datamap-ve-cancel",
+				"datamap-ve-skip",
+				"datamap-vec-title",
+				"datamap-vec-intro",
+				"datamap-vec-select-crs-origin",
+				"datamap-vec-crs-top-left",
+				"datamap-vec-crs-bottom-left",
+				"datamap-vec-select-crs",
+				"datamap-vec-crs-percent",
+				"datamap-vec-crs-image",
+				"datamap-vec-crs-custom",
+				"datamap-vec-select-background",
+				"datamap-vec-note-image-size",
+				"datamap-vec-error-bad-file-type",
+				"datamap-vec-error-poor-file-type",
+				"datamap-vec-extra-options",
+				"datamap-vec-toggle-coord-display",
+				"datamap-vec-toggle-zoom",
+				"datamap-vec-toggle-search",
+				"datamap-vec-toggle-search-tabber",
+				"datamap-vec-toggle-uid-requirement",
+				"datamap-vec-submit"
+			],
+			"targets": [ "desktop" ]
+		},
+
+		"ext.datamaps.createMapLazy": {
+			"es6": true,
+			"packageFiles": [
+				"createMapLazy/main.js"
+			],
+			"targets": [ "desktop" ]
+		}
+	},
+
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\DataMaps\\": "includes/"
+	},
+
+	"APIModules": {
+		"queryDataMap": "MediaWiki\\Extension\\DataMaps\\API\\ApiQueryDataMapEndpoint"
+	},
+	"ContentHandlers": {
+		"datamap": "MediaWiki\\Extension\\DataMaps\\Content\\DataMapContentHandler"
+	},
+	
+	"callback": "MediaWiki\\Extension\\DataMaps\\HookHandler::onRegistration",
+	"Hooks": {
+		"ParserFirstCallInit": "MainHandler",
+		"ContentHandlerDefaultModelFor": "MainHandler",
+		"CanonicalNamespaces": "MainHandler",
+		"GetPreferences": "MainHandler",
+		"SkinTemplateNavigation::Universal": "MainHandler",
+		"CustomEditor": "MainHandler",
+		"ChangeTagsListActive": "MainHandler",
+		"ListDefinedTags": "MainHandler",
+		"RecentChange_save": "MainHandler",
+		"RevisionDataUpdates": "MainHandler",
+		"CodeEditorGetPageLanguage": "MediaWiki\\Extension\\DataMaps\\HookHandler::onCodeEditorGetPageLanguage"
+	},
+    "HookHandlers": {
+        "MainHandler": {
+            "class": "MediaWiki\\Extension\\DataMaps\\HookHandler"
+        }
+    },
+
+	"DefaultUserOptions": {
+		"datamaps-enable-visual-editor": true,
+		"datamaps-opt-in-visual-editor-beta": false
+	},
+
+	"config_prefix": "wgDataMaps",
+	"config": {
+		"NamespaceId": {
+			"description": "Namespace where data maps will be stored. Use 'managed' to use the built-in namespace.",
+			"value": "managed"
+		},
+		"ApiCaching": {
+			"value": {
+				"type": -1,
+				"ttl": 86400,
+				"ttlExtensionThreshold": 43200,
+				"ttlExtensionValue": 57600
+			}
+		},
+		"DefaultApiMarkerBatch": {
+			"value": 2500
+		},
+		"MaxApiMarkerBatch": {
+			"value": 5000
+		},
+		"MarkerParserExpansionLimit": {
+			"description": "Controls how big the parser output for a marker's description can get.",
+			"value": 800
+		},
+		"UseInProcessParserCache": {
+			"description": "If enabled, uses a simple wikitext parser cache inside the process handling the request.",
+			"value": true
+		},
+		"ReportTimingInfo": {
+			"description": "Attaches data map marker processing time in API requests.",
+			"value": false
+		},
+		"DefaultFeatures": {
+			"value": {
+				"ShowCoordinates": true,
+				"RequireCustomMarkerIDs": false,
+				"Search": false,
+				"SortChecklistsByAmount": false
+			}
+		},
+		"FullLinksUpdateBudget": {
+			"value": 0.5
+		},
+		"EnableVisualEditor": {
+			"value": true
+		},
+		"EnableCreateMap": {
+			"value": true
+		},
+		"AllowExperimentalFeatures": {
+			"description": "Whether to enable experimental features.",
+			"value": false
+		}
+	},
+
+	"manifest_version": 2
+}

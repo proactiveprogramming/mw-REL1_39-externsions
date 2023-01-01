@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"suc-desc": "Δημιουργεί κατακόρυφες συνόψεις κειμένου σε ενσωματωμένους συνδέσμους σελίδας",
+	"suc-tooltip-title": "Κάρτα σύνοψης",
+	"suc-tooltip-error": "Σφάλμα",
+	"prefs-suc-options": "Επιλογές κάρτας σύνοψης",
+	"suc-tooltip-disabled": "Μην εμφανίζεις κάρτες σύνοψης σε συνδέσμους περιεχομένου."
+}

@@ -1,0 +1,29 @@
+{
+	"name": "ImageSizeInfoFunctions",
+	"version": "1.1.2",
+	"author": [
+		"Dario de Judicibus",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ImageSizeInfoFunctions",
+	"descriptionmsg": "imagesizeinfofunctions_description",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+	"ExtensionMessagesFiles": {
+		"ImageSizeInfoFunctions": "ImageSizeInfoFunctions.i18n.php",
+		"ImageSizeInfoFunctionsMagic": "ImageSizeInfoFunctions.i18n.magic.php"
+	},
+	"MessagesDirs": {
+	    "ImageSizeInfoFunctions": [
+	        "i18n"
+	    ]
+	},
+	"AutoloadClasses": {
+		"ImageSizeInfoFunctionsHooks": "ImageSizeInfoFunctions.hooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "ImageSizeInfoFunctionsHooks::onParserFirstCallInit",
+		"ParserClearState": "ImageSizeInfoFunctionsHooks::onParserClearState"
+	},
+	"manifest_version": 1
+}

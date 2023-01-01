@@ -1,0 +1,29 @@
+/**
+ * @file style.css
+ *
+ * Subversion
+ *	- ID:  $Id$
+ *	- URL: $URL$
+ *
+ * @copyright 2010 Alejandro Darío Simi
+ * @license GPL
+ * @author Alejandro Darío Simi
+ * @date 2010-08-29
+ */
+
+/**
+* PieceOfCode-dr Extension
+* @{
+*/
+div.PieceOfCode_code {
+	background-color:	#efefef;
+	border:			1px solid #aad;
+	border-left:		10px solid #aad;
+	margin:			0px 0px 0px 0px;
+	padding:		2px 2px 2px 2px;
+}
+div.PieceOfCode_code span.PieceOfCode_title {
+	text-align:		right;
+	text-decoration:	underline;
+}
+/** @} */

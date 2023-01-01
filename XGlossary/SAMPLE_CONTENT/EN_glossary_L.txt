@@ -1,0 +1,8 @@
+{{#glossary_entry:
+ |langs=EN
+ |title=Logic Brick (or Logicbrick)
+ |ref=logic brick
+ |shortdesc=A graphical representation of a functional unit in Blender’s game logic.
+ |longdesc=Logic Bricks can be {{Glossary/Link|ref=sensor|txt=Sensors}}, {{Glossary/Link|ref=controller|txt=Controllers}} or {{Glossary/Link|ref=actuator|txt=Actuators}}.
+ }}
+

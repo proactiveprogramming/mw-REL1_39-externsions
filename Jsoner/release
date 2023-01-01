@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# This script creates a git tag
+# Undo with git tag -d …
+
+function print_done { printf "\e[1;32m☑  %s\e[m\n" "$1"; }
+function print_todo { printf "\e[1;32m☐  %s\e[m\n" "$1"; }
+
+JSONER_OLD_VERSION=$(cat extension.json | jq --raw-output '.version')
+read -p "Enter the new version number (current: $JSONER_OLD_VERSION): " JSONER_NEW_VERSION
+
+git tag -a "$JSONER_NEW_VERSION" -m "Release $JSONER_NEW_VERSION"
+print_done "Git: Tag $JSONER_NEW_VERSION"
+print_todo "Git: Push (with --tags)"

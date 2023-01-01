@@ -1,0 +1,143 @@
+{
+  "manifest_version": 2,
+  "name": "MWUnit",
+  "namemsg": "mwunit-extensionname",
+  "type": "other",
+  "author": [
+    "[https://www.mediawiki.org/wiki/User:Xxmarijnw Marijn van Wezel]"
+  ],
+  "version": "2.1.0",
+  "url": "https://www.mediawiki.org/wiki/Extension:MWUnit",
+  "description": "A unit testing framework for MediaWiki",
+  "descriptionmsg": "mwunit-description",
+  "license-name": "MIT",
+  "requires": {
+    "MediaWiki": ">= 1.31.0"
+  },
+  "MessagesDirs": {
+    "MWUnit": [
+      "i18n"
+    ]
+  },
+  "ExtensionMessagesFiles": {
+    "MWUnitMagic": "i18n/MWUnitMagic.i18n.php"
+  },
+  "AutoloadNamespaces": {
+    "MWUnit\\": "src/"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": "MWUnit\\MWUnit::onParserFirstCallInit",
+    "LoadExtensionSchemaUpdates": "MWUnit\\MWUnit::onLoadExtensionSchemaUpdates",
+    "PageContentSaveComplete": "MWUnit\\MWUnit::onPageContentSaveComplete",
+    "ArticleDeleteComplete": "MWUnit\\MWUnit::onArticleDeleteComplete",
+    "SkinBuildSidebar": "MWUnit\\MWUnit::onSkinBuildSidebar",
+    "ParserFetchTemplate": [
+      "MWUnit\\Runner\\TestRun::onParserFetchTemplate",
+      "MWUnit\\ParserFunction\\TemplateMockParserFunction::onParserFetchTemplate"
+    ],
+    "UnitTestsList": "MWUnit\\MWUnit::onUnitTestsList",
+    "ContentHandlerDefaultModelFor": "MWUnit\\MWUnit::onContentHandlerDefaultModelFor",
+    "BeforePageDisplay": "MWUnit\\MWUnit::onBeforePageDisplay",
+    "MovePageIsValidMove": "MWUnit\\MWUnit::onMovePageIsValidMove",
+    "ParserGetVariableValueVarCache": "MWUnit\\MWUnit::onParserGetVariableValueVarCache",
+	"PageSaveComplete": "MWUnit\\MWUnit::onPageSaveComplete"
+  },
+  "SpecialPages": {
+    "UnitTests": "MWUnit\\Special\\SpecialUnitTests"
+  },
+  "config": {
+    "MWUnitMaxTestExecutionTime": {
+      "value": 600,
+      "descriptionmsg": "mwunit-config-max-test-execution-time"
+    },
+    "MWUnitDefaultTestDox": {
+      "value": false,
+      "descriptionmsg": "mwunit-config-default-testdox"
+    },
+    "MWUnitBackupGlobals": {
+      "value": true,
+      "descriptionmsg": "mwunit-config-backup-globals"
+    },
+    "MWUnitStrictCoverage": {
+      "value": true,
+      "descriptionmsg": "mwunit-config-strict-coverage"
+    },
+    "MWUnitForceCoversAnnotation": {
+      "value": false,
+      "descriptionmsg": "mwunit-config-force-covers-annotation"
+    },
+    "MWUnitAllowRunningTestAsOtherUser": {
+      "value": false,
+      "descriptionmsg": "mwunit-config-allow-running-test-as-other-user"
+    },
+    "MWUnitShowProfilingInfo": {
+      "value": true,
+      "descriptionmsg": "mwunit-config-show-profiling-info"
+    },
+    "MWUnitAllowTransclusion": {
+      "value": false,
+      "descriptionmsg": "mwunit-config-allow-transclusion"
+    },
+    "MWUnitMaxTestCases": {
+      "value": 2048,
+      "descriptionmsg": "mwunit-config-max-test-cases"
+    },
+    "MWUnitMaxReportedErrors": {
+      "value": 256,
+      "descriptionmsg": "mwunit-config-max-reported-errors"
+    }
+  },
+  "namespaces": [
+    {
+      "id": 5750,
+      "constant": "NS_TEST",
+      "name": "Test",
+      "protection": "mwunit-createtests",
+      "defaultcontentmodel": "test"
+    },
+    {
+      "id": 5751,
+      "constant": "NS_TEST_TALK",
+      "name": "Test_talk",
+      "defaultcontentmodel": "wikitext"
+    }
+  ],
+  "AvailableRights": [
+    "mwunit-runtests",
+    "mwunit-mock-user"
+  ],
+  "GroupPermissions": {
+    "sysop": {
+      "mwunit-runtests": true,
+      "mwunit-mock-user": true,
+      "mwunit-createtests": true
+    },
+    "tester": {
+      "mwunit-runtests": true,
+      "mwunit-mock-user": true,
+      "mwunit-createtests": true
+    }
+  },
+  "ContentHandlers": {
+    "test": "MWUnit\\ContentHandler\\TestContentHandler"
+  },
+  "ResourceModules": {
+    "ext.mwunit.TestContent.css": {
+      "styles": "extensions/MWUnit/resources/styles/TestContent.css"
+    },
+    "ext.mwunit.TestPage.css": {
+      "styles": "extensions/MWUnit/resources/styles/TestPage.css"
+    },
+    "ext.mwunit.InvalidTestPage.css": {
+      "styles": "extensions/MWUnit/resources/styles/InvalidTestPage.css"
+    }
+  },
+  "APIModules": {
+    "rununittests": "MWUnit\\API\\ApiRunUnitTests"
+  },
+  "APIListModules": {
+    "unittests": "MWUnit\\API\\ApiQueryUnitTests"
+  },
+  "callback": "MWUnit\\MWUnit::registrationCallback",
+  "load_composer_autoloader": true
+}

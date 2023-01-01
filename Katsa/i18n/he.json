@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"katsa-desc": "אספקת מרגלים לשימוש ביחידות Lua",
+	"katsa-carp-final": "קריאה ל־Carp",
+	"katsa-cluck-final": "קריאה ל־Cluck",
+	"katsa-croak-final": "קריאה ל־Croak",
+	"katsa-confess-final": "קריאה ל־Confess"
+}

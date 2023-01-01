@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"BeginaFelicysym"
+		]
+	},
+	"mzwi-action": "Eksport do ZWI",
+	"mzwi-desc": "Zamienia bieżącą stronę na ZWI i przesyła do przeglądarki"
+}

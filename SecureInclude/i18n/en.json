@@ -1,0 +1,5 @@
+{
+	"secureinclude-desc": "Include local, remote files via tag <code>&lt;include&gt;</code>. Use tags <code>&lt;shell&gt;</code> and <code>&lt;php&gt;</code> to execute the respective code in the page context. <ul><li>include svncat, local files or urls</li><li>postprocess the output as wikitext</li><li>syntax highlighting via SyntaxHighlight extension</li><li>control caching, escaping, nowiki and more</li></ul>heavily based on the '''original [https://www.mediawiki.org/wiki/Special:PermanentLink/2433670 Include Extension]'''",
+	"right-secureinclude-scripting": "Run scripts without valid checksum.",
+	"group-secureinclude": "Secure Include"
+}

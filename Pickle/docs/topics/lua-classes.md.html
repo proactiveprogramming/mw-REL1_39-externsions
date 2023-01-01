@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pickle documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Pickle</h1>
+
+<ul>
+  <li><a href="../mw.pickle.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_creation">Class creation </a></li>
+<li><a href="#Method_lookup">Method lookup </a></li>
+<li><a href="#Call_style">Call style </a></li>
+</ul>
+
+
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/activities.md.html">Activities</a></li>
+  <li><a href="../topics/adapt.md.html">Adapt</a></li>
+  <li><a href="../topics/call-style.md.html">Call style</a></li>
+  <li><a href="../topics/change-log.md.html">Log</a></li>
+  <li><a href="../topics/databases.md.html">Databases</a></li>
+  <li><a href="../topics/dataflow.md.html">Dataflow</a></li>
+  <li><a href="../topics/hello-world.md.html">Hello World</a></li>
+  <li><strong>Lua classes</strong></li>
+  <li><a href="../topics/musings.md.html">Musings</a></li>
+  <li><a href="../topics/page-indicators.md.html">Page indicators</a></li>
+  <li><a href="../topics/sources.md.html">Sources</a></li>
+  <li><a href="../topics/spies.md.html">Spies</a></li>
+  <li><a href="../topics/statistics.md.html">Statistics</a></li>
+  <li><a href="../topics/test-anything-protocol.md.html">Test anything protocol</a></li>
+  <li><a href="../topics/test-case.md.html">Test Case</a></li>
+  <li><a href="../topics/test-doubles.md.html">Test doubles</a></li>
+  <li><a href="../topics/testing.md.html">Testing</a></li>
+  <li><a href="../topics/tracking-categories.md.html">Tracking categories</a></li>
+  <li><a href="../topics/translatewiki.md.html">Translatewiki</a></li>
+  <li><a href="../topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="../topics/vscode-extensions.md.html">VScode extension</a></li>
+  <li><a href="../topics/vscode-snippets.md.html">VScode snippets</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Pickle.html">Pickle</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Adapt.html">Adapt</a></li>
+  <li><a href="../classes/Bag.html">Bag</a></li>
+  <li><a href="../classes/Case.html">Case</a></li>
+  <li><a href="../classes/Counter.html">Counter</a></li>
+  <li><a href="../classes/Double.html">Double</a></li>
+  <li><a href="../classes/Extractor.html">Extractor</a></li>
+  <li><a href="../classes/Extractors.html">Extractors</a></li>
+  <li><a href="../classes/Spy.html">Spy</a></li>
+  <li><a href="../classes/Translator.html">Translator</a></li>
+  <li><a href="../classes/Translators.html">Translators</a></li>
+  <li><a href="../classes/Render.html">Render</a></li>
+  <li><a href="../classes/RenderAdapt.html">RenderAdapt</a></li>
+  <li><a href="../classes/RenderAdaptCompact.html">RenderAdaptCompact</a></li>
+  <li><a href="../classes/RenderAdaptFull.html">RenderAdaptFull</a></li>
+  <li><a href="../classes/RenderAdaptVivid.html">RenderAdaptVivid</a></li>
+  <li><a href="../classes/RenderCase.html">RenderCase</a></li>
+  <li><a href="../classes/RenderCaseCompact.html">RenderCaseCompact</a></li>
+  <li><a href="../classes/RenderCaseFull.html">RenderCaseFull</a></li>
+  <li><a href="../classes/RenderCaseVivid.html">RenderCaseVivid</a></li>
+  <li><a href="../classes/Renders.html">Renders</a></li>
+  <li><a href="../classes/Report.html">Report</a></li>
+  <li><a href="../classes/ReportAdapt.html">ReportAdapt</a></li>
+  <li><a href="../classes/ReportCase.html">ReportCase</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/HelloWorld.pickle.nb.lua.html">HelloWorld.pickle.nb.lua</a></li>
+  <li><a href="../examples/HelloWorld.lua.html">HelloWorld.lua</a></li>
+  <li><a href="../examples/HelloWorld.pickle.lua.html">HelloWorld.pickle.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+
+<h1>Lua classes</h1>
+
+<p>The classes used in this project use a base structure as defined in the <a href="http://lua-users.org/wiki/ObjectOrientationTutorial">Object Orientation Tutorial</a> at the <a href="http://lua-users.org/wiki/">lua-users wiki</a>. There are three different variations on this theme; base classes and derived classes which are quite similar to the class structure described in the section of “Inheritance”, and an inheritance-less design which are similar to the class structure described in the section “Simple metatable-based class”.</p>
+
+<p>The only place where closure is used to keep state is during initial setup, in <a href="../modules/Pickle.html">Pickle.lua</a>, where state would otherwise be lost. That is although a module and not a class.</p>
+
+<p><a name="Class_creation"></a></p>
+<h2>Class creation</h2>
+
+<p>New instances are created from a method <code>create()</code> that can be called on loaded modules and on preexisting instances. (TODO: Full cleanup from previous function-like creation is not yet done.) Specialization of the newly created instance is done in an <code>_init()</code> method called immediately after creation.</p>
+
+<p>This pattern implies that <code>libA:create()</code> will create a new instance of the type defined by <code>libA</code>, but also that <code>objA:create()</code> will create an instance of same type as <code>objA</code>. In the later case it will although not be a clone of <code>objA</code>. It is also possible to call the method as a library function, like <code>libA.create()</code>. This is a common pattern in older lua code.</p>
+
+<p><a name="Method_lookup"></a></p>
+<h2>Method lookup</h2>
+
+<p>To make virtual methods work properly the metamethod <code>__index()</code> is used instead of tables. This is just a plain redirect and is similar in all classes. It will also avoid problems otherwise created by memory loops in the lua environment.</p>
+
+<p>Redirection through methods like this is somewhat heavy and could be rewritten as a table lookup if online testing is too sluggish.</p>
+
+<p><a name="Call_style"></a></p>
+<h2>Call style</h2>
+
+<p>Some classes have a metamethod <code>__call()</code> that hides much of the instance creation process. The general idea is to minimize the burden during reuse. <a href="https://en.wikipedia.org/wiki/Strategy_pattern">Strategies</a> uses the call style to simplify access, so <a href="../classes/Renders.html#">Renders</a> and <a href="../classes/Extractors.html#">Extractors</a> has <code>__call()</code> metamethods.</p>
+
+<p>Methods that rely on argument chaining, those that sink one argument before going after the next one, like <a href="../classes/Adapt.html#">Adapt</a> and <a href="../classes/Case.html#">Case</a>, use <code>__call()</code> to implement the process. They sink one argument, return an object that has a call method, and calls that to sink yet another one.</p>
+
+<p>In addition to these classes, a few others has such methods such as <a href="../classes/Counter.html#">Counter</a>.</p>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

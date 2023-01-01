@@ -1,0 +1,38 @@
+{
+	"name": "Expect",
+	"version": "0.1.0",
+	"author": [
+		"John Erling Blad"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Expect",
+	"descriptionmsg": "expect-desc",
+	"license-name": "GPL-2.0",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.33",
+		"extensions": {
+			"Scribunto": "*"
+		}
+	},
+	"AutoloadClasses": {
+		"Expect\\Hooks":
+			"includes/Hooks.php",
+		"Expect\\LuaLibExpect":
+			"includes/LuaLibrary/LuaLibExpect.php"
+	},
+	"config_prefix": "wgExpect",
+	"config": {
+	},
+	"callback": "Expect\\Hooks::onExtensionSetup",
+	"Hooks": {
+		"ScribuntoExternalLibraryPaths": [
+			"Expect\\Hooks::onRegisterScribuntoExternalLibraryPaths"
+		]
+	},
+	"MessagesDirs": {
+		"Expect": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

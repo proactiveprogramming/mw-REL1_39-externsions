@@ -1,0 +1,38 @@
+{
+	"name": "mediawiki/blue-spice-upgrade-helper",
+	"license": "GPL-3.0-only",
+	"type": "mediawiki-extension",
+	"homepage": "https://www.bluespice.com",
+	"authors": [
+		{
+			"name": "Leonid Verhovskij",
+			"email": "verhovskij@hallowelt.com",
+			"homepage": "http://www.hallowelt.com"
+		}
+	],
+	"require": {
+		"composer/installers": "*",
+		"lcobucci/jwt": "^3.2",
+		"guzzlehttp/guzzle": "6.3.0"
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.9.2",
+		"mediawiki/mediawiki-codesniffer": "26.0.0",
+		"jakub-onderka/php-console-highlighter": "0.3.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"BlueSpice\\UpgradeHelper\\": "src/"
+		}
+	},
+	"scripts": {
+		"fix": "phpcbf",
+		"test": [
+			"parallel-lint . --exclude vendor",
+			"phpcs -p -s"
+		]
+	},
+	"extra": {
+		"installer-name": "BlueSpiceUpgradeHelper"
+	}
+}

@@ -1,0 +1,66 @@
+
+%.pdf : %.svg
+	inkscape -z -D --file=$< --export-pdf=$@
+
+%.pdf : %.eps
+	epspdf $< $@
+
+%.tex-inline : %.tex
+	(grep -q '\\begin{document}' $< && sed -e '1,/\\begin{document}/d' -e '/\\end{document}/,$$d' || cat) < $< > $@
+
+%.tex-inline : %.tex-math
+	(echo -n '$$'; cat $<; echo -n '$$') > $@
+
+define listing
+	(echo '\\begin{lstlisting}[language=$1]'; cat $<; echo '\\end{lstlisting}') > $@
+endef
+
+define txtlisting
+	(echo '\\begin{Verbatim}'; cat $<; echo '\\end{Verbatim}') > $@
+endef
+
+%.mk.tex : %.mk
+	$(call listing,make)
+
+Makefile.tex makefile.tex : %.tex : %
+	$(call listing,make)
+
+%.sage.step.tex : %.sage.step
+	$(call listing,Python)
+
+%.py.step.tex : %.py.step
+	$(call listing,Python)
+
+%.sage.tex : %.sage
+	$(call listing,Python)
+
+%.py.tex : %.py
+	$(call listing,Python)
+
+%.pl.tex : %.pl
+	$(call listing,Perl)
+
+%.R.tex : %.R
+	$(call listing,R)
+
+%.Routput.tex : %.Routput
+	$(call listing,R)
+
+%.Rout.tex : %.Rout
+	$(call listing,R)
+
+%.dmp.tex : %.dmp
+	$(call listing,R)
+
+%.out.tex : %.out
+	$(call txtlisting)
+
+%.csv.tex : %.csv
+	$(call txtlisting)
+
+%.make.log.tex : %.make.log
+	$(call txtlisting)
+
+# http://sourceforge.net/p/workingwiki/bugs/650
+#%.tex : %
+#	$(call txtlisting)

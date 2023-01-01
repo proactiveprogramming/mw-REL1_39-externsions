@@ -1,0 +1,30 @@
+{
+    "name": "MarkImages",
+    "author": "Ostrzyciel",
+    "url": "https://www.mediawiki.org/wiki/Extension:MarkImages",
+    "license-name": "MIT",
+    "version": "1.1.2",
+    "namemsg": "markImages",
+    "descriptionmsg": "markImages-desc",
+    "manifest_version": 1,
+    "MessagesDirs": {
+        "MarkImages": [ "i18n" ]
+    },
+    "AutoloadClasses": {
+        "MarkImages": "includes/MarkImages.php",
+        "MarkImagesDB": "includes/MarkImagesDB.php",
+        "MarkImagesHooks": "includes/MarkImagesHooks.php"
+    },
+    "config": {
+        "MarkImagesCategories": {
+            "recursive": [],
+            "nonrecursive": []
+        }
+    },
+    "Hooks": {
+        "LinksUpdateComplete": "MarkImagesHooks::onLinksUpdateComplete",
+        "InfoAction": "MarkImagesHooks::onInfoAction",
+        "BeforePageDisplay": "MarkImagesHooks::onBeforePageDisplay"
+	},
+    "type": "other"
+}

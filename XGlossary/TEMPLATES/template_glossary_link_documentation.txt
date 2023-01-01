@@ -1,0 +1,18 @@
+=Description=
+This will create a link to the specified glossary entry, with its “shortdesc” included in an infobox. This template is in fact a small wrapper around the &#123;&#123;#glossary_link:…&#125;&#125; function…
+
+Here is its synopsis:
+ &#123;&#123;Glossary/Link
+  |ref=          *mandatory* The link-reference of the glossary entry.
+  |txt=          *mandatory* The text used for the link…
+  &#125;&#125;
+
+For example,
+ &#123;&#123;Glossary/Link|ref=armature|txt=&#123;&#123;Literal|Armature&#125;&#125; object&#125;&#125;
+
+…gives:
+
+{{Glossary/Link|ref=armature|txt={{Literal|Armature}} object}}
+
+For more info on the Glossary system, see the help of the Glossary extension (use &#123;&#123;#glossary_help:&#125;&#125; to display it in a page).
+

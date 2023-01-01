@@ -1,0 +1,95 @@
+#!/usr/bin/perl
+use LWP::UserAgent;
+use Getopt::Long;
+use URI::Escape;
+
+my %default_opts = ( 
+    hostname => 'lalashan.mcmaster.ca',
+    path => 'theobio/projects',
+    protocol => 'http',
+  );
+my @opt_names = (
+    'username', 'password', 'hostname', 'path',
+    'protocol', 'projectname', 'filename', 'output-filename', 'wikiname', 
+  );
+my %args;
+GetOptions(\%args, ((map "$_=s", @opt_names), 'help'));
+
+my %opts;
+if (defined $ENV{'wiki_username'})
+{ $ENV{'username'} = $ENV{'wiki_username'} }
+if (defined $ENV{'wiki_password'})
+{ $ENV{'password'} = $ENV{'wiki_password'} }
+
+@opts{@opt_names} = @ENV{@opt_names};
+@opts{keys %default_opts} = @default_opts{keys %default_opts};
+@opts{keys %args} = @args{keys %args};
+
+if ($opts{'help'})
+{ print "$0:
+
+--filename=<filename>
+--project=<projectname>
+--output=<output filename>
+--username=<username>
+--password=<password>
+--protocol=[http]
+--hostname=[$default_opts{hostname}]
+--path=[$default_opts{path}]
+--wikiname=<theobio wikiname>
+";
+  exit;
+}
+
+die "'filename' argument is required" if (!defined $opts{'filename'});
+
+if (!defined $opts{'output-filename'})
+{ $opts{'output-filename'} = $opts{'filename'} }
+
+if (defined $opts{'wikiname'})
+{ $opts{'path'} = "theobio/$opts{'wikiname'}"; }
+
+my $ua = new LWP::UserAgent;
+
+$ua->cookie_jar( {} );
+
+my $base_url = "$opts{protocol}://$opts{hostname}/$opts{path}";
+my $api_url = "$base_url/api.php";
+
+print "Logging in to $api_url\n";
+
+my $response = $ua->post($api_url,
+  { 'action' => 'login',
+    'lgname' => $opts{'username'},
+    'lgpassword' => $opts{'password'} } );
+
+# this isn't very useful, because it reports success even when it fails.
+# just leave it and the next request will fail if we're not logged in.
+#if ($response->is_success)
+#{ print "Login succeeded\n"; 
+#  print $response->content."\n";
+#}
+#else
+#{ print STDERR "Login failed: " . $response->status_line . "\n";
+#}
+#print "Cookies: " . $ua->cookie_jar->as_string() . "\n";
+
+my %gpf_args = (
+  'filename'=>$opts{'filename'}, 'display'=>'raw', 'make'=>'false',
+);
+$gpf_args{'project'} = $opts{'projectname'} if (defined $opts{'projectname'});
+
+my $gpf_url = "$base_url/index.php/Special:GetProjectFile?"
+  . join('&', map "$_=". uri_escape($gpf_args{$_}), keys %gpf_args);
+
+print "Requesting file from $gpf_url\n";
+
+$response = $ua->get($gpf_url, ':content_file'=>$opts{'output-filename'});
+
+if ($response->is_success)
+{ print "Successfully saved to $opts{'output-filename'}\n"; }
+else
+{ die "Request failed: " . $response->status_line;
+}
+
+

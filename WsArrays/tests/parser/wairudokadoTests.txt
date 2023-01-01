@@ -1,0 +1,42 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the wairudokado operator
+
+!! test
+Test simple
+!! wikitext
+{{#complexarraydefine:example|[(("a": "a")),(("a": "b")),(("a": "c"))]}}
+{{#complexarrayprint:example[*][a]}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Test sequential
+!! wikitext
+{{#complexarraydefine:example|[(("a": "a")),(("a": "b")),(("a": "c"))]}}
+{{#complexarrayprint:example[*][*][a]}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Test non-existent key
+!! wikitext
+{{#complexarraydefine:example|[(("a": "a")),(("a": "b")),(("a": "c"))]}}
+{{#complexarrayprint:example[*][b]}}
+!! html
+<p><br />
+</p>
+!! end

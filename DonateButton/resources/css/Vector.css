@@ -1,0 +1,7 @@
+/* All CSS here will be loaded for users of the Vector skin */
+
+#p-donatebutton .body {
+	background-image: none !important;
+	margin-left: 0 !important;
+	margin-top: .3em;
+}

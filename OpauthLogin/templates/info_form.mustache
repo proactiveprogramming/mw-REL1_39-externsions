@@ -1,0 +1,19 @@
+<div class="row" id="op_login_form">
+    <div class="col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
+        <p>
+            {{ msg_text }}
+        </p>
+        <form method="post" id="op_username_form">
+            <div class="form-group">
+                <label for="op_username">Username</label>
+                <input id="op_username" class="form-control" autocomplete="off" type="text" name="op_username" value="{{ username }}" required />
+                <span style="display: none;" class="text-danger help-block">
+                    {{ msg_error }}
+                </span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Finish" class="btn btn-primary pull-right" disabled />
+            </div>
+        </form>
+    </div>
+</div>

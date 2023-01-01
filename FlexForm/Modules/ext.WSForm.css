@@ -1,0 +1,187 @@
+.wsform.alert-danger, .wsform.alert-success, .wsform.alert-warning, .wsform.alert-info{
+	display:none;
+}
+.hidden {
+	display: none;
+}
+
+.flexform-disabled {
+	cursor:progress !important;
+	background: #cccccc !important;
+	color: #666666 !important;
+}
+
+.flex-form-spinner {
+	opacity: 0;
+	max-width:0px;
+	animation: spin 1s infinite ease-in-out;
+//  animation: dash 2s infinite ease-in-out;
+	border-radius: 50%;
+	border-top: 2px solid #555;
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	margin:0px;
+	padding:0px;
+	vertical-align: middle;
+	margin-left:10px;
+}
+
+.flex-form-spinner.active {
+	opacity:1;
+	max-width:25px;
+}
+
+.flex-form-special-top {
+	width:100%;
+}
+
+.flex-form-special-top-left img {
+	width:150px;
+	margin:5px 15px;
+}
+
+.flex-form-special-top-right img {
+	max-height:100px;
+	margin:0px;
+}
+
+.flex-form-special-top-left {
+	width:49%;
+	text-align:left;
+	display:inline-block;
+	vertical-align: top;
+}
+.flex-form-terminal {
+	background-color: black;
+	background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+}
+
+.flex-form-terminal pre  {
+	font-size: 14px;
+	background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+	pointer-events: none;
+	color: white;
+	font: 1.1rem Inconsolata, monospace;
+	text-shadow: 0 0 5px #C8C8C8;
+}
+.flex-form-special-top-right {
+	width:49%;
+	text-align:right;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.flex-form-special-install-btn {
+	cursor:pointer;
+	color: #fff;
+	background: #0576a8 linear-gradient(180deg,#2b8bb5,#0576a8) repeat-x;
+	border-color: #0576a8;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);
+	display:inline-block;
+	vertical-align: center;
+}
+
+
+
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes dash {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+/* Simple styling */
+
+.flex-form.simple {
+	margin:10px auto;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.flex-form.simple label{
+	margin:0 5px 3px 0;
+	padding:0px;
+	display:inline-block;
+	font-weight: bold;
+}
+
+.flex-form.simple label.above{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.flex-form.simple input[type=text],
+.flex-form.simple input[type=date],
+.flex-form.simple input[type=datetime],
+.flex-form.simple input[type=number],
+.flex-form.simple input[type=search],
+.flex-form.simple input[type=time],
+.flex-form.simple input[type=url],
+.flex-form.simple input[type=email],
+textarea,
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+}
+.flex-form.simple input[type=text]:focus,
+.flex-form.simple input[type=date]:focus,
+.flex-form.simple input[type=datetime]:focus,
+.flex-form.simple input[type=number]:focus,
+.flex-form.simple input[type=search]:focus,
+.flex-form.simple input[type=time]:focus,
+.flex-form.simple input[type=url]:focus,
+.flex-form.simple input[type=email]:focus,
+.flex-form.simple textarea:focus,
+.flex-form.simple select:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+
+.flex-form.simple textarea{
+	min-height: 100px;
+}
+.flex-form.simple input[type=submit], .flex-form.simple input[type=button]{
+	background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.flex-form.simple input[type=submit]:hover, .flex-form.simple input[type=button]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.flex-form.simple .required{
+	color:red;
+}

@@ -1,0 +1,447 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraysort
+complexarrayprint
+!! endfunctionhooks
+
+!! test
+Sort one-dimensional alphabetical list using multisort
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|multisort}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+<li>j</li>
+<li>k</li>
+<li>l</li>
+<li>m</li>
+<li>n</li>
+<li>o</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+<li>s</li>
+<li>t</li>
+<li>u</li>
+<li>v</li>
+<li>w</li>
+<li>x</li>
+<li>y</li>
+<li>z</li></ul>
+
+!! end
+
+!! test
+Sort one-dimensional alphabetical list using asort
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|asort}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+<li>j</li>
+<li>k</li>
+<li>l</li>
+<li>m</li>
+<li>n</li>
+<li>o</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+<li>s</li>
+<li>t</li>
+<li>u</li>
+<li>v</li>
+<li>w</li>
+<li>x</li>
+<li>y</li>
+<li>z</li></ul>
+
+!! end
+
+!! test
+Sort one-dimensional alphabetical list using arsort
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|arsort}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>z</li>
+<li>y</li>
+<li>x</li>
+<li>w</li>
+<li>v</li>
+<li>u</li>
+<li>t</li>
+<li>s</li>
+<li>r</li>
+<li>q</li>
+<li>p</li>
+<li>o</li>
+<li>n</li>
+<li>m</li>
+<li>l</li>
+<li>k</li>
+<li>j</li>
+<li>i</li>
+<li>h</li>
+<li>g</li>
+<li>f</li>
+<li>e</li>
+<li>d</li>
+<li>c</li>
+<li>b</li>
+<li>a</li></ul>
+
+!! end
+
+!! test
+Sort one-dimensional alphabetical list using krsort
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|krsort}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>z</li>
+<li>y</li>
+<li>x</li>
+<li>w</li>
+<li>v</li>
+<li>u</li>
+<li>t</li>
+<li>s</li>
+<li>r</li>
+<li>q</li>
+<li>p</li>
+<li>o</li>
+<li>n</li>
+<li>m</li>
+<li>l</li>
+<li>k</li>
+<li>j</li>
+<li>i</li>
+<li>h</li>
+<li>g</li>
+<li>f</li>
+<li>e</li>
+<li>d</li>
+<li>c</li>
+<li>b</li>
+<li>a</li></ul>
+
+!! end
+
+!! test
+Sort one-dimensional alphabetical list using natcasesort
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|natcasesort}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+<li>j</li>
+<li>k</li>
+<li>l</li>
+<li>m</li>
+<li>n</li>
+<li>o</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+<li>s</li>
+<li>t</li>
+<li>u</li>
+<li>v</li>
+<li>w</li>
+<li>x</li>
+<li>y</li>
+<li>z</li></ul>
+
+!! end
+
+!! test
+Sort one-dimensional alphabetical list using natsort
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|natsort}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+<li>j</li>
+<li>k</li>
+<li>l</li>
+<li>m</li>
+<li>n</li>
+<li>o</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+<li>s</li>
+<li>t</li>
+<li>u</li>
+<li>v</li>
+<li>w</li>
+<li>x</li>
+<li>y</li>
+<li>z</li></ul>
+
+!! end
+
+!! test
+Sort one-dimensional alphabetical list using rsort
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|rsort}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>z</li>
+<li>y</li>
+<li>x</li>
+<li>w</li>
+<li>v</li>
+<li>u</li>
+<li>t</li>
+<li>s</li>
+<li>r</li>
+<li>q</li>
+<li>p</li>
+<li>o</li>
+<li>n</li>
+<li>m</li>
+<li>l</li>
+<li>k</li>
+<li>j</li>
+<li>i</li>
+<li>h</li>
+<li>g</li>
+<li>f</li>
+<li>e</li>
+<li>d</li>
+<li>c</li>
+<li>b</li>
+<li>a</li></ul>
+
+!! end
+
+# Shuffle is not testable using Parser tests.
+
+!! test
+Sort one-dimensional alphabetical list using keysort without key
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|keysort}}
+{{#complexarrayprint:example}}
+!! html
+<p><span class="error">Key must not be omitted when using keysort</span>
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+<li>j</li>
+<li>k</li>
+<li>l</li>
+<li>m</li>
+<li>n</li>
+<li>o</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+<li>s</li>
+<li>t</li>
+<li>u</li>
+<li>v</li>
+<li>w</li>
+<li>x</li>
+<li>y</li>
+<li>z</li></ul>
+
+!! end
+
+!! test
+Sort one-dimensional alphabetical list using keysort with zero key
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|keysort|0}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+<li>j</li>
+<li>k</li>
+<li>l</li>
+<li>m</li>
+<li>n</li>
+<li>o</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+<li>s</li>
+<li>t</li>
+<li>u</li>
+<li>v</li>
+<li>w</li>
+<li>x</li>
+<li>y</li>
+<li>z</li></ul>
+
+!! end
+
+!! test
+Sort one-dimensional alphabetical list using keysort with numeric non-zero key
+!! wikitext
+{{#complexarraydefine:example|a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+{{#complexarraysort:example|keysort|1}}
+{{#complexarrayprint:example}}
+!! html
+<p><span class="error">This sort key is not valid, since it is not available for each sub-array.</span>
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+<li>j</li>
+<li>k</li>
+<li>l</li>
+<li>m</li>
+<li>n</li>
+<li>o</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+<li>s</li>
+<li>t</li>
+<li>u</li>
+<li>v</li>
+<li>w</li>
+<li>x</li>
+<li>y</li>
+<li>z</li></ul>
+
+!! end
+
+!! test
+Sort two-dimensional disordered list using keysort
+!! wikitext
+{{#complexarraydefine:example|[(("a": "b")), (("a": "a"))]}}
+{{#complexarraysort:example|keysort|a}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a: a</li></ul></li>
+<li>1
+<ul><li>a: b</li></ul></li></ul>
+
+!! end
+
+!! test
+Sort two-dimensional disordered list using keysort with non-existent key
+!! wikitext
+{{#complexarraydefine:example|[(("b": "b")), (("b": "a"))]}}
+{{#complexarraysort:example|keysort|a}}
+{{#complexarrayprint:example}}
+!! html
+<p><span class="error">This sort key is not valid, since it is not available for each sub-array.</span>
+</p>
+<ul><li>0
+<ul><li>b: b</li></ul></li>
+<li>1
+<ul><li>b: a</li></ul></li></ul>
+
+!! end
+
+!! test
+Sort two-dimensional disordered list using keysort with asymmetric non-existant keys
+!! wikitext
+{{#complexarraydefine:example|[(("a": "b")), (("b": "a"))]}}
+{{#complexarraysort:example|keysort|a}}
+{{#complexarrayprint:example}}
+!! html
+<p><span class="error">This sort key is not valid, since it is not available for each sub-array.</span>
+</p>
+<ul><li>0
+<ul><li>a: b</li></ul></li>
+<li>1
+<ul><li>b: a</li></ul></li></ul>
+
+!! end
+
+!! test
+Sort non-existent array
+!! wikitext
+{{#complexarraysort:foobar}}
+{{#complexarrayprint:foobar}}
+!! html
+<p><br />
+</p>
+!! end

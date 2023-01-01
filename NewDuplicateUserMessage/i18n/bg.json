@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "DCLXVI",
+            "Spiritia",
+            "StanProg"
+        ]
+    },
+    "newduplicateusermessage-description": "Добавя съобщение на беседата на новорегистрираните потребители",
+    "newduplicateusermessage-edit-summary": "Добавяне на [[{{int:newduplicateusermessage-template}}|приветствие]] на беседата на нов потребител"
+}

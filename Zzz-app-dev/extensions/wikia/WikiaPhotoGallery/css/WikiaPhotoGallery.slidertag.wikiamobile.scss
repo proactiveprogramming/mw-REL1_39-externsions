@@ -1,0 +1,263 @@
+@import "../../WikiaMobile/css/variables.scss";
+
+.wkSlider{
+	margin: 10px auto;
+	width: 570px;
+	height: 875px;
+
+	figure{
+		//placeholder moved to image_placeholder.scss
+		position: relative;
+		display: inline-block;
+		padding: 0;
+		border: 0;
+		background-size: 25%;
+		-webkit-transition: opacity .3s;
+		-moz-transition: opacity .3s;
+		transition: opacity .3s;
+		width: 280px;
+		height: 280px;
+		margin-bottom: -10px;
+		overflow: hidden;
+
+		& > a {
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+		}
+
+		img {
+			max-width: none;
+			min-width: 100%;
+			width: auto;
+			height: 100%;
+		}
+	}
+
+	//style for figcaption is to be found in images.scss
+}
+
+.imagesEven {
+	.img0, .img2 {
+		float: left;
+	}
+
+	.img1, .img3 {
+		float: right;
+	}
+}
+
+.imagesOdd {
+	.img1, .img3{
+		float: right;
+	}
+
+	.img2, .img4 {
+		float: left;
+	}
+
+	.img0{
+		width: 570px;
+
+		img {
+			position: static;
+			max-width: 100%;
+			height: auto;
+			min-height: 100%;
+		}
+	}
+}
+
+.imgs3, .imgs4 {
+	height: 580px;
+}
+
+//medium
+@media screen and (max-width:680px){
+	.wkSlider{
+		width: 420px;
+		height: 225px;
+
+		figure{
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	.imagesOdd .img0{
+		width: 420px;
+	}
+
+	.imgs3, .imgs4 {
+		height: 470px;
+	}
+
+	.imgs5 {
+		height: 710px;
+	}
+
+}
+
+//small
+@media screen and (max-width:480px){
+	.wkSlider{
+		width: 280px;
+		height: 145px;
+
+		figure{
+			width: 135px;
+			height: 135px;
+		}
+	}
+
+	.imagesOdd .img0{
+		width: 280px;
+	}
+
+	.imgs3, .imgs4 {
+		height: 310px;
+	}
+
+	.imgs5 {
+		height: 460px;
+	}
+}
+
+@media screen and (orientation:landscape) and (min-width:321px){
+	.wkSlider {
+		width: 595px;
+		height: 140px;
+
+		figure{
+			float: none;
+			width: 140px;
+			height: 140px;
+		}
+	}
+
+	.imagesOdd {
+		.img0 {
+			width: 290px;
+			float: left;
+		}
+	}
+
+	.imgs3{
+		.img0 {
+			margin-right: 13px;
+		}
+	}
+
+	.imgs4{
+		figure {
+			margin: 0;
+		}
+		.img0, .img3 {
+			margin-right: 13px;
+		}
+	}
+
+	.imgs1 {
+		width: 305px;
+	}
+
+	.imgs2 {
+		figure {
+			width: 290px;
+			margin-right: 10px;
+		}
+
+		.img1 {
+			margin-right: 0;
+		}
+	}
+
+	.imgs5 {
+		height: 332px;
+		width: 445px;
+
+		.img2 {
+			margin-right: 10px;
+		}
+	}
+}
+
+//medium in landscape
+@media screen and (orientation:landscape) and (min-width:321px) and (max-width: 680px){
+	.wkSlider {
+		width: 420px;
+		height: 95px;
+
+		figure {
+			width: 95px;
+			height: 95px;
+		}
+	}
+
+	.imagesOdd .img0 {
+		width: 200px;
+	}
+
+	.imgs1 {
+		width: 200px;
+	}
+
+	.imgs2 {
+		figure{
+			width: 200px;
+		}
+	}
+
+	.imgs5 {
+		height: 234px;
+		width: 310px;
+	}
+}
+
+//small in landscape
+@media screen and (orientation:landscape) and (min-width:321px) and (max-width: 480px){
+	.wkSlider {
+		width: 420px;
+		height: 95px;
+
+		figure {
+			width: 95px;
+			height: 95px;
+		}
+	}
+
+	.imagesOdd {
+		.img0{
+			width: 205px;
+			margin-right: 13px;
+		}
+	}
+
+	.imgs1 {
+		width: 224px;
+	}
+
+	.imgs2 {
+		figure {
+			width: 205px;
+		}
+	}
+
+	.imgs5 {
+		height: 310px;
+		width: 455px;
+
+		figure {
+			width: 145px;
+			height: 145px;
+		}
+
+		.img4, .img1 {
+			margin-right: 0;
+		}
+
+		.img0 {
+			width: 280px;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia"
+		]
+	},
+	"mzwi-action": "Eksport ZWI",
+	"mzwi-desc": "Menukarkan halaman semasa kepad ZWI dan menghantarnya ke pelayar"
+}

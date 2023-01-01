@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"coordinateconversion-desc": "Conversion of geographical coordinates to various systems.",
+	"coordinateconversion-i18n-welcome": "Welcome to the localization file of the CoordinateConversion extension.",
+	"coordinateconversion-test": "Test CoordinateConversion",
+	"coordinateconversion-test-intro": "Welcome to the \"Test\" special page of the CoordinateConversion extension.",
+	"cctest": "Test CoordinateConversion"
+}

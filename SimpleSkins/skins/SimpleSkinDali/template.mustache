@@ -1,0 +1,74 @@
+{{{SKIN_START}}}
+		<nav class="personal">
+			{{#menu.personal}}
+			<a href="{{href}}" class="{{class}}">{{text}}</a>
+			{{/menu.personal}}
+		</nav>
+		<nav class="site">
+			{{#search}}
+				<form action="{{action}}">
+					{{{input}}}
+					{{{button}}}
+					{{{buttonfulltext}}}
+				</form>
+			{{/search}}
+			{{{page.toc}}}
+			<ul class="hlist">
+				{{#menu.primary}}
+				<li>
+					<a href="{{href}}" class="{{class}}">{{text}}</a>
+				</li>
+				{{/menu.primary}}
+			</ul>
+			{{#page.languages}}
+			<h2 class="toggle">{{heading}}</h2>
+			<ul>
+				{{#links}}
+				<li>
+					<a href="{{href}}" class="{{class}}">{{text}}</a>
+				</li>
+				{{/links}}
+			</ul>
+			{{/page.languages}}
+			<h2 class="toggle">{{messages.toolbox}}</h2>
+			<ul>
+				{{#menu.toolbox}}
+				<li>
+					<a href="{{href}}" class="{{class}}">{{text}}</a>
+				</li>
+				{{/menu.toolbox}}
+			</ul>
+			{{{site.name}}}<br>
+			{{{site.poweredby}}}
+			{{{site.copyright}}}
+		</nav>
+		{{#page.displayTitle}}<h1>{{{text}}}</h1>{{/page.displayTitle}}
+		<div class="container-dali">
+			{{{page.indicators}}}
+			{{#history}}<a class="lastmodbar" href="{{href}}">{{info}} ({{text}})</a>{{/history}}
+			<div class="content">{{{page.html}}}</div>
+		</div>
+		<div class="actions">
+			{{#view}}<a href="{{href}}" class="{{class}}">{{text}}</a> {{/view}}
+			{{#talk}}<a href="{{href}}" class="{{class}}">{{text}}</a> {{/talk}}
+			<hr>
+			{{#edit}}<a href="{{href}}" class="{{class}}">{{text}}</a>{{/edit}}
+			{{#watch}}<a href="{{href}}" class="{{class}}">{{text}}</a>{{/watch}}
+			{{#move}}<a href="{{href}}" class="{{class}}">{{text}}</a>{{/move}}
+			{{#delete}}<a href="{{href}}" class="{{class}}">{{text}}</a>{{/delete}}
+			{{#restore}}<a href="{{href}}" class="{{class}}">{{text}}</a>{{/restore}}
+		</div>
+		<footer>
+			{{#footer.info}}
+				<div>
+					{{{.}}}
+				</div>
+			{{/footer.info}}
+			{{#footer.places}}
+				<div>
+					{{{.}}}
+				</div>
+			{{/footer.places}}
+		</footer>
+	</body>
+{{{SKIN_END}}}

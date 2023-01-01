@@ -1,0 +1,31 @@
+These are the release notes for the Push extension.
+
+Extension page on mediawiki.org: https://www.mediawiki.org/wiki/Extension:PushAll
+
+=== Version 2.0.1 ===
+2021-10-04
+
+* Fixes the dependency with the LinkedWiki extension
+* Add error message when target wikis did not disable captcha for bots
+
+=== Version 2.0.0 ===
+2021-09-20
+
+* Rewrite all files
+    * Each user can put in their preferences their own targeted wiki with their own bots.
+    * Each content is now a visible graph where the user can select or not each dependency with their status on the remote wiki.
+    * The UI of the Special page respects the standard of mediawiki with OOUI.
+* Insert tests
+* Api is tested in the project BorderCloud/mediawiki-extension-LinkedWiki-CI on two instances of Mediawiki
+
+=== Version 1.0.1 ===
+2021-07-28
+
+* deprecate SkinTemplateNavigation T255319
+
+=== Version 1.0.0 ===
+
+Fork of the extension Mediawiki/Push with:
+* Updated for the Mediawiki API in the version 3.1
+* Added ability to upload subpages only via the push tab
+* Added ability to upload page with other namespaces only via the push tab

@@ -1,0 +1,2 @@
+# Deny from all
+RedirectMatch 403 ^.*/\.git/.*$

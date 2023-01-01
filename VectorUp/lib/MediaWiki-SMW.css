@@ -1,0 +1,213 @@
+/*
+** TYPOGRAPHY
+*/
+h1, h2, h3, h4, h5 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}
+
+h2, h3, h4, h5 {
+    font-weight: bold;
+    margin-bottom: 0.1em;
+}
+h2 {
+    font-size: 160%;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CCC;
+}
+h3 {
+    font-size: 140%;
+    margin-top: 0.3em;
+}
+h4 {
+    font-size: 120%;
+    margin-top: 0.2em;
+}
+#firstHeading {
+    font-size: 2em;
+    border: none;
+}
+
+a,
+a:visited,
+div.vectorTabs li a,
+div.vectorTabs li a:visited,
+div#mw-panel div.portal div.body ul li a,
+div#mw-panel div.portal div.body ul li a:visited {
+    color: #0075C4;
+}
+a.new,
+a.new:visited {
+    color: #C20D0D;
+}
+#toc,
+.toc {
+    padding: 7px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    float: right;
+}
+}
+pre {
+    font-size: 0.85em;
+}
+hr {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #CCC;
+}
+
+
+/*
+** MEDIAWIKI STYLE
+*/
+
+.naming-box,
+.description-box,
+.infoMessage,
+#catlinks {
+    padding: 4px 8px;
+    margin: 8px 0;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+.naming-box {
+    border: 1px solid #6BBD12;
+    background: #D3E5C7;
+}
+
+.description-box {
+    border: 1px solid #7EB4EA;
+    background: #D8E8F7;
+}
+.infoMessage,
+#catlinks {
+    border: 1px solid #AAA;
+    background: #F7F7F7;
+}
+
+.mw-editsection {
+    display: none;
+    font-size: 9px;
+}
+.mw-specialpages-table {
+    margin-top: 0;
+}
+
+.wikitable {
+    min-width: 380px;
+}
+
+table.wikitable > * > tr > td {
+  padding: 0.2em 0.4em;
+}
+
+div#footer {
+    padding: 0.5em;
+}
+#footer-info-lastmod {
+    float: left;
+}
+#footer-info-viewcount {
+    float: right;
+}
+#footer-places, #footer-icons {
+    display: none;
+}
+
+/** Buttons Style **/
+input[type=button], input[type=submit] {
+    border-radius: 3px;
+    border: none;
+    background: #128FBD;
+    color: #FFF;
+    padding: 6px 8px;
+    cursor: pointer;
+    user-select: none;
+}
+input[type=button]:hover, input[type=submit]:hover {
+    opacity: 0.85;
+}
+input[type=submit] {
+    background: #6BBD12;
+}
+input#wpDiff {
+    background: #128FBD;
+}
+
+
+/** SMW STYLE **/
+.smw-highlighter {
+    margin: 0 4px;
+}
+
+/** mobo Styles */
+a.mobo-tag {
+    font-size: 11px;
+    background: #555;
+    color: #FFF;
+    padding: 3px 8px;
+    margin-left: 8px;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.mobo-tag:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+a.mobo-tag-inBearbeitung {
+    background: #D59F0F;
+}
+a.mobo-tag-falsch {
+    background: #B63D13;
+}
+a.mobo-tag-ungenuegend {
+    background: #841DB8;
+}
+a.mobo-tag-veraltet {
+    background: #B97A57;
+}
+
+.mobo-generated {
+    display: block;
+    border: 1px solid #E8B028;
+    background: #F5ECD7;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin: 8px 0;
+}
+
+
+.td-true {
+    background: #6CAF1D;
+    color: #FFF;
+}
+
+
+.td-false {
+    background: #C53330;
+    color: #FFF;
+}
+
+
+/** Chameleon Skin Adjustments */
+
+.mw-body {
+   padding: 0;
+}
+
+#firstHeading {
+    /*margin: 0;*/
+}
+
+.navbar-static-top {
+    margin-bottom: 0;
+}

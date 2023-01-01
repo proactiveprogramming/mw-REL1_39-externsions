@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "[http://www.organicdesign.co.nz/User:Nad Nad]",
+            "Siebrand",
+            "David Wong"
+        ]
+    },
+    "newduplicateusermessage-description": "Adds a message to a newly created duplicate user's talk page.",
+    "newduplicateusermessage-edit-summary": "Add [[{{int:newduplicateusermessage-template}}|duplicate user welcome message]] to new duplicate user's talk page.",
+    "newduplicateusermessage-template": "Template:DuplicateUserWelcome",
+    "newduplicateusermessage-editor": "New duplicate user message",
+    "newduplicateusermessage-substitute": ""
+}

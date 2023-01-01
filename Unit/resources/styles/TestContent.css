@@ -1,0 +1,16 @@
+#contentSub {
+    display: none;
+}
+
+.mwunit-test-case {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mwunit-subtitle {
+    line-height: 1.2em;
+    margin: -3px 0 1em 3px;
+    color: #54595d;
+    font-size: 0.9em;
+}

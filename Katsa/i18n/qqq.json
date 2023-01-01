@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"katsa-desc": "{{katsa-gloss}} {{desc|name=Katsa|url=https://www.mediawiki.org/wiki/Extension:Katsa }}",
+	"katsa-carp-final": "{{katsa-gloss}} Log a small one-line notice, and continue",
+	"katsa-cluck-final": "{{katsa-gloss}} Log a stack trace, and continue",
+	"katsa-croak-final": "{{katsa-gloss}} Dump a small one-line notice, and exit",
+	"katsa-confess-final": "{{katsa-gloss}} Dump a stack trace, and exit"
+}

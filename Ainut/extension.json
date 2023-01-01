@@ -1,0 +1,76 @@
+{
+	"name": "Ainut",
+	"version": "1.0.0",
+	"author": [
+		"Niklas Laxström"
+	],
+	"url": "https://github.com/Nikerabbit/mediawiki-extensions-Ainut",
+	"description": "An application form and review tools for Aineeton kulttuuriperintö",
+	"license-name": "GPL-2.0-or-later",
+	"config": {
+		"AinutApplicationsOpen": false,
+		"AinutReviewsOpen": false,
+		"AinutResultsOpen": false
+	},
+	"MessagesDirs": {
+		"Ainut": "i18n"
+	},
+	"ExtensionMessagesFiles": {
+		"Ainut/Alias": "Alias.php"
+	},
+	"SpecialPages": {
+		"Ainut": "Ainut\\SpecialAinut",
+		"AinutAdmin": "Ainut\\SpecialAinutAdmin",
+		"AinutReview": "Ainut\\SpecialAinutReview"
+	},
+	"AutoloadClasses": {
+		"Ainut\\Application": "Application.php",
+		"Ainut\\ApplicationForm": "ApplicationForm.php",
+		"Ainut\\ApplicationManager": "ApplicationManager.php",
+		"Ainut\\DocumentExporter": "DocumentExporter.php",
+		"Ainut\\Hooks": "Hooks.php",
+		"Ainut\\HTMLTagsField": "HTMLTagsField.php",
+		"Ainut\\HTMLLimitedTextAreaField": "HTMLLimitedTextAreaField.php",
+		"Ainut\\Review": "Review.php",
+		"Ainut\\ReviewManager": "ReviewManager.php",
+		"Ainut\\SpecialAinut": "SpecialAinut.php",
+		"Ainut\\SpecialAinutAdmin": "SpecialAinutAdmin.php",
+		"Ainut\\SpecialAinutReview": "SpecialAinutReview.php"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "Ainut\\Hooks::schemaUpdates",
+		"SidebarBeforeOutput": "Ainut\\Hooks::onSidebarBeforeOutput"
+	},
+	"AvailableRights": [
+		"ainut-review",
+		"ainut-admin"
+	],
+	"ResourceModules": {
+		"ext.ainut.form.styles": {
+			"styles": "form/styles.less",
+			"localBasePath": "modules",
+			"remoteExtPath": "Ainut/modules"
+		},
+		"ext.ainut.form": {
+			"scripts": "form/main.js",
+			"localBasePath": "modules",
+			"remoteExtPath": "Ainut/modules",
+			"dependencies": [
+				"ext.ainut.select2",
+				"mediawiki.jqueryMsg",
+				"jquery.autosize"
+			],
+			"messages": [
+				"ainut-app-leninfo",
+				"ainut-app-len-short"
+			]
+		},
+		"ext.ainut.select2": {
+			"scripts": "select2.min.js",
+			"styles": "select2.min.css",
+			"localBasePath": "libs/select2",
+			"remoteExtPath": "Ainut/libs/select2"
+		}
+	},
+	"manifest_version": 1
+}

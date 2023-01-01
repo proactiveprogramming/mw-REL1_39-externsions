@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"katsa-desc": "Fornece espiões para uso em módulos Lua",
+	"katsa-carp-final": "Queixinhas chamado",
+	"katsa-cluck-final": "Resmungão chamado",
+	"katsa-croak-final": "Bufo chamado",
+	"katsa-confess-final": "Confissão chamada"
+}

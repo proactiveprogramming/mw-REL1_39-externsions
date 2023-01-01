@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pickle documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Pickle</h1>
+
+<ul>
+  <li><a href="../mw.pickle.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Metamethods">Metamethods</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Counter.html">Counter</a></li>
+  <li><strong>Queue</strong></li>
+  <li><a href="../classes/Stack.html">Stack</a></li>
+  <li><a href="../classes/Adapt.html">Adapt</a></li>
+  <li><a href="../classes/Frame.html">Frame</a></li>
+  <li><a href="../classes/Spy.html">Spy</a></li>
+  <li><a href="../classes/Extractor.html">Extractor</a></li>
+  <li><a href="../classes/ExtractorFalse.html">ExtractorFalse</a></li>
+  <li><a href="../classes/ExtractorJson.html">ExtractorJson</a></li>
+  <li><a href="../classes/ExtractorNil.html">ExtractorNil</a></li>
+  <li><a href="../classes/ExtractorNumber.html">ExtractorNumber</a></li>
+  <li><a href="../classes/ExtractorString.html">ExtractorString</a></li>
+  <li><a href="../classes/ExtractorTrue.html">ExtractorTrue</a></li>
+  <li><a href="../classes/Extractors.html">Extractors</a></li>
+  <li><a href="../classes/Render.html">Render</a></li>
+  <li><a href="../classes/RenderAdapt.html">RenderAdapt</a></li>
+  <li><a href="../classes/RenderFrame.html">RenderFrame</a></li>
+  <li><a href="../classes/Renders.html">Renders</a></li>
+  <li><a href="../classes/RenderAdaptCompact.html">RenderAdaptCompact</a></li>
+  <li><a href="../classes/RenderFrameCompact.html">RenderFrameCompact</a></li>
+  <li><a href="../classes/RenderAdaptFull.html">RenderAdaptFull</a></li>
+  <li><a href="../classes/RenderFrameFull.html">RenderFrameFull</a></li>
+  <li><a href="../classes/RenderAdaptVivid.html">RenderAdaptVivid</a></li>
+  <li><a href="../classes/RenderFrameVivid.html">RenderFrameVivid</a></li>
+  <li><a href="../classes/Report.html">Report</a></li>
+  <li><a href="../classes/ReportAdapt.html">ReportAdapt</a></li>
+  <li><a href="../classes/ReportFrame.html">ReportFrame</a></li>
+  <li><a href="../classes/Translator.html">Translator</a></li>
+  <li><a href="../classes/Translators.html">Translators</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Pickle.html">Pickle</a></li>
+  <li><a href="../modules/Stub.html">Stub</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/activities.md.html">Activities</a></li>
+  <li><a href="../topics/adapt.md.html">Adapt</a></li>
+  <li><a href="../topics/call-style.md.html">Call style</a></li>
+  <li><a href="../topics/change-log.md.html">Log</a></li>
+  <li><a href="../topics/databases.md.html">Databases</a></li>
+  <li><a href="../topics/dataflow.md.html">Dataflow</a></li>
+  <li><a href="../topics/hello-world.md.html">Hello World</a></li>
+  <li><a href="../topics/lua-classes.md.html">Lua classes</a></li>
+  <li><a href="../topics/musings.md.html">Musings</a></li>
+  <li><a href="../topics/vscode-snippets.md.html">VScode snippets</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/HelloWorld.pickle.nb.lua.html">HelloWorld.pickle.nb.lua</a></li>
+  <li><a href="../examples/HelloWorld.lua.html">HelloWorld.lua</a></li>
+  <li><a href="../examples/HelloWorld.pickle.lua.html">HelloWorld.pickle.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Queue</code></h1>
+<p>Queue for managing values.</p>
+<p> The semantics of a queue is to pop the oldest entry pushed into the queue.
+ This class follows the pattern from
+ <a href="../topics/lua-classes.md.html">Lua classes</a>.</p>
+
+
+<h2><a href="#Metamethods">Metamethods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#Queue:__index">Queue:__index (key)</a></td>
+	<td class="summary">Lookup of missing class members.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#Queue:create">Queue:create (...)</a></td>
+	<td class="summary">Create a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:_init">Queue:_init (...)</a></td>
+	<td class="summary">Initialize a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:isEmpty">Queue:isEmpty ()</a></td>
+	<td class="summary">Is the queue empty.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:depth">Queue:depth ()</a></td>
+	<td class="summary">What is the depth of the internal structure.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:layout">Queue:layout ()</a></td>
+	<td class="summary">Get the layout of the queue.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:bottom">Queue:bottom ()</a></td>
+	<td class="summary">Get a reference to the bottommost item in the queue.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:top">Queue:top ()</a></td>
+	<td class="summary">Get a reference to the topmost item in the queue.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:push">Queue:push (...)</a></td>
+	<td class="summary">Push a value on the queue.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:pop">Queue:pop ([num=1])</a></td>
+	<td class="summary">Pop the last value of the queue.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:drop">Queue:drop ([num=1])</a></td>
+	<td class="summary">Drop the last n values of the Queue.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:get">Queue:get ([num=1])</a></td>
+	<td class="summary">Get the indexed entry.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:export">Queue:export ()</a></td>
+	<td class="summary">Export a list of all the contents.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#Queue:flush">Queue:flush ()</a></td>
+	<td class="summary">Flush all the contents.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Metamethods"></a>Metamethods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Queue:__index"></a>
+    <strong>Queue:__index (key)</strong>
+    </dt>
+    <dd>
+    Lookup of missing class members.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         lookup of member
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        any
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Queue:create"></a>
+    <strong>Queue:create (...)</strong>
+    </dt>
+    <dd>
+    Create a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         forwarded to <code>_init()</code>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:_init"></a>
+    <strong>Queue:_init (...)</strong>
+    </dt>
+    <dd>
+    Initialize a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         pushed on the queue
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:isEmpty"></a>
+    <strong>Queue:isEmpty ()</strong>
+    </dt>
+    <dd>
+    Is the queue empty.
+ Note that the internal structure is non-empty even if a nil
+ is pushed on the queue.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+        whether the internal structure has length zero
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:depth"></a>
+    <strong>Queue:depth ()</strong>
+    </dt>
+    <dd>
+    What is the depth of the internal structure.
+ Note that the internal structure has a depth even if a nil
+ is pushed on the queue.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">number</span></span>
+        how deep is the internal structure
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:layout"></a>
+    <strong>Queue:layout ()</strong>
+    </dt>
+    <dd>
+    Get the layout of the queue.
+ This method is used for testing to inspect which types of objects exists in the queue.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        description of the queue
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:bottom"></a>
+    <strong>Queue:bottom ()</strong>
+    </dt>
+    <dd>
+    Get a reference to the bottommost item in the queue.
+ The bottommost item can also be described as the first item.
+ This method leaves the item on the queue.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         first
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">any</span></span>
+        item that can be put on the queue
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:top"></a>
+    <strong>Queue:top ()</strong>
+    </dt>
+    <dd>
+    Get a reference to the topmost item in the queue.
+ The topmost item can also be described as the last item.
+ This method leaves the item on the queue.
+
+    <h3>Nicknames:</h3>
+    <ul>
+         last
+    </ul "@todo">
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">any</span></span>
+        item that can be put on the queue
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:push"></a>
+    <strong>Queue:push (...)</strong>
+    </dt>
+    <dd>
+    Push a value on the queue.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+        facilitate chaining
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:pop"></a>
+    <strong>Queue:pop ([num=1])</strong>
+    </dt>
+    <dd>
+    Pop the last value of the queue.
+ Note that this will remove the last (topmost) value.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">num</span>
+            <span class="types"><span class="type">number</span></span>
+         items to drop
+         (<em>default</em> 1)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">any</span></span>
+        item that can be put on the queue
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:drop"></a>
+    <strong>Queue:drop ([num=1])</strong>
+    </dt>
+    <dd>
+    Drop the last n values of the Queue.
+ Note that this will remove the last (topmost) values.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">num</span>
+            <span class="types"><span class="type">number</span></span>
+         items to drop
+         (<em>default</em> 1)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+        facilitate chaining
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:get"></a>
+    <strong>Queue:get ([num=1])</strong>
+    </dt>
+    <dd>
+    Get the indexed entry.
+ Accessing this will not change stored values.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">num</span>
+            <span class="types"><span class="type">number</span></span>
+         entry, negative numbers count backwards
+         (<em>default</em> 1)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">any</span></span>
+        item that can be put on the queue
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:export"></a>
+    <strong>Queue:export ()</strong>
+    </dt>
+    <dd>
+    Export a list of all the contents.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        list of values
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Queue:flush"></a>
+    <strong>Queue:flush ()</strong>
+    </dt>
+    <dd>
+    Flush all the contents.
+ Note that this clears the internal storage.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        list of values
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

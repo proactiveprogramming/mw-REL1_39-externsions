@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patrick Westerhoff"
+		]
+	},
+
+	"recentchangeslogfilter-desc": "Diese Erweiterung filtert Logbuch-Einträge auf [[Spezial:Letzte Änderungen]]",
+	"recentchangeslogfilter-hidelogs": "Neuanmeldungs-Logbuch $1",
+	"recentchangeslogfilter-pref": "Neuanmeldungs-Logbucheinträge in den „Letzten Änderungen“ ausblenden"
+}

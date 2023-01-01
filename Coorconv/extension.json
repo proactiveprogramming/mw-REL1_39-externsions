@@ -1,0 +1,59 @@
+{
+	"name": "CoordinateConversion",
+	"version": "0.8.2",
+	"author": [
+		"Wouter Rademaker"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CoordinateConversion",
+	"descriptionmsg": "coordinateconversion-desc",
+	"license-name": "GPL v2",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"CoordinateConversionHooks": "CoordinateConversion.hooks.php",
+		"SpecialCCTest": "specials/SpecialCCTest.php",
+		"CH1903": "includes/CH1903.php",
+		"Common": "includes/Common.php",
+		"Lambert": "includes/Lambert.php",
+		"LUREF": "includes/LUREF.php",
+		"OSGRID": "includes/OSGRID.php",
+		"RD": "includes/RD.php",
+		"TransM": "includes/TM.php",
+		"EPSGIO": "includes/epsg.php"
+	},
+	"config": {
+		"CoordinateConversionEnableFoo": true,
+		"EPSG_URL": "http://epsg.io/trans"
+	},
+	"ExtensionMessagesFiles": {
+		"CoordinateConversionAlias": "CoordinateConversion.i18n.alias.php",
+                "CoordinateConversionAlias": "CoordinateConversion.i18n.magic.php"
+	},
+	"Hooks": {
+
+		"ParserFirstCallInit": [
+			"CoordinateConversionHooks::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"CoordinateConversion": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.coordinateConversion.foo": {
+			"scripts": [],
+			"styles": [],
+			"messages": [],
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "CoordinateConversion"
+	},
+	"SpecialPages": {
+		"CCTest": "SpecialCCTest"
+
+        },
+	"manifest_version": 1
+}

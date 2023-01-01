@@ -1,0 +1,16 @@
+{{#glossary_entry:
+ |langs=EN
+ |title=Context
+ |ref=context
+ |shortdesc=A context is a “role” subdivision of the {{Literal|Button}} window, regrouping common settings of current selected/active object(s).
+ |longdesc=For example, in the {{Glossary/Link|ref=buttons window|txt={{Literal|Buttons}} window}}, you have a {{Literal|Shading}} context ({{Shortcut|F5}}) regrouping everything about lighting, materials and textures. Or a {{Literal|Editing}} context ({{Shortcut|F9}}) with all settings and tools concerning the edition of an object, or its mesh/control points/…<br />Note that contexts can be further subdivided in {{Glossary/Link|ref=sub context|txt=sub-contexts}}, when there are many things (like for the {{Literal|Shading}} one, for example).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Controller
+ |ref=controller
+ |shortdesc=A controller is a logic brick that acts like the brain of a lifeform. It makes decisions to activate muscles (actuator), either using simple logic or complex Python scripts.
+ |longdesc=See also the [[Doc:Manual/Game Engine/Logic/Controllers|controller page]], and the {{Glossary/Link|ref=logic brick|txt=Logic Brick}} and {{Glossary/Link|ref=actuator|txt=Actuators}} entries.
+ }}
+

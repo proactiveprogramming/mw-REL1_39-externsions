@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Avjoska",
+			"Pikne"
+		]
+	},
+	"cbx-desc": "Töötleja PDF-failide piltidena kuvamiseks",
+	"cbx-file-page-warning": "PDF on keeruline vorming, mis võib mõnel juhul paljastada isiklikku teavet. Veendu, et sinu PDF-failide vaatur on häälestatud turvaliselt.",
+	"cbx-file-page-warning-header": "Andmekaitse kaalutlused",
+	"cbx-file-page-warning-footer": "See küsimus puudutab PDF-vormingut üldiselt, mitte ei käi selle kindla faili kohta.",
+	"cbx-file-page-warning-info": "Lisateave selle küsimuse kohta.",
+	"pdf_no_metadata": "Ei õnnestu PDF-faili meta-andmeid saada",
+	"pdf_page_error": "Leheküljenumber pole vahemikus.",
+	"exif-pdf-producer": "Teisendusprogramm",
+	"exif-pdf-version": "PDF-vormingu versioon",
+	"exif-pdf-encrypted": "Krüptitud",
+	"exif-pdf-pagesize": "Lehe suurus"
+}

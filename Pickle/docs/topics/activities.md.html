@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pickle documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Pickle</h1>
+
+<ul>
+  <li><a href="../mw.pickle.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Development">Development </a></li>
+<li><a href="#Refactor_for_production">Refactor for production </a></li>
+<li><a href="#Progress">Progress </a></li>
+<li><a href="#Socializing">Socializing </a></li>
+</ul>
+
+
+<h2>Topics</h2>
+<ul class="">
+  <li><strong>Activities</strong></li>
+  <li><a href="../topics/adapt.md.html">Adapt</a></li>
+  <li><a href="../topics/call-style.md.html">Call style</a></li>
+  <li><a href="../topics/change-log.md.html">Log</a></li>
+  <li><a href="../topics/databases.md.html">Databases</a></li>
+  <li><a href="../topics/dataflow.md.html">Dataflow</a></li>
+  <li><a href="../topics/hello-world.md.html">Hello World</a></li>
+  <li><a href="../topics/lua-classes.md.html">Lua classes</a></li>
+  <li><a href="../topics/musings.md.html">Musings</a></li>
+  <li><a href="../topics/page-indicators.md.html">Page indicators</a></li>
+  <li><a href="../topics/sources.md.html">Sources</a></li>
+  <li><a href="../topics/spies.md.html">Spies</a></li>
+  <li><a href="../topics/statistics.md.html">Statistics</a></li>
+  <li><a href="../topics/test-anything-protocol.md.html">Test anything protocol</a></li>
+  <li><a href="../topics/test-case.md.html">Test Case</a></li>
+  <li><a href="../topics/test-doubles.md.html">Test doubles</a></li>
+  <li><a href="../topics/testing.md.html">Testing</a></li>
+  <li><a href="../topics/tracking-categories.md.html">Tracking categories</a></li>
+  <li><a href="../topics/translatewiki.md.html">Translatewiki</a></li>
+  <li><a href="../topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="../topics/vscode-extensions.md.html">VScode extension</a></li>
+  <li><a href="../topics/vscode-snippets.md.html">VScode snippets</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Pickle.html">Pickle</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Adapt.html">Adapt</a></li>
+  <li><a href="../classes/Bag.html">Bag</a></li>
+  <li><a href="../classes/Case.html">Case</a></li>
+  <li><a href="../classes/Counter.html">Counter</a></li>
+  <li><a href="../classes/Double.html">Double</a></li>
+  <li><a href="../classes/Extractor.html">Extractor</a></li>
+  <li><a href="../classes/Extractors.html">Extractors</a></li>
+  <li><a href="../classes/Spy.html">Spy</a></li>
+  <li><a href="../classes/Translator.html">Translator</a></li>
+  <li><a href="../classes/Translators.html">Translators</a></li>
+  <li><a href="../classes/Render.html">Render</a></li>
+  <li><a href="../classes/RenderAdapt.html">RenderAdapt</a></li>
+  <li><a href="../classes/RenderAdaptCompact.html">RenderAdaptCompact</a></li>
+  <li><a href="../classes/RenderAdaptFull.html">RenderAdaptFull</a></li>
+  <li><a href="../classes/RenderAdaptVivid.html">RenderAdaptVivid</a></li>
+  <li><a href="../classes/RenderCase.html">RenderCase</a></li>
+  <li><a href="../classes/RenderCaseCompact.html">RenderCaseCompact</a></li>
+  <li><a href="../classes/RenderCaseFull.html">RenderCaseFull</a></li>
+  <li><a href="../classes/RenderCaseVivid.html">RenderCaseVivid</a></li>
+  <li><a href="../classes/Renders.html">Renders</a></li>
+  <li><a href="../classes/Report.html">Report</a></li>
+  <li><a href="../classes/ReportAdapt.html">ReportAdapt</a></li>
+  <li><a href="../classes/ReportCase.html">ReportCase</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/HelloWorld.pickle.nb.lua.html">HelloWorld.pickle.nb.lua</a></li>
+  <li><a href="../examples/HelloWorld.lua.html">HelloWorld.lua</a></li>
+  <li><a href="../examples/HelloWorld.pickle.lua.html">HelloWorld.pickle.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+
+<h1>Activities</h1>
+
+<p>Lists are in prioritized order, not in execution order.</p>
+
+<p><a name="Development"></a></p>
+<h2>Development</h2>
+
+<h3>Create an extension</h3>
+
+<ul>
+    <li>☑ Add proper localization through Translatewiki (<a href="translatewiki">translatewiki</a>)</li>
+    <li>☐ … and additional code (<a href="../tree/master/includes/LuaLibrary/lua/pure/picklelib/extractor">extractor</a>, <a href="../tree/master/includes/LuaLibrary/lua/pure/picklelib/translator">translator</a>) for localizing tests</li>
+    <li>☐ Create a gadget to rerun the tests when a user develop code (<a href="../tree/master/includes/Console">Console</a>)</li>
+    <li>☐ Create a parser function to invoke a set of test “files” (pages)</li>
+</ul>
+
+<h3>Test styles</h3>
+
+<ul>
+    <li>☐ Add assert-style tests (“Busted”) in addition to the present expect-style tests (“Rspec”)</li>
+</ul>
+
+<h3>Setup and teardown</h3>
+
+<ul>
+    <li>☐ Add stacks for the callbacks</li>
+</ul>
+
+<h3>Extract and format data</h3>
+
+<ul>
+    <li>☐ Add methods for passing data to <em>describe</em>, <em>context</em> and <em>it</em></li>
+</ul>
+
+<h3>Coverage</h3>
+
+<ul>
+    <li>☐ Add functionality for coarse coverage</li>
+    <li>☐ Add injection of spies (monkey patching) on all methods on whole tables</li>
+    <li>☐ Add some kind of visualization (list) of non-tested methods</li>
+</ul>
+
+<p><a name="Refactor_for_production"></a></p>
+<h2>Refactor for production</h2>
+
+<ul>
+    <li>☐ Cleanup construction of methods</li>
+    <li>☐ Shift to use table-style objects instead of closures</li>
+    <li>☐ Solidify the code (add checks for sane data)</li>
+</ul>
+
+<p><a name="Progress"></a></p>
+<h2>Progress</h2>
+
+<ul>
+    <li>☒ <s>first implementation, use a template with <code>ifexist</code></s></li>
+    <li>☑ later implementation, use content model and track those modules that has functions, and then identify according to title scheme</li>
+</ul>
+
+<p><a name="Socializing"></a></p>
+<h2>Socializing</h2>
+
+<ul>
+    <li>☐ Maintain a list of non-techie updates of <a href="https://mediawiki.org/wiki/Help:Pickle/Rollout">mw:Help:Pickle/Rollout</a> (all major changes)</li>
+    <li>☑ At startup add a note at the biggest wikimedia projects' community portals about existence of the <a href="https://mediawiki.org/wiki/Help:Pickle">mw:Help:Pickle</a></li>
+    <li>☑ Mark introduction and core pages at <a href="https://mediawiki.org/wiki/Help:Pickle/Help:Pickle">mw:Help:Pickle</a> for translation as early as possible, these pages gives a lot of necessary information</li>
+    <li>☐ Write a monthly newsletter for the wikitech mailing list, mostly about technical progress</li>
+    <li>☐ Write a non-techie newsletter for the biggest wikimedia projects' community portals when the extension has the first on-wiki running tests for the examples (that is the extension is functional) and then make it monthly</li>
+</ul>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

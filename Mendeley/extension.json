@@ -1,0 +1,82 @@
+{
+	"name": "Mendeley",
+	"version": "0.2 beta",
+	"author": [
+		"Nischay Nahata",
+		"Wikiworks.com"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Mendeley",
+	"descriptionmsg": "mendeley-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"Mendeley": [
+			"i18n"
+		]
+	},
+	"APIModules": {
+		"pfmendeley": "PFMendeleyAutocompleteAPI"
+	},
+	"SpecialPages": {
+		"MendeleyImport": "SpecialMendeleyImport"
+	},
+	"AutoloadClasses": {
+		"SpecialMendeleyImport": "SpecialMendeleyImport.php",
+		"MendeleyHooks": "Mendeley.hooks.php",
+		"PFMendeleyInput": "PF_MendeleyInput.php",
+		"PFMendeleyInputDOI": "PFMendeleyInputDOI.php",
+		"PFMendeleyAutocompleteAPI": "PFMendeleyAutocompleteAPI.php",
+		"Mendeley": "Mendeley.php",
+		"MendeleyImportJob": "MendeleyImportJob.php"
+	},
+	"config": {
+		"MendeleyConsumerKey": null,
+		"MendeleyConsumerSecret": null,
+		"MendeleyToken": null,
+		"MendeleyRefreshToken": null,
+		"MendeleyTemplate": "Article",
+		"MendeleyTemplateFields": [],
+		"MendeleyTemplateFieldsMapDelimiter": ";",
+		"MendeleyPageFormula": null,
+		"MendeleyRedirectUrl": null,
+		"MendeleyFieldValuesDelimiter": " ",
+		"MendeleyAppendFieldValuesDelimiter": "/",
+		"MendeleyReplaceUnderscores": false,
+		"MendeleyOverwriteTemplateOnly": false,
+		"MendeleyImportPageLimit": 500,
+		"MendeleyUseJobs": false
+	},
+	"ExtensionMessagesFiles": {
+		"MendeleyHooksMagic": "Mendeley.i18n.magic.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"MendeleyHooks::onParserFirstCallInit"
+		],
+		"PageForms::FormPrinterSetup": [
+			"MendeleyHooks::onFormPrinterSetup"
+		]
+	},
+	"ResourceModules": {
+		"ext.mendeley.main": {
+			"styles": [
+				"libs/PF_MendeleyInput.css"
+			],
+			"scripts": [
+				"libs/PF_MendeleyInput.js"
+			],
+			"dependencies": [
+				"jquery.ui.tooltip",
+				"jquery.ui.autocomplete"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Mendeley"
+	},
+	"JobClasses": {
+		"MendeleyImportJob": "MendeleyImportJob"
+	},
+	"manifest_version": 1
+}

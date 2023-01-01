@@ -1,0 +1,24 @@
+.wwb-jobs-message { position:relative; }
+
+.ww-reload-button-container {
+	position:absolute; background:transparent;
+	height:16px; width:16px; top:1px; right:3px;
+}
+.ww-reload-button { 
+	display:inline-block; vertical-align:middle;
+	height:16px; width:16px;
+	/* IE < 8 Hacks borrowed wholesale from jquery.spinner.css */
+	zoom:1; *display:inline;
+}
+.ww-reload-button-unbroken {
+	/* @embed */ background:transparent url(images/ww-reload-gray.png); 
+}
+.ww-reload-button:hover {
+	/* @embed */ background:transparent url(images/ww-reload-black.png);
+}
+.ww-reload-button-broken {
+	/* @embed */ background:transparent url(images/ww-reload-broken-gray.png); 
+}
+.ww-reload-button-broken:hover {
+	/* @embed */ background:transparent url(images/ww-reload-broken-black.png);
+}

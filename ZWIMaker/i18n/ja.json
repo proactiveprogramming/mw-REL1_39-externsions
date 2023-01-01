@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"mzwi-action": "ZWI書き出し",
+	"mzwi-desc": "現在のページをZWIに変換してブラウザーに送る"
+}

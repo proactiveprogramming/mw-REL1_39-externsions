@@ -1,0 +1,35 @@
+[
+    {
+        "id": 3000,
+        "name": "Property",
+        "content": true,
+        "visualeditor": false,
+        "searchdefault": true,
+        "talksearchdefault": false,
+        "subpages": false,
+        "talksubpages": true,
+        "includable": true,
+        "talkincludable": false,
+        "aliases": ["Properties"],
+        "talkaliases": ["Properties talk"],
+        "editpermissions": [],
+        "talkeditpermissions": ["propertymanagers"]
+    },
+    {
+        "id": 3002,
+        "name": "Human Resources",
+        "talkname": "Human Resources discussion",
+        "content": false,
+        "visualeditor": true,
+        "searchdefault": true,
+        "talksearchdefault": false,
+        "subpages": true,
+        "talksubpages": true,
+        "includable": true,
+        "talkincludable": false,
+        "aliases": ["HR"],
+        "talkaliases": ["Human Resources discussion", "HR discussion"],
+        "editpermissions": ["hrstaff"],
+        "talkeditpermissions": ["hrmanagers"]
+    }
+]

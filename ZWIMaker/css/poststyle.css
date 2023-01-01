@@ -1,0 +1,49 @@
+.goog-te-gadget-simple {
+         font-size: 14px !important;
+
+}
+
+
+#google_translate_element img
+        {
+            display: none !important;
+        }
+
+
+
+.mw-editsection-bracket {
+    margin: auto; 
+}
+
+.mw-editsection {
+        text-align: center;
+        margin: auto;	
+        font-size: 14px;
+	margin-left: 5px;
+}
+
+
+/* mouse over link */
+.mw-editsection a:hover {
+  color: hotpink;
+}
+
+
+
+.footerseek {
+   position:fixed;
+   bottom:0;
+   width:100%;
+   height:50px;   /* Height of the footer */
+   background-color: #343a40;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   color: white;
+   padding-top: 10px; 
+}
+
+.footerseek a {
+    color: white;
+}
+

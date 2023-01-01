@@ -1,0 +1,71 @@
+@import "skins/shared/mixins/background-opacity";
+@import "skins/shared/mixins/border-opacity";
+@import 'extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-variables/index';
+@import 'extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-mixins/index';
+
+// See touchScreen.scss for modified hover state styles
+
+// Video Thumbnails
+.video-thumbnail {
+	display: inline-block;
+	position: relative;
+
+	// play button styles
+	// defaults to 'medium' size
+	.thumbnail-play-icon-container {
+		@include flexbox();
+		@include align-items(center);
+		@include justify-content(center);
+
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.thumbnail-play-icon {
+		@include wds-player-icon-play($wds-player-icon-play-medium);
+	}
+
+	&.xsmall, &.xxsmall {
+		.thumbnail-play-icon {
+			@include wds-player-icon-play($wds-player-icon-play-tiny);
+		}
+	}
+
+	&.small {
+		.thumbnail-play-icon {
+			@include wds-player-icon-play($wds-player-icon-play-small);
+		}
+	}
+
+	&.large {
+		.thumbnail-play-icon {
+			@include wds-player-icon-play($wds-player-icon-play-large);
+		}
+	}
+
+	&.xlarge {
+		.thumbnail-play-icon {
+			@include wds-player-icon-play($wds-player-icon-play-xl);
+		}
+	}
+
+	img {
+		display: block;
+	}
+
+	.duration {
+		background: black;
+		border-radius: 1px 0 0 0;
+		bottom: 0;
+		color: white;
+		font-size: 11px;
+		line-height: 17px;
+		opacity: .7;
+		padding: 0px 6px;
+		position: absolute;
+		right: 0;
+	}
+}

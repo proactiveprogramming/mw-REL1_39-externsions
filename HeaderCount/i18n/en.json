@@ -1,0 +1,8 @@
+{
+    "@metadata": {
+        "authors": [
+            "Eli Foster <elifosterwy@gmail.com>"
+        ]
+    },
+    "headercount-desc": "An extension that adds a parser function to get the amount of headers or sections in a page."
+}

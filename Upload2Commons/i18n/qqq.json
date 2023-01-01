@@ -1,0 +1,33 @@
+{
+    "@metadata": {
+        "authors": [
+            "Antoine Lamielle"
+        ]
+    },
+    "upload2Commons": "The name of the extension",
+    "upload2Commons-desc": "{{desc|name=Upload2Commons|url=https://www.mediawiki.org/wiki/Extension:Upload2Commons}}",
+    "apihelp-upload-to-commons-summary": "{{doc-apihelp-summary|upload-to-commons}}",
+    "apihelp-upload-to-commons-extended-description": "{{doc-apihelp-extended-description|upload-to-commons}}",
+    "apihelp-upload-to-commons-example": "{{doc-apihelp-example|upload-to-commons}}",
+
+    "apihelp-upload-to-commons-param-localfilename": "{{doc-apihelp-param|upload-to-commons|localfilename}}",
+    "apihelp-upload-to-commons-param-filekey": "{{doc-apihelp-param|upload-to-commons|filekey}}",
+    "apihelp-upload-to-commons-param-filename": "{{doc-apihelp-param|upload-to-commons|filename}}",
+    "apihelp-upload-to-commons-param-comment": "{{doc-apihelp-param|upload-to-commons|comment}}",
+    "apihelp-upload-to-commons-param-tags": "{{doc-apihelp-param|upload-to-commons|tags}}",
+    "apihelp-upload-to-commons-param-text": "{{doc-apihelp-param|upload-to-commons|text}}",
+    "apihelp-upload-to-commons-param-ignorewarnings": "{{doc-apihelp-param|upload-to-commons|ignorewarnings}}",
+    "apihelp-upload-to-commons-param-removeafterupload": "{{doc-apihelp-param|upload-to-commons|removeafterupload}}",
+    "apihelp-upload-to-commons-param-logtags": "{{doc-apihelp-param|upload-to-commons|logtags}}",
+
+    "apierror-stashrequirefilename": "Error information in the API",
+    "apierror-removeonlystash": "Error information in the API",
+    "apierror-nolinkedaccount": "Error information in the API",
+	"apierror-cantdecoderequest": "Error information in the API",
+    "apierror-unknownerror-oauth": "Error information in the API",
+
+	"log-name-remoteupload": "The Special:Log log name that appears in the drop-down on the Special:Log page",
+	"log-description-remoteupload": "The Special:Log description that appears on the Special:Log page when you filter logs on this specific log name",
+	"logentry-remoteupload-stashedfile": "The template of the log entry message",
+	"logentry-remoteupload-file": "The template of the log entry message"
+}

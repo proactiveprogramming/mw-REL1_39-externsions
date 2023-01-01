@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"WGK.derdicke"
+		]
+	},
+	"titlesandtargets-desc": "Fügt zwei Parserfunktionen zum Ermitteln von Seitentiteln hinzu.",
+	"titlesandtargets-err1a": "#rdTitle: Fehlende Seiten-ID!",
+	"titlesandtargets-err1b": "#rdTitle: Fehlehafte Seiten-ID!",
+	"titlesandtargets-err1c": "#rdTitle: Seite existiert nicht!",
+	"titlesandtargets-err2a": "#rdTarget: Fehlender Seitenname!",
+	"titlesandtargets-err2b": "#rdTarget: Seite existiert nicht!",
+	"titlesandtargets-err2c": "#rdTarget: Keine Weiterleitung!",
+	"titlesandtargets-err2d": "#rdTarget: Weiterleitung nicht gefunden!"
+}

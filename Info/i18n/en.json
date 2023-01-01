@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Suriyaa Sundararuban\r */\r"
+		]
+	},
+	"info": "Display Page Info",
+	"descriptionmsg": "Adds a info tab on all normal pages, allowing for quick info displaying",
+	"info-failed": "Info failed"
+}

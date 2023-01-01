@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334"
+		]
+	},
+	"cbx-desc": "Upravljavec ogledovanja datotek PDF v slikovnem načinu",
+	"cbx-file-page-warning": "PDF je zapletena oblika, ki lahko v nekaterih primerih izpostavi nekatere vaše zasebne informacije. Prosimo, poskrbite, da imate svoj pregledovalnik PDF-jev varno konfiguriran.",
+	"cbx-file-page-warning-header": "Pomisleki o zasebnosti",
+	"cbx-file-page-warning-footer": "Zadeva se ne nanaša specifično na to datoteko, ampak je splošna težava datotečne oblike PDF.",
+	"cbx-file-page-warning-info": "Več informacij o zadevi.",
+	"pdf_no_metadata": "Ne morem pridobiti metapodatkov iz PDF",
+	"pdf_page_error": "Številka strani ni v dosegu",
+	"exif-pdf-producer": "Pretvorbeni program",
+	"exif-pdf-version": "Različica oblike PDF",
+	"exif-pdf-encrypted": "Šifrirano",
+	"exif-pdf-pagesize": "Velikost strani"
+}

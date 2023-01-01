@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Indus Asia",
+			"Jeblad",
+			"Mehtab ahmed"
+		]
+	},
+	"pickle-test-text-good": "پاس",
+	"pickle-test-text-pending": "ويچار هيٺ",
+	"pickle-test-text-missing": "کُٽل",
+	"pickle-test-text-unknown": "اڻڄاتل",
+	"pickle-console-run": "هلايو",
+	"pickle-report-case-is-ok-keyword": "ٺيڪ",
+	"pickle-report-case-is-not-ok-keyword": "ٺيڪ ناهي",
+	"pickle-report-adapt-is-ok-keyword": "ٺيڪ",
+	"pickle-report-adapt-is-not-ok-keyword": "ٺيڪ ناهي",
+	"pickle-adapt-process-first": "پھريون عنصر کڻو",
+	"pickle-adapt-process-second": "ٻيون عنصر کڻو",
+	"pickle-adapt-process-sixth": "ڇھون عنصر کڻو",
+	"pickle-adapt-process-eighth": "اَٺون عنصر کڻو",
+	"pickle-adapt-process-ninth": "نائون عنصر کڻو",
+	"pickle-adapt-process-tenth": "ڏهون عنصر کڻو",
+	"pickle-adapt-process-as-round": "ويجهي کان ويجهو صحيح عدد ڳوليو"
+}

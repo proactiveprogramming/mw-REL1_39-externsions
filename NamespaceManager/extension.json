@@ -1,0 +1,45 @@
+{
+    "name": "NamespaceManager",
+    "version": "0.4.2",
+    "author": [
+            "[https://github.com/mywikis MyWikis LLC]"
+    ],
+    "url": "https://github.com/mywikis/NamespaceManager",
+    "descriptionmsg": "namespacemanager-desc",
+    "license-name": "GPL-2.0",
+    "type": "other",
+    "requires": {
+        "MediaWiki": ">= 1.35.0"
+    },
+    "MessagesDirs": {
+        "NamespaceManager": [
+            "i18n"
+        ]
+    },
+    "Hooks": {
+        "CanonicalNamespaces": "NamespaceManagerHooks::onCanonicalNamespaces",
+        "MediaWikiServices": "NamespaceManagerHooks::onMediaWikiServices"
+    },
+    "AutoloadClasses": {
+        "NamespaceManager": "includes/NamespaceManager.php",
+        "NamespaceManagerHooks": "includes/NamespaceManagerHooks.php",
+        "SpecialManageNamespaces": "includes/SpecialManageNamespaces.php"
+    },
+    "config": {
+        "NamespaceManagerDataPath": {
+            "value": "data/namespaces.json"
+        }
+    },
+    "SpecialPages": {
+        "ManageNamespaces": "SpecialManageNamespaces"
+    },
+    "GroupPermissions": {
+        "sysop": {
+            "managenamespaces": true
+        }
+    },
+    "AvailableRights": [
+        "managenamespaces"
+    ],
+    "manifest_version": 2
+}

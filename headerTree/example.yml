@@ -1,0 +1,20 @@
+intro:
+  is: Introduction
+  attr:
+    class: intro
+
+question:
+  match: ^Question [0-9]+$
+  attr:
+    id: question-[COUNTER]
+    class: question
+
+answer:
+  is: Answer
+  attr:
+    class: answer
+
+code-color:
+  match: ^Code\s+(.*)$
+  attr:
+    class: code-$1

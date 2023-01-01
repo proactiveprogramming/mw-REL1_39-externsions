@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Shinjiman"
+        ]
+    },
+    "newduplicateusermessage-description": "響新用戶討論版度加一句訊息",
+    "newduplicateusermessage-edit-summary": "加[[{{int:newduplicateusermessage-template}}|歡迎訊息]]到新用戶討論版度"
+}

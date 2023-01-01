@@ -1,0 +1,49 @@
+@import 'skins/shared/color';
+@import "skins/shared/mixins/flexbox";
+@import '../components/variables';
+@import 'extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-mixins/index';
+
+.community-page-rail-module {
+	border-top: 1px solid $color-page-border;
+	margin-top: 18px;
+	position: relative;
+
+	.avatars {
+		@include flexbox();
+		@include justify-content(center);
+
+		height: 32px;
+		margin: 0;
+		position: absolute;
+		top: -16px;
+		width: 100%;
+	}
+
+	.wds-avatar-stack {
+		margin: 0;
+		max-width: 120px;
+	}
+
+	.wds-avatar {
+		@include wds-avatar(32px, $color-page-border, $color-page-border);
+
+		position: relative;
+	}
+
+	.content {
+		@include flexbox();
+		@include flex-direction(row);
+		@include justify-content(space-between);
+		@include align-items(center);
+
+		margin-top: 26px;
+	}
+
+	.description {
+		@include flex(1);
+
+		font-size: 14px;
+		line-height: 18px;
+		overflow: hidden;
+	}
+}

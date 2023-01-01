@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Cedric31"
+        ]
+    },
+    "newduplicateusermessage-description": "Apond un messatge dins la pagina de discussion d'un utilizaire novèl.",
+    "newduplicateusermessage-edit-summary": "Apond [[{{int:newduplicateusermessage-template}}|un messatge de benvenguda]] dins la pagina de discussion d’un utilizaire novèl"
+}

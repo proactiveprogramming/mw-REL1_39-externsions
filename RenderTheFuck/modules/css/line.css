@@ -1,0 +1,101 @@
+/* CSS for line */
+
+.render-the-fuck.rtf-line > g.legendIcon > circle {
+  stroke: #000000;
+  stroke-width: 1.0;
+}
+
+.render-the-fuck.rtf-line > g.legendText {
+  fill: #303030;
+  font-size: 90%;
+}
+
+.render-the-fuck.rtf-line > g.chart > rect {
+  fill: #ffffff;
+}
+
+.render-the-fuck.rtf-line > g.chart > rect.eventReceiver {
+  fill-opacity: 0;
+}
+
+.render-the-fuck.rtf-line > g.chart > path.axis {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1.5;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.xscale > line,
+.render-the-fuck.rtf-line > g.chart > g.yscale > line {
+  stroke: #000000;
+  stroke-width: 1.5;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.xscale > text,
+.render-the-fuck.rtf-line > g.chart > g.yscale > text {
+  fill: #000000;
+  font-size: 90%;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.xscale > text {
+  text-anchor: middle;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.yscale > text {
+  text-anchor: end;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.line > path {
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > line.focusedAxis {
+  fill: none;
+  stroke: #505050;
+  stroke-width: 1.5;
+  stroke-dasharray: 7, 3;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > text.focusedLabel {
+  fill: #505050;
+  text-anchor: middle;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedPoint {
+  fill: #ffffff;
+  stroke-width: 2.0;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedValueBorder {
+  fill: #ffffff;
+  fill-opacity: 0.5;
+  stroke-width: 2.0;
+}
+
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedValue {
+  dominant-baseline: central;
+}
+
+.render-the-fuck.rtf-line > g.legendIcon > circle:nth-child(5n+1) { fill: #0000a0; }
+.render-the-fuck.rtf-line > g.legendIcon > circle:nth-child(5n+2) { fill: #a00000; }
+.render-the-fuck.rtf-line > g.legendIcon > circle:nth-child(5n+3) { fill: #00a000; }
+.render-the-fuck.rtf-line > g.legendIcon > circle:nth-child(5n+4) { fill: #a05000; }
+.render-the-fuck.rtf-line > g.legendIcon > circle:nth-child(5n) { fill: #c0c000; }
+
+.render-the-fuck.rtf-line > g.chart > g.line > path:nth-child(5n+1) { stroke: #0000a0; }
+.render-the-fuck.rtf-line > g.chart > g.line > path:nth-child(5n+2) { stroke: #a00000; }
+.render-the-fuck.rtf-line > g.chart > g.line > path:nth-child(5n+3) { stroke: #00a000; }
+.render-the-fuck.rtf-line > g.chart > g.line > path:nth-child(5n+4) { stroke: #a05000; }
+.render-the-fuck.rtf-line > g.chart > g.line > path:nth-child(5n) { stroke: #c0c000; }
+
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedPoint > circle:nth-child(5n+1) { stroke: #0000a0; }
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedPoint > circle:nth-child(5n+2) { stroke: #a00000; }
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedPoint > circle:nth-child(5n+3) { stroke: #00a000; }
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedPoint > circle:nth-child(5n+4) { stroke: #a05000; }
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedPoint > circle:nth-child(5n) { stroke: #c0c000; }
+
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedValueBorder > rect:nth-child(5n+1) { stroke: #0000a0; }
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedValueBorder > rect:nth-child(5n+2) { stroke: #a00000; }
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedValueBorder > rect:nth-child(5n+3) { stroke: #00a000; }
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedValueBorder > rect:nth-child(5n+4) { stroke: #a05000; }
+.render-the-fuck.rtf-line > g.chart > g.focusedPosition > g.focusedValueBorder > rect:nth-child(5n) { stroke: #c0c000; }

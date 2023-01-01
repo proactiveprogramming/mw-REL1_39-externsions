@@ -1,0 +1,34 @@
+{
+	"name": "NBBC_BBCode",
+	"author": "Laird Shaw",
+	"url": "https://www.mediawiki.org/wiki/Extension:NBBC_BBCode",
+	"descriptionmsg": "nbbc_bbcode-desc",
+	"version": "1.0",
+	"AutoloadClasses": {
+		"NBBC_BBCode": "NBBC_BBCode_body.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"NBBC_BBCode::onParserFirstCallInit"
+		],
+		"ParserAfterParse": [
+			"NBBC_BBCode::onParserAfterParse"
+		]
+	},
+	"MessagesDirs": {
+		"NBBC_BBCode": [
+			"i18n"
+		]
+	},
+	"config": {
+		"NBBC_BBCode_ParseWithinTagOnly": {
+			"value": false,
+			"descriptionmsg": "nbbc_bbcode-config-parsewithintagonly",
+			"public": true
+		},
+		"manifest_version": 2
+	},
+	"license-name": "GPL-3.0+",
+	"type": "parserhook",
+	"manifest_version": 1
+}

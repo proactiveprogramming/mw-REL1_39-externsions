@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Esbardu"
+        ]
+    },
+    "newduplicateusermessage-description": "Añade un mensaxe a les páxines d'alderique d'usuariu creaes recién",
+    "newduplicateusermessage-edit-summary": "Añadiendo [[{{int:newduplicateusermessage-template}}|mensaxe de bienvenida]] a la nueva páxina d'alderique d'usuariu"
+}

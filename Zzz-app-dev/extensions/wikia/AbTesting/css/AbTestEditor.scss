@@ -1,0 +1,216 @@
+@import "skins/shared/color";
+@import "skins/shared/mixins/arrow";
+@import "skins/shared/mixins/clearfix";
+
+$abTesting-color-border: mix($color-page, $color-text, 30);
+$abTesting-color-hover: mix($color-page, $color-text, 80);
+$abTesting-color-text-warning: #c27500;
+
+.running {
+  color: #080;
+  font-weight: bold;
+
+  .tooltip-icon {
+    background: #080;
+  }
+}
+.scheduled {
+  color: #FFA500;
+  font-weight: bold;
+
+  .tooltip-icon {
+    background: #FFA500;
+  }
+}
+.not-running {
+// no change
+}
+
+.galegend .tooltip-icon {
+  padding: 2px;
+  border-radius: 50%;
+  color: white;
+  cursor: default;
+  display: inline-block;
+  font-size: 10px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin-top: -5px;
+  width: 12px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.AbTestingEditForm {
+	.input-group {
+		clear: none;
+		float: none;
+		display: inline-block;
+		width: 400px;
+		> .input-group {
+			width: 360px;
+		}
+		&.error {
+			color: $abTesting-color-text-warning;
+			.error-msg {
+				@include clearfix;
+				p {
+					color: $abTesting-color-text-warning;
+					padding: 5px 0;
+				}
+				button {
+					margin-right: 5px;
+				}
+			}
+		}
+		&.experiment-groups {
+			display: block;
+			border: 1px solid $abTesting-color-border;
+			margin: 10px 0;
+			width: 915px;
+			.input-group {
+				width: 300px;
+				input, textarea {
+					width: 280px;
+				}
+				select {
+					width: 296px;
+				}
+				&.ranges, &.value-dialog {
+					display: inline-block;
+					width: auto;
+				}
+				&.value-dialog {
+					.value-present-text {
+						display: none;
+						color: forestgreen;
+						font-weight: bold;
+					}
+					&.value-active {
+						.value-empty-text {
+							display: none;
+						}
+						.value-present-text {
+							display: inline;
+						}
+					}
+				}
+			}
+			.add-new .input-group.group-name {
+				width: 600px;
+			}
+			legend {
+				font-size: 14px;
+				font-weight: bold;
+				padding: 5px;
+			}
+		}
+		&.fullwidth {
+			display: block;
+			width: 800px;
+			textarea {
+				width: 800px;
+			}
+		}
+		&.general-errors {
+			border: 1px solid $abTesting-color-border;
+			margin-bottom: 10px;
+			padding: 5px;
+			width: 800px;
+		}
+		input, textarea {
+			width: 380px;
+		}
+		input[type=checkbox] {
+			width: auto;
+		}
+		select {
+			width: 396px;
+		}
+	}
+	.add-new {
+		border-top: 1px solid $abTesting-color-border;
+		margin-top: 5px;
+		padding-top: 5px;
+	}
+	.ui-datepicker {
+		margin-top: 5px;
+	}
+}
+
+.AbTestEditor {
+	width: 100%;
+	tr.collapsed + tr {
+		display: none;
+	}
+	tr.exp:hover, tr.exp:hover td {
+		background: $abTesting-color-hover;
+		cursor: pointer;
+	}
+	.arrow-nav {
+		width: 15px;
+	}
+	.arrow {
+		@include arrow(6px, $color-text);
+	}
+	.collapsed .arrow {
+		@include arrow(6px, $color-text, 'up');
+	}
+	.actions {
+		width: 50px;
+	}
+	.sprite, .sprite-small {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.WikiaTable {
+		margin: 0;
+		width: 100%;
+	}
+	.details > td {
+		margin: 0;
+		padding: 0 0 0 42px;
+	}
+	.exp-throbber {
+		min-height: 20px;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.versions.WikiaTable {
+		border-left-width: 1px;
+		border-left-style: solid;
+		th {
+			// override default .WikiaTable color
+			background: inherit;
+		}
+		tr:last-child td {
+			border-bottom: 0;
+		}
+	}
+	.exp-add td {
+		padding-left: 10px;
+	}
+}
+
+.textarea-editor {
+	textarea {
+		width: 100%;
+		height: 400px;
+	}
+	.buttons {
+		display: block;
+		margin: 10px 5px 5px;
+		text-align: right;
+	}
+}
+
+#ui-datepicker-div .ui-datepicker-buttonpane button {
+	line-height: normal;
+	&.ui-datepicker-current {
+		display: none;
+	}
+}

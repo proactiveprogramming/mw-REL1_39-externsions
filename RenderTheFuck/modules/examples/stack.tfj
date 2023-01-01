@@ -1,0 +1,29 @@
+{
+  "wtf": "stack",
+  "settings": {
+    "title": "Transmission"
+  },
+  "layers": [
+    {
+      "items": [
+        { "name": "Transmission (Gearbox)" }
+      ]
+    },
+    {
+      "items": [
+        { "name": "MT" },
+        { "name": "AT" }
+      ]
+    },
+    {
+      "items": [
+        { "name": "Typical MT" },
+        { "name": "Semi-automatic" },
+        { "name": "Double Clutch" },
+        { "name": "Typical AT", "parent": 1 },
+        { "name": "CVT", "parent": 1 },
+        { "name": "Epicyclic gearing", "parent": 1 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+language: php
+
+matrix:
+  fast_finish: true
+  include:
+    - env: DB=sqlite; MW=REL1_31; ECHO=REL1_31; PHPUNIT=6.5.*; SITELANG=ja
+      php: 7.1
+    - env: DB=sqlite; MW=REL1_31; ECHO=REL1_31; PHPUNIT=6.5.*; TYPE=coverage
+      php: 7.2
+
+install:
+  - bash ./tests/travis/install-mediawiki.sh
+  - bash ./tests/travis/install-semantic-notifications.sh
+
+script:
+  - bash ./tests/travis/run-tests.sh
+
+after_success:
+  - bash ./tests/travis/upload-coverage-report.sh
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+
+cache:
+  directories:
+    - $HOME/.composer/cache

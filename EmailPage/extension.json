@@ -1,0 +1,39 @@
+{
+	"name": "EmailPage",
+	"version": "2.5.1, 2021-02-13",
+	"author": [
+		"[http://www.organicdesign.co.nz/aran Aran Dunkley]",
+		"[http://absorto.dev/ Igor Absorto]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:EmailPage",
+	"descriptionmsg": "ea-desc",
+	"license-name": "GPL-2.0+",
+	"type": "specialpage",
+	"callback": "EmailPage::onRegistration",
+	"AutoloadClasses": {
+		"EmailPage": "EmailPage_body.php",
+		"SpecialEmailPage": "SpecialEmailPage.php"
+	},
+	"config": {
+		"EmailPageGroup":           "sysop",               "@": "Users must belong to this group to send emails (empty string means anyone can send)",
+		"EmailPageCss":             false,                 "@": "A minimal CSS page to embed in the email (eg. monobook/main.css without portlets, actions etc)",
+		"EmailPageAllowRemoteAddr": ["127.0.0.1"],         "@": "Allow anonymous sending from these addresses",
+		"EmailPageAllowAllUsers":   false,                 "@": "Whether to allow sending to all users (the \"user\" group)",
+		"EmailPageToolboxLink":     true,                  "@": "Add a link to the sidebar toolbox?",
+		"EmailPageActionLink":      true,                  "@": "Add a link to the actions links?",
+		"EmailPageSepPattern":      "|[\r\n ,;*]+|",       "@": "Regular expression for splitting emails",
+		"EmailPageNoLinks":         false,                 "@": "Change links in message to spans if set",
+		"EmailPageCharSet":         "utf-8",               "@": "Define the character set of the message. Either us-ascii, iso-8859-1 or utf-8."
+
+	},
+	"ExtensionMessagesFiles": {
+		"EmailPageAlias": "EmailPage.alias.php"
+	},
+	"MessagesDirs": {
+		"EmailPage": ["i18n"]
+	},
+	"SpecialPages": {
+		"EmailPage": "SpecialEmailPage"
+	},
+	"manifest_version": 1
+}

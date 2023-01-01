@@ -1,0 +1,58 @@
+{
+	"name": "WikiRating",
+	"version": "0.1.0",
+	"author": [
+		"Abhimanyu Singh Shekhawat",
+		"Alessandro Tundo"
+	],
+	"url": "https://github.com/WikiToLearn/WikiRating",
+	"descriptionmsg": "WikiRating-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses":{
+		"WikiRating" : "WikiRating.php",
+		"PageRatingApi" : "api/PageRatingApi.php",
+		"WikiRatingHooks" : "WikiRating.hooks.php",
+		"SpecialWikiRating" : "specials/SpecialWikiRating.php",
+		"WikiRatingRestClient" : "WikiRatingRestClient.php"
+	},
+	"config": {
+		"WikiRatingNamespaces" : [2800],
+		"WikiRatingRestApi" : "http://wikirating:8080/"
+	},
+	"APIModules": {
+		"pagerating" : "PageRatingApi"
+	},
+	"ExtensionMessagesFiles": {
+		"WikiRatingAlias": "WikiRating.i18n.alias.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": ""
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"WikiRatingHooks::onBeforePageDisplay"
+		]
+	},
+	"MessagesDirs": {
+		"WikiRating": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.WikiRating": {
+			"position": "top",
+			"scripts":[
+				"modules/WikiRating.js",
+				"modules/WikiRating.widget.js"
+			],
+			"styles": [],
+			"messages": [],
+			"dependencies": []
+		}
+	},
+	"SpecialPages": {
+		"WikiRating": "SpecialWikiRating"
+	},
+	"manifest_version": 1
+}

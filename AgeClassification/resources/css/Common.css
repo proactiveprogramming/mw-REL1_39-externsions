@@ -1,0 +1,17 @@
+/* CSS placed here will be applied to all skins */
+
+#p-ageclassification .portlet {
+	margin: 0;
+	width: auto;
+}
+#p-ageclassification .body,
+#p-ageclassification .pBody {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	text-align: center;
+}
+#p-ageclassification img {
+	height: auto;
+	width: 100%;
+}

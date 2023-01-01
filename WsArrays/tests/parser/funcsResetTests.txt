@@ -1,0 +1,45 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarrayreset
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayReset parser function
+
+!! test
+Unset array
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayprint:example}}
+{{#complexarrayreset:example}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+<p><br />
+</p>
+!! end
+
+!! test
+Unset multiple arrays
+!! wikitext
+{{#complexarraydefine:example1|a,b,c}}
+{{#complexarraydefine:example2|d,e,f}}
+{{#complexarrayreset:}}
+{{#complexarrayprint:example1}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+</p><p><br />
+</p>
+!! end
+
+!! test
+Unset non-existent array
+!! wikitext
+{{#complexarrayreset:example123}}
+!! html
+!! end

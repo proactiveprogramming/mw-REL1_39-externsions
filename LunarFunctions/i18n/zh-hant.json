@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"lunarfunc_desc": "提供計算農曆功能",
+	"lunarfunc_format_error": "錯誤：無效的格式。",
+	"lunarfunc_time_error": "錯誤：無效時間。",
+	"lunarfunc_time_too_long": "錯誤：過多 #lunar 呼叫。",
+	"lunarfunc_time_too_big": "錯誤：#lunar 支援上限為 2100 年。",
+	"lunarfunc_time_too_small": "錯誤：#lunar 支援下限為 1900 年。",
+	"lunarfunc_gan":"甲,乙,丙,丁,戊,己,庚,辛,壬,癸",
+	"lunarfunc_colors":"青,青,紅,紅,黃,黃,白,白,黑,黑",
+	"lunarfunc_wuXing":"木,木,火,火,土,土,金,金,水,水",
+	"lunarfunc_zhiWuxing":"水,土,木,木,土,火,火,土,金,金,土,水",
+	"lunarfunc_zhi":"子,丑,寅,卯,辰,巳,午,未,申,酉,戌,亥",
+	"lunarfunc_animals":"鼠,牛,虎,兔,龍,蛇,馬,羊,猴,雞,狗,豬",
+	"lunarfunc_solarTerm":"小寒,大寒,立春,雨水,驚蟄,春分,清明,穀雨,立夏,小滿,芒種,夏至,小暑,大暑,立秋,處暑,白露,秋分,寒露,霜降,立冬,小雪,大雪,冬至",
+	"lunarfunc_weekdayAlias":"日,一,二,三,四,五,六,七,八,九,十",
+	"lunarfunc_dateAlias":"初,十,廿,卅",
+	"lunarfunc_monthAlias":"正,二,三,四,五,六,七,八,九,十,冬,臘",
+	"lunarfunc_constellations":"魔羯,水瓶,雙魚,白羊,金牛,雙子,巨蟹,獅子,處女,天秤,天蠍,射手,魔羯"
+}

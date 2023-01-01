@@ -1,0 +1,28 @@
+{
+	"name": "wikibase-solutions/semantic-structured-discussions",
+	"type": "mediawiki-extension",
+	"description": "Adds semantic annotations to Structured Discussions topics",
+	"keywords": [
+		"mediawiki",
+		"semantic",
+		"semantic-mediawiki"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Extension:Semantic_Structured_Discussions",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Marijn van Wezel",
+			"homepage": "https://marijn.it/",
+			"role": "Original author"
+		}
+	],
+	"support": {
+		"email": "info@wikibase.nl"
+	},
+	"require": {
+		"php": ">=7.4.0"
+	},
+	"config": {
+		"process-timeout": 600
+	}
+}

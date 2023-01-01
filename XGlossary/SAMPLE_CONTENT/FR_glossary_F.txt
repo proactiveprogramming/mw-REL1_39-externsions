@@ -1,0 +1,10 @@
+{{#glossary_entry:
+ |langs=FR
+ |title=Fichier Blender
+ |ref=fichier blender
+ |syns=(langs=EN;title=Blender File;ref=blender file)
+ |dict=(langs=FR;term=fichier \(de\) Blender;usage=4), (langs=EN;term=Blender file)
+ |shortdesc=Il s’agit d’un fichier binaire contenant tout un ensemble de scènes et autres (méta)données, dans le format natif de Blender (un genre de base de données).
+ |longdesc=Notez que les fichiers Blender ne stockent pas uniquement les données “utiles”, mais également les dispositions d’écran, les réglages, et ainsi de suite…
+ }}
+

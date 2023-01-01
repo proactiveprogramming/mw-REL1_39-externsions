@@ -1,0 +1,8 @@
+{{#glossary_entry:
+ |langs=EN
+ |title=Displacement Mapping
+ |ref=displacement mapping
+ |shortdesc=Displacement mapping is a technique to create relief on smooth surfaces, by displacing its vertices.
+ |longdesc=It uses a greyscale heightmap, like {{Glossary/Link|ref=bump mapping|txt=Bump Mapping}}, but the image is used to physically move the vertices of the mesh at render time. This is of course only useful if the mesh has large amounts of vertices, but the (relatively) new {{Literal|Simple Subdiv}} subsurf option allows you to add more vertices at render time which will be moved by the displacement. This makes it much slower than Bump Mapping, as there need to be many more faces to render, but it is much more realistic.
+ }}
+

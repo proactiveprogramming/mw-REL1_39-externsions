@@ -1,0 +1,97 @@
+@import "skins/shared/color";
+@import "skins/shared/mixins/box-shadow";
+@import "skins/shared/mixins/clearfix";
+
+
+.UserStatsMenu {
+	background: $color-page;
+	display: none;
+	font-size: 12px;
+
+	.info {
+		@include clearfix;
+		background: $color-menu-highlight;
+		line-height: 15px;
+		padding: 5px;
+		position: relative;
+
+		img {
+			border: 1px solid $color-page-border;
+			float: left;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			margin-left: 32px;
+
+			li {
+				line-height: 15px;
+				margin: 0;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+
+			.username {
+				font-size: 13px;
+				font-weight: bold;
+				margin-bottom: 2px;
+			}
+		}
+	}
+
+	.actions {
+		ul {
+			list-style: none;
+			margin: 5px 0;
+
+			li {
+				color: $color-links;
+				margin: 0;
+				padding: 5px 10px;
+				line-height: 16px;
+				white-space: nowrap;
+
+				a {
+					color: $color-links;
+					display: block;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+				.label {
+					padding-left: 5px;
+				}
+
+				&:hover {
+					background-color: $color-menu-highlight;
+				}
+
+				&.private {
+					cursor: pointer;
+				}
+
+				svg{
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
+
+		.separator {
+			margin: 5px;
+			border: 0;
+			border-top: $color-page-border 1px solid;
+		}
+	}
+}
+.popover .UserStatsMenu {
+	display: block;
+}
+.ChatWindow .UserStatsMenu {
+	@include box-shadow(0, 0, 12px, $color-body);
+	border: 3px solid $color-body;
+	position: absolute;
+	z-index: 100;
+}

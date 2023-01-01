@@ -1,0 +1,33 @@
+<!-- Wikia Beacon Tracking -->
+<script>
+	require(['wikia.trackingOptIn'], function (trackingOptIn) {
+		trackingOptIn.pushToUserConsentQueue(function (optIn) {
+			function getCookieValue(cookieName) {
+				var cookieSplit = ('; ' + document.cookie).split('; ' + cookieName + '=');
+
+				return cookieSplit.length === 2 ? cookieSplit.pop().split(';').shift() : null;
+			}
+
+			var script = document.createElement('script'),
+				utma = getCookieValue('__utma'),
+				utmb = getCookieValue('__utmb'),
+				trackUrl;
+
+			trackUrl = "{{{url}}}" + ((typeof document.referrer != "undefined") ? "&r=" + encodeURIComponent(document.referrer) : "") +
+					"&rand=" + (new Date).valueOf() + (window.beacon_id ? "&beacon=" + window.beacon_id : "") +
+					(utma && utma[1] ? "&utma=" + utma[1] : "") + (utmb && utmb[1] ? "&utmb=" + utmb[1] : "") +
+					'&session_id=' + window.sessionId + '&pv_unique_id=' + window.pvUID + '&pv_number=' + window.pvNumber +
+					'&pv_number_global=' + window.pvNumberGlobal;
+
+			if (optIn) {
+				{{!-- window.wgTrackID isn't available yet as this script is inlined at the top --}}
+				trackUrl += '&u=' + '{{trackID}}';
+			} else {
+				trackUrl += '&u=-1';
+			}
+
+			script.src = trackUrl;
+			document.head.appendChild(script);
+		});
+	});
+</script>

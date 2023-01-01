@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"列维劳德"
+		]
+	},
+	"apihelp-ratepage-summary": "让用户可以为页面投票，获取页面的评分。这需要指定两个参数中的一个：页面 id 或页面标题。",
+	"apihelp-ratepage-param-pageid": "页面 ID",
+	"apihelp-ratepage-param-pagetitle": "页面标题",
+	"apihelp-ratepage-param-answer": "用户页面评分 (默认总共有从 1 分到 5 分，可以通过结构设置修改)",
+	"apihelp-ratepage-param-contest": "竞赛标识符",
+	"apihelp-ratepage-example-1": "获取例子页面目前的评分，",
+	"apihelp-ratepage-example-2": "给例子页面评 2 分。"
+}

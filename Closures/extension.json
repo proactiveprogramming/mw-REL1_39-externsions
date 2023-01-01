@@ -1,0 +1,47 @@
+{
+	"manifest_version": 2,
+	"name": "Closures",
+	"namemsg": "closures-name",
+	"type": "parserhook",
+	"author": [
+		"Marijn van Wezel"
+	],
+	"version": "1.1.0",
+	"url": "https://www.mediawiki.org/wiki/Extension:Closures",
+	"descriptionmsg": "closures-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"platform": {
+			"php": ">= 7.4"
+		}
+	},
+	"MessagesDirs": {
+		"Closures": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ClosuresMagic": "Closures.i18n.php"
+	},
+	"AutoloadNamespaces": {
+		"Closures\\": "src/"
+	},
+	"ServiceWiringFiles": [
+		"wiring/ClosuresServiceWiring.php"
+	],
+	"Hooks": {
+		"ParserFirstCallInit": "ParserFirstCallInit",
+		"ParserOptionsRegister": "ParserOptionsRegister"
+	},
+	"HookHandlers": {
+		"ParserFirstCallInit": {
+			"class": "Closures\\HookHandler\\ParserFirstCallInitHookHandler",
+			"services": [ "ClosureStore" ]
+		},
+		"ParserOptionsRegister": {
+			"class": "Closures\\HookHandler\\ParserOptionsRegisterHookHandler",
+			"services": [ "Parser","ClosureStore" ]
+		}
+	}
+}

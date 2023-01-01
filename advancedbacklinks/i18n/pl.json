@@ -1,0 +1,36 @@
+{
+  "@metadata": {
+    "authors": [
+      "Ostrzyciel"
+    ]
+  },
+  "advancedBacklinks": "Advanced Backlinks",
+  "advancedBacklinks-desc": "Poszerza możliwości śledzenia linkujących o linki bezpośrednie.",
+  "advancedbacklinks": "Zaawansowane linkujące",
+  "advancedBacklinks-wikitext-only": "Tylko linki bezpośrednie",
+  "advancedBacklinks-wikitext-only-tooltip": "Pokaż tylko strony linkujące bezpośrednio w wikitekście, ingorując szablony",
+  "advancedBacklinks-nowikitextlinkshere": "Żadna strona nie odwołuje się bezpośrednio do <strong>$2</strong>.",
+  "advancedBacklinks-nowikitextlinkshere-ns": "Żadna strona nie odwołuje się bezpośrednio do <strong>$2</strong> w wybranej przestrzeni nazw.",
+  "advancedBacklinks-linksheredirectly": "Następujące strony odwołują się bezpośrednio do <strong>$2</strong>:",
+  "advancedBacklinks-invalid-template": "Brakujący szablon",
+  "advancedBacklinks-through-transclusion": "przez szablon",
+  "wikitextwantedpages": "Najpotrzebniejsze strony według linków bezpośrednich",
+  "wikitextlonelypages": "Osierocone strony według linków bezpośrednich",
+  "advancedBacklinks-lonelypagestext": "Do poniższych stron nie linkuje bezpośrednia żadna inna strona lub nie są one dołączone do innych stron w {{GRAMMAR:MS.lp|{{SITENAME}}}}.",
+  "specialpages-group-advancedBacklinks": "Zaawansowane linkujące",
+  "wikitextcontentlonelypages": "Osierocone strony według linków bezpośrednich ze stron w przestrzeniach treści",
+  "advancedBacklinks-contentlonelypagestext": "Do poniższych stron nie linkuje bezpośrednia żadna inna strona w przestrzeni treści lub nie są one dołączone do innych stron w przestrzeni treści na {{GRAMMAR:MS.lp|{{SITENAME}}}}.",
+  "advancedBacklinks-disambig": "ujednoznacznienie",
+  "whatlinkshere-hidedisambigs": "$1 ujednoznacznienia",
+  "mostwikitextlinked": "Strony najczęściej linkowane w wikitekście ",
+  "mostwikitextlinkedfiles": "Pliki najczęściej używane w wikitekście ",
+  "undesiredredlinks": "Niepożądane redlinki",
+  "prefs-advancedbacklinks": "Zaawansowane linkujące",
+  "advancedBacklinks-pref-change-link": "Linkuj w pasku bocznym do <i>Specjalna:Zaawansowane linkujace</i> zamiast do <i>Specjalna:Linkujące</i>",
+  "apihelp-query+ab_linkstats-summary": "Statystyki linków z/do strony",
+  "apihelp-query+ab_linkstats-param-directonly": "Tylko linki bezpośrednie",
+  "apihelp-query+ab_linkstats-param-contentonly": "Tylko linki z/do przestrzeni treści",
+  "apihelp-query+ab_linkstats-param-redirects": "Dolicz również przekierowania",
+  "apihelp-query+ab_linkstats-param-throughredirects": "Licz również linki przez przekierowania (domyślnie włączone)",
+  "abusefilter-edit-builder-vars-back-templatelinks": "Liczba stron transkludujących tę stronę"
+}

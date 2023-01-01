@@ -1,0 +1,236 @@
+@import "skins/shared/mixins/box-shadow";
+@import "skins/shared/mixins/clearfix";
+@import "skins/shared/color";
+
+$color: #000; // was removed from /skins/shared/mixins/box-shadow
+
+$thumb-size-width: 130px;
+$thumb-size-height: 115px;
+$thumb-border-top: 4px;
+$thumb-border-bottom: 5px;
+$thumb-border-left: 5px;
+$thumb-border-right: 6px;
+$details-fg-color: $color-button-text;
+$details-bg-color: $color-buttons;
+$color: #000;
+
+$color-inctive-button: mix($color-page, #000, 60%);
+@if lightness($color-page) < 50 {
+	$color-inctive-button: lighten($color-inctive-button, 25%);
+}
+
+@if lightness($color-page) < 80 {
+	$color: lighten($color, 20%);
+}
+
+.category-gallery-form {
+	margin-bottom: 10px;
+	text-align: right;
+
+	a {
+		vertical-align: middle;
+	}
+
+	.wikia-menu-button {
+
+		li {
+			float: none;
+		}
+	}
+}
+
+.category-gallery {
+	position: relative;
+	width: 100%;
+	margin: 6px auto;
+	padding: 0;
+	overflow: hidden;
+	clear: both;
+
+	.category-gallery-holder {
+		width: 1600px;
+
+		.category-gallery-room1 {
+			vertical-align: top;
+			border: 0;
+			display: inline-block;
+			position: relative;
+			width: 670px;
+		}
+
+		.category-gallery-room2 {
+			vertical-align: top;
+			border: 0;
+			display: inline-block;
+			width: 670px;
+			position: relative;
+		}
+
+	}
+
+	br {
+		position: relative;
+		float: left;
+		display: block;
+		width: 100%;
+		clear: both;
+	}
+
+	hr {
+		$color: a3a3a3;
+		@include clearfix;
+		display: block;
+		position: relative;
+		float: left;
+
+		width: 100%;
+		border-top: 1px solid $color;
+		border-width: 1px 0 0 0;
+		height: 1px;
+	}
+}
+
+.category-gallery-item {
+	position: relative;
+	display: inline-block;
+	width: $thumb-size-width + $thumb-border-left + $thumb-border-right;
+	margin: 10px;
+	height: $thumb-size-height + $thumb-border-top + $thumb-border-bottom + 16px;
+	vertical-align: top;
+
+	a, a:hover, a:visited {
+		color: $color-text;
+		text-decoration: none;
+		display: block;
+	}
+
+	div.category-gallery-placeholder {
+		display: block;
+		padding: $thumb-border-top $thumb-border-right $thumb-border-bottom $thumb-border-left;
+		width: $thumb-size-width;
+		height: $thumb-size-height;
+		background-image: url('/extensions/wikia/CategoryExhibition/img/Icon_category_content.png'); /* $wgResourceBasePath */
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	img {
+		@include box-shadow(0, 0, 5px, mix($color-page, #000, 60%));
+		position: absolute;
+		padding: $thumb-border-top $thumb-border-right $thumb-border-bottom $thumb-border-left;
+		background-color: $color-page;
+	}
+
+	.snippet {
+		@include box-shadow(0, 0, 5px, mix($color-page, #000, 60%));
+		position: absolute;
+		padding: $thumb-border-top $thumb-border-right $thumb-border-bottom $thumb-border-left;
+		width: $thumb-size-width;
+		height: $thumb-size-height;
+		overflow: hidden;
+		background-color: $color-page;
+
+		.quote {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 40px;
+			color: $color-text;
+			position: absolute;
+			display: block;
+			left: 7px;
+			top: 17px;
+			padding: 0;
+		}
+
+		.text {
+			font-family: Helvetica, Arial, sans-serif; /* overriden in Monaco */
+			font-style: normal;
+			font-size: 13px;
+			font-weight: bold;
+			color: $color-text;
+			position: relative;
+			display: block;
+			margin: 0;
+			padding: 13px 0 0 24px;
+			line-height: 17px;
+			height: 85px;
+			overflow: hidden;
+		}
+	}
+
+	.title {
+		background-color: $details-bg-color;
+		border-bottom-right-radius: 9px;
+		border-top-right-radius: 9px;
+		color: $details-fg-color;
+		display: inline-block;
+		font-size: 11px;
+		font-weight: normal;
+		line-height: 16px;
+		margin-top: $thumb-size-height + $thumb-border-top - 9px;
+		max-height: 32px;
+		max-width: $thumb-size-width + 5px;
+		overflow: hidden;
+		padding: 3px 5px 3px;
+		position: relative;
+	}
+}
+
+.category-gallery-media {
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	width: $thumb-size-width + $thumb-border-left + $thumb-border-right;
+	margin: 5px 10px 10px;
+	vertical-align: top;
+	text-align: center;
+
+	a, a:hover, a:visited {
+		color: $color-links;
+		text-decoration: none;
+		display: block;
+	}
+
+	a > img {
+		@include box-shadow(0, 0, 5px, mix($color-page, #000, 60%));
+		padding: $thumb-border-top $thumb-border-right $thumb-border-bottom $thumb-border-left;
+		background-color: $color-page;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.title {
+		position: relative;
+		text-align: left;
+		display: block;
+		font-size: 11px;
+		padding: 4px;
+		margin: 0;
+		max-height: 11px;
+		overflow: hidden;
+		width: $thumb-size-width + $thumb-border-left + $thumb-border-right;
+	}
+
+	.title.bigger {
+		height: 24px;
+
+		a {
+			display: inline;
+		}
+	}
+
+	span.category-gallery-placeholder {
+		display: block;
+		padding: $thumb-border-top $thumb-border-right $thumb-border-bottom $thumb-border-left;
+		width: $thumb-size-width;
+		height: $thumb-size-height;
+		background-image: url('/extensions/wikia/CategoryExhibition/img/Icon_category_content.png'); /* $wgResourceBasePath */
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.category-gallery-paginator {
+	position: relative;
+	height: 50px;
+}

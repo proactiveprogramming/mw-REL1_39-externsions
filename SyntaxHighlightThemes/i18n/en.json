@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nathan Kuenzig"
+		]
+	},
+	"syntaxhighlight-themes-desc": "Allows users to choose between various Syntax Highlighting themes",
+	"prefs-sytaxhighlight-theme-label": "Syntax Highlighting Theme"
+}

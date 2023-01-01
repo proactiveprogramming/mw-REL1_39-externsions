@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"katsa-desc": "Овозможува шпиони за употреба во Lua-модули",
+	"katsa-carp-final": "Се јави Крап",
+	"katsa-cluck-final": "Се јави Клук",
+	"katsa-croak-final": "Се јави Крек",
+	"katsa-confess-final": "Се јави Исповед"
+}

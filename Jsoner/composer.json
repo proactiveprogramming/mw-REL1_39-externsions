@@ -1,0 +1,44 @@
+{
+	"name": "noris/jsoner",
+	"authors": [
+		{
+			"name": "Jonas Gröger",
+			"email": "jonas.groeger@noris.de",
+			"role": "Developer"
+		},
+		{
+			"name": "Andreas Fink",
+			"email": "andreas.fink@noris.de",
+			"role": "Developer"
+		}
+	],
+	"type": "mediawiki-extension",
+	"license": "GPL-3.0",
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*",
+		"jakub-onderka/php-parallel-lint": "0.9.*",
+		"mediawiki/mediawiki-codesniffer": "0.6.*"
+	},
+	"scripts": {
+		"test": [
+			"phpunit tests/",
+			"parallel-lint . --exclude vendor",
+			"phpcs -p -s"
+		]
+	},
+	"require": {
+		"php": ">=5.6",
+		"ext-curl": "*",
+		"ext-fileinfo": "*",
+		"ext-intl": "*",
+		"ext-mbstring": "*",
+		"league/uri": "4.1.*",
+		"rwillians/stingray": "^2.0",
+		"composer/installers": "~1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"jsoner\\": ["src/", "tests/util"]
+		}
+	}
+}

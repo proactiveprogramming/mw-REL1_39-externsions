@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "AS",
+            "Максим Підліснюк"
+        ]
+    },
+    "newduplicateusermessage-description": "Додає повідомлення на сторінку обговорення новоствореного користувача",
+    "newduplicateusermessage-edit-summary": "Додавання [[{{int:newduplicateusermessage-template}}|привітання]] на сторінку обговорення нового користувача"
+}

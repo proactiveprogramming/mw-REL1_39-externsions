@@ -1,0 +1,18 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+      - php
+  fixme:
+    enabled: true
+  phpmd:
+    enabled: true
+ratings:
+  paths:
+  - "**.php"
+exclude_paths:
+  - "**/vendor/"     # We don't take responsibility for vendored code as long as it works
+  - "RDFIO.i18n.php" # The i18n file contains mostly just strings, which looks like repeated code, but isn't
+  - "**/tests/"      # Tests should simple and repeated code, which can give "false warnings"

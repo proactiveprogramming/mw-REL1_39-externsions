@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"katsa-desc": "Dèje spie pe l'ause jndr'à le module Lua",
+	"katsa-carp-final": "Chiamate de Carp",
+	"katsa-cluck-final": "Chiamate de Cluck",
+	"katsa-croak-final": "Chiamate de Croak",
+	"katsa-confess-final": "Chiamate de Confess"
+}

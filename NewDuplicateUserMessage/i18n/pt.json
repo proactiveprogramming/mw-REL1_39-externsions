@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Malafaya"
+        ]
+    },
+    "newduplicateusermessage-description": "Adiciona uma mensagem às páginas de discussão de novos utilizadores",
+    "newduplicateusermessage-edit-summary": "Adicionado [[{{int:newduplicateusermessage-template}}|mensagem de boas-vindas]] à página de discussão do novo utilizador"
+}

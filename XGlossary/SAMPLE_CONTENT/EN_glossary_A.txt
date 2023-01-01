@@ -1,0 +1,160 @@
+{{#glossary_entry:
+ |langs=EN
+ |title=AC3D
+ |ref=ac3d
+ |shortdesc=A software for building 3-Dimensional digital models and to texture them (UVmapping).
+ |longdesc=Relatively inexpensive, it has its own file format (<code>.ac</code>), which Blender can import and export.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Action
+ |ref=action
+ |shortdesc=An “action” is a group of {{Literal|Object}} or {{Literal|Shape}} Ipos, defined in an {{Literal|Action Editor}} window, which allows you only to edit the ''position'' of the keyframes, '''not''' their value.
+ |longdesc=This way, you can create actions like a walking cycle, turning the head, etc., that you will then use in the {{Literal|NLA Editor}} window. See [[Doc:Manual/Animation/Armatures/The Action Editor|this page]] for more info.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=“Action” actuator
+ |ref=action actuator
+ |shortdesc=The {{Literal|Action}} actuator provides an interface for controlling action playback in the game engine. {{Literal|Action}} actuators can only be created on armature objects.
+ |longdesc=See [[Doc:Manual/Game Engine/Logic/Actuators/Action|{{Literal|Action}} actuator]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=“Action Editor” window
+ |ref=action editor window
+ |shortdesc=This window allows you to edit actions in Blender.
+ |longdesc=See [[Doc:Manual/Animation/Armatures/The Action Editor|this page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Active
+ |ref=active
+ |shortdesc=Blender makes a distinction between selected and active. Only one object or item can be active at any given time, for example to allow visualization of data in buttons.
+ |longdesc=In {{Literal|Object}} mode, the active object (in general, the last selected) is shown in a lighter pink than selected ones. When no object is selected, there is still an active one (its center remains pink), in general the last one deselected. See [[Doc:Manual/Modelling/Objects/Selecting|this page]] for more info.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Actuator
+ |ref=actuator
+ |shortdesc=An actuator is a logic brick of the game engine, that acts like a muscle of a lifeform. It can move the object, or also make a sound…
+ |longdesc=See also [[Doc:Manual/Game Engine/Logic/Actuators|this page]], and the {{Glossary/Link|ref=logic brick|txt=Logic Brick}} and {{Glossary/Link|ref=blender game engine|txt=Game Engine}} entries.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=“Add” menu
+ |ref=add menu
+ |shortdesc=A menu item on the {{Literal|User Preference}} header. It allows you to add primitive objects to your scene.
+ |longdesc=If in {{Literal|Object}} mode, a new object is created each time. If in {{Literal|Edit}} mode, the primitive is added ''inside'' the edited (active) object. See also [[Doc:Manual/3D interaction/Navigating/3D View Usage#Add|this page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Artificial Intelligence (AI)
+ |ref=artificial intelligence
+ |shortdesc=Computer programs developed to mimic human intelligence, such as reasoning, learning, problem-solving, and making decisions.
+ |longdesc=Artificial intelligence programs enable computers to perform tasks such as playing chess, proving mathematical theorems, etc.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Alpha Channel
+ |ref=alpha channel
+ |shortdesc=Additional channel in 2D image for transparency.
+ |longdesc=In an image element (a pixel) which stores a color, an additional value is stored for the alpha channel, containing a value between 0.0 (full transparency) and 1.0 (completely opaque). In a Blender render, a value of 0.0 means that the pixel does not have any coverage information, i.e. there was no color contribution from any geometry because the geometry did not overlap this pixel. A value of 1.0 means that the pixel is fully opaque because the geometry completely overlapped the pixel.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Ambient Light
+ |ref=ambient light
+ |shortdesc=It’s light that doesn’t seem to come from a specific source, but is just there in the world.
+ |longdesc=Look under the desk -&nbsp;it’s pretty dark, but there’s some light there. In the real world, this is caused by stray photons bouncing around and occasionally ricocheting under the desk. Ambient light is basic, minimal amount of light in the whole scene. Adding too much ambient light makes a scene look washed out. Since the light doesn’t come from anywhere, all sides of an object are illuminated equally, and it won’t create any shading on it.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Animation
+ |ref=animation
+ |shortdesc=Simulation of motion. Blender can output video animations as well as real time animations.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Animation (Buttons)
+ |ref=animation buttons
+ |shortdesc=Sub-context of the {{Literal|Scene}} context ({{Shortcut|F10}}).
+ |longdesc=In this sub-context, you can set the start and end frames of an animation, slow it down or accelerate its tempo, set the frame rate, force Blender’s 3D view playback to be in sync with the frame rate, even if it must drop frames… Useful for pacing the animation to the audio.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Ambient Occlusion (AO)
+ |ref=ambient occlusion
+ |shortdesc=It simulates a huge dome light surrounding the entire scene. If a surface point is under a foot or table, it will end up much darker than the top of someone’s head or the tabletop.
+ |longdesc=A ratio of how much ambient light a surface point would be likely to receive, based on how much “sky” it can “see”.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Append
+ |ref=append
+ |shortdesc=Full copy in a host .blend file of one or more datablocks taken in another .blend file.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Architectural Design
+ |ref=architectural design
+ |shortdesc=Using Blender 3D to design architecture (including houses and similar constructions).
+ |longdesc=See the [[Dev:Ref/Uses/Architecture|Architecture page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Area
+ |ref=area
+ |dict=(langs=EN;term=area;usage=1;note=Try to avoid its use!)
+ |shortdesc=Traditionally, an area in Blender is any sub-window, like the 3D view, the text editor, the Ipo window…
+ |longdesc=Very few people use that term nowadays, so try to avoid its use!
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Armature
+ |ref=armature
+ |dict=(langs=EN;term=armature;usage=4;note=The tech term in Blender.), (langs=EN;term=skeleton;usage=3;note=Prefer using “armature”.)
+ |syns=(langs=EN;title=Skeleton;ref=skeleton)
+ |shortdesc=A single-member class of primitive object that allows to control/deform other objects (often meshes), generally to animate them. It is made of “bones”.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Automerge
+ |ref=automerge
+ |shortdesc=An editing mode working with the snap tool, which removes the doubles when you snap 2 vertices or more.
+ |longdesc={{Literal|Mesh}} menu&nbsp;→ {{Literal|AutoMerge Editing}}. See also the [[Doc:Manual/Modelling/Meshes/Snap to Mesh|Snap-tool page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Autostart
+ |ref=autostart
+ |shortdesc=Automatically start the game (like pressing {{Shortcut|P}}) when opening the .blend file?
+ |longdesc={{Literal|User Preference}} menu&nbsp;→ {{Literal|Game}}&nbsp;→ {{Literal|Autostart}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Axis
+ |ref=axis
+ |shortdesc=A reference line.
+ |longdesc='''1.''' The geometry of Blender’s world is defined by three orthogonal axes, x-axis, y-axis, and z-axis. They are shown as red, green, and blue lines, respectively, in the 3D View. Their mutual intersection defines the position of the origin of the global coordinate system in Blender. In this Cartesian-derived system, a 3D position is defined in terms of its offset from these axes.<br />'''2.''' Each object (or simultaneously selected set of objects) has its own, local axes that are orthogonal to each other and to the sides of the object’s bounding box. Local axes are invisible, unless you enable their drawing ({{Literal|Object}} context&nbsp;→ {{Literal|Object}} sub-context&nbsp;→ {{Literal|Draw}} panel&nbsp;→ {{Literal|Axis}} button). If toggled on, the [[Doc:Manual/3D interaction/Manipulation/Manipulators|Transform Manipulator]] resides on the operational center of the object, and its arrows by default parallel the global axes. However, a {{Literal|Local}} mode can be selected from the {{Literal|Orientation}} dropdown list on the 3D View header. When in this mode, the arrows of the Transform Manipulator will coincide with the local axes of the object, and manipulations (transformations) in either {{Literal|Object}} or {{Literal|Edit}} mode will occur with respect to these local object axes.<br />'''3.''' A set of small axes in the lower left corner of the 3D Viewport acts as an orientation monitor. Its arrows always parallel global axes, regardless of view and even in free-roaming view. The arrow heads point in the positive direction along each global axis.
+ }}
+

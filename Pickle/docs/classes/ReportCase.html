@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pickle documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Pickle</h1>
+
+<ul>
+  <li><a href="../mw.pickle.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Metamethods">Metamethods</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Adapt.html">Adapt</a></li>
+  <li><a href="../classes/Bag.html">Bag</a></li>
+  <li><a href="../classes/Case.html">Case</a></li>
+  <li><a href="../classes/Counter.html">Counter</a></li>
+  <li><a href="../classes/Double.html">Double</a></li>
+  <li><a href="../classes/Extractor.html">Extractor</a></li>
+  <li><a href="../classes/Extractors.html">Extractors</a></li>
+  <li><a href="../classes/Spy.html">Spy</a></li>
+  <li><a href="../classes/Translator.html">Translator</a></li>
+  <li><a href="../classes/Translators.html">Translators</a></li>
+  <li><a href="../classes/Render.html">Render</a></li>
+  <li><a href="../classes/RenderAdapt.html">RenderAdapt</a></li>
+  <li><a href="../classes/RenderAdaptCompact.html">RenderAdaptCompact</a></li>
+  <li><a href="../classes/RenderAdaptFull.html">RenderAdaptFull</a></li>
+  <li><a href="../classes/RenderAdaptVivid.html">RenderAdaptVivid</a></li>
+  <li><a href="../classes/RenderCase.html">RenderCase</a></li>
+  <li><a href="../classes/RenderCaseCompact.html">RenderCaseCompact</a></li>
+  <li><a href="../classes/RenderCaseFull.html">RenderCaseFull</a></li>
+  <li><a href="../classes/RenderCaseVivid.html">RenderCaseVivid</a></li>
+  <li><a href="../classes/Renders.html">Renders</a></li>
+  <li><a href="../classes/Report.html">Report</a></li>
+  <li><a href="../classes/ReportAdapt.html">ReportAdapt</a></li>
+  <li><strong>ReportCase</strong></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Pickle.html">Pickle</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/activities.md.html">Activities</a></li>
+  <li><a href="../topics/adapt.md.html">Adapt</a></li>
+  <li><a href="../topics/call-style.md.html">Call style</a></li>
+  <li><a href="../topics/change-log.md.html">Log</a></li>
+  <li><a href="../topics/databases.md.html">Databases</a></li>
+  <li><a href="../topics/dataflow.md.html">Dataflow</a></li>
+  <li><a href="../topics/hello-world.md.html">Hello World</a></li>
+  <li><a href="../topics/lua-classes.md.html">Lua classes</a></li>
+  <li><a href="../topics/musings.md.html">Musings</a></li>
+  <li><a href="../topics/page-indicators.md.html">Page indicators</a></li>
+  <li><a href="../topics/sources.md.html">Sources</a></li>
+  <li><a href="../topics/spies.md.html">Spies</a></li>
+  <li><a href="../topics/statistics.md.html">Statistics</a></li>
+  <li><a href="../topics/test-anything-protocol.md.html">Test anything protocol</a></li>
+  <li><a href="../topics/test-case.md.html">Test Case</a></li>
+  <li><a href="../topics/test-doubles.md.html">Test doubles</a></li>
+  <li><a href="../topics/testing.md.html">Testing</a></li>
+  <li><a href="../topics/tracking-categories.md.html">Tracking categories</a></li>
+  <li><a href="../topics/translatewiki.md.html">Translatewiki</a></li>
+  <li><a href="../topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="../topics/vscode-extensions.md.html">VScode extension</a></li>
+  <li><a href="../topics/vscode-snippets.md.html">VScode snippets</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/HelloWorld.pickle.nb.lua.html">HelloWorld.pickle.nb.lua</a></li>
+  <li><a href="../examples/HelloWorld.lua.html">HelloWorld.lua</a></li>
+  <li><a href="../examples/HelloWorld.pickle.lua.html">HelloWorld.pickle.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>ReportCase</code></h1>
+<p>Subclass for reports.</p>
+<p> This class follows the pattern with inheritance from
+ <a href="../topics/lua-classes.md.html">Lua classes</a>.</p>
+
+
+<h2><a href="#Metamethods">Metamethods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:__index">ReportCase:__index (key)</a></td>
+	<td class="summary">Lookup of missing class members.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:create">ReportCase:create (...)</a></td>
+	<td class="summary">Create a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:_init">ReportCase:_init (...)</a></td>
+	<td class="summary">Initialize a new instance.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:setName">ReportCase:setName (name)</a></td>
+	<td class="summary">Set name of case.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:hasName">ReportCase:hasName ()</a></td>
+	<td class="summary">Check if the report has name.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:getName">ReportCase:getName ()</a></td>
+	<td class="summary">Get the name of report.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:constituents">ReportCase:constituents ()</a></td>
+	<td class="summary">Export the constituents as an multivalue return.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:numConstituents">ReportCase:numConstituents ()</a></td>
+	<td class="summary">Get the number of constituents.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:addConstituent">ReportCase:addConstituent (part)</a></td>
+	<td class="summary">Add a constituent.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:addConstituents">ReportCase:addConstituents (...)</a></td>
+	<td class="summary">Add several constituents.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:isOk">ReportCase:isOk ()</a></td>
+	<td class="summary">Check if the instance state is ok.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:hasSkip">ReportCase:hasSkip ()</a></td>
+	<td class="summary">Check if the instance has any member in skip state.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:hasTodo">ReportCase:hasTodo ()</a></td>
+	<td class="summary">Check if the instance has any member in todo state.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:setDescription">ReportCase:setDescription ([str=''])</a></td>
+	<td class="summary">Set the description.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:getDescription">ReportCase:getDescription ()</a></td>
+	<td class="summary">Get the description.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:hasDescription">ReportCase:hasDescription ()</a></td>
+	<td class="summary">Check if the instance has any description member.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#ReportCase:realize">ReportCase:realize (renders, lang, counter)</a></td>
+	<td class="summary">Realize the data by applying a render.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Metamethods"></a>Metamethods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ReportCase:__index"></a>
+    <strong>ReportCase:__index (key)</strong>
+    </dt>
+    <dd>
+    Lookup of missing class members.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         lookup of member
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        any
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "ReportCase:create"></a>
+    <strong>ReportCase:create (...)</strong>
+    </dt>
+    <dd>
+    Create a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         forwarded to <a href="../classes/Report.html#Report:create">superclass create method</a>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../classes/Report.html#Report:create">Report:create</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:_init"></a>
+    <strong>ReportCase:_init (...)</strong>
+    </dt>
+    <dd>
+    Initialize a new instance.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         pushed to constituents
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:setName"></a>
+    <strong>ReportCase:setName (name)</strong>
+    </dt>
+    <dd>
+    Set name of case.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a> or <span class="type">message</span></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:hasName"></a>
+    <strong>ReportCase:hasName ()</strong>
+    </dt>
+    <dd>
+    Check if the report has name.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:getName"></a>
+    <strong>ReportCase:getName ()</strong>
+    </dt>
+    <dd>
+    Get the name of report.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a> or <span class="type">message</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:constituents"></a>
+    <strong>ReportCase:constituents ()</strong>
+    </dt>
+    <dd>
+    Export the constituents as an multivalue return.
+ Note that each constituent is not unwrapped.
+
+
+
+    <h3>Returns:</h3>
+
+        list of constituents
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:numConstituents"></a>
+    <strong>ReportCase:numConstituents ()</strong>
+    </dt>
+    <dd>
+    Get the number of constituents.
+
+
+
+    <h3>Returns:</h3>
+
+        number of constituents
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:addConstituent"></a>
+    <strong>ReportCase:addConstituent (part)</strong>
+    </dt>
+    <dd>
+    Add a constituent.
+ Note: there are no checking of arguments!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">part</span>
+            <span class="types"><span class="type">any</span></span>
+         that can be a constituent
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:addConstituents"></a>
+    <strong>ReportCase:addConstituents (...)</strong>
+    </dt>
+    <dd>
+    Add several constituents.
+ Note: there are no checking of arguments!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         list of parts that can be constituents
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:isOk"></a>
+    <strong>ReportCase:isOk ()</strong>
+    </dt>
+    <dd>
+    Check if the instance state is ok.
+ Note that initial state is "not ok".
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+        state
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:hasSkip"></a>
+    <strong>ReportCase:hasSkip ()</strong>
+    </dt>
+    <dd>
+    Check if the instance has any member in skip state.
+ This will reject all case constituents from the analysis.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+        that is set if any constituent has a skip note
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:hasTodo"></a>
+    <strong>ReportCase:hasTodo ()</strong>
+    </dt>
+    <dd>
+    Check if the instance has any member in todo state.
+ This will reject all case constituents from the analysis.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+        that is set if any constituent has a skip note
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:setDescription"></a>
+    <strong>ReportCase:setDescription ([str=''])</strong>
+    </dt>
+    <dd>
+    Set the description.
+ This is an accessor to set the member.
+ Note that all arguments will be wrapped up in a table before saving.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         that will be used as the description
+         (<em>default</em> '')
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+    <h3>Raises:</h3>
+    on wrong arguments
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:getDescription"></a>
+    <strong>ReportCase:getDescription ()</strong>
+    </dt>
+    <dd>
+    Get the description.
+ This is an accessor to get the member.
+ Note that the saved structure will be unpacked before being returned.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        used as the description
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:hasDescription"></a>
+    <strong>ReportCase:hasDescription ()</strong>
+    </dt>
+    <dd>
+    Check if the instance has any description member.
+
+
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">boolean</span></span>
+        that is set if a description exist
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ReportCase:realize"></a>
+    <strong>ReportCase:realize (renders, lang, counter)</strong>
+    </dt>
+    <dd>
+    Realize the data by applying a render.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">renders</span>
+            <span class="types"><a class="type" href="../classes/Renders.html#">Renders</a></span>
+         to use while realizing the reports
+        </li>
+        <li><span class="parameter">lang</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         holding the language code
+        </li>
+        <li><span class="parameter">counter</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="../classes/Counter.html#">Counter</a></span>
+         holding the running count
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

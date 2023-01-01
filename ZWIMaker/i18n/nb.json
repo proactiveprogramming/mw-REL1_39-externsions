@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"mzwi-action": "ZWI-eksport",
+	"mzwi-desc": "Konverterer nåværende side til ZWI og sender den til nettleseren"
+}

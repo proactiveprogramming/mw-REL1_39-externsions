@@ -1,0 +1,71 @@
+{
+  "name": "WikiSearchFront",
+  "author": "Robis Koopmans",
+  "version": "2.0.4",
+  "url": "https://www.wikibase-solutions.com",
+  "descriptionmsg": "wikisearchfront-desc",
+  "license-name": "GPL-2.0-or-later",
+  "type": "parserhook",
+  "MessagesDirs": {
+    "WikiSearchFront": [
+      "i18n"
+    ]
+  },
+  "requires": {
+    "MediaWiki": ">= 1.27.0",
+    "extensions": {
+      "WikiSearch": "*"
+    }
+  },
+  "ResourceModules": {
+    "ext.WikiSearchFront.module": {
+      "dependencies": [
+        "ext.WikiSearchFront.dependecies",
+        "moment"
+      ],
+      "scripts": [
+        "../dist/wikisearchfront.umd.min.js",
+        "init.js"
+      ],
+      "messages": [
+        "search",
+        "wikisearchfront-date-range-from",
+        "wikisearchfront-date-range-to",
+        "wikisearchfront-clear-all-filters",
+        "wikisearchfront-total",
+        "wikisearchfront-less",
+        "wikisearchfront-more",
+        "wikisearchfront-order",
+        "wikisearchfront-score",
+        "wikisearchfront-false",
+        "wikisearchfront-true",
+        "wikisearchfront-all",
+        "wikisearchfront-page",
+        "wikisearchfront-info"
+      ],
+      "styles": [
+        "../dist/wikisearchfront.css"
+      ]
+    },
+    "ext.WikiSearchFront.dependecies": {
+      "scripts": [
+        "vue.min.js",
+        "i18n.js"
+      ]
+    }
+  },
+  "AutoloadNamespaces": {
+    "WikiSearchFront\\": "includes/"
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "module",
+    "remoteExtPath": "WikiSearchFront/module"
+  },
+  "AutoloadClasses": {
+    "WikiSearchFrontHooks": "includes/WikiSearchFrontHooks.php"
+  },
+  "Hooks": {
+    "WikiSearchOnLoadFrontend": "WikiSearchFront\\WikiSearchFrontHooks::onWikiSearchOnLoadFrontend"
+  },
+  "manifest_version": 2
+}

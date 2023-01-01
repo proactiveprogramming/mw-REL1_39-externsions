@@ -1,0 +1,98 @@
+/**
+  * File: MOCA_Toolbar_Style.css
+  *
+  * Description: CSS classes for semantic wizard
+  *
+  * @author Chrysovalanto Kousetti
+  * @email valanto@gmail.com
+  *
+  */
+
+
+.smwi_add_category_toolbar_table {
+	table-layout: auto;	
+	/*background: rgb(216,226,241);*/
+	background: white;
+	/*border: medium solid rgb(21,104,217);*/
+	width: 100%;
+}
+
+.smwi_add_category_success_toolbar_table {
+	table-layout: auto;	
+	/*background: rgb(216,226,241);*/
+	background: white;
+	/*border: medium solid rgb(21,104,217);*/
+	width: 60%;
+}
+
+.smwi_add_category_title {
+	color: rgb(21,104,217);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.smwi_add_relation_toolbar_table {
+	table-layout: auto;	
+	/*background: rgb(235,202,236);*/
+	background: white;
+	/*border: medium solid rgb(128,15,66);*/
+	width: 100%;
+}
+
+.smwi_add_relation_success_toolbar_table {
+	table-layout: auto;	
+	/*background: rgb(235,202,236);*/
+	background: white;
+	/*border: medium solid rgb(128,15,66);*/
+	width: 60%;
+}
+
+.smwi_add_relation_title {
+	color: rgb(128,15,66);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.smwi_add_relation_text {
+	color: rgb(128,15,66);
+	font-size: 12px;
+}
+
+.smwi_add_property_toolbar_table {
+	table-layout: auto;	
+	/*background: rgb(184,241,188);*/
+	background: white;
+	/*border: medium solid rgb(10,133,81);*/
+	width: 100%;
+}
+
+.smwi_add_property_success_toolbar_table {
+	table-layout: auto;	
+	/*background: rgb(184,241,188);*/
+	background: white;
+	/*border: medium solid rgb(10,133,81);*/
+	width: 60%;
+}
+
+.smwi_add_property_title {
+	color: rgb(10,133,81);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.smwi_add_property_text {
+	color: rgb(10,133,81);
+	font-size: 12px;
+}
+
+.smwi_added_successfully {
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(0,128,0);
+}
+
+.smwi_added_failed {
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(100,0,0);
+}

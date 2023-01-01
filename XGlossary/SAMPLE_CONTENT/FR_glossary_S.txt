@@ -1,0 +1,10 @@
+{{#glossary_entry:
+ |langs=FR
+ |title=Sous-contexte
+ |ref=sous contexte
+ |syns=(langs=EN;title=Sub-Context;ref=sub context)
+ |dict=(langs=FR;term=sous-contexte), (langs=EN;term=sub-context)
+ |shortdesc=Une subdivision d’un contexte.
+ |longdesc=Par exemple, le {{Glossary/Link|ref=contexte|txt=contexte}} {{Literal|Shading}} ({{Shortcut|F5}}) dispose de cinq sous-contextes&nbsp;: {{Literal|Lamp}}, {{Literal|Material}}, {{Literal|Texture}}, {{Literal|Radiosity}} et {{Literal|World}}…
+ }}
+

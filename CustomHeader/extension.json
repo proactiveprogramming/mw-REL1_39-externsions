@@ -1,0 +1,27 @@
+{
+	"name": "CustomHeader",
+	"author": "Brent Laabs (Labster)",
+	"version": "1.0",
+	"url": "https://github.com/Miraheze/CustomHeader",
+	"descriptionmsg": "customheader-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "skin",
+	"AutoloadClasses": {
+		"CustomHeaderHooks": "CustomHeader.php"
+	},
+	"Hooks": {
+		"SkinTemplateOutputPageBeforeExec": "CustomHeaderHooks::onSkinTemplateOutputPageBeforeExec"
+	},
+	"MessagesDirs": {
+		"CustomHeader": [
+			"i18n"
+		]
+	},
+	"config": {
+	    "CustomHeaderHTML": {
+		    "public": true,
+		    "value": false
+	    }
+	},
+	"manifest_version": 2
+}

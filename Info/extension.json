@@ -1,0 +1,13 @@
+{
+	"name": "Info",
+	"version": "2.0.0",
+	"author": "Suriyaa Sundararuban",
+	"url": "https://www.mediawiki.org/wiki/Extension:Info",
+	"description": "Adds a info tab on all normal pages, allowing for quick info displaying",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,39 @@
+@media (max-width: 480px) {
+      .ba_mobile_ad {
+         display: block;
+      }
+      .ba_desktop_ad {
+         display: none;
+      }
+}
+
+@media (min-width: 480px) {
+      .ba_mobile_ad {
+         display: none;
+      }
+      .ba_desktop_ad {
+         display: block;
+      }
+}
+
+.ba_fixed_bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+}
+.ba_fixed_bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+#splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:white;
+	z-index:2000;
+}

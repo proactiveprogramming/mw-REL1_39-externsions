@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "M. Falda"
+        ]
+    },
+    "propChainsHelper": "Property Chains Helper",
+    "propChainsHelper-desc": "Form for supporting the specification of property chains",
+    "special-propChainsHelper-title": "Property Chains Helper",
+    "special-propChainsHelper-intro": "Specify a category and the properties separated by ', '; criteria can be specified by using comparison operators ('=', '>', '<', ..., '<>': different,; '~': like, '!~': not like, possibly with wildcards). Then prepare the query and the property chains to reference them appropriately will be added."
+}

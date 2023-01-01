@@ -1,0 +1,19 @@
+{	"@metadata": {
+		"authors": [
+			"Julian Hocker",
+			"Patrick Schmelmer"
+		]
+	},
+	"desc": "This extension shows data from wikidata",
+	"website": "Website",
+	"adress": "Adress",
+	"gndlink": "GND link",
+	"image": "Image",
+	"instance": "Instance",
+	"founded": "Founded",
+	"names": "Names",
+	"wikipedia": "Wikipedia page",
+	"map": "Map",
+	"language": "en",
+	"operator": "operator"
+}

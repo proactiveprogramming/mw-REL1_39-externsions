@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ostrzyciel"
+        ]
+    },
+    "markImages": "The name of the extension",
+    "markImages-desc": "{{desc|name=MarkImages|url=https://gitlab.com/nonsensopedia/markimages}}",
+    "markImages-classes-label": "Label for CSS classes list in info=action."
+}

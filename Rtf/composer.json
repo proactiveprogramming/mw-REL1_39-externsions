@@ -1,0 +1,29 @@
+{
+    "name": "huntertur/mw-rtf",
+    "type": "mediawiki-extension",
+    "description": "MediaWiki extension for Rich Text Format support",
+    "keywords": [
+        "wiki",
+        "MediaWiki",
+        "extension",
+        "RTF"
+    ],
+    "homepage": "https://gitlab.com/huntertur/mw-rtf",
+    "readme": "README.md",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Hunter Turcin",
+            "email": "huntertur@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "prepend-autoloader": false
+    },
+    "require": {
+        "composer/installers": "^1.0.1",
+        "jstewmc/rtf": "0.5.2"
+    }
+}

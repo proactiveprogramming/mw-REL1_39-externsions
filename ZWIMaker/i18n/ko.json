@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"아라"
+		]
+	},
+	"mzwi-action": "Pdf 내보내기",
+	"mzwi-desc": "ZWI로 현재 문서를 변환하고 브라우저로 보냅니다"
+}

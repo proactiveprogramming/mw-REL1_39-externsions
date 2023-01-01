@@ -1,0 +1,87 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraypusharray
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayPushArray parser function
+
+!! test
+Test push two one-dimensional arrays
+!! wikitext
+{{#complexarraydefine:foo|a,b,c}}
+{{#complexarraydefine:bar|d,e,f}}
+{{#complexarraypusharray:foobar|foo|bar}}
+{{#complexarrayprint:foobar}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul></li>
+<li>1
+<ul><li>d</li>
+<li>e</li>
+<li>f</li></ul></li></ul>
+
+!! end
+
+!! test
+Test push one one-dimensional arrays
+!! wikitext
+{{#complexarraydefine:foo|a,b,c}}
+{{#complexarraypusharray:example|foo}}
+!! html
+<p><span class="error">You must provide at least two arrays</span>
+</p>
+!! end
+
+!! test
+Test push two non-existent arrays
+!! wikitext
+{{#complexarraydefine:aaa|a,b,c}}
+{{#complexarraypusharray:example|aaa|bbb}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul></li></ul>
+
+!! end
+
+!! test
+Test push two non-existent arrays 2
+!! wikitext
+{{#complexarraypusharray:example|ccc|ddd}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+!! end
+
+!! test
+Test push three arrays
+!! wikitext
+{{#complexarraydefine:a|a}}
+{{#complexarraydefine:b|b}}
+{{#complexarraydefine:c|c}}
+{{#complexarraypusharray:d|a|b|c}}
+{{#complexarrayprint:d}}
+!! html
+<p><br />
+</p><p><br />
+</p>
+<ul><li>0
+<ul><li>a</li></ul></li>
+<li>1
+<ul><li>b</li></ul></li>
+<li>2
+<ul><li>c</li></ul></li></ul>
+
+!! end

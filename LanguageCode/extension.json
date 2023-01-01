@@ -1,0 +1,23 @@
+{
+  "name": "LanguageCode",
+  "author": "Pierre Rudloff",
+  "url": "https://github.com/Archi-Strasbourg/mediawiki-language-code",
+  "description": "Magic words that display the current user or page language code",
+  "type": "parserhook",
+  "license-name": "GPL-3.0",
+  "version": "1.0.0",
+  "Hooks": {
+    "ParserGetVariableValueSwitch": [
+      "LanguageCode\\LanguageCode::getMagicWord"
+    ],
+    "MagicWordwgVariableIDs": [
+      "LanguageCode\\LanguageCode::registerMagicWord"
+    ]
+  },
+  "AutoloadClasses": {
+    "LanguageCode\\LanguageCode": "LanguageCode.php"
+  },
+  "ExtensionMessagesFiles": {
+    "LanguageCodeMagic": "LanguageCode.i18n.magic.php"
+  }
+}

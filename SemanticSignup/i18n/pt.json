@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fernandofelippe",
+			"Hamilton Abreu",
+			"Jkb8",
+			"Vitorvicentevalente"
+		]
+	},
+	"semanticsignup": "Semântica de Registo",
+	"ses-desc": "Permite o preenchimento da página de utilizador com dados semânticos na altura do registo",
+	"ses-nousername": "O nome de utilizador não foi especificado.",
+	"ses-noformname": "Ainda não foi especificado um formulário de inscrição. (consulte a configuração <var>\"$egSemanticSignupSettings\"</var> para obter informações sobre isto.)",
+	"ses-nobotname": "Não foi especificado um utilizador privilegiado (robô) para permitir a criação de novas contas de utilizador. (Veja a configuração <var>\"$egSemanticSignupSettings\"</var> para mais informações sobre isto).",
+	"ses-nopwdmatch": "A palavra-passe e a sua confirmação não correspondem.",
+	"ses-norealname": "O nome verdadeiro é necessário mas não foi especificado.",
+	"ses-userexists": "O utilizador já existe.",
+	"ses-emailfailed": "O envio do correio eletrónico de confirmação falhou.",
+	"ses-createforbidden": "O utilizador atual não está autorizado a criar contas.",
+	"ses-throttlehit": "Foi excedido o número máximo de criação de contas de utilizador por dia através deste endereço IP."
+}

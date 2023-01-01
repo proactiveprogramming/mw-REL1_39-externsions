@@ -1,0 +1,98 @@
+.sbl-breadcrumb-trail-boxed {
+	clear: both;
+	border:1px solid #AAAAAA;
+	background-color:#F9F9F9;
+	padding:5px;
+}
+
+.sbl-breadcrumb-trail-light {
+	color: #7D7D7D;
+	font-size: 84%;
+	line-height: 1.2em;
+	margin: 0 0 1.4em 0;
+	width: auto;
+}
+
+.sbl-breadcrumb-trail-light-boxed {
+	border: 1px solid rgb(238, 238, 238);
+	background: none repeat scroll 0 0 rgb(249, 249, 249);
+	color: rgb(119, 119, 119);
+	padding: 4px;
+	margin-bottom: 12px;
+}
+
+.sbl-breadcrumb-bootstrap {
+	padding: 8px 15px;
+	margin-bottom: 20px;
+	list-style: none;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+}
+
+.sbl-breadcrumb-slash-right:after, .sbl-breadcrumb-slash-left:before  {
+	padding: 0 5px 0 8px;
+	color: #ccc;
+	content: "/\00a0";
+}
+
+.sbl-breadcrumb-slash-location {
+	color: #777;
+}
+
+.sbl-breadcrumb-pipe-right:after, .sbl-breadcrumb-pipe-left:before  {
+	content: "|";
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 0.875em;
+}
+
+.sbl-breadcrumb-arrow-right {
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #AAAAAA;
+	display: inline-block;
+	position: relative;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.sbl-breadcrumb-arrow-left {
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #AAAAAA;
+	display: inline-block;
+	position: relative;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.sbl-breadcrumb-has-childern {
+	 font-style: italic;
+}
+
+.sbl-breadcrumb-children-list {
+	margin: .3em 0 0 0.6em;
+}
+
+/**
+ * @see the contentSub CSS, substract -1em to start from 0
+ */
+#contentSub #sbl-breadcrumbs {
+	font-size: 100%;
+	margin: 0.9em 0 1.4em -1em;
+}
+
+#contentSub span.subpages {
+	display: none;
+}
+
+/* SBL chameleon */
+.skin-chameleon .sbl-breadcrumb-children-list {
+    margin: .1em 0 0 -1.5em;
+}
+.skin-chameleon #contentSub #sbl-breadcrumbs {
+    margin: 0.9em 0 1.4em 0;
+}

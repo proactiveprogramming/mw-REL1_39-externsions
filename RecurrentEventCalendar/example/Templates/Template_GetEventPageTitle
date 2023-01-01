@@ -1,0 +1,94 @@
+<noinclude>
+This is "GetEventPageTitle" template returns the title for a specific new event page.
+
+It should be called in the following format:
+
+<pre>
+{{GetEventPageTitle|EventDate|EventCategory|EventType|EventTitle|EventContact|EventLocation}}
+</pre>
+
+Current possible matrix for Category/Type 
+
+ Attendance/Business trip
+ Attendance/Holiday
+ Attendance/Health
+ Attendance/Time in lieu
+ Attendance/Paid leave
+ Attendance/Solidarieta
+ Meeting/
+ Change management/Canvass
+ Change management/Bug fix
+ Change management/Hot fix
+ Change management/Cold deploy
+ Change management/Warm deploy
+ Maintenance/IP
+ Maintenance/UNIX
+ Maintenance/WIN
+ Maintenance/NTW
+ Maintenance/DB
+ Maintenance/Configuration
+ Maintenance/Data Cleaning
+ Maintenance/Manual procedure
+ Maintenance/Platforms matching
+ Maintenance/Recurrent activity
+ Incident/IP
+ Incident//UNIX
+ Incident//WIN
+ Incident//NTW
+ Incident//DB
+ Incident//APP
+ Task/
+ Others/
+
+Edit the page to see the template text.
+==Example==
+{{GetEventPageTitle|04/05/2014|Attendance|Business trip|Test title|Mik|Bucharest}}
+
+{{GetEventPageTitle|24/08/2014|Attendance|Holiday|Test title|Mik|}}
+
+{{GetEventPageTitle|24/08/2014|Meeting||Test title|Vik|Bucharest}}
+</noinclude><includeonly>{{#if: {{{3|}}}|{{{3|}}}|{{{2|}}}}} {{GetEventPageTitleDate|{{{1|}}}}} {{#switch: {{{2|}}}
+|Attendance={{#switch: {{{3|}}}
+|Holiday={{#if: {{{5|}}}|{{{5|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Health={{#if: {{{5|}}}|{{{5|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Time_in_lieu={{#if: {{{5|}}}|{{{5|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Paid_leave={{#if: {{{5|}}}|{{{5|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Solidarieta={{#if: {{{5|}}}|{{{5|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Business_trip={{#if: {{{6|}}}|{{{6|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}
+}}
+|Meeting={{#if: {{{4|}}}|{{{4|}}}}} {{#if: {{#replace:{{{6|}}}|,|}}|({{#replace:{{{6|}}}|,|}})}}
+|Task={{#if: {{{4|}}}|{{{4|}}}}}
+|Change_management={{#switch: {{{3|}}}
+|Canvass={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Bug_fix={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Hot_fix={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Cold_deploy={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Warm_deploy={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|{{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+}}
+|Maintenance={{#switch: {{{3|}}}
+|IP={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|UNIX={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|WIN={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|NTW={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|DB={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Configuration={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Data_Cleaning={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Manual_procedure={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Platforms_matching={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|Recurrent_activity={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|{{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+}}
+|Incident={{#switch: {{{3|}}}
+|IP={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|UNIX={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|WIN={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|NTW={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|DB={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|APP={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|{{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+}}
+|Others={{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+|{{#if: {{{4|}}}|{{{4|}}}|{{#seqnext:{{{2|}}}{{{3|}}}|000000|0}}}}
+}}</includeonly>

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"WGK.derdicke"
+		]
+	},
+	"titlesandtargets-desc": "Adds two parser functions to identify page titles.",
+	"titlesandtargets-err1a": "#rdTitle: Missing page ID!",
+	"titlesandtargets-err1b": "#rdTitle: Incorrect page ID!",
+	"titlesandtargets-err1c": "#rdTitle: Page does not exist!",
+	"titlesandtargets-err2a": "#rdTarget: Missing pagename!",
+	"titlesandtargets-err2b": "#rdTarget: Page does not exist!",
+	"titlesandtargets-err2c": "#rdTarget: No redirect!",
+	"titlesandtargets-err2d": "#rdTarget: Redirect not found!"
+}

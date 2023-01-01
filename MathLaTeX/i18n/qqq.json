@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jesse B. Dooley\r"
+		]
+	},
+	"mathlatex-desc": "{{desc}}",
+	"mathlatex_documentation": "The label for a link to documentation for a certain extension, whose name is passed in.\r\n{{Identical|Documentation}}",
+	"mathlatex_general": "{{Identical|General}}",
+	"right-mathlatex": "{{doc-right|mathlatex}}"
+}

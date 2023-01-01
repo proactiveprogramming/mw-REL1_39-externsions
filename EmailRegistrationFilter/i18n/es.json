@@ -1,0 +1,4 @@
+{
+	"emailregistrationfilter-desc": "Permite o prohibe que se registre una cuenta según su dirección de correo electrónico",
+	"emailregistrationfilter-default-error-msg": "Dirección de correo no permitida"
+}

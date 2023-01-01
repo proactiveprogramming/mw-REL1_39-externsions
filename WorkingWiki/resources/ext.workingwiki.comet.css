@@ -1,0 +1,76 @@
+/*
+.ww-comet-notification-lane {
+	position: fixed;
+	left: 20px;
+	bottom: 30px;
+	width: 100%;
+}
+
+.ww-comet-notification-outer-div {
+	width: 100%;
+	float: left;
+}
+*/
+
+.ww-comet-notification-div {
+	margin-top: 6px;
+	/*border: 1px solid grey;
+	background: #e0e0e0;
+	float: left;*/
+	font-family: monospace;
+	line-height: 1.35em;
+	height: 1.4em;
+	padding-bottom: 3px;
+	/*position: relative;*/
+	overflow-y: hidden;
+	overflow-x: visible;
+}
+
+.ww-comet-notification-div.ww-comet-expanded {
+	height: auto;
+}
+
+.ww-comet-expand-button {
+	height: 16px; width: 16px; display: inline-block;
+	/* @embed */ background: transparent url(images/arrow-collapsed-ltr.png);
+	margin-left: 0px; /* float: left; */
+	vertical-align: bottom;
+	margin-top: 1px;
+}
+
+.ww-comet-expand-button:hover {
+	/* @embed */ background: transparent url(images/arrow-collapsed-ltr-highlighted.png);
+}
+
+.ww-comet-expanded .ww-comet-expand-button {
+	/* @embed */ background: transparent url(images/arrow-expanded-upward.png);
+}
+
+.ww-comet-expanded .ww-comet-expand-button:hover {
+	/* @embed */ background: transparent url(images/arrow-expanded-upward-highlighted.png);
+}
+
+.ww-comet-spool {
+	display: inline-block;
+	/* max-width: 60em;  can I make it a % of page width somehow? */
+	padding-bottom: 1px;
+}
+
+.ww-comet-expanded .ww-comet-spool {
+	overflow: auto;
+	max-height: 25em;
+	vertical-align: top;
+	margin-top: 0;
+}
+
+.ww-comet-close-button {
+	height: 16px; width: 16px; display: inline-block;
+	/* @embed */ background: transparent url(images/close-button.png);
+	margin-right: 0px; /* float: right; */
+	vertical-align: top;
+	margin-top: 2px;
+}
+
+.ww-comet-close-button:hover {
+	/* @embed */ background: transparent url(images/close-button-highlighted.png);
+}

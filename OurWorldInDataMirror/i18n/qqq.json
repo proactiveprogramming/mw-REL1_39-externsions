@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ryan Schmidt"
+		]
+	},
+	"owid-desc": "{{desc|name=OurWorldInData}}",
+	"keycloakauth-extensionname": "{{name}}"
+}

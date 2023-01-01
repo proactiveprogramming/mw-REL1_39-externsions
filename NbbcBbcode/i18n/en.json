@@ -1,0 +1,7 @@
+{
+  "@metadata": {
+    "authors": []
+  },
+  "nbbc_bbcode-desc": "Adds support for BBCode using the NBBC library.",
+  "nbbc_bbcode-config-parsewithintagonly": "If set to true, then BBCode tags will be parsed only within &lt;bbcode&gt;&lt;/bbcode&gt; tags, otherwise, BBCode will be interpreted everywhere that wikitext is interpreted."
+}

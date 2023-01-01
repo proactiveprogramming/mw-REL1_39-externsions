@@ -1,0 +1,54 @@
+{
+	"description": "Testing the absense of content using __NOREFERENCELIST__",
+	"properties": [],
+	"subjects": [
+		{
+			"name": "Citation/Resource/11",
+			"contents": "{{#scite:Foo:abc|type=text|citation text=Citation for bar}} {{#scite:Bar:abc|type=text|citation text=Citation for a loose reference}}"
+		},
+		{
+			"name": "Citation/Reference/11/1",
+			"contents": "{{#referencelist:listtype=ul|references=Bar:abc,Foo:abc|+sep=,|header=Notes}}"
+		},
+		{
+			"name": "Citation/Reference/11/2",
+			"contents": "{{#referencelist:listtype=ul|references=Bar:abc,Foo:abc|+sep=,|header=Notes}} __NOREFERENCELIST__"
+		}
+	],
+	"parser-testcases": [
+		{
+			"about": "#0 test group to contain a list",
+			"subject": "Citation/Reference/11/1",
+			"expected-output": {
+				"to-contain": [
+					"<div class=\"scite-content\"><h2 id=\"Notes\">Notes</h2>",
+					"<li id=\"scite-Bar:abc\"><span class=\"scite-referencelinks\"></span><span class=\"scite-citation\"><span class=\"scite-citation-text\">Citation for a loose reference</span></span></li>",
+					"<li id=\"scite-Foo:abc\"><span class=\"scite-referencelinks\"></span><span class=\"scite-citation\"><span class=\"scite-citation-text\">Citation for bar</span></span></li>"
+				]
+			}
+		},
+		{
+			"about": "#1 test for absence",
+			"subject": "Citation/Reference/11/2",
+			"expected-output": {
+				"to-not-contain": [
+					"<div class=\"scite-content\"><h2 id=\"Notes\">Notes</h2>",
+					"<li id=\"scite-Bar:abc\"><span class=\"scite-referencelinks\"></span><span class=\"scite-citation\"><span class=\"scite-citation-text\">Citation for a loose reference</span></span></li>",
+					"<li id=\"scite-Foo:abc\"><span class=\"scite-referencelinks\"></span><span class=\"scite-citation\"><span class=\"scite-citation-text\">Citation for bar</span></span></li>"
+				]
+			}
+		}
+	],
+	"settings": {
+		"wgContLang": "en",
+		"scigReferenceListType": "ul",
+		"smwgQueryResultCacheType": false,
+		"scigCitationReferenceCaptionFormat" : 2,
+		"smwgPageSpecialProperties": [ "_MDAT" ]
+	},
+	"meta": {
+		"version": "0.1",
+		"is-incomplete": false,
+		"debug": false
+	}
+}

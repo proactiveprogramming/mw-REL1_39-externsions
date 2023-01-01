@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "CERminator"
+        ]
+    },
+    "newduplicateusermessage-description": "Dodaje poruku na novonapravljene korisničke stranice za razgovor",
+    "newduplicateusermessage-edit-summary": "Dodaje [[{{int:newduplicateusermessage-template}}|poruku dobrodošlice]] na nove korisničke stranice za razgovor"
+}

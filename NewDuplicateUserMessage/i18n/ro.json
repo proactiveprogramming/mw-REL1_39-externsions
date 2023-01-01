@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mihai",
+            "Strainu"
+        ]
+    },
+    "newduplicateusermessage-description": "Adaugă un mesaj în paginile de discuție ale utilizatorilor nou înregistrați",
+    "newduplicateusermessage-edit-summary": "[[{{int:newduplicateusermessage-template}}|Mesaj de bun venit]]"
+}

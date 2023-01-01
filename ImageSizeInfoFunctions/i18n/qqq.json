@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": ["Tim \"Telshin\" Aldridge"]
+	},
+	"imagesizeinfofunctions_description": "This is the standard Mediawiki extension descirption.",
+	"error_returning_width": "Describes an error that user encounters when an image does not have a width.",
+	"error_returning_height": "Describes an error that user encounters when an image does not have a height."
+}

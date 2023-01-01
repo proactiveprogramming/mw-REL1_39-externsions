@@ -1,0 +1,57 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraymaptemplate
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayMapTemplate parser function. Since this deals with templates, it is quite difficult to test.
+
+!! test
+Map simple array to template
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarraymaptemplate:example|Example}}
+!! html
+<p><a href="/index.php?title=Template:Example&amp;action=edit&amp;redlink=1" class="new" title="Template:Example (page does not exist)">Template:Example</a>
+</p>
+!! end
+
+!! test
+Map multidimensional array to template
+!! wikitext
+{{#complexarraydefine:example|[["a"],["b"],["c"]]}}
+{{#complexarraymaptemplate:example|Example}}
+!! html
+<p><a href="/index.php?title=Template:Example&amp;action=edit&amp;redlink=1" class="new" title="Template:Example (page does not exist)">Template:Example</a><a href="/index.php?title=Template:Example&amp;action=edit&amp;redlink=1" class="new" title="Template:Example (page does not exist)">Template:Example</a><a href="/index.php?title=Template:Example&amp;action=edit&amp;redlink=1" class="new" title="Template:Example (page does not exist)">Template:Example</a>
+</p>
+!! end
+
+!! test
+Map multidimensional array to template
+!! wikitext
+{{#complexarraydefine:example|[["a", ["b"]],["b"],["c"]]}}
+{{#complexarraymaptemplate:example|Example}}
+!! html
+<p><a href="/index.php?title=Template:Example&amp;action=edit&amp;redlink=1" class="new" title="Template:Example (page does not exist)">Template:Example</a><a href="/index.php?title=Template:Example&amp;action=edit&amp;redlink=1" class="new" title="Template:Example (page does not exist)">Template:Example</a><a href="/index.php?title=Template:Example&amp;action=edit&amp;redlink=1" class="new" title="Template:Example (page does not exist)">Template:Example</a>
+</p>
+!! end
+
+!! test
+Map non-existent array to template
+!! wikitext
+{{#complexarraymaptemplate:boofar|Example}}
+!! html
+
+!! end
+
+!! test
+Map associative array to template
+!! wikitext
+{{#complexarraydefine:example|(("a": "b", "c": "d"))}}
+{{#complexarraymaptemplate:example|Example}}
+!! html
+<p><a href="/index.php?title=Template:Example&amp;action=edit&amp;redlink=1" class="new" title="Template:Example (page does not exist)">Template:Example</a>
+</p>
+!! end

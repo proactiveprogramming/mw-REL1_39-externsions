@@ -1,0 +1,374 @@
+<link rel="stylesheet" type="text/css" href="<?php echo $this->ScriptPath.'/extensions/ITaskTracker/scripts/screen.css';?>" media="screen">
+<script type="text/javascript" src="<?php echo $this->ScriptPath.'/extensions/ITaskTracker/scripts/jquery/jquery-1.8.3.min.js'; ?>"></script>
+<script type="text/javascript" src="<?php echo $this->ScriptPath.'/extensions/ITaskTracker/scripts/jquery-ui-1.9.2/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.js';?>"></script>
+<script type="text/javascript" src="<?php echo $this->ScriptPath.'/extensions/ITaskTracker/scripts/jquery.elastic.source.js';?>"></script>
+<script type="text/javascript" src="<?php echo $this->ScriptPath.'/extensions/ITaskTracker/scripts/jquery.livequery.js';?>"></script>
+<?php 
+//var_dump($this->local);
+$dttoday = date("d-M-Y");
+#var_dump($this->ScriptPath);
+    $this->userAccesEdit = $this->getIbugModel('default')->getUserAccessIbug($this->getUsrName,"edit");
+    foreach ($this->userAccesEdit as $UserAcces):
+            $l_edittheme[]=$UserAcces['tag_name'];
+    endforeach;
+    #var_dump($this->issue->type);  
+?>
+<script language="javascript" type="text/javascript">
+jQuery(document).ready(function($) {
+    //jQuery.noConflict();
+    $(document).ready(function(){
+        //hide button
+        $(".commentMark").focus(function(e)
+        {
+                var ids =  $(this).attr('id').replace('commentMark-','');
+                $(this).animate({"min-height": "48.2px",},"fast" );
+                if (ids===ids)
+                $("#SubmitComment-"+ids).slideDown("fast");
+                $("#cancelComment-"+ids).slideDown("fast");
+                return false;
+        });
+        $(".cancel").click(function(e)
+        {
+                var idc =  $(this).attr('id').replace('cancelComment-','');
+                $("#commentMark-"+idc).animate({"height": "20px","min-height": "20px"}, "fast" );
+                if (idc===idc)
+                        $("#SubmitComment-"+idc).slideUp("fast");
+                        $("#cancelComment-"+idc).slideUp("fast");
+                        $('textarea#commentMark-'+idc).val('Comment...').css('color','grey');
+                return false;
+        });
+
+        //SubmitComment
+        $('a.comment').live('click', function(e){
+                var nxt = "<?php echo $dttoday; ?>";
+                var getpID =  $(this).parent().attr('id').replace('commentBox-','');	
+                var comment_text = $("#commentMark-"+getpID).val();
+                var comment_text_new = comment_text.replace(/\n/gi,"<br />");
+                var comment_text = comment_text_new;
+                var dbcon0 =  "<?php echo $this->dbcon; ?>";
+                data  = encodeURIComponent(comment_text);
+                dbcon = encodeURIComponent(dbcon0);
+                var user_name = $("#user_name-"+getpID).val();
+                if(comment_text !== "Comment..." && comment_text !== null)
+                {                        
+                        $.post("<?php echo $this->ScriptPath;?>/extensions/ITaskTracker/ITaskTrackerAjax.php?method=add_comment&local=<?php echo $this->local;?>&comment_text="+data+"&post_id="+getpID+"&user_name="+user_name+"&nxt="+nxt+"&dbcon="+dbcon, {                                        
+                        }, function(response){
+                                $('#CommentPosted'+getpID).append($(response).fadeIn('slow'));
+                                $("#commentMark-"+getpID).val("Comment...");			
+                                $('#CommentSend'+getpID);
+                        });
+                }
+
+        });	
+
+        //Auto hide comments
+        $(".textshow").toggle(function(){
+                $(this).addClass("active");
+                }, function () {
+                        $(this).removeClass("active");
+        });
+        $(".textshow").click(function(){
+                var ss =  $(this).attr("id").replace("textshow","");
+                var ele = document.getElementById("tesCommentPosted"+ss);
+                var text = document.getElementById("displayText"+ss);
+                var as= $(this).attr("value").replace("textshow","");
+                $("#tesCommentPosted"+ss).toggle("slow");
+                if(ele.style.display === "block") {
+                        ele.style.display = "none";
+                        text.innerHTML = "Show "+as+" Comments";
+                }else {
+                        ele.style.display = "block";
+                        text.innerHTML = "Hide Comments";
+                }
+        });
+
+        //deleteComment
+        $('a.c_delete').livequery("click", function(e){
+                var nxt = "<?php echo $dttoday; ?>";
+                if(confirm('Are you sure you want to delete this comment?')===false)
+                return false;	
+                e.preventDefault();
+                var parent  = $(this).parent();
+                var c_id =  $(this).attr('id').replace('CID-','');	
+                var cid = $(this).attr('name').replace('c_del','');
+                var dbcon0 =  "<?php echo $this->dbcon; ?>";                                
+                dbcon = encodeURIComponent(dbcon0);
+                $.ajax({
+                        type: 'get',					                        
+                        url: '<?php echo $this->ScriptPath;?>/extensions/ITaskTracker/ITaskTrackerAjax.php?method=delete_comment&local=<?php echo $this->local;?>&id='+ c_id + '&user_name=<?php echo $this->getUsrName;?>&dbcon='+dbcon,                                        
+                        data: '',
+                        beforeSend: function(){
+                        },
+                        success: function(){
+                                parent.fadeOut(200,function(){
+                                parent.remove();
+                                });
+                        }
+                });                
+        });			
+        $('textarea').elastic();
+    });	
+            $('textarea.commentMark').focus(function() {
+                    $('textarea.commentMark').css('color','black');
+                    if (this.value.trim() === 'Comment...') {
+                            this.value = '';
+                    }
+            })
+            .blur(function() {
+                    if (this.value === '') {
+                            this.value = 'Comment...';
+                            $('textarea.commentMark').css('color','grey');
+                    }
+            });
+
+            $(".view_comments").click(function() {
+                    var ID = $(this).attr("id");                        
+                    $.ajax({
+                            type: 'POST',                            
+                            url: "<?php echo $this->ScriptPath;?>/extensions/ITaskTracker/ITaskTrackerAjax.php?method=viewajax",
+                            data: "issue_id="+ ID + '&dbcon=<?php echo $this->dbcon; ?>',
+                            cache: false,
+                            success: function(html){
+                                    $('#view_comments'+ID).prepend(html);
+                                    $('#view'+ID).remove();
+                                    $('.record-'+ID).remove();
+                            }
+                    });
+                    return false;
+            });        			
+});
+</script>
+
+<style type="text/css">
+td.fieldBgColor {
+	background-color: #eee
+}
+</style>
+
+<?php if ($this->isIbugLoggedIn){
+global $wgServerName,$wgProto ;
+echo '<script type="text/javascript">';
+echo 'function ConfirmRemove(){';
+echo 'var answer = confirm ("Do you Really Want to Delete This Issue Completely ?");';
+echo 'if (answer){';
+echo 'window.location="'.$wgProto.$this->removeUrl . '";'; 
+echo '}}';
+
+echo 'function ConfirmArchive(){';
+echo 'var answer = confirm ("Do you Really Want to Archive This Issue ?");';
+echo 'if (answer){';
+echo 'window.location="'.$wgProto.$this->deleteUrl . '";'; 
+echo '}}';
+echo '</script>';
+} ?>
+
+<?php if (isset($_GET["msg_update"])): ?>
+<p class="success"><?php echo $_GET["msg_update"]; ?></p>
+<?php endif; ?>
+
+<h2><span class="editsection">[<a href="<?php echo $this->listUrl; ?>"><?php echo wfMessage('back'); ?></a>]</span> <span class="mw-headline">#<?php echo $this->issue->issue_id . ': ' .  $this->issue->title; ?></span></h2>
+<table width="100%"  border="0" cellspacing="3" cellpadding="2">
+  <tr>
+    <td width="150" align="left" valign="top" class="fieldBgColor">Section</td>
+    
+    <?php       $tag_name = $this->issue->type;
+                $pagetext =  $this->getIbugModel('default')->cekData($tag_name);
+                while ($rows = $pagetext->fetchObject()):
+
+    ?>
+    <td style="background-color: <?php echo $rows->colour; ?>"><?php echo $rows->theme; ?></td>
+    <?php endwhile; ?>
+
+    <td style="background-color: #<?php echo $this->typeArray[$this->issue->type]['colour']; ?>"><?php echo $this->typeArray[$this->issue->type]['name']; ?></td>
+  </tr>
+  
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Creation Date</td>
+        <td><?php echo date("d-M-Y H:i:s", strtotime($this->issue->date_created)); ?></td>
+  </tr>
+  
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Start Date</td>
+        <td><?php echo $this->issue->start_date; ?></td>
+  </tr>
+  
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Target Date</td>
+        <td><?php echo $this->issue->target_date; ?></td>
+  </tr>
+  
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Creator</td>
+        <td><?php echo $this->issue->user_name; ?></td>
+  </tr>
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Last Modified</td>
+        <td><?php echo $this->issue->due_date; ?></td>
+  </tr>
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Modifier</td>
+        <td><?php echo $this->issue->last_modifier; ?></td>
+  </tr>
+  
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Next Step Date</td>
+        <td><?php echo $this->issue->targ_accom; ?></td>
+  </tr>
+  <tr>
+	<td width="150" align="left" valign="top" class="fieldBgColor">Priority</td>
+	<td><?php echo $this->priorityArray[$this->issue->priority]['name']; ?></td>
+  </tr>
+
+   <tr>
+    <td width="150" align="left" valign="top" class="fieldBgColor">Status</td>
+    <td style="background-color: #<?php echo $this->statusArray[$this->issue->status]['colour']; ?>"><?php echo $this->statusArray[$this->issue->status]['name'] . " <strong>" . $this->issue->targ_user ."</strong>"; ?></td>
+  </tr>
+
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Owner</td>
+        <td><?php echo $this->owned_byArray[$this->issue->owned_by]['name']; ?></td>
+  </tr>
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Coordinator</td>
+        <td><?php echo $this->coorArray[$this->issue->coor]['name']; ?></td>
+  </tr>
+
+  <tr>
+        <td width="150" align="left" valign="top" class="fieldBgColor">Approval By</td>
+        <td><?php echo $this->approv_byArray[$this->issue->approv_by]['name']; ?></td>
+  </tr>
+
+  <tr>
+    <td width="150" align="left" valign="top" class="fieldBgColor">Reporter</td>
+    <td><?php echo $this->issue->user_name; ?></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="fieldBgColor">File </td>
+    <td><?php
+	$basepath=$this->filelocation.$this->issue->Issuerndfile;
+	$downloadpath=$this->downloadfileurl."ITaskTrackerUploads/".$this->issue->Issuerndfile;
+	
+	if(!is_dir($basepath) || $this->issue->Issuerndfile==""){
+        	echo "<span  style='font-size:95%;color:#999;'>No uploaded file</span>";
+	}
+	else{
+                $outputfile=null;
+                $outputdir=dir($basepath);
+                $j=0;
+                while (false !== ($entry = $outputdir->read())) {
+                        if($entry != '.' && $entry != '..' && !is_dir($dir.$entry))
+                        {
+                                $outputfile[$j]=$entry;
+
+                                $j++;
+                        }
+                }
+                $outputdir->close();
+
+
+                if($j>0){
+                        for ($k=0;$k<$j;$k++)
+                        {
+                                if (!is_dir($downloadpath."/".$outputfile[$k])){
+
+                                         echo "<a href='".$downloadpath."/".$outputfile[$k]."'  target='_blank'><img src='".$this->ScriptPath."/img/attachment.gif' title='".$outputfile[$k]."' alt='".$outputfile[$k]."' />".$outputfile[$k]."</a><br />";
+                                }
+                        }
+                }
+                else{
+                         echo "<span  style='font-size:95%;color:#999;'>No uploaded file</span>";
+                }
+
+	}
+	
+ 	?></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="fieldBgColor">Remark</td>
+    <td><?php echo str_replace("\r\n","<br />",$this->issue->summary); ?></td>
+  </tr>
+  
+  <tr><td width="150" align="left" valign="top" class="fieldBgColor">Comment</td>
+        <td>            
+        <div id="<?php echo 'CommentPosted'.$this->issueId; ?>" class="CommentPosted">
+	<?php                                           
+        $idxCom=0;
+        $this->comments = $this->getIbugModel('default')->getIbugCommentById($this->issueId);
+        $comCount = $this->comments->numRows();                                
+            if($comCount>1){                                   
+            ?>
+            <div id="<?php echo 'textshow'.$this->issueId; ?>" class="textshow" style="background-color:#5F9EAD;text-align:center;" value="<?php echo $comCount;?>"><a id="<?php echo 'displayText'.$this->issueId; ?>"  href="javascript:toggle();" style="padding-left:120px;font-size:13px">Show <?php echo $comCount; ?>  Comments</a></div>
+            <div id="<?php echo 'comLast'.$this->issueId; ?>"></div>
+            <?php } ?>     
+            <div id="<?php echo 'tesCommentPosted'.$this->issueId; ?>" style="display: none">
+                <?php  while ($comments= $this->comments->fetchObject()): 
+                    if ($idxCom < $comCount-1) {
+                    ?>
+                    <div id="<?php echo 'view_comments'.$this->issueId; ?>"></div>
+                    <div id="<?php  echo 'record-'.$comments->id;?>" align="left" style="background-color:#d3d3d3; padding-top:5px;padding-left:5px; padding-right:5px; margin-top:3px">
+                            <label class="postedComments">
+                                    <?php  echo "<strong>".$comments->user_name." : </strong> <br />".str_replace("\n","<br />",$this->html_cleanup($comments->comment));?>
+                            </label>
+                            <br clear="all" />
+                            <span style="margin-left:2px; color:#666666; font-size:11px; text-align:left">
+                                    <?php echo date('d-M-Y : H:i:s',strtotime($comments->timestamp)); ?>
+                            </span>                    
+                            <?php  if ((in_array($this->issue->type,$l_edittheme)) || ($this->getUsrName == $this->issue->owned_by) || ($this->getUsrName == $this->issue->approv_by) || ($this->getUsrName == $this->issue->coor)): ?><a href="#" style="text-align:right" id="<?php  echo 'CID-'.$comments->id;?>" class="c_delete" name="c_del<?php echo $this->issueId; ?>">Delete</a><?php endif; ?>             
+                    </div>                    
+                <?php 
+                    }else{
+                    $Last_id=$comments->id;
+                    $Last_usr=$comments->user_name;
+                    $Last_com=$this->html_cleanup($comments->comment);
+                    $Last_time=$comments->timestamp;
+                    }
+                $idxCom++;
+                endwhile;?>
+            </div>	             
+                 <?php  if ($comCount >0) {?>
+                    <div id="<?php echo 'view_comments'.$this->issueId;?>"></div>               
+                    <div id="<?php echo 'record-'.$Last_id;?>" align="left" style="background-color:#d3d3d3; padding-top:5px;padding-left:5px; padding-right:5px; margin-top:3px">
+                            <label class="postedComments">
+                                    <?php  echo "<strong>".$Last_usr." : </strong> <br />".str_replace("\n","<br />",$Last_com);?>
+                            </label>
+                    <br clear="all" />
+                    <span style="margin-left:2px; color:#666666; font-size:11px; text-align:left">
+                            <?php echo date('d-M-Y : H:i:s',strtotime($Last_time));?>
+                    </span>                        
+                    <?php if ((in_array($this->issue->type,$l_edittheme)) || ($this->getUsrName == $this->issue->owned_by) || ($this->getUsrName == $this->issue->approv_by) || ($this->getUsrName == $this->issue->coor)): ?><a href="#" style="text-align:right" id="<?php  echo 'CID-'.$Last_id;?>" class="c_delete" name="c_del<?php echo $this->issueId; ?>">Delete</a><?php endif; ?>
+                    </div> 
+                 <?php }?>
+	</div>	
+	<div class="commentBox" align="right" id="commentBox-<?php echo $this->issueId; ?>" >
+            <label id="record-<?php echo $this->issueId; ?>">
+                    <textarea class="commentMark" id="commentMark-<?php echo $this->issueId; ?>" name="commentMark" cols="70">Comment...</textarea>
+                    <input type="hidden" id="ibug_id-<?php echo $this->issueId; ?>" value="<?php echo $this->issueId; ?>" />
+                    <input type="hidden" id="user_name-<?php echo $this->issueId; ?>" value="<?php echo $this->getUsrName; ?>" />
+            </label>
+            <br clear="all" />
+            <a id="SubmitComment-<?php echo $this->issueId; ?>" class="small button comment" style="display:none;"> Comment</a>            
+            <a id="cancelComment-<?php echo $this->issueId; ?>" class="small button cancel" style="display:none;" > Cancel</a>
+	</div>
+     </td>
+  </tr>  
+</table>
+<p>[<a href="<?php echo $this->listUrl; ?>"><?php echo wfMessage('back'); ?></a>]&nbsp;
+<?php if ($this->isIbugLoggedIn) : ?> 
+<?php if ((in_array($this->issue->type,$l_edittheme)) || ($this->getUsrName == $this->issue->owned_by) || ($this->getUsrName == $this->issue->approv_by) || ($this->getUsrName == $this->issue->coor)): ?>[<a href="<?php echo $this->editUrl; ?>"><?php echo wfMessage('edit'); ?></a>]&nbsp;<?php endif; ?>	
+<?php 
+	if ($this->isIbugArchiver($this->getUsrName)== 1){	
+
+	if ($this->issue->deleted != 0){
+        ?>
+        <?php if ((in_array($this->issue->type,$l_edittheme)) || ($this->getUsrName == $this->issue->owned_by) || ($this->getUsrName == $this->issue->approv_by) || ($this->getUsrName == $this->issue->coor)): ?>[<a href="<?php echo $this->undeleteUrl; ?>"><?php echo wfMessage('unarchive'); ?></a>]&nbsp;<?php endif; ?>        
+<?php
+      }
+else{
+?>
+<?php if ((in_array($this->issue->type,$l_edittheme)) || ($this->getUsrName == $this->issue->owned_by) || ($this->getUsrName == $this->issue->approv_by) || ($this->getUsrName == $this->issue->coor)): ?>[<a href="<?php echo 'javascript:ConfirmArchive();' ?>"><?php echo wfMessage('archive'); ?></a>]&nbsp;<?php endif; ?>	
+<?php }
+      }
+ ?>
+ <?php if ((in_array($this->issue->type,$l_edittheme)) || ($this->getUsrName == $this->issue->owned_by) || ($this->getUsrName == $this->issue->approv_by) || ($this->getUsrName == $this->issue->coor)): ?>[<a href="<?php echo 'javascript:ConfirmRemove();' ?>"><?php echo wfMessage('delete'); ?></a>]&nbsp;<?php endif; ?>	
+<?php endif; ?>
+</p>

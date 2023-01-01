@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"katsa-desc": "Provides spies for use in Lua modules",
+	"katsa-carp-final": "Carp called",
+	"katsa-cluck-final": "Cluck called",
+	"katsa-croak-final": "Croak called",
+	"katsa-confess-final": "Confess called"
+}

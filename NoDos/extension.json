@@ -1,0 +1,50 @@
+{
+	"name": "Nodos",
+	"version": "0.1.0",
+	"author": [
+		"Nodos"
+	],
+	"url": "www.plataformanodos.org",
+	"descriptionmsg": "nodos-desc",
+	"license-name": "GPL v2",
+	"type": "semantic",
+	"AutoloadClasses": {
+		"nodosHooks": "nodos.hooks.php",
+		"SpecialNodos": "specials/SpecialNodos.php"
+	},
+	"config": {
+		"nodosEnableFoo": true
+	},
+	"ExtensionMessagesFiles": {
+		"nodosAlias": "nodos.i18n.alias.php"
+	},
+	"Hooks": {
+		
+	},
+	"MessagesDirs": {
+		"nodos": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.nodos.foo": {
+			"scripts": [
+				"modules/ext.nodos.js",
+				"modules/ext.nodos.foo.js"
+			],
+			"styles": [
+				"modules/ext.nodos.foo.css"
+			],
+			"messages": [],
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "nodos"
+	},
+	"SpecialPages": {
+		"Nodos": "SpecialNodos"
+	},
+	"manifest_version": 1
+}

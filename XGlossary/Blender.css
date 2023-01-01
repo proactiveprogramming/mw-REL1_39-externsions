@@ -1,0 +1,163 @@
+/******************************************************************************
+ * The error display.                                                         *
+ ******************************************************************************/
+/* The error message… */
+span.xg_error {
+ font-weight: bolder;
+ color: red;}
+
+/******************************************************************************
+ * The glossary part (classes used in Glossary “template”).                   *
+ ******************************************************************************/
+/* The “index” at top of glossary pages, with links to all groups defined.*/
+div.xg_index {
+ padding: 5px;
+ text-align: center;
+ background-color: #404040;}
+/*Flatten index list…*/
+div.xg_index ul {
+ display: inline;
+ padding: 0px;}
+div.xg_index li {
+ display: inline;
+ padding-right: 2px;
+ padding-left: 2px;}
+div.xg_index a {
+ font-weight: bolder;
+ font-size: 2em;
+ color: white;}
+
+/* The glossary itself!*/
+div.xg_content {;}
+
+/******************************************************************************
+ * The group part (classes used in glossary Group “template”).                *
+ ******************************************************************************/
+/* A group of entries.*/
+div.xg_group {
+ padding-top: 25px;}
+/* The header of a group*/
+div.xg_grheader {
+ background-color: #3C3300;
+ padding: 5px;
+ margin-bottom: 10px;
+ text-align: center;
+ font-size: 2.0em;
+ font-weight: bolder;
+ font-variant: small-caps;}
+/* The “utilities” in the group header.*/
+span.xg_grheadermisc {
+ background-color: #3C3300;
+ display: block;
+ float: right;
+ /*Now, some undo of span.glossary_group_header!*/
+ font-size: 0.5em;
+ font-weight: normal;
+ font-variant: normal;}
+/* The group content. */
+div.xg_grcontent {;}
+
+/******************************************************************************
+ * The entry part (classes used in glossary Entry “template”).                *
+ ******************************************************************************/
+/* A glossary entry.*/
+div.xg_entry {
+ margin-bottom: 20px;}
+/* The header of an entry.*/
+div.xg_enheader {;}
+/* The content of an entry.*/
+div.xg_encontent {
+ margin-left: 40px;}
+/* The title of an entry.*/
+span.xg_entitle {
+ font-size: 1.5em;
+ font-weight: bolder;
+ font-variant: small-caps;}
+/* Misc things in header, floating right. */
+div.xg_enheadermisc {
+ float: right;}
+/* The “edit” link… */
+span.xg_enediturl {
+ font-family: monospace;
+ font-size: 0.8em;}
+/* The short description of the entry.*/
+div.xg_enshortdesc {
+ font-weight: bolder;}
+/* The long description of the entry.*/
+div.xg_enlongdesc {
+ text-align: justify;}
+/* The optional “dict” part of an entry.*/
+div.xg_endict {
+ border-left: 2px solid white;
+ padding-left: 5px;}
+
+/******************************************************************************
+ * The dict part (calsses used in glossary Dict “template”).                  *
+ ******************************************************************************/
+/* The “dict” item.*/
+div.xg_dict {;}
+/* The languages of the “dict” item.*/
+span.xg_dctlangs {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The note about the “dict” item.*/
+span.xg_dctnote {
+ color: #dddddd;}
+
+/******************************************************************************
+ * The links to glossary entries.                                             *
+ ******************************************************************************/
+span.xg_link a {
+ color: #ffee80;
+ text-decoration: none;}
+span.xg_link a:hover, span.xg_link a:focus {
+ color: gold;}
+
+span.xg_link span.xg_lnkshortdesc {
+ visibility: hidden;
+ display: block;
+ position: absolute;
+ min-height: 1.1em; min-width: 150px; max-height: 5.5em; max-width: 450px;
+ line-height: 1.1em;
+ color: white;
+ background-color: #121000;
+ border: 3px double gold;
+ z-index: 1000;
+ overflow: hidden;
+ left: 0px; top: 0px;}
+span.xg_link:hover span.xg_lnkshortdesc,
+span.xg_link:focus span.xg_lnkshortdesc {
+ /*visibility: visible;*/}
+
+
+/******************************************************************************
+ * Misc “style” classes that may be used in several places…                   *
+ ******************************************************************************/
+/* The reference elements… */
+span.xg_disp_ref {
+ font-family: monospace;
+ font-size: 0.8em;}
+
+/* The languages elements… */
+span.xg_disp_langs {
+ background-color: #404040;
+ padding: 2px;
+ font-weight: bolder;
+ font-size: 0.9em;}
+/*Flatten langs list…*/
+span.xg_disp_langs ul {
+ display: inline;
+ padding: 0px;}
+span.xg_disp_langs ul li {
+ display: inline;
+ padding-right: 2px;
+ padding-left: 2px;}
+

@@ -1,0 +1,1 @@
+CREATE INDEX /*i*/abl_composite_hidden on /*_*/ab_links (abl_hidden_through, abl_from_namespace, abl_from);

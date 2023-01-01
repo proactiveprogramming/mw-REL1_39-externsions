@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siebrand"
+		]
+	},
+	"mzwi-action": "Pdfexport",
+	"mzwi-desc": "Converteert de huidige pagina naar zwi en verzendt die naar de browser"
+}

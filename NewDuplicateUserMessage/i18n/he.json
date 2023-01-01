@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Agbad",
+            "Rotemliss"
+        ]
+    },
+    "newduplicateusermessage-description": "הוספת הודעה בדפי השיחה של משתמשים חדשים",
+    "newduplicateusermessage-edit-summary": "הוספת [[{{int:newduplicateusermessage-template}}|הודעת ברוך הבא]] בדפי השיחה של משתמשים חדשים"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patrick Westerhoff"
+		]
+	},
+
+	"recentchangeslogfilter-desc": "This extension filters log entries from [[Special:RecentChanges]]",
+	"recentchangeslogfilter-hidelogs": "$1 user creation log",
+	"recentchangeslogfilter-pref": "Hide user creation log entries in recent changes"
+}

@@ -1,0 +1,345 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "19686fc952ccc4de0587323be9b2053e",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "tastyigniter",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.12.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-09-13T08:19:44+00:00"
+        },
+        {
+            "name": "jstewmc/chunker",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jstewmc/chunker.git",
+                "reference": "845048f45f731bd83a5b55bdebcaed534da150cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jstewmc/chunker/zipball/845048f45f731bd83a5b55bdebcaed534da150cf",
+                "reference": "845048f45f731bd83a5b55bdebcaed534da150cf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^9",
+                "roave/security-advisories": "dev-latest",
+                "slevomat/coding-standard": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jstewmc\\Chunker\\": "src/"
+                },
+                "classmap": [
+                    "tests/TestCase.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/jstewmc/php-helpers/contributors"
+                }
+            ],
+            "description": "Chunk a very large file or string with PHP (multi-byte safe)",
+            "keywords": [
+                "chunk",
+                "file",
+                "multi-byte",
+                "php",
+                "string"
+            ],
+            "support": {
+                "issues": "https://github.com/jstewmc/chunker/issues",
+                "source": "https://github.com/jstewmc/chunker/tree/v0.2.1"
+            },
+            "time": "2021-10-22T18:22:01+00:00"
+        },
+        {
+            "name": "jstewmc/rtf",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jstewmc/rtf.git",
+                "reference": "bb84c69acbda53238e073bbdecdaa613ceb95729"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jstewmc/rtf/zipball/bb84c69acbda53238e073bbdecdaa613ceb95729",
+                "reference": "bb84c69acbda53238e073bbdecdaa613ceb95729",
+                "shasum": ""
+            },
+            "require": {
+                "jstewmc/stream": "^0.4.2"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^9.0",
+                "roave/security-advisories": "dev-latest",
+                "slevomat/coding-standard": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jstewmc\\Rtf\\": "src/"
+                },
+                "classmap": [
+                    "tests/Element/TestElement.php",
+                    "tests/Element/Control/TestControl.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jack Clayton",
+                    "email": "clayjs0@gmail.com"
+                }
+            ],
+            "description": "Read and write Rich Text Format (RTF) documents with PHP",
+            "keywords": [
+                "format",
+                "lex",
+                "parse",
+                "php",
+                "read",
+                "render",
+                "rich",
+                "rtf",
+                "text",
+                "write"
+            ],
+            "support": {
+                "issues": "https://github.com/jstewmc/rtf/issues",
+                "source": "https://github.com/jstewmc/rtf/tree/v0.5.2"
+            },
+            "time": "2021-11-12T20:37:13+00:00"
+        },
+        {
+            "name": "jstewmc/stream",
+            "version": "v0.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jstewmc/stream.git",
+                "reference": "b5d459e28bb22efb98256d874a09d728362d476e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jstewmc/stream/zipball/b5d459e28bb22efb98256d874a09d728362d476e",
+                "reference": "b5d459e28bb22efb98256d874a09d728362d476e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "jstewmc/chunker": "^0.2",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^9",
+                "roave/security-advisories": "dev-latest",
+                "slevomat/coding-standard": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jstewmc\\Stream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jack Clayton and Contributors",
+                    "homepage": "https://github.com/jstewmc/php-helpers/contributors"
+                }
+            ],
+            "description": "Stream a very large text file or string character-by-character",
+            "keywords": [
+                "character",
+                "file",
+                "php",
+                "split",
+                "stream",
+                "string"
+            ],
+            "support": {
+                "issues": "https://github.com/jstewmc/stream/issues",
+                "source": "https://github.com/jstewmc/stream/tree/v0.4.2"
+            },
+            "time": "2021-10-26T17:52:53+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

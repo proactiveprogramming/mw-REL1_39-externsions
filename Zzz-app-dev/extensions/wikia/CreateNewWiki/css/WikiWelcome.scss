@@ -1,0 +1,30 @@
+#WikiWelcomeWrapper {
+	background: white;
+	border: 10px solid #8ac342;
+	color: #3a3a3a;
+	h1 {
+		color: #2c85d6;
+		font-size: 23px;
+		font-weight: bold;
+		line-height: 26px;
+	}
+	.modalContent {
+		border: 0;
+	}
+}
+
+#WikiWelcome {
+	p {
+		font-size: 13px;
+		line-height: 25px;
+		&.help {
+			margin-top: 25px;
+		}
+	}
+	.createpage {
+		margin: 20px;
+	}
+	.sprite.new {
+		margin-right: 5px;
+	}
+}

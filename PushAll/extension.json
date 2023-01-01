@@ -1,0 +1,190 @@
+{
+	"name": "PushAll",
+	"version": "2.1.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Karima_Rafes Karima Rafes]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:PushAll",
+	"descriptionmsg": "pushall-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.39"
+	},
+	"APIModules": {
+		"pushall": "ApiPushAll",
+		"pushallinfo": "ApiPushAllInfo"
+	},
+	"SpecialPages": {
+		"PushAll": "SpecialPushAll"
+	},
+	"MessagesDirs": {
+		"PushAll": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"PushAll": "srs/ui/SpecialPushAll.alias.php"
+	},
+	"AutoloadClasses": {
+		"PushAll": "src/PushAll.php",
+		"PushAllTargets": "src/PushAllTargets.php",
+		"PushAllTarget": "src/PushAllTarget.php",
+		"PushAllHooks": "src/PushAllHooks.php",
+		"ApiPushAllBase": "src/api/ApiPushAllBase.php",
+		"ApiPushAll": "src/api/ApiPushAll.php",
+		"ApiPushAllImages": "src/api/ApiPushAllImages.php",
+		"ApiPushAllInfo": "src/api/ApiPushAllInfo.php",
+		"TabPushAll": "src/ui/TabPushAll.php",
+		"SpecialPushAll": "src/ui/SpecialPushAll.php",
+		"PushAllComponents": "src/ui/PushAllComponents.php",
+		"PushAllContents": "src/PushAllContents.php",
+		"PushAllContent": "src/PushAllContent.php",
+		"PushAllTags": "src/PushAllTags.php",
+		"PushallCategorySelector": "src/ui/PushallCategorySelector.php",
+		"PushallPageSelector": "src/ui/PushallPageSelector.php"
+	},
+	"ResourceModules": {
+		"ext.pushall": {
+			"scripts": [
+				"src/ui/js/ext.pushall.js"
+			],
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.jqueryMsg"
+			],
+			"messages": [
+				"pushall-status-search-in-progress",
+				"pushall-remote-content-status-not-exist",
+				"pushall-remote-content-status-protected",
+				"pushall-remote-content-status-equal",
+				"pushall-remote-content-status-diverge",
+				"pushall-remote-content-status-obsolete",
+				"pushall-remote-content-status-obsolete-and-diverge",
+				"pushall-remote-content-status-unknown",
+
+				"pushall-checkbox-tooltip-will-push",
+				"pushall-checkbox-tooltip-wont-push",
+				"pushall-checkbox-tooltip-push-not-allowed-remote-protected",
+				"pushall-checkbox-tooltip-push-useless",
+				"pushall-checkbox-tooltip-push-not-allowed-remote-diverge-need-option-force",
+
+				"pushall-error-title-not-exist",
+				"pushall-error-title-not-allow",
+				"pushall-error-user-not-allow",
+				"pushall-error-not-credentials-for-this-target",
+				"pushall-error-pushall-failed",
+				"pushall-error-authentication",
+				"pushall-error-api-nocurl",
+				"pushall-error-api-nofilesupport",
+				"pushall-error-api-unknown",
+				"pushall-error-api-known",
+				"pushall-error-token-request-failed",
+
+				"pushall-button-pushing",
+				"pushall-button-completed",
+				"pushall-button-nothing-to-push",
+				"pushall-button-failed",
+
+				"pushall-import-revision-message"
+			]
+		},
+		"ext.pushall.tab": {
+			"group": "ext.pushall.tab",
+			"scripts": [
+				"src/ui/js/ext.pushall.tab.js"
+			],
+			"dependencies": [
+				"ext.pushall"
+			],
+			"messages": [
+			]
+		},
+		"ext.pushall.special": {
+			"group": "ext.pushall.special",
+			"scripts": [
+				"src/ui/js/ext.pushall.special.js",
+				"src/ui/js/ext.pushall.widgets.CategorySelector.js",
+				"src/ui/js/ext.pushall.widgets.PageSelector.js"
+			],
+			"dependencies": [
+				"ext.pushall",
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui.styles.icons-content",
+				"oojs-ui-windows",
+				"mediawiki.widgets"
+			],
+			"messages": [
+			]
+		},
+		"ext.pushall.preferences": {
+			"group": "ext.pushall.preferences",
+			"scripts": [
+				"src/ui/js/ext.pushall.preferences.js"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-windows"
+			],
+			"messages": [
+				"prefs-pushall",
+				"prefs-pushall-preference-targets-description",
+				"pushall-preference-targets-action-field-button-change",
+				"pushall-preference-targets-action-field-button-delete",
+				"pushall-preference-targets-button-add",
+				"pushall-preference-targets-header",
+				"pushall-preference-dialog-help-new-bot",
+				"pushall-preference-dialog-field-help",
+				"pushall-preference-dialog-field-articlepath-label",
+				"pushall-preference-dialog-field-endpoint-label",
+				"pushall-preference-dialog-field-login-label",
+				"pushall-preference-dialog-field-key-label",
+				"pushall-preference-dialog-field-wikiname-label",
+				"pushall-preference-dialog-message-remove"
+			]
+		}
+	},
+	"QUnitTestModule": {
+		"localBasePath": "",
+		"remoteExtPath": "PushAll",
+		"scripts": [
+			"tests/ui/js/ext.pushall.test.js"
+		],
+		"dependencies": [
+			"ext.pushall"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "PushAll"
+	},
+	"Hooks": {
+		"MediaWikiPerformAction": "PushAllHooks::onMediaWikiPerformAction",
+		"SkinTemplateNavigation::Universal": "PushAllHooks::onSkinTemplateNavigationUniversal",
+		"ListDefinedTags": "PushAllHooks::onRegisterTags",
+		"ChangeTagsListActive": "PushAllHooks::onRegisterTags",
+		"GetPreferences": "PushAllHooks::onGetPreferences",
+		"BeforePageDisplay": "PushAllHooks::onBeforePageDisplay"
+	},
+	"ConfigRegistry": {
+		"egPushAll": "PushAll::makeConfig"
+	},
+	"DefaultUserOptions": {
+		"pushall-targets": "",
+		"pushall-showtab": false,
+		"pushall-defaultIncTemplates": false,
+		"pushall-defaultIncAttachedNamespaces": false,
+		"pushall-defaultIncSubpages": false,
+		"pushall-defaultIncFiles": false
+	},
+	"config_prefix": "egPushAll",
+	"config": {
+		"AttachedNamespaces": {
+			"description": "You can attach pages by their namespaces (such as discussion pages) when pushing a page.",
+			"value": {},
+			"merge_strategy": "array_merge"
+		}
+	}
+}

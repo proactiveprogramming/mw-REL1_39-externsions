@@ -1,0 +1,110 @@
+{
+	"name": "DataDump",
+	"author": [
+		"Paladox",
+		"Universal Omega"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:DataDump",
+	"descriptionmsg": "datadump-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
+	"AvailableRights": [
+		"generate-dump",
+		"delete-dump",
+		"view-dump"
+	],
+	"config": {
+		"DataDump": {
+			"description": "object",
+			"public": true,
+			"value": {}
+		},
+		"DataDumpInfo": {
+			"description": "string",
+			"public": true,
+			"value": ""
+		},
+		"DataDumpLimits": {
+			"description": "object",
+			"public": true,
+			"value": {
+				"memory": 0,
+				"filesize": 0,
+				"time": 0,
+				"walltime": 0
+			}
+		},
+		"DataDumpDirectory": {
+			"description": "string",
+			"public": true,
+			"value": false
+		},
+		"DataDumpFileBackend": {
+			"description": "string",
+			"public": true,
+			"value": ""
+		},
+		"DataDumpDownloadUrl": {
+			"description": "string",
+			"public": true,
+			"value": ""
+		},
+		"DataDumpDisableGenerate": {
+			"description": "boolean",
+			"public": true,
+			"value": false
+		}
+	},
+	"MessagesDirs": {
+		"DataDump": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"DataDumpAliases": "includes/DataDumpAliases.php"
+	},
+	"APIModules": {
+		"deletedumps": "ApiDeleteDumps",
+		"generatedumps": "ApiGenerateDumps",
+		"viewdumps": "ApiViewDumps"
+	},
+	"SpecialPages": {
+		"DataDump": "SpecialDataDump"
+	},
+	"LogActionsHandlers": {
+		"datadump/delete": "LogFormatter",
+		"datadump/generate": "LogFormatter"
+	},
+	"LogTypes": [
+		"datadump"
+	],
+	"JobClasses": {
+		"DataDumpGenerateJob": "DataDumpGenerateJob"
+	},
+	"AutoloadClasses": {
+		"ApiDeleteDumps": "includes/api/ApiDeleteDumps.php",
+		"ApiGenerateDumps": "includes/api/ApiGenerateDumps.php",
+		"ApiViewDumps": "includes/api/ApiViewDumps.php",
+		"DataDump": "includes/DataDump.php",
+		"DataDumpGenerateJob": "includes/jobs/DataDumpGenerateJob.php",
+		"DataDumpHooks": "includes/DataDumpHooks.php",
+		"DataDumpPager": "includes/DataDumpPager.php",
+		"SpecialDataDump": "includes/specials/SpecialDataDump.php"
+	},
+	"HookHandlers": {
+		"default": {
+			"class": "DataDumpHooks"
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "default",
+		"SidebarBeforeOutput": "default"
+	},
+	"ConfigRegistry": {
+		"datadump": "GlobalVarConfig::newInstance"
+	},
+	"manifest_version": 2
+}

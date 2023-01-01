@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"mwjames"
+		]
+	},
+	"sil-desc": "A [https://www.semantic-mediawiki.org Semantic MediaWiki] extension to create and manage interlanguage links",
+	"sil-name": "Semantic Interlanguage Links",
+	"sil-property-ill-alias-language": "Page content language",
+	"sil-property-ill-alias-reference": "Interlanguage reference",
+	"sil-property-iwl-alias-language": "Interwiki language",
+	"sil-property-iwl-alias-reference": "Interwiki reference",
+	"sil-property-alias-container": "Has interlanguage link",
+	"smw-pa-property-predefined__sil_container": "\"$1\" is a predefined property that represents a container entity to describe interlanguage link related information and is provided by the [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Semantic Interlanguage Links] extension.",
+	"smw-pa-property-predefined__sil_ill_lang": "\"$1\" is a predefined property that contains an annotated language code and is provided by the [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Semantic Interlanguage Links] extension.",
+	"smw-pa-property-predefined__sil_ill_ref": "\"$1\" is a predefined property that contains an arbitrary reference and is provided by the [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Semantic Interlanguage Links] extension.",
+	"smw-pa-property-predefined-long__sil_ill_ref": "Entities with the same reference are interlinked and expected to represent similar content in different languages.",
+	"smw-pa-property-predefined__sil_iwl_lang": "\"$1\" is a predefined property and represents a language code derived from an interwiki link and is provided by the [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Semantic Interlanguage Links] extension.",
+	"smw-pa-property-predefined__sil_iwl_ref": "\"$1\" is a predefined property and represents a target page derived from an interwiki link and is provided by the [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Semantic Interlanguage Links] extension.",
+	"sil-interlanguagelink-hideinterlanguagelinks": "The parser function cannot be used because <code>$wgHideInterlanguageLinks</code> is set.",
+	"sil-interlanguagelink-invalidlanguagecode": "\"$1\" was not recognized as valid language code.",
+	"sil-interlanguagelink-multiplecalls-different-languagecode": "The parser function was called multiple times but with a different language code (\"$1\") which is to be avoided as content of a page is generally expected to be represented by a single language.",
+	"sil-interlanguagelink-languagetargetcombination-exists": "The combination \"$1\":\"$2\" already exists for page \"$3\" therefore no additional interlanguage annotation was created.",
+	"sil-interlanguagelist-missing-linkreference": "The parser function is missing a valid reference.",
+	"sil-interlanguagelist-missing-template": "The parser function is missing an output template.",
+	"sil-interlanguageparser-linkreference-error": "The parser function had a problem to create a title object from \"$1\".",
+	"sil-search-profile":"By Language",
+	"sil-search-profile-tooltip":"Filter articles by language annotation",
+	"sil-search-languagefilter-label":"Filter by language",
+	"sil-search-nolanguagefilter":"No language filter",
+	"sil-categorypage-languagefilter-active":"This category contains information (page, subcategory, and image) that is filtered by \"$1\" language."
+}

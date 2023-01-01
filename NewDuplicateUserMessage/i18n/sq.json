@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Olsi"
+        ]
+    },
+    "newduplicateusermessage-description": "Shton një mesazh tek faqja e diskutimit e përdoruesit më të ri",
+    "newduplicateusermessage-edit-summary": "Duke shtuar [[{{int:newduplicateusermessage-template}}|mesazhin mirëseardhës]] tek faqja e diskutimit e përdoruesit të ri"
+}

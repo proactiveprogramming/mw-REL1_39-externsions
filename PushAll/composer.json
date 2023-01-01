@@ -1,0 +1,31 @@
+{
+	"name": "bordercloud/pushall",
+	"description": "This extension push all content (images, modules, templates), subpages and associated namespaces to other wikis.",
+	"type": "mediawiki-extension",
+	"require": {
+	},
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Karima Rafes",
+			"email": "karima.rafes@gmail.com"
+		}
+	],
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"minus-x check .",
+			"phpcs -p -s"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		]
+	}
+}

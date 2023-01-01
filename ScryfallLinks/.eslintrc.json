@@ -1,0 +1,17 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es6",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	],
+	"parserOptions": {
+		"ecmaVersion": 8
+	},
+	"rules": {
+		"compat/compat": [
+			"error",
+			"> 0.5%, last 2 versions, Firefox ESR, not dead, not IE 11, not OperaMini all"
+		]
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"name": "Attachments",
+	"type": "other",
+	"license-name": "MIT",
+	"author": "Gittenburg",
+	"url": "https://www.mediawiki.org/wiki/Extension:Attachments",
+	"version": "0.1.0",
+	"descriptionmsg": "attachments-desc",
+	"config": {
+		"AttachmentsNamespaces": {
+			"_merge_strategy": "array_plus"
+		},
+		"AttachmentsChunkListByLetter": true,
+		"AttachmentsShowSubpageForm": true,
+		"AttachmentsShowLinkForm": true
+	},
+	"AutoloadClasses": {
+		"Attachments": "includes/Attachments.php",
+		"AttachmentsHooks": "includes/AttachmentsHooks.php",
+		"AttachAction": "includes/AttachAction.php"
+	},
+	"ExtensionMessagesFiles": {
+		"AttachmentsMagic": "includes/Attachments.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "AttachmentsHooks::onParserFirstCallInit",
+		"BeforePageDisplay": "AttachmentsHooks::onBeforePageDisplay",
+		"MagicWordwgVariableIDs": "AttachmentsHooks::onMagicWordwgVariableIDs",
+		"ParserGetVariableValueSwitch": "AttachmentsHooks::onParserGetVariableValueSwitch",
+		"SkinTemplateNavigation": "AttachmentsHooks::onSkinTemplateNavigation",
+		"MinervaPreRender": "AttachmentsHooks::onMinervaPreRender",
+		"ListDefinedTags": "AttachmentsHooks::onListDefinedTags",
+		"ChangeTagsListActive": "AttachmentsHooks::onListDefinedTags"
+	},
+	"Actions": {
+		"attach": "AttachAction"
+	},
+	"MessagesDirs" : {
+		"Attachments": ["i18n"]
+	},
+	"TrackingCategories": [
+		"attachments-category-attached-files",
+		"attachments-category-exturl-error"
+	],
+	"ResourceModules": {
+		"ext.attachments.minerva-icon": {
+			"class": "ResourceLoaderImageModule",
+			"selector": ".mw-ui-icon-minerva-{name}:before",
+			"useDataURI": false,
+			"images": {
+				"attachments": "resources/folder.svg",
+				"attach": "resources/file-plus.svg"
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Attachments"
+	},
+	"manifest_version": 1
+}

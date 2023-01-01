@@ -1,0 +1,34 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarrayparent
+!! endfunctionhooks
+
+# This test tests the ComplexArrayParent parser function
+
+!! test
+Test simple
+!! wikitext
+{{#complexarrayparent: foobar[a][b][c]}}
+!! html
+<p>foobar[a][b]
+</p>
+!! end
+
+!! test
+Test no parent
+!! wikitext
+{{#complexarrayparent: foobar}}
+!! html
+<p>foobar
+</p>
+!! end
+
+!! test
+Test empty
+!! wikitext
+{{#complexarrayparent:}}
+!! html
+<p><span class="error">Key must not be omitted</span>
+</p>
+!! end

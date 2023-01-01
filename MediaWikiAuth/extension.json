@@ -1,0 +1,107 @@
+{
+	"name": "MediaWikiAuth",
+	"namemsg": "mwa-extensionname",
+	"version": "1.5.0",
+	"author": [
+		"Laurence Parry",
+		"Jack Phoenix",
+		"Kim Schoonover",
+		"Ryan Schmidt"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MediaWikiAuth",
+	"descriptionmsg": "mwa-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"config": {
+		"MediaWikiAuthAllowPasswordChange": {
+			"value": true,
+			"description": "If true, prompts the user to optionally change their password after import.",
+			"descriptionmsg": "mwa-config-allowpasswordchange",
+			"public": true
+		},
+		"MediaWikiAuthApiUrl": {
+			"value": "",
+			"description": "Remote API endpoint to auth against.",
+			"descriptionmsg": "mwa-config-apiurl",
+			"public": false
+		},
+		"MediaWikiAuthImportGroups": {
+			"value": true,
+			"description": "If a boolean, controls whether or not we copy group membership from remote wiki. If an array of strings, we only import the listed groups.",
+			"descriptionmsg": "mwa-config-importgroups",
+			"public": true
+		},
+		"MediaWikiAuthDisableAccountCreation": {
+			"value": false,
+			"description": "If true, assume all relevant users already exist locally but with invalid password hashes. When operating in this mode, watchlist, group imports, and edit reattribution do not happen.",
+			"descriptionmsg": "mwa-config-disableaccountcreation",
+			"public": true
+		},
+		"MediaWikiAuthImportWatchlist": {
+			"value": true,
+			"description": "Import watchlists via job queue",
+			"descriptionmsg": "mwa-config-importwatchlist",
+			"public": true
+		},
+		"MediaWikiAuthReattributeEdits": {
+			"value": true,
+			"description": "Reattribute existing edits by unknown actors via job queue",
+			"descriptionmsg": "mwa-config-reattributeedits",
+			"public": true
+		},
+		"MediaWikiAuthImportOptions": {
+			"value": ["*"],
+			"description": "User preferences to import from the remote wiki; use * for all",
+			"descriptionmsg": "mwa-config-importoptions",
+			"merge_strategy": "provide_default",
+			"public": true
+		},
+		"MediaWikiAuthSkipOptions": {
+			"value": [],
+			"description": "User preferences that should not be imported from the remote wiki",
+			"descriptionmsg": "mwa-config-skipoptions",
+			"merge_strategy": "provide_default",
+			"public": true
+		}
+	},
+	"MessagesDirs": {
+		"MediaWikiAuth": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWikiAuth\\": "includes/"
+	},
+	"AvailableRights": [
+		"mwa-createlocalaccount"
+	],
+	"JobClasses": {
+		"populateImportedWatchlist": "MediaWikiAuth\\PopulateImportedWatchlistJob",
+		"reattributeImportedEdits": "MediaWikiAuth\\ReattributeImportedEditsJob"
+	},
+	"AuthManagerAutoConfig": {
+		"primaryauth": {
+			"ExternalWikiPrimaryAuthenticationProvider": {
+				"class": "MediaWikiAuth\\ExternalWikiPrimaryAuthenticationProvider",
+				"args": [ { "authoritative": false } ],
+				"sort": 50,
+				"services": [
+					"DBLoadBalancer",
+					"HttpRequestFactory",
+					"SkinFactory",
+					"TalkPageNotificationManager",
+					"UserGroupManager",
+					"UserOptionsManager"
+				],
+				"optional_services": [
+					"JobQueueGroupFactory"
+				]
+			}
+		}
+	},
+	"callback": "MediaWikiAuth\\Setup::callback",
+	"manifest_version": 2
+}

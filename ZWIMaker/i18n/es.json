@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Armando-Martin"
+		]
+	},
+	"mzwi-action": "Exportación en ZWI",
+	"mzwi-desc": "Convierte la página actual en un archivo ZWI y la envía al navegador"
+}

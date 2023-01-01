@@ -1,0 +1,110 @@
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraymerge
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayMerge parser function
+
+!! test
+Merge two one-dimensional lists
+!! wikitext
+{{#complexarraydefine:left|a,b,c}}
+{{#complexarraydefine:right|d,e,f}}
+{{#complexarraymerge:example|left|right}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li></ul>
+
+!! end
+
+!! test
+Merge two one-item lists
+!! wikitext
+{{#complexarraydefine:a|a}}
+{{#complexarraydefine:b|b}}
+{{#complexarraymerge:example|a|b}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li></ul>
+
+!! end
+
+!! test
+Merge many one-dimensional lists
+!! wikitext
+{{#complexarraydefine:a|a}}
+{{#complexarraydefine:b|b}}
+{{#complexarraydefine:c|c}}
+{{#complexarraydefine:d|d}}
+{{#complexarraydefine:e|e}}
+{{#complexarraydefine:f|f}}
+{{#complexarraymerge:example|a|b|c|d|e|f}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p><p><br />
+</p><p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+<li>f</li></ul>
+
+!! end
+
+!! test
+Merge two two-dimensional lists
+!! wikitext
+{{#complexarraydefine:left|["a","b"]}}
+{{#complexarraydefine:right|["c","d"]}}
+{{#complexarraymerge:example|left|right}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li></ul>
+
+!! end
+
+!! test
+Merge two arbitrary lists
+!! wikitext
+{{#complexarraydefine:left|a}}
+{{#complexarraydefine:right|["c","d"]}}
+{{#complexarraymerge:example|left|right}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>c</li>
+<li>d</li></ul>
+
+!! end
+
+!! test
+Merge two non-existant lists
+!! wikitext
+{{#complexarraymerge:example|aaaa|bbbb}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+!! end

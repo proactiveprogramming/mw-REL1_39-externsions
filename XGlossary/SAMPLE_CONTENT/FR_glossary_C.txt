@@ -1,0 +1,38 @@
+{{#glossary_entry:
+ |langs=FR
+ |title=Capteur
+ |ref=capteur
+ |syns=(langs=EN;title=Sensor;ref=sensor)
+ |dict=(langs=FR;term=capteur;usage=4), (langs=EN;term=sensor)
+ |shortdesc=Un capteur est une brique logique qui agit comme un “sens” biologique. Il réagit au touché, à la vision, à la collision, etc.
+ |longdesc=Voyez également la [[Doc:FR/Manual/Game Engine/Logic/Sensors|page sur les capteurs]], ainsi que l’entrée {{Glossary/Link|ref=logic brick|txt=brique logique}}.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Contexte
+ |ref=contexte
+ |dict=(langs=FR;term=contexte), (langs=EN;term=context)
+ |shortdesc=Un contexte est une subdivision “par rôle” de la fenêtre {{Literal|Buttons}}, regroupant des réglages communs du(des) objet(s) actuellement sélectionné(s)/actif(s).
+ |longdesc=Par exemple, dans la {{Glossary/Link|ref=buttons fenêtre|txt=fenêtre {{Literal|Buttons}}}}, vous avez un contexte {{Literal|Shading}} ({{Shortcut|F5}}) regroupant tout ce qui concerne l’éclairage, les matériaux et les textures. Ou un contexte {{Literal|Editing}} ({{Shortcut|F9}}) avec tous les réglages et outils ayant trait à l’édition d’un objet, ou de son ''mesh''/de ses points de contrôle/…<br />Notez que les contextes peuvent être encore subdivisés en {{Glossary/Link|ref=sous contexte|txt=sous-contextes}}, quand il y a beaucoup de choses (comme c’est le cas pour le contexte {{Literal|Shading}}, par exemple).
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Contrôleur
+ |ref=controleur
+ |syns=(langs=EN;title=Controller;ref=controller)
+ |dict=(langs=FR;term=contrôleur;usage=4), (langs=EN;term=controller)
+ |shortdesc=Un contrôleur est une logique brique qui agit comme un “cerveau” biologique. Il prend des décisions pour activer des “muscles” (actuateurs), soit ''via'' une logique simple, soit grâce à des scripts Python complexes.
+ |longdesc=Voyez aussi la [[Doc:FR/Manual/Game Engine/Logic/Controllers|page sur les contrôleurs]] et les entrées {{Glossary/Link|ref=logic brick|txt=Brique logique}} et {{Glossary/Link|ref=actuateur|txt=Actuateur}}.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Conception Architecturale
+ |ref=conception architecturale
+ |syns=(langs=EN;title=Architectural Design;ref=architectural design)
+ |dict=(langs=FR;term=conception architecturale), (langs=EN;term=architectural design)
+ |shortdesc=Utilisation de Blender pour concevoir en architecture (y compris des maisons et constructions similaires). Voyez aussi [[Dev:Ref/Uses/Architecture|Architecture (''en'')]].
+ }}
+

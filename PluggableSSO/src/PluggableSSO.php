@@ -22,16 +22,16 @@
 
 namespace PluggableSSO;
 
-use MediaWiki\Session\SessionManager;
+use Hooks;
+use MWException;
 use PluggableAuth;
+use MediaWiki\Session\SessionManager;
+use PluggableAuthLogin;
 use RequestContext;
 use User;
 
 abstract class PluggableSSO extends PluggableAuth {
 
-	/**
-	 * @return Config
-	 */
 	protected function getConfig() {
 		return RequestContext::getMain()->getConfig();
 	}
@@ -48,7 +48,7 @@ abstract class PluggableSSO extends PluggableAuth {
 	 * @param string &$realname real name of user
 	 * @param string &$email email address of user
 	 * @param string &$errorMessage error message to return
-	 * @return bool false if the username does not match what is in
+	 * @return boolean false if the username does not match what is in
 	 *     the session
 	 *
 	 * @SuppressWarnings("CamelCaseVariableName")
@@ -58,16 +58,7 @@ abstract class PluggableSSO extends PluggableAuth {
 		&$identity, &$username, &$realname, &$email, &$errorMessage
 	) {
 		if ( $identity === null && $username ) {
-			if ( method_exists( MediaWikiServices::class, 'getUserIdentityLookup' ) ) {
-				// MW 1.36+
-				$userIdentity = MediaWikiServices::getInstance()->getUserIdentityLookup()
-					->getUserIdentityByName( $username );
-				if ( $userIdentity && $userIdentity->isRegistered() ) {
-					$identity = $userIdentity->getId();
-				}
-			} else {
-				$identity = User::idFromName( $username );
-			}
+			$identity = User::idFromName( $username );
 		}
 		if ( !$username ) {
 			$session = SessionManager::getGlobalSession();
@@ -85,7 +76,7 @@ abstract class PluggableSSO extends PluggableAuth {
 
 		$ssoRealName = $this->discoverRealname();
 		if ( $ssoRealName && $realname !== $ssoRealName ) {
-			wfDebugLog( __METHOD__, "Updating real name from '$realname' " .
+			wfDebugLog( __METHOD__, "Updating real name from '$realname' ".
 						"to '$ssoRealName'\n" );
 			$realname = $ssoRealName;
 		}
@@ -102,7 +93,7 @@ abstract class PluggableSSO extends PluggableAuth {
 
 	/**
 	 * @param User &$user user that is logging out
-	 * @return bool
+	 * @return boolean
 	 *
 	 * @SuppressWarnings("UnusedFormalParameter")
 	 */
@@ -112,7 +103,7 @@ abstract class PluggableSSO extends PluggableAuth {
 
 	/**
 	 * @param int $identity user id
-	 * @return bool
+	 * @return boolean
 	 *
 	 * @SuppressWarnings("UnusedFormalParameter")
 	 */

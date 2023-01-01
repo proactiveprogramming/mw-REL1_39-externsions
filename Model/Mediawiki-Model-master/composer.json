@@ -1,0 +1,24 @@
+{
+	"name": "mediawiki/model",
+	"type": "mediawiki-extension",
+	"description": "Abstraction model for mediawiki",
+	"homepage": "http://www.mediawiki.org/wiki/Extension:Model",
+	"license" : "GPL-2.0+",
+	"keywords": ["Model", "SQL"],
+	"require": {
+		"composer/installers": ">=1.0.1"
+	},
+    "autoload": {
+        "files": [
+        	"Model.php"
+        ]
+    },
+    "authors": [
+		{
+			"name": "Vedmaka",
+			"homepage": "https://www.mediawiki.org/wiki/User:Vedmaka",
+			"role": "Developer"
+		}
+	],
+    "minimum-stability": "dev"
+}

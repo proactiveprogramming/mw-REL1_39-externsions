@@ -1,0 +1,66 @@
+@import "layout";
+@import "skins/shared/mixins/clearfix";
+@import "skins/shared/color";
+@import "extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-variables/index";
+
+body {
+	color: $color-text;
+	font-family: $wds-font-family;
+	font-size: 12px;
+	margin: 0;
+	overflow-x: auto;
+	padding: 0;
+}
+
+.WikiaSiteWrapper > h2 {
+	display: none;
+}
+
+a {
+	color: $color-links;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+a.new:not([data-rte-instance]):not(.ve-ce-linkAnnotation){
+	cursor: pointer;
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+// for backward compatibility with Monaco
+.color1 {
+	background-color: $color-buttons;
+	color: $color-button-text;
+}
+.color1 a {
+	color: $color-button-text;
+}
+.color2 {
+	background-color: $color-page-border;
+}
+.dark_text_1 {
+	color: $color-links;
+}
+.dark_text_2 {
+	color: $color-links;
+}
+.accent	{
+	background-color: $color-menu-highlight;
+	border-color: $color-links;
+	color: $color-text;
+}
+.neutral {
+	background-color: $color-page-border;
+	border-color: $color-page;
+	color: $color-text;
+}
+
+// Customization for Local_Sitemap
+.local-sitemap-line a span {
+	color: $color-text;
+}

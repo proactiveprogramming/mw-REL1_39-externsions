@@ -1,0 +1,35 @@
+{
+	"name": "UserHistory",
+	"version": "1.0.1",
+	"author": [
+		"Ramunas Geciauskas"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:UserHistory",
+	"descriptionmsg": "UserHistory extension adds additional Special page which lists all your previously read articles",
+	"license-name": "MIT",
+	"type": "specialpage",
+	"AutoloadClasses": {
+		"UserHistoryHooks": "UserHistory.hooks.php",
+		"SpecialUserHistory": "specials/SpecialUserHistory.php"
+	},
+	"ExtensionMessagesFiles": {
+		"BoilerPlateAlias": "UserHistory.i18n.alias.php"
+	},
+	"Hooks": {
+		"ArticleFromTitle": [
+			"UserHistoryHooks::onArticleFromTitle"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"UserHistoryHooks::onLoadExtensionSchemaUpdates"
+		]
+	},
+	"MessagesDirs": {
+		"BoilerPlate": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+		"UserHistory": "SpecialUserHistory"
+	},
+	"manifest_version": 1
+}

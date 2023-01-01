@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Pikne"
+        ]
+    },
+    "newduplicateusermessage-description": "Lisab vastloodud kasutaja aruteluleheküljele läkituse.",
+    "newduplicateusermessage-edit-summary": "[[{{int:newduplicateusermessage-template}}|Tervitusteate]] lisamine uue kasutaja aruteluleheküljele"
+}

@@ -1,0 +1,24 @@
+{
+	"name": "GNDShow",
+	"author": "Julian Hocker, Patrick Schmelmer",
+	"version": "0.1",
+	"url": "https://github.com/julianhocker/GNDShow",
+	"descriptionmsg": "desc",
+	"license-name": "MIT License",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"GNDShow": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"GNDShowHooks": "src/GNDShowHooks.php"
+	},
+	"ExtensionMessagesFiles": {
+		"GNDShowMagic": "GNDShow.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "GNDShowHooks::onParserFirstCallInit"
+	},
+	"manifest_version": 1
+}

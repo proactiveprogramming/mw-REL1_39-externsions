@@ -1,0 +1,163 @@
+{
+	"name": "Semantic Image Annotator",
+	"version": "0.7.2",
+	"author": [
+		"[http://www.aifb.kit.edu/web/Tobias_Weller Tobias Weller]",
+		"Felix Obenauer"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Semantic Image Annotator",
+	"descriptionmsg": "sia-desc",
+	"license-name": "MIT",
+	"type": "semantic",
+	"AutoloadClasses": {
+		"SemanticImageAnnotatorHooks": "SemanticImageAnnotator.hooks.php",
+		"SemanticImageAnnotatorSpecial": "specials/SemanticImageAnnotatorSpecial.php",
+		"SemanticImageAnnotator": "SemanticImageAnnotator.php"
+	},
+	"config": {
+		"BoilerPlateEnableFoo": true
+	},
+	"ExtensionMessagesFiles": {
+		"SemanticImageAnnotatorAlias": "SemanticImageAnnotator.i18n.alias.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"SemanticImageAnnotatorHooks::onBeforePageDisplay"
+		],
+		"CanonicalNamespaces": [
+			"SemanticImageAnnotatorHooks::onCanonicalNamespaces"
+		],
+		"smwInitProperties": [
+			"SemanticImageAnnotatorHooks::smwInitProperties"
+		]
+	},
+	"MessagesDirs": {
+		"SemanticImageAnnotator": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.imageannotator": {
+			"scripts": [
+				"modules/ext.annotator.module.api.js",
+				"modules/ext.annotator.js"
+			],
+			"styles": [
+				"modules/ext.annotator.css"
+			],
+			"messages": [
+				"sia-button-text",
+				"sia-please-install",
+				"sia-button-desc",
+				"sia-icon-desc",
+				"sia-welcome-message",
+				"sia-godbye-message"
+			],
+			"dependencies": [
+				"mediawiki.jqueryMsg"
+			]
+		},
+		"ext.imageannotator.module": {
+			"scripts": [
+				"modules/lib/annotorious.min.js",
+				"modules/lib/featherlight.min.js",
+				"modules/lib/fancy_box_selector.js",
+				"modules/lib/json2.js",
+				"modules/lib/jquery.i18n.min.js",
+				"modules/lib/jquery-dateFormat.min.js",
+				"modules/lib/lunr.min.js",
+				"modules/ext.annotator.module.js",
+				"modules/ext.annotator.module.util.js",
+				"modules/ext.annotator.module.store.js",
+				"modules/ext.annotator.module.api.js",
+				"modules/ext.annotator.module.smwplugin.js"
+			],
+			"styles": [
+				"modules/lib/featherlight.min.css",
+				"modules/lib/css/theme-dark/annotorious-dark.css"
+			],
+			"messages": [
+				"sia-main-page-description",
+				"sia-annotations",
+				"sia-repair-notification",
+				"sia-repair-button-text",
+				"sia-repair-button-desc"
+			],
+			"dependencies": []
+		},
+		"ext.imageannotator.repair": {
+			"scripts": [
+				"modules/lib/sweetalert2.min.js"
+			],
+			"styles": [
+				"modules/lib/sweetalert2.min.css",
+				"modules/ext.annotator.repair.css"
+			],
+			"messages": [
+				"sia-repair-welcome-title",
+				"sia-repair-welcome-text",
+				"sia-repair-info-title",
+				"sia-repair-info-text",
+				"sia-article-link",
+				"sia-repair-done-title",
+				"sia-repair-done-text",
+				"sia-repair",
+				"sia-skip",
+				"sia-repair-all-done-title",
+				"sia-repair-all-done-text"
+			]
+		},
+		"ext.imageannotator.special": {
+			"scripts": [
+				"modules/ext.annotator.module.api.js",
+				"modules/ext.annotator.module.util.js",
+				"modules/ext.annotator.special.js",
+				"modules/ext.annotator.reinstall.js",
+				"modules/lib/sweetalert2.min.js"
+			],
+			"styles": [
+				"modules/lib/bootstrap.css",
+				"modules/ext.annotator.style_special.css",
+				"modules/lib/plugins/annotator_view/css/style.css",
+				"modules/lib/sweetalert2.min.css"
+			],
+			"messages": [
+				"sia-category",
+				"sia-pageforms-form",
+				"sia-color",
+				"sia-add",
+				"sia-delete",
+				"sia-red",
+				"sia-yellow",
+				"sia-green",
+				"sia-blue",
+				"sia-grey",
+				"sia-reinstall-header",
+				"sia-request-reinstall",
+				"sia-confirm-reinstall"
+			],
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SemanticImageAnnotator"
+	},
+	"SpecialPages": {
+		"SemanticImageAnnotator": "SemanticImageAnnotatorSpecial"
+	},
+	"namespaces": [
+		{
+			"id": 248,
+			"constant": "NS_ANNOTATION",
+			"name": "Annotation"
+		},
+		{
+			"id": 249,
+			"constant": "NS_ANNOTATION_TALK",
+			"name": "Annotation_talk"
+		}
+	],
+	"callback": "SemanticImageAnnotatorHooks::afterInit",
+	"manifest_version": 1
+}

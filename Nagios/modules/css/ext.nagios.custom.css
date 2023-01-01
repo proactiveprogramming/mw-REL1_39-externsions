@@ -1,0 +1,44 @@
+/*quick nagios extension stylesheet*/
+
+table.status {
+   padding: 0 0 10px 0;
+   border-spacing: 1px;
+}
+
+.status a{
+    border-bottom: none;
+}
+
+.status a:link{
+   color: #40529B;
+}
+
+.status a:visited{
+   color: #40529B;
+}
+
+/* table captions */
+.stateInfoPanel caption{
+	text-align: left;
+	font-size: 11pt;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.status caption{
+        text-align: left;
+        font-size: 11pt;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#tooltip {
+    max-height: 350px;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#tooltip tr:hover{
+    color: #F90; 
+}

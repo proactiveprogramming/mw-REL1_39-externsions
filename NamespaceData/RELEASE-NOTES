@@ -1,0 +1,28 @@
+These are the release notes for the NamespaceData extension.
+
+Extension page on mediawiki.org: https://www.mediawiki.org/wiki/Extension:NamespaceData
+
+=== Version 2.0.1 ===
+2021-10-04
+
+* Remove the deprecated/internal functions
+* Fixes the dependency of namespaces with the LinkedWiki extension
+
+=== Version 2.0.0 ===
+2021-08-06
+
+* Big cleaning
+* Add coverage tests with Selenium T255376
+** NamespaceData tests are now automatic in the project: https://github.com/BorderCloud/mediawiki-extension-LinkedWiki-CI/tree/main/test/NamespaceData
+** SELENIUM TESTS 6 (Chrome and Firefox)
+** COVERAGE 96.17%
+
+=== Version 1.0.1 ===
+2021-07-21
+
+* deprecate SkinTemplateNavigation T255319
+
+=== Version 1.0.0 ===
+2020-06-16
+
+* First version

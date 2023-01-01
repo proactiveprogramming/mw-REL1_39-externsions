@@ -1,0 +1,2111 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.3/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd" version="0.3" xml:lang="en">
+  <siteinfo>
+    <sitename>Sandbox</sitename>
+    <base>http://localhost/mediawiki/index.php/Main_Page</base>
+    <generator>MediaWiki 1.15.1</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2">Media</namespace>
+      <namespace key="-1">Special</namespace>
+      <namespace key="0" />
+      <namespace key="1">Talk</namespace>
+      <namespace key="2">User</namespace>
+      <namespace key="3">User talk</namespace>
+      <namespace key="4">Sandbox</namespace>
+      <namespace key="5">Sandbox talk</namespace>
+      <namespace key="6">File</namespace>
+      <namespace key="7">File talk</namespace>
+      <namespace key="8">MediaWiki</namespace>
+      <namespace key="9">MediaWiki talk</namespace>
+      <namespace key="10">Template</namespace>
+      <namespace key="11">Template talk</namespace>
+      <namespace key="12">Help</namespace>
+      <namespace key="13">Help talk</namespace>
+      <namespace key="14">Category</namespace>
+      <namespace key="15">Category talk</namespace>
+      <namespace key="101">Doc</namespace>
+      <namespace key="102">Doc talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Template:Glossary/Link/Documentation</title>
+    <id>59</id>
+    <revision>
+      <id>891</id>
+      <timestamp>2009-12-05T12:03:57Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <text xml:space="preserve">=Description=
+This will create a link to the specified glossary entry, with its “shortdesc” included in an infobox. This template is in fact a small wrapper around the &lt;code&gt;&lt;nowiki&gt;{{#glossary_link:…}}&lt;/nowiki&gt;&lt;/code&gt; function…
+
+Here is its synopsis:
+&lt;pre&gt;
+{{Glossary/Link
+ |ref=          *mandatory* The link-reference of the glossary entry.
+ |txt=          *mandatory* The text used for the link…
+ }}
+&lt;/pre&gt;
+
+For example,
+&lt;pre&gt;
+{{Glossary/Link|ref=armature|txt={{Literal|Armature}} object}}
+&lt;/pre&gt;
+
+…gives:
+
+{{Glossary/Link|ref=armature|txt={{Literal|Armature}} object}}
+
+For more info on the Glossary system, see the help of the Glossary extension (use &lt;code&gt;&lt;nowiki&gt;{{#glossary_help:&lt;/nowiki&gt;&lt;/code&gt; to display it in a page).</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Glossary/Link/Path/Documentation</title>
+    <id>60</id>
+    <revision>
+      <id>885</id>
+      <timestamp>2009-12-02T15:03:21Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <text xml:space="preserve">=Description=
+This template is used by [[Template:Glossary/Link]] to get the first part of the “wiki-url” of the link.
+
+#If the Glossary/Link is declared inside the “Doc:Glossary” page, it returns nothing (internal link).
+#If the Glossary/Link is declared inside the “Doc:FR/Glossary” or “Doc:ES/Glossary” page, it returns nothing (internal link).
+#If the Glossary/Link is declared inside the “Sandbox:Manual/Test” page, it returns “Doc:Glossary”.
+#If the Glossary/Link is declared inside the “Doc:IT/Manual/3D Interaction” page, it returns “Doc:IT/Glossary”.
+#If the Glossary/Link is declared inside the “Template:Glossary” page, it returns “Doc:Glossary”.
+
+For more info on the Glossary system, see the Glossary doc.</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Documentation</title>
+    <id>56</id>
+    <revision>
+      <id>722</id>
+      <timestamp>2009-10-31T15:33:32Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">{{ {{PAGENAME}}/Documentation }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary</title>
+    <id>34</id>
+    <revision>
+      <id>860</id>
+      <timestamp>2009-11-30T16:19:31Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <text xml:space="preserve">{{Languages/FlagsRow}}
+
+{{#glossary:keep_emptgrp=yes}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary/A</title>
+    <id>48</id>
+    <revision>
+      <id>859</id>
+      <timestamp>2009-11-30T16:18:54Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN
+ |title=AC3D
+ |ref=ac3d
+ |shortdesc=A software for building 3-Dimensional digital models and to texture them (UVmapping).
+ |longdesc=Relatively inexpensive, it has its own file format (&lt;code&gt;.ac&lt;/code&gt;), which Blender can import and export.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Action
+ |ref=action
+ |shortdesc=An “action” is a group of {{Literal|Object}} or {{Literal|Shape}} Ipos, defined in an {{Literal|Action Editor}} window, which allows you only to edit the ''position'' of the keyframes, '''not''' their value.
+ |longdesc=This way, you can create actions like a walking cycle, turning the head, etc., that you will then use in the {{Literal|NLA Editor}} window. See [[Doc:Manual/Animation/Armatures/The Action Editor|this page]] for more info.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=“Action” actuator
+ |ref=action actuator
+ |shortdesc=The {{Literal|Action}} actuator provides an interface for controlling action playback in the game engine. {{Literal|Action}} actuators can only be created on armature objects.
+ |longdesc=See [[Doc:Manual/Game Engine/Logic/Actuators/Action|{{Literal|Action}} actuator]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=“Action Editor” window
+ |ref=action editor window
+ |shortdesc=This window allows you to edit actions in Blender.
+ |longdesc=See [[Doc:Manual/Animation/Armatures/The Action Editor|this page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Active
+ |ref=active
+ |shortdesc=Blender makes a distinction between selected and active. Only one object or item can be active at any given time, for example to allow visualization of data in buttons.
+ |longdesc=In {{Literal|Object}} mode, the active object (in general, the last selected) is shown in a lighter pink than selected ones. When no object is selected, there is still an active one (its center remains pink), in general the last one deselected. See [[Doc:Manual/Modelling/Objects/Selecting|this page]] for more info.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Actuator
+ |ref=actuator
+ |shortdesc=An actuator is a logic brick of the game engine, that acts like a muscle of a lifeform. It can move the object, or also make a sound…
+ |longdesc=See also [[Doc:Manual/Game Engine/Logic/Actuators|this page]], and the {{Glossary/Link|ref=logic brick|txt=Logic Brick}} and {{Glossary/Link|ref=blender game engine|txt=Game Engine}} entries.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=“Add” menu
+ |ref=add menu
+ |shortdesc=A menu item on the {{Literal|User Preference}} header. It allows you to add primitive objects to your scene.
+ |longdesc=If in {{Literal|Object}} mode, a new object is created each time. If in {{Literal|Edit}} mode, the primitive is added ''inside'' the edited (active) object. See also [[Doc:Manual/3D interaction/Navigating/3D View Usage#Add|this page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Artificial Intelligence (AI)
+ |ref=artificial intelligence
+ |shortdesc=Computer programs developed to mimic human intelligence, such as reasoning, learning, problem-solving, and making decisions.
+ |longdesc=Artificial intelligence programs enable computers to perform tasks such as playing chess, proving mathematical theorems, etc.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Alpha Channel
+ |ref=alpha channel
+ |shortdesc=Additional channel in 2D image for transparency.
+ |longdesc=In an image element (a pixel) which stores a color, an additional value is stored for the alpha channel, containing a value between 0.0 (full transparency) and 1.0 (completely opaque). In a Blender render, a value of 0.0 means that the pixel does not have any coverage information, i.e. there was no color contribution from any geometry because the geometry did not overlap this pixel. A value of 1.0 means that the pixel is fully opaque because the geometry completely overlapped the pixel.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Ambient Light
+ |ref=ambient light
+ |shortdesc=It’s light that doesn’t seem to come from a specific source, but is just there in the world.
+ |longdesc=Look under the desk -&amp;nbsp;it’s pretty dark, but there’s some light there. In the real world, this is caused by stray photons bouncing around and occasionally ricocheting under the desk. Ambient light is basic, minimal amount of light in the whole scene. Adding too much ambient light makes a scene look washed out. Since the light doesn’t come from anywhere, all sides of an object are illuminated equally, and it won’t create any shading on it.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Animation
+ |ref=animation
+ |shortdesc=Simulation of motion. Blender can output video animations as well as real time animations.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Animation (Buttons)
+ |ref=animation buttons
+ |shortdesc=Sub-context of the {{Literal|Scene}} context ({{Shortcut|F10}}).
+ |longdesc=In this sub-context, you can set the start and end frames of an animation, slow it down or accelerate its tempo, set the frame rate, force Blender’s 3D view playback to be in sync with the frame rate, even if it must drop frames… Useful for pacing the animation to the audio.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Ambient Occlusion (AO)
+ |ref=ambient occlusion
+ |shortdesc=It simulates a huge dome light surrounding the entire scene. If a surface point is under a foot or table, it will end up much darker than the top of someone’s head or the tabletop.
+ |longdesc=A ratio of how much ambient light a surface point would be likely to receive, based on how much “sky” it can “see”.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Append
+ |ref=append
+ |shortdesc=Full copy in a host .blend file of one or more datablocks taken in another .blend file.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Architectural Design
+ |ref=architectural design
+ |shortdesc=Using Blender 3D to design architecture (including houses and similar constructions).
+ |longdesc=See the [[Dev:Ref/Uses/Architecture|Architecture page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Area
+ |ref=area
+ |dict=(langs=EN;term=area;usage=1;note=Try to avoid its use!)
+ |shortdesc=Traditionally, an area in Blender is any sub-window, like the 3D view, the text editor, the Ipo window…
+ |longdesc=Very few people use that term nowadays, so try to avoid its use!
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Armature
+ |ref=armature
+ |dict=(langs=EN;term=armature;usage=4;note=The tech term in Blender.), (langs=EN;term=skeleton;usage=3;note=Prefer using “armature”.)
+ |syns=(langs=EN;title=Skeleton;ref=skeleton)
+ |shortdesc=A single-member class of primitive object that allows to control/deform other objects (often meshes), generally to animate them. It is made of “bones”.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Automerge
+ |ref=automerge
+ |shortdesc=An editing mode working with the snap tool, which removes the doubles when you snap 2 vertices or more.
+ |longdesc={{Literal|Mesh}} menu&amp;nbsp;→ {{Literal|AutoMerge Editing}}. See also the [[Doc:Manual/Modelling/Meshes/Snap to Mesh|Snap-tool page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Autostart
+ |ref=autostart
+ |shortdesc=Automatically start the game (like pressing {{Shortcut|P}}) when opening the .blend file?
+ |longdesc={{Literal|User Preference}} menu&amp;nbsp;→ {{Literal|Game}}&amp;nbsp;→ {{Literal|Autostart}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Axis
+ |ref=axis
+ |shortdesc=A reference line.
+ |longdesc='''1.''' The geometry of Blender’s world is defined by three orthogonal axes, x-axis, y-axis, and z-axis. They are shown as red, green, and blue lines, respectively, in the 3D View. Their mutual intersection defines the position of the origin of the global coordinate system in Blender. In this Cartesian-derived system, a 3D position is defined in terms of its offset from these axes.&lt;br /&gt;'''2.''' Each object (or simultaneously selected set of objects) has its own, local axes that are orthogonal to each other and to the sides of the object’s bounding box. Local axes are invisible, unless you enable their drawing ({{Literal|Object}} context&amp;nbsp;→ {{Literal|Object}} sub-context&amp;nbsp;→ {{Literal|Draw}} panel&amp;nbsp;→ {{Literal|Axis}} button). If toggled on, the [[Doc:Manual/3D interaction/Manipulation/Manipulators|Transform Manipulator]] resides on the operational center of the object, and its arrows by default parallel the global axes. However, a {{Literal|Local}} mode can be selected from the {{Literal|Orientation}} dropdown list on the 3D View header. When in this mode, the arrows of the Transform Manipulator will coincide with the local axes of the object, and manipulations (transformations) in either {{Literal|Object}} or {{Literal|Edit}} mode will occur with respect to these local object axes.&lt;br /&gt;'''3.''' A set of small axes in the lower left corner of the 3D Viewport acts as an orientation monitor. Its arrows always parallel global axes, regardless of view and even in free-roaming view. The arrow heads point in the positive direction along each global axis.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary/B</title>
+    <id>71</id>
+    <revision>
+      <id>861</id>
+      <timestamp>2009-11-30T16:23:43Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=EN  |title=Background  |ref=background  |shortdesc=What is at the far end of the scene.  |longdesc=In general, nothing important occurs in the backgrou…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN
+ |title=Background
+ |ref=background
+ |shortdesc=What is at the far end of the scene.
+ |longdesc=In general, nothing important occurs in the background, as the viewer generally does not concentrate on it. However, it may be very important for the credibility of your scene (backgrounds are often retouched photos or mate-paintings, as it would be to much a work to create/render them in “real” 3D).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bake
+ |ref=bake
+ |shortdesc=''To bake'' is to pre-calculate a part of the scene, to avoid the need of re-calculating it each time you render. Useful for compute-intensive effects like softbodies, fluids, …
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bevel
+ |ref=bevel
+ |shortdesc=In CG, a bevel is a narrow face added between two faces that join themselves at a (relatively) sharp angle.
+ |longdesc=They are used to soften a bit objects’ corners. See the [[Doc:Manual/Modifiers/Mesh/Bevel|{{Literal|Bevel}} modifier]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bézier
+ |ref=bezier
+ |dict=(langs=EN;term=Bézier;note=Note that this is a surname, so write “Bézier” and not “bezier”!)
+ |shortdesc=Bézier curves and surfaces are parts of the parametric objects (like NURBS and meta objects).
+ |longdesc=They were first described in 1972 by the French engineer Pierre Bézier, who used them to design automobile bodies. Bézier curves and surfaces can be of any degree, but bicubic generally provide enough degrees of freedom for most applications.&lt;br /&gt;Note that Blender does not support Bézier surfaces, only curves…
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blend
+ |ref=blend
+ |shortdesc=''To Blend'', working with Blender; also Blender’s file extension (&lt;code&gt;.blend&lt;/code&gt;).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blender Documentation
+ |ref=blender documentation
+ |shortdesc=Well, it’s a never-finished attempt of the Blender community to document the always-richest wonderful features of Blender!
+ |longdesc=The main official documentation is this wiki, but you can find many others on the web (tutorials, video tutorials, …).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blender File
+ |ref=blender file
+ |shortdesc=This is a binary file that contains a whole set of scenes and other (meta)data, in native Blender format (a sort of database).
+ |longdesc=Note that a Blender file not only stores the “useful” data, but also the GUI layouts, settings, and so on…
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blender Foundation (BF)
+ |ref=blender foundation
+ |shortdesc=The non-profit organization created by Ton Roosendaal to free Blender, in 2002. From that day, it has dedicated to promoting and developing Blender.
+ |longdesc=See also [[Doc:Manual/Introduction/History|this page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blender Game Engine (BGE)
+ |ref=blender game engine
+ |shortdesc=The real-time part of Blender. Its main purpose is game creation, but it may be used for things like live demo, interactive visits, and so on.
+ |longdesc=See the [[Doc:Manual/Game Engine|Game Engine chapter]] of the Manual.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bone
+ |ref=bone
+ |shortdesc=The constituting elements of an armature. Each bone of an armature can influence the position/rotation/scale of objects and/or vertices. In fact, there are quite similar to there biological counterpart!
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bounce Light
+ |ref=bounce light
+ |shortdesc=The indirect lighting of shadowed areas.
+ |longdesc=Simple lighting situations have a single light, called a key light, illuminating one side of an object. This creates strong shading and definition of the volume of the object. However, a 3D light will often make the contrast too great -&amp;nbsp;the dark side of the object is completely black since no light is hitting it. In reality it would still be lit a little, just not as much as the brightly lit side, because of light bouncing around the room and hitting the dark side of the object. In realtime 3D, bounce light is not calculated, so you have to create it yourself. Either add a little ambient color, or put a second, less bright directional light pointing the opposite direction to give a little light to (to “fill-in”) the shadows.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bounding Box
+ |ref=bounding box
+ |shortdesc=A bounding box is the rectangular parallelepiped that bounds as tight as possible an object (including those of complex shape, joined objects, boolean unions, etc.), in its local space (i.e. its sides are parallel to its local axes).
+ |longdesc=All Blender objects may be seen as representative bounding boxes by selecting {{Literal|Bounding Box}} drawing mode in the {{Literal|Draw type}} dropdown list on the {{Literal|3D View}} header bar. Hotkey {{Shortcut|Z}} toggles bounding box and solid drawing modes. Bounding boxes can only be viewed in {{Literal|Object}} mode.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Buffer
+ |ref=buffer
+ |shortdesc=A buffer is a particular type of memory object, in general created to temporarily store data.
+ |longdesc=Note that buffers may have a “fixed” size (like the ones for renders, in Blender), or a variable length (like most of the Input/Output buffers in a computer).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bump Mapping
+ |ref=bump mapping
+ |shortdesc=Bump mapping is a technique to simulate relief on smooth surfaces, by modifying their shading.
+ |longdesc=At each pixel, a perturbation to the surface normal of the object being rendered is looked up in a texture map and applied before the illumination calculation is done. Bump Mapping use a gray-scale image map to change the direction of surface normals. You can use this to simulate height, so that you can paint wrinkles and bumps. 50&amp;nbsp;% gray means neutral (no change is made), lighter means higher, darker means lower. Note that the position of faces is not actually changed: by rotating just the normals, lighting will change too, to give the illusion of a height difference. This has downsides too: the outline of objects isn’t changed, so the trick is given away. For similar (but more evolved) effects, you can use {{Glossary/Link|ref=displacement mapping|txt=Displacement Mapping}} and {{Glossary/Link|ref=normal mapping|txt=Normal Mapping}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=“Buttons” window
+ |ref=buttons window
+ |shortdesc=The {{Literal|Buttons}} window is a window type in Blender where most of the options/control/settings of the objects/materials/scenes/… are regrouped.
+ |longdesc=It is subdivided in {{Glossary/Link|ref=context|txt=Contexts}} and {{Glossary/Link|ref=sub context|txt=Sub-Contexts}}.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary/C</title>
+    <id>72</id>
+    <revision>
+      <id>862</id>
+      <timestamp>2009-11-30T16:24:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=EN  |title=Context  |ref=context  |shortdesc=A context is a “role” subdivision of the {{Literal|Button}} window, regrouping common settings of curr…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN
+ |title=Context
+ |ref=context
+ |shortdesc=A context is a “role” subdivision of the {{Literal|Button}} window, regrouping common settings of current selected/active object(s).
+ |longdesc=For example, in the {{Glossary/Link|ref=buttons window|txt={{Literal|Buttons}} window}}, you have a {{Literal|Shading}} context ({{Shortcut|F5}}) regrouping everything about lighting, materials and textures. Or a {{Literal|Editing}} context ({{Shortcut|F9}}) with all settings and tools concerning the edition of an object, or its mesh/control points/…&lt;br /&gt;Note that contexts can be further subdivided in {{Glossary/Link|ref=sub context|txt=sub-contexts}}, when there are many things (like for the {{Literal|Shading}} one, for example).
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Controller
+ |ref=controller
+ |shortdesc=A controller is a logic brick that acts like the brain of a lifeform. It makes decisions to activate muscles (actuator), either using simple logic or complex Python scripts.
+ |longdesc=See also the [[Doc:Manual/Game Engine/Logic/Controllers|controller page]], and the {{Glossary/Link|ref=logic brick|txt=Logic Brick}} and {{Glossary/Link|ref=actuator|txt=Actuators}} entries.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary/D</title>
+    <id>73</id>
+    <revision>
+      <id>863</id>
+      <timestamp>2009-11-30T16:25:50Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=EN  |title=Displacement Mapping  |ref=displacement mapping  |shortdesc=Displacement mapping is a technique to create relief on smooth surfaces, by disp…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN
+ |title=Displacement Mapping
+ |ref=displacement mapping
+ |shortdesc=Displacement mapping is a technique to create relief on smooth surfaces, by displacing its vertices.
+ |longdesc=It uses a greyscale heightmap, like {{Glossary/Link|ref=bump mapping|txt=Bump Mapping}}, but the image is used to physically move the vertices of the mesh at render time. This is of course only useful if the mesh has large amounts of vertices, but the (relatively) new {{Literal|Simple Subdiv}} subsurf option allows you to add more vertices at render time which will be moved by the displacement. This makes it much slower than Bump Mapping, as there need to be many more faces to render, but it is much more realistic.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary/L</title>
+    <id>74</id>
+    <revision>
+      <id>864</id>
+      <timestamp>2009-11-30T16:26:52Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=EN  |title=Logic Brick (or Logicbrick)  |ref=logic brick  |shortdesc=A graphical representation of a functional unit in Blender’s game logic.  |longd…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN
+ |title=Logic Brick (or Logicbrick)
+ |ref=logic brick
+ |shortdesc=A graphical representation of a functional unit in Blender’s game logic.
+ |longdesc=Logic Bricks can be {{Glossary/Link|ref=sensor|txt=Sensors}}, {{Glossary/Link|ref=controller|txt=Controllers}} or {{Glossary/Link|ref=actuator|txt=Actuators}}.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary/N</title>
+    <id>75</id>
+    <revision>
+      <id>865</id>
+      <timestamp>2009-11-30T16:27:53Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=EN  |title=Normal  |ref=normal  |shortdesc=Surface normal, or just normal to a flat surface, is a three-dimensional vector which is perpendicular to th…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN
+ |title=Normal
+ |ref=normal
+ |shortdesc=Surface normal, or just normal to a flat surface, is a three-dimensional vector which is perpendicular to that surface.
+ |longdesc=A normal to a non-flat surface at a point p on the surface is a vector which is perpendicular to the tangent plane to that surface at p.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Normal Mapping
+ |ref=normal mapping
+ |shortdesc=Normal mapping is a technique to simulate relief on smooth surfaces, by modifying their shading.
+ |longdesc=It is similar to {{Glossary/Link|ref=bump mapping|txt=Bump Mapping}}, but instead of the image being a greyscale heightmap, the colours define in which direction the normal should be shifted, the 3 colour channels being mapped to the 3 directions X, Y and Z. This allows more detail and control over the effect.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary/S</title>
+    <id>76</id>
+    <revision>
+      <id>866</id>
+      <timestamp>2009-11-30T16:28:50Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=EN  |title=Sensor  |ref=sensor  |shortdesc=A sensor is a logic brick that acts like a sense of a lifeform. It reacts to touch, vision, collision, etc. …'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN
+ |title=Sensor
+ |ref=sensor
+ |shortdesc=A sensor is a logic brick that acts like a sense of a lifeform. It reacts to touch, vision, collision, etc.
+ |longdesc=See also the [[Doc:Manual/Game Engine/Logic/Sensors|sensor page]], and the {{Glossary/Link|ref=logic brick|txt=Logic Brick}} entry.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Sub-Context
+ |ref=sub context
+ |shortdesc=A subdivision of a context.
+ |longdesc=For example, the {{Literal|Shading}} {{Glossary/Link|ref=context|txt=context}} ({{Shortcut|F5}}) has five sub-contexts: {{Literal|Lamp}}, {{Literal|Material}}, {{Literal|Texture}}, {{Literal|Radiosity}} and {{Literal|World}}…
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary Help</title>
+    <id>69</id>
+    <revision>
+      <id>1054</id>
+      <timestamp>2010-01-26T11:57:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">{{#glossary_help:disp_lang=en}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary Tests</title>
+    <id>70</id>
+    <revision>
+      <id>855</id>
+      <timestamp>2009-11-23T11:21:05Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_test:}}'</comment>
+      <text xml:space="preserve">{{#glossary_test:}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Test</title>
+    <id>87</id>
+    <revision>
+      <id>966</id>
+      <timestamp>2009-12-13T10:04:41Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">=Test=
+Just a small test: {{Glossary/Link|ref=ambient occlusion|txt=Ambient Occlusion}}.
+==Sub-test==
+And with a synonym: With a {{Glossary/Link|ref=skeleton|txt=skeleton}}, you can animate a mesh…</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary</title>
+    <id>33</id>
+    <revision>
+      <id>867</id>
+      <timestamp>2009-11-30T17:01:24Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Replaced content with '{{Languages/FlagsRow}}
+
+{{#glossary:}}'</comment>
+      <text xml:space="preserve">{{Languages/FlagsRow}}
+
+{{#glossary:}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/A</title>
+    <id>50</id>
+    <revision>
+      <id>868</id>
+      <timestamp>2009-11-30T18:56:41Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN, FR
+ |title=AC3D
+ |ref=ac3d
+ |shortdesc=Un programme pour créer et texturer (placage UV) des modèles numériques 3D.
+ |longdesc=Relativement bon marché, il dispose de son propre format de fichier (&lt;code&gt;.ac&lt;/code&gt;), que Blender peut importer et exporter.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Action
+ |ref=action
+ |shortdesc=Une “action” est un groupe d’Ipos {{Literal|Object}} ou {{Literal|Shape}}, défini dans une fenêtre {{Literal|Action Editor}}, qui vous permet seulement de modifier les ''positions'' des images clé, '''pas''' leur valeur.
+ |longdesc=De cette façon, vous pouvez créer des actions comme un cycle de marche, tourner la tête, etc., que vous utiliserez ensuite dans la fenêtre {{Literal|NLA Editor}}. Voyez [[Doc:FR/Manual/Animation/Armatures/The Action Editor|cette page]] pour plus d’info.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Action” (actuateur)
+ |ref=action actuateur
+ |dict=(langs=FR;term=actuateur {{Literal|Action}}), (langs=EN;term={{Literal|Action}} actuator)
+ |shortdesc=L’“actuateur” {{Literal|Action}} fournit une interface pour contrôler une action dans le moteur de jeu. Les “actuateurs” {{Literal|Action}} ne peuvent être créés que sur des objets armatures.
+ |longdesc=Voyez aussi la [[Doc:FR/Manual/Game Engine/Logic/Actuators/Action|page sur l’actuateur {{Literal|Action}}]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Action Editor” (fenêtre)
+ |ref=action editor fenêtre
+ |dict=(langs=FR;term=fenêtre {{Literal|Action Editor}}), (langs=EN;term={{Literal|Action Editor}} window)
+ |shortdesc=Cette fenêtre vous permet d’éditer les actions dans Blender, voyez [[Doc:FR/Manual/Animation/Armatures/The Action Editor|cette page]].
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Actif
+ |ref=actif
+ |dict=(langs=FR|term=actif), (langs=EN;term=active)
+ |shortdesc=Blender fait une distinction entre “sélectionné” et “actif”. Un seul objet ou élément à la fois peut être actif, par exemple pour permettre la visualisation des ses paramètres dans la fenêtre {{Literal|Buttons}}.
+ |longdesc=En mode {{Literal|Object}}, l’objet actif (en général, le dernier sélectionné) est affiché dans un rose plus clair que ceux qui sont sélectionnés. Quand aucun objet n’est sélectionné, il y en a quand même un d’actif (son centre demeure rose), en général le dernier dé-sélectionné. Voyez [[Doc:FR/Manual/Modelling/Objects/Selecting|cette page]] pour plus d’info.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Actuateur
+ |ref=actuateur
+ |dict=(langs=FR;term=actuateur;usage=3;note=Ce néologisme est également utilisé en robotique. À utiliser de préférence entre guillemets. N’hésitez pas à utiliser le terme anglais de temps à autre.), (langs=EN;term=actuator)
+ |syns=(langs=EN;title=Actuator;ref=actuator)
+ |shortdesc=Un “actuateur” est une brique logique du moteur de jeu, qui agit comme les muscles biologiques. Il peut déplacer l’objet, mais aussi produire un son…
+ |longdesc=Voyez également la [[Doc:FR/Manual/Game Engine/Logic/Actuators|page sur les actuateurs]], et les entrées {{Glossary/Link|ref=logic brick|txt=brique logique}} et {{Glossary/Link|ref=blender game engine|txt=moteur de jeu}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Add” (menu)
+ |ref=add menu
+ |dict=(langs=FR;term=menu {{Literal|Add}};note=Élément de la GUI, utilisez le template &lt;nowiki&gt;{{Literal|}}&lt;/nowiki&gt;.)
+ |shortdesc=Un menu de l’en-tête {{Literal|User Preference}}. Il vous permet d’ajouter des primitives-objets à votre scène.
+ |longdesc=En mode {{Literal|Object}}, un nouvel objet est créé à chaque fois. En mode {{Literal|Edit}}, la primitive est ajoutée ''dans'' l’objet édité (actif). Voyez aussi [[Doc:FR/Manual/3D interaction/Navigating/3D View Usage#“Add”|cette page]].
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Alpha (canal)
+ |ref=alpha canal
+ |dict=(langs=FR;term=canal alpha), (langs=EN;term=alpha channel)
+ |shortdesc=Canal supplémentaire dans une image 2D, pour la transparence.
+ |longdesc=Dans un élément (un pixel) de l’image contenant une couleur, une valeur supplémentaire est stockée pour le canal alpha, contenant une valeur comprise entre '''0.0''' (totalement transparent) et '''1.0''' (totalement opaque). Dans un rendu de Blender, une valeur de '''0.0''' signifie que le pixel ne “contient” rien, c-à-d qu’aucune géométrie ne lui a “donné des couleurs”, puisqu’il n’en recouvre aucune. Une valeur de '''1.0''' signifie que le pixel est totalement opaque, car il est totalement “couvert” par la géométrie.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Animation
+ |ref=animation
+ |shortdesc=Simulation de mouvement. Blender peut produire aussi bien des vidéos d’animations que des animations temps-réel.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Animation (buttons)
+ |ref=animation buttons
+ |shortdesc=Sous-contexte du contexte {{Literal|Scene}} ({{Shortcut|F10}}).
+ |longdesc=Dans ce sous-contexte, vous pouvez définir les images de début/de fin d’une animation, la ralentir ou l’accélérer, régler son ''frame rate'', forcer le jeu de cette animation dans le vues 3D de Blender à être synchronisé avec le ''frame-rate'', quitte à perdre certaines images… Utile pour synchroniser l’animation avec l’audio.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Append
+ |ref=append
+ |syns=(langs=FR;title=Importation;ref=importation)
+ |dict=(langs=FR;term=Importation;approx=Yes), (langs=EN;term=append)
+ |shortdesc=Copie complète dans un fichier .blend “hôte” d’un ou plusieurs ''datablocks'' provenant d’un autre fichier .blend.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Area
+ |ref=area
+ |dict=(langs=FR;term=zone;usage=1;approx=Yes;note=N’utilisez pas ce terme dans ce sens là&amp;nbsp\;!), (langs=EN;term=area;usage=1;note=Essayez d’éviter l’utilisation de ce terme.)
+ |shortdesc=Traditionnellement, une “''area''”, dans Blender, c’est une sous-fenêtre quelconque, comme une vue 3D, l’éditeur de texte, la fenêtre {{Literal|Ipo}}…
+ |longdesc=Très peu de gens utilisent ce terme de nos jours, alors essayez d’éviter son utilisation.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Armature
+ |ref=armature
+ |syns=(langs=EN;title=Skeleton;ref=skeleton), (langs=FR;title=Squelette;ref=squelette)
+ |dict=(langs=FR;term=armature;usage=4;note=Le terme technique dans Blender.), (langs=EN;term=squelette;usage=3;note=Préférez le terme “armature”.), (langs=EN;term=armature), (langs=EN;term=skeleton)
+ |shortdesc=Une classe de primitive objet constituée d’un seul membre, et qui vous permet de contrôler/déformer d’autres objets (souvent des ''meshes'', généralement pour les animer. Elle est constituée de “''bones''” (“os”).
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Arrière-plan
+ |ref=arriere plan
+ |syns=(langs=EN;title=Background;ref=background)
+ |dict=(langs=FR;term=arrière-plan), (langs=EN;term=background)
+ |shortdesc=Ce qui se trouve au fond de la scène.
+ |longdesc=En général, rien d’important ne s’y passe, car le spectateur n’y fait généralement pas attention. Cependant, l’arrière-plan peut être très important pour la crédibilité de votre scène (ce sont souvent des photos retouchées ou des ''mate-paintings'', car cela représenterait trop de travail de les créer/rendre en 3D “réelle”).
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Automerge”
+ |ref=automerge
+ |dict=(langs=FR;term=auto-soudure;usage=2;approx=Yes;note=Préférez l’utilisation du terme anglais…),  (langs=EN;term=automerge)
+ |shortdesc=Un mode d’édition fonctionnant avec l’outil {{Literal|Snap}}, qui enlève les doublons quand vous réunissez, soudez deux ''vertices'' ou plus.
+ |longdesc=Menu {{Literal|Mesh}}&amp;nbsp;→ {{Literal|AutoMerge Editing}}. Voyez aussi la [[Doc:FR/Manual/Modelling/Meshes/Snap to Mesh|page sur l’outil {{Literal|Snap}}]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Autostart”
+ |ref=autostart
+ |dict=(langs=FR;term=auto-démarrage;usage=1), (langs=EN;term=autostart)
+ |shortdesc=Démarre automatiquement le jeu (comme en pressant {{Shortcut|P}}) à l’ouverture du fichier .blend&amp;nbsp;?
+ |longdesc=Menu {{Literal|User Preference}}&amp;nbsp;→ {{Literal|Game}}&amp;nbsp;→ {{Literal|Autostart}}.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Axe
+ |ref=axe
+ |dict=(langs=FR;term=axe), (langs=EN;term=axis)
+ |shortdesc=Une ligne de référence.
+ |longdesc='''1.''' La géométrie du monde de Blender est définie par trois axes orthogonaux, les axes X, Y et Z. Ils sont montrés par des lignes rouge, verte et bleue, respectivement, dans les vues 3D. Leur intersection mutuelle (leur point concourant) définit l’origine du système de coordonnées global de Blender. Dans ce système de type cartésien, une position 3D est définie par ses décalages le long de ces trois axes.&lt;br /&gt;'''2.''' Chaque objet (ou ensemble d’objets simultanément sélectionnés) dispose de ses propres axes locaux, orthogonaux les uns par rapport aux autres, et par rapport aux côtés de la boîte englobante de l’objet. Les axes locaux sont invisibles, à moins que vous n’activiez leur affichage (contexte {{Literal|Object}}&amp;nbsp;→ sous-contexte {{Literal|Object}}&amp;nbsp;→ panneau {{Literal|Draw}}&amp;nbsp;→ bouton {{Literal|Axis}}). S’il est activé, le [[Doc:FR/Manual/3D interaction/Manipulation/Manipulators|manipulateur de transformation]] réside au centre opérationnel de l’objet, et ses flèches sont par défaut parallèles aux axes globaux. Cependant, un mode {{Literal|Local}} peut être sélectionné dans la liste déroulante {{Literal|Orientation}} de l’en-tête des vues 3D. Une fois dans ce mode, les flèches du manipulateur coïncideront avec les axes locaux de l’objet, et les manipulations (transformations) se feront selon ces axes locaux, que ce soit en mode {{Literal|Object}} ou {{Literal|Edit}}.&lt;br /&gt;'''3.''' Un ensemble de petits axes dans le coin inférieur gauche de la vue 3D agit comme une “boussole” 3D. Ses flèches sont toujours parallèles aux axes globaux, quelle que soit la vue. Les flèches pointent dans la direction positive de chaque axe global.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/B</title>
+    <id>77</id>
+    <revision>
+      <id>1022</id>
+      <timestamp>2009-12-14T16:02:53Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN
+ |title=Bake
+ |ref=bake
+ |syns=(langs=FR;title=Cuire;ref=cuire), (langs=FR;title=Pré-Calculer;ref=pre calculer)
+ |dict=(langs=FR;term=cuire;approx=Yes;usage=3;note=Traduction litérale, à utiliser entre guillemets.), (langs=FR;term=pré-calculer;approx=yes;usage=3;note=traduction “sensée”, mais pas toujours adéquate. Le mieux est d’utiliser le terme anglais&amp;nbsp\;!), (langs=EN;term=to bake)
+ |shortdesc=''To bake'' (“cuire”), c’est pré-calculer une partie de la scène, pour éviter d’avoir à la re-calculer à chaque fois que vous rendez. Utile pour des effets très lourds, comme les corps souples, les fluides, …
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bevel
+ |ref=bevel
+ |syns=(langs=EN;title=Biseau;ref=biseau)
+ |dict=(langs=FR;term=biseau;usage=4), (langs=EN;term=bevel)
+ |shortdesc=En CG, un ''bevel'' (“biseau”) est une face étroite ajoutée entre deux faces se joignant selon un angle (relativement) aigu.
+ |longdesc=Ils sont utilisés pour adoucir un peu les coins des objets. Voyez le [[Doc:FR/Manual/Modifiers/Mesh/Bevel|modificateur {{Literal|Bevel}}]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bézier
+ |ref=bezier
+ |shortdesc=Les courbes et surfaces de Bézier font partie des objets paramétriques (comme les meta-objets et les NURBS).
+ |longdesc=Elles furent décrites pour la première fois en 1972 par l’ingénieur français Pierre Bézier, qui les utilisait pour concevoir des carrosseries de voitures. Les courbes et surfaces de Bézier peuvent être de n’importe quel degré, mais les bi-cubiques fournissent généralement assez de degrés de liberté pour la plupart des applications.&lt;br /&gt;Notez que Blender ne supporte pas les surfaces de Bézier, seulement les courbes…
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blend
+ |ref=blend
+ |dict=(langs=FR;term=utiliser Blender;usage=4;approx=Yes), (langs=EN;term=to blend)
+ |shortdesc=''To Blend'', c’est travailler avec Blender. Il s’agit également de l’extension des fichiers de Blender (&lt;code&gt;.blend&lt;/code&gt;).
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Blender Foundation (BF)
+ |ref=blender foundation
+ |syns=(langs=FR;title=Fondation Blender;ref=fondation blender)
+ |dict=(langs=FR;term=fondation Blender;usage=1;note=Conservez le tout en anglais&amp;nbsp\;!), (langs=EN;term=Blender Foundation)
+ |shortdesc=L’organisation à but non lucratif créée par Ton Roosendaal pour libérer Blender, en 2002. Depuis ce lors, elle s’est occupé de la promotion et du développement de Blender.
+ |longdesc=Voyez aussi [[Doc:FR/Manual/Introduction/History|cette page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Blender Game Engine (BGE)
+ |ref=blender game engine
+ |syns=(langs=FR;title=Moteur de Jeu de Blender \(BGE\);ref=moteur jeu blender)
+ |dict=(langs=FR;term=moteur de jeu de Blender;usage=4;note=N’hésitez pas à utiliser la version anglaise, en particulier l’acronyme BGE, ou même GE.), (langs=EN;term=Blender game engine)
+ |shortdesc=La partie temps-réelle de Blender. Sa principale raison d’être est la création de jeux, mais elle peut être utilisée pour des choses comme des démos ''lives'', des visites interactives, et ainsi de suite.
+ |longdesc=Voyez le [[Doc:FR/Manual/Game Engine|chapitre “Moteur de jeu”]] du manuel.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bone
+ |ref=bone
+ |syns=(langs=FR;title=Os;ref=os)
+ |dict=(langs=FR;term=os;usage=2;note=Préférez l’utilisation du terme anglais.), (langs=EN;term=bone;usage=4)
+ |shortdesc=Les éléments constitutifs d’une armature. Chaque ''bone'' d’une armature peut influencer les position/rotation/taille d’objets et/ou de ''vertices''. En fait, ils sont assez similaires à leurs équivalents biologiques&amp;nbsp;!
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bounce Light
+ |ref=bounce light
+ |dict=(langs=FR;term=lumière rebondissante;usage=1;approx=Yes;note=Traduction donnée uniquement à titre indicatif, utilisez toujours le terme anglais&amp;nbsp\;!), (langs=EN;term=bounce light)
+ |shortdesc=L’éclairage indirecte des zones d’ombres.
+ |longdesc=Les situations d’éclairage simples se contentent d’une seule lampe, appelée lampe clé (''key light''), éclairant un côté d’un objet. Cela crée un ombrage et une définition du volume de l’objet extrêmement “forts”. Cependant, une lumière 3D rendra souvent ce contraste trop important –&amp;nbsp;le côté sombre de l’objet sera complètement noir, puisqu’aucune lumière n’y parvient. En réalité, il serait tout de même légèrement éclairé par la lumière rebondissant dans la pièce jusqu’à heurter la face sombre de l’objet. En 3D temps réel, cette “lumière rebondissante” n’est pas calculée, vous devez donc la créer vous-même. Ajoutez un peu de lumière ambiante, ou placez une seconde lampe directionnelle, moins brillante, dirigée à l’opposé de la première, pour éclairer légèrement (“déboucher”) les ombres.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bounding Box
+ |ref=bounding box
+ |syns=(langs=FR;title=Boîte Englobante;ref=boite englobante)
+ |dict=(langs=FR;term=boîte englobante;usage=3;note=Préférez l’usage du terme anglais…), (langs=EN;term=bounding box)
+ |shortdesc=Une ''bounding box'' (“boîte englobante”) est le parallélépipède rectangle qui enserre d’aussi près que possible un objet (y compris ceux de forme complexe, les objets joins, les unions booléennes, etc.), dans son espace local (c-à-d que ses faces sont parallèles aux axes locaux).
+ |longdesc=Tous les objets de Blender peuvent être vus par leurs boîtes englobantes, en sélectionnant le mode d’affichage {{Literal|Bounding Box}} dans la liste déroulante {{Literal|Draw type}} de la barre d’en-tête {{Literal|3D View}}. Le raccourcis {{Shortcut|Z}} permet d’alterner entre affichage “solide” et de la ''bounding box''. Les boîtes englobantes ne sont visibles qu’en mode {{Literal|Object}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Buffer
+ |ref=buffer
+ |syns=(langs=FR;title=Tampon;ref=tampon)
+ |dict=(langs=FR;term=tampon;usage=3;note=Traduction valable en général, mais il vaudra mieux parfois conserver le terme anglais.), (langs=EN|term=buffer)
+ |syns=(langs=FR;title=Tampon;ref=tampon)
+ |shortdesc=Un ''buffer'' (“tampon”) est un type d’objet-mémoire particulier, en général créé pour stocker des données temporairement.
+ |longdesc=Notez que les tampons peuvent avoir une taille “fixe” (comme ceux des rendus, dans Blender), ou une longueur variable (comme la plupart des tampons d’entrée/sortie d’un ordinateur).
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bump Mapping
+ |ref=bump mapping
+ |dict=(langs=FR;term=placage de bosses;usage=1;approx=Yes;note=Traduction donnée uniquement à titre indicatif, utilisez toujours le terme anglais&amp;nbsp\;!), (langs=EN;term=bump mapping)
+ |shortdesc=Le ''bump mapping'' est une technique pour simuler du relief sur des surfaces lisses, en modifiant leur ombrage.
+ |longdesc=À chaque pixel, une perturbation de la normale de la surface de l’objet rendu est appliquée à partir d’une texture “''bump map''”, avant que les calculs d’éclairage ne soient effectués. Le ''bump mapping'' utilise une image en niveaux de gris pour modifier la direction des normales de la surface. Vous pouvez l’utiliser pour simuler un relief –&amp;nbsp;vous pouvez ainsi “peindre” des creux et des bosses. Le gris neutre ('''50%''') signifie aucun changement, plus clair signifie plus haut, et plus sombre signifie plus enfoncé. Notez que les faces ne sont absolument pas modifiées&amp;nbsp;: seules les normales sont touchées, ce qui change l’éclairage et donne une illusion de relief. Mais le problème est que les contours de l’objet ne sont pas affectés, ce qui révèle le trucage. Pour des effets similaires (mais plus évolués), vous pouvez utiliser le {{Glossary/Link|ref=displacement mapping|txt=''displacement mapping''}} et le {{Glossary/Link|ref=normal mapping|txt=''normal mapping''}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Buttons” (fenêtre)
+ |ref=buttons fenêtre
+ |dict=(langs=FR;term=fenêtre {{Literal|Buttons}}), (langs=EN;term={{Literal|Buttons}} window)
+ |shortdesc=La fenêtre {{Literal|Buttons}} est un type de fenêtre de Blender rassemblant la majeure partie des options/contrôles/réglages des objets/matériaux/scènes/…
+ |longdesc=Cette fenêtre est subdivisée en {{Glossary/Link|ref=contexte|txt=contextes}} et {{Glossary/Link|ref=sous contexte|txt=sous-contextes}}.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/C</title>
+    <id>78</id>
+    <revision>
+      <id>925</id>
+      <timestamp>2009-12-07T06:59:19Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=FR
+ |title=Capteur
+ |ref=capteur
+ |syns=(langs=EN;title=Sensor;ref=sensor)
+ |dict=(langs=FR;term=capteur;usage=4), (langs=EN;term=sensor)
+ |shortdesc=Un capteur est une brique logique qui agit comme un “sens” biologique. Il réagit au touché, à la vision, à la collision, etc.
+ |longdesc=Voyez également la [[Doc:FR/Manual/Game Engine/Logic/Sensors|page sur les capteurs]], ainsi que l’entrée {{Glossary/Link|ref=logic brick|txt=brique logique}}.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Contexte
+ |ref=contexte
+ |dict=(langs=FR;term=contexte), (langs=EN;term=context)
+ |shortdesc=Un contexte est une subdivision “par rôle” de la fenêtre {{Literal|Buttons}}, regroupant des réglages communs du(des) objet(s) actuellement sélectionné(s)/actif(s).
+ |longdesc=Par exemple, dans la {{Glossary/Link|ref=buttons fenêtre|txt=fenêtre {{Literal|Buttons}}}}, vous avez un contexte {{Literal|Shading}} ({{Shortcut|F5}}) regroupant tout ce qui concerne l’éclairage, les matériaux et les textures. Ou un contexte {{Literal|Editing}} ({{Shortcut|F9}}) avec tous les réglages et outils ayant trait à l’édition d’un objet, ou de son ''mesh''/de ses points de contrôle/…&lt;br /&gt;Notez que les contextes peuvent être encore subdivisés en {{Glossary/Link|ref=sous contexte|txt=sous-contextes}}, quand il y a beaucoup de choses (comme c’est le cas pour le contexte {{Literal|Shading}}, par exemple).
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Contrôleur
+ |ref=controleur
+ |syns=(langs=EN;title=Controller;ref=controller)
+ |dict=(langs=FR;term=contrôleur;usage=4), (langs=EN;term=controller)
+ |shortdesc=Un contrôleur est une brique logique qui agit comme un “cerveau” biologique. Il prend des décisions pour activer des “muscles” (actuateurs), soit ''via'' une logique simple, soit grâce à des scripts Python complexes.
+ |longdesc=Voyez aussi la [[Doc:FR/Manual/Game Engine/Logic/Controllers|page sur les contrôleurs]] et les entrées {{Glossary/Link|ref=logic brick|txt=Brique logique}} et {{Glossary/Link|ref=actuateur|txt=Actuateur}}.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Conception Architecturale
+ |ref=conception architecturale
+ |syns=(langs=EN;title=Architectural Design;ref=architectural design)
+ |dict=(langs=FR;term=conception architecturale), (langs=EN;term=architectural design)
+ |shortdesc=Utilisation de Blender pour concevoir en architecture (y compris des maisons et constructions similaires). Voyez aussi [[Dev:Ref/Uses/Architecture|Architecture (''en'')]].
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/D</title>
+    <id>79</id>
+    <revision>
+      <id>871</id>
+      <timestamp>2009-11-30T19:01:56Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=EN, FR  |title=Displacement Mapping  |ref=displacement mapping  |dict=(langs=FR;term=placage de déplacement;usage=1;approx=Yes;note=Traduction donnée…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN, FR
+ |title=Displacement Mapping
+ |ref=displacement mapping
+ |dict=(langs=FR;term=placage de déplacement;usage=1;approx=Yes;note=Traduction donnée uniquement à titre indicatif, utilisez toujours le terme anglais&amp;nbsp\;!), (langs=EN;term=displacement mapping)
+ |shortdesc=Le ''displacement mapping'' est une technique pour créer du relief sur des surfaces lisses, en déplaçant ses ''vertices''.
+ |longdesc=Il utilise une “carte de relief” en niveaux de gris, comme le {{Glossary/Link|ref=bump mapping|txt=''bump mapping''}}, mais lgimage est utilisée pour physiquement déplacer les ''vertices'' du ''mesh'' au moment du rendu. Ce n’est évidemment utile que si le ''mesh'' dispose de suffisamment de ''vertices'', mais la (relativement) récente option de subdivision de surface {{Literal|Simple Subdiv}} vous permet d’en ajouter au moment du rendu, afin que cet effet puisse les déplacer. Tout cela le rend bien plus lent que le ''bump mapping'', car il doit y avoir beaucoup plus de faces à rendre, mais également bien plus réaliste.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Documentation Blender
+ |ref=documentation blender
+ |syns=(langs=EN;title=Blender Documentation;ref=blender documentation)
+ |dict=(langs=FR;term=documentation \(de\) Blender;usage=4), (langs=EN;term=Blender documentation)
+ |shortdesc=Eh bien, c’est une tentative sans fin de la communauté de Blender pour documenter les fonctionnalités toujours-plus-riches-et-géniales de Blender&amp;nbsp;!
+ |longdesc=La documentation principale et officielle se trouve sur ce wiki, mais vous pouvez en trouver beaucoup d’autres sur le web (tutoriels, tutoriels vidéos, …).
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/F</title>
+    <id>80</id>
+    <revision>
+      <id>872</id>
+      <timestamp>2009-11-30T19:02:52Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=FR  |title=Fichier Blender  |ref=fichier blender  |syns=(langs=EN;title=Blender File;ref=blender file)  |dict=(langs=FR;term=fichier \(de\) Blender;usa…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=FR
+ |title=Fichier Blender
+ |ref=fichier blender
+ |syns=(langs=EN;title=Blender File;ref=blender file)
+ |dict=(langs=FR;term=fichier \(de\) Blender;usage=4), (langs=EN;term=Blender file)
+ |shortdesc=Il s’agit d’un fichier binaire contenant tout un ensemble de scènes et autres (méta)données, dans le format natif de Blender (un genre de base de données).
+ |longdesc=Notez que les fichiers Blender ne stockent pas uniquement les données “utiles”, mais également les dispositions d’écran, les réglages, et ainsi de suite…
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/I</title>
+    <id>81</id>
+    <revision>
+      <id>873</id>
+      <timestamp>2009-11-30T19:03:58Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=FR  |title=Intelligence Artificielle (IA)  |ref=intelligence artificielle  |syns=(langs=EN;title=Artificial Intelligence \(AI\);ref=artificial intellig…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=FR
+ |title=Intelligence Artificielle (IA)
+ |ref=intelligence artificielle
+ |syns=(langs=EN;title=Artificial Intelligence \(AI\);ref=artificial intelligence)
+ |dict=(langs=FR;term=intelligence artificielle), (langs=EN;term=artificial intelligence)
+ |shortdesc=Programme informatique développé pour simuler des éléments de l’intelligence humaine, comme le raisonnement, l’apprentissage, la résolution de problème, et la prise de décisions.
+ |longdesc=Les programmes d’intelligence artificielle permettent aux ordinateurs des choses comme jouer aux échecs, prouver des théorèmes mathématique, etc.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/L</title>
+    <id>82</id>
+    <revision>
+      <id>875</id>
+      <timestamp>2009-11-30T19:05:27Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <minor/>
+      <comment>moved [[Doc:FR/Glossary/L&amp;]] to [[Doc:FR/Glossary/L]]</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=EN, FR
+ |title=Logic Brick (ou Logicbrick)
+ |ref=logic brick
+ |syns=(langs=FR;title=Brique Logique;ref=brique logique)
+ |dict=(langs=FR;term=brique logique;usage=4;note=N’hésitez pas à utiliser aussi le terme anglais&amp;nbsp\;!), (langs=EN;term=logic brick)
+ |shortdesc=Une représentation graphique d’une unité fonctionnelle, dans la logique de jeu de Blender.
+ |longdesc=Les “briques logiques” peuvent être des {{Glossary/Link|ref=capteur|txt=Capteurs}}, {{Glossary/Link|ref=controleur|txt=Contrôleurs}} ou {{Glossary/Link|ref=actuateur|txt=Actuateurs}}.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Lumière Ambiante
+ |ref=lumiere ambiante
+ |syns=(langs=EN;title=Ambient Light;ref=ambient light)
+ |dict=(langs=FR;term=lumière ambiante;usage=4), (langs=EN;term=ambient light)
+ |shortdesc=C’est de la lumière qui ne semble provenir de nulle part, mais se trouve simplement là dans l’environnement.
+ |longdesc=Regardez sous votre bureau –&amp;nbsp;c’est relativement sombre la-dessous, mais il y a quand même de la lumière. Dans le monde réel, cela est causé des photons errants qui rebondissent dans l’environnement, parfois jusque sous le bureau. La lumière ambiante est la quantité de lumière basique, minimale, présente dans toute la scène. Ajouter trop d’''ambient light'' délave une scène. Puisque la lumière ne provient de nulle part, toutes les faces d’un objet sont “illuminées” de la même façon, ne créant aucun ombrage.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/N</title>
+    <id>84</id>
+    <revision>
+      <id>877</id>
+      <timestamp>2009-11-30T19:07:12Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=FR  |title=Normale  |ref=normale  |dict=(langs=FR;term=normale), (langs=EN;term=normal)  |shortdesc=La normale à une surface plane est un vecteur tri-…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=FR
+ |title=Normale
+ |ref=normale
+ |dict=(langs=FR;term=normale), (langs=EN;term=normal)
+ |shortdesc=La normale à une surface plane est un vecteur tri-dimensionnel perpendiculaire à cette surface.
+ |longdesc=Une normale à une surface non-plane en un point &lt;code&gt;p&lt;/code&gt; de cette surface est le vecteur perpendiculaire au plan tangent à cette surface en ce point &lt;code&gt;p&lt;/code&gt;.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Normal Mapping
+ |ref=normal mapping
+ |dict=(langs=FR;term=placage de normale;usage=*;approx=Yes;note=Traduction donnée uniquement à titre indicatif, utilisez toujours le terme anglais&amp;nbsp\;!), (langs=EN;term=normal mapping)
+ |shortdesc=Le ''normal mapping'' est une technique pour simuler du relief sur des surfaces lisses, en modifiant leur ombrage.
+ |longdesc=Il est similaire au {{Glossary/Link|ref=bump mapping|txt=''bump mapping''}}, mais au lieu d’utiliser une texture en niveaux de gris, sa couleur définit le décalage des normales, les trois composantes RGB correspondant aux trois directions X, Y et Z. Cela permet plus de détails et de contrôle sur l’effet.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/O</title>
+    <id>85</id>
+    <revision>
+      <id>878</id>
+      <timestamp>2009-11-30T19:08:27Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=FR  |title=Occlusion Ambiante  |ref=occlusion ambiante  |syns=(langs=EN;title=Ambient Occlusion \(AO\);ref=ambient occlusion)  |dict=(langs=FR;term=occ…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=FR
+ |title=Occlusion Ambiante
+ |ref=occlusion ambiante
+ |syns=(langs=EN;title=Ambient Occlusion \(AO\);ref=ambient occlusion)
+ |dict=(langs=FR;term=occlusion ambiante;usage=4), (langs=EN;term=ambient occlusion)
+ |shortdesc=Cela simule un énorme dôme de lumière entourant toute la scène. Si un point d’une surface se trouve sous un pied ou une table, il se retrouvera bien plus sombre que le sommet de la tête de quelqu’un, ou qu’un dessus de table.
+ |longdesc=Une proportion (quantité) de lumière ambiante qu’un point d’une surface est susceptible de recevoir, en fonction de la quantité de “ciel” qu’il peut “voir”.
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary/S</title>
+    <id>86</id>
+    <revision>
+      <id>879</id>
+      <timestamp>2009-11-30T19:09:09Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_entry:  |langs=FR  |title=Sous-contexte  |ref=sous contexte  |syns=(langs=EN;title=Sub-Context;ref=sub context)  |dict=(langs=FR;term=sous-contexte), (langs=EN;term=s…'</comment>
+      <text xml:space="preserve">{{#glossary_entry:
+ |langs=FR
+ |title=Sous-contexte
+ |ref=sous contexte
+ |syns=(langs=EN;title=Sub-Context;ref=sub context)
+ |dict=(langs=FR;term=sous-contexte), (langs=EN;term=sub-context)
+ |shortdesc=Une subdivision d’un contexte.
+ |longdesc=Par exemple, le {{Glossary/Link|ref=contexte|txt=contexte}} {{Literal|Shading}} ({{Shortcut|F5}}) dispose de cinq sous-contextes&amp;nbsp;: {{Literal|Lamp}}, {{Literal|Material}}, {{Literal|Texture}}, {{Literal|Radiosity}} et {{Literal|World}}…
+ }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary Help</title>
+    <id>91</id>
+    <revision>
+      <id>1055</id>
+      <timestamp>2010-01-26T12:02:04Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_help:disp_lang=fr}}'</comment>
+      <text xml:space="preserve">{{#glossary_help:disp_lang=fr}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Test</title>
+    <id>88</id>
+    <revision>
+      <id>967</id>
+      <timestamp>2009-12-13T10:07:11Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">Just a small test: {{Glossary/Link|ref=controleur|txt=Contrôleur}}
+
+*{{Glossary/Link|ref=sensor|txt=Sensor}} is “capteur” in english…
+*{{Glossary/Link|ref=capteur|txt=Capteur}}
+
+{|align=right
+ |And with a synonym: We can {{Glossary/Link|ref=pre calculer|txt=pré-calculer}} all this…
+ |}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Blender.css</title>
+    <id>10</id>
+    <revision>
+      <id>1048</id>
+      <timestamp>2010-01-24T18:31:54Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">/******************************************************************************
+ * The error display.                                                         *
+ ******************************************************************************/
+/* The error message… */
+span.xg_error {
+ font-weight: bolder;
+ color: red;}
+
+/******************************************************************************
+ * The glossary part (classes used in Glossary “template”).                   *
+ ******************************************************************************/
+/* The “index” at top of glossary pages, with links to all groups defined.*/
+div.xg_index {
+ padding: 5px;
+ text-align: center;
+ background-color: #404040;}
+/*Flatten index list…*/
+div.xg_index ul {
+ display: inline;
+ padding: 0px;}
+div.xg_index li {
+ display: inline;
+ padding-right: 2px;
+ padding-left: 2px;}
+div.xg_index a {
+ font-weight: bolder;
+ font-size: 2em;
+ color: white;}
+
+/* The glossary itself!*/
+div.xg_content {;}
+
+/******************************************************************************
+ * The group part (classes used in glossary Group “template”).                *
+ ******************************************************************************/
+/* A group of entries.*/
+div.xg_group {
+ padding-top: 25px;}
+/* The header of a group*/
+div.xg_grheader {
+ background-color: #3C3300;
+ padding: 5px;
+ margin-bottom: 10px;
+ text-align: center;
+ font-size: 2.0em;
+ font-weight: bolder;
+ font-variant: small-caps;}
+/* The “utilities” in the group header.*/
+span.xg_grheadermisc {
+ background-color: #3C3300;
+ display: block;
+ float: right;
+ /*Now, some undo of span.glossary_group_header!*/
+ font-size: 0.5em;
+ font-weight: normal;
+ font-variant: normal;}
+/* The group content. */
+div.xg_grcontent {;}
+
+/******************************************************************************
+ * The entry part (classes used in glossary Entry “template”).                *
+ ******************************************************************************/
+/* A glossary entry.*/
+div.xg_entry {
+ margin-bottom: 20px;}
+/* The header of an entry.*/
+div.xg_enheader {;}
+/* The content of an entry.*/
+div.xg_encontent {
+ margin-left: 40px;}
+/* The title of an entry.*/
+span.xg_entitle {
+ font-size: 1.5em;
+ font-weight: bolder;
+ font-variant: small-caps;}
+/* Misc things in header, floating right. */
+div.xg_enheadermisc {
+ float: right;}
+/* The “edit” link… */
+span.xg_enediturl {
+ font-family: monospace;
+ font-size: 0.8em;}
+/* The short description of the entry.*/
+div.xg_enshortdesc {
+ font-weight: bolder;}
+/* The long description of the entry.*/
+div.xg_enlongdesc {
+ text-align: justify;}
+/* The optional “dict” part of an entry.*/
+div.xg_endict {
+ border-left: 2px solid white;
+ padding-left: 5px;}
+
+/******************************************************************************
+ * The dict part (calsses used in glossary Dict “template”).                  *
+ ******************************************************************************/
+/* The “dict” item.*/
+div.xg_dict {;}
+/* The languages of the “dict” item.*/
+span.xg_dctlangs {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The note about the “dict” item.*/
+span.xg_dctnote {
+ color: #dddddd;}
+
+/******************************************************************************
+ * The links to glossary entries.                                             *
+ ******************************************************************************/
+span.xg_link a {
+ color: #ffee80;
+ text-decoration: none;}
+span.xg_link a:hover, span.xg_link a:focus {
+ color: gold;}
+
+span.xg_link span.xg_lnkshortdesc {
+ visibility: hidden;
+ display: block;
+ position: absolute;
+ min-height: 1.1em; min-width: 150px; max-height: 5.5em; max-width: 450px;
+ line-height: 1.1em;
+ color: white;
+ background-color: #121000;
+ border: 3px double gold;
+ z-index: 1000;
+ overflow: hidden;
+ left: 0px; top: 0px;}
+span.xg_link:hover span.xg_lnkshortdesc,
+span.xg_link:focus span.xg_lnkshortdesc {
+ /*visibility: visible;*/}
+
+
+/******************************************************************************
+ * Misc “style” classes that may be used in several places…                   *
+ ******************************************************************************/
+/* The reference elements… */
+span.xg_disp_ref {
+ font-family: monospace;
+ font-size: 0.8em;}
+
+/* The languages elements… */
+span.xg_disp_langs {
+ background-color: #404040;
+ padding: 2px;
+ font-weight: bolder;
+ font-size: 0.9em;}
+/*Flatten langs list…*/
+span.xg_disp_langs ul {
+ display: inline;
+ padding: 0px;}
+span.xg_disp_langs ul li {
+ display: inline;
+ padding-right: 2px;
+ padding-left: 2px;}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Blender.js</title>
+    <id>54</id>
+    <revision>
+      <id>1051</id>
+      <timestamp>2010-01-24T19:27:09Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">// encoding: utf-8
+// Using JQuery (1.3.2)
+
+// These are “constants” to reference the elements used/modified/created in this script.
+var xg_block_class             = &quot;.xg_js_block&quot;;
+var xg_block_toggle_class      = &quot;.xg_js_block_toggle&quot;;
+var xg_block_showall_class     = &quot;.xg_js_block_sall&quot;;
+var xg_block_hideall_class     = &quot;.xg_js_block_hall&quot;;
+var xg_block_content_class     = &quot;.xg_js_block_content&quot;;
+var xg_indexlnk_class          = &quot;.xg_js_indexlnk&quot;;
+
+// container_id is the (jQuery) identifier of the main text container, the element
+// in which the infobox will be constrained (to avoid it spreading on side menus
+// and such…).
+//var container_id                 = &quot;body&quot;; // A “generic” solution…
+//var container_id                 = &quot;.xg_js_container&quot;; // A “generic” solution…
+var container_id                 = &quot;#bodyContent&quot;; // A “Blender skin” solution…
+var xg_link_class              = &quot;.xg_js_tooltip_generator&quot;;
+var xg_link_infobox_class      = &quot;.xg_js_tooltip&quot;;
+
+/******************************************************************************
+ * Show/Hide parts (groups) in the Glossary page.                             *
+ *                                                                            *
+ * Note that using hidden group content has one side effect: when we open a   *
+ * glossary page with a fragment (i.e. a reference to an entry), if this      *
+ * entry is in a hidden part, it wont show up automatically – we have to      *
+ * detect it and open/show the right group!                                   *
+ ******************************************************************************/
+var blocks;
+
+function xgBlockShow(block)
+{
+	var content = $(block).contents().filter(xg_block_content_class);
+	if (!content.length) return;
+	$(content).show();
+	block.shown = true;
+	xgSetupInfoboxes();
+}
+
+function xgBlockHide(block)
+{
+	var content = $(block).contents().filter(xg_block_content_class);
+	if (!content.length) return;
+	$(content).show();
+	block.shown = true;
+	xgSetupInfoboxes();
+}
+
+function xgBlocksShowAll()
+{
+	// If no toggleable elements, just return!
+	if (!blocks) return;
+	$(blocks).each(function() {
+		var content = $(this).contents().filter(xg_block_content_class);
+		if (!content.length) return true; // = continue…
+		$(content).show();
+		this.shown = true;
+	});
+	xgSetupInfoboxes();
+	return false; // Don’t want bubbling up…
+}
+
+function xgBlocksHideAll()
+{
+	// If no toggleable elements, just return!
+	if (!blocks) return;
+	$(blocks).each(function() {
+		var content = $(this).contents().filter(xg_block_content_class);
+		if (!content.length) return true; // = continue…
+		$(content).hide();
+		this.shown = false;
+	});
+	xgSetupInfoboxes();
+	return false; // Don’t want bubbling up…
+}
+
+function xgBlocksSetup()
+{
+	blocks = $(xg_block_class);
+	// If no toggleable elements, just return!
+	if (!blocks) return;
+	
+	// Else, attach events to each block, and hide everything…
+	// Note we bind click event on everything inside the matched elements, so we
+	// explicitly unbind them from potential internal links…
+	$(blocks).each(function() {
+		// Toggle of current block…
+		$(this).find(xg_block_toggle_class).bind(
+			'click', {&quot;block&quot;: this}, function (e) {
+				if (e.data.block.shown) {
+					$(e.data.block).contents().filter(xg_block_content_class).hide();
+					e.data.block.shown = false;
+					xgSetupInfoboxes();
+					return false; // Don’t want bubbling up…
+				}
+				else {
+					$(e.data.block).contents().filter(xg_block_content_class).show();
+					e.data.block.shown = true;
+					xgSetupInfoboxes();
+					return false; // Don’t want bubbling up…
+				}
+		})
+			.find(&quot;a&quot;).click(function() {
+				$(window)[0].location = $(this).attr(&quot;href&quot;);
+				return false;})
+			.end()
+		.end()
+		// Show all blocks…
+		.find(xg_block_showall_class).click(xgBlocksShowAll)
+			.find(&quot;a&quot;).click(function() {
+				$(window)[0].location = $(this).attr(&quot;href&quot;);
+				return false;})
+			.end()
+		.end()
+		// Hide all blocks…
+		.find(xg_block_hideall_class).click(xgBlocksHideAll)
+			.find(&quot;a&quot;).click(function() {
+				$(window)[0].location = $(this).attr(&quot;href&quot;);
+				return false;});
+	});
+	xgBlocksHideAll();
+	xgSetupInfoboxes();
+}
+
+$(document).ready(xgBlocksSetup);
+
+// Here we periodically (default: each 100ms) check the page hash/fragment, to
+// open right block when it changes…
+// If a “changed” event existed on this property, it would be better!
+var hash = &quot;&quot;;
+function xgCheckHash()
+{
+	// Check if page fragment has changed (to open relevant block if needed…).
+	if (hash != location.hash) {
+		hash = location.hash;
+		var blk = $(blocks).filter(&quot;:has(&quot; + hash + &quot;)&quot;)[0];
+		if (blk) xgBlockShow(blk);
+		location.hash = hash;
+	}
+}
+$(document).ready(function () {window.setInterval(&quot;xgCheckHash();&quot;, 100)});
+
+/******************************************************************************
+ * The pop-up infobox stuff…                                                  *
+ ******************************************************************************/
+
+// This function positions a given glossary link infobox.
+function xgPosInfobox(glnk)
+{
+	// Get the infobox element itself.
+	var ifb = $(glnk).contents().filter(xg_link_infobox_class)[0];
+	if (ifb == null) return;
+	// Get infobox offset-parent (i.e. element from which it is offset in
+	// absolute positionning).
+	var offpar = $(ifb).offsetParent()[0];
+	if (offpar == null) return;
+	// Get the general “text” container (i.e the one in which infobox will be
+	// contrained).
+	var cont = $(container_id)[0];
+	if (cont == null) return;
+	
+	// Get the position of the link, relative to viewport.
+	var pos_top = $(glnk).offset().top;
+	var pos_left = $(glnk).offset().left;
+	// Get OUTER size of infobox.
+	var ifb_height = $(ifb).outerHeight();
+	var ifb_width = $(ifb).outerWidth();
+	// Position vertically the infobox, so that it does not overlap the
+	// container’s top border (however, it might go beyond the bottom one…).
+	var ref_y = $(cont).offset().top;
+	// If “correct” y-position (relative to container) &lt; 0, put it *under* the
+	// generator element…
+//	alert(pos_top-(ifb_height + 5)-ref_y);
+	if (pos_top-(ifb_height + 5)-ref_y &lt; 0)
+	{
+		pos_top += $(glnk).height() + 5; // 5px of “margin”.
+	}
+	else pos_top -= ifb_height + 5; // 5px of “margin”.
+	// Position horizontally the infobox, so that it does not overlap the
+	// container’s borders, perhaps modifying its width…
+	var aw = $(cont).width();
+	var ref_x = $(cont).offset().left;
+	// If current x-position (relative to container)+width &gt; available width…
+	if (pos_left-ref_x+ifb_width &gt; aw)
+	{
+		// If current width &gt; available width, x-pos = container offset, and reduce infobox width!
+		if (ifb_width &gt; aw)
+		{
+			// Here we need the difference between “outer” and “css” widths of ifb.
+			var ifb_dwidth = ifb_width - $(ifb).width();
+			pos_left = ref_x;
+			$(ifb).css('minWidth', (aw/2) - ifb_dwidth).css('maxWidth', aw - ifb_dwidth);
+		}
+		// Else, just “bring back” the infobox to the left…
+		else pos_left = ref_x + aw - ifb_width;
+	}
+	// Make position of infobox relative to the infobox offset-parent.
+	pos_top -= $(offpar).offset().top;
+	pos_left -= $(offpar).offset().left;
+	$(ifb).css('top', Math.round(pos_top)).css('left', Math.round(pos_left));
+}
+
+// Here we position all the glossary links infoboxes, to float just over their
+// own link…
+function xgSetupInfoboxes()
+{
+	// Find all elements wrapping a glossary link.
+	var glnks = $(&quot;*&quot;).filter(xg_link_class).filter(':visible');
+	// For elements (glossary links) in glnks, apply the xgPosInfobox() func,
+	// and bind the hover/focus/blur events…
+	$(glnks).each(function() {
+		// Do not process shortdesc-empty links!
+		if ($(this).find(xg_link_infobox_class).text() == &quot;&quot;) return true;
+		$(this).contents().filter(&quot;a&quot;).unbind();
+		xgPosInfobox(this);
+		$(this).contents().filter(&quot;a&quot;).hover(
+			function() {var obj = $(this).siblings(xg_link_infobox_class);
+			            if($(obj).contents().length) $(obj).css(&quot;visibility&quot;, &quot;visible&quot;);},
+			function() {var obj = $(this).siblings(xg_link_infobox_class);
+			            $(obj).css(&quot;visibility&quot;, &quot;hidden&quot;);}
+		).focus(function() {var obj = $(this).siblings(xg_link_infobox_class);
+			                if($(obj).contents().length) $(obj).css(&quot;visibility&quot;, &quot;visible&quot;);})
+		 .blur(function() {var obj = $(this).siblings(xg_link_infobox_class);
+			               $(obj).css(&quot;visibility&quot;, &quot;hidden&quot;);});
+	});
+}
+
+$(document).ready(xgSetupInfoboxes);
+$(window).resize(xgSetupInfoboxes);</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Monobook.css</title>
+    <id>89</id>
+    <revision>
+      <id>1053</id>
+      <timestamp>2010-01-24T20:20:52Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">/******************************************************************************
+ * The error display.                                                         *
+ ******************************************************************************/
+/* The error message… */
+span.xg_error {
+ font-weight: bolder;
+ color: red;}
+
+/******************************************************************************
+ * The glossary part (classes used in Glossary “template”).                   *
+ ******************************************************************************/
+/* The “index” at top of glossary pages, with links to all groups defined.*/
+div.xg_index {
+ padding: 5px;
+ text-align: center;
+ background-color: #c0c0f0;}
+/*Flatten index list…*/
+div.xg_index ul {
+ display: inline;
+ margin: 0px;
+ padding: 0px;}
+div.xg_index li {
+ display: inline;
+ padding-right: 2px;
+ padding-left: 2px;}
+div.xg_index a {
+ font-weight: bolder;
+ font-size: 2em;
+ color: black;}
+
+/* The glossary itself!*/
+div.xg_content {;}
+
+/******************************************************************************
+ * The group part (classes used in glossary Group “template”).                *
+ ******************************************************************************/
+/* A group of entries.*/
+div.xg_group {
+ padding-top: 25px;}
+/* The header of a group*/
+div.xg_grheader {
+ display: block;
+ background-color: #d0c990;
+ padding: 5px;
+ margin-bottom: 10px;
+ text-align: center;
+ font-size: 2.0em;
+ font-weight: bolder;
+ font-variant: small-caps;}
+/* The “utilities” in the group header.*/
+span.xg_grheadermisc {
+ background-color: #d0c990;
+ display: block;
+ float: right;
+ /*Now, some undo of span.glossary_group_header!*/
+ font-size: 0.5em;
+ font-weight: normal;
+ font-variant: normal;}
+/* The group content. */
+div.xg_grcontent {;}
+
+/******************************************************************************
+ * The entry part (classes used in glossary Entry “template”).                *
+ ******************************************************************************/
+/* A glossary entry.*/
+div.xg_entry {
+ margin-bottom: 20px;}
+/* The header of an entry.*/
+div.xg_enheader {;}
+/* The content of an entry.*/
+div.xg_encontent {
+ margin-left: 40px;}
+/* The title of an entry.*/
+span.xg_entitle {
+ font-size: 1.5em;
+ font-weight: bolder;
+ font-variant: small-caps;}
+/* Misc things in header, floating right. */
+div.xg_enheadermisc {
+ float: right;}
+/* The “edit” link… */
+span.xg_enediturl {
+ font-family: monospace;
+ font-size: 0.8em;}
+/* The short description of the entry.*/
+div.xg_enshortdesc {
+ font-weight: bolder;}
+/* The long description of the entry.*/
+div.xg_enlongdesc {
+ text-align: justify;}
+/* The optional “dict” part of an entry.*/
+div.xg_endict {
+ border-left: 2px solid white;
+ padding-left: 5px;}
+
+/******************************************************************************
+ * The dict part (calsses used in glossary Dict “template”).                  *
+ ******************************************************************************/
+/* The “dict” item.*/
+div.xg_dict {;}
+/* The languages of the “dict” item.*/
+span.xg_dctlangs {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The term of the “dict” item.*/
+span.xg_dctterm {
+ font-weight: bolder;}
+/* The note about the “dict” item.*/
+span.xg_dctnote {
+ color: #dddddd;}
+
+/******************************************************************************
+ * The links to glossary entries.                                             *
+ ******************************************************************************/
+span.xg_link a {
+ color: #ddaa40;
+ text-decoration: none;}
+span.xg_link a:hover, span.xg_link a:focus {
+ color: gold;}
+
+span.xg_link span.xg_lnkshortdesc {
+ visibility: hidden;
+ display: block;
+ position: absolute;
+ min-height: 1.1em; min-width: 150px; max-height: 5.5em; max-width: 450px;
+ line-height: 1.1em;
+ color: black;
+ background-color: #fbffee;
+ border: 3px double gold;
+ z-index: 1000;
+ overflow: hidden;
+ left: 0px; top: 0px;}
+span.xg_link:hover span.xg_lnkshortdesc,
+span.xg_link:focus span.xg_lnkshortdesc {
+ /*visibility: visible;*/}
+
+
+/******************************************************************************
+ * Misc “style” classes that may be used in several places…                   *
+ ******************************************************************************/
+/* The reference elements… */
+span.xg_disp_ref {
+ font-family: monospace;
+ font-size: 0.8em;}
+
+/* The languages elements… */
+span.xg_disp_langs {
+ background-color: #C0C0C0;
+ padding: 2px;
+ font-weight: bolder;
+ font-size: 0.9em;}
+/*Flatten langs list…*/
+span.xg_disp_langs ul {
+ display: inline;
+ margin: 0px;
+ padding: 0px;}
+span.xg_disp_langs ul li {
+ display: inline;
+ padding-right: 2px;
+ padding-left: 2px;}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Monobook.js</title>
+    <id>90</id>
+    <revision>
+      <id>1050</id>
+      <timestamp>2010-01-24T19:26:08Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">// encoding: utf-8
+// Using JQuery (1.3.2)
+
+// These are “constants” to reference the elements used/modified/created in this script.
+var xg_block_class             = &quot;.xg_js_block&quot;;
+var xg_block_toggle_class      = &quot;.xg_js_block_toggle&quot;;
+var xg_block_showall_class     = &quot;.xg_js_block_sall&quot;;
+var xg_block_hideall_class     = &quot;.xg_js_block_hall&quot;;
+var xg_block_content_class     = &quot;.xg_js_block_content&quot;;
+var xg_indexlnk_class          = &quot;.xg_js_indexlnk&quot;;
+
+// container_id is the (jQuery) identifier of the main text container, the element
+// in which the infobox will be constrained (to avoid it spreading on side menus
+// and such…).
+//var container_id                 = &quot;body&quot;; // A “generic” solution…
+//var container_id                 = &quot;.xg_js_container&quot;; // A “generic” solution…
+var container_id                 = &quot;#bodyContent&quot;; // A “Blender skin” solution…
+var xg_link_class              = &quot;.xg_js_tooltip_generator&quot;;
+var xg_link_infobox_class      = &quot;.xg_js_tooltip&quot;;
+
+/******************************************************************************
+ * Show/Hide parts (groups) in the Glossary page.                             *
+ *                                                                            *
+ * Note that using hidden group content has one side effect: when we open a   *
+ * glossary page with a fragment (i.e. a reference to an entry), if this      *
+ * entry is in a hidden part, it wont show up automatically – we have to      *
+ * detect it and open/show the right group!                                   *
+ ******************************************************************************/
+var blocks;
+
+function xgBlockShow(block)
+{
+	var content = $(block).contents().filter(xg_block_content_class);
+	if (!content.length) return;
+	$(content).show();
+	block.shown = true;
+	xgSetupInfoboxes();
+}
+
+function xgBlockHide(block)
+{
+	var content = $(block).contents().filter(xg_block_content_class);
+	if (!content.length) return;
+	$(content).show();
+	block.shown = true;
+	xgSetupInfoboxes();
+}
+
+function xgBlocksShowAll()
+{
+	// If no toggleable elements, just return!
+	if (!blocks) return;
+	$(blocks).each(function() {
+		var content = $(this).contents().filter(xg_block_content_class);
+		if (!content.length) return true; // = continue…
+		$(content).show();
+		this.shown = true;
+	});
+	xgSetupInfoboxes();
+	return false; // Don’t want bubbling up…
+}
+
+function xgBlocksHideAll()
+{
+	// If no toggleable elements, just return!
+	if (!blocks) return;
+	$(blocks).each(function() {
+		var content = $(this).contents().filter(xg_block_content_class);
+		if (!content.length) return true; // = continue…
+		$(content).hide();
+		this.shown = false;
+	});
+	xgSetupInfoboxes();
+	return false; // Don’t want bubbling up…
+}
+
+function xgBlocksSetup()
+{
+	blocks = $(xg_block_class);
+	// If no toggleable elements, just return!
+	if (!blocks) return;
+	
+	// Else, attach events to each block, and hide everything…
+	// Note we bind click event on everything inside the matched elements, so we
+	// explicitly unbind them from potential internal links…
+	$(blocks).each(function() {
+		// Toggle of current block…
+		$(this).find(xg_block_toggle_class).bind(
+			'click', {&quot;block&quot;: this}, function (e) {
+				if (e.data.block.shown) {
+					$(e.data.block).contents().filter(xg_block_content_class).hide();
+					e.data.block.shown = false;
+					xgSetupInfoboxes();
+					return false; // Don’t want bubbling up…
+				}
+				else {
+					$(e.data.block).contents().filter(xg_block_content_class).show();
+					e.data.block.shown = true;
+					xgSetupInfoboxes();
+					return false; // Don’t want bubbling up…
+				}
+		})
+			.find(&quot;a&quot;).click(function() {
+				$(window)[0].location = $(this).attr(&quot;href&quot;);
+				return false;})
+			.end()
+		.end()
+		// Show all blocks…
+		.find(xg_block_showall_class).click(xgBlocksShowAll)
+			.find(&quot;a&quot;).click(function() {
+				$(window)[0].location = $(this).attr(&quot;href&quot;);
+				return false;})
+			.end()
+		.end()
+		// Hide all blocks…
+		.find(xg_block_hideall_class).click(xgBlocksHideAll)
+			.find(&quot;a&quot;).click(function() {
+				$(window)[0].location = $(this).attr(&quot;href&quot;);
+				return false;});
+	});
+	xgBlocksHideAll();
+	xgSetupInfoboxes();
+}
+
+$(document).ready(xgBlocksSetup);
+
+// Here we periodically (default: each 100ms) check the page hash/fragment, to
+// open right block when it changes…
+// If a “changed” event existed on this property, it would be better!
+var hash = &quot;&quot;;
+function xgCheckHash()
+{
+	// Check if page fragment has changed (to open relevant block if needed…).
+	if (hash != location.hash) {
+		hash = location.hash;
+		var blk = $(blocks).filter(&quot;:has(&quot; + hash + &quot;)&quot;)[0];
+		if (blk) xgBlockShow(blk);
+		location.hash = hash;
+	}
+}
+$(document).ready(function () {window.setInterval(&quot;xgCheckHash();&quot;, 100)});
+
+/******************************************************************************
+ * The pop-up infobox stuff…                                                  *
+ ******************************************************************************/
+
+// This function positions a given glossary link infobox.
+function xgPosInfobox(glnk)
+{
+	// Get the infobox element itself.
+	var ifb = $(glnk).contents().filter(xg_link_infobox_class)[0];
+	if (ifb == null) return;
+	// Get infobox offset-parent (i.e. element from which it is offset in
+	// absolute positionning).
+	var offpar = $(ifb).offsetParent()[0];
+	if (offpar == null) return;
+	// Get the general “text” container (i.e the one in which infobox will be
+	// contrained).
+	var cont = $(container_id)[0];
+	if (cont == null) return;
+	
+	// Get the position of the link, relative to viewport.
+	var pos_top = $(glnk).offset().top;
+	var pos_left = $(glnk).offset().left;
+	// Get OUTER size of infobox.
+	var ifb_height = $(ifb).outerHeight();
+	var ifb_width = $(ifb).outerWidth();
+	// Position vertically the infobox, so that it does not overlap the
+	// container’s top border (however, it might go beyond the bottom one…).
+	var ref_y = $(cont).offset().top;
+	// If “correct” y-position (relative to container) &lt; 0, put it *under* the
+	// generator element…
+//	alert(pos_top-(ifb_height + 5)-ref_y);
+	if (pos_top-(ifb_height + 5)-ref_y &lt; 0)
+	{
+		pos_top += $(glnk).height() + 5; // 5px of “margin”.
+	}
+	else pos_top -= ifb_height + 5; // 5px of “margin”.
+	// Position horizontally the infobox, so that it does not overlap the
+	// container’s borders, perhaps modifying its width…
+	var aw = $(cont).width();
+	var ref_x = $(cont).offset().left;
+	// If current x-position (relative to container)+width &gt; available width…
+	if (pos_left-ref_x+ifb_width &gt; aw)
+	{
+		// If current width &gt; available width, x-pos = container offset, and reduce infobox width!
+		if (ifb_width &gt; aw)
+		{
+			// Here we need the difference between “outer” and “css” widths of ifb.
+			var ifb_dwidth = ifb_width - $(ifb).width();
+			pos_left = ref_x;
+			$(ifb).css('minWidth', (aw/2) - ifb_dwidth).css('maxWidth', aw - ifb_dwidth);
+		}
+		// Else, just “bring back” the infobox to the left…
+		else pos_left = ref_x + aw - ifb_width;
+	}
+	// Make position of infobox relative to the infobox offset-parent.
+	pos_top -= $(offpar).offset().top;
+	pos_left -= $(offpar).offset().left;
+	$(ifb).css('top', Math.round(pos_top)).css('left', Math.round(pos_left));
+}
+
+// Here we position all the glossary links infoboxes, to float just over their
+// own link…
+function xgSetupInfoboxes()
+{
+	// Find all elements wrapping a glossary link.
+	var glnks = $(&quot;*&quot;).filter(xg_link_class).filter(':visible');
+	// For elements (glossary links) in glnks, apply the xgPosInfobox() func,
+	// and bind the hover/focus/blur events…
+	$(glnks).each(function() {
+		// Do not process shortdesc-empty links!
+		if ($(this).find(xg_link_infobox_class).text() == &quot;&quot;) return true;
+		$(this).contents().filter(&quot;a&quot;).unbind();
+		xgPosInfobox(this);
+		$(this).contents().filter(&quot;a&quot;).hover(
+			function() {var obj = $(this).siblings(xg_link_infobox_class);
+			            if($(obj).contents().length) $(obj).css(&quot;visibility&quot;, &quot;visible&quot;);},
+			function() {var obj = $(this).siblings(xg_link_infobox_class);
+			            $(obj).css(&quot;visibility&quot;, &quot;hidden&quot;);}
+		).focus(function() {var obj = $(this).siblings(xg_link_infobox_class);
+			                if($(obj).contents().length) $(obj).css(&quot;visibility&quot;, &quot;visible&quot;);})
+		 .blur(function() {var obj = $(this).siblings(xg_link_infobox_class);
+			               $(obj).css(&quot;visibility&quot;, &quot;hidden&quot;);});
+	});
+}
+
+$(document).ready(xgSetupInfoboxes);
+$(window).resize(xgSetupInfoboxes);</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Glossary/Link</title>
+    <id>58</id>
+    <revision>
+      <id>810</id>
+      <timestamp>2009-11-17T17:15:56Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#glossary_link:path={{Glossary/Link/Path}}#{{{ref}}}|text={{{txt}}}}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;
+{{Documentation}}
+&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Glossary/Link/Path</title>
+    <id>25</id>
+    <revision>
+      <id>1014</id>
+      <timestamp>2009-12-14T13:30:18Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#ifeq: {{NAMESPACE}}:{{Languages/Section}}|Doc:Glossary||Doc:{{Languages/Language}}{{Languages/Slash}}Glossary}}&lt;!--Doc:{{Languages/Language}}{{Languages/Slash}}Glossary--&gt;&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;
+{{Documentation}}
+&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Language</title>
+    <id>40</id>
+    <revision>
+      <id>556</id>
+      <timestamp>2009-10-22T14:21:17Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#switch: {{#titleparts:{{PAGENAME}}|1|1}} |AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|UK|ZH={{#titleparts:{{PAGENAME}}|1|1}} |}}'</comment>
+      <text xml:space="preserve">{{#switch:
+{{#titleparts:{{PAGENAME}}|1|1}}
+|AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|UK|ZH={{#titleparts:{{PAGENAME}}|1|1}}
+|}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Section</title>
+    <id>41</id>
+    <revision>
+      <id>557</id>
+      <timestamp>2009-10-22T14:26:42Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '&lt;includeonly&gt;{{#switch: {{#titleparts:{{PAGENAME}}|1}} |AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|TR|UK|ZH={{#titleparts:{{PAGENAME}}|1|2}} |{{#titleparts:{{…'</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch:
+{{#titleparts:{{PAGENAME}}|1}}
+|AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|TR|UK|ZH={{#titleparts:{{PAGENAME}}|1|2}}
+|{{#titleparts:{{PAGENAME}}|1|1}}
+}}&lt;/includeonly&gt;&lt;noinclude&gt;=What does this template do?=
+Gives the first pagename element taking apart the eventual language
+code.
+Examples:
+# if put in Doc:FR/Manual/Data_System/Scene_Creation it gives: Manual
+# if put in Doc:Manual/Data_System/Scene_Creation it gives: Manual
+&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Slash</title>
+    <id>42</id>
+    <revision>
+      <id>558</id>
+      <timestamp>2009-10-22T14:27:42Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#switch: {{#titleparts:{{PAGENAME}}|1|1}} |AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|TR|UK|ZH=/|}}'</comment>
+      <text xml:space="preserve">{{#switch: {{#titleparts:{{PAGENAME}}|1|1}} |AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|TR|UK|ZH=/|}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Literal</title>
+    <id>16</id>
+    <revision>
+      <id>111</id>
+      <timestamp>2009-10-07T13:11:44Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '&lt;i&gt;{{{1}}}&lt;/i&gt;'</comment>
+      <text xml:space="preserve">&lt;i&gt;{{{1}}}&lt;/i&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary Help</title>
+    <id>69</id>
+    <revision>
+      <id>1054</id>
+      <timestamp>2010-01-26T11:57:47Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve">{{#glossary_help:disp_lang=en}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:Glossary Tests</title>
+    <id>70</id>
+    <revision>
+      <id>855</id>
+      <timestamp>2009-11-23T11:21:05Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_test:}}'</comment>
+      <text xml:space="preserve">{{#glossary_test:}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Doc:FR/Glossary Help</title>
+    <id>91</id>
+    <revision>
+      <id>1055</id>
+      <timestamp>2010-01-26T12:02:04Z</timestamp>
+      <contributor>
+        <username>Admin</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with '{{#glossary_help:disp_lang=fr}}'</comment>
+      <text xml:space="preserve">{{#glossary_help:disp_lang=fr}}</text>
+    </revision>
+  </page>
+</mediawiki>

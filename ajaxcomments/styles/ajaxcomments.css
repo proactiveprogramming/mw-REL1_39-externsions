@@ -1,0 +1,76 @@
+.pBody li#pt-mytalk {
+	display: none;
+}
+.ajaxcomment textarea {
+	height: 100px;
+	margin-bottom: 5px;
+}
+#ajaxcomments-none {
+	font-style: italic;
+	margin-top: 10px;
+}
+.ajaxcomment-container .ajaxcomment-container {
+	margin-left: 25px;
+}
+.ajaxcomment {
+	margin: 10px 0 0 0;
+	padding: 5px 15px 5px 8px;
+	border: 1px solid #cce0f2;
+	background: #f0f8fe;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+}
+.ajaxcomment.selected {
+	border: 2px solid #c00;
+}
+.ajaxcomment-container.loading .loader {
+	padding: 5px 15px;
+	background: url( ../img/ajax-loader.gif ) no-repeat center center;
+}
+.ajaxcomment-container.loading .replies .loader {
+	background: none;
+}
+.ajaxcomment-new .ajaxcomment-text {
+	height: 80px;
+}
+#ajaxcomments-wrapper button {
+	color: white;
+	background-color: #999;
+	border: 1px solid black;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 2px 10px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.ajaxcomment .buttons {
+	clear: both;
+}
+.ajaxcomment-icon {
+	float: left;
+	margin: 5px 5px 5px 0;
+}
+.ajaxcomment-sig {
+	color: #999;
+	font-size: 90%;
+}
+#ajaxcomments-wrapper button.like,
+#ajaxcomments-wrapper button.dislike {
+	color: white;
+	padding-left: 20px;
+	padding-right: 5px;
+	cursor: default;
+}
+.ajaxcomment .like {
+	background: url( ../img/thumb_up.png ) no-repeat 4px 0px;
+}
+.ajaxcomment .dislike {
+	background: url( ../img/thumb_down.png ) no-repeat 4px 3px;
+}

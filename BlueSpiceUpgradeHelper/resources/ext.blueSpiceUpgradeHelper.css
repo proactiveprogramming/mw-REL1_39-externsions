@@ -1,0 +1,169 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css');
+
+h3.upgrade_status_element{
+	margin-top:  80px;
+}
+
+#upgrade_status li{
+	list-style: none;
+}
+
+.version-term > div:first-of-type, .version-support-hours > div:first-of-type, .version-admin > div:first-of-type, .version-number > div:first-of-type{
+	float: left;
+	clear: both;
+	padding-left: 11px;
+}
+.version-term > div:last-of-type, .version-support-hours > div:last-of-type, .version-admin > div:last-of-type, .version-number > div:last-of-type{
+	float: right;
+	padding-right: 20px;
+}
+
+#close_token_input{
+	clear: both;
+	margin-top: 10px;
+	position: absolute;
+	bottom: 10px;
+}
+
+.button-do-upgrade{
+	margin-top: 80px;
+	margin-left: 15px;
+}
+
+.token-process{
+	text-align: center;
+	box-shadow: 10px 20px 30px grey;
+	border-radius: 3px;
+}
+
+.version-buttons{
+	padding-top: 10px;
+	clear: both;
+}
+
+.version-description{
+	margin-bottom: 10px;
+}
+
+.token-process{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px; /* Need a specific value to work */
+	z-index: 100;
+	background-color: #F3F3F3;
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+	border-color: #E9E9E9;
+	padding: 10px;
+}
+.version-head, #compare-head{
+	font-weight: bold;
+}
+
+.version-box, #compare-bluespice{
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+	border-color: #E9E9E9;
+	background-color: #F3F3F3;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.version-box{
+	text-align: center;
+}
+
+.version-term, .version-support-hours, .version-admin, .version-number{
+	width: 400px;
+	margin: auto;
+}
+
+
+
+#compare-bluespice table{
+	width: 100%;
+}
+
+#compare-bluespice #content{
+	background-color: inherit;
+}
+
+.tablepress thead th, .tablepress tfoot th {
+    background-color: #3e5389;
+    color: #fff;
+}
+
+.tablepress tbody tr:nth-child(odd){
+	background-color: lightgray;
+}
+
+.single .version-box{
+	border: none;
+}
+
+.vc_btn3-style-classic, .version-button-upgrade, .version-button-resign, .version-button-extend,
+#post-2262 > div > div:nth-child(3) > div > div:nth-child(3) > div > div > div > a{
+	border: lightgray solid 2px;
+	padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+	border-radius: 3px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: grey !important;
+	cursor: pointer;
+}
+
+.version-button-upgrade, .version-button-resign, .version-button-extend{
+	float: none;
+}
+
+.column-2, .column-3{
+	text-align: center;
+}
+
+.version-buttons button{
+	background-color: #F3F3F3;
+}
+
+.version-button-upgrade{
+	background-color: #4CAF50 !important;
+	color: white !important;
+}
+
+.version-box > div > div:last-of-type{
+	font-weight: bold;
+}
+
+#post-3742 > div > div:nth-child(3) > div > div:nth-child(3) > div > div > div > a,
+#post-2262 > div > div:nth-child(3) > div > div:nth-child(3) > div > div > div > a{
+	background-color: #4CAF50 !important;
+	color: white !important;
+}
+
+.close-button{
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	cursor: pointer;
+}
+
+.close-button:before{
+  font-family: "fontawesome" !important;
+  content: "\f00d";
+}
+
+.version-button-resign-handler .oo-ui-labelElement-label{
+	color: maroon;
+}
+
+.version-button-upgrade-handler .oo-ui-labelElement-label{
+	color: olivedrab;
+}

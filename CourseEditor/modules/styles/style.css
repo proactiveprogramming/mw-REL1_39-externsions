@@ -1,0 +1,48 @@
+.oo-ui-draggableElement .deleteElementIcon{
+  display: none;
+  color: #db3e14;
+  margin-top: 4px;
+}
+.oo-ui-draggableElement:hover .deleteElementIcon{
+  display: inline-block;
+}
+
+.oo-ui-draggableElement .editElementIcon{
+  display: none;
+  color: #337ab7;
+  margin-top: 4px;
+}
+.oo-ui-draggableElement:hover .editElementIcon{
+  display: inline-block;
+}
+
+.oo-ui-draggableElement .moveElementIcon{
+  display: none;
+  margin-top: 4px;
+}
+.oo-ui-draggableElement:hover .moveElementIcon{
+  display: inline-block;
+}
+
+.list-group-item .undoDeleteIcon{
+  display: none;
+  cursor: pointer;
+}
+
+.list-group-item:hover .undoDeleteIcon{
+  display: inline-block;
+}
+
+.oo-ui-draggableElement:hover{
+  background-color: #eee;
+}
+body > .oo-ui-windowManager-modal{
+  font-size: 1em; !important
+}
+
+#saveLevelTwo > .oo-ui-buttonElement-button,
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-labelElement.oo-ui-optionWidget.oo-ui-iconElement.oo-ui-decoratedOptionWidget.oo-ui-draggableElement > .oo-ui-labelElement-label,
+#saveCourse > .oo-ui-buttonElement-button
+ {
+  white-space: pre-wrap;
+}

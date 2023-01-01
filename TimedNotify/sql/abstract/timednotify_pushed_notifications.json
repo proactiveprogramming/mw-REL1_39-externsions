@@ -1,0 +1,28 @@
+[
+  {
+    "name": "timednotify_pushed_notifications",
+    "description": "The \"timednotify_pushed_notifications\" table registers which notifications have already been pushed.",
+    "columns": [
+      {
+        "name": "pushed_notification_id",
+        "description": "The identifier of the notification that has been pushed.",
+        "type": "string",
+        "options": {
+          "notnull": true,
+          "length": 511
+        }
+      },
+      {
+        "name": "pushed_notification_timestamp",
+        "description": "The timestamp when this notification was pushed.",
+        "type": "bigint",
+        "options": {
+          "notnull": true,
+          "unsigned": true
+        }
+      }
+    ],
+    "indexes": [],
+    "pk": ["pushed_notification_id"]
+  }
+]

@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Carla404"
+        ]
+    },
+    "newduplicateusermessage-description": "Adiciona uma mensagem à página de discussão de novos usuários",
+    "newduplicateusermessage-edit-summary": "Adicionando uma [[{{int:newduplicateusermessage-template}}|mensagem de boas-vindas]] à página de discussão do novo usuário"
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [ "WikiMANNia" ]
+	},
+	"skincustomiser-msg": "Personalizzare le apparenze",
+	"skincustomiser-desc": "Personalizzare le skin esistenti. Aggiungi script e metadati nell'area dell'intestazione. Aggiungere etichette tradotte per la [https://www.mediawiki.org/wiki/Sidebar/it barra laterale].",
+	"projectabout": "Attraverso tuo wiki",
+	"projectpage": "Pagina del progetto",
+	"registrate": "Registra",
+	"contact": "Contatto",
+	"interaction": "Collaborare",
+	"portals": "Portali",
+	"portal-1": "Il tuo portale personale 1",
+	"portal-2": "Il tuo portale personale 2",
+	"portal-3": "Il tuo portale personale 3",
+	"tourbus": "TourBusFermata",
+	"createacct-benefit-heading": "{{SITENAME}} cresce grazie a persone come te."
+}

@@ -1,0 +1,4 @@
+// Add files & directories to be ignored by new .jshintrc rules
+// Useful for ignoring library files
+
+**/lib/**

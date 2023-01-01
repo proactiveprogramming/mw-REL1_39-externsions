@@ -1,0 +1,54 @@
+{
+	"name": "Pluso",
+	"version": "0.7",
+	"author": [
+		"Alexandr Efremov"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Pluso",
+	"descriptionmsg": "pluso-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"AutoloadClasses": {
+		"Pluso": "Pluso.class.php"
+	},
+	"config": {
+		"PlusoSidebar": true,
+		"PlusoBackgroundSidebar": "transparent",
+		"PlusoOptionsSidebar": ["small","square","multiline","horizontal","nocounter"],
+		"PlusoThemeSidebar": "04",
+		"PlusoServicesSidebar": "vkontakte,odnoklassniki,facebook,twitter,livejournal,moimir",
+		"PlusoHeader": true,
+		"PlusoMain": false,
+		"PlusoBackgroundHeader": "transparent",
+		"PlusoOptionsHeader": ["small","square","line","horizontal","counter"],
+		"PlusoThemeHeader": "08",
+		"PlusoServicesHeader": "vkontakte,odnoklassniki,facebook,twitter,livejournal,moimir"
+	},
+	"ExtensionMessagesFiles": {
+		"Pluso": "Pluso.i18n.php"
+	},
+	"Hooks": {
+		"ArticleViewHeader": [
+			"Pluso::onArticleViewHeader"
+		],
+		"SkinBuildSidebar": [
+			"Pluso::onSkinBuildSidebar"
+		],
+		"BeforePageDisplay": [
+			"Pluso::onBeforePageDisplay"
+		]
+	},
+	"ResourceModules": {
+		"ext.Pluso": {
+			"localBasePath": "modules/ext.Pluso",
+			"remoteExtPath": "Pluso/modules/ext.Pluso",
+			"packageFiles": [ "core.js" ]
+		}
+	},
+	"MessagesDirs": {
+		"Pluso": [
+			"i18n"
+		]
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,34 @@
+{
+	"name": "ZWIMaker",
+	"version": "1.3",
+	"author": "Sergei V. Chekanov (KSF)",
+	"url": "https://encyclosphere.org/",
+	"descriptionmsg": "mzwi-desc",
+	"license-name": "GPL-3.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
+	"MessagesDirs": {
+		"Mzwi": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"MzwiMagic": "Mzwi.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"MzwiHooks": "Mzwi.hooks.php"
+	},
+	"Hooks": {
+		"MediaWikiPerformAction": "MzwiHooks::onMediaWikiPerformAction",
+		"ParserFirstCallInit": "MzwiHooks::onParserFirstCallInit",
+		"SkinTemplateNavigation": "MzwiHooks::onSkinTemplateNavigation",
+		"SkinTemplateTabs": "MzwiHooks::onSkinTemplateTabs"
+	},
+	"config": {
+		"MzwiTab": true 
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 1
+}
+

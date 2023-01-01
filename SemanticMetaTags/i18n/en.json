@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"mwjames",
+			"kghbln"
+		]
+	},
+	"smt-desc": "Allows to provide meta tags generated from [https://www.semantic-mediawiki.org semantic annotations]",
+	"smt-name": "Semantic Meta Tags"
+}

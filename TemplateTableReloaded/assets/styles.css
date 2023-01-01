@@ -1,0 +1,19 @@
+table.ttable th:last-child {
+  position: relative;
+}
+
+table.ttable th:last-child a:last-child {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+
+  opacity: 0.25;
+  background-image: url('refresh.svg');
+  background-size: 15px;
+}
+
+body.mw-special-TemplateTable table.ttable th:last-child a:last-child {
+  display: none;
+}

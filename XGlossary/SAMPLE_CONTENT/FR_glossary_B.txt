@@ -1,0 +1,112 @@
+{{#glossary_entry:
+ |langs=EN
+ |title=Bake
+ |ref=bake
+ |syns=(langs=FR;title=Cuire;ref=cuire), (langs=FR;title=Pré-Calculer;ref=pre calculer)
+ |dict=(langs=FR;term=cuire;approx=Yes;usage=3;note=Traduction litérale, à utiliser entre guillemets.), (langs=FR;term=pré-calculer;approx=yes;usage=3;note=traduction “sensée”, mais pas toujours adéquate. Le mieux est d’utiliser le terme anglais&nbsp\;!), (langs=EN;term=to bake)
+ |shortdesc=''To bake'' (“cuire”), c’est pré-calculer une partie de la scène, pour éviter d’avoir à la re-calculer à chaque fois que vous rendez. Utile pour des effets très lourds, comme les corps souples, les fluides, …
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Bevel
+ |ref=bevel
+ |syns=(langs=EN;title=Bevel;ref=bevel)
+ |dict=(langs=FR;term=biseau;usage=4), (langs=EN;term=bevel)
+ |shortdesc=En CG, un ''bevel'' (“biseau”) est une face étroite ajoutée entre deux faces se joignant selon un angle (relativement) aigu.
+ |longdesc=Ils sont utilisés pour adoucir un peu les coins des objets. Voyez le [[Doc:FR/Manual/Modifiers/Mesh/Bevel|modificateur {{Literal|Bevel}}]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bézier
+ |ref=bezier
+ |shortdesc=Les courbes et surfaces de Bézier font partie des objets paramétriques (comme les meta-objets et les NURBS).
+ |longdesc=Elles furent décrites pour la première fois en 1972 par l’ingénieur français Pierre Bézier, qui les utilisait pour concevoir des carrosseries de voitures. Les courbes et surfaces de Bézier peuvent être de n’importe quel degré, mais les bi-cubiques fournissent généralement assez de degrés de liberté pour la plupart des applications.<br />Notez que Blender ne supporte pas les surfaces de Bézier, seulement les courbes…
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Blend
+ |ref=blend
+ |dict=(langs=FR;term=utiliser Blender;usage=4;approx=Yes), (langs=EN;term=to blend)
+ |shortdesc=''To Blend'', c’est travailler avec Blender. Il s’agit également de l’extension des fichiers de Blender (<code>.blend</code>).
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Blender Foundation (BF)
+ |ref=blender foundation
+ |syns=(langs=FR;title=Fondation Blender;ref=fondation blender)
+ |dict=(langs=FR;term=fondation Blender;usage=1;note=Conservez le tout en anglais&nbsp\;!), (langs=EN;term=Blender Foundation)
+ |shortdesc=L’organisation à but non lucratif créée par Ton Roosendaal pour libérer Blender, en 2002. Depuis ce lors, elle s’est occupé de la promotion et du développement de Blender.
+ |longdesc=Voyez aussi [[Doc:FR/Manual/Introduction/History|cette page]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Blender Game Engine (BGE)
+ |ref=blender game engine
+ |syns=(langs=FR;title=Moteur de Jeu de Blender \(BGE\);ref=moteur jeu blender)
+ |dict=(langs=FR;term=moteur de jeu de Blender;usage=4;note=N’hésitez pas à utiliser la version anglaise, en particulier l’acronyme BGE, ou même GE.), (langs=EN;term=Blender game engine)
+ |shortdesc=La partie temps-réelle de Blender. Sa principale raison d’être est la création de jeux, mais elle peut être utilisée pour des choses comme des démos ''lives'', des visites interactives, et ainsi de suite.
+ |longdesc=Voyez le [[Doc:FR/Manual/Game Engine|chapitre “Moteur de jeu”]] du manuel.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bone
+ |ref=bone
+ |syns=(langs=FR;title=Os;ref=os)
+ |dict=(langs=FR;term=os;usage=2;note=Préférez l’utilisation du terme anglais.), (langs=EN;term=bone;usage=4)
+ |shortdesc=Les éléments constitutifs d’une armature. Chaque ''bone'' d’une armature peut influencer les position/rotation/taille d’objets et/ou de ''vertices''. En fait, ils sont assez similaires à leurs équivalents biologiques&nbsp;!
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bounce Light
+ |ref=bounce light
+ |dict=(langs=FR;term=lumière rebondissante;usage=1;approx=Yes;note=Traduction donnée uniquement à titre indicatif, utilisez toujours le terme anglais&nbsp\;!), (langs=EN;term=bounce light)
+ |shortdesc=L’éclairage indirecte des zones d’ombres.
+ |longdesc=Les situations d’éclairage simples se contentent d’une seule lampe, appelée lampe clé (''key light''), éclairant un côté d’un objet. Cela crée un ombrage et une définition du volume de l’objet extrêmement “forts”. Cependant, une lumière 3D rendra souvent ce contraste trop important –&nbsp;le côté sombre de l’objet sera complètement noir, puisqu’aucune lumière n’y parvient. En réalité, il serait tout de même légèrement éclairé par la lumière rebondissant dans la pièce jusqu’à heurter la face sombre de l’objet. En 3D temps réel, cette “lumière rebondissante” n’est pas calculée, vous devez donc la créer vous-même. Ajoutez un peu de lumière ambiante, ou placez une seconde lampe directionnelle, moins brillante, dirigée à l’opposé de la première, pour éclairer légèrement (“déboucher”) les ombres.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bounding Box
+ |ref=bounding box
+ |syns=(langs=FR;title=Boîte Englobante;ref=boite englobante)
+ |dict=(langs=FR;term=boîte englobante;usage=3;note=Préférez l’usage du terme anglais…), (langs=EN;term=bounding box)
+ |shortdesc=Une ''bounding box'' (“boîte englobante”) est le parallélépipède rectangle qui enserre d’aussi près que possible un objet (y compris ceux de forme complexe, les objets joins, les unions booléennes, etc.), dans son espace local (c-à-d que ses faces sont parallèles aux axes locaux).
+ |longdesc=Tous les objets de Blender peuvent être vus par leurs boîtes englobantes, en sélectionnant le mode d’affichage {{Literal|Bounding Box}} dans la liste déroulante {{Literal|Draw type}} de la barre d’en-tête {{Literal|3D View}}. Le raccourcis {{Shortcut|Z}} permet d’alterner entre affichage “solide” et de la ''bounding box''. Les boîtes englobantes ne sont visibles qu’en mode {{Literal|Object}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Buffer
+ |ref=buffer
+ |syns=(langs=FR;title=Tampon;ref=tampon)
+ |dict=(langs=FR;term=tampon;usage=3;note=Traduction valable en général, mais il vaudra mieux parfois conserver le terme anglais.), (langs=EN|term=buffer)
+ |syns=(langs=FR;title=Tampon;ref=tampon)
+ |shortdesc=Un ''buffer'' (“tampon”) est un type d’objet-mémoire particulier, en général créé pour stocker des données temporairement.
+ |longdesc=Notez que les tampons peuvent avoir une taille “fixe” (comme ceux des rendus, dans Blender), ou une longueur variable (comme la plupart des tampons d’entrée/sortie d’un ordinateur).
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Bump Mapping
+ |ref=bump mapping
+ |dict=(langs=FR;term=placage de bosses;usage=1;approx=Yes;note=Traduction donnée uniquement à titre indicatif, utilisez toujours le terme anglais&nbsp\;!), (langs=EN;term=bump mapping)
+ |shortdesc=Le ''bump mapping'' est une technique pour simuler du relief sur des surfaces lisses, en modifiant leur ombrage.
+ |longdesc=À chaque pixel, une perturbation de la normale de la surface de l’objet rendu est appliquée à partir d’une texture “''bump map''”, avant que les calculs d’éclairage ne soient effectués. Le ''bump mapping'' utilise une image en niveaux de gris pour modifier la direction des normales de la surface. Vous pouvez l’utiliser pour simuler un relief –&nbsp;vous pouvez ainsi “peindre” des creux et des bosses. Le gris neutre ('''50%''') signifie aucun changement, plus clair signifie plus haut, et plus sombre signifie plus enfoncé. Notez que les faces ne sont absolument pas modifiées&nbsp;: seules les normales sont touchées, ce qui change l’éclairage et donne une illusion de relief. Mais le problème est que les contours de l’objet ne sont pas affectés, ce qui révèle le trucage. Pour des effets similaires (mais plus évolués), vous pouvez utiliser le {{Glossary/Link|ref=displacement mapping|txt=''displacement mapping''}} et le {{Glossary/Link|ref=normal mapping|txt=''normal mapping''}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Buttons” (fenêtre)
+ |ref=buttons fenêtre
+ |dict=(langs=FR;term=fenêtre {{Literal|Buttons}}), (langs=EN;term={{Literal|Buttons}} window)
+ |shortdesc=La fenêtre {{Literal|Buttons}} est un type de fenêtre de Blender rassemblant la majeure partie des options/contrôles/réglages des objets/matériaux/scènes/…
+ |longdesc=Cette fenêtre est subdivisée en {{Glossary/Link|ref=contexte|txt=contextes}} et {{Glossary/Link|ref=sous contexte|txt=sous-contextes}}.
+ }}
+

@@ -1,0 +1,6 @@
+<includeonly>{{#ifeq: {{NAMESPACE}}:{{Languages/Section}}|Doc:Glossary||Doc:{{Languages/Language}}{{Languages/Slash}}Glossary}}<!--Doc:{{Languages/Language}}{{Languages/Slash}}Glossary--></includeonly><!--
+
+--><noinclude>
+{{Documentation}}
+</noinclude>
+

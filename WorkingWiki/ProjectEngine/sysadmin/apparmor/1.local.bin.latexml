@@ -1,0 +1,6 @@
+# Last Modified: Mon Nov 30 19:01:25 2009
+#include <tunables/global>
+/1/local/bin/latexml {
+  #include <abstractions/latexml>
+  #include <abstractions/workingwiki-util>
+}

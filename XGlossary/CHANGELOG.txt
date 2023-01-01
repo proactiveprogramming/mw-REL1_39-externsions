@@ -1,0 +1,26 @@
+v. 0.1.3 - 2010/01/27
+Big rename of files and inside code (from Glossary to xGlossary…).
+The first usable version (previous ones are not safe).
+Added a small CSS to be used with Monobook theme.
+Added a xGlossary logo!
+Translated doc in french.
+
+v. 0.1.2 - 2009/12/29
+The first fully functional version.
+Finished work on JS (foldable groups).
+
+v. 0.1.1 - 2009/12/10
+A nearly fully functional version.
+Few bugs fixed in PHP code (especially in rendering wiki code – very tricky…).
+A first work on JS (links infoboxes), using jQuery.
+
+v. 0.1.0 - 2009/12/03
+The first real MediaWiki extension version. PHP nearly fully functional, but no JS yet.
+Heavily reorganized the directory!
+
+v. 0.0.1 - 2009/11/07
+A simplified version, without any JS nor DPL, just some wiki templates… Not very interesting!
+
+v. 0.0.0 - 2009/10/01
+Init state, trying to use JS and wiki templates with DPL. Not working!
+

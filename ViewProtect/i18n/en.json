@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"MarkAHershberger"
+		]
+	},
+	"viewprotect": "Check view protection",
+	"viewprotect-desc": "ViewProtect adds the ability to hide pages based on groups.",
+	"viewprotect-intro": "This is the ViewProtect special page.",
+	"viewprotect-denied": "You are not in the '$1' group.",
+
+	"viewprotectfile": "Change view protection for a file",
+	"viewprotectfile-nofiles": "There are no recent files that you can change the protection on.",
+	"viewprotectfile-legend": "Limit access to files",
+	"viewprotectfile-name-enter": "Enter a filename to restrict:",
+	"viewprotectfile-name": "Restricting:",
+	"viewprotectfile-group": "Restrict $1 to the following group:",
+	"viewprotectfile-submit": "Restrict access",
+	"viewprotectfile-notexist": "File does not (yet) exist",
+	"viewprotectfile-success-add": "$1 has been restricted to the $2 group",
+	"viewprotectfile-success-remove": "$1 is no longer restricted",
+
+	"viewprotect-log-page": "View protection log",
+
+	"viewprotect-read-indicator": "<b>Restricted to: $1</b>",
+
+	"log-name-viewprotect": "View protection",
+	"logeventslist-viewprotect-log": "View protection log",
+	"log-show-hide-viewprotect": "$1 view protection log",
+	"log-description-viewprotect": "When a page's read protection is changed",
+	"logentry-viewprotect-read": "$1 {{GENDER:$2|changed}} read permission $3 from the '$4' group to the '$5' group",
+	"logentry-viewprotect-upload": "$1 {{GENDER:$2|changed}} upload permission $3 from the '$4' group to the '$5' group",
+	"action-viewprotectmanage": "manage a page's 'read' protection"
+}

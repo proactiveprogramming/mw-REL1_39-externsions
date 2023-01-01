@@ -1,0 +1,57 @@
+{
+	"name": "Hypothesis",
+	"version": "0.1",
+	"author": [
+		"Yaron Koren"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Hypothesis",
+	"descriptionmsg": "hypothesis-desc",
+	"license-name": "GPL-3.0",
+	"type": "hook",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+	},
+	"GroupPermissions": {
+		"user": {
+			"hypothesis-annotate": true
+		}
+	},
+	"AvailableRights": [
+		"hypothesis-annotate"
+	],
+	"MessagesDirs": {
+		"Hypothesis": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"HypothesisHooks": "Hypothesis.hooks.php",
+		"HypothesisClient": "includes/HypothesisClient.php",
+		"HypothesisJWT": "includes/HypothesisJWT.php"
+	},
+	"ResourceModules": {
+		"ext.hypothesis.site": {
+			"scripts": "libs/site.js",
+			"styles": "libs/site.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Hypothesis"
+	},
+	"Hooks": {
+		"SkinAfterBottomScripts": "HypothesisHooks::addHypothesisScript",
+		"MakeGlobalVariablesScript": "HypothesisHooks::setGlobalJSVariables",
+		"OutputPageParserOutput": "HypothesisHooks::addSiteModule"
+	},
+	"config": {
+		"HypothesisNamespaces": [0],
+		"HypothesisClientID": null,
+		"HypothesisClientSecret": null,
+		"HypothesisJWTClientID": null,
+		"HypothesisJWTClientSecret": null,
+		"HypothesisAuthority": null,
+		"HypothesisService": "http://localhost:5000"
+	},
+	"manifest_version": 1
+}

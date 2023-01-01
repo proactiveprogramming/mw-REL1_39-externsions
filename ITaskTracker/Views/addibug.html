@@ -1,0 +1,302 @@
+<?php 
+#var_dump($this->ScriptPath);
+#var_dump($this->uploadDir);
+#var_dump($this->local);
+#var_dump($rndfdname);
+    //Add Theme to Table TOM
+    $pagetext =  $this->getIbugModel('default')->getPageData();        
+    $parsedText = $pagetext;            
+    preg_match_all("/(\s\|\-\s\|\ \[\[\:Category:[a-z0-9\+_\-\&\ ]*\|[a-z0-9\+_\-\&\ \]\]]*\s\|\ [a-z0-9.]*)/i", $parsedText, $matches);			       
+    foreach($matches[0] as $value) :
+            $rest = substr($value, 18);
+            $kata = explode("|",$rest); //'|' separator
+            $themes = trim($kata[0]);
+            $tag_name = trim($kata[2]);
+            $longRand = 6;//random color
+            $base="1234567890ABCDEF";
+            $max=strlen($base)-1;
+            $randm="";
+            mt_rand((double)microtime()*1000000);
+            while (strlen($randm)<$longRand)
+            $randm.=$base{mt_rand(0,$max)};
+            $clour="#$randm";
+            $this->page = $this->getIbugModel('default')->addPageData($themes, $tag_name, $clour);
+     endforeach;
+?>
+<link rel="stylesheet" type="text/css" href="extensions/ITaskTracker/scripts/datepicker_add_edit/dtp_css_add_edit.css?>" media="screen">
+<script type="text/javascript" src="extensions/ITaskTracker/scripts/datepicker_add_edit/dtp_js_add_edit.js"></script>
+<script type="text/javascript" src="extensions/ITaskTracker/scripts/jquery/jquery.js"></script>
+<script type="text/javascript" src="extensions/ITaskTracker/scripts/jquery/iframe.js"></script>
+<script language="javascript" type="text/javascript">
+function setOwnerByType(usrname){
+	if ( document.getElementById('txtownerstat').value=='FALSE'){
+	var idx=0;
+	var btType=document.getElementById("bt_type");
+	var btOwned=document.getElementById("bt_owned_by");	
+	if (btType.value=="t_exc" || btType.value=="t_ial" || btType.value=="t_itr" ||  btType.value=="t_irm"){		
+		for (var i=0;i<btOwned.options.length;++i)
+		{
+			if(btOwned.options[i].value=="Manas"){
+				idx=i;			
+				break;	
+			} 			
+		}
+		document.getElementById("bt_owned_by").selectedIndex=idx;
+
+	}
+	else{
+		document.getElementById("bt_owned_by").value=usrname;
+	}
+	}
+
+}
+
+function changeownerstat(){
+	document.getElementById('txtownerstat').value='TRUE';
+}
+
+function checkpriority(){        
+	val_priority = document.getElementById('bt_priority').value;
+        val_owner = document.getElementById('bt_owned_by').value;
+        if (val_priority=='1') {                        
+            var dataString = 'priority='+ val_priority+'&owner='+val_owner;
+            $.ajax({
+                    type: "POST",                    
+                    url: "<?php echo $this->ScriptPath;?>/extensions/ITaskTracker/ITaskTrackerAjax.php?method=count_urgent_itask&local=<?php echo $this->local;?>",
+                    data: dataString,
+                    success: function(result){
+                            alert("OK done");
+                            return true;
+                            console.log(result);                            
+                        }                                                                                
+            });
+            return false;
+        }else{
+            return true;
+        }
+                
+}
+
+</script> 
+
+<style type="text/css">
+td.fieldBgColor {
+	background-color: #eee
+}
+</style>
+
+<?php
+    $length = 20;
+    $characters = "0123456789abcdefghijklmnopqrstuvwxyzQWERTYUIOPASDFGHJKLZXCVBNM";
+    $string = "";
+    for ($p = 0; $p < $length; $p++) {
+        $string .= $characters[mt_rand(0, strlen($characters))];
+    }
+    $dt=date("Y.m.d G:i:s")."-".(microtime() * mktime());
+    $string=$string.$dt;
+    $rndfdname=md5(md5($string));
+	$dttoday = date("d-M-Y");
+	$dtnextmonth = date("d-M-Y",strtotime(date("d-M-Y", strtotime($dttoday)) . "+60 days"));	        
+?>
+
+<a name="Add+Issue"></a><h2><span class="editsection">[<a href="<?php echo $this->listUrl; ?>"><?php echo wfMessage('back'); ?></a>]</span> <span class="mw-headline">Add Issue by <em><?php echo $this->getUsrName; ?></em></span></h2>
+<?php if (isset($this->errors)): ?>
+<p class="error"><?php echo $this->errors; ?></p>
+<?php endif; ?>
+
+<form name="bt_add_form" method="post" action="<?php echo $this->formAction; ?>">
+  <input type="hidden" name="bt_action" value="<?php echo $this->action; ?>" />
+  <input type="hidden" name="bt_project" value="<?php echo $this->project; ?>" />
+  <input type="hidden" name="title" value="<?php echo $this->pageKey; ?>" />
+  <input type="hidden" name="extstrmUrl" value="<?php echo $this->extstrmUrl; ?>" />
+  <input type="hidden" name="txtownerstat" id="txtownerstat" value="FALSE" />
+  <input type="hidden" name="dbcon" value="<?php echo $this->dbcon; ?>" />
+  <input type="hidden" name="path" value="<?php echo $this->path; ?>" />
+  <input type="hidden" name="smtp" value="<?php echo $this->smtp; ?>" />
+
+  <table width="100%"  border="0" cellspacing="3" cellpadding="2">  
+    <tr>
+      <td  align="left" valign="top" class="fieldBgColor" ><strong><?php echo wfMessage('title'); ?>:</strong></td>
+      <td><input name="bt_title" tabindex="1" size="30" maxlength="100" id="bt_title" style="width: 450px" value="<?php echo (isset($_POST['bt_title'])) ? $_POST['bt_title'] : ''; ?>" /></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('themes'); ?>:</strong></td>
+      <td><select name="bt_type" id="bt_type" tabindex="2" style="width: 150px" onchange="javascript:setOwnerByType('<?php echo $this->getUsrName; ?>')">
+		<optgroup label="themes" title="Section">                   
+                    <?php
+                    $this->GetThemes =  $this->getIbugModel('default')->getThemes();
+                    while ($rst =$this->GetThemes->fetchObject()):                    
+                    ?> 
+                    <option value="<?php  echo $rst->tag_name; ?>"<?php echo ($rst->tag_name == "education") ? ' selected="true"' : ''; ?>><?php echo $rst->theme; ?></option>
+                    <?php endwhile; ?>
+                </optgroup>                  
+    </select></td>
+    </tr>
+	<tr>
+        <td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('priority'); ?>:</strong></td>
+        <td><select name="bt_priority" id="bt_priority" tabindex="7" style="width: 150px" onchange="javascript:setDateByPriority()">
+                <?php foreach ($this->issuePriority as $name => $priority){ ?>
+                        <?php
+                      if (($priority['name']!='URGENT') ||($priority['name']=='URGENT' && $priority[$_POST['bt_priority']]=='URGENT') || ($this->isIbugUrgent($this->getUsrName)==1)){
+                        ?>
+                          <option value="<?php echo $name; ?>"<?php echo (isset($_POST['bt_priority']) && $_POST['bt_priority'] == $name) ? ' selected="true"' :  ((!isset($_POST['bt_priority']) && $priority['default']) ? ' selected="true"' : ''); ?>><?php echo $priority['name']; ?></option>
+                <?php } } ?>
+        </select></td>
+    </tr>
+
+     <tr>
+	<td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('start_date_i'); ?>:</strong></td>
+	<td>
+		<input name="bt_creation_date" tabindex="3" size="20" maxlength="11" id="bt_creation_date" style="width: 150px; background-color:#F5F5F5" value="<?php echo $dttoday ; ?>" readonly="readonly" />		
+	</td>       
+    </tr> 
+    
+    <tr>
+	<td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('start_date_j'); ?>:</strong></td>
+	<td>
+		<input name="bt_start_date" tabindex="3" size="20" maxlength="11" id="bt_start_date" style="width: 150px; background-color:#F5F5F5" value="<?php echo $dttoday ; ?>" readonly="readonly" />
+		<input name="btCal1" type="button" id="btCal1" value="Calendar" onclick="javascript:displayDatePicker1('bt_start_date',this,'d-M-Y','-');"/>
+	</td>       
+    </tr> 
+    
+    <tr>
+	<td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('target_date_j'); ?>:</strong></td>
+	<td>
+		<input name="bt_target_date" tabindex="3" size="20" maxlength="11" id="bt_target_date" style="width: 150px; background-color:#F5F5F5" value="<?php echo $dttoday ; ?>" readonly="readonly" />
+		<input name="btCal1" type="button" id="btCal1" value="Calendar" onclick="javascript:displayDatePicker1('bt_target_date',this,'d-M-Y','-');"/>
+	</td>       
+    </tr> 
+    
+     <tr>
+        <td align="left" valign="top" class="fieldBgColor"><strong>Creator:</strong></td>
+        <td>
+                <input name="bt_creator" tabindex="4" size="20" maxlength="11" id="bt_creator" style="width: 150px; background-color:#F5F5F5" value="<?php echo $this->getUsrName; ?>"  readonly="readonly" />
+        </td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('due_date_i'); ?>:</strong></td>
+        <td>
+		<input name="bt_mod_date" tabindex="4" size="20" maxlength="11" id="bt_mod_date" style="width: 150px; background-color:#F5F5F5" value="<?php echo $dttoday ; ?>" readonly="readonly" />
+		<input name="bt_due_date" tabindex="4" size="20" maxlength="11" id="bt_due_date" style="width: 150px" value="<?php echo $dttoday ; ?>" hidden="hidden" />               
+	</td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" class="fieldBgColor"><strong>Modifier:</strong></td>
+        <td>
+                <input name="bt_modifier" tabindex="4" size="20" maxlength="11" id="bt_modifier" style="width: 150px; background-color:#F5F5F5" value="<?php echo $this->getUsrName; ?>"  readonly="readonly" />
+        </td>
+    </tr>    
+		<input name="bt_perc_complete" tabindex="5" size="20" maxlength="4" id="bt_perc_complete" style="width: 50px" value="<?php echo(isset($_POST['bt_perc_complete'])) ? htmlspecialchars($_POST['bt_perc_complete']) : '0%'; ?>" hidden="hidden" />	
+    <tr>
+        <td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('targ_accom_i'); ?>:</strong></td>
+        <td>
+		<input name="bt_targ_accom" tabindex="6" size="20" maxlength="11" id="bt_targ_accom" style="width: 150px; background-color:#F5F5F5" value="<?php echo $dtnextmonth; ?>" readonly="readonly" />		
+	</td>
+    </tr>
+   	<?php 
+		if ($this->isIbugApprover($this->getUsrName)!=1){
+			$approvLock=true;
+		}
+		else{
+			$approvLock=false;
+		}
+		
+	?>
+
+    <tr>
+      <td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('status'); ?>:</strong></td>
+      <td>
+        <select name="bt_status" id="bt_status" tabindex="8" style="width: 200px" >
+            <optgroup label="bug consist of :" title="Status Ibug">
+              <?php  foreach ($this->statusArrayAdd as $name => $status): ?>                     
+                    <option value="<?php echo $name; ?>"<?php echo (isset($_POST['bt_status']) && $_POST['bt_status'] == $name) ? ' selected="true"' : ''; ?>><?php echo str_replace('Bug','iTask',$status['name']); ?></option>            
+              <?php 
+		endforeach; ?>
+            </optgroup>
+        </select>	
+      </td>
+    </tr>
+	<tr>
+        <td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('owner'); ?>:</strong></td>
+        <td>
+        <select name="bt_owned_by" id="bt_owned_by" tabindex="9" style="width:150px" onChange="javascript:changeownerstat()">
+        <?php foreach ($this->issueOwned_by as $name => $owned_by){ 	  
+		if ($_POST['bt_type'] == "" || $_POST['bt_type']== "t_exc" ||  $_POST['bt_type']== "t_iAl" || $_POST['bt_type']== "t_itr" ||  $_POST['bt_type']== "t_irm") {		
+	 ?>
+		<option value="<?php echo $name; ?>"<?php echo ($name == "Manas") ? ' selected="true"' : ''; ?>><?php echo $owned_by['name']; ?></option>
+	<?php
+		}
+		else{
+	 ?>		
+              <option value="<?php echo $name; ?>"<?php echo (isset($_POST['bt_owned_by']) && $_POST['bt_owned_by'] == $name) ? ' selected="true"' : ''; ?>><?php echo $owned_by['name']; ?></option>
+        <?php  }
+	} ?>
+
+    </select>
+
+    </tr>
+     </tr>
+    <tr>
+      <td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('coor'); ?>:</strong></td>
+      <td>
+        <select name="bt_coor_by" id="bt_coor_by" tabindex="9" style="width:150px" >
+        <?php foreach ($this->issueCoor_by as $name => $coor_by){
+        ?>
+                <option value="<?php echo $name; ?>"<?php echo (isset($_POST['bt_coor_by']) && $_POST['bt_coor_by'] == $name) ? ' selected="true"' : ''; ?>><?php echo $coor_by['name']; ?></option>
+        <?php
+                }
+        ?>
+      </td>
+    </tr>
+    
+    <tr>
+        <td align="left" valign="top" class="fieldBgColor"><strong>Requester:</strong></td>
+        <td>
+        <select name="bt_approv_by" id="bt_approv_by" tabindex="10" style="width:150px" >
+         <?php foreach ($this->issueApprov_by as $name => $approv_by){ ?>
+              <option value="<?php echo $name; ?>"<?php echo ($this->getUsrName == $approv_by['name']) ? ' selected="true"' : ''; ?>><?php echo $approv_by['name']; ?></option>
+         <?php  } ?>
+            <?php  if (!empty($this->issueApprov_by_AL)) {  ?>
+            <optgroup label="external users" title="external users">
+                <?php foreach ($this->issueApprov_by_AL as $name => $approv_by){ ?>
+                <option value="<?php echo $name; ?>"<?php echo ($this->getUsrName == $approv_by['name']) ? ' selected="true"' : ''; ?>><?php echo $approv_by['name']; ?></option>
+                 <?php  } ?>
+            </optgroup> 
+             <?php } ?>
+        </select>
+    </tr>
+    
+    <tr height="100%">
+	<td align="left" valign="top" class="fieldBgColor"><strong>File  :</strong></td>
+	<td>
+		<div id="container">
+                    <iframe width="100%"  src="<?php echo $this->ScriptPath.'/extensions/ITaskTracker/Views/uploadibug.php';?>?parentpath=<?php echo $this->uploadDir; ?>&randfd=<?php echo $rndfdname; ?>&curhome=<?php echo $this->currenthome; ?>" frameborder="0"  scrolling="no"  marginwidth="0" marginheight="0"></iframe>
+		</div>
+		<hr />
+	</td>
+    </tr>
+
+    <tr>
+      <td align="left" valign="top" class="fieldBgColor"><strong><?php echo wfMessage('summary'); ?>:</strong></td>
+      <td><textarea rows="10" cols="10" tabindex="11" id="html" class="jTagEditor" accesskey="," name="bt_summary"><?php echo (isset($_POST['bt_summary'])) ? $_POST['bt_summary'] : ''; ?></textarea>
+      <div style="display:none;">
+                <select name="bt_assignee" id="bt_assignee" tabindex="12" style="width: 150px">
+                <option value="<?php echo wfMessage('unassigned'); ?>"><?php echo wfMessage('unassigned'); ?></option>
+                <?php echo $this->usersList; ?>
+                </select>
+      </div>
+    </td>
+    </tr>
+
+   <tr>
+	<td></td>
+	<td>
+	<input type="hidden" name="fcode" id="fcode" value="<?php echo $rndfdname; ?>" ></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" style="padding-top: 20px">&nbsp;</td>
+      <td><input type="submit" name="bt_submit" id="bt_submit" value="<?php echo wfMessage('form_submit'); ?>" />
+      <input type="submit" name="bt_cancel" id="bt_cancel" value="<?php echo ucfirst(wfMessage('cancel')); ?>" onClick="this.form.bt_action.value='list'" /></td>
+    </tr>
+  </table>
+</form>

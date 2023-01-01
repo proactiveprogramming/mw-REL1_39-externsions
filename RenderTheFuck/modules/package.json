@@ -1,0 +1,67 @@
+{
+  "name": "RenderTheFuck",
+  "version": "0.1.1",
+  "description": "A MediaWiki extension.",
+  "author": "Raymond Wu",
+  "private": true,
+  "scripts": {
+    "build": "yarn build-css && yarn build-js",
+    "build-js": "yarn lint && yarn browserify && yarn uglify && yarn clean",
+    "lint": "eslint --ext es6 .",
+    "browserify": "browserify render.es6 -o render.js -t babelify",
+    "uglify": "uglifyjs render.js -c -o target/render.min.js",
+    "clean": "rm -f render.js styles.es6",
+    "build-css": "yarn cssmin && babel-node genstyles.es6 > styles.es6",
+    "cssmin": "yarn cssmin1 && yarn cssmin2 && yarn cssmin3 && yarn cssmin4",
+    "cssmin1": "cssmin css/common.css > target/common.min.css",
+    "cssmin2": "cssmin css/stack.css > target/stack.min.css",
+    "cssmin3": "cssmin css/timeline.css > target/timeline.min.css",
+    "cssmin4": "cssmin css/line.css > target/line.min.css",
+    "lint-json": "jsonlint examples/stack.tfj -q -c"
+  },
+  "devDependencies": {
+    "babelify": "7.3.0",
+    "browserify": "13.1.1",
+    "cssmin": "0.4.3",
+    "d3": "4.13.0",
+    "eslint": "3.6.1",
+    "jsonfile": "2.4.0",
+    "jsonlint": "1.6.0",
+    "jsonschema": "1.1.1",
+    "uglify-js": "2.7.5",
+    "babel-preset-env": "1.6.1"
+  },
+  "babel": {
+    "presets": [
+      ["env", {
+        "targets": {
+          "browsers": ["ie >= 9"]
+        }
+      }]
+    ]
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "browser": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [ "error", 2, { "SwitchCase": 1 } ],
+      "quotes": [ "error", "double" ],
+      "semi": [ "error", "always" ],
+      "no-console": 0,
+      "linebreak-style": [ "error", "unix" ],
+      "no-unused-vars": ["error", { "argsIgnorePattern": "d3|thefuck|WTF_PARAMS" }]
+    },
+    "globals": {
+      "d3": true,
+      "require": true,
+      "THE_FUCK_STYLES": true
+    }
+  }
+}

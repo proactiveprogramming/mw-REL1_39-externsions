@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="419px" height="80px" viewBox="158.77 246.94 419 80"
+   version="1.1">
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#28677e;stroke-width:4.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+       id="rect3384-5-8-9-1"
+       width="414.5"
+       height="75.5"
+       x="161.04587"
+       y="249.2225"
+       ry="11.065657" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#28677e;fill-opacity:1"
+       x="172.12619"
+       y="283.60422"><tspan
+         x="172.12619"
+         y="283.60422"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:36px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#28677e;fill-opacity:1">altersklassifizierung.de</tspan></text>
+    <rect
+       style="fill:#1fa32d;fill-opacity:1;fill-rule:nonzero"
+       width="24.894516"
+       height="24.894516"
+       x="243.259"
+       y="291.55844" />
+    <rect
+       y="291.55844"
+       x="208.36444"
+       height="24.894516"
+       width="24.894516"
+       style="fill:#ffcc00;fill-opacity:1;fill-rule:nonzero" />
+    <rect
+       style="fill:#cccccc;fill-opacity:1;fill-rule:nonzero"
+       width="24.894516"
+       height="24.894516"
+       x="173.259"
+       y="291.55844" />
+    <rect
+       y="291.55844"
+       x="278.36447"
+       height="24.894516"
+       width="24.894516"
+       style="fill:#28677e;fill-opacity:1;fill-rule:nonzero" />
+    <rect
+       style="fill:#d40000;fill-opacity:1;fill-rule:nonzero"
+       width="24.894516"
+       height="24.894516"
+       x="313.36447"
+       y="291.55844" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Maiandra GD';-inkscape-font-specification:'Trebuchet MS';letter-spacing:0px;word-spacing:0px;fill:#28677e;fill-opacity:1;stroke:none"
+       x="491.22037"
+       y="315.37076"><tspan
+         x="491.22037"
+         y="315.37076"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.5098629px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#28677e;fill-opacity:1">fsm</tspan></text>
+    <g
+       transform="matrix(1.3440348,0,0,1.3440348,-51.090004,-336.42804)">
+      <path
+         style="fill:#28677e;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;display:inline"
+         d="m 445.88514,465.4519 -0.0339,2.42621 c -7.15321,0.52599 -8.79515,6.49022 -8.72755,8.58978 l -2.55589,0.02 c -0.0775,-5.95517 5.14143,-11.05728 11.31735,-11.03601 z" />
+      <path
+         style="fill:#28677e;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;display:inline"
+         d="m 445.90683,487.47327 0.0339,-2.42621 c 7.15321,-0.52599 8.79515,-6.4902 8.72756,-8.5898 l 2.55588,-0.02 c 0.0775,5.95517 -5.14142,11.05727 -11.31736,11.036 z" />
+      <path
+         style="fill:#28677e;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;display:inline"
+         d="m 485.82382,557.22748 a 93.852325,93.852325 0 0 1 -93.85232,93.85232 93.852325,93.852325 0 0 1 -93.85233,-93.85232 93.852325,93.852325 0 0 1 93.85233,-93.85233 93.852325,93.852325 0 0 1 93.85232,93.85233 z"
+         transform="matrix(0.06802532,0,0,0.06598115,419.16483,439.81017)" />
+    </g>
+  </g>
+</svg>

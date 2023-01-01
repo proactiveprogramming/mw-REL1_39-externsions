@@ -1,0 +1,54 @@
+/**
+  * File: MOCA_Global_Style.css
+  *
+  * Description: CSS classes used globally in the extension.
+  *
+  * @author Chrysovalanto Kousetti
+  * @email valanto@gmail.com
+  *
+  */
+
+.smwi_in_box_title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.smwi_in_box_content {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.smwi_in_box_content_b {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.smwi_in_box_content_u {
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.smwi_in_box_content_comment {
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.smwi_in_box_message {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+}
+
+.smwi_must_fields {
+	font-size: 18px;
+	font-weight: bold;
+	color: red;
+}
+
+/* Other classes */
+.smwi_no_script_tag {
+	color: blue;
+}
+

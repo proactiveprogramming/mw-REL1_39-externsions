@@ -1,0 +1,109 @@
+{
+	"name": "ModernTimeline",
+
+	"version": "1.2.1",
+
+	"author": [
+		"[https://professional.wiki/ Professional.Wiki]",
+		"[https://www.entropywins.wtf/mediawiki Jeroen De Dauw]"
+	],
+
+	"url": "https://github.com/ProfessionalWiki/ModernTimeline#modern-timeline",
+
+	"namemsg": "modern-timeline-name",
+
+	"descriptionmsg": "modern-timeline-desc",
+
+	"license-name": "GPL-2.0-or-later",
+
+	"type": "semantic",
+
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"SemanticMediaWiki": ">= 3.0.0"
+		}
+	},
+
+	"config": {
+		"ModernTimelineWidth": {
+			"value": "100%"
+		},
+		"ModernTimelineHeight": {
+			"value": "400px"
+		},
+		"ModernTimelineBookmark": {
+			"value": false
+		},
+		"ModernTimelineBackground": {
+			"value": "white"
+		},
+		"ModernTimelineScaleFactor": {
+			"value": 2
+		},
+		"ModernTimelinePosition": {
+			"value": "bottom"
+		},
+		"ModernTimelineTickWidth": {
+			"value": 100
+		},
+		"ModernTimelineStartSlide": {
+			"value": 1
+		},
+		"ModernTimelineStartAtEnd": {
+			"value": false
+		},
+		"ModernTimelineTransitionDuration": {
+			"value": 1000
+		},
+		"ModernTimelineNavHeight": {
+			"value": "200px"
+		},
+		"ModernTimelineTemplate": {
+			"value": ""
+		},
+		"ModernTimelineImageProperty": {
+			"value": ""
+		}
+	},
+
+	"MessagesDirs": {
+		"ModernTimeline": [
+			"i18n"
+		]
+	},
+
+	"ResourceModules": {
+		"ext.modern.timeline": {
+			"scripts": [
+				"resources/vendor/timeline.js",
+				"resources/modernTimeline.js"
+			],
+			"styles": [
+				"resources/vendor/timeline.css",
+				"resources/vendor/font.default.css",
+				"resources/modernTimeline.css"
+			],
+			"targets": [ "desktop", "mobile" ],
+			"position": "bottom"
+		}
+	},
+
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "ModernTimeline"
+	},
+
+	"AutoloadClasses": {
+		"ModernTimeline\\ModernTimelineSetup": "src/ModernTimelineSetup.php",
+		"ModernTimeline\\ModernTimelinePrinter": "src/ModernTimelinePrinter.php"
+	},
+
+	"ExtensionFunctions": [
+		"ModernTimeline\\ModernTimelineSetup::onExtensionFunction"
+	],
+
+	"load_composer_autoloader": true,
+
+	"manifest_version": 2
+}

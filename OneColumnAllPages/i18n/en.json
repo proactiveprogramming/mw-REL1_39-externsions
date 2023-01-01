@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nathan Larson"
+		]
+	},
+	"onecolumnallpages": "One column all pages",
+	"onecolumnallpages-raw": "One column all pages (raw)",
+	"onecolumnallpages-desc": "Implements [[Special:OneColumnAllPages|a special page]] that displays an unformatted list of all pages on the wiki",
+	"onecolumnallpages-intro": "Here is a list of all pages on $1:",
+	"onecolumnallpages-viewtext-url": "Special:OneColumnAllPages/viewwikitext",
+	"onecolumnallpages-raw-url": "Special:OneColumnAllPages/raw",
+	"onecolumnallpages-url": "Special:OneColumnAllPages"
+}
+

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Megan Cutrofello"
+		]
+	},
+	"apihelp-customlogswrite-param-custom": "Custom parameter. Summary may be set by user.",
+	"apihelp-customlogswrite-summary": "Write custom logs.",
+	"apihelp-customlogswrite-param-publish": "Include this log entry in recent changes?",
+	"apihelp-customlogswrite-param-tags": "Change tags to apply to the log.",
+	"apihelp-customlogswrite-param-logtype": "Type of log.",
+	"apihelp-customlogswrite-param-title": "Title of the page to edit. Cannot be used together with ''pageid''.",
+	"apihelp-customlogswrite-param-pageid": "Page ID of the page to edit. Cannot be used together with ''title''.",
+	"apihelp-customlogswrite-param-summary": "Summary of log."
+}

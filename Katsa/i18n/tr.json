@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
+		]
+	},
+	"katsa-desc": "Lua modüllerinde kullanım için casuslar sağlar",
+	"katsa-carp-final": "Carp çağrıldı",
+	"katsa-cluck-final": "Cluck çağrıldı",
+	"katsa-croak-final": "Croak çağrıldı",
+	"katsa-confess-final": "Confess çağrıldı"
+}

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"katsa-desc": "Gir spioner for bruk i Lua-moduler",
+	"katsa-carp-final": "Carp kalt",
+	"katsa-cluck-final": "Cluck kalt",
+	"katsa-croak-final": "Croak kalt",
+	"katsa-confess-final": "Confess kalt"
+}

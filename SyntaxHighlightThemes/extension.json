@@ -1,0 +1,36 @@
+{
+	"name": "SyntaxHighlightThemes",
+	"version": "1.0.0",
+	"author": [
+		"Nathan Kuenzig"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SyntaxHighlightThemes",
+	"descriptionmsg": "syntaxhighlight-themes-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.34"
+	},
+	"MessagesDirs": {
+		"SyntaxHighlightThemes": [
+			"i18n"
+		]
+	},
+	"DefaultUserOptions": {
+		"syntaxhighlight-theme": "default"
+	},
+	"AutoloadClasses": {
+		"SyntaxHighlightThemes": "includes/SyntaxHighlightThemes.php",
+		"ResourceLoaderSyntaxHighlightThemeModule": "includes/ResourceLoaderSyntaxHighlightThemeModule.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "SyntaxHighlightThemes/modules"
+	},
+	"Hooks": {
+		"ResourceLoaderRegisterModules": "SyntaxHighlightThemes::onResourceLoaderRegisterModules",
+		"GetPreferences": "SyntaxHighlightThemes::onGetPreferences",
+		"BeforePageDisplay": "SyntaxHighlightThemes::onBeforePageDisplay"
+	},
+	"manifest_version": 2
+}

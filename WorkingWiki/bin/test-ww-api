@@ -1,0 +1,167 @@
+#! /usr/bin/perl
+
+use strict;
+use MediaWiki::API;
+use Data::Dumper;
+
+# By default, use UTF-8 to communicate with Git and the user
+binmode STDERR, ":utf8";
+binmode STDOUT, ":utf8";
+
+use warnings;
+
+my $url = 'http://lalashan.mcmaster.ca/theobio/projects';
+my $wiki_domain = $url;
+$wiki_domain =~ s[^(\w+://.*?)(/.*)?$][$1];
+my $projectname = 'Sandbox';
+my $pagename = 'Sandbox';
+my $filename = 'test.txt';
+my $debug = 1;
+
+$debug && print "#### $0 $url $projectname $pagename\n";
+
+my $wiki_login = '';
+# Note: mwPassword is discouraged. Use the credential system instead.
+my $wiki_passwd = '';
+
+########################## Functions ##############################
+
+# MediaWiki API instance, created lazily.
+my $mediawiki;
+
+sub mw_connect_maybe {
+	if ($mediawiki) {
+		return;
+	}
+	$mediawiki = MediaWiki::API->new;
+	$mediawiki->{config}->{api_url} = "$url/api.php";
+	if ($wiki_login) {
+		my %credential = (url => $url);
+		$credential{username} = $wiki_login;
+		$credential{password} = $wiki_passwd;
+		my $request = {lgname => $credential{username},
+				lgpassword => $credential{password},
+				lgdomain => $wiki_domain};
+		print "log in to wiki\n";
+		my $dq = Data::Dumper->new( [ $request ], [ 'request' ] );
+		print $dq->Dump;
+		if ($mediawiki->login($request)) {
+			print "Logged in mediawiki user \"$credential{username}\".\n";
+		} else {
+			print "Failed to log in mediawiki user \"$credential{username}\" on $url\n";
+			print "  (error " .
+				$mediawiki->{error}->{code} . ': ' .
+				$mediawiki->{error}->{details} . ")\n";
+			exit 1;
+		}
+	}
+}
+
+sub test_import_project_files {
+	mw_connect_maybe();
+	my $query = {
+		action => 'ww-import-project-files',
+		project => $projectname,
+		filename => $filename,
+		'as-source-file' => 1,
+		page => $pagename,
+		'file-contents' => 'This is the content of '.$filename.'.',
+	};
+	my $result = $mediawiki->api($query);
+	print "test import-project-files\n";
+	my $dq = Data::Dumper->new( [ $query ], [ 'query' ] );
+	my $dr = Data::Dumper->new( [ $result ], [ 'result' ] );
+	print $dq->Dump, $dr->Dump;
+	return $result->{'success'};
+}
+
+sub test_get_project_file {
+	mw_connect_maybe();
+	my $query = {
+		action => 'ww-get-project-file',
+		project => $projectname,
+		filename => $filename,
+		'source-file' => 1,
+	};
+	print "test get-project-file\n";
+	my $result = $mediawiki->api($query);
+	my $dq = Data::Dumper->new( [ $query ], [ 'query' ] );
+	my $dr = Data::Dumper->new( [ $result ], [ 'result' ] );
+	print $dq->Dump, $dr->Dump;
+	return $result->{'success'};
+}
+
+sub test_get_project_data {
+	mw_connect_maybe();
+	my $query = {
+		action => 'ww-get-project-data',
+		project => $projectname,
+	};
+	my $result = $mediawiki->api($query);
+	print "test get-project-data\n";
+	my $dq = Data::Dumper->new( [ $query ], [ 'query' ] );
+	my $dr = Data::Dumper->new( [ $result ], [ 'result' ] );
+	print $dq->Dump, $dr->Dump;
+	return $result->{'success'};
+}
+
+sub test_get_project_revisions {
+	mw_connect_maybe();
+	my $query = {
+		action => 'ww-get-project-revisions',
+		project => $projectname,
+	};
+	my $result = $mediawiki->api($query);
+	print "test get-project-revisions\n";
+	my $dq = Data::Dumper->new( [ $query ], [ 'query' ] );
+	my $dr = Data::Dumper->new( [ $result ], [ 'result' ] );
+	print $dq->Dump, $dr->Dump;
+	return $result->{'success'};
+}
+
+sub test_get_file_revisions_in_project {
+	mw_connect_maybe();
+	my $query = {
+		action => 'ww-get-file-revisions-in-project',
+		project => $projectname,
+	};
+	my $result = $mediawiki->api($query);
+	print "test get-file-revisions-in-project\n";
+	my $dq = Data::Dumper->new( [ $query ], [ 'query' ] );
+	my $dr = Data::Dumper->new( [ $result ], [ 'result' ] );
+	print $dq->Dump, $dr->Dump;
+	return $result->{'success'};
+}
+
+sub test_list_resources_directory {
+	mw_connect_maybe();
+	my $query = {
+		action => 'ww-list-resources-directory',
+	};
+	my $result = $mediawiki->api($query);
+	print "test list-resources-directory\n";
+	my $dq = Data::Dumper->new( [ $query ], [ 'query' ] );
+	my $dr = Data::Dumper->new( [ $result ], [ 'result' ] );
+	print $dq->Dump, $dr->Dump;
+	return $result->{'success'};
+}
+
+sub do_test {
+	my $sb = shift;
+	if (&$sb()) {
+		print "passed.\n";
+	} else {
+		print "failed.\n";
+		exit -1;
+	}
+}
+
+########################## Main ##############################
+
+do_test( \&test_import_project_files );
+do_test( \&test_get_project_file );
+do_test( \&test_get_project_data );
+do_test( \&test_get_project_revisions );
+do_test( \&test_get_file_revisions_in_project );
+do_test( \&test_list_resources_directory );
+print "all tests passed.";

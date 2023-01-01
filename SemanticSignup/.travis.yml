@@ -1,0 +1,30 @@
+language: php
+
+services:
+  - mysql
+
+matrix:
+  fast_finish: true
+  include:
+    - env: DB=mysql; MW=master; TYPE=coverage
+      php: 7.3
+    - env: DB=mysql; MW=1.23.8;
+      php: 5.4
+    - env: DB=sqlite; MW=1.24.1; SITELANG=ja
+      php: 5.5
+
+install:
+  - travis_retry composer self-update
+  - bash ./tests/travis/install-mediawiki.sh
+  - bash ./tests/travis/install-semantic-signup.sh
+
+script:
+  - bash ./tests/travis/run-tests.sh
+
+after_success:
+  - bash ./tests/travis/upload-coverage-report.sh
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always

@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Matthew Trescott"
+        ]
+    },
+    "iewarn-name": "The name of this extension",
+    "iewarn-desc": "Description of the extension shown on Special:Version",
+    "iewarn-ie-title": "Title displayed above the warning message",
+    "iewarn-ie-message": "The warning message displayed for people using unsupported browsers. Variable 1 holds the name of the browser."
+}

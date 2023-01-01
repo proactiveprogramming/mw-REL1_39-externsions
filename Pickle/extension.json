@@ -1,0 +1,588 @@
+{
+	"name": "Pickle",
+	"version": "0.1.0",
+	"author": [
+		"John Erling Blad"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Pickle",
+	"descriptionmsg": "pickle-desc",
+	"license-name": "GPL-2.0",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.33",
+		"extensions": {
+			"Scribunto": "*"
+		}
+	},
+	"AutoloadClasses": {
+		"Pickle\\Hooks":
+			"includes/Hooks.php",
+
+		"Pickle\\Observer":
+			"includes/Observer/Observer.php",
+
+		"Pickle\\IStrategies":
+			"includes/Strategies/IStrategies.php",
+		"Pickle\\Strategies":
+			"includes/Strategies/Strategies.php",
+
+		"Pickle\\TNamedStrategy":
+			"includes/Strategies/TNamedStrategy.php",
+		"Pickle\\TNamedStrategies":
+			"includes/Strategies/TNamedStrategies.php",
+
+		"Pickle\\LogEntry":
+			"includes/LogEntry/LogEntry.php",
+		"Pickle\\LogEntryDefault":
+			"includes/LogEntry/LogEntryDefault.php",
+		"Pickle\\LogEntryCommon":
+			"includes/LogEntry/LogEntryCommon.php",
+		"Pickle\\LogEntryFactory":
+			"includes/LogEntry/LogEntryFactory.php",
+
+		"Pickle\\Category":
+			"includes/Category/Category.php",
+		"Pickle\\CategoryDefault":
+			"includes/Category/CategoryDefault.php",
+		"Pickle\\CategoryCommon":
+			"includes/Category/CategoryCommon.php",
+		"Pickle\\CategoryFactory":
+			"includes/Category/CategoryFactory.php",
+
+		"Pickle\\Indicator":
+			"includes/Indicator/Indicator.php",
+		"Pickle\\IndicatorDefault":
+			"includes/Indicator/IndicatorDefault.php",
+		"Pickle\\IndicatorCommon":
+			"includes/Indicator/IndicatorCommon.php",
+		"Pickle\\IndicatorFactory":
+			"includes/Indicator/IndicatorFactory.php",
+
+		"Pickle\\ATAPParser":
+			"includes/TAP/ATAPParser.php",
+		"Pickle\\TAPCommonParser":
+			"includes/TAP/TAPCommonParser.php",
+		"Pickle\\TAP13Parser":
+			"includes/TAP/TAP13Parser.php",
+		"Pickle\\TAPStrategies":
+			"includes/TAP/TAPStrategies.php",
+
+		"Pickle\\ExtractStatus":
+			"includes/ExtractStatus/ExtractStatus.php",
+		"Pickle\\ExtractStatusDefault":
+			"includes/ExtractStatus/ExtractStatusDefault.php",
+		"Pickle\\ExtractStatusByPattern":
+			"includes/ExtractStatus/ExtractStatusByPattern.php",
+		"Pickle\\ExtractStatusStrategies":
+			"includes/ExtractStatus/ExtractStatusStrategies.php",
+
+		"Pickle\\InvokeSubpage":
+			"includes/InvokeSubpage/InvokeSubpage.php",
+		"Pickle\\InvokeSubpageDefault":
+			"includes/InvokeSubpage/InvokeSubpageDefault.php",
+		"Pickle\\InvokeSubpageByContentType":
+			"includes/InvokeSubpage/InvokeSubpageByContentType.php",
+		"Pickle\\InvokeSubpageStrategies":
+			"includes/InvokeSubpage/InvokeSubpageStrategies.php",
+
+		"Pickle\\HelpView":
+			"includes/Help/HelpView.php",
+
+		"Pickle\\ConsoleView":
+			"includes/Console/ConsoleView.php",
+
+		"Pickle\\ISubLinksView":
+			"includes/SubLinks/ISubLinksView.php",
+		"Pickle\\SubLinksView":
+			"includes/SubLinks/SubLinksView.php",
+
+		"Pickle\\LuaLibPickle":
+			"includes/LuaLibrary/LuaLibPickle.php",
+
+		"Pickle\\Tests\\StrategiesTestCase":
+			"tests/phpunit/includes/Strategies/StrategiesTestCase.php",
+
+		"Pickle\\Tests\\LogEntryTestCase":
+			"tests/phpunit/includes/LogEntry/LogEntryTestCase.php",
+
+		"Pickle\\Tests\\CategoryTestCase":
+			"tests/phpunit/includes/Category/CategoryTestCase.php",
+
+		"Pickle\\Tests\\TAPParserTestCase":
+			"tests/phpunit/includes/TAP/TAPParserTestCase.php",
+
+		"Pickle\\Tests\\IndicatorTestCase":
+			"tests/phpunit/includes/Indicator/IndicatorTestCase.php",
+
+		"Pickle\\Tests\\InvokeSubpageTestCase":
+			"tests/phpunit/includes/InvokeSubpage/InvokeSubpageTestCase.php"
+	},
+	"config_prefix": "wgPickle",
+	"config": {
+		"Setup": {
+			"description": [
+				"How to construct the tests, that is whether description does setup.",
+				"* implicit – setup as part of describe",
+				"* explicit – setup as part of module require"
+			],
+			"value": "implicit"
+		},
+		"ObserverID": {
+			"description": "The user ID used by the logger.",
+			"value": 3
+		},
+		"TranslationFollows": {
+			"description": [
+				"Which ones of the entries from TranslationPath should be used",
+				"* content – follow content language",
+				"* user – follow user language (caching must be turned off)"
+			],
+			"value": "content"
+		},
+		"TranslationPath": {
+			"description": [
+				"Alternate formats for how to build the translation path",
+				"* content – format to use while following content language",
+				"* user – format to use while following user language (caching must be turned off)"
+			],
+			"value": {
+				"content": "Module:%s/i18n",
+				"user": "Module:%s/%s"
+			}
+		},
+		"DefaultNamespace": {
+			"description": "Which namespace to use for tests",
+			"value": 828
+		},
+		"RenderPath": {
+			"description": "Formats to use while requiring renders.",
+			"value": "picklelib/render/Render%s%s"
+		},
+		"RenderStyles": {
+			"description": [
+				"The style part of name",
+				"* compact – the name for the minimal plain text report",
+				"* full – the name for the full plain text report",
+				"* vivid – the name for the full html report"
+			],
+			"value": {
+				"compact": "Compact",
+				"full": "Full",
+				"vivid": "Vivid"
+			}
+		},
+		"RenderTypes": {
+			"description": [
+				"The type part of the name",
+				"* report-adapt – the name for the renders handling adapt reports",
+				"* report-case – the name for the renders handling case reports"
+			],
+			"value": {
+				"report-adapt": "Adapt",
+				"report-case": "Case"
+			}
+		},
+		"ExtractorPath": {
+			"description": "Formats to use while requiring extractors.",
+			"value": "picklelib/Extractor%s"
+		},
+		"Extractor": {
+			"description": "Key-value pairs for extractors, used by require during setup of Lua-modules.",
+			"value": {
+			}
+		},
+		"NeglectSubpages": {
+			"description": "List of patterns mathing subpage titles that should not be processed.",
+			"value": [
+				"/^(?:.*?\\.)?doc$/",
+				"/^(?:.*?\\.)?conf$/",
+				"/^(?:.*?\\.)?data$/",
+				"/^(?:.*?\\.)?i18n$/",
+				"/^(?:.*?\\.)?l10n$/"
+			]
+		},
+		"Indicator": {
+			"description": [
+				"Configuration of Indicator instances",
+				"* class – PHP class for this instance",
+				"* name – what to name the instance",
+				"* icon – visual representation of this instance"
+			],
+			"value": [
+				{
+					"class": "Pickle\\IndicatorCommon",
+					"name": "fail",
+					"icon": "red-fail"
+				},
+				{
+					"class": "Pickle\\IndicatorCommon",
+					"name": "todo-fail",
+					"icon": "yellow-fail"
+				},
+				{
+					"class": "Pickle\\IndicatorCommon",
+					"name": "todo-good",
+					"icon": "yellow-good"
+				},
+				{
+					"class": "Pickle\\IndicatorCommon",
+					"name": "skip-fail",
+					"icon": "yellow-fail"
+				},
+				{
+					"class": "Pickle\\IndicatorCommon",
+					"name": "skip-good",
+					"icon": "yellow-good"
+				},
+				{
+					"class": "Pickle\\IndicatorCommon",
+					"name": "pending",
+					"icon": "yellow-unknown"
+				},
+				{
+					"class": "Pickle\\IndicatorCommon",
+					"name": "good",
+					"icon": "green-good"
+				},
+				{
+					"class": "Pickle\\IndicatorCommon",
+					"name": "missing",
+					"icon": "yellow-unknown"
+				},
+				{
+					"class": "Pickle\\IndicatorDefault",
+					"icon": "yellow-unknown"
+				}
+			]
+		},
+		"Category": {
+			"description": [
+				"Configuration of Category instances",
+				"* class – PHP class for this instance",
+				"* name – what to name the instance",
+				"* key – part of a message key to describe the instance"
+			],
+			"value": [
+				{
+					"class": "Pickle\\CategoryCommon",
+					"name": "fail",
+					"key": "fail"
+				},
+				{
+					"class": "Pickle\\CategoryCommon",
+					"name": "pending",
+					"key": "pending"
+				},
+				{
+					"class": "Pickle\\CategoryCommon",
+					"name": "good",
+					"key": "good"
+				},
+				{
+					"class": "Pickle\\CategoryCommon",
+					"name": "todo-fail",
+					"key": "todo"
+				},
+				{
+					"class": "Pickle\\CategoryCommon",
+					"name": "todo-good",
+					"key": "todo"
+				},
+				{
+					"class": "Pickle\\CategoryCommon",
+					"name": "skip-fail",
+					"key": "skip"
+				},
+				{
+					"class": "Pickle\\CategoryCommon",
+					"name": "skip-good",
+					"key": "skip"
+				},
+				{
+					"class": "Pickle\\CategoryCommon",
+					"name": "missing",
+					"key": "missing"
+				},
+				{
+					"class": "Pickle\\CategoryDefault",
+					"key": "unknown"
+				}
+			]
+		},
+		"LogEntry": {
+			"description": [
+				"Configuration of LogEntry instances",
+				"* class – PHP class for this instance",
+				"* name – what to name the instance"
+			],
+			"value": [
+				{
+					"class": "Pickle\\LogEntryCommon",
+					"name": "skip-fail"
+				},
+				{
+					"class": "Pickle\\LogEntryCommon",
+					"name": "skip-good"
+				},
+				{
+					"class": "Pickle\\LogEntryCommon",
+					"name": "todo-fail"
+				},
+				{
+					"class": "Pickle\\LogEntryCommon",
+					"name": "todo-good"
+				},
+				{
+					"class": "Pickle\\LogEntryCommon",
+					"name": "fail"
+				},
+				{
+					"class": "Pickle\\LogEntryCommon",
+					"name": "good"
+				},
+				{
+					"class": "Pickle\\LogEntryCommon",
+					"name": "exists"
+				},
+				{
+					"class": "Pickle\\LogEntryCommon",
+					"name": "missing"
+				},
+				{
+					"class": "Pickle\\LogEntryDefault"
+				}
+			]
+		},
+		"InvokeSubpage": {
+			"description": [
+				"Configuration of InvokeSubpage instances",
+				"* class – PHP class for this instance",
+				"* type – system to invoke",
+				"* name – what to name the instance"
+			],
+			"value": [
+				{
+					"class": "Pickle\\InvokeSubpageByContentType",
+					"type": "Scribunto",
+					"name": "testspec"
+				},
+				{
+					"class": "Pickle\\InvokeSubpageByContentType",
+					"type": "Scribunto",
+					"name": "testcase"
+				},
+				{
+					"class": "Pickle\\InvokeSubpageDefault"
+				}
+			]
+		},
+		"TAP": {
+			"description": [
+				"Configuration of TAP instances",
+				"* class – PHP class for this instance"
+			],
+			"value": [
+				{
+					"class": "Pickle\\TAP13Parser"
+				},
+				{
+					"class": "Pickle\\TAPCommonParser"
+				}
+			]
+		},
+		"ExtractStatus": {
+			"description": [
+				"Configuration of ExtractStatus instances",
+				"* class – PHP class for this instance",
+				"* pattern – how to recognize the status",
+				"* name – what to name the instance"
+			],
+			"value": [
+				{
+					"class": "Pickle\\ExtractStatusByPattern",
+					"name": "fail",
+					"pattern": "/^(fail(ing|ed|)|bad|not\\s+ok|bail(ing|ed|)\\s+out!)$/i"
+				},
+				{
+					"class": "Pickle\\ExtractStatusByPattern",
+					"name": "todo-fail",
+					"pattern": "/^(todo)[-_\\s](fail(ing|ed|)|bad|not\\s+ok)$/i"
+				},
+				{
+					"class": "Pickle\\ExtractStatusByPattern",
+					"name": "todo-good",
+					"pattern": "/^(todo)[-_\\s](good|ok)$/i"
+				},
+				{
+					"class": "Pickle\\ExtractStatusByPattern",
+					"name": "skip-fail",
+					"pattern": "/^(skipp?(ing|ed|))[-_\\s](fail(ing|ed|)|bad|not\\s+ok)$/i"
+				},
+				{
+					"class": "Pickle\\ExtractStatusByPattern",
+					"name": "skip-good",
+					"pattern": "/^(skipp?(ing|ed|))[-_\\s](good|ok)$/i"
+				},
+				{
+					"class": "Pickle\\ExtractStatusByPattern",
+					"name": "pending",
+					"pattern": "/^(pending)$/i"
+				},
+				{
+					"class": "Pickle\\ExtractStatusByPattern",
+					"name": "good",
+					"pattern": "/^(good|ok)$/i"
+				},
+				{
+					"class": "Pickle\\ExtractStatusDefault"
+				}
+			]
+		}
+	},
+	"callback": "Pickle\\Hooks::onExtensionSetup",
+	"ExtensionMessagesFiles": {
+		"RelatedArticlesMagic": "Pickle.i18n.magic.php"
+	},
+	"Hooks": {
+		"SpecTesterGadgets": [
+			"Pickle\\IndicatorFactory::addIndicator"
+		],
+		"SpecTesteeGadgets": [
+			"Pickle\\IndicatorFactory::addIndicator",
+			"Pickle\\CategoryFactory::addCategorization",
+			"Pickle\\LogEntryFactory::addLogEntry"
+		],
+		"ParserFirstCallInit": [
+			"Pickle\\Hooks::onParserSetup"
+		],
+		"ContentAlterParserOutput": [
+			"Pickle\\Hooks::onContentAlterParserOutput"
+		],
+		"OutputPageParserOutput": [
+			"Pickle\\SubLinksView::onOutputPageParserOutput"
+		],
+		"EditPage::showStandardInputs:options": [
+			"Pickle\\ConsoleView::onShowStandardInputsOptions"
+		],
+		"EditPage::showReadOnlyForm:initial": [
+			"Pickle\\ConsoleView::onShowReadOnlyFormInitial"
+		],
+		"ScribuntoExternalLibraries": [
+			"Pickle\\Hooks::onRegisterScribuntoLibraries"
+		],
+		"ScribuntoExternalLibraryPaths": [
+			"Pickle\\Hooks::onRegisterScribuntoExternalLibraryPaths"
+		]
+	},
+	"MessagesDirs": {
+		"Pickle": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.pickle.indicator.icon": {
+			"prefix": "mw-speclink-icon",
+			"position": "bottom",
+			"class": "ResourceLoaderImageModule",
+			"selectorWithoutVariant": ".{prefix}-black-{name}",
+			"selectorWithVariant": ".{prefix}-{variant}-{name}",
+			"variants": {
+				"red": {
+					"color": "#d11d13"
+				},
+				"yellow": {
+					"color": "#ffb50d"
+				},
+				"green": {
+					"color": "#00af8b"
+				}
+			},
+			"images": {
+				"good": {
+					"file": {
+						"ltr": "images/ext.pickle.indicator.icon/good-ltr.svg",
+						"rtl": "images/ext.pickle.indicator.icon/good-rtl.svg"
+					},
+					"variants": [ "green", "yellow" ]
+				},
+				"fail": {
+					"file": {
+						"ltr": "images/ext.pickle.indicator.icon/fail-ltr.svg",
+						"rtl": "images/ext.pickle.indicator.icon/fail-rtl.svg"
+					},
+					"variants": [ "red", "yellow" ]
+				},
+				"unknown": {
+					"file": {
+						"ltr": "images/ext.pickle.indicator.icon/unknown-ltr.svg",
+						"rtl": "images/ext.pickle.indicator.icon/unknown-rtl.svg"
+					},
+					"variants": [ "yellow" ]
+				}
+			}
+		},
+		"ext.pickle.default": {
+			"styles": [
+				"ext.pickle.default.css"
+			]
+		},
+		"ext.pickle.console": {
+			"styles": [
+				"ext.pickle.console.css"
+			],
+			"scripts": [
+				"ext.pickle.console.js"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"jquery.spinner"
+			],
+			"messages": [
+				"pickle-console-title",
+				"pickle-console-empty",
+				"pickle-console-cleared",
+				"pickle-console-run",
+				"pickle-console-clear"
+			]
+		},
+		"ext.pickle.report": {
+			"styles": "ext.pickle.report.css",
+			"position": "top"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Pickle/modules"
+	},
+	"TrackingCategories": [
+		"pickle-tracking-category-good",
+		"pickle-tracking-category-pending",
+		"pickle-tracking-category-todo",
+		"pickle-tracking-category-skip",
+		"pickle-tracking-category-fail",
+		"pickle-tracking-category-missing",
+		"pickle-tracking-category-unknown"
+	],
+	"SpecialPages": {
+	},
+	"LogTypes": [
+		"track"
+	],
+	"LogNames": {
+		"track": "pickle-track-log-name"
+	},
+	"LogHeaders": {
+		"track": "pickle-track-log-header"
+	},
+	"LogActions": {
+		"track/good": "pickle-track-log-entry-good",
+		"track/fail": "pickle-track-log-entry-fail",
+		"track/skip-good": "pickle-track-log-entry-skip-good",
+		"track/skip-fail": "pickle-track-log-entry-skip-fail",
+		"track/todo-good": "pickle-track-log-entry-todo-good",
+		"track/todo-fail": "pickle-track-log-entry-todo-fail",
+		"track/missing": "pickle-track-log-entry-missing",
+		"track/unknown": "pickle-track-log-entry-unknown"
+	},
+	"manifest_version": 2
+}

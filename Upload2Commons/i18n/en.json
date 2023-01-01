@@ -1,0 +1,33 @@
+{
+    "@metadata": {
+        "authors": [
+            "Antoine Lamielle"
+        ]
+    },
+    "upload2Commons": "Upload2Commons",
+    "upload2Commons-desc": "Upload local files to a remote wiki using OAuth.",
+    "apihelp-upload-to-commons-summary": "Upload a local wiki file to a remote wiki using OAuth.",
+    "apihelp-upload-to-commons-extended-description": "The file must already be uploaded on the local wiki. Several methods are available:\n* Upload from an on-wiki file, using the <kbd>localfilename</kbd> parameter.\n* Upload from a stashed file, using the <kbd>filekey</kbd> parameter.\nNote that the <kbd>filename</kbd>, <kbd>comment</kbd>, <kbd>tags</kbd>, <kbd>text</kbd> and <kbd>ignorewarnings</kbd> parameters are the same than in <kbd>[[Special:ApiHelp/upload|action=upload]]</kbd>.",
+    "apihelp-upload-to-commons-example": "",
+
+    "apihelp-upload-to-commons-param-localfilename": "Name of a file to upload (without the \"File:\" namespace).",
+    "apihelp-upload-to-commons-param-filekey": "Filekey of a stashed file to upload.",
+    "apihelp-upload-to-commons-param-filename": "Target filename.",
+    "apihelp-upload-to-commons-param-comment": "Upload comment.",
+    "apihelp-upload-to-commons-param-tags": "Change tags to apply to the upload log entry and file page revision on the remote wiki.",
+    "apihelp-upload-to-commons-param-text": "Initial page text for new files. If not specified, the page text of the local file will be used instead.",
+    "apihelp-upload-to-commons-param-ignorewarnings": "Ignore any warnings on the remote wiki.",
+    "apihelp-upload-to-commons-param-removeafterupload": "Remove the stashed file if the upload succeeded (doesn't delete any already on-wiki files, see <kbd>[[Special:ApiHelp/delete|action=delete]]</kbd> for that).",
+    "apihelp-upload-to-commons-param-logtags": "Set custom tags to the remoteupload log entry.",
+
+    "apierror-stashrequirefilename": "You have to set a  <kbd>filename</kbd> when uploading from stash.",
+    "apierror-removeonlystash": "The <kbd>removeafterupload</kbd> parameter can only remove stashed files. For already on-wiki files, see <kbd>action=delete</kbd>.",
+    "apierror-nolinkedaccount": "You have to link your account to an account on a remote wiki using OAuth.",
+	"apierror-cantdecoderequest": "The 'request' parameter doesn't contain a valid json string.",
+    "apierror-unknownerror-oauth": "Unknown OAuth error.",
+
+    "log-name-remoteupload": "Remote upload log",
+	"log-description-remoteupload": "These events track when someone upload a file to the remote wiki using OAuth.",
+	"logentry-remoteupload-stashedfile": "$1 {{GENDER:$2|has uploaded}} a file to the remote wiki: $6",
+	"logentry-remoteupload-file": "$1 {{GENDER:$2|has uploaded}} $3 to the remote wiki: $6"
+}

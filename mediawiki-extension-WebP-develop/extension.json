@@ -1,0 +1,99 @@
+{
+	"name": "WebP",
+	"author": [
+		"Octfx"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:WebP",
+	"descriptionmsg": "webp-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "media",
+	"version": "1.0.0",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\WebP\\": "includes/"
+	},
+	"config": {
+		"WebPEnableConvertOnUpload": {
+			"description": "Enables WebP creation after a new image was uploaded",
+			"value": false
+		},
+		"WebPEnableConvertOnTransform": {
+			"description": "Enables WebP creation after a thumbnail was created",
+			"value": true
+		},
+		"WebPCheckAcceptHeader": {
+			"description": "Check if the accept header contains webp",
+			"value": false
+		},
+		"WebPCompressionQuality": {
+			"description": "Compression Quality",
+			"value": 80
+		},
+		"WebPFilterStrength": {
+			"description": "Filter Strength",
+			"value": 80
+		},
+		"WebPAutoFilter": {
+			"description": "Enable Auto Filter",
+			"value": true
+		},
+		"WebPConvertInJobQueue": {
+			"description": "Convert Files in JopQueue",
+			"value": true
+		},
+		"WebPThumbSizes": {
+			"description": "Thumbnail Sizes to create through the maintenance script",
+			"value": [
+				120,
+				320,
+				800,
+				1200,
+				1600
+			]
+		}
+	},
+	"ExtensionFunctions": [
+		"MediaWiki\\Extension\\WebP\\Hooks\\MainHooks::setup"
+	],
+	"HookHandlers": {
+		"WebPMainHooks": {
+			"class": "MediaWiki\\Extension\\WebP\\Hooks\\MainHooks",
+			"services": [
+				"MainConfig"
+			]
+		},
+		"WebPFileHooks": {
+			"class": "MediaWiki\\Extension\\WebP\\Hooks\\FileHooks",
+			"services": [
+				"MainConfig",
+				"RepoGroup"
+			]
+		},
+		"WebPThumbnailHooks": {
+			"class": "MediaWiki\\Extension\\WebP\\Hooks\\ThumbnailHooks",
+			"services": [
+				"MainConfig",
+				"RepoGroup"
+			]
+		}
+	},
+	"Hooks": {
+		"FileTransformed": "WebPFileHooks",
+		"FileDeleteComplete": "WebPFileHooks",
+		"PageMoveComplete": "WebPFileHooks",
+		"UploadComplete": "WebPMainHooks",
+		"ThumbnailBeforeProduceHTML": "WebPThumbnailHooks",
+		"LocalFilePurgeThumbnails": "WebPThumbnailHooks"
+	},
+	"MessagesDirs": {
+		"WebP": [
+			"i18n"
+		]
+	},
+	"JobClasses": {
+		"TransformWebPImage": "MediaWiki\\Extension\\WebP\\TransformWebPImageJob"
+	},
+	"manifest_version": 2
+}

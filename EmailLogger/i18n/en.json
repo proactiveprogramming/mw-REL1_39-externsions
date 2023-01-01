@@ -1,0 +1,4 @@
+{
+    "emaillogger-logfilepath-desc": "The path on your filesystem to log email sends to.",
+    "emaillogger-failsilently-desc": "Whether the email should send or not if the email can't be logged. If true, email sends. If false, email does not send."
+}

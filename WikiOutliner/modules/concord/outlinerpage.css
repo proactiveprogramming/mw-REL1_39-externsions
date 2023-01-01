@@ -1,0 +1,126 @@
+@media screen and (max-width: 800px) {
+    .divOutlinerContainer {
+        width: 100%;
+        margin-top: 75px;
+        margin-left: 0;
+        margin-right: auto;
+        border:0px solid gainsboro;
+        min-height: 550px;
+        max-height: 800px;
+        overflow: auto;
+        padding: 6px;
+        background-color: white;
+    }
+    .divSubtext {
+        width: 65%;
+        margin-top: 3px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fullscreen{
+        z-index: 9999999;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #filelist{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .divOutlinerContainer {
+        width: 100%;
+        margin-top: 75px;
+        margin-left: 0;
+        margin-right: auto;
+        border:0px solid gainsboro;
+        min-height: 550px;
+        max-height: 800px;
+        overflow: auto;
+        padding: 6px;
+        background-color: white;
+        padding-top: 30px;
+    }
+
+    #containerelement {
+        padding-top: 60px;
+    }
+
+    .divSubtext {
+        width: 65%;
+        margin-top: 3px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fullscreen{
+        z-index: 9999999;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #filelist{
+        flex: 30%;
+    }
+
+    #outliner{
+        flex: 70%;
+    }
+}
+/*
+.navbar-outliner {
+    padding-top: 50px;
+    font-size: 15px;
+    padding-left: 8px; padding-right: 8px
+}
+/* menubar
+.divMenubar .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+.divMenubar .nav > li > a {
+    font-size: 15px;
+    padding-top: 12px;
+    padding-left: 8px; padding-right: 8px; //6/3/13 by DW
+outline: none !important;
+}
+.dropdown-menu > li > a {
+    cursor: pointer;
+}
+.navbar-inner {
+    -moz-border-radius: 0;
+    -moz-border-radius: none;
+    -moz-box-shadow: none;
+    background-image: none;
+    border-radius: 0;
+}
+.divMenubar .brand {
+    margin-top: 0;
+}
+.divMenubar .nav li {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+.menuKeystroke {
+    float: right;
+    margin-left: 25px;
+}
+.menuKeystroke:before {
+    content: "";
+}
+#idMenuProductName {
+    font-family: "Arial";
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}*/

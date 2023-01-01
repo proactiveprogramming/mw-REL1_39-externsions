@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Homo",
+            "Hugo.arg"
+        ]
+    },
+    "newduplicateusermessage-description": "Prideda pranešimą į naujai sukurtų naudotojų aptarimų puslapius.",
+    "newduplicateusermessage-edit-summary": "Prideda [[{{int:newduplicateusermessage-template}}|pasveikinimo pranešimą]] į naujo naudotojo aptarimo puslapį"
+}

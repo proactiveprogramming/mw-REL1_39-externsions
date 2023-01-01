@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<phpunit bootstrap="tests/bootstrap.php" >
+    <testsuites>
+        <testsuite name="Integration Tests">
+            <directory>./tests/integration</directory>
+        </testsuite>
+        <testsuite name="Unit Tests">
+            <directory>./tests/unit</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <const name="WEB_SERVER_HOST" value="localhost" />
+        <const name="WEB_SERVER_PORT" value="1349" />
+        <const name="WEB_SERVER_DOCROOT" value="./tests/integration/data" />
+    </php>
+</phpunit>

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"mzwi-action": "ZWI-eksport",
+	"mzwi-desc": "Konwertuje aktualnu stronu do ZWI-dataje a sćele ju do wobhladowaka"
+}

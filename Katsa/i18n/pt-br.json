@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"katsa-desc": "Fornece espiões para uso em módulos Lua",
+	"katsa-carp-final": "Carp ligou",
+	"katsa-cluck-final": "Cluck ligou",
+	"katsa-croak-final": "Croak ligou",
+	"katsa-confess-final": "Confesse chamado"
+}

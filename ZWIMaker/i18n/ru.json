@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pastakhov"
+		]
+	},
+	"mzwi-action": "Экспорт в ZWI",
+	"mzwi-desc": "Преобразует текущую страницу в ZWI и отправляет браузеру"
+}

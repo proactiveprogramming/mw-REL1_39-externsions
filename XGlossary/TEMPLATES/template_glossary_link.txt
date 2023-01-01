@@ -1,0 +1,6 @@
+<includeonly>{{#glossary_link:path={{Glossary/Link/Path}}#{{{ref}}}|text={{{txt}}}}}</includeonly><!--
+
+--><noinclude>
+{{Documentation}}
+</noinclude>
+

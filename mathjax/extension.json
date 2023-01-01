@@ -1,0 +1,42 @@
+{
+    "name": "MathJax",
+    "version": "1.1",
+    "author": [
+        "hbshim", "xeyownt"
+    ],
+    "url": "https://www.mediawiki.org/wiki/Extension:MathJax",
+    "descriptionmsg": "Enables MathJax (http://www.mathjax.org/) for typesetting TeX and LaTeX formulae in MediaWiki",
+    "license-name": "GPL v3",
+    "type": "Tag extensions",
+    "AutoloadClasses": {
+        "MathJax_Parser": "MathJax_body.php"
+    },
+    "Hooks": {
+        "ParserBeforeStrip": [
+            "MathJax_Parser::RemoveMathTags"
+        ],
+        "InternalParseBeforeLinks": [
+            "MathJax_Parser::ReplaceByMarkers"
+        ],
+        "ParserAfterTidy": [
+            "MathJax_Parser::RemoveMarkers"
+        ]
+    },
+    "callback": "MathJax_Parser::onRegistration",
+    "config": {
+        "MjSize": 100,
+        "MjUseCDN": true
+    },
+    "ResourceModules": {
+        "ext.MjCDN": { "scripts": "ext.MjCDN.js" },
+        "ext.MjLocal": { "scripts": "ext.MjLocal.js" },
+        "ext.MjCDN.mobile": { "scripts": "ext.MjCDN.js", "targets": "mobile" },
+        "ext.MjLocal.mobile": { "scripts": "ext.MjLocal.js", "targets": "mobile" }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "modules",
+        "remoteExtPath": "MathJax/modules"
+    },
+    "manifest_version": 1
+}
+

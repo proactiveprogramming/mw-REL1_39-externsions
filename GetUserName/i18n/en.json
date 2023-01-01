@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Antoine Mercier-Linteau",
+			"Ejcaputo"
+		]
+	},
+	"getusername-desc": "Allows the current user's name to be put in a page."
+}

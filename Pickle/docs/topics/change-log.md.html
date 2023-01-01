@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pickle documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Pickle</h1>
+
+<ul>
+  <li><a href="../mw.pickle.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Usage">Usage </a></li>
+<li><a href="#Entries">Entries </a></li>
+</ul>
+
+
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/activities.md.html">Activities</a></li>
+  <li><a href="../topics/adapt.md.html">Adapt</a></li>
+  <li><a href="../topics/call-style.md.html">Call style</a></li>
+  <li><strong>Log</strong></li>
+  <li><a href="../topics/databases.md.html">Databases</a></li>
+  <li><a href="../topics/dataflow.md.html">Dataflow</a></li>
+  <li><a href="../topics/hello-world.md.html">Hello World</a></li>
+  <li><a href="../topics/lua-classes.md.html">Lua classes</a></li>
+  <li><a href="../topics/musings.md.html">Musings</a></li>
+  <li><a href="../topics/page-indicators.md.html">Page indicators</a></li>
+  <li><a href="../topics/sources.md.html">Sources</a></li>
+  <li><a href="../topics/spies.md.html">Spies</a></li>
+  <li><a href="../topics/statistics.md.html">Statistics</a></li>
+  <li><a href="../topics/test-anything-protocol.md.html">Test anything protocol</a></li>
+  <li><a href="../topics/test-case.md.html">Test Case</a></li>
+  <li><a href="../topics/test-doubles.md.html">Test doubles</a></li>
+  <li><a href="../topics/testing.md.html">Testing</a></li>
+  <li><a href="../topics/tracking-categories.md.html">Tracking categories</a></li>
+  <li><a href="../topics/translatewiki.md.html">Translatewiki</a></li>
+  <li><a href="../topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="../topics/vscode-extensions.md.html">VScode extension</a></li>
+  <li><a href="../topics/vscode-snippets.md.html">VScode snippets</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/Pickle.html">Pickle</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Adapt.html">Adapt</a></li>
+  <li><a href="../classes/Bag.html">Bag</a></li>
+  <li><a href="../classes/Case.html">Case</a></li>
+  <li><a href="../classes/Counter.html">Counter</a></li>
+  <li><a href="../classes/Double.html">Double</a></li>
+  <li><a href="../classes/Extractor.html">Extractor</a></li>
+  <li><a href="../classes/Extractors.html">Extractors</a></li>
+  <li><a href="../classes/Spy.html">Spy</a></li>
+  <li><a href="../classes/Translator.html">Translator</a></li>
+  <li><a href="../classes/Translators.html">Translators</a></li>
+  <li><a href="../classes/Render.html">Render</a></li>
+  <li><a href="../classes/RenderAdapt.html">RenderAdapt</a></li>
+  <li><a href="../classes/RenderAdaptCompact.html">RenderAdaptCompact</a></li>
+  <li><a href="../classes/RenderAdaptFull.html">RenderAdaptFull</a></li>
+  <li><a href="../classes/RenderAdaptVivid.html">RenderAdaptVivid</a></li>
+  <li><a href="../classes/RenderCase.html">RenderCase</a></li>
+  <li><a href="../classes/RenderCaseCompact.html">RenderCaseCompact</a></li>
+  <li><a href="../classes/RenderCaseFull.html">RenderCaseFull</a></li>
+  <li><a href="../classes/RenderCaseVivid.html">RenderCaseVivid</a></li>
+  <li><a href="../classes/Renders.html">Renders</a></li>
+  <li><a href="../classes/Report.html">Report</a></li>
+  <li><a href="../classes/ReportAdapt.html">ReportAdapt</a></li>
+  <li><a href="../classes/ReportCase.html">ReportCase</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/HelloWorld.pickle.nb.lua.html">HelloWorld.pickle.nb.lua</a></li>
+  <li><a href="../examples/HelloWorld.lua.html">HelloWorld.lua</a></li>
+  <li><a href="../examples/HelloWorld.pickle.lua.html">HelloWorld.pickle.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+
+<h1>Log</h1>
+
+<p><em>NOTE</em>: The following assumes logging will be done during rendering, but that is no longer the case, thus should be changed to logging on editing the page.</p>
+
+<p>The <a href="https://github.com/jeblad/Pickle/tree/master/includes/Observer">Observer</a> class implements a test observer that <a href="https://mediawiki.org/wiki/Help:Log">log status changes</a>. This list the overall results for modules that has tests, and the entries will be added conditionally during rendering. The log entry will be added if the overall outcome of the tests has changed from the previous run, or if there are no results from earlier. The logged page will be the tested page, and the user will be a specific one that is created for this purpose.</p>
+
+<p>By having a status change log it will be easier to track down where and when a change happen, and then how to fix the problem. Often the status change will be at the same time that someone is editing the page, but that is not always the case. The rendering can take place some time after a change on a related page, so it is not necessarily the user triggering the rendering that did the change that is the reason for the status change.</p>
+
+<p>The change will typically happen when rendering is triggered, and at that point the page props are already saved, and that can happen because a more or less random user visits the page. It is probably not necessary to log who did the edit that created the ripple that ultimately lead to a status change in most cases, and it can also be difficult to identify the correct edit. Instead of using the user who triggered the rendering, or the user who previously did the edit, a system user is registered and used. The system user will presumably be something like “Test observer”, “Test logger”, or “Test manager” for those cases. A name like “observer” is a bit more generic than “logger”, but the “manager” form is already in use by the Flow-system.</p>
+
+<p><em>NOTE</em>: Only use the following if a flag “log on render” is set?</p>
+
+<p>One possible solution is to save a notice about a changed render state to <a href="https://en.wikipedia.org/wiki/Memcached">memcached</a> instead of page props, and to use that as basis for logging, and other status tracking if it exists and are different from page props. If the state notice in memcached does not exist, then all status tracking will happen according to page props, and then the state notice will be recreated. The state notice will be deleted on page save. This will make new log entries as the memcached state notices disappears or changes.</p>
+
+<p>In some cases the status change can be detected during the save action, and then it is possible to log the test status change with the correct user. This is although not trivial, as the status change for one page can be triggered by some other page, and a cascade of log entries created.</p>
+
+<p>There are other special users like <a href="https://en.wikipedia.org/wiki/User:Maintenance_script">User:Maintenance script</a> and <a href="https://en.wikipedia.org/wiki/User:Flow_talk_page_manager">User:Flow talk page manager</a>. The special user that logs the status changes should be handled the same way.</p>
+
+<p><em>NOTE</em>: Following is not implemented.</p>
+
+<p>At the top of the page there is a link to the special log page.</p>
+
+<p><a name="Usage"></a></p>
+<h2>Usage</h2>
+
+<p>The user is identified through its user id, so it can be renamed. It could be that it is better to use a fixed name, as this can be more easily handled on a server farm.</p>
+
+
+<pre>
+{
+  <span class="string">"config"</span>: {
+    <span class="string">"ObserverID"</span>: <span class="number">3</span>
+  }
+}
+</pre>
+
+
+<p>The special user must be manually created, and unless created status change log entries will not be made.</p>
+
+<p><a name="Entries"></a></p>
+<h2>Entries</h2>
+
+<p>Log entries will be made on changes, and it is the final state that is logged</p>
+
+<ul>
+    <li>track/good – all tests passed</li>
+    <li>track/fail – some tests failed</li>
+    <li>track/skip-good – all tests passed, but some tests marked “skip” (i.e. could be a pending failure)</li>
+    <li>track/skip-fail – some tests failed, and some tests also marked “skip”</li>
+    <li>track/todo-good – all tests passed, but some tests marked “todo” (i.e. could be a pending failure)</li>
+    <li>track/todo-fail – some tests failed, and some tests also marked “skip”</li>
+    <li>track/missing – missing test page</li>
+    <li>track/unknown – unknown test page</li>
+</ul>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

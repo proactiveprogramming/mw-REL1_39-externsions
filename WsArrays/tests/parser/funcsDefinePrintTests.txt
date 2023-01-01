@@ -1,0 +1,208 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayPrint parser function as well as the ComplexArrayDefine parser function
+
+!! test
+Simple list definition
+!! wikitext
+{{#complexarraydefine:example|a, b, c}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Single object WSON definition
+!! wikitext
+{{#complexarraydefine:example|(("foo": "bar"))}}
+{{#complexarrayprint:example}}
+!! html
+<p>foo: bar
+</p>
+!! end
+
+!! test
+Multiple object WSON definition
+!! wikitext
+{{#complexarraydefine:example|(("foo": "bar", "boo": "far"))}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>foo: bar</li>
+<li>boo: far</li></ul>
+
+!! end
+
+!! test
+Single object nested array WSON definition
+!! wikitext
+{{#complexarraydefine:example|(("foo":["a", "b", "c"]))}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>foo
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul></li></ul>
+
+!! end
+
+!! test
+Multiple object nested array WSON definition
+!! wikitext
+{{#complexarraydefine:example|(("foo":["a", "b", "c"],"bar":["d","e","f"]))}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>foo
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul></li>
+<li>bar
+<ul><li>d</li>
+<li>e</li>
+<li>f</li></ul></li></ul>
+
+!! end
+
+!! test
+Simple list definition with line breaks
+!! wikitext
+{{#complexarraydefine:example|a,
+b,
+c
+}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+List WSON definition with line breaks
+!! wikitext
+{{#complexarraydefine:example|["foo",
+"bar"]}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>foo</li>
+<li>bar</li></ul>
+
+!! end
+
+!! test
+Object WSON definition with line breaks
+!! wikitext
+{{#complexarraydefine:example|(("foo":
+"bar"))}}
+{{#complexarrayprint:example}}
+!! html
+<p>foo: bar
+</p>
+!! end
+
+!! test
+Simple list definition with semicolon delimiter
+!! wikitext
+{{#complexarraydefine:example|a;b;c|;}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Simple list definition with semicolon delimiter trailing
+!! wikitext
+{{#complexarraydefine:example|a;b;c;|;}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>c</li>
+<li></li></ul>
+
+!! end
+
+!! test
+Simple list definition noparse
+!! wikitext
+{{#complexarraydefine:example|a,b,{{test}}|,|NO_IGNORE,NO_ARGS,NO_TEMPLATES,NO_TAGS}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>{{test}}</li></ul>
+
+!! end
+
+!! test
+Simple list definition with template
+!! wikitext
+{{#complexarraydefine:example|a,b,{{!}}|,}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>|</li></ul>
+
+!! end
+
+!! test
+Print simple array with index
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayprint:example[0]}}
+!! html
+<p>a
+</p>
+!! end
+
+!! test
+Print two-dimensional array with indices
+!! wikitext
+{{#complexarraydefine:example|(("foo": ["bar"]))}}
+{{#complexarrayprint:example[foo][0]}}
+!! html
+<p>bar
+</p>
+!! end
+
+!! test
+Print two-dimensional array with numeric indices
+!! wikitext
+{{#complexarraydefine:example|(("0": ["bar"]))}}
+{{#complexarrayprint:example[0][0]}}
+!! html
+<p>bar
+</p>
+!! end
+
+!! test
+Print two-dimensional array with ambiguous numeric indices (should fail)
+!! wikitext
+{{#complexarraydefine:example|(("0": ["bar"], 0: ["foo"]))}}
+{{#complexarrayprint:example[0][0]}}
+!! html
+<p><br />
+</p>
+!! end
+
+!! test
+Print simple array with "markup" option
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayprint:example|markup}}
+!! html
+<p>["a","b","c"]
+</p>
+!! end

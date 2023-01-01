@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piramidion"
+		]
+	},
+	"katsa-desc": "Надає програмних шпигунів для використання в модулях Lua",
+	"katsa-carp-final": "Викликано «Carp»",
+	"katsa-cluck-final": "Викликано «Cluck»",
+	"katsa-croak-final": "Викликано «Croak»",
+	"katsa-confess-final": "Викликано «Confess»"
+}

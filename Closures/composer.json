@@ -1,0 +1,49 @@
+{
+  "name": "mediawiki/closures",
+  "type": "mediawiki-extension",
+  "description": "Provides a way for users to define templates through a parser function on the page they are needed",
+  "keywords": [
+    "Closures",
+    "Wiki",
+    "MediaWiki"
+  ],
+  "homepage": "https://www.mediawiki.org/wiki/Extension:Closures",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Marijn van Wezel",
+      "homepage": "https://marijn.it",
+      "role": "Original author"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Closures\\": "src/"
+    },
+    "files" : [
+      "wiring/ClosuresServiceWiring.php"
+    ]
+  },
+  "require-dev": {
+    "mediawiki/mediawiki-codesniffer": "34.0.0",
+    "mediawiki/minus-x": "1.1.0",
+    "php-parallel-lint/php-console-highlighter": "0.5.0",
+    "php-parallel-lint/php-parallel-lint": "1.2.0"
+  },
+  "scripts": {
+    "unit": "php ../../tests/phpunit/phpunit.php -c phpunit.xml.dist",
+    "test": [
+      "parallel-lint . --exclude vendor --exclude node_modules",
+      "phpcs -p -s",
+      "minus-x check .",
+      "composer unit"
+    ],
+    "fix": [
+      "minus-x fix .",
+      "phpcbf"
+    ]
+  }
+}

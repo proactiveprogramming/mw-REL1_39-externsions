@@ -1,0 +1,19 @@
+{
+  "name": "LineBreaks",
+  "author": "David Li",
+  "url": "https://github.com/dli7319/mediawiki-linebreaks-extension",
+  "description": "Allows usage of CommonMark Markdown line breaks.",
+  "version": "1.1.0",
+  "license-name": "MIT",
+  "type": "parserhook",
+  "manifest_version": 1,
+  "AutoloadClasses": {
+    "LineBreaks": "LineBreaks.php"
+  },
+  "config": {
+	  "LbUseBackslash": false
+  },
+  "Hooks": {
+    "ParserBeforeInternalParse": "LineBreaks::onParserBeforeInternalParse"
+  }
+}

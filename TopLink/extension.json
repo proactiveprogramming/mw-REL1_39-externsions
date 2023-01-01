@@ -1,0 +1,21 @@
+{
+  "name": "TopLink",
+  "author": "MyWikis LLC",
+  "url": "https://github.com/mywikis/TopLink",
+  "description": "Adds link at bottom of MediaWiki skin to return to the top of a page.",
+  "version": "1.0",
+  "license-name": "(c) MyWikis",
+  "type": "other",
+  "manifest_version": 1,
+  "MessagesDirs": {
+    "TopLink": [
+      "i18n"
+    ]
+  },
+  "Hooks": {
+    "SkinTemplateOutputPageBeforeExec": "TopLinkHooks::onSkinTemplateOutputPageBeforeExec"
+  },
+  "AutoloadClasses": {
+    "TopLinkHooks": "TopLink.hooks.php"
+  }
+}

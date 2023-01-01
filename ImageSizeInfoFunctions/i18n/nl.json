@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": ["Tim \"Telshin\" Aldridge"]
+	},
+	"imagesizeinfofunctions_description": "Enhance parser with image size info functions",
+	"error_returning_width": "Fout terugkeren breedte",
+	"error_returning_height": "Fout terugkeren hoogte"
+}

@@ -1,0 +1,100 @@
+{{TNT|Extension|templatemode =
+|name          = MikFunctions
+|status        = stable
+|type1         = tag
+|hook1         = LanguageGetMagic
+|username      = Michele.Fella
+|author        = Michele Fella <michele.fella@gmail.com>
+|description   = Defines an additional set of [[m:Help:Parser function|parser function]]s that provide dynamic functionality and cannot be cached.
+|image         =
+|imagesize     =
+|version       = 0.1.5
+|update        = 2016-05-10
+|mediawiki     = 1.26+
+|license       = Apache License
+|download      = {{TNT|GithubDownload|fellam|MikFunctions}}
+|needs-updatephp = No
+|changelog     = 
+|parameters    =
+|tags          = &lt;MikFunctions>
+|rights        =
+|example       =
+|compatibility =
+|bugzilla      = 
+}}
+
+The '''MikFunctions''' extension defines an additional set of [[m:Help:Parser function|parser function]]s that provide dynamic functionality and cannot be cached.
+
+{{Note}} This extension currently works only on *NIX servers
+
+== Install ==
+{{TNT|ExtensionInstall
+|download-link=[https://github.com/fellam/MikFunctions/archive/master.zip Download]
+|custom-steps=* Create a directory named "'''seqences'''" in the extension's directory, e.g.<syntaxhighlight lang="bash">mkdir ../extensions/MikFunctions/sequences;</syntaxhighlight>
+* Grant write permissions to this folder, e.g.
+<syntaxhighlight lang="bash">
+chown apache:apache ../extensions/MikFunctions/sequences; // CentOS?
+chown www-data:www-data ../extensions/MikFunctions/sequences; // Debian
+</syntaxhighlight>
+}}
+
+== Usage ==
+This module defines four functions: <tt>seqnext</tt>.  All of these functions operate in constant time.
+
+=== #seqnext: ===
+The #seqnext function returns the value of next integer int the defined sequence.  The syntax is:
+
+<code><nowiki>{{#</nowiki>seqnext:seqname|valpattern|fillchar}}</code> 
+
+The first time the function is used a sequence with the specified '''seqname '''will be created returning 1. 
+
+Every time the function is called an incremental value of '''seqname '''will be returned.
+
+When '''valpattern''' and '''fillchar''' values are set: if the length of the incremental value of '''seqname '''is smaller than '''valpattern''' string length, the returned value will match '''valpattern''' length replacing with '''fillchar''' the missing values. 
+
+;Example
+<code><nowiki>{{#</nowiki>seqnext:test|9999|X}}</code> will return XX45 when called the fourtyfifth time.
+
+=== #uml: ===
+The #uml function has been removed from this extension as no more compatible with plantuml version 0.6.
+
+A new extension [[Extension:MikUML|MikUML]] has been created to replace this funcion and assure compatibility with PlantUML 0.6.  
+
+=== #parsenl: ===
+Processes and returns the input text duplicating new lines and return carriages (usefull to show user input text exaclty as inserted)
+
+;Example
+<code><nowiki>{{#</nowiki>parsenl:text to parse}}</code>
+
+=== #mikecho: ===
+echo raw text
+
+;Example
+<code><nowiki>{{#</nowiki>mikecho:text to echo}}</code>
+
+=== #ckusergroup: ===
+checks if user belongs to a group (usage example: you can use it with ifexpr within an article or a template in order decide wether or not to perform actions or show content)   
+
+;Example
+<code><nowiki>{{#</nowiki>ifexpr:<nowiki>{{#</nowiki>ckusergroup:administrators}}| ..do something |..else }}</code>
+
+=== #makebutton: ===
+makes html button
+
+;Example
+<code><nowiki>{{#</nowiki>makebutton:<nowiki>{{</nowiki>fullurl:<nowiki>{{</nowiki>FULLPAGENAME}}|action=delete}}|Delete this page|disabled}} --> Buddon disabled </code>
+
+<code><nowiki>{{#</nowiki>makebutton:<nowiki>{{</nowiki>fullurl:<nowiki>{{</nowiki>FULLPAGENAME}}|action=delete}}|Delete this page}} --> Buddon enabled </code>
+
+=== #mikreplace: ===
+replace raw text
+
+;Example
+<code><nowiki>{{#</nowiki>mikreplace:text|search|replacement}}</code>
+
+==See also==
+* [[Extension:MikUML|MikUML]]
+* [[Extension:DynamicFunctions]]
+* [[Extension:VariablesExtension]]
+* [[Extension:GetParam]]
+* [[Extension:PlantUML|PlantUML]]

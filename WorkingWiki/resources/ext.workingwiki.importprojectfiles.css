@@ -1,0 +1,8 @@
+#mw-upload-form td { vertical-align:middle; }
+
+#mw-upload-form .ww-hanging-indent { padding-left: 1em; text-indent: -1em }
+
+#mw-upload-form fieldset.ww-messages { border:none; }
+#mw-upload-form fieldset.ww-messages > legend { display:none; }
+#mw-upload-form fieldset.ww-messages { padding:0px; margin:0px; }
+#mw-upload-form fieldset.ww-messages > p { margin:0px; }

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yfdyh000"
+		]
+	},
+	"mzwi-action": "ZWI 导出",
+	"mzwi-desc": "将当前网页转换为 ZWI 并发送到浏览器"
+}

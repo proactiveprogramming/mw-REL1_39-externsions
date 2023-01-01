@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+        "authors": [
+            "Micha\u00ebl Peeters"
+        ]
+    },
+    "pgnjs-desc": "Display chess games (boards and moves) in PGN format interactively",
+    "pgnjs-i18n-welcome": "Welcome to the localization file of the PgnJS extension.",
+    "prefs-PgnJS": "Chess boards (<pgn> tag)",
+    "prefs-pgnjs-theme": "Theme",
+    "prefs-pgnjs-theme-help": "Theme used for the board",
+    "prefs-pgnjs-pieceStyle": "Piece style",
+    "prefs-pgnjs-pieceStyle-help": "The style for the pieces",
+    "prefs-pgnjs-timerTime": "Play timer time (ms)",
+    "prefs-pgnjs-timerTime-help-": "The waiting time between moves when Play button is pressed"
+}

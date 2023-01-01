@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"katsa-desc": "Fournit des espions à utiliser dans les modules Lua",
+	"katsa-carp-final": "''Carp'' appelé",
+	"katsa-cluck-final": "''Cluck'' appelé",
+	"katsa-croak-final": "''Cloak'' appelé",
+	"katsa-confess-final": "''Confess'' appelé"
+}

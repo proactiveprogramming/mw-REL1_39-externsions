@@ -1,0 +1,16 @@
+
+
+=Version History=
+Differences between PageCrossReference 0.61 and 0.62.
+
+
+==Variables==
+None
+
+
+==Methods==
+buildTitleReplacements - Simplified
+parseLine - Used preg_split to separate page_title targets
+parsePage - Created to short circuit space vs. underscore at a higher level
+sub_string_cmp - Added because php can't distinguish between 0, 1, true, and false.
+

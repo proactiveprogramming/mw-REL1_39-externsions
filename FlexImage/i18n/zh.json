@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jan Boer",
+			"FlexImage"
+		]
+	},
+	"fleximageadmin": 					"FlexImage管理员页面",
+	"fleximageadmin-desc": 				"我的分机有奇怪的东西",
+    "fleximageadmin-summary": 			"在这个特殊的页面上，做这个简单的事情，赚取奇迹",
+	"fleximage_welcome": 				"欢迎使用FlexImage基础扩展",
+	"fleximage_upldefimg_ok": 			"成功检查和/或从分配导入所需的默认FlexImage图像：",
+	"fleximage_upldefimg_nok": 			"<span style='color:red'>无法从分配中检查和/或导入所需的默认FlexImage图像：</span>",
+	"fleximage_upldefimg_noresponce": 	"<span style='color:red'>没有响应从shell命令.</span> 很可能是“'php BIN可执行文件'''<code>$wf_QBox_PHP_Bin</code> 位置设置错误",
+	"myextension": 						"我的分机"
+}

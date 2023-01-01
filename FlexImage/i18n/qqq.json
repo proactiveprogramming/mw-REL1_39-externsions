@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jan Boer",
+			"FlexImage"
+		]
+	},
+	"fleximageadmin": 					"The name of the Administrator page",
+	"fleximageadmin-desc": 				"used in the Administrator page ",
+    "fleximageadmin-summary": 			"used in the Administrator page ",
+	"fleximage_welcome": 				"used in the Administrator page ",
+	"fleximage_upldefimg_ok": 			"Success message when the images are uploaded when opening the Administrator page",
+	"fleximage_upldefimg_nok": 			"Failure  message when the images are uploaded when opening the Administrator page",
+	"fleximage_upldefimg_noresponce": 	"<span style='color:red'>No responce from the shell command.</span> Most likely the '''php BIN executable''' <code>$wf_QBox_PHP_Bin</code> location is set wrong",
+	"myextension": 						"My Extension"
+}

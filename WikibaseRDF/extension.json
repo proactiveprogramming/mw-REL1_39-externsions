@@ -1,0 +1,100 @@
+{
+	"name": "Wikibase RDF",
+	"type": "wikibase",
+
+	"version": "1.1.0",
+
+	"author": [
+		"[https://Professional.Wiki/ Professional.Wiki]",
+		"[https://www.EntropyWins.wtf/mediawiki Jeroen De Dauw]"
+	],
+
+	"license-name": "GPL-2.0-or-later",
+
+	"url": "https://github.com/ProfessionalWiki/WikibaseRDF",
+
+	"descriptionmsg": "wikibase-rdf-description",
+
+	"requires": {
+		"MediaWiki": ">= 1.37.0",
+		"extensions": {
+			"WikibaseRepository": "*"
+		}
+	},
+
+	"MessagesDirs": {
+		"WikibaseRDF": [
+			"i18n"
+		]
+	},
+
+	"AutoloadNamespaces": {
+		"ProfessionalWiki\\WikibaseRDF\\": "src/",
+		"ProfessionalWiki\\WikibaseRDF\\Tests\\": "tests/"
+	},
+
+	"Hooks": {
+		"AlternateEdit": "ProfessionalWiki\\WikibaseRDF\\EntryPoints\\MediaWikiHooks::onAlternateEdit",
+		"ArticleRevisionViewCustom": "ProfessionalWiki\\WikibaseRDF\\EntryPoints\\MediaWikiHooks::onArticleRevisionViewCustom",
+		"ContentHandlerDefaultModelFor": "ProfessionalWiki\\WikibaseRDF\\EntryPoints\\MediaWikiHooks::onContentHandlerDefaultModelFor",
+		"EditFilter": "ProfessionalWiki\\WikibaseRDF\\EntryPoints\\MediaWikiHooks::onEditFilter",
+		"GetPreferences": "ProfessionalWiki\\WikibaseRDF\\EntryPoints\\MediaWikiHooks::onGetPreferences",
+		"MediaWikiServices": "ProfessionalWiki\\WikibaseRDF\\EntryPoints\\MediaWikiHooks::onMediaWikiServices",
+		"OutputPageParserOutput": "ProfessionalWiki\\WikibaseRDF\\EntryPoints\\MediaWikiHooks::onOutputPageParserOutput",
+		"WikibaseRepoEntityTypes": "ProfessionalWiki\\WikibaseRDF\\EntryPoints\\MediaWikiHooks::onWikibaseRepoEntityTypes"
+	},
+
+	"RestRoutes": [
+		{
+			"path": "/wikibase-rdf/v0/mappings/{entity_id}",
+			"method": [ "GET" ],
+			"factory": "ProfessionalWiki\\WikibaseRDF\\WikibaseRdfExtension::getMappingsApiFactory"
+		},
+		{
+			"path": "/wikibase-rdf/v0/mappings/{entity_id}",
+			"method": [ "POST" ],
+			"factory": "ProfessionalWiki\\WikibaseRDF\\WikibaseRdfExtension::saveMappingsApiFactory"
+		},
+		{
+			"path": "/wikibase-rdf/v0/mappings",
+			"method": [ "GET" ],
+			"factory": "ProfessionalWiki\\WikibaseRDF\\WikibaseRdfExtension::getAllMappingsApiFactory"
+		}
+	],
+
+	"config": {
+		"WikibaseRdfPredicates": {
+			"description": "List of allowed predicates.",
+			"value": []
+		}
+	},
+
+	"SpecialPages": {
+		"MappingPredicates": "ProfessionalWiki\\WikibaseRDF\\SpecialMappingPredicates"
+	},
+
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "WikibaseRDF/resources"
+	},
+
+	"ResourceModules": {
+		"ext.wikibase.rdf": {
+			"scripts": [
+				"ext.wikibase.rdf.js"
+			],
+			"styles": [
+				"ext.wikibase.rdf.less"
+			],
+			"messages": [
+				"wikibase-rdf-mappings-toggler",
+				"wikibase-rdf-mappings-action-save",
+				"wikibase-rdf-property-edit-warning",
+				"wikibase-rdf-property-edit-warning-version",
+				"wikibase-rdf-property-edit-warning-acknowledge"
+			]
+		}
+	},
+
+	"manifest_version": 2
+}

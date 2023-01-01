@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"bcmath-desc": "Fornece aritmética de precisão arbitrária para módulos Lua",
+	"bcmath-payload-counter": "$1: $2",
+	"bcmath-check-not-implemented": "A funcionalidade \"$1\" ainda não foi implementada!",
+	"bcmath-check-self-nan": "\"self\" não tem um valor válido",
+	"bcmath-check-operand-nan": "O operador \"$1\" com o operando \"$2\" não possui um valor válido",
+	"bcmath-add-singlesided-infinite": "Adicionado dois valores em que um é infinito",
+	"bcmath-add-opposite-infinites": "Adicionado dois valores infinitos de direção oposta",
+	"bcmath-add-similar-infinites": "Adicionado dois valores infinitos de direção semelhante",
+	"bcmath-sub-singlesided-infinite": "Subtraídos dois valores em que um é infinito",
+	"bcmath-sub-opposite-infinites": "Subtraídos dois valores infinitos de direção semelhante",
+	"bcmath-sub-similar-infinites": "Subtraídos dois valores infinitos de direção semelhante",
+	"bcmath-mul-infinite-and-zero": "Multiplicado infinito e zero",
+	"bcmath-mul-opposite-infinites": "Multiplicou dois valores infinitos de direção oposta",
+	"bcmath-mul-similar-infinites": "Multiplicou dois valores infinitos de direção semelhante",
+	"bcmath-div-divisor-infinite": "Dividido com divisor infinito",
+	"bcmath-div-divisor-zero": "Dividido com divisor zero",
+	"bcmath-div-dividend-infinite": "Dividido com dividendo infinito",
+	"bcmath-mod-divisor-infinite": "Módulo com divisor infinito",
+	"bcmath-mod-divisor-zero": "Módulo com divisor zero",
+	"bcmath-mod-dividend-infinite": "Módulo com dividendo infinito",
+	"bcmath-pow-exponent-zero": "Potência com expoente zero",
+	"bcmath-pow-base-one": "Potência com base um",
+	"bcmath-powmod-divisor-zero": "Potenciação com o divisor zero",
+	"bcmath-powmod-exponent-negative": "Potenciação com o divisor negativo",
+	"bcmath-sqrt-operand-negative": "Raiz quadrada com operando negativo"
+}

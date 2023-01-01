@@ -1,0 +1,53 @@
+================================================
+ MediaWiki Extension: EditWarning
+================================================
+
+Author: Thomas David (nemphis@code-geek.de)
+Version: 0.4
+Date: 2011-10-28
+Licence: GNU GPL 2.0 or later
+
+If the user opens a page for editing which is being edited by another user
+at the same time this extension displays a warning on the editing page.
+
+Notice: It's not recommended to use this extension if anonymous users
+are allowed to edit pages, because it ignores anonymous page edits.
+
+If you want to improve or extend this extension, fork it at github:
+https://github.com/nemphis/mw-editwarning
+
+===== Installation =====
+
+1.) Move the folder "EditWarning" to the "extensions" folder of your
+    MediaWiki installation.
+
+2.) Execute the following SQL statements in your MediaWiki database:
+
+CREATE TABLE IF NOT EXISTS editwarning_locks (
+  user_id int(10) unsigned NOT NULL,
+  user_name varchar(255) NOT NULL,
+  article_id int(10) unsigned NOT NULL,
+  timestamp int(11) unsigned NOT NULL,
+  section int(2) unsigned NOT NULL,
+  KEY user_id (user_id),
+  KEY article_id (article_id)
+);
+
+ALTER TABLE editwarning_locks
+  ADD CONSTRAINT editwarning_locks_ibfk_1 FOREIGN KEY (user_id) REFERENCES user (user_id) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT editwarning_locks_ibfk_2 FOREIGN KEY (article_id) REFERENCES page (page_id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+3.) Add this line to your LocalSettings.php:
+
+require_once("$IP/extensions/EditWarning/EditWarning.php");
+
+4.) Optional: The default timeout is set to 10 minutes. If you want to change
+              this setting, add this line to your LocalSettings.php
+              (Note: The value is the number of minutes):
+
+$EditWarning_Timeout = 5;
+
+Optional: The extension hides everything except the editor area. If you don't
+like this behavior, add this line to your LocalSettings.php:
+
+$EditWarning_OnlyEditor = "false";

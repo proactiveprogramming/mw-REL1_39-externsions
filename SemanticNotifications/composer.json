@@ -1,0 +1,67 @@
+{
+	"name": "mediawiki/semantic-notifications",
+	"type": "mediawiki-extension",
+	"description": "A Semantic Mediawiki extension that notifies about changes to structured data using the Echo(Notifications) extension.",
+	"keywords": [
+		"smw",
+		"semantic mediawiki",
+		"wiki",
+		"mediawiki",
+		"Echo"
+	],
+	"homepage": "https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Notifications",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "mwjames",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "semediawiki-user@lists.sourceforge.net",
+		"issues": "https://github.com/SemanticMediaWiki/SemanticNotifications/issues",
+		"irc": "irc://irc.libera.chat/semantic-mediawiki",
+		"forum": "https://www.semantic-mediawiki.org/wiki/semantic-mediawiki.org_talk:Community_portal",
+		"wiki": "https://www.semantic-mediawiki.org/wiki/",
+		"source": "https://github.com/SemanticMediaWiki/SemanticNotifications"
+	},
+	"require": {
+		"php": ">=5.5.0",
+		"composer/installers": "1.*,>=1.0.1",
+		"mediawiki/semantic-media-wiki": "~3.0"
+	},
+	"require-dev": {
+		"mediawiki/semantic-media-wiki": "@dev",
+		"squizlabs/php_codesniffer": "~2.1",
+		"phpmd/phpmd": "~2.1"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.x-dev"
+		}
+	},
+	"autoload": {
+		"files" : [
+			"SemanticNotifications.php"
+		],
+		"psr-4": {
+			"SMW\\Notifications\\": "src/"
+		}
+	},
+	"config": {
+		"process-timeout": 0
+	},
+	"scripts":{
+		"test": "php ../../tests/phpunit/phpunit.php -c phpunit.xml.dist",
+		"phpunit": "php ../../tests/phpunit/phpunit.php -c phpunit.xml.dist",
+		"cs": [
+			"vendor/bin/phpcs src/* tests/* --standard=phpcs.xml --extensions=php -sp",
+			"vendor/bin/phpmd src/,tests/ text phpmd.xml"
+		],
+		"ci": [
+			"composer validate --no-interaction",
+			"composer phpunit",
+			"composer cs"
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+    "name": "SimpleFooterLink",
+    "author": "AnnAngela",
+    "url": "https://www.mediawiki.org/wiki/Extension:SimpleFooterLink",
+    "description": "This extension provides a simple way to add any link that system administrators want to footer link area.",
+    "version": "0.1.1",
+    "license-name": "GPL-2.0-or-later",
+    "type": "skin",
+    "manifest_version": 2,
+    "requires": {
+        "MediaWiki": ">= 1.35.0"
+    },
+    "AutoloadClasses": {
+        "SimpleFooterLink": "includes/SimpleFooterLink.php"
+    },
+    "Hooks": {
+        "SkinAddFooterLinks": {
+            "handler": "SimpleFooterLink"
+        }
+    },
+    "HookHandlers": {
+        "SimpleFooterLink": {
+            "class": "SimpleFooterLink",
+            "factory": "SimpleFooterLink::factory"
+        }
+    }
+}

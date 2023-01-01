@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"mzwi-action": "Esportación a ZWI",
+	"mzwi-desc": "Convierte la páxina actual a ZWI y la unvia al navegador"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jopparn",
+			"WikiPhoenix"
+		]
+	},
+	"mzwi-action": "ZWI-export",
+	"mzwi-desc": "Konverterar aktuell sida till ZWI och skickar till webbläsaren"
+}

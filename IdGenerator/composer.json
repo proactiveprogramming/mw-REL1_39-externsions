@@ -1,0 +1,45 @@
+{
+	"name": "professional-wiki/id-generator",
+	"type": "mediawiki-extension",
+	"description": "Provides a parser function to generate unique incremental numeric IDs",
+	"keywords": [
+		"MediaWiki",
+		"wiki",
+		"id",
+		"id generator",
+		"idgenerator",
+		"next_number",
+		"nextnumber",
+		"next number",
+		"parser function"
+	],
+	"homepage": "https://github.com/ProfessionalWiki/IdGenerator",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Professional.Wiki",
+			"email": "info@professional.wiki",
+			"homepage": "https://professional.wiki",
+			"role": "Creator"
+		},
+		{
+			"name": "Jeroen De Dauw",
+			"email": "jeroendedauw@gmail.com",
+			"homepage": "https://www.entropywins.wtf",
+			"role": "Creator and lead developer"
+		}
+	],
+	"support": {
+		"source": "https://github.com/ProfessionalWiki/IdGenerator"
+	},
+	"require": {
+		"php": ">=7.1",
+		"composer/installers": "^2|^1.0.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"IdGenerator\\": "src/",
+			"IdGenerator\\Tests\\": "tests/"
+		}
+	}
+}

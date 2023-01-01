@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"doppelganger-desc": "{{doppelganger-gloss}} {{desc|name=Doppelganger|url=https://www.mediawiki.org/wiki/Extension:Doppelganger }}",
+	"doppelganger-carp-final": "{{doppelganger-gloss}} Give a small notice, and continue",
+	"doppelganger-cluck-final": "{{doppelganger-gloss}} Give a stack trace, and continue",
+	"doppelganger-croak-final": "{{doppelganger-gloss}} Give a small notice, and exit",
+	"doppelganger-confess-final": "{{doppelganger-gloss}} Give a stack trace, and exit"
+}

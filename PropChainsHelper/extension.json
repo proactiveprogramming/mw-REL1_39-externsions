@@ -1,0 +1,55 @@
+{
+    "name": "PropChainsHelper",
+    "author": "M. Falda",
+    "license-name": "GPL-2.0+",
+    "version": "0.1.0",
+    "namemsg": "propChainsHelper",
+    "descriptionmsg": "propChainsHelper-desc",
+    "manifest_version": 1,
+    "MessagesDirs": {
+        "PropChainsHelper": [ "i18n" ]
+    },
+    "AutoloadClasses": {
+        "SpecialPropChainsHelper": "specials/SpecialPropChainsHelper.php"
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "modules",
+        "remoteExtPath": "PropChainsHelper/modules"
+    },
+    "ResourceModules": {
+        "ext.propChainsHelper": {
+            "scripts": [
+				"awesomecomplete.js",
+				"atwho.min.js",
+                "ext.propChainsHelper.js"
+            ],
+            "styles": [
+                "awesomplete.css",
+                "atwho.css",
+                "ext.propChainsHelper.css"
+            ],
+            "messages": [
+                "propChainsHelper",
+                "propChainsHelper-desc",
+                "special-propChainsHelper-title",
+                "special-propChainsHelper-intro"
+            ],
+            "dependencies": [
+            ],
+		    "targets": [
+			    "mobile",
+			    "desktop"
+            ]
+        }
+    },
+    "SpecialPages": {
+        "PropChainsHelper": "SpecialPropChainsHelper"
+    },
+    "ExtensionMessagesFiles": {
+        "PropChainsHelperAlias": "PropChainsHelper.alias.php"
+    },
+    "Hooks": {
+        "ResourceLoaderTestModules": [ "PropChainsHelperHooks::onResourceLoaderTestModules" ]
+    },
+    "type": "other"
+}

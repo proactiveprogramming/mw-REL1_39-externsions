@@ -1,0 +1,152 @@
+// datepicker
+.pfPickerWrapper {
+	display: inline-block;
+}
+.pfDatePicker.oo-ui-textInputWidget {
+	width:200px;
+}
+
+.oo-ui-checkboxInputWidget + t {
+	margin-left:8px;
+}
+
+// ugly hack: without it, checkboxes are only partly clickable
+.oo-ui-checkboxInputWidget {
+	width: 1.42857143em;
+}
+#maincontentwrapper #pfForm select, 
+#maincontentwrapper #pfForm input[type="checkbox"] {
+	width: 100% !important;
+}
+
+.semorg-row-name {
+	margin-bottom:10px;
+}
+.semorg-row-name:empty {
+	margin-bottom:0;
+}
+.semorg-row + .semorg-row {
+	margin-top:30px;
+
+	&.semorg-row-hidden {
+		margin-top:0;
+	}
+}
+
+.multipleTemplateWrapper {
+	.semorg-row-name {
+		margin-bottom:0px;
+	}
+	.semorg-row + .semorg-row {
+		margin-top:10px;
+
+		&.semorg-row-hidden {
+			margin-top:0;
+		}
+	}
+
+	.semorg-row {
+		@extend .row;
+		@extend .no-gutters;
+	}
+	.semorg-row-name {
+		@extend .col-md-3;
+		padding-left:0;
+		padding-right:0;
+	}
+	.semorg-row-field {
+		@extend .col-md-12;
+		padding-left:0;
+		padding-right:0;
+	}
+	.semorg-row-name + .semorg-row-field {
+		@extend .col-md-9;
+		padding-left:0;
+		padding-right:0;
+	}
+}
+.multipleTemplateInstance {
+	background-color:$light !important;
+}
+
+#maincontentwrapper #pfForm .semorg-form-single-field {
+	> span {
+		> .createboxInput.semorg-field:not([size]),
+		> .createboxInput.semorg-field[size="35"] {
+			width:95% !important;
+		}
+	}
+
+	> .comboboxSpan,
+	> .inputSpan {
+		> .select2-container { // obsolet mit oo-ui
+			width:95% !important;
+
+			> .selection,
+			> .selection .select2-selection {
+				width:100%;
+			}
+		}
+
+		> .oo-ui-comboBoxInputWidget {
+			//width:95% !important;
+		}
+	}
+}
+
+#maincontentwrapper #pfForm .semorg-form-fields {
+	> span {
+		> textarea.createboxInput.semorg-field {
+			width:95% !important;
+		}
+	        > span > select.createboxInput.semorg-field {
+			width:95% !important;
+		}
+	}
+}
+
+#pfForm .semorg-form {
+	.createboxInput, 
+	.mandatoryField, 
+	textarea,
+	.mw-widget-dateInputWidget-handle {
+		border-radius: $input-border-radius;
+		border-color: $input-border-color;
+	}
+
+	input.createboxInput,
+	select.createboxInput,
+	input.mandatoryField,
+	.mw-widget-dateInputWidget-handle {
+		height: calc(1.5em + .75rem + 2px);
+	}
+	
+	.oo-ui-textInputWidget {
+		//max-width:100%;
+	}
+
+	.oo-ui-comboBoxInputWidget-field,
+	.mw-widget-dateInputWidget-handle {
+		margin-top:-3px;
+	}
+}
+
+.semorg-restricted {
+	color: $primary;
+
+	input,
+	textarea,
+        select {
+		color: $primary !important;
+		border-color: $primary !important;
+		background-color: theme-color-level( primary, -12 ) !important;
+	}
+}
+
+.semorg-row + .semorg-form-section {
+  margin-top: 50px;
+}
+
+.semorg-form-section {
+  font-weight: 700;
+}

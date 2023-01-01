@@ -1,0 +1,69 @@
+{
+	"name": "mediawiki/semantic-meta-tags",
+	"type": "mediawiki-extension",
+	"description": "An extension to Semantic Mediawiki to add meta elements with content generated from semantic annotations.",
+	"keywords": [
+		"smw",
+		"semantic mediawiki",
+		"wiki",
+		"mediawiki",
+		"meta tags",
+		"meta elements"
+	],
+	"homepage": "https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Meta_Tags",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "James Hong Kong",
+			"homepage": "https://www.semantic-mediawiki.org/wiki/User:MWJames",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "semediawiki-user@lists.sourceforge.net",
+		"issues": "https://github.com/SemanticMediaWiki/SemanticMetaTags/issues",
+		"forum": "https://www.semantic-mediawiki.org/wiki/semantic-mediawiki.org_talk:Community_portal",
+		"wiki": "https://www.semantic-mediawiki.org/wiki/",
+		"source": "https://github.com/SemanticMediaWiki/SemanticMetaTags"
+	},
+	"require": {
+		"php": ">=7.1",
+		"composer/installers": "1.*,>=1.0.1",
+		"mediawiki/semantic-media-wiki": "~3.1|~4.0"
+	},
+	"require-dev": {
+		"mediawiki/semantic-media-wiki": "@dev",
+		"squizlabs/php_codesniffer": "~2.1",
+		"phpmd/phpmd": "~2.1"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "3.x-dev"
+		}
+	},
+	"autoload": {
+		"files" : [
+			"DefaultSettings.php",
+			"SemanticMetaTags.php"
+		],
+		"psr-4": {
+			"SMT\\": "src/"
+		}
+	},
+	"config": {
+		"process-timeout": 0
+	},
+	"scripts":{
+		"test": "php ../../tests/phpunit/phpunit.php -c phpunit.xml.dist",
+		"phpunit": "php ../../tests/phpunit/phpunit.php -c phpunit.xml.dist",
+		"cs": [
+			"vendor/bin/phpcs src/* tests/* --standard=phpcs.xml --extensions=php -sp",
+			"vendor/bin/phpmd src/,tests/ text phpmd.xml"
+		],
+		"ci": [
+			"composer validate --no-interaction",
+			"composer phpunit",
+			"composer cs"
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"01miki10",
+			"Nedergard"
+		]
+	},
+	"semanticsignup": "Semanttinen kirjautuminen",
+	"ses-desc": "Mahdollistaa semanttisten tietojen lisäämisen käyttäjäsivulle kirjauduttaessa",
+	"ses-nousername": "Käyttäjänimeä ei ole määritetty.",
+	"ses-nopwdmatch": "Salasana ja salasanan vahvistus eivät täsmää.",
+	"ses-norealname": "Oikea nimi on pakollinen, mutta sitä ei ole määritetty.",
+	"ses-userexists": "Käyttäjä on jo olemassa.",
+	"ses-emailfailed": "Vahvistussähköpostin lähetys epäonnistui.",
+	"ses-createforbidden": "Nykyinen käyttäjä ei saa luoda käyttäjätunnuksia.",
+	"ses-throttlehit": "Tästä IP-osoitteesta luotujen uusien käyttäjätunnusten päiväkohtainen enimmäismäärä on ylitetty."
+}

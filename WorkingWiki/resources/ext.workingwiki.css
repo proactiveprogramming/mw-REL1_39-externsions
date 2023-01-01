@@ -1,0 +1,67 @@
+/* WorkingWiki extension for MediaWiki 1.19 and later
+ * Copyright (C) 2010 Lee Worden <worden.lee@gmail.com>
+ * http://lalashan.mcmaster.ca/theobio/projects/index.php/WorkingWiki
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+
+/* workingwiki-general.css */
+
+/* This is used in multiple pages to make the make,sync,remove buttons
+   line up side-to-side instead of top-to-bottom
+   TODO: move to more specific resource's css*/
+.ww-inline-form { margin:0; padding:0; display:inline; }
+
+/* fix up looks of WW messages in popup dialogs */
+.ui-dialog .ww-messages
+  { border:1px solid #2F6FAB !important; 
+    margin:1em; 
+    padding:0 1em 1em !important; }
+.ui-dialog .ww-messages a { color:#0645AD; }
+
+/* speed up edit form buttons by using embedded data images */
+#ww-edit-button-source-file { /* @embed */ background:url(images/button-sourcefile.png) no-repeat; } 
+#ww-edit-button-project-file { /* @embed */ background:url(images/button-projectfile.png) no-repeat; } 
+#ww-edit-button-tab { /* @embed */ background:url(images/button-tab.png) no-repeat; } 
+
+/* toggle-collapsible source file listings */
+fieldset.ww-collapsible legend {
+	padding-left: 16px;
+	margin-left: 3px;
+	min-height: 16px;
+	/* @embed */
+	background-image: url(images/arrow-expanded.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+fieldset.ww-collapsible.ww-collapsed legend {
+	/* @embed */
+	background-image: url(images/arrow-collapsed-ltr.png);
+}
+
+.ww-collapsed .ww-collapsible-content {
+	display:none;
+}
+
+/* iframe for project files that are complete HTML pages */
+iframe.ww-project-file-iframe {
+	width: 100%;
+	height: 1000px; /* height will get fixed after loading */
+	border: 0;
+	frameborder: 0;
+	overflow: hidden;
+}

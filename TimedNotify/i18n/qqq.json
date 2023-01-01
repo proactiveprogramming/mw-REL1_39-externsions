@@ -1,0 +1,10 @@
+{
+  "@metadata": {
+    "authors": [
+      "Marijn van Wezel"
+    ]
+  },
+  "timednotify-desc": "{{desc|name=TimedNotify|url=https://www.mediawiki.org/wiki/Extension:TimedNotify}}",
+  "echo-pref-tooltip-timednotify-time-based-notification": "Tooltip shown on Special:Preferences for the category 'timenotify-time-based-notification'.",
+  "echo-category-title-timednotify-time-based-notification": "Name of the category 'timednotify-time-based-notification'."
+}

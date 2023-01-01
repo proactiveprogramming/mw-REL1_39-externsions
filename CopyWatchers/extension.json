@@ -1,0 +1,21 @@
+{
+	"name": "Copy Watchers",
+	"version": "0.10.0",
+	"author": "James Montalvo",
+	"url": "http://www.mediawiki.org/wiki/Extension:CopyWatchers",
+	"descriptionmsg": "copywatchers-desc",
+	"type": "specialpage",
+	"ExtensionMessagesFiles": {
+		"CopyWatchersMagic": "Magic.php"
+	},
+	"AutoloadClasses": {
+		"CopyWatchers\\Setup": "includes/Setup.php",
+		"CopyWatchers\\CopyWatchers": "includes/CopyWatchers.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"CopyWatchers\\Setup::setupParserFunctions"
+		]
+	},
+	"manifest_version": 1
+}

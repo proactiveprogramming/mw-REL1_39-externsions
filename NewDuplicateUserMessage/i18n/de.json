@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Kghbln",
+            "Raimond Spekking"
+        ]
+    },
+    "newduplicateusermessage-description": "Ermöglicht das Hinzufügen von Willkommensnachrichten auf die Benutzerdiskussionsseite neu angemeldeter Benutzer",
+    "newduplicateusermessage-edit-summary": "Begrüßung eines neuen Benutzers mit einer [[{{int:newduplicateusermessage-template}}|Willkommensnachricht]] auf dessen Diskussionsseite"
+}

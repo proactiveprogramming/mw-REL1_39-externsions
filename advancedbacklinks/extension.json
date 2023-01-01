@@ -1,0 +1,100 @@
+{
+	"name": "AdvancedBacklinks",
+	"author": "Ostrzyciel",
+	"license-name": "GPL-2.0-or-later",
+	"version": "2.9.2",
+	"requires": {
+		"MediaWiki": ">= 1.37.0"
+	},
+	"namemsg": "advancedBacklinks",
+	"descriptionmsg": "advancedBacklinks-desc",
+	"url": "https://www.mediawiki.org/wiki/Extension:AdvancedBacklinks",
+	"manifest_version": 1,
+	"MessagesDirs": {
+		"AdvancedBacklinks": [ "i18n" ]
+	},
+	"AutoloadClasses": {
+		"AdvancedBacklinksUtils": "includes/AdvancedBacklinksUtils.php",
+		"AdvancedLink": "includes/AdvancedLink/AdvancedLink.php",
+		"AdvancedWikilink": "includes/AdvancedLink/AdvancedWikilink.php",
+		"AdvancedImagelink": "includes/AdvancedLink/AdvancedImagelink.php",
+		"AdvancedLinkSet": "includes/AdvancedLinkSet.php",
+		"AdvancedBacklinksHooks": "includes/AdvancedBacklinksHooks.php",
+		"PPFrameHooks": "includes/PPFrameHooks.php",
+		"AbAfHooks": "includes/AbAfHooks.php",
+		"SpecialAdvancedBacklinks": "includes/specials/SpecialAdvancedBacklinks.php",
+		"SpecialWikitextWantedPages": "includes/specials/SpecialWikitextWantedPages.php",
+		"SpecialWikitextLonelyPages": "includes/specials/SpecialWikitextLonelyPages.php",
+		"SpecialWikitextContentLonelyPages": "includes/specials/SpecialWikitextContentLonelyPages.php",
+		"SpecialMostWikitextLinked": "includes/specials/SpecialMostWikitextLinked.php",
+		"SpecialMostWikitextLinkedFiles": "includes/specials/SpecialMostWikitextLinkedFiles.php",
+		"SpecialUndesiredRedlinks": "includes/specials/SpecialUndesiredRedlinks.php",
+		"ApiQueryAdvancedBacklinksProp": "includes/api/ApiQueryAdvancedBacklinksProp.php",
+		"ApiQueryAbLinkStatsProp": "includes/api/ApiQueryAbLinkStatsProp.php"
+	},
+	"config": {
+		"AdvancedBacklinksTrackExtlinks": true
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "AdvancedBacklinksHooks::onLoadExtensionSchemaUpdates",
+		"LinksUpdate": "AdvancedBacklinksHooks::onLinksUpdate",
+		"SidebarBeforeOutput": "AdvancedBacklinksHooks::onSidebarBeforeOutput",
+		"GetDoubleUnderscoreIDs": "AdvancedBacklinksHooks::onGetDoubleUnderscoreIDs",
+		"ArticleDeleteComplete": "AdvancedBacklinksHooks::onArticleDeleteComplete",
+		"LonelyPagesQuery": "AdvancedBacklinksHooks::onLonelyPagesQuery",
+		"wgQueryPages": "AdvancedBacklinksHooks::onwgQueryPages",
+		"GetPreferences": "AdvancedBacklinksHooks::onGetPreferences",
+		"PPFrameBeforeExpansion": "PPFrameHooks::onPPFrameBeforeExpansion",
+		"PPFrameAfterExpansion": "PPFrameHooks::onPPFrameAfterExpansion",
+		"ParserClearState": "PPFrameHooks::onParserClearState",
+		"InternalParseBeforeLinks": "PPFrameHooks::onInternalParseBeforeLinks",
+
+		"AbuseFilter-builder": "AbAfHooks::onAbuseFilterBuilder",
+		"AbuseFilter-generateTitleVars": "AbAfHooks::onAbuseFilterGenerateTitleVars",
+		"AbuseFilter-computeVariable": "AbAfHooks::onAbuseFilterComputeVariable"
+	},
+	"SpecialPages": {
+		"AdvancedBacklinks": "SpecialAdvancedBacklinks",
+		"WikitextWantedPages": "SpecialWikitextWantedPages",
+		"WikitextLonelyPages": "SpecialWikitextLonelyPages",
+		"WikitextContentLonelyPages": "SpecialWikitextContentLonelyPages",
+		"MostWikitextLinked": "SpecialMostWikitextLinked",
+		"MostWikitextLinkedFiles": "SpecialMostWikitextLinkedFiles",
+		"UndesiredRedlinks": "SpecialUndesiredRedlinks"
+	},
+	"APIPropModules": {
+		"ab_linkshere": "ApiQueryAdvancedBacklinksProp",
+		"ab_fileusage": "ApiQueryAdvancedBacklinksProp",
+		"ab_linkstats": "ApiQueryAbLinkStatsProp"
+	},
+	"DefaultUserOptions": {
+		"ab-change-link-to-whatlinkshere": true
+	},
+	"ExtensionMessagesFiles": {
+		"AdvancedBacklinksAliases": "AdvancedBacklinks.alias.php",
+		"AdvancedBacklinksMagic": "AdvancedBacklinks.magic.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "AdvancedBacklinks/modules"
+	},
+	"ResourceModules": {
+		"ext.ab.specialAb": {
+			"scripts": [
+				"ext.ab.specialAb.js"
+			],
+			"styles": [
+				"ext.ab.specialAb.less"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"mediawiki.widgets"
+			],
+			"targets": [
+				"desktop"
+			]
+		}
+	},
+	"type": "other"
+}

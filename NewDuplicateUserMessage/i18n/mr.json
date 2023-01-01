@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Kaustubh",
+            "V.narsikar"
+        ]
+    },
+    "newduplicateusermessage-description": "नवीन नोंदणी केलेल्या सदस्यांच्या पानावर एक संदेश टाकते.",
+    "newduplicateusermessage-edit-summary": " नविन सदस्याच्या चर्चापानावर [[{{int:newduplicateusermessage-template}}|स्वागत संदेश]] टाकला"
+}

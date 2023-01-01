@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Matthew Trescott"
+        ]
+    },
+    "iewarn-name": "IEWarn",
+    "iewarn-desc": "Adds a warning when a user is using Internet Explorer or Microsoft Edge.",
+    "iewarn-ie-title": "Unsupported  Web Browser",
+    "iewarn-ie-message": "Unfortunately, $1 does not display this website properly. Please try a different, modern browser such as Google Chrome or Mozilla Firefox."
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jonas Gröger <jonas.groeger@noris.de>"
+		]
+	},
+	"jsoner-desc": "{{desc|name=Jsoner|url=https://github.com/noris-network/jsoner}}",
+	"jsoner-extension-not-installed": "This message will be shown when PHP cannot access an extension with name $1."
+}

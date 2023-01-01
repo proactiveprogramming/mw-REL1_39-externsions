@@ -1,0 +1,124 @@
+@import "skins/shared/mixins/arrow";
+@import "skins/shared/mixins/clearfix";
+@import "skins/shared/color";
+
+.page-listings {
+	@include clearfix;
+	clear: both;
+	ul {
+		list-style: none;
+		margin: 0;
+	}
+	.page-list-pagination {
+		display: none;
+		float: right;
+		font-size: 12px;
+		.arrow {
+			cursor: pointer;
+			position: relative;
+			top: -1px;
+			&.disabled {
+				opacity: .5;
+			}
+			&.left {
+				@include arrow(6px, $color-buttons, 'left');
+				margin-right: 8px;
+			}
+			&.right {
+				@include arrow(6px, $color-buttons, 'right');
+				margin-left: 8px;
+			}
+		}
+	}
+	.page-listing {
+		@include clearfix;
+		margin: 15px 0 0;
+	}
+	.page-list-content {
+		position: relative;
+	}
+	.page-listing-image {
+		img {
+			&.no-image {
+				background-color: #f0f0f0;
+				background-image: url(/extensions/wikia/VideoHandlers/images/Brackets.png);	/* inline */
+				background-position: 70px 30px;
+				background-repeat: no-repeat;
+				height: 100px;
+				width: 200px;
+			}
+		}
+	}
+	.page-listing-snippet {
+		margin: 0;
+	}
+	.page-listing-title {
+		margin: 5px 0 0;
+	}
+	.see-more-link {
+		float: right;
+	}
+}
+
+
+.more-info-wrapper {
+	display: none;
+}
+
+.WikiaArticle .video-page-caption {
+	@include clearfix;
+	border-bottom: solid 1px $color-headline-border;
+	margin: 10px 0;
+	padding-bottom: 15px;
+
+	p {
+		line-height: 20px;
+		margin: 0;
+	}
+	.video-provider {
+		float: left;
+	}
+	.video-views {
+		float: right;
+		font-size: 18px;
+		margin: 0;
+	}
+	span.expire-date {
+		&:before {
+			content: '•';
+			margin: 0 5px;
+		}
+	}
+	.regional-restriction {
+		clear: both;
+		font-size: 12px;
+		color: $color-alternate-text;
+		line-height: 18px;
+		width: 460px;
+	}
+	.inner {
+		width: 670px;
+	}
+}
+
+table.mw_metadata {
+	margin: 10px 0;
+
+	&.collapsed tr.collapsable {
+		display: table-row;
+	}
+	.mw-metadata-show-hide-extended {
+		display: none;
+	}
+}
+
+.WikiaArticle .mw-upload-links-box {
+	margin-left: 0;
+	margin-top: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ul.tabs {
+	margin: 20px 0;
+}

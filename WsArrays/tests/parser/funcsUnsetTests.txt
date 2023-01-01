@@ -1,0 +1,91 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarrayunset
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayUnset parser function
+
+!! test
+Unset array
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayprint:example}}
+{{#complexarrayunset:example[1]}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+<p><br />
+</p>
+<ul><li>a</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Unset dangling array
+!! wikitext
+{{#complexarraydefine:example|["a", ["b"]]}}
+{{#complexarrayprint:example}}
+{{#complexarrayunset:example[1][0]}}
+{{#complexarrayprint:example}}
+!! html
+<ul><li>a</li>
+<li>1
+<ul><li>b</li></ul></li></ul>
+<p><br />
+0: a
+</p>
+!! end
+
+!! test
+Unset multidimensional list
+!! wikitext
+{{#complexarraydefine:example|[["a"], ["b"], ["c"]]}}
+{{#complexarrayprint:example}}
+{{#complexarrayunset:example[0]}}
+{{#complexarrayprint:example}}
+!!html
+<ul><li>0
+<ul><li>a</li></ul></li>
+<li>1
+<ul><li>b</li></ul></li>
+<li>2
+<ul><li>c</li></ul></li></ul>
+<p><br />
+</p>
+<ul><li>1
+<ul><li>b</li></ul></li>
+<li>2
+<ul><li>c</li></ul></li></ul>
+
+!! end
+
+!! test
+Unset non-existent subarray
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayunset:example[999]}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Unset non-existent array
+!! wikitext
+{{#complexarrayunset:foobzr[999]}}
+{{#complexarrayprint:foobzr}}
+!! html
+<p><br />
+</p>
+!! end

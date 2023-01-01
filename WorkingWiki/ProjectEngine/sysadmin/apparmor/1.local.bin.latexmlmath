@@ -1,0 +1,15 @@
+# Last Modified: Wed Dec  2 01:44:01 2009
+#include <tunables/global>
+/1/local/bin/latexmlmath {
+  #include <abstractions/latexml>
+  #include <abstractions/workingwiki-util>
+
+  /1/local/share/texmf/ls-R r,
+  /usr/bin/dvips ixr,
+  /usr/bin/pdftex ixr,
+  /usr/share/texmf-var/fonts/** r,
+  /usr/share/texmf-var/ls-R r,
+  /usr/share/texmf-var/web2c/latex.fmt r,
+  /usr/share/texmf/** r,
+  /var/lib/texmf/* r,
+}

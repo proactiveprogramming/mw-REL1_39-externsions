@@ -1,0 +1,47 @@
+These is the install file for the PushAll extension.
+
+Extension page on mediawiki.org: https://www.mediawiki.org/wiki/Extension:PushAll
+Latest version of the install file: https://github.com/BorderCloud/PushAll
+
+== Installation ==
+
+Once you have downloaded the code, place the ''PushAll'' directory within your MediaWiki 'extensions' directory.
+Then add the following code to your [[Manual:LocalSettings.php|LocalSettings.php]] file:
+
+# PushAll
+wfLoadExtension( 'PushAll' );
+
+== Configuration to push the pages attached by their namespaces ==
+
+Configuration of push is done by adding simple PHP statements to your [[Manual:LocalSettings.php|LocalSettings.php]]
+file. These statements need to be placed AFTER the inclusion of PushAll. The options are listed below and their default
+is set in the [https://github.com/BorderCloud/PushAll/blob/master/extension.json push
+settings file]. You should NOT modify the settings file, but can have a look at it to get an idea of how to use the
+ettings, in case the below descriptions do not suffice.
+
+You can push in same time other pages attached by their namespaces and the same title.
+Example:
+<source lang="php">
+$egPushAllAttachedNamespaces[] = "Data";
+$egPushAllAttachedNamespaces[] = "Discussion";
+</source>
+
+=== PushAll targets ===
+
+Any users can add push targets directly in their preferences, tab "Targeted wikis".
+
+By default there are no targets, which will cause the push tab to not be shown anywhere until you add at least one target.
+
+=== Tab display ===
+
+When using vector like skins, you can choose to have the push tab displayed on the page itself, or in the action menu
+you can open by clicking the down arrow next to the visible tabs. For this, an user need to set the option in the preferences
+to either true or false. The default is false.
+
+=== Authentication ===
+
+In the preferences, you can declare a targeted wiki with a bot (a botname and a key) created in this remote wiki.
+
+=== Pushing files ===
+
+You can choose to push the files used in the page you are pushing or in the special page 'Push'.

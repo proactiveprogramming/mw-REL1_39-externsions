@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog"
+		]
+	},
+	"pageviewinfoga-desc": "Реалізує службу PageView для Google Analytics."
+}

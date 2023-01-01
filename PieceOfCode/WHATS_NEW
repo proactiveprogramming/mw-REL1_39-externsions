@@ -1,0 +1,18 @@
+Version 0.2:
+	* Highlight Specified lines.
+	* Adding multirange of lines support.
+		** Adding param 'separator' in order to separate ranges of lines.
+	* Adding POCStats: a new class to keep statistics.
+		** Adding configuration to manage this new feature.
+	* Adding class POCFlags in order to manage PieceOfCode flags.
+	* Adding class POCVersionManager in order to manage version upgrades of PieceOfCode.
+	* Almost all Specia:PieceOfCode works with wiki text.
+	* Pre-recursive parse inside tags.
+	* Triming list of Stored Codes in Special:PieceOfCode
+		** Adding a new sub-page to show them all.
+	* Adding POCHistoryManager
+		** Adding history for codes upload and codes removing.
+	* MW1.22 compatibility fixes.
+
+Version 0.1:
+	* Extension presentation.

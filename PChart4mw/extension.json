@@ -1,0 +1,52 @@
+{
+	"name": "pChart4mw",
+	"version": "2.0",
+	"author": "Robert Horlings, Gérard de Smaele, Reddo",
+	"url": "http://www.mediawiki.org/wiki/Extension:Pchart4mw",
+	"description": "Provides tags for creating different types of pChart graphs: bar, line, pie, radar, scatter and bubble charts.",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ExtensionMessagesFiles": {
+		"pChart4mwMagic": "pChart4mw.i18n.magic.php"
+	},
+	"AutoloadClasses": {
+		"pChart": "pChart/pChart.class",
+		"pChart4mwLoad": "pChart4mw.php",
+		"pChart4mw": "pChart4mw.class.php",
+		"pChart4mwBars": "pChart4mw.bars.class.php",
+		"pChart4mwLines": "pChart4mw.lines.class.php",
+		"pChart4mwRadar": "pChart4mw.radar.class.php",
+		"pChart4mwPie": "pChart4mw.pie.class.php",
+		"pChart4mwScatter": "pChart4mw.scatter.class.php",
+		"pChart4mwBubble": "pChart4mw.bubble.class.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "pChart4mwLoad::wfPChart4mwSetup"
+	},
+	"config": {
+		"PChart4mwImageFormat": {
+			"value": "png"
+		},
+		"PChart4mwCacheEnabled": {
+			"value": true
+		},
+		"PChart4mwCacheDir": {
+			"value": "pChart4mw"
+		},
+		"PChart4mwWebservice": {
+			"value": ""
+		},
+		"PChart4mwPChartPath": {
+			"value": "extensions/pChart4mw/pChart"
+		},
+		"PChart4mwFontPath": {
+			"value": "extensions/pChart4mw/fonts"
+		},
+		"PChart4mwDefaultColorSchemeDir": {
+			"value": "extensions/pChart4mw/colorschemes"
+		}
+	},
+	"manifest_version": 2
+}

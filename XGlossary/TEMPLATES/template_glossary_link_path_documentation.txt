@@ -1,0 +1,11 @@
+=Description=
+This template is used by [[Template:Glossary/Link]] to get the first part of the “wiki-url” of the link.
+
+#If the Glossary/Link is declared inside the “Doc:Glossary” page, it returns nothing (internal link).
+#If the Glossary/Link is declared inside the “Doc:FR/Glossary” or “Doc:ES/Glossary” page, it returns nothing (internal link).
+#If the Glossary/Link is declared inside the “Sandbox:Manual/Test” page, it returns “Doc:Glossary”.
+#If the Glossary/Link is declared inside the “Doc:IT/Manual/3D Interaction” page, it returns “Doc:IT/Glossary”.
+#If the Glossary/Link is declared inside the “Template:Glossary” page, it returns “Doc:Glossary”.
+
+For more info on the Glossary system, see the Glossary doc.
+

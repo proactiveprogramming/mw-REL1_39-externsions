@@ -1,0 +1,155 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraypush
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayPush parser function
+
+!! test
+Push value to one-dimensional list
+!! wikitext
+{{#complexarraydefine:example|a,b}}
+{{#complexarraypush:example|c}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Push array to one-dimensional list
+!! wikitext
+{{#complexarraydefine:example|a,b}}
+{{#complexarraypush:example|c,d}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>2
+<ul><li>c</li>
+<li>d</li></ul></li></ul>
+
+!! end
+
+!! test
+Push value to two-dimensional list in root list
+!! wikitext
+{{#complexarraydefine:example|[["a"],["b"]]}}
+{{#complexarraypush:example|c}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a</li></ul></li>
+<li>1
+<ul><li>b</li></ul></li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Push value to two-dimensional list in sub list
+!! wikitext
+{{#complexarraydefine:example|[["a"],["b"]]}}
+{{#complexarraypush:example[0]|c}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a</li>
+<li>c</li></ul></li>
+<li>1
+<ul><li>b</li></ul></li></ul>
+
+!! end
+
+!! test
+Push array to two-dimensional list in root list
+!! wikitext
+{{#complexarraydefine:example|[["a"],["b"]]}}
+{{#complexarraypush:example|c,d}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a</li></ul></li>
+<li>1
+<ul><li>b</li></ul></li>
+<li>2
+<ul><li>c</li>
+<li>d</li></ul></li></ul>
+
+!! end
+
+!! test
+Push array to two-dimensional list in sub list
+!! wikitext
+{{#complexarraydefine:example|[["a"],["b"]]}}
+{{#complexarraypush:example[0]|c,d}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a</li>
+<li>1
+<ul><li>c</li>
+<li>d</li></ul></li></ul></li>
+<li>1
+<ul><li>b</li></ul></li></ul>
+
+!! end
+
+!! test
+Push value with noparse
+!! wikitext
+{{#complexarraydefine:example|a,b}}
+{{#complexarraypush:example|{{!}}|NO_IGNORE,NO_ARGS,NO_TEMPLATES,NO_TAGS}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>{{!}}</li></ul>
+
+!! end
+
+!! test
+Push subarray with noparse
+!! wikitext
+{{#complexarraydefine:example|a,b}}
+{{#complexarraypush:example|{{!}},{{!}}|NO_IGNORE,NO_ARGS,NO_TEMPLATES,NO_TAGS}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>2
+<ul><li>{{!}}</li>
+<li>{{!}}</li></ul></li></ul>
+
+!! end
+
+!! test
+Push to non-existent subarray
+!! wikitext
+{{#complexarraypush:foobar|a}}
+{{#complexarrayprint:foobar}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li></ul>

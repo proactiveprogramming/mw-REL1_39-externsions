@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Li-sung",
+            "Matěj Grabovský"
+        ]
+    },
+    "newduplicateusermessage-description": "Přidává zprávu na diskusní stránky nově vytvořených uživatelů",
+    "newduplicateusermessage-edit-summary": "Přidání [[{{int:newduplicateusermessage-template}}|uvítací zprávy]] na diskusní stránku nového uživatele"
+}

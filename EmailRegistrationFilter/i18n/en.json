@@ -1,0 +1,4 @@
+{
+	"emailregistrationfilter-desc": "Allows or denies account registration according to the submitted email address",
+	"emailregistrationfilter-default-error-msg": "Email filter enforced"
+}

@@ -1,0 +1,71 @@
+// Oasis specific printable CSS
+
+//fixes firefox printing cutoff
+* {
+	overflow: visible !important;
+}
+
+html,
+#WikiaPageBackground {
+	background: #fff;
+}
+
+.noprint,
+.wikia-ad,
+#globalNavigation,
+.wds-global-navigation-wrapper,
+.wds-community-header,
+.wds-global-footer,
+.page-header__contribution,
+.page-header__categories,
+#WikiaArticleFooter,
+#WikiaRail,
+#WikiaBar,
+#WikiaFooter,
+#WikiaSearch,
+#WikiaTopAds {
+	display: none !important;
+}
+
+.WikiaArticle .printfooter {
+	display: block !important;
+}
+
+.WikiaPageContentWrapper {
+	display: block !important;
+}
+
+#WikiaPage {
+	background: #fff;
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: auto;
+}
+
+#WikiaMainContent {
+	float: none;
+	width: auto !important;
+}
+
+#WikiaArticle {
+	min-height: 1px !important;
+	height: auto !important;
+	overflow: visible !important;
+
+	.thumbinner div {
+		background: #fff;
+		border: none;
+	}
+	p {
+		line-height: 1.8em;
+		margin: 0.4em 0 0.5em !important;
+	}
+	p + p {
+		margin: 1em 0 !important;
+	}
+}
+
+#articleCategories {
+	background: #fff;
+}

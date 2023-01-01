@@ -1,0 +1,21 @@
+{
+	"name": "MinervaMenu",
+	"author": "Martin Pham",
+	"url": "https://mph.am",
+	"description": "Add menu items to MinervaNeue skin",
+	"version": "0.1",
+	"license-name": "",
+	"type": "validextensionclass",
+	"manifest_version": 1,
+    "AutoloadClasses": {
+		"MinervaMenuHooks": "includes/MinervaMenuHooks.php"
+	},
+	"HookHandlers": {
+		"MinervaMenuHooks": {
+			"class": "MinervaMenuHooks"
+		}
+	},
+    "Hooks": {
+        "MobileMenu": "MinervaMenuHooks"
+    }
+}

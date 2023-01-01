@@ -1,0 +1,77 @@
+{
+	"name": "Piwigo",
+	"author": [
+		"Bertrand Gorge (Neayi)"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Piwigo",
+	"descriptionmsg": "Piwigo-desc",
+	"license-name": "MIT License",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Piwigo\\": "src/"
+	},
+	"config": {
+		"PiwigoURL": {
+			"description": "The URL of the Piwigo setup to take images from",
+			"value": null
+		},
+		"PiwigoGalleryLayout": {
+			"description": "One of the four: fluid (default), grid, thumbnails, clean",
+			"value": "fluid"
+		}
+	},
+	"HookHandlers": {
+		"PiwigoHooks": {
+			"class": "MediaWiki\\Extension\\Piwigo\\Hooks"
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "PiwigoHooks"
+	},
+	"APIModules": {
+		"piwigosearch": "MediaWiki\\Extension\\Piwigo\\PiwigoSearch"
+	},
+	"MessagesDirs": {
+		"Piwigo": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"PiwigoMagic": "Piwigo.i18n.magic.php"
+	},
+	"ResourceModules": {
+		"ext.piwigo": {
+			"localBasePath": "resources/ext.piwigo",
+			"remoteExtPath": "Piwigo/resources/ext.piwigo",
+			"dependencies": [],
+			"scripts": ["init.js"],
+			"styles": ["piwigo.css"],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"messages": []
+		},
+
+		"ext.baguetteBox": {
+			"styles": ["baguetteBox.min.css"],
+			"scripts": ["baguetteBox.min.js"],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"localBasePath": "resources/ext.baguetteBox",
+			"remoteExtPath": "Piwigo/resources/ext.baguetteBox",
+			"dependencies": [],
+			"messages": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Piwigo/resources"
+	},
+	"manifest_version": 2
+}

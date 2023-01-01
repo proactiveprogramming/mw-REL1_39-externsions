@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Minh Nguyen",
+            "Vinhtantran"
+        ]
+    },
+    "newduplicateusermessage-description": "Thêm một thông điệp gửi vào trang thảo luận của thành viên vừa mở tài khoản",
+    "newduplicateusermessage-edit-summary": "Thêm [[{{int:newduplicateusermessage-template}}|thông báo hoan nghênh]] vào trang thảo luận của người dùng mới"
+}

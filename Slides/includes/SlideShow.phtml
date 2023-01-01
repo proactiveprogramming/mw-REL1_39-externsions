@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+	<?php echo $this->getHeaderScript(); ?>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1><?php echo $this->getNiceTitle() ?></h1>
+					<?php echo $this->context->getOutput()->getSubTitle()?>
+					<br/>
+					<?php echo $this->getAuthor() ?>
+				</section>
+				<?php if ($this->isNotEmpty($this->getIntro())): ?>
+					<section>
+						<?php
+							echo $this->getIntro();
+						?>
+					</section>
+				<?php endif; ?>
+				<?php ?>
+				<?php foreach ($this->getSections() as $heading): ?>
+					<section>
+					<?php if ( isset( $this->subSection[$heading['number']] ) ) :?>
+						<?php if ($this->isNotEmpty($this->getIntro($heading))): ?>
+						<section>
+							<?php 
+								echo $this->getIntro($heading);
+							?>
+						</section>
+						<?php endif; ?>
+						<section>
+							<?php 
+								echo $this->getSubSectionHTML( $heading );
+							?>
+						</section>
+					<?php else: ?>
+						<?php 
+							echo $this->getSectionHTML( $heading );
+						?>
+					<?php endif; ?>
+					</section>
+				<?php endforeach ?>
+			</div>
+		</div>
+		<a class="printer" onclick="var url = new window.URL(window.location); url.searchParams.append('print-pdf', true); window.location=url;" >
+			<i class="fa fa-caret-right" style="position: fixed; right: 140px; bottom: 30px; z-index: 30; font-size: 24px;">
+				🖨
+			</i>
+		</a>
+		<a class="close" onclick="var url = new window.URL(window.location); url.searchParams.delete('action'); window.location=url;" >
+			<i class="fa fa-caret-right" style="position: fixed; right: 180px; bottom: 30px; z-index: 30; font-size: 24px;">
+				🚪
+			</i>
+		</a>
+		<script defer async="" src="/load.php?modules=ext.slides"></script>
+	</body>
+</html>

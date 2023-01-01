@@ -1,0 +1,64 @@
+CHANGELOG
+=========
+
+All notable changes to the Semantic Structured Discussions project will be documented in this file.
+
+The format is based on Keep a Changelog [0], and this project adheres to
+Semantic Versioning [1].
+
+
+UNRELEASED
+----------
+
+
+1.4.0 - 09-12-2022
+------------------
+
+Added:
+- Add "Topic is locked" annotation (#1).
+
+
+1.3.0 - 03-05-2022
+------------------
+
+Changed:
+- Use vtformat='html' instead of the Parser object for parsing reply and topic content.
+
+
+1.2.1 - 14-04-2022
+------------------
+
+Fixed:
+- Use the API to parse articles instead of the Parser object, since the Parser is not always fully initialised.
+
+
+1.2.0 - 04-04-2022
+------------------
+
+Changed:
+- Reply content is now parsed before it gets stored.
+
+
+1.1.0 - 18-03-2022
+------------------
+
+Changed:
+- The corresponding non-talkpage is now the owner of a topic.
+
+
+1.0.1 - 04-03-2022
+------------------
+
+Fixed:
+- The NS_TOPIC namespace constant has been replaced by a number.
+
+
+1.0.0 - 20-02-2022
+------------------
+
+Added:
+- Initial release.
+
+
+[0]: https://keepachangelog.com/en/1.0.0/
+[1]: https://semver.org/spec/v2.0.0.html

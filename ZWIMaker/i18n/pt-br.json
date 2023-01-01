@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cainamarques"
+		]
+	},
+	"mzwi-action": "Exportar como ZWI",
+	"mzwi-desc": "Converte página atual em ZWI e envia ao navegador"
+}

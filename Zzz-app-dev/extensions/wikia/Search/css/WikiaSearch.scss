@@ -1,0 +1,845 @@
+@import "skins/shared/color";
+@import "skins/oasis/css/core/breakpoints-variables";
+@import "skins/oasis/css/core/layout";
+@import "skins/shared/mixins/bodytext";
+@import "skins/shared/mixins/calc";
+@import "skins/shared/mixins/clearfix";
+@import "skins/shared/mixins/flexbox";
+@import "skins/shared/mixins/gradient";
+@import 'extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-variables/index';
+@import 'extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-mixins/index';
+@import 'extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-functions/index';
+
+$color-search-form-separator: mix($color-page, #000, 70%);
+@if $is-dark-wiki {
+	$color-search-form-separator: mix($color-page, #fff, 70%);
+}
+$color-search-form-background: mix($color-page, #000, 97%);
+@if $is-dark-wiki {
+	$color-search-form-background: mix($color-page, #fff, 90%);
+}
+$color-search-grid-border: mix($color-page-border, #fff, 50%);
+@if $is-dark-wiki {
+	$color-search-grid-border: mix($color-page-border, #000, 95%);
+}
+$color-tabs-background: mix($color-page, #000, 97%);
+@if $is-dark-wiki {
+	$color-tabs-background: mix($color-page, #fff, 85%);
+}
+$color-tabs-hover-background: mix($color-page, #000, 98%);
+@if $is-dark-wiki {
+	$color-tabs-hover-background: mix($color-page, #fff, 90%);
+}
+$color-search-ads-background: mix($color-buttons, $color-page, 3%);
+@if $is-dark-wiki {
+	$color-search-ads-background: mix($color-buttons, $color-page, 12%);
+}
+
+//We are using colors from above in exact-match
+@import "exact-wiki-match";
+
+$form-side-padding: 12px;
+$form-negative-side-padding: $form-side-padding*-1;
+
+.Search {
+	// Search form elements
+	.SearchInput {
+		background: $color-search-form-background;
+		border-top: 1px solid $color-search-grid-border;
+		border-bottom: 1px solid $color-search-grid-border;
+		padding: 9px 10px;
+
+		.inter-wiki-search & {
+			margin-top: 10px;
+			padding-bottom: 29px;
+		}
+
+		.WikiaSearchInputWrapper {
+			border: 1px solid $color-search-grid-border;
+			display: inline-flex;
+			margin-right: 10px;
+
+			.search-v2-input {
+				margin-right: 0;
+				border:none;
+				height: 26px
+			}
+		}
+
+		@include dropdown-theming($color-page, $color-text, $color-links, $color-page-border);
+
+		.wds-dropdown {
+
+			padding: 0;
+			float: left;
+
+			&__toggle {
+				border-right: 1px solid $color-search-form-separator;
+				font-weight: bold;
+				line-height: 28px;
+				margin: 2px 0;
+				padding: 0 12px;
+
+				&-chevron {
+					vertical-align: middle;
+				}
+			}
+
+			&__content {
+				padding: 0;
+			}
+
+			.wds-list {
+				margin: 3px 0;
+				padding: 0;
+			}
+		}
+
+		input[type="search"],
+		input[type="text"] {
+			background-color: $color-page;
+			height: 24px;
+			margin-right: 10px;
+			padding: 3px 10px;
+			width: 389px;
+			.inter-wiki-search & {
+				width: 536px;
+			}
+		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			margin: 0 6px 0 1px;
+			padding: 0;
+		}
+
+		button {
+			float: none;
+			height: 34px;
+			width: 64px;
+		}
+
+		p {
+			font-size: 15px;
+			font-weight: bold;
+			margin-top: 0;
+			padding-top: 5px;
+		}
+
+		fieldset {
+			border: 0;
+			margin: 0;
+			padding: 5px 0;
+		}
+
+		.advanced-link {
+			float: right;
+
+			a {
+				font-weight: normal;
+			}
+		}
+		.AdvancedSearch {
+			// temporary disablead - part of search redesign project
+			// to be restyled when new mockup approved
+			// (https://internal.wikia-inc.com/wiki/Search/Redesign/Story_3)
+
+			//background: $color-page;
+			//border-bottom: 1px solid $color-page-border;
+			//margin: 0px $form-negative-side-padding 0;
+			//padding-bottom: 18px;
+			width: 100%;
+
+			label {
+				display: inline-block;
+				width: 25%;
+				line-height: 23px;
+			}
+
+			h3 {
+				font-size: inherit;
+				margin: 0;
+				padding: 14px 0;
+			}
+
+			&.hidden {
+				display: none;
+			}
+
+			.selectAll {
+				margin: 10px 0 15px;
+			}
+		}
+	}
+
+	// Tabs on Special: Search in wiki
+	.WikiaSearch .search-tabs {
+		//border-top: 1px solid $color-search-grid-border;
+		margin-top: 35px;
+		overflow: hidden;
+		padding-right: 10px;
+
+		li {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 28px;
+			list-style: none;
+			margin: 0;
+			padding-left: 10px;
+		}
+
+		> li:first-child {
+			margin-top: 10px;
+		}
+
+		> li a {
+			display: block;
+			min-height: 31px;
+			text-decoration: none;
+			margin-left: -10px;
+			padding-left: 10px;
+			&:hover {
+				background-color: $color-tabs-hover-background;
+			}
+		}
+
+		.selected {
+			background-color: $color-tabs-background;
+
+			a {
+				color: $color-text;
+			}
+		}
+
+		.search-filter-sort {
+			font-weight: normal;
+			padding-bottom: 7px;
+			position: relative;
+
+			p {
+				margin: 0;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			li {
+				font-weight: normal;
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+			select {
+				margin: 0;
+				max-width: 145px;
+			}
+
+			.video-filters {
+				margin-left: 13px;
+				select {
+					margin-left: 13px;
+					max-width: 120px;
+				}
+			}
+
+			.hidden {
+				display: none;
+			}
+
+			.search-filter-sort-overlay {
+				background: $color-page;
+				height: 100%;
+				opacity: .5;
+				padding-left: 10px;
+				position: absolute;
+				margin-left: -10px;
+				width: 100%;
+				z-index: 100;
+			}
+		}
+
+		.disabled {
+			color: $color-alternate-text
+		}
+
+	}
+
+	// TODO: Make this a global style?
+	.subtle {
+		color: $color-alternate-text;
+	}
+
+	// Search results
+	.result-count {
+		//border-bottom: 1px solid $color-search-grid-border;
+		color:  $color-text;
+		line-height: 13px;
+		margin: 0;
+		margin-bottom: 10px;
+		overflow: hidden;
+		padding: 11px 0;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-align: left;
+
+		.inter-wiki-search & {
+			//border-bottom: none;
+			padding-left: 10px;
+			padding-top: 20px;
+		}
+
+		span {
+			text-transform: capitalize;
+		}
+	}
+
+	.exact .result-count {
+		margin-bottom: 20px;
+	}
+
+	.Results {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		.inter-wiki-search & {
+			padding-top: 5px;
+		}
+	}
+
+	.result {
+		@include clearfix;
+		margin-bottom: 13px;
+		word-wrap: break-word;
+		padding: 0;
+
+		.wiki-thumb-tracking {
+			display: block;
+			width: 180px;
+		}
+
+		.inter-wiki-search & {
+			margin-bottom: 20px;
+			.result-description {
+				width: 820px;
+			}
+			.wiki-statistics li {
+				padding-right: 40px;
+			}
+		}
+
+		.media-text {
+			float: left;
+			width: 100%;
+		}
+
+		h1 {
+			font-size: 14px;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		ul {
+			@include clearfix;
+			list-style: none;
+			margin: 0;
+		}
+
+		li {
+			color: $color-alternate-text;
+			list-style: none;
+			margin: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+			.inter-wiki-search & {
+				float: left;
+			}
+
+			&.WikiaSearchResultItemSitename {
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+		}
+
+		.redirect-title .result-link {
+			color: $color-alternate-text;
+		}
+
+		ul .result-link {
+			color: $color-alternate-text;
+
+			.inter-wiki-search & {
+				  color: $color-links;
+			}
+		}
+
+		article {
+			@include clearfix;
+			line-height: 19px;
+		}
+
+		.redirect-title {
+			margin: 0;
+			padding: 0;
+			color: $color-alternate-text;
+		}
+
+		.wikiPromoteThumbnail {
+			box-sizing: border-box;
+			float: left;
+			padding-left: 10px;
+			padding-top: 3px;
+			width: 190px;
+		}
+
+		.wiki-statistics, .hub {
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		.hub {
+			font-size: 11px;
+			margin-top: 0;
+		}
+
+		.wiki-statistics {
+			margin-top: 0.4em;
+
+			li {
+				padding-right: 20px;
+				float: left;
+			}
+		}
+
+		.description {
+			margin: 0;
+		}
+
+		.result-description {
+			box-sizing: border-box;
+			float: left;
+			padding-left: 21px;
+			width: 295px;
+		}
+
+		a.image {
+			position: relative;
+		}
+	}
+
+	.exact {
+		border-bottom: 1px solid $color-search-grid-border;
+		padding-bottom: 10px;
+	}
+
+	.searchmatch {
+		font-weight: bold;
+	}
+
+	.video-addon-results {
+		display: none;
+
+		img {
+			display: inline-block;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+		}
+
+		li {
+			 display: inline;
+		 }
+
+		.video-thumbnail {
+			margin: 1px;
+			position: relative;
+		}
+
+	}
+
+	// Search pagination
+	.wikia-paginator {
+		padding-top: 5px;
+	}
+}
+
+//rail module style
+.RailModule {
+	@include clearfix;
+	margin-bottom: 10px;
+	padding: 20px 15px 15px;
+	position: relative;
+	word-wrap: break-word;
+
+	header {
+		left: -3px;
+		font-size: 15px;
+		padding: 8px;
+		position: absolute;
+		width: $width-rail - 12px;
+	}
+
+	details em {
+		float: left;
+	}
+
+	.wikia-button {
+		float: right;
+	}
+
+	.more {
+		float: right;
+		font-size: 10px;
+		font-weight: bold;
+	}
+
+	p {
+		line-height: 21px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.wikia-button {
+		font-weight: normal;
+	}
+
+	h1 {
+		font: {
+			size: 14px;
+			weight: bold;
+		}
+		margin: {
+			top: 0px;
+			bottom: 25px;
+		}
+		padding-left: 2px;
+	}
+
+	h2 {
+		@extend h1;
+		clear: both;
+		margin: {
+			top: 0;
+			bottom: 10px;
+		}
+		padding-top: 15px;
+		/*border-top: 1px solid $color-page-border;*/
+	}
+
+	b {
+		font-weight: bold;
+	}
+
+	i {
+		font-style: italic;
+	}
+
+	.line-top {
+		border-top: solid 1px $color-page-border;
+	}
+
+	.chevron {
+		border-top-color: $color-text;
+	}
+}
+
+// Top articles module, fandom related module
+.side-articles {
+	margin: 0;
+	overflow: hidden;
+	padding: 14px 0;
+	width: 300px;
+
+	.side-articles-header {
+		border: 0;
+		margin: 0 0 19px;
+		padding: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.side-article {
+		border-top: 2px solid $color-page-border;
+		margin-bottom: 0;
+		min-height: 90px;
+		padding-bottom: 8px;
+
+		&:last-child {
+			border-bottom: 2px solid $color-page-border;
+		}
+
+		.side-article-category {
+			font-size: 10px;
+			font-weight: bold;
+			line-height: 12px;
+			margin: 6px 0 10px;
+		}
+
+		.side-article-text {
+			float: left;
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 0;
+			position: relative;
+			top: -4px;
+			width: 205px;
+		}
+
+		.fandom-annotation {
+			color: $color-alternate-text;
+			font-size: 12px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.side-article-text-synopsis {
+			p {
+				display: inline;
+			}
+		}
+
+		.side-article-thumbnail {
+			float: left;
+			height: 50px;
+			margin: 0 12px 0 0;
+			width: 90px;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		&.side-article-games {
+			border-top-color: $color-vertical-games;
+
+			.side-article-category {
+				color: $color-vertical-games;
+			}
+		}
+
+		&.side-article-movies {
+			border-top-color: $color-vertical-movies;
+
+			.side-article-category {
+				color: $color-vertical-movies;
+			}
+		}
+
+		&.side-article-tv {
+			border-top-color: $color-vertical-tv;
+
+			.side-article-category {
+				color: $color-vertical-tv;
+			}
+		}
+	}
+
+	.side-articles-footer {
+		margin: 30px 0;
+	}
+
+	&.top-wiki-articles {
+		.side-article {
+			min-height: 0;
+			padding-bottom: 6px;
+			padding-top: 16px;
+
+			.side-article-thumbnail {
+				height: 90px;
+			}
+		}
+
+	}
+}
+
+//category module
+.category-articles {
+	overflow: hidden;
+	margin: 10px 0 0 10px;
+
+	.category-article {
+		margin: 5px 0 5px 0;
+		min-height: 50px;
+	}
+
+	.category-articles-thumb {
+		float: left;
+		overflow: hidden;
+		width: 50px;
+		height: 50px;
+	}
+
+	.category-articles-text {
+		overflow: hidden;
+		padding: 0 0 0 10px;
+		white-space: normal;
+	}
+}
+
+// Search ads
+// TODO: needs refactoring
+.WikiaSearchAds {
+	background-color: $color-search-ads-background;
+	padding: $form-side-padding;
+	padding-bottom: 0;
+
+	&.SearchAdsBottom {
+		margin-top: 12px;
+	}
+
+	&.SearchAdsTop {
+		margin-bottom: 12px;
+	}
+
+	h3 {
+		font-size: 14px;
+		margin: 0;
+		padding: 0 0 12px 0;
+	}
+
+	.list {
+		list-style: none;
+		margin: 0;
+		min-height: 216px;
+		padding: 0;
+
+		&.loading {
+			background: url(/skins/common/images/ajax.gif) no-repeat 50% 50%; /* $wgResourceBasePath */
+		}
+	}
+
+	.unit {
+		height: 60px;
+		line-height: 16px;
+		margin: 0;
+		padding: 0 0 12px;
+	}
+
+	.link {
+		font-size: 16px;
+	}
+
+	.result-link {
+		color: $color-alternate-text;
+
+		&:hover {
+			color: $color-links;
+		}
+	}
+}
+
+.inter-wiki-search {
+	.WikiaTopAds {
+		margin-bottom: 15px;
+	}
+}
+
+.fandom-stories__arrow {
+	margin: 1px 0 0 5px;
+	transform: rotate(180deg);
+	vertical-align: top;
+}
+
+.Search.this-wiki {
+	.SearchAdsTopWrapper {
+		@include flex-direction(column);
+		//border-top: 1px solid $color-search-grid-border;
+		margin-top: 35px;
+		overflow: hidden;
+		padding: 10px 0 0 10px;
+	}
+
+	.WikiaSearchAds {
+		padding: 10px 10px 0;
+
+		h3 {
+			padding-bottom: 10px;
+		}
+
+		.unit {
+			height: auto;
+			padding: 10px 0;
+
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+
+		.link {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 18px;
+		}
+	}
+
+	.SearchAdsBottom {
+		margin-top: 20px;
+	}
+}
+
+.mw-search-formheader { // Quick style fix for now. Will fix tomorrow
+	@include clearfix;
+}
+
+@if ($responsive-or-breakpoints-layout-enabled) {
+	.Search.this-wiki .SearchAdsTopWrapper {
+		padding: 0 0 10px;
+	}
+
+	.WikiaRail {
+		.side-articles {
+			width: 300px;
+
+			.side-article-text {
+				width: 198px;
+			}
+		}
+
+		#TOP_BOXAD {
+			padding: 0;
+		}
+	}
+}
+
+//Breakpoints related changes
+@if ($breakpoints-layout-enabled) {
+	.Search .WikiaSearch {
+		.SearchInput {
+			p {
+				margin: 0;
+			}
+
+			.grid-1.alpha {
+				width: 170px;
+				float: left;
+			}
+
+			@media #{$breakpoint-below-small-plus} {
+				.search-v2-input {
+					width: 280px;
+				}
+			}
+		}
+
+		.search-tabs {
+			float: left;
+			margin: 35px 0 0 0;
+			width: 170px;
+		}
+
+		.results-wrapper {
+			@include width-calc("100% - 500px");
+			@media #{$breakpoint-below-small-plus} {
+				@include width-calc("100% - 180px");
+			}
+			float: left;
+		}
+	}
+}

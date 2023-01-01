@@ -1,0 +1,93 @@
+{
+	"description": "Modern Timeline - query result content",
+	"setup": [
+		{
+			"page": "News date",
+			"namespace": "SMW_NS_PROPERTY",
+			"contents": "[[Has type::Date]]"
+		},
+		{
+			"page": "End date",
+			"namespace": "SMW_NS_PROPERTY",
+			"contents": "[[Has type::Date]]"
+		},
+		{
+			"page": "Description",
+			"namespace": "SMW_NS_PROPERTY",
+			"contents": "[[Has type::Text]]"
+		},
+		{
+			"page": "First news event",
+			"contents": "[[News date::August 1, 2019]] [[End date::August 3, 2019]] [[Description::first desc]]"
+		},
+		{
+			"page": "Second news event",
+			"contents": "[[News date::August 6, 2019]] [[Description::second desc]]"
+		},
+		{
+			"page": "Page without date",
+			"contents": "[[Description::No date here]]"
+		},
+		{
+			"page": "Query page",
+			"contents": "{{ #ask: [[Description::+]] | format=moderntimeline | ?News date | ?End date | ?Description }}"
+		}
+	],
+	"tests": [
+		{
+			"about": "Only pages with dates are shown",
+			"type": "parser",
+			"subject": "Query page",
+			"assert-output": {
+				"include-head-items": true,
+				"to-contain": [
+					"First news event",
+					"Second news event"
+				],
+				"not-contain": [
+					"No date",
+					"without date"
+				]
+			}
+		},
+		{
+			"about": "Dates are included",
+			"type": "parser",
+			"subject": "Query page",
+			"assert-output": {
+				"include-head-items": true,
+				"to-contain": [
+					"month\":8",
+					"day\":1",
+					"day\":3",
+					"day\":6"
+				]
+			}
+		},
+		{
+			"about": "Extra printouts are included",
+			"type": "parser",
+			"subject": "Query page",
+			"assert-output": {
+				"include-head-items": true,
+				"to-contain": [
+					"first desc",
+					"second desc"
+				]
+			}
+		}
+	],
+	"settings": {
+		"wgContLang": "en",
+		"wgLang": "en",
+		"smwgNamespacesWithSemanticLinks": {
+			"NS_MAIN": true,
+			"SMW_NS_PROPERTY": true
+		}
+	},
+	"meta": {
+		"version": "2",
+		"is-incomplete": false,
+		"debug": false
+	}
+}

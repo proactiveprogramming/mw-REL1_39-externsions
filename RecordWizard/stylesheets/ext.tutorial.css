@@ -1,0 +1,83 @@
+/* TUTORIAL */
+#mwe-rw-tutorial .mwe-rw-section-group {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	flex-direction: row;
+	padding-top: 27px;
+	padding-bottom: 50px;
+}
+
+/* Left column */
+#mwe-rw-tutorial section:first-child {
+	flex: 475;
+	min-width: 320px;
+	margin-top: 20px;
+	margin-right: 32px;
+}
+#mwe-rw-tutorial img,
+#mwe-rwt-reopenpopup {
+	display: block;
+	margin:auto;
+	text-align: center;
+}
+#mwe-rw-tutorial h4 {
+	margin-bottom: 6px;
+
+	font-size: 16px;
+	font-weight: bold;
+}
+#mwe-rw-tutorial li {
+	margin-left: 15px;
+	padding-left: 2px;
+}
+#mwe-rwt-info {
+	position: relative;
+	margin-top: 40px;
+	margin-left: 44px;
+	width: 85%;
+}
+#mwe-rwt-info::before {
+	display: block;
+	content: '';
+
+	position: absolute;
+	top: -5px;
+	left: -44px;
+
+	width: 35px;
+	height: 35px;
+	background-image: url('../icons/warning.svg');
+	background-size: 35px 35px;
+}
+
+/* Right column */
+#mwe-rw-tutorial section:last-child {
+	flex: 345;
+	min-width: 280px;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+	padding: 34px 28px;
+	text-align: justify;
+}
+#mwe-rwt-testbutton,
+#mwe-rwt-testrecord,
+#mwe-rwt-testplay,
+#mwe-rwt-testwait {
+	display: block;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+#mwe-rwt-testbutton .oo-ui-buttonElement-button {
+	background-color: white; /* As the button is on a grey background, make it more distinguishable */
+}
+#mwe-rwt-testbutton .oo-ui-buttonElement-button:active {
+	background-color: #c8ccd1;
+}
+@media screen and (max-width: 399px) {
+	#mwe-rw-tutorial section:first-child,
+	#mwe-rw-tutorial section:last-child {
+		min-width: 200px;
+	}
+}

@@ -1,0 +1,10 @@
+{{#glossary_entry:
+ |langs=FR
+ |title=Intelligence Artificielle (IA)
+ |ref=intelligence artificielle
+ |syns=(langs=EN;title=Artificial Intelligence \(AI\);ref=artificial intelligence)
+ |dict=(langs=FR;term=intelligence artificielle), (langs=EN;term=artificial intelligence)
+ |shortdesc=Programme informatique développé pour simuler des éléments de l’intelligence humaine, comme le raisonnement, l’apprentissage, la résolution de problème, et la prise de décisions.
+ |longdesc=Les programmes d’intelligence artificielle permettent aux ordinateurs des choses comme jouer aux échecs, prouver des théorèmes mathématique, etc.
+ }}
+

@@ -1,0 +1,62 @@
+{
+	"name": "SkinCustomiser",
+	"author": "[//wikimannia.org WikiMANNia]",
+	"url": "https://www.mediawiki.org/wiki/Extension:SkinCustomiser",
+	"license-name": "GPL-2.0-or-later",
+	"version": "1.2.0",
+	"namemsg": "skincustomiser-msg",
+	"descriptionmsg": "skincustomiser-desc",
+	"config": {
+		"HeadMetaCode": "<!-- No Head Meta -->",
+		"HeadMetaName": "<!-- No Meta Name -->",
+		"HeadScriptCode": "<!-- No Head Script -->",
+		"HeadScriptName": "<!-- No Script Name -->"
+	},
+	"manifest_version": 1,
+	"type": "other",
+	"AutoloadClasses": {
+		"SkinCustomiserHooks": "includes/specials/HooksSkinCustomiser.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "SkinCustomiserHooks::onBeforePageDisplay"
+	},
+	"MessagesDirs": {
+		"SkinCustomiser": [ "i18n" ]
+	},
+	"ResourceModules": {
+		"ext.skincustomiser.common": {
+			"styles": "css/Common.css"
+		},
+		"ext.skincustomiser.mobile": {
+			"styles": "css/Mobile.css"
+		},
+		"ext.skincustomiser.cologneblue": {
+			"styles": "css/Cologneblue.css"
+		},
+		"ext.skincustomiser.minerva": {
+			"styles": "css/Minerva.css"
+		},
+		"ext.skincustomiser.modern": {
+			"styles": "css/Modern.css"
+		},
+		"ext.skincustomiser.monobook": {
+			"styles": "css/Monobook.css"
+		},
+		"ext.skincustomiser.timeless": {
+			"styles": "css/Timeless.css"
+		},
+		"ext.skincustomiser.vector": {
+			"styles": "css/Vector.css"
+		},
+		"ext.skincustomiser.vector-2022": {
+			"styles": "css/Vector-2022.css"
+		},
+		"ext.skincustomiser.anotherskin": {
+			"styles": "css/AnotherSkin.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "SkinCustomiser/resources"
+	}
+}

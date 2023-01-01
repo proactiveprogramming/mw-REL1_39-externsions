@@ -1,0 +1,15 @@
+{
+	"name": "CategoryToolbox",
+	"version": "1.0.0",
+	"author": [
+		"Valerio Bozzolan"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CategoryToolbox",
+	"descriptionmsg": "access categories through Scribunto",
+	"license-name": "GNU GPL v3+",
+	"type": "other",
+	"AutoloadClasses": {
+		"CategoryToolbox_LuaLibrary": "includes/CategoryToolbox_LuaLibrary.php"
+	},
+	"manifest_version": 1
+}

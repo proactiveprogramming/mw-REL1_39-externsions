@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Priviet",
+			"Revi",
+			"Ykhwong"
+		]
+	},
+	"semanticsignup": "시맨틱 가입",
+	"ses-desc": "사용자 가입 시 제공한 시멘틱 데이터로 사용자 문서를 생성합니다",
+	"ses-nousername": "사용자 이름은 특정되지 않았습니다.",
+	"ses-nobotname": "권한을 가진 사용자 (봇)이 사용자 계정을 생성하도록 허락되지 않았습니다. (<var>\"$egSemanticSignupSettings\"</var> 설정의 정보를 확인하세요.)",
+	"ses-nopwdmatch": "비밀번호와 비밀번호 확인이 일치하지 않습니다.",
+	"ses-norealname": "실명은 필수지만 지정되지 않았습니다.",
+	"ses-userexists": "사용자가 이미 존재합니다.",
+	"ses-emailfailed": "확인 이메일을 보내는 데 실패했습니다.",
+	"ses-createforbidden": "현재 사용자는 계정을 만들 수 없습니다.",
+	"ses-throttlehit": "이 IP 주소로 작성할 수 있는 1일당 새로운 사용자 계정의 최대 개수를 넘었습니다."
+}

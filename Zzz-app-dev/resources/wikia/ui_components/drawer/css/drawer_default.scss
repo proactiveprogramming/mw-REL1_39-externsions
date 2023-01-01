@@ -1,0 +1,119 @@
+@import "skins/shared/color.scss";
+@import "skins/oasis/css/core/layout.scss";
+@import "skins/shared/mixins/blackout.scss";
+@import "skins/shared/mixins/box-shadow.scss";
+@import "skins/shared/mixins/transition.scss";
+
+$drawer-background-color: #fff;
+$drawer-base-z-index: $zTop + 10;
+$drawer-close-image: '/resources/wikia/ui_components/drawer/images/cross.png';
+$drawer-text-color: #0e5ea3;
+$drawer-shadow-color: #808080;
+$drawer-shadow-size: 15px;
+$drawer-width: 250px;
+$subdrawer-width: 225px;
+
+.drawer,
+.subdrawer,
+.drawer-blackout {
+	@include transition-shorthand(all 0.2s ease-in-out);
+}
+
+.drawer,
+.subdrawer {
+	@include box-shadow(0px, 0px, $drawer-shadow-size, $drawer-shadow-color);
+
+	background: $drawer-background-color;
+	box-sizing: border-box;
+	bottom: 0;
+	color: $drawer-text-color;
+	opacity: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+
+	&.open {
+		opacity: 1;
+	}
+}
+
+.subdrawer {
+	-webkit-overflow-scrolling: touch;
+}
+
+.drawer {
+	padding: 10px;
+	width: $drawer-width;
+	z-index: $drawer-base-z-index;
+
+	&.left {
+		left: -$drawer-width - $drawer-shadow-size;
+
+		&.open {
+			left: 0;
+		}
+	}
+	&.right {
+		right: -$drawer-width - $drawer-shadow-size;
+
+		&.open {
+			right: 0;
+		}
+	}
+
+	.close-button {
+		background: url($drawer-close-image); /* inline */
+		background-position: 0 3px;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		font-size: 12px;
+		line-height: 20px;
+		margin: 4px 0 25px 5px;
+		padding-left: 20px;
+		text-transform: uppercase;
+		vertical-align: middle;
+
+	}
+}
+
+.subdrawer {
+	padding: 25px;
+	width: $subdrawer-width;
+	z-index: $drawer-base-z-index - 1;
+
+	&.left {
+		left: 0;
+
+		&.hidden {
+			left: -$drawer-width - $drawer-shadow-size;
+		}
+
+		&.open {
+			left: $drawer-width;
+		}
+	}
+	&.right {
+		right: 0;
+
+		&.hidden {
+			right: -$drawer-width - $drawer-shadow-size;
+		}
+
+		&.open {
+			right: $drawer-width;
+		}
+	}
+
+}
+
+.drawer-blackout {
+	@include blackout();
+	background: transparent;
+	visibility: hidden;
+	z-index: $drawer-base-z-index - 2;
+
+	&.visible {
+		visibility: visible;
+	}
+}

@@ -1,0 +1,72 @@
+@import "skins/shared/color";
+@import "skins/shared/styles/sprite";
+@import "skins/shared/mixins/arrow";
+@import "skins/shared/mixins/clearfix";
+@import "skins/shared/mixins/gradient";
+
+.ForumBoardEdit {
+	header {
+		@include clearfix;
+		margin-top: 5px;
+		.create-new-board-button {
+			float: right;
+		}
+		.BreadCrumbs {
+			border: 0;
+		}
+	}
+	.board {
+		@include clearfix;
+		.editControls {
+			display: inline;
+			position: relative;
+			top: -2px;
+			.moveup,
+			.movedown {
+				@include linear-gradient($color-secondary-button, top, $color-secondary-button-highlight, 15%, $color-secondary-button, 85%);
+				border: 1px solid $color-page-border;
+				border-radius: 4px;
+				cursor: pointer;
+				display: inline-block;
+				height: 14px;
+				position: relative;
+				top: 6px;
+				width: 14px;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 3px;
+					top: 5px;
+				}
+			}
+			.movedown:after {
+				@include arrow(4px, $color-text, 'down');
+			}
+			.moveup:after {
+				@include arrow(4px, $color-text, 'up');
+			}
+			.sprite {
+				cursor: pointer;
+			}
+		}
+		.heading {
+			h4 {
+				display: inline;
+			}
+		}
+	}
+}
+
+#EditBoardModal {
+	fieldset {
+		border: none;
+	}
+	.WikiaForm {
+		.input-group {
+			width: 100%;
+		}
+		input[type=text] {
+			width: 90%;
+		}
+	}
+}

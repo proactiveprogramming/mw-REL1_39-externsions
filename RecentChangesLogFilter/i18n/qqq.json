@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patrick Westerhoff"
+		]
+	},
+
+	"recentchangeslogfilter-desc": "{{desc}}",
+	"recentchangeslogfilter-hidelogs": "Recent changes filter message with $1 being the link",
+	"recentchangeslogfilter-pref": "User preference text"
+}

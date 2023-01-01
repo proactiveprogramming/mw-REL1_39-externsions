@@ -1,0 +1,38 @@
+{
+	"name": "Doppelganger",
+	"version": "0.1.0",
+	"author": [
+		"John Erling Blad"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Doppelganger",
+	"descriptionmsg": "doppelganger-desc",
+	"license-name": "GPL-2.0",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.33",
+		"extensions": {
+			"Scribunto": "*"
+		}
+	},
+	"AutoloadClasses": {
+		"Doppelganger\\Hooks":
+			"includes/Hooks.php",
+		"Doppelganger\\LuaLibDoppelganger":
+			"includes/LuaLibrary/LuaLibDoppelganger.php"
+	},
+	"config_prefix": "wgDoppelganger",
+	"config": {
+	},
+	"callback": "Doppelganger\\Hooks::onExtensionSetup",
+	"Hooks": {
+		"ScribuntoExternalLibraryPaths": [
+			"Doppelganger\\Hooks::onRegisterScribuntoExternalLibraryPaths"
+		]
+	},
+	"MessagesDirs": {
+		"Doppelganger": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"S.Chekanov",
+			""
+		]
+	},
+	"mzwi-action": "Exporter en ZWI",
+	"mzwi-desc": "Convertit en ZWI la page actuelle et l'envoie au navigateur"
+}

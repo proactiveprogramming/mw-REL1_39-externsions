@@ -1,0 +1,7 @@
+/* CSS placed here will be applied to Vector skin */
+
+#p-ageclassification .body {
+	background-image: none !important;
+	margin-left: 0 !important;
+	margin-top: .3em;
+}

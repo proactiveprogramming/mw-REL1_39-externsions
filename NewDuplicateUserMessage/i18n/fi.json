@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Crt",
+            "Jaakonam"
+        ]
+    },
+    "newduplicateusermessage-description": "Lisää viestin uuden käyttäjän keskustelusivulle.",
+    "newduplicateusermessage-edit-summary": "[[{{int:newduplicateusermessage-template}}|Tervetuloviestin]] lisääminen uuden käyttäjän keskustelusivulle"
+}

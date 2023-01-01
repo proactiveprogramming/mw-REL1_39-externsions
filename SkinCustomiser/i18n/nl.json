@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [ "WikiMANNia" ]
+	},
+	"skincustomiser-msg": "Skins aanpassen",
+	"skincustomiser-desc": "Pas bestaande skins aan. Voeg scripts en meta data toe in de header area. Vertaalde labels toevoegen voor de [https://www.mediawiki.org/wiki/Sidebar/nl zijbalk].",
+	"projectabout": "Over uw wiki",
+	"projectpage": "Project pagina",
+	"registrate": "Account aanvragen",
+	"contact": "Contact",
+	"interaction": "Deelnemen",
+	"portals": "Portalen",
+	"portal-1": "Uw persoonlijke portaal 1",
+	"portal-2": "Uw persoonlijke portaal 2",
+	"portal-3": "Uw persoonlijke portaal 3",
+	"createacct-benefit-heading": "{{SITENAME}} wordt gemaakt door mensen zoals u."
+}

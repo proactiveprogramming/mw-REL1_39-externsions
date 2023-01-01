@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"epsg-desc": "Conversion of geographical coordinates to various systems, useing epsg.io.",
+	"epsg-i18n-welcome": "Welcome to the localization file of the EPSG extension.",
+	"epsg-test": "Test EPSG",
+	"epsg-test-intro": "Welcome to the \"Test\" special page of the EPSG extension.",
+	"epsgtest": "Test EPSG"
+}

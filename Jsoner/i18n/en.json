@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jonas Gröger <jonas.groeger@noris.de>"
+		]
+	},
+	"jsoner-desc": "A MediaWiki erweiterung to retrieve, filter and display JSON data from URLs.",
+	"jsoner-extension-not-installed": "The PHP extension '$1' is not installed."
+}

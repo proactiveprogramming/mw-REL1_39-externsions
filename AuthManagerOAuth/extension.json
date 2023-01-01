@@ -1,0 +1,50 @@
+{
+	"name": "AuthManagerOAuth",
+	"author": [
+		"Moritz Hedtke"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:AuthManagerOAuth",
+	"descriptionmsg": "authmanageroauth-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\AuthManagerOAuth\\": "includes/"
+	},
+	"load_composer_autoloader": true,
+	"config": {
+		"AuthManagerOAuthConfig": {
+			"description": "Dictionary of GenericProvider constructor parameters at https://oauth2-client.thephpleague.com/usage/",
+			"value": {}
+		}
+	},
+	"ConfigRegistry": {
+		"authmanageroauth": "GlobalVarConfig::newInstance"
+	},
+	"HookHandlers": {
+		"AuthManagerOAuthHooks": {
+			"class": "MediaWiki\\Extension\\AuthManagerOAuth\\Hooks"
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "AuthManagerOAuthHooks",
+		"AuthChangeFormFields": "AuthManagerOAuthHooks",
+		"GetPreferences": "AuthManagerOAuthHooks"
+	},
+	"MessagesDirs": {
+		"AuthManagerOAuth": [
+			"i18n"
+		]
+	},
+	"AuthManagerAutoConfig": {
+        "primaryauth": {
+            "MediaWiki\\Extension\\AuthManagerOAuth\\AuthManagerOAuthPrimaryAuthenticationProvider": {
+                "class": "MediaWiki\\Extension\\AuthManagerOAuth\\AuthManagerOAuthPrimaryAuthenticationProvider",
+				"sort": 0
+            }
+        }
+    },
+	"manifest_version": 2
+}

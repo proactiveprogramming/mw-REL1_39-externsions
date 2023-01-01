@@ -1,0 +1,88 @@
+{
+	"name": "NamespaceData",
+	"version": "2.0.1",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Wizardist Pavel Selitskas]",
+		"[https://www.mediawiki.org/wiki/User:Karima_Rafes Karima Rafes]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NamespaceData",
+	"descriptionmsg": "nsdata-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.34"
+	},
+	"namespaces": [
+		{
+			"@doc": "NamespaceRelations with NS_MAIN",
+			"id": 10000,
+			"constant": "NS_DATA",
+			"name": "Data",
+			"protection": "data-edit"
+		},
+		{
+			"@doc": "NamespaceRelations with NS_USER",
+			"id": 10002,
+			"constant": "NS_USER_DATA",
+			"name": "UserData",
+			"protection": "data-edit"
+		},
+		{
+			"id": 10010,
+			"constant": "NS_SCHEMA",
+			"name": "Schema",
+			"protection": "data-edit"
+		},
+		{
+			"id": 10011,
+			"constant": "NS_SCHEMA_TALK",
+			"name": "Schema_talk"
+		},
+		{
+			"id": 10030,
+			"constant": "NS_DATATYPE",
+			"name": "Datatype",
+			"protection": "data-edit"
+		},
+		{
+			"id": 10031,
+			"constant": "NS_DATATYPE_TALK",
+			"name": "Datatype_talk"
+		}
+	],
+	"MessagesDirs": {
+		"NamespaceData": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"NamespaceData": "NamespaceData.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "NamespaceData"
+	},
+	"Hooks": {
+		"SkinTemplateNavigation::Universal": "NamespaceData::onSkinTemplateNavigation"
+	},
+	"ConfigRegistry": {
+		"egNamespaceData": "NamespaceData::makeConfig"
+	},
+	"config_prefix": "egNamespaceData",
+	"config": {
+		"NamespaceData": {
+			"description": "List of custom tabs",
+			"value": {
+				"data_main": {
+					"namespace": 0,
+					"target": 10000
+				},
+				"data_user": {
+					"namespace": 2,
+					"target": 10002
+				}
+			}
+		}
+	}
+}

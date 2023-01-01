@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fulup",
+			"Huñvreüs"
+		]
+	},
+	"action-delete-dump": "dilemel an dumpoù",
+	"action-generate-dump": "genel dumpoù",
+	"action-view-dump": "gwelet an dumpoù",
+	"apihelp-viewdumps-example-1": "Setu aze ur skouer eus an doare da adtapout an holl dumpoù.",
+	"apihelp-viewdumps-param-type": "Kavout un dump gant ar seurt spisaet-mañ.",
+	"apihelp-viewdumps-param-timestamp": "Kavout un dump gant an eurdeiziañ-mañ.",
+	"apihelp-viewdumps-summary": "Gwelet an dumpoù evit ar seurt, anv ar restr pe an eurdeiziañ spisaet.",
+	"datadump": "DataDump",
+	"datadump-delete-button": "Diverkañ",
+	"datadump-delete-failed": "C'hwitet eo bet an dump dibabet ganeoc'h da vezañ diverket.",
+	"datadump-delete-success": "Dilamet hoc'h eus an dump ervat.",
+	"datadump-label-generate": "Genel",
+	"datadump-table-column-failed": "C'hwitet",
+	"datadump-table-column-queued": "Lakaet el lostennad",
+	"datadump-table-column-ready": "Prest",
+	"datadump-table-header-delete": "Diverkañ",
+	"datadump-table-header-name": "Anv",
+	"datadump-table-header-size": "Ment",
+	"datadump-table-header-status": "Statud",
+	"datadump-table-header-type": "Seurt",
+	"log-name-datadump": "Marilh DataDump",
+	"logentry-datadump-delete": "$4 dilamet dump gant $1.",
+	"logentry-datadump-generate": "$4 dump ganet gant $1."
+}

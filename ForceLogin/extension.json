@@ -1,0 +1,16 @@
+{
+	"name": "ForceLogin",
+	"author": "Josh",
+	"url": "",
+	"descriptionmsg": "Redirects to login page on edit action",
+	"license-name": "",
+	"type": "access",
+	"MessagesDirs": {
+		"ForceLogin": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"AlternateEdit": "ForceLoginHooks::onAlternateEdit"
+	}
+}

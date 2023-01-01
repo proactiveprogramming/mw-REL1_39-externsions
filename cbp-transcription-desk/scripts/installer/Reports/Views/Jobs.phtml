@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * Copyright (C) University College London
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License Version 2, as
+ * published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ *
+ * @package CBP Transcription
+ * @subpackage Installer
+ * @version 1.0
+ * @author Ben Parish <b.parish@ulcc.ac.uk>
+ * @copyright 2013  University College London
+ */
+
+
+namespace Views;
+
+use \Models\JobqueueTable;
+
+require 'Models/JobqueueTable.php';
+
+$oTable = new JobqueueTable( $oAdapter );
+
+require 'configure.paginator.inc.php';
+
+if( $oPages->pageCount > 0 ){
+	?>
+	<div id="breadcrumbs">Latest Jobs</div>
+	<div id="table-container">
+	<?php
+		require 'pagination.inc.php';
+	?>
+	<p />
+
+
+
+	<table class="table">
+	    <tr>
+	        <th>ID</th>
+	        <th>Status</th>
+	        <th>Start Time</th>
+	        <th>End Time</th>
+	        <th>Created</th>
+	        <th>&nbsp;</th>
+	        <th>Process ID</th>
+	        <th>&nbsp;</th>
+	        <th>&nbsp;</th>
+	        <th>Error</th>
+	    </tr>
+	    <?php
+
+	    /* @var $oJobQueueEntity JobQueue */
+	    foreach ( $oPaginator as $oJobQueueEntity ): ?>
+	        <tr>
+	            <td><?php echo $oJobQueueEntity->id; ?></td>
+	            <td><?php echo $oJobQueueEntity->job_status; ?></td>
+	            <td><?php echo $oJobQueueEntity->job_start_time; ?></td>
+	            <td><?php echo $oJobQueueEntity->job_end_time; ?></td>
+	            <td><?php echo $oJobQueueEntity->created; ?></td>
+	            <td>
+	            	<a href="index.php?entity_type=boxes&job_queue_id=<?php echo $oJobQueueEntity->id; ?>">View boxes
+	            </td>
+	            <td><?php echo $oJobQueueEntity->pid; ?></td>
+	            <td>
+	            	<button type="button" onclick="ajaxConnect( 'restart', <?php echo $oJobQueueEntity->id; ?> );">Re-run</button>
+	            </td>
+	            <td>
+	            	<button type="button" onclick="ajaxConnect( 'stop', <?php echo $oJobQueueEntity->id; ?> );">Stop</button>
+	            </td>
+	           <td><div class="error" alt="<?php echo $oJobQueueEntity->error; ?>"><?php echo $oJobQueueEntity->error; ?></div></td>
+	        </tr>
+	    <?php
+	    endforeach; ?>
+	</table>
+	</div>
+<?php
+}
+?>
+

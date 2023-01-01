@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ostrzyciel"
+        ]
+    },
+    "markImages": "MarkImages",
+    "markImages-desc": "Oznacza grafiki w kategoriach zgodnie z ich licencją.",
+    "markImages-classes-label": "Klasy CSS oznaczeń"
+}

@@ -1,0 +1,57 @@
+/* PUBLISH */
+/* Note that a lot of code needed for this step is shared with the studio step */
+#mwe-rw-publish .mwe-rw-section-group {
+	height: 460px;
+}
+#mwe-rw-publish .mwe-rw-section-group {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 0;
+}
+#mwe-rw-publish section:first-child {
+	width: 38%;
+	height: 100%;
+	align-self: stretch;
+	overflow-y: scroll;
+	border-right: 1px solid rgba(156,173,210,0.5);
+}
+
+#mwe-rw-publish section:last-child {
+	display: flex;
+	flex: 1;
+	max-width: 62%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.mwe-rw-item {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+#mwe-rwp-list .oo-ui-checkboxInputWidget {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+}
+#mwe-rwp-actions .oo-ui-progressBarWidget {
+	width: 320px;
+}
+
+@media screen and (max-width: 799px) {
+	#mwe-rw-publish .mwe-rw-section-group {
+		flex-direction: column;
+		height: 640px;
+	}
+	#mwe-rw-publish section:first-child {
+		width: 100%;
+		max-height: 33%;
+		border-right: 0px;
+		border-bottom: 1px solid rgba(156,173,210,0.5);
+	}
+	#mwe-rw-publish section:last-child {
+		max-width: 100%;
+		width: 100%;
+	}
+}

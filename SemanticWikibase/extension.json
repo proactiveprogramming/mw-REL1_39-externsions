@@ -1,0 +1,53 @@
+{
+	"name": "Semantic Wikibase",
+
+	"version": "0.1.0",
+
+	"author": [
+		"[https://www.entropywins.wtf/mediawiki Jeroen De Dauw]",
+		"[https://professional.wiki/ Professional.Wiki]"
+	],
+
+	"url": "https://github.com/ProfessionalWiki/SemanticWikibase",
+
+	"descriptionmsg": "semantic-wb-desc",
+
+	"license-name": "GPL-2.0-or-later",
+
+	"type": "semantic",
+
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"extensions": {
+			"SemanticMediaWiki": ">=3.1",
+			"WikibaseRepository": "*"
+		}
+	},
+
+	"MessagesDirs": {
+		"SemanticWikibase": [
+			"i18n"
+		]
+	},
+
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SemanticWikibase\\": "src/",
+		"MediaWiki\\Extension\\SemanticWikibase\\Tests\\": "tests/"
+	},
+
+	"callback": "MediaWiki\\Extension\\SemanticWikibase\\EntryPoints\\HookHandlers::onExtensionRegistration",
+
+	"Hooks": {
+		"SMW::Property::initProperties": "MediaWiki\\Extension\\SemanticWikibase\\EntryPoints\\HookHandlers::onSmwInitProperties",
+		"SMW::SQLStore::AddCustomFixedPropertyTables": "MediaWiki\\Extension\\SemanticWikibase\\EntryPoints\\HookHandlers::onSmwAddCustomFixedPropertyTables",
+		"SMWStore::updateDataBefore": "MediaWiki\\Extension\\SemanticWikibase\\EntryPoints\\HookHandlers::onSmwUpdateDataBefore"
+	},
+
+	"config": {
+		"SemanticWikibaseLanguage": {
+			"value": ""
+		}
+	},
+
+	"manifest_version": 2
+}

@@ -1,0 +1,43 @@
+{
+	"name": "Semantic Structured Discussions",
+	"type": "semantic",
+	"version": "1.4.0",
+	"author": [
+		"Marijn van Wezel ([https://wikibase-solutions.com Wikibase Solutions])"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Semantic_Structured_Discussions",
+	"descriptionmsg": "semanticstructureddiscussions-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.35",
+		"extensions": {
+			"SemanticMediaWiki": ">= 3.2.0",
+			"Flow": ">= 1.2.0"
+		},
+		"platform": {
+			"php": ">= 7.4"
+		}
+	},
+	"MessagesDirs": {
+		"SemanticStructuredDiscussions": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"SemanticStructuredDiscussions\\": "src/"
+	},
+	"ExtensionMessagesFiles": {
+		"SemanticStructuredDiscussionsMagic": "i18n/SemanticStructuredDiscussions.i18n.php"
+	},
+	"ServiceWiringFiles": [
+	    "SemanticStructuredDiscussions.ServiceWiring.php"
+	],
+	"Hooks": {
+		"APIFlowAfterExecute": "SemanticStructuredDiscussions\\Hooks::onAPIFlowAfterExecute",
+		"SMW::Property::initProperties": "SemanticStructuredDiscussions\\Hooks::onInitProperties",
+		"SMW::Store::BeforeDataUpdateComplete": "SemanticStructuredDiscussions\\Hooks::onBeforeDataUpdateComplete"
+	},
+	"callback": "SemanticStructuredDiscussions\\Hooks::onRegisterExtension",
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

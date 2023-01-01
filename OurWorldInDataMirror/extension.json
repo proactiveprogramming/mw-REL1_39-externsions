@@ -1,0 +1,39 @@
+{
+	"name": "OurWorldInDataMirror",
+	"namemsg": "owid-extensionname",
+	"version": "1.0.0",
+	"author": [
+			"[https://mwusers.org Ryan Schmidt]"
+	],
+	"license-name": "GPL-3.0-or-later",
+	"url": "https://www.mediawiki.org/wiki/Extension:OurWorldInDataMirror",
+	"descriptionmsg": "owid-desc",
+	"type": "parserhook",
+	"MessagesDirs": {
+			"OurWorldInDataMirror": [
+					"i18n"
+			]
+	},
+	"AutoloadNamespaces": {
+			"OurWorldInDataMirror\\": "src/"
+	},
+	"HookHandlers": {
+			"main": {
+					"class": "OurWorldInDataMirror\\Hooks"
+			}
+	},
+	"Hooks": {
+			"ParserFirstCallInit": "main"
+	},
+	"ResourceModules": {
+			"ext.owid": {
+					"localBasePath": "modules/ext.owid",
+					"remoteExtPath": "OurWorldInDataMirror/modules/ext.owid",
+					"styles": "owid.css"
+			}
+	},
+	"requires": {
+			"MediaWiki": ">= 1.37.0"
+	},
+	"manifest_version": 2
+}

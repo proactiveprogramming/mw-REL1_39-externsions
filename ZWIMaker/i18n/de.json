@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Metalhead64"
+		]
+	},
+	"mzwi-action": "ZWI-Export",
+	"mzwi-desc": "Ermöglicht die Ausgabe einer Seite als ZWI-Datei"
+}

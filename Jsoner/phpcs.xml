@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset>
+	<rule ref="vendor/mediawiki/mediawiki-codesniffer/MediaWiki"/>
+	<file>.</file>
+	<arg name="extensions" value="php,php5,inc"/>
+	<arg name="encoding" value="utf8"/>
+	<exclude-pattern>vendor</exclude-pattern>
+
+	<rule ref="Generic.PHP.NoSilencedErrors">
+		<exclude-pattern>src/Parser.php</exclude-pattern>
+	</rule>
+
+	<rule ref="Generic.Files.LineLength.TooLong">
+		<exclude-pattern>tests/unit/ParserTest.php</exclude-pattern>
+		<exclude-pattern>tests/unit/filter/*.php</exclude-pattern>
+	</rule>
+</ruleset>

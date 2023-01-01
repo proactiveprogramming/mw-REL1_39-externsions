@@ -1,0 +1,12 @@
+
+@import "skins/shared/mixins/transition";
+
+img.lzyPlcHld {
+	opacity: 0;
+}
+img.lzyLoaded {
+	opacity: 1;
+}
+img.lzyTrns {
+	@include transition-shorthand(opacity 300ms ease-out);
+}

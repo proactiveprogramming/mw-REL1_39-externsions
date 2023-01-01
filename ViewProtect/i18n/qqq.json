@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"viewprotect": "Title of Special:ViewProtect.",
+	"viewprotect-desc": "{{desc}}",
+	"viewprotect-intro": "Intro paragraph shown on Special:ViewProtect.",
+	"viewprotect-denied": "",
+
+	"viewprotectfile": "Title of Special:ViewProtectFile",
+	"viewprotectfile-nofiles": "Message to display when there are no recent files that you can change the protection on.",
+	"viewprotectfile-legend": "Header of form",
+	"viewprotectfile-name": "Label for file selection",
+	"viewprotectfile-group": "Label for group selection :",
+	"viewprotectfile-submit": "Label on submit button",
+	"viewprotectfile-success-add": "Message that shows when protection is added",
+	"viewprotectfile-success-remove": "Message that shows when a message is removed",
+
+	"viewprotect-log-page": "Title of log page",
+
+	"viewprotect-read-indicator": "<b>Restricted to: $1</b>",
+
+	"log-name-viewprotect": "Name of log page",
+	"logeventslist-viewprotect-log": "View protection log option label on [[Special:Log]]",
+	"log-show-hide-viewprotect": "Indicator to hide/show view protections",
+	"log-description-viewprotect": "Description of what this is",
+	"logentry-viewprotect-hide": "User who hid a page",
+	"logentry-viewprotect-show": "User who un-hid a page",
+	"action-viewprotectmanage": "{{doc-action|viewprotectmanage}}"
+}

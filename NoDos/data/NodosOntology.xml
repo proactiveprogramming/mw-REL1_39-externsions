@@ -1,0 +1,2620 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="es">
+  <siteinfo>
+    <sitename>Nodos</sitename>
+    <dbname>nodosprod</dbname>
+    <base>http://plataformanodos.org/index.php/P%C3%A1gina_principal</base>
+    <generator>MediaWiki 1.26.2</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medio</namespace>
+      <namespace key="-1" case="first-letter">Especial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Discusión</namespace>
+      <namespace key="2" case="first-letter">Usuario</namespace>
+      <namespace key="3" case="first-letter">Usuario discusión</namespace>
+      <namespace key="4" case="first-letter">Nodos</namespace>
+      <namespace key="5" case="first-letter">Nodos discusión</namespace>
+      <namespace key="6" case="first-letter">Archivo</namespace>
+      <namespace key="7" case="first-letter">Archivo discusión</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki discusión</namespace>
+      <namespace key="10" case="first-letter">Plantilla</namespace>
+      <namespace key="11" case="first-letter">Plantilla discusión</namespace>
+      <namespace key="12" case="first-letter">Ayuda</namespace>
+      <namespace key="13" case="first-letter">Ayuda discusión</namespace>
+      <namespace key="14" case="first-letter">Categoría</namespace>
+      <namespace key="15" case="first-letter">Categoría discusión</namespace>
+      <namespace key="102" case="first-letter">Atributo</namespace>
+      <namespace key="103" case="first-letter">Atributo discusión</namespace>
+      <namespace key="104" case="first-letter">Type</namespace>
+      <namespace key="105" case="first-letter">Type talk</namespace>
+      <namespace key="106" case="first-letter">Formulario</namespace>
+      <namespace key="107" case="first-letter">Discusión formulario</namespace>
+      <namespace key="108" case="first-letter">Concepto</namespace>
+      <namespace key="109" case="first-letter">Concepto discusión</namespace>
+      <namespace key="420" case="first-letter">Layer</namespace>
+      <namespace key="421" case="first-letter">Layer talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Atributo:BasadaEn</title>
+    <ns>102</ns>
+    <id>7</id>
+    <revision>
+      <id>10</id>
+      <timestamp>2016-02-23T23:05:06Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:CantidadDeObras</title>
+    <ns>102</ns>
+    <id>409</id>
+    <revision>
+      <id>1283</id>
+      <timestamp>2016-09-28T00:36:16Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Número]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Número]].</text>
+      <sha1>alv1pctw6er9391itzqpgy7urwfkiun</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:CiudadEspacio</title>
+    <ns>102</ns>
+    <id>197</id>
+    <revision>
+      <id>612</id>
+      <timestamp>2016-05-24T22:52:21Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ContactoGrupo</title>
+    <ns>102</ns>
+    <id>217</id>
+    <revision>
+      <id>759</id>
+      <timestamp>2016-06-05T00:31:49Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:CorreoElectronico</title>
+    <ns>102</ns>
+    <id>10</id>
+    <revision>
+      <id>578</id>
+      <parentid>13</parentid>
+      <timestamp>2016-05-16T21:26:00Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:DescripcionEvento</title>
+    <ns>102</ns>
+    <id>553</id>
+    <revision>
+      <id>1746</id>
+      <timestamp>2016-11-10T22:00:45Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:DireccionEspacio</title>
+    <ns>102</ns>
+    <id>196</id>
+    <revision>
+      <id>611</id>
+      <timestamp>2016-05-24T22:51:42Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:DisciplinaGrupo</title>
+    <ns>102</ns>
+    <id>212</id>
+    <revision>
+      <id>723</id>
+      <timestamp>2016-06-03T22:00:21Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:DisciplinaPersona</title>
+    <ns>102</ns>
+    <id>195</id>
+    <revision>
+      <id>601</id>
+      <timestamp>2016-05-20T22:10:47Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:EdicionDeEvento</title>
+    <ns>102</ns>
+    <id>556</id>
+    <revision>
+      <id>1749</id>
+      <timestamp>2016-11-10T22:01:50Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="148">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]]. Vincula a páginas que usen el formulario [[Usa el formulario por defecto::Evento]].</text>
+      <sha1>ewgz4h6h6mvi4p45neu71dyv1w1rblx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:Facebook</title>
+    <ns>102</ns>
+    <id>12</id>
+    <revision>
+      <id>15</id>
+      <timestamp>2016-02-23T23:12:48Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::URL]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="59">Esta es una propiedad de tipo [[Tiene tipo de datos::URL]].</text>
+      <sha1>aq5c8gx6sntlc9pu5xknk8lcj6ro109</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FechaDeEstreno</title>
+    <ns>102</ns>
+    <id>5</id>
+    <revision>
+      <id>8</id>
+      <timestamp>2016-02-23T23:02:58Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Fecha]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Fecha]].</text>
+      <sha1>e2t72snh5sad5f7f56y7vu6vr7vra02</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FechaFinEdicion</title>
+    <ns>102</ns>
+    <id>560</id>
+    <revision>
+      <id>1753</id>
+      <timestamp>2016-11-10T22:02:59Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Fecha]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Fecha]].</text>
+      <sha1>e2t72snh5sad5f7f56y7vu6vr7vra02</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FechaFinGrupo</title>
+    <ns>102</ns>
+    <id>73</id>
+    <revision>
+      <id>168</id>
+      <timestamp>2016-03-26T20:35:19Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Fecha]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Fecha]].</text>
+      <sha1>e2t72snh5sad5f7f56y7vu6vr7vra02</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FechaInicioEdicion</title>
+    <ns>102</ns>
+    <id>558</id>
+    <revision>
+      <id>1751</id>
+      <timestamp>2016-11-10T22:02:41Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Fecha]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Fecha]].</text>
+      <sha1>e2t72snh5sad5f7f56y7vu6vr7vra02</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FechaInicioGrupo</title>
+    <ns>102</ns>
+    <id>72</id>
+    <revision>
+      <id>167</id>
+      <timestamp>2016-03-26T20:34:56Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Fecha]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Fecha]].</text>
+      <sha1>e2t72snh5sad5f7f56y7vu6vr7vra02</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FechaJornada</title>
+    <ns>102</ns>
+    <id>565</id>
+    <revision>
+      <id>1758</id>
+      <timestamp>2016-11-10T22:04:31Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Fecha]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Fecha]].</text>
+      <sha1>e2t72snh5sad5f7f56y7vu6vr7vra02</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FechaNacimientoPersona</title>
+    <ns>102</ns>
+    <id>89</id>
+    <revision>
+      <id>200</id>
+      <timestamp>2016-04-02T22:10:58Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Fecha]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Fecha]].</text>
+      <sha1>e2t72snh5sad5f7f56y7vu6vr7vra02</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FormatoObra</title>
+    <ns>102</ns>
+    <id>192</id>
+    <revision>
+      <id>557</id>
+      <timestamp>2016-05-09T23:09:42Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FotoObra</title>
+    <ns>102</ns>
+    <id>53</id>
+    <revision>
+      <id>86</id>
+      <timestamp>2016-02-27T18:48:46Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FotoPersona</title>
+    <ns>102</ns>
+    <id>88</id>
+    <revision>
+      <id>199</id>
+      <timestamp>2016-04-02T22:10:31Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FuncionEspFecha</title>
+    <ns>102</ns>
+    <id>43</id>
+    <revision>
+      <id>60</id>
+      <timestamp>2016-02-24T21:49:09Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Fecha]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Fecha]].</text>
+      <sha1>e2t72snh5sad5f7f56y7vu6vr7vra02</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FuncionEspLugar</title>
+    <ns>102</ns>
+    <id>44</id>
+    <revision>
+      <id>738</id>
+      <parentid>61</parentid>
+      <timestamp>2016-06-03T23:30:15Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="149">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]]. Vincula a páginas que usen el formulario [[Usa el formulario por defecto::Espacio]].</text>
+      <sha1>1sdpiie0as5k9kkh51rjteicnht7ucs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:FuncionEspMarco</title>
+    <ns>102</ns>
+    <id>45</id>
+    <revision>
+      <id>62</id>
+      <timestamp>2016-02-24T21:49:44Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:GeneroDisciplinaObra</title>
+    <ns>102</ns>
+    <id>193</id>
+    <revision>
+      <id>571</id>
+      <timestamp>2016-05-09T23:27:54Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ImagenEdicion</title>
+    <ns>102</ns>
+    <id>705</id>
+    <revision>
+      <id>2191</id>
+      <timestamp>2017-03-07T22:44:18Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ImagenEvento</title>
+    <ns>102</ns>
+    <id>552</id>
+    <revision>
+      <id>1745</id>
+      <timestamp>2016-11-10T22:00:12Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:LogoGrupo</title>
+    <ns>102</ns>
+    <id>84</id>
+    <revision>
+      <id>192</id>
+      <timestamp>2016-04-02T21:53:53Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:LugarEdicion</title>
+    <ns>102</ns>
+    <id>562</id>
+    <revision>
+      <id>1755</id>
+      <timestamp>2016-11-10T22:03:22Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="149">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]]. Vincula a páginas que usen el formulario [[Usa el formulario por defecto::Espacio]].</text>
+      <sha1>1sdpiie0as5k9kkh51rjteicnht7ucs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:LugarEstreno</title>
+    <ns>102</ns>
+    <id>194</id>
+    <revision>
+      <id>1845</id>
+      <parentid>620</parentid>
+      <timestamp>2016-11-27T01:27:49Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:LugarJornada</title>
+    <ns>102</ns>
+    <id>566</id>
+    <revision>
+      <id>1759</id>
+      <timestamp>2016-11-10T22:04:52Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="149">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]]. Vincula a páginas que usen el formulario [[Usa el formulario por defecto::Espacio]].</text>
+      <sha1>1sdpiie0as5k9kkh51rjteicnht7ucs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:MetodologiaEvento</title>
+    <ns>102</ns>
+    <id>555</id>
+    <revision>
+      <id>1748</id>
+      <timestamp>2016-11-10T22:01:32Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:Motivacion</title>
+    <ns>102</ns>
+    <id>21</id>
+    <revision>
+      <id>30</id>
+      <timestamp>2016-02-23T23:53:43Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:MotivacionEvento</title>
+    <ns>102</ns>
+    <id>554</id>
+    <revision>
+      <id>1747</id>
+      <timestamp>2016-11-10T22:01:09Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:NombreParticipante</title>
+    <ns>102</ns>
+    <id>31</id>
+    <revision>
+      <id>40</id>
+      <timestamp>2016-02-24T21:10:02Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="149">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]]. Vincula a páginas que usen el formulario [[Usa el formulario por defecto::Persona]].</text>
+      <sha1>69eezk4gd8yujvooydxm3dufnyzf4w3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:NombreParticipanteDeGrupo</title>
+    <ns>102</ns>
+    <id>74</id>
+    <revision>
+      <id>169</id>
+      <timestamp>2016-03-26T20:37:20Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="149">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]]. Vincula a páginas que usen el formulario [[Usa el formulario por defecto::Persona]].</text>
+      <sha1>69eezk4gd8yujvooydxm3dufnyzf4w3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:NombreParticipanteTecnico</title>
+    <ns>102</ns>
+    <id>561</id>
+    <revision>
+      <id>1754</id>
+      <timestamp>2016-11-10T22:03:18Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="149">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]]. Vincula a páginas que usen el formulario [[Usa el formulario por defecto::Persona]].</text>
+      <sha1>69eezk4gd8yujvooydxm3dufnyzf4w3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ObjetoFuncionEspecial</title>
+    <ns>102</ns>
+    <id>216</id>
+    <revision>
+      <id>737</id>
+      <timestamp>2016-06-03T23:29:19Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ObjetoJornada</title>
+    <ns>102</ns>
+    <id>563</id>
+    <revision>
+      <id>1756</id>
+      <timestamp>2016-11-10T22:04:07Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ObjetoParticipanteEspacio</title>
+    <ns>102</ns>
+    <id>581</id>
+    <revision>
+      <id>1862</id>
+      <timestamp>2016-11-28T15:32:32Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ObjetoParticipanteTecnico</title>
+    <ns>102</ns>
+    <id>559</id>
+    <revision>
+      <id>1752</id>
+      <timestamp>2016-11-10T22:02:47Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ObjetoTemporada</title>
+    <ns>102</ns>
+    <id>215</id>
+    <revision>
+      <id>732</id>
+      <timestamp>2016-06-03T22:56:09Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="63">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]].</text>
+      <sha1>3r7v339fn59razz3l8fgbswsauqk7yu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ObraJornada</title>
+    <ns>102</ns>
+    <id>567</id>
+    <revision>
+      <id>1760</id>
+      <timestamp>2016-11-10T22:05:16Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Página]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="146">Esta es una propiedad de tipo [[Tiene tipo de datos::Página]]. Vincula a páginas que usen el formulario [[Usa el formulario por defecto::Obra]].</text>
+      <sha1>06bpz46mrnzdv5qfakf4r96wnj2tfzh</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:CajaContacto</title>
+    <ns>10</ns>
+    <id>22</id>
+    <revision>
+      <id>2130</id>
+      <parentid>2129</parentid>
+      <timestamp>2017-02-03T02:14:41Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1044">&lt;noinclude&gt;
+Esta es la plantilla &quot;CajaContacto&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{CajaContacto
+|CorreoElectronico=
+|SitioWeb=
+|Facebook=
+|Youtube=
+|OtrosDatosContacto=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;
+&lt;includeonly&gt;
+
+{{#if: {{{CorreoElectronico|}}}{{{SitioWeb|}}}{{{Facebook|}}}{{{Youtube|}}}{{{OtrosDatosContacto|}}} | &lt;div class=&quot;infobox obra&quot;&gt; | &lt;div style=&quot;display:none&quot;&gt; }} 
+&lt;div class=&quot;heading&quot;&gt;Contacto&lt;/div&gt;
+&lt;div class=&quot;info&quot;&gt;
+&lt;div&gt;
+{{#if: {{{CorreoElectronico|}}} |  &lt;span&gt;&lt;b&gt;Email:&lt;/b&gt; [[CorreoElectronico::{{{CorreoElectronico|}}}]]  &lt;/span&gt; &lt;br/&gt;}}{{#if: {{{SitioWeb|}}} |  &lt;span&gt;&lt;b&gt;Sitio web:&lt;/b&gt; [[SitioWeb::{{{SitioWeb|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Facebook|}}} |  &lt;span&gt;&lt;b&gt;Facebook:&lt;/b&gt; [[Facebook::{{{Facebook|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Youtube|}}} |  &lt;span&gt;&lt;b&gt;Youtube:&lt;/b&gt; [[Youtube::{{{Youtube|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{OtrosDatosContacto|}}} |  &lt;span&gt;&lt;b&gt;Otros datos de contacto:&lt;/b&gt; {{{OtrosDatosContacto|}}} &lt;/span&gt; }}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>nneily560okpz6x9n0mx2sso7ktww4o</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:CajaDatosEdicion</title>
+    <ns>10</ns>
+    <id>569</id>
+    <revision>
+      <id>2192</id>
+      <parentid>1835</parentid>
+      <timestamp>2017-03-07T22:52:00Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1245">&lt;noinclude&gt;
+Esta es la plantilla &quot;CajaDatosEdicion&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{CajaDatosEdicion
+|ImagenEdicion=
+|Evento=
+|FechaInicioEdicion=
+|FechaFinEdicion=
+|LugarEdicion=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+
+&lt;div class=&quot;infobox edicion&quot;&gt; 
+&lt;div class=&quot;heading&quot;&gt;{{PAGENAME}}&lt;/div&gt;
+{{#ifexist: File:{{{ImagenEdicion|}}} | &lt;div class=&quot;picture&quot; style=&quot;background-color: gray&quot;&gt;[[ImagenEdicion::File:{{{ImagenEdicion|}}}]]&lt;/div&gt;}}
+&lt;div class=&quot;info&quot;&gt;
+&lt;div&gt;
+
+{{#if: {{{Evento|}}} |  &lt;span&gt;&lt;b&gt;Evento:&lt;/b&gt; {{#formredlink:target={{{Evento|}}}|form=Evento}} {{#set: EdicionDeEvento={{{Evento|}}}}} &lt;/span&gt;&lt;br/&gt; }}{{#if: {{{FechaInicioEdicion|}}} | &lt;span&gt;&lt;b&gt;Fecha de Inicio:&lt;/b&gt; [[FechaInicioEdicion::{{#time: d/m/Y | {{{FechaInicioEdicion|}}} }} ]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{FechaFinEdicion|}}} |  &lt;span&gt;&lt;b&gt;Fecha de Fin:&lt;/b&gt; [[FechaFinEdicion::{{#time: d/m/Y | {{{FechaFinEdicion|}}} }} ]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{LugarEdicion|}}} |  &lt;span&gt;&lt;b&gt;Lugar:&lt;/b&gt; {{#arraymap:{{{LugarEdicion|}}}|,|x|[[LugarEdicion::x| ]]{{#formredlink:target=x|form=Espacio}}}} &lt;/span&gt; }}
+                                                    
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+[[Categoría:Ediciones]]
+&lt;/includeonly&gt;</text>
+      <sha1>ir7vhccwjrtdwvk4kq7vmeq3i28f9vc</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:CajaDatosEspacio</title>
+    <ns>10</ns>
+    <id>199</id>
+    <revision>
+      <id>4389</id>
+      <parentid>4388</parentid>
+      <timestamp>2018-05-24T12:06:35Z</timestamp>
+      <contributor>
+        <username>Dtorres</username>
+        <id>2</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1177">&lt;noinclude&gt;
+Esta es la plantilla &quot;CajaDatosEspacio&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{CajaDatosEspacio
+|FotoEspacio=
+|Direccion=
+|Ciudad=
+|Pais=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div class=&quot;infobox lugar&quot;&gt; 
+&lt;div class=&quot;heading&quot;&gt;{{PAGENAME}}&lt;/div&gt;
+{{#ifexist: File:{{{FotoEspacio|}}} | &lt;div class=&quot;picture&quot;&gt;[[FotoObra::File:{{{FotoEspacio|}}}]] &lt;/div&gt;}}
+&lt;div class=&quot;info&quot;&gt;
+&lt;div&gt;
+{{#if: {{{Direccion|}}} |  &lt;span&gt;&lt;b&gt;Dirección:&lt;/b&gt; [[DireccionEspacio::{{{Direccion|}}}]] &lt;/span&gt;&lt;br/&gt; }}{{#if: {{{Ciudad|}}} | &lt;span&gt;&lt;b&gt;Ciudad:&lt;/b&gt; [[CiudadEspacio::{{{Ciudad|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Pais|}}} |  &lt;span&gt;&lt;b&gt;País:&lt;/b&gt; [[PaisEspacio::{{{Pais|}}}]] &lt;/span&gt; &lt;br/&gt; }}
+{{#if: {{{Direccion|}}} | {{#if: {{{Ciudad|}}} | {{#if: {{{Pais|}}} |  &lt;span&gt;&lt;b&gt;Coordenadas:&lt;/b&gt; [[Has coordinates:: {{#geocode:{{#show: {{FULLPAGENAME}} |?DireccionEspacio }}, {{#show: {{FULLPAGENAME}} |?CiudadEspacio }}, {{#show: {{FULLPAGENAME}} |?PaisEspacio }}}}]] &lt;/span&gt;&lt;br/&gt;   |   }} |   }} |  }}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+[[CantidadDeObras::{{#ask:[[LugarEstreno::{{PAGENAME}}]]|format=count}}| ]]
+
+[[Categoría:Espacios]]
+&lt;/includeonly&gt;</text>
+      <sha1>972azfanlj5l12vbtw78olrqc4bedlv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:CajaDatosEvento</title>
+    <ns>10</ns>
+    <id>568</id>
+    <revision>
+      <id>2133</id>
+      <parentid>1777</parentid>
+      <timestamp>2017-02-03T02:30:40Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="448">&lt;noinclude&gt;
+Esta es la plantilla &quot;CajaDatosEvento&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{CajaDatosEvento
+|ImagenEvento=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+
+
+&lt;div class=&quot;infobox evento&quot;&gt; 
+&lt;div class=&quot;heading&quot;&gt;{{PAGENAME}}&lt;/div&gt;
+{{#ifexist: File:{{{ImagenEvento|}}} | &lt;div class=&quot;picture&quot;&gt;[[ImagenEvento::File:{{{ImagenEvento|}}}]]&lt;/div&gt;}}
+&lt;/div&gt;
+
+
+[[Categoría:Eventos]]
+&lt;/includeonly&gt;</text>
+      <sha1>loovp9dtmii1v71j7dus93ahxw1c01a</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:CajaDatosGrupo</title>
+    <ns>10</ns>
+    <id>75</id>
+    <revision>
+      <id>2134</id>
+      <parentid>1122</parentid>
+      <timestamp>2017-02-03T02:31:08Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1111">&lt;noinclude&gt;
+Esta es la plantilla &quot;CajaDatosGrupo&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{CajaDatosGrupo
+|LogoGrupo=
+|FechaInicio=
+|FechaFin=
+|Procedencia=
+|Disciplina=
+|Contacto=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div class=&quot;infobox grupo&quot;&gt; 
+&lt;div class=&quot;heading&quot;&gt;{{PAGENAME}}&lt;/div&gt;
+{{#ifexist: File:{{{LogoGrupo|}}} | &lt;div class=&quot;picture&quot;&gt;[[LogoGrupo::File:{{{LogoGrupo|}}}]]&lt;/div&gt;}}
+&lt;div class=&quot;info&quot;&gt;
+&lt;div&gt;
+{{#if: {{{FechaInicio|}}} |  &lt;span&gt;&lt;b&gt;Fecha de Inicio:&lt;/b&gt; [[FechaInicioGrupo::{{#time: d/m/Y | {{{FechaInicio|}}} }} ]] &lt;/span&gt; &lt;br/&gt;}}{{#if: {{{FechaFin|}}} | &lt;span&gt;&lt;b&gt;Fecha de Fin:&lt;/b&gt; [[FechaFinGrupo::{{#time: d/m/Y | {{{FechaFin|}}} }}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Procedencia|}}} |  &lt;span&gt;&lt;b&gt;Procedencia:&lt;/b&gt; [[ProcedenciaGrupo::{{{Procedencia|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Contacto|}}} |  &lt;span&gt;&lt;b&gt;Contacto:&lt;/b&gt; [[ContactoGrupo::{{{Contacto|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Disciplina|}}} |  &lt;span&gt;&lt;b&gt;Disciplina:&lt;/b&gt; [[DisciplinaGrupo::{{{Disciplina|}}}]] &lt;/span&gt; &lt;br/&gt; }}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+[[Categoría:Grupos]]
+&lt;/includeonly&gt;</text>
+      <sha1>k6dt58n6fditnr7hi0ayjhva7gyqqyf</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:CajaDatosPersona</title>
+    <ns>10</ns>
+    <id>90</id>
+    <revision>
+      <id>2135</id>
+      <parentid>1114</parentid>
+      <timestamp>2017-02-03T02:31:43Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="778">&lt;noinclude&gt;
+Esta es la plantilla &quot;CajaDatosPersona&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{CajaDatosPersona
+|FotoPersona=
+|FechaNacimiento=
+|Disciplina=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div class=&quot;infobox persona&quot;&gt; 
+&lt;div class=&quot;heading&quot;&gt;{{PAGENAME}}&lt;/div&gt;
+{{#ifexist: File:{{{FotoPersona|}}} | &lt;div class=&quot;picture&quot; style=&quot;background-color: gray&quot;&gt;[[FotoPersona::File:{{{FotoPersona|}}}]]&lt;/div&gt;}}
+&lt;div class=&quot;info&quot;&gt;
+&lt;div&gt;
+{{#if: {{{FechaNacimiento|}}} | &lt;span&gt;&lt;b&gt;Fecha de Nacimiento:&lt;/b&gt; [[ FechaNacimientoPersona::{{#time: d-m-Y | {{{FechaNacimiento|}}} }} ]]&lt;/span&gt; &lt;br/&gt;}}{{#if: {{{Disciplina|}}} | &lt;span&gt;&lt;b&gt;Disciplina:&lt;/b&gt; [[DisciplinaPersona::{{{Disciplina|}}}]] &lt;/span&gt; }}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/includeonly&gt;</text>
+      <sha1>hua0zbzadfh0evqcqz9vt447p04zto1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:CajaResumen</title>
+    <ns>10</ns>
+    <id>9</id>
+    <revision>
+      <id>2131</id>
+      <parentid>1840</parentid>
+      <timestamp>2017-02-03T02:22:54Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1433">&lt;noinclude&gt;
+Esta es la plantilla &quot;CajaResumen&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{CajaResumen
+|FotoObra=
+|FechaEstreno=
+|LugarEstreno=
+|UnaObraDe=
+|BasadaEn=
+|Temas=
+|Formato=
+|Genero=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div class=&quot;infobox obra&quot;&gt; 
+&lt;div class=&quot;heading&quot;&gt;{{PAGENAME}}&lt;/div&gt;
+{{#ifexist: File:{{{FotoObra|}}} |&lt;div class=&quot;picture&quot;&gt; [[FotoObra::File:{{{FotoObra|}}}]] &lt;/div&gt;}}
+&lt;div class=&quot;info&quot;&gt;
+&lt;div&gt;
+{{#if: {{{FechaEstreno|}}} |  &lt;span&gt;&lt;b&gt;Fecha de estreno:&lt;/b&gt; [[FechaDeEstreno::{{#time: d/m/Y | {{{FechaEstreno|}}} }} ]] &lt;/span&gt; &lt;br/&gt;}}{{#if: {{{LugarEstreno|}}} |  &lt;span&gt;&lt;b&gt;Lugar de estreno:&lt;/b&gt; {{#formredlink:target={{{LugarEstreno|}}}|form=Espacio}} {{#set: LugarEstreno={{{LugarEstreno|}}}}} &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{UnaObraDe|}}} |  &lt;span&gt;&lt;b&gt;Una obra de:&lt;/b&gt; {{#arraymap:{{{UnaObraDe|}}}|,|x|[[UnaObraDe::x| ]]{{#formredlink:target=x|alt_form[0]=Persona|alt_form[1]=Grupo}}}} &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{BasadaEn|}}} |  &lt;span&gt;&lt;b&gt;Basada en:&lt;/b&gt; {{{BasadaEn|}}} {{#set:BasadaEn={{{BasadaEn|}}}}} &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Temas|}}} |  &lt;span&gt;&lt;b&gt;Temas:&lt;/b&gt; [[Temas::{{{Temas|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Formato|}}} |  &lt;span&gt;&lt;b&gt;Formato:&lt;/b&gt; [[FormatoObra::{{{Formato|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Genero|}}} |  &lt;span&gt;&lt;b&gt;Género:&lt;/b&gt; [[GeneroDisciplinaObra::{{{Genero|}}}]] &lt;/span&gt; &lt;br/&gt; }}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+[[Categoría:Obras]]
+&lt;/includeonly&gt;</text>
+      <sha1>2d18hw9v7pz1f97jybyjcgaphl389zt</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:DatosJornada</title>
+    <ns>10</ns>
+    <id>576</id>
+    <revision>
+      <id>1836</id>
+      <parentid>1834</parentid>
+      <timestamp>2016-11-27T01:04:34Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="675">&lt;noinclude&gt;
+Esta es la plantilla &quot;DatosJornada&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{DatosJornada
+|FechaJornada=
+|LugarJornada=
+|ObraJornada=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{| class=&quot;wikitable&quot;
+| [[ FechaJornada::{{#time: d-m-Y | {{{FechaJornada|}}} }} ]] - {{#formredlink:target={{{LugarJornada|}}}|form=Espacio}} {{#set: LugarJornada={{{LugarJornada|}}}}} 
+|-
+| {{#arraymap:{{{ObraJornada|}}}|,|x|{{#set:ObraJornada=x}}{{#formredlink:target=x|form=Obra}}}}
+{{#set_internal:ObjetoJornada|FechaJornada={{{FechaJornada|}}}|LugarJornada={{{LugarJornada|}}}|ObraJornada={{{ObraJornada|}}} }}
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>s8z5okyfje2pvt4eokvx8n9yu9hckyo</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:EdicionEvento</title>
+    <ns>10</ns>
+    <id>571</id>
+    <revision>
+      <id>1832</id>
+      <parentid>1770</parentid>
+      <timestamp>2016-11-27T00:55:52Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="370">&lt;noinclude&gt;
+Esta es la plantilla &quot;EdicionEvento&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{EdicionEvento
+|TituloEdicion=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;{| class=&quot;wikitable&quot;
+! Edición
+| {{#formredlink:target={{{TituloEdicion|}}}|form=Edicion}} {{#set: TituloEdicion={{{TituloEdicion|}}}}} 
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>ju1s7pckekmmurobcpcq72j7p8l599c</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:EdicionesEvento</title>
+    <ns>10</ns>
+    <id>572</id>
+    <revision>
+      <id>1772</id>
+      <parentid>1771</parentid>
+      <timestamp>2016-11-10T22:12:14Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="267">&lt;noinclude&gt;
+Esta es la plantilla &quot;EdicionesEvento&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{EdicionesEvento
+|CampoEdicion=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+==Ediciones==
+{{{CampoEdicion|}}}
+&lt;/includeonly&gt;</text>
+      <sha1>7e9w5hfn3pwxfs7rhxcrgth7ivktsqs</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:EquipoTecnico</title>
+    <ns>10</ns>
+    <id>575</id>
+    <revision>
+      <id>1787</id>
+      <parentid>1779</parentid>
+      <timestamp>2016-11-10T22:28:39Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="352">&lt;noinclude&gt;
+Esta es la plantilla &quot;EquipoTecnico&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{EquipoTecnico
+|ParticipanteTecnico={{ParticipacionTecnica
+|NombreParticipanteTecnico=
+|RolTecnico=
+}}
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+==Equipo Organizador==
+{{{ParticipanteTecnico|}}}
+&lt;/includeonly&gt;</text>
+      <sha1>pdc9aydk3s39goigqfiph3yqbrklk87</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:FuncionEspecialTabla</title>
+    <ns>10</ns>
+    <id>46</id>
+    <revision>
+      <id>1839</id>
+      <parentid>1830</parentid>
+      <timestamp>2016-11-27T01:12:33Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="808">&lt;noinclude&gt;
+Esta es la plantilla &quot;FuncionEspecialTabla&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{FuncionEspecialTabla
+|Fecha=
+|Lugar=
+|Ciudad=
+|Marco=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;{| class=&quot;wikitable&quot;
+{{#if: {{{Fecha|}}} | ! Fecha 
+{{!}} [[ FuncionEspFecha::{{#time: d-m-Y | {{{Fecha|}}} }} ]] 
+}}
+|-
+{{#if: {{{Lugar|}}} | ! Lugar 
+{{!}} {{#formredlink:target={{{Lugar|}}}|form=Espacio}} {{#set: FuncionEspLugar={{{Lugar|}}}}} 
+}}
+|-
+{{#if: {{{Ciudad|}}} | ! Ciudad
+{{!}} {{{Ciudad|}}}
+}} 
+|-
+{{#if: {{{Marco|}}} | ! En el marco de 
+{{!}} {{{Marco|}}} {{#set:FuncionEspMarco={{{Marco|}}}}} 
+}}
+|}
+{{#set_internal:ObjetoFuncionEspecial
+|FuncionEspFecha={{{Fecha|}}}
+|FuncionEspLugar={{{Lugar|}}}
+|FuncionEspMarco={{{Marco|}}}
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>0pgyvhymyrnqdknghb0feaxjq91935i</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:InfoEdicion</title>
+    <ns>10</ns>
+    <id>573</id>
+    <revision>
+      <id>1774</id>
+      <parentid>1773</parentid>
+      <timestamp>2016-11-10T22:13:26Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="271">&lt;noinclude&gt;
+Esta es la plantilla &quot;InfoEdicion&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{InfoEdicion
+|SobreLaEdicion=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+==Sobre la Edición==
+{{{SobreLaEdicion|}}}
+&lt;/includeonly&gt;</text>
+      <sha1>288um4w7gbl15t7odwbo4oyqh01h4a6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:InfoEspacio</title>
+    <ns>10</ns>
+    <id>200</id>
+    <revision>
+      <id>2184</id>
+      <parentid>2183</parentid>
+      <timestamp>2017-03-07T22:27:57Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1026">&lt;noinclude&gt;
+Esta es la plantilla &quot;InfoEspacio&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{InfoEspacio
+|SobreElEspacio=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{#if: {{{SobreElEspacio|}}} | ==Sobre el Espacio==
+{{{SobreElEspacio|}}} 
+}}
+
+{{#if: {{#ask:[[LugarEstreno::{{SUBJECTPAGENAME}}]]}} | ==Obras estrenadas==
+{{#ask:[[LugarEstreno::{{SUBJECTPAGENAME}}]]|format=list}}
+}}
+
+{{#if: {{#ask:[[ObjetoTemporada::+]][[TemporadaLugar::{{SUBJECTPAGENAME}}]]}} | ==Temporadas==
+{{#ask:[[ObjetoTemporada::+]][[TemporadaLugar::{{SUBJECTPAGENAME}}]]
+|mainlabel=-
+|? ObjetoTemporada=Obra
+|? TemporadaFechaDesde=Desde
+|? TemporadaFechaHasta=Hasta
+}}
+}}
+
+{{#if: {{#ask:[[ObjetoFuncionEspecial::+]][[FuncionEspLugar::{{SUBJECTPAGENAME}}]]}} | ==Funciones Especiales==
+{{#ask:[[ObjetoFuncionEspecial::+]][[FuncionEspLugar::{{SUBJECTPAGENAME}}]]
+|mainlabel=-
+|? ObjetoFuncionEspecial=Obra
+|? FuncionEspFecha=Fecha
+|? FuncionEspMarco=Marco
+}}
+}}
+
+==Más sobre el Espacio==
+&lt;/includeonly&gt;</text>
+      <sha1>krziac7nv89939jbee1rpdaja9hernx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:InfoEvento</title>
+    <ns>10</ns>
+    <id>570</id>
+    <revision>
+      <id>2172</id>
+      <parentid>2171</parentid>
+      <timestamp>2017-03-07T22:07:22Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="666">&lt;noinclude&gt;
+Esta es la plantilla &quot;InfoEvento&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{InfoEvento
+|DescripcionEvento=
+|MotivacionEvento=
+|MetodologiaEvento=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{#if: {{{DescripcionEvento|}}} | ==Descripción==
+{{{DescripcionEvento|}}} {{#set:DescripcionEvento={{{DescripcionEvento|}}}}}
+}}
+
+{{#if: {{{MotivacionEvento|}}} | ==Motivación==
+{{{MotivacionEvento|}}} {{#set:MotivacionEvento={{{MotivacionEvento|}}}}}
+}}
+
+{{#if: {{{MetodologiaEvento|}}} | ==Modalidad de Trabajo==
+{{{MetodologiaEvento|}}} {{#set:MetodologiaEvento={{{MetodologiaEvento|}}}}}
+}} 
+&lt;/includeonly&gt;</text>
+      <sha1>dtwh5vlhz42016od8h1c0w0pggvqd24</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:InfoGrupo</title>
+    <ns>10</ns>
+    <id>76</id>
+    <revision>
+      <id>2190</id>
+      <parentid>590</parentid>
+      <timestamp>2017-03-07T22:38:17Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="364">&lt;noinclude&gt;
+Esta es la plantilla &quot;InfoGrupo&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{InfoGrupo
+|Reseña=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{Reseña|}}}
+
+{{#if: {{#ask:[[UnaObraDe::{{SUBJECTPAGENAME}}]]}} | ==Obras del Grupo==
+{{#ask:[[UnaObraDe::{{SUBJECTPAGENAME}}]]|format=list}}
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>7ruwnslhhsxckv6ot075mcw089lk0sd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:Jornada</title>
+    <ns>10</ns>
+    <id>577</id>
+    <revision>
+      <id>1783</id>
+      <parentid>1782</parentid>
+      <timestamp>2016-11-10T22:18:19Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="327">&lt;noinclude&gt;
+Esta es la plantilla &quot;Jornada&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{Jornada
+|ParticipacionJornada={{DatosJornada
+|FechaJornada=
+|LugarJornada=
+|ObraJornada=
+}}
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+==Jornadas==
+{{{ParticipacionJornada|}}}
+&lt;/includeonly&gt;</text>
+      <sha1>5dbmdua3jjj3zlwces9urfmp5y68r5t</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:Participacion</title>
+    <ns>10</ns>
+    <id>33</id>
+    <revision>
+      <id>1824</id>
+      <parentid>1823</parentid>
+      <timestamp>2016-11-15T00:30:13Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="497">&lt;noinclude&gt;
+Esta es la plantilla &quot;Participacion&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{Participacion
+|Nombre=
+|Rol=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;{| class=&quot;wikitable&quot;
+| {{#formredlink:target={{{Nombre|}}}|alt_form[0]=Persona|alt_form[1]=Grupo}} {{#set:NombreParticipante={{{Nombre|}}}}}
+| {{#arraymap:{{{Rol|}}}|,|x|[[Rol::x]]}}
+{{#set_internal:ParticipaDeObra|NombreParticipante={{{Nombre|}}}|Rol={{{Rol|}}} }}
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>0mhkpwih2tr80jihhahf5e0jyxbu4ok</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:ParticipacionEspacio</title>
+    <ns>10</ns>
+    <id>582</id>
+    <revision>
+      <id>1864</id>
+      <parentid>1863</parentid>
+      <timestamp>2016-11-28T15:35:04Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="521">&lt;noinclude&gt;
+Esta es la plantilla &quot;ParticipacionEspacio&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{ParticipacionEspacio
+|Nombre=
+|Rol=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;{| class=&quot;wikitable&quot;
+| {{#formredlink:target={{{Nombre|}}}|alt_form[0]=Persona|alt_form[1]=Grupo}} {{#set:NombreParticipante={{{Nombre|}}}}}
+| {{#arraymap:{{{Rol|}}}|,|x|[[Rol::x]]}}
+{{#set_internal:ObjetoParticipanteEspacio|NombreParticipante={{{Nombre|}}}|Rol={{{Rol|}}} }}
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>cw7ncay2vwx8qc5s9jl1h1get764x21</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:ParticipacionGrupo</title>
+    <ns>10</ns>
+    <id>81</id>
+    <revision>
+      <id>1831</id>
+      <parentid>1811</parentid>
+      <timestamp>2016-11-27T00:53:58Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="369">&lt;noinclude&gt;
+Esta es la plantilla &quot;ParticipacionGrupo&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{ParticipacionGrupo
+|Nombre=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;{| class=&quot;wikitable&quot;
+! Nombre
+| {{#formredlink:target={{{Nombre|}}}|form=Persona}} {{#set: NombreParticipanteDeGrupo={{{Nombre|}}}}} 
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>hs989i4gatt4zoekam7qvxbcax7mz8n</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:ParticipacionTecnica</title>
+    <ns>10</ns>
+    <id>574</id>
+    <revision>
+      <id>1833</id>
+      <parentid>1776</parentid>
+      <timestamp>2016-11-27T00:56:47Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="623">&lt;noinclude&gt;
+Esta es la plantilla &quot;ParticipacionTecnica&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{ParticipacionTecnica
+|NombreParticipanteTecnico=
+|RolTecnico=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;{| class=&quot;wikitable&quot;
+| {{#formredlink:target={{{NombreParticipanteTecnico|}}}|form=Persona}} {{#set: NombreParticipanteTecnico={{{NombreParticipanteTecnico|}}}}} 
+| {{#arraymap:{{{RolTecnico|}}}|,|x|[[RolTecnico::x]]}}
+{{#set_internal:ObjetoParticipanteTecnico|NombreParticipanteTecnico={{{NombreParticipanteTecnico|}}}|RolTecnico={{{RolTecnico|}}} }}
+|}
+&lt;/includeonly&gt;</text>
+      <sha1>jhaep17jdwcocowohkerthg25srvuuw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:ParticipantesEspacio</title>
+    <ns>10</ns>
+    <id>583</id>
+    <revision>
+      <id>1866</id>
+      <parentid>1865</parentid>
+      <timestamp>2016-11-28T15:39:12Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="345">&lt;noinclude&gt;
+Esta es la plantilla &quot;ParticipantesEspacio&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{ParticipantesEspacio
+|Participacion={{ParticipacionEspacio
+|Nombre=
+|Rol=
+}}
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+==Plantel del Espacio y Participantes==
+{{{Participacion|}}}
+&lt;/includeonly&gt;</text>
+      <sha1>myogf6yobvlocubc9osu4tnos0h81yl</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:ParticipantesGrupo</title>
+    <ns>10</ns>
+    <id>80</id>
+    <revision>
+      <id>411</id>
+      <parentid>183</parentid>
+      <timestamp>2016-04-30T22:50:18Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <minor/>
+      <comment>Protegió «[[Plantilla:ParticipantesGrupo]]» ([Editar=Solo permitir administradores] (indefinido) [Pueden trasladar=Solo permitir administradores] (indefinido)) [en cascada]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="284">&lt;noinclude&gt;
+Esta es la plantilla &quot;ParticipantesGrupo&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{ParticipantesGrupo
+|Participacion=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+==Miembros del Grupo==
+{{{Participacion|}}}
+&lt;/includeonly&gt;</text>
+      <sha1>9ngssf4b5ughnynb7c2vw7bgcgrbtwv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:ParticipantesObra</title>
+    <ns>10</ns>
+    <id>34</id>
+    <revision>
+      <id>1137</id>
+      <parentid>650</parentid>
+      <timestamp>2016-09-18T22:34:27Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="310">&lt;noinclude&gt;
+Esta es la plantilla &quot;ParticipantesObra&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{ParticipantesObra
+|Participacion={{Participacion
+|Nombre=
+|Rol=
+}}
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+==Participantes==
+{{{Participacion|}}}
+&lt;/includeonly&gt;</text>
+      <sha1>k183gi27szuhh31nptbvbq1lq2zacln</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:PersonaV2</title>
+    <ns>10</ns>
+    <id>49</id>
+    <revision>
+      <id>2189</id>
+      <parentid>2188</parentid>
+      <timestamp>2017-03-07T22:36:26Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1492">&lt;noinclude&gt;
+Esta es la plantilla &quot;PersonaV2&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{PersonaV2
+|Reseña Curricular=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{#if: {{{Reseña Curricular|}}} | ==Reseña Curricular==
+{{{Reseña Curricular|}}} 
+}}
+
+{{#if: {{#ask:[[UnaObraDe::{{SUBJECTPAGENAME}}]]}} | ==Obras de esta persona==
+{{#ask:[[UnaObraDe::{{SUBJECTPAGENAME}}]]|format=list}}
+}}
+
+{{#if: {{#ask:[[ParticipaDeObra::+]][[NombreParticipante::{{SUBJECTPAGENAME}}]]}} | ==Participaciones en Obras ==
+{{#ask:[[ParticipaDeObra::+]][[NombreParticipante::{{SUBJECTPAGENAME}}]]
+|mainlabel=-
+|? ParticipaDeObra=Participación
+|? Rol
+}}
+}}
+
+{{#if: {{#ask:[[NombreParticipanteDeGrupo::{{SUBJECTPAGENAME}}]]}} | ==Participaciones en Grupos ==
+{{#ask:[[NombreParticipanteDeGrupo::{{SUBJECTPAGENAME}}]]|format=list}}
+}}
+
+{{#if: {{#ask:[[ObjetoParticipanteEspacio::+]][[NombreParticipante::{{SUBJECTPAGENAME}}]]}} | ==Participaciones en Espacios ==
+{{#ask:[[ObjetoParticipanteEspacio::+]][[NombreParticipante::{{SUBJECTPAGENAME}}]]
+|mainlabel=-
+|? ObjetoParticipanteEspacio=Espacio
+|? Rol
+}}
+}}
+
+{{#if: {{#ask:[[ObjetoParticipanteTecnico::+]][[NombreParticipanteTecnico::{{SUBJECTPAGENAME}}]]}} | ==Participaciones en Ediciones de Festivales ==
+{{#ask:[[ObjetoParticipanteTecnico::+]][[NombreParticipanteTecnico::{{SUBJECTPAGENAME}}]]
+|mainlabel=-
+|? ObjetoParticipanteTecnico=Edición
+|? RolTecnico=Rol
+}}
+}}
+
+[[Categoría:Personas]]
+&lt;/includeonly&gt;</text>
+      <sha1>r0w44oixtdnqftg5wnmdbycpxul4da5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:Presentaciones</title>
+    <ns>10</ns>
+    <id>40</id>
+    <revision>
+      <id>766</id>
+      <parentid>765</parentid>
+      <timestamp>2016-06-05T01:18:30Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="430">&lt;noinclude&gt;
+Esta es la plantilla &quot;Presentaciones&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{Presentaciones
+|Temporadas=
+|FuncionesEspeciales=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{#if: {{{Temporadas|}}} | ==Temporadas== }}
+{{{Temporadas|}}}
+
+{{#if: {{{FuncionesEspeciales|}}} | ==Funciones Especiales== }}
+{{{FuncionesEspeciales|}}}
+
+==Más sobre la obra==
+&lt;/includeonly&gt;</text>
+      <sha1>jljjobyezl77z958l3c4gpsbvb0opo1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:SobreLaObraV2</title>
+    <ns>10</ns>
+    <id>28</id>
+    <revision>
+      <id>3561</id>
+      <parentid>2205</parentid>
+      <timestamp>2017-11-07T21:45:25Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="871">&lt;noinclude&gt;
+Esta es la plantilla &quot;SobreLaObraV2&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{SobreLaObraV2
+|Sinopsis=
+|Motivacion=
+|ReseniaColaborativa=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{#if: {{{Sinopsis|}}} | ==Sinopsis==
+{{{Sinopsis|}}} {{#set:Sinopsis={{{Sinopsis|}}}}}
+}}
+{{#if: {{{Motivacion|}}} | ==Motivación==
+{{{Motivacion|}}} {{#set:Motivacion={{{Motivacion|}}}}}
+}}
+{{#if: {{{ReseniaColaborativa|}}} | ==Reseña Colaborativa==
+{{{ReseniaColaborativa|}}} {{#set:ReseniaColaborativa={{{ReseniaColaborativa|}}}}}
+}}
+
+{{#if: {{#ask:[[ObjetoJornada::+]][[ObraJornada::~*{{SUBJECTPAGENAME}}*]]}} | ==Participaciones en Festivales==
+{{#ask:[[ObjetoJornada::+]][[ObraJornada::~*{{SUBJECTPAGENAME}}*]] 
+|mainlabel=-
+|? ObjetoJornada=Festival
+|? FechaJornada=Fecha
+|? LugarJornada=Lugar
+}}
+}}
+
+&lt;/includeonly&gt;</text>
+      <sha1>c5auqtnpr2qt0bkigtdaphb4wlkrwhe</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Plantilla:TemporadaTabla</title>
+    <ns>10</ns>
+    <id>39</id>
+    <revision>
+      <id>1829</id>
+      <parentid>733</parentid>
+      <timestamp>2016-11-27T00:51:18Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="859">&lt;noinclude&gt;
+Esta es la plantilla &quot;TemporadaTabla&quot;. Debe llamarse en el siguiente formato:
+&lt;pre&gt;
+{{TemporadaTabla
+|Fecha Desde=
+|Fecha Hasta=
+|Lugar=
+|Ciudad=
+}}
+&lt;/pre&gt;
+Editar la página para ver el texto de la plantilla.
+&lt;/noinclude&gt;&lt;includeonly&gt;{| class=&quot;wikitable&quot;
+
+{{#if: {{{Fecha Desde|}}} | ! Fecha desde 
+{{!}} [[ TemporadaFechaDesde::{{#time: d-m-Y | {{{Fecha Desde|}}} }} ]] 
+}}
+|-
+{{#if: {{{Fecha Hasta|}}} | ! Fecha hasta 
+{{!}} [[ TemporadaFechaHasta::{{#time: d-m-Y | {{{Fecha Hasta|}}} }} ]]
+}}
+|-
+{{#if: {{{Lugar|}}} | ! Lugar
+{{!}} {{#formredlink:target={{{Lugar|}}}|form=Espacio}} {{#set: TemporadaLugar={{{Lugar|}}}}} 
+}}
+|-
+{{#if: {{{Ciudad|}}} | ! Ciudad
+{{!}} {{{Ciudad|}}} 
+}}
+|}
+{{#set_internal:ObjetoTemporada
+|TemporadaFechaDesde={{{Fecha Desde|}}}
+|TemporadaFechaHasta={{{Fecha Hasta|}}}
+|TemporadaLugar={{{Lugar|}}}
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>ny6o9vcnh3hx8ekuudhpltnno1azuu2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formulario:Edicion</title>
+    <ns>106</ns>
+    <id>550</id>
+    <revision>
+      <id>2194</id>
+      <parentid>2193</parentid>
+      <timestamp>2017-03-07T22:59:41Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="2015">&lt;noinclude&gt;
+Este es el formulario &quot;Edicion&quot;.
+Para crear una página con este formulario, escribe el nombre de la página a continuación;
+si ya existe una página con ese nombre, serás dirigido a un formulario para editar esa página.
+
+
+{{#forminput:form=Edicion}}
+
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id=&quot;wikiPreview&quot; style=&quot;display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;&quot;&gt;&lt;/div&gt;
+{{{for template|CajaDatosEdicion}}}
+{| class=&quot;formtable&quot;
+! Imágen:
+| {{{field|ImagenEdicion|uploadable}}}
+! Evento: 
+| {{{field|Evento|input type=text}}}
+|-
+! Fecha de Inicio: 
+| {{{field|FechaInicioEdicion|input type=datepicker}}}
+|-
+! Fecha de Fin: 
+| {{{field|FechaFinEdicion|input type=datepicker}}}
+|-
+! Lugar: 
+| {{{field|LugarEdicion|input type=tokens}}}
+|}
+{{{end template}}}
+
+{{{for template|InfoEdicion}}}
+{| class=&quot;formtable&quot;
+! Sobre la Edición: 
+| {{{field|SobreLaEdicion|input type=textarea}}}
+|}
+{{{end template}}}
+
+{{{for template|EquipoTecnico|label=Equipo Organizador}}}
+{{{field|ParticipanteTecnico|holds template}}}
+{{{end template}}}
+
+{{{for template|ParticipacionTecnica|multiple|embed in field=EquipoTecnico[ParticipanteTecnico]}}}
+{|
+|'''Nombre:''' {{{field|NombreParticipanteTecnico|input type=combobox}}}
+|- 
+|'''Rol:''' {{{field|RolTecnico|input type=tokens}}}
+|}
+{{{end template}}}
+
+{{{for template|Jornada|label=Jornada}}}
+{{{field|ParticipacionJornada|holds template}}}
+{{{end template}}}
+
+{{{for template|DatosJornada|multiple|embed in field=Jornada[ParticipacionJornada]}}}
+{|
+|'''Fecha:''' {{{field|FechaJornada|input type=datepicker}}}
+|- 
+|'''Lugar:''' {{{field|LugarJornada|input type=combobox}}}
+|- 
+|'''Obra:''' {{{field|ObraJornada|input type=tokens}}}
+|}
+{{{end template}}}
+
+'''Texto libre:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+&lt;/includeonly&gt;</text>
+      <sha1>drwxomsd5jqps5p3ahhvf4rer4nlatu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formulario:Espacio</title>
+    <ns>106</ns>
+    <id>201</id>
+    <revision>
+      <id>1869</id>
+      <parentid>1867</parentid>
+      <timestamp>2016-11-28T15:45:21Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="2262">&lt;noinclude&gt;
+Este es el formulario &quot;Espacio&quot;.
+Para crear una página con este formulario, escribe el nombre de la página a continuación;
+si ya existe una página con ese nombre, serás dirigido a un formulario para editar esa página.
+
+'''Antes de crear una nueva página, busca si alguien ha escrito previamente una página de contenido similar'''
+
+
+{{#forminput:form=Espacio}}
+
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id=&quot;wikiPreview&quot; style=&quot;display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;&quot;&gt;&lt;/div&gt;
+{{{for template|CajaDatosEspacio}}}
+{| class=&quot;formtable&quot;
+! Foto:
+| {{{field|FotoEspacio|uploadable}}}
+|-
+! Direccion: 
+| {{{field|Direccion|input type=text}}}
+|-
+! Ciudad: 
+| {{{field|Ciudad|input type=combobox}}}
+|-
+! Pais: 
+| {{{field|Pais|input type=combobox}}}
+|}
+{{{end template}}}
+
+{{{for template|CajaContacto|label=Contacto}}}
+{| class=&quot;formtable&quot;
+! Correo electrónico:{{#info:Para protegerte del correo electrónico no deseado (spam) te recomendamos escribir la letra @ en palabras, por ejemplo midireccion(arroba)gmail.com.}} 
+| {{{field|CorreoElectronico}}}
+|-
+! Sitio web: {{#info:Escribir la url en el formato: http://www.misitio.com.ar}}
+| {{{field|SitioWeb}}}
+|-
+! Facebook: {{#info:Escribir la url en el formato: https://www.facebook.com/mi.pagina}}
+| {{{field|Facebook}}}
+|-
+! Video: {{#info:Canal de Youtube/Vimeo}}
+| {{{field|Youtube}}}
+|-
+! Otros datos de contacto: 
+| {{{field|OtrosDatosContacto}}}
+|}
+{{{end template}}}
+
+{{{for template|ParticipantesEspacio|label=Participantes}}}
+{{{field|Participacion|holds template}}}
+{{{end template}}}
+
+{{{for template|ParticipacionEspacio|multiple|embed in field=ParticipantesEspacio[Participacion]}}}
+{|
+|'''Nombre:''' {{{field|Nombre|input type=combobox}}}
+|- 
+|'''Rol:''' {{{field|Rol|input type=text}}}
+|}
+{{{end template}}}
+
+{{{for template|InfoEspacio}}}
+{| class=&quot;formtable&quot;
+! Sobre el Espacio: 
+| {{{field|SobreElEspacio|input type=textarea}}}
+|}
+{{{end template}}}
+
+
+'''Más sobre el Espacio:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+&lt;/includeonly&gt;</text>
+      <sha1>7wbm2oc8upsfprhvtfh4plt0y9ho812</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formulario:Evento</title>
+    <ns>106</ns>
+    <id>549</id>
+    <revision>
+      <id>1785</id>
+      <parentid>1740</parentid>
+      <timestamp>2016-11-10T22:26:22Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1453">&lt;noinclude&gt;
+Este es el formulario &quot;Evento&quot;.
+Para crear una página con este formulario, escribe el nombre de la página a continuación;
+si ya existe una página con ese nombre, serás dirigido a un formulario para editar esa página.
+
+'''Antes de crear una nueva página, busca si alguien ha escrito previamente una página de contenido similar'''
+
+
+{{#forminput:form=Evento}}
+
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id=&quot;wikiPreview&quot; style=&quot;display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;&quot;&gt;&lt;/div&gt;
+{{{for template|CajaDatosEvento}}}
+{| class=&quot;formtable&quot;
+! Imágen: 
+| {{{field|ImagenEvento|uploadable}}}
+|}
+{{{end template}}}
+
+{{{for template|InfoEvento}}}
+{| class=&quot;formtable&quot;
+! Descripción: 
+| {{{field|DescripcionEvento}}}
+|-
+! Motivación: 
+| {{{field|MotivacionEvento}}}
+|-
+! Modalidad de Trabajo:
+| {{{field|MetodologiaEvento}}}
+|}
+{{{end template}}}
+
+
+{{{for template|EdicionesEvento|label=Ediciones}}}
+
+{{{field|CampoEdicion|holds template}}}
+
+{{{end template}}}
+
+{{{for template|EdicionEvento|multiple|embed in field=EdicionesEvento[CampoEdicion]}}}
+
+'''Edición:''' {{{field|TituloEdicion|input type=text}}}
+
+{{{end template}}}
+
+'''Texto libre:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+&lt;/includeonly&gt;</text>
+      <sha1>kdra15svwc4ygl65u4pfzxrk6lgoi4l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formulario:Grupo</title>
+    <ns>106</ns>
+    <id>77</id>
+    <revision>
+      <id>956</id>
+      <parentid>928</parentid>
+      <timestamp>2016-07-01T22:40:56Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="2463">&lt;noinclude&gt;
+Este es el formulario &quot;Grupo&quot;.
+Para crear una página con este formulario, escribe el nombre de la página a continuación;
+si ya existe una página con ese nombre, serás dirigido a un formulario para editar esa página.
+
+'''Antes de crear una nueva página, busca si alguien ha escrito previamente una página de contenido similar'''
+
+
+{{#forminput:form=Grupo}}
+
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id=&quot;wikiPreview&quot; style=&quot;display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;&quot;&gt;&lt;/div&gt;
+{{{for template|CajaDatosGrupo}}}
+{| class=&quot;formtable&quot;
+! Logo/Imágen:
+| {{{field|LogoGrupo|uploadable}}}
+|-
+! Fecha de Inicio: 
+| {{{field|FechaInicio|input type=datepicker}}}
+|-
+! Fecha de Fin: {{#info:Si el grupo no está actualmente activo, completar este campo con la fecha estimada de la última actividad del mismo.}}
+| {{{field|FechaFin|input type=datepicker}}}
+|-
+! Contacto: 
+| {{{field|Contacto|input type=text}}}
+|-
+! Procedencia: {{#info:Ciudad o ciudades donde el grupo realiza sus actividades principales. Si son más de una presioná enter luego de escribir cada una.}} 
+| {{{field|Procedencia}}}
+|-
+! Disciplina: 
+| {{{field|Disciplina|input type=tokens|existing values only|values=Acrobacia,Butoh,Circo,Contact improvisación,Clown,Comedia,Comedia musical,Danza,Danza aérea,Danza afro,Danza clásica,Danza comunitaria,Danzas de salón,Danza jazz,Danza moderna,Danza contemporánea,Danzas de colectividades,Danzas folklóricas,Danza-teatro,Danzaterapia,Danzas urbanas,Expresión corporal,Flamenco,Hip Hop,Humor,Improvisación Teatral,Infantil,Interdisciplinar,Magia,Multidisciplinar,Murga,Opera,Performance,Stand Up,Tango,Teatro,Teatro aéreo,Teatro espontáneo,Teatro comunitario,Títeres}}}
+|}
+{{{end template}}}
+
+{{{for template|InfoGrupo}}}
+{| class=&quot;formtable&quot;
+! Reseña: 
+| {{{field|Reseña|input type=textarea}}}
+|}
+{{{end template}}}
+
+
+{{{for template|ParticipantesGrupo|label=Participantes}}}
+
+{{{field|Participacion|holds template}}}
+
+{{{end template}}}
+
+{{{for template|ParticipacionGrupo|multiple|embed in field=ParticipantesGrupo[Participacion]}}}
+
+'''Nombre:''' {{{field|Nombre|input type=combobox}}}
+
+{{{end template}}}
+
+'''Texto libre:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+&lt;/includeonly&gt;</text>
+      <sha1>5hg0nzcfqfhr641vt6yy1jaemzlhquh</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formulario:Obra</title>
+    <ns>106</ns>
+    <id>97</id>
+    <revision>
+      <id>3562</id>
+      <parentid>3285</parentid>
+      <timestamp>2017-11-07T21:48:34Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="5503">&lt;noinclude&gt;
+Este es el formulario &quot;Obra&quot;.
+Para crear una página con este formulario, escribe el nombre de la página a continuación;
+si ya existe una página con ese nombre, serás dirigido a un formulario para editar esa página.
+
+'''Antes de crear una nueva página, busca si alguien ha escrito previamente una página de contenido similar'''
+
+
+{{#forminput:form=Obra}}
+
+
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id=&quot;wikiPreview&quot; style=&quot;display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;&quot;&gt;&lt;/div&gt;
+{{{for template|CajaResumen|label=Resumen de la Obra}}}
+{| class=&quot;formtable&quot;
+! Foto:
+| {{{field|FotoObra|uploadable}}}
+|-
+! Fecha de estreno: {{#info:Día en que se estrenó la obra. Si no es posible establecer un día ponga una fecha de referencia.}}
+| {{{field|FechaEstreno|input type=datepicker|show reset button|date format=dd.mm.yy}}}
+|-
+! Lugar de Estreno: 
+| {{{field|LugarEstreno|input type=combobox}}}
+|-
+! Una obra de: {{#info:Puede ser el nombre del grupo, del director, del autor. Podés poner una o varias de estas opciones.}}
+| {{{field|UnaObraDe}}}
+|-
+! Basada en: {{#info:Indicar si la obra está basada en algún material preexistente (libro, obra, pieza musical, etc)}}
+| {{{field|BasadaEn|input type=text}}}
+|-
+! Temas: {{#info:Indicá palabras clave que describan la temática de la obra}}
+| {{{field|Temas|input type=text}}}
+|-
+! Formato: {{#info:Seleccione el formato de la obra. Puede ser más de uno.}}
+| {{{field|Formato|input type=tokens|existing values only|values=Acción,Ensayo abierto,Escena,Espectáculo,Flashmob,Fotoperformance,Improvisación,Instalación,Intervención,Monólogo,Muestra,Número,Obra,Performance,Recorrido,Videoperformance,Videodanza,Work in Progress}}}
+|-
+! Género o Disciplina: {{#info:Seleccione el género o disciplina de la obra. Puede ser más de uno}}
+| {{{field|Genero|input type=tokens|existing values only|values=Acrobacia,Butoh,Circo,Contact improvisación,Clown,Comedia,Comedia musical,Danza,Danza aérea,Danza afro,Danza clásica,Danza comunitaria,Danzas de salón,Danza jazz,Danza moderna,Danza contemporánea,Danzas de colectividades,Danzas folklóricas,Danza-teatro,Danzaterapia,Danzas urbanas,Expresión corporal,Flamenco,Hip Hop,Humor,Improvisación Teatral,Infantil,Interdisciplinar,Magia,Multidisciplinar,Murga, Música, Opera,Performance,Stand Up,Tango,Teatro,Teatro aéreo,Teatro espontáneo,Teatro comunitario, Teatro de Objetos, Títeres}}}
+|}
+{{{end template}}}
+
+{{{for template|CajaContacto|label=Contacto}}}
+{| class=&quot;formtable&quot;
+! Correo electrónico:{{#info:Para protegerte del correo electrónico no deseado (spam) te recomendamos escribir la letra @ en palabras, por ejemplo midireccion(arroba)gmail.com.}} 
+| {{{field|CorreoElectronico}}}
+|-
+! Sitio web: {{#info:Escribir la url en el formato: http://www.misitio.com.ar}}
+| {{{field|SitioWeb}}}
+|-
+! Facebook: {{#info:Escribir la url en el formato: https://www.facebook.com/mi.pagina}}
+| {{{field|Facebook}}}
+|-
+! Video de la obra: {{#info:Puede ser trailer, video completo, fragmentos y/o canal de la obra.}}
+| {{{field|Youtube}}}
+|-
+! Otros datos de contacto: 
+| {{{field|OtrosDatosContacto}}}
+|}
+{{{end template}}}
+
+{{{for template|SobreLaObraV2}}}
+{| class=&quot;formtable&quot;
+! Sinópsis: {{#info:Breve descripción de la obra.}}
+| {{{field|Sinopsis}}}
+|-
+! Motivación: {{#info: Dar cuenta de la motivación, inquietud o idea que dio origen a la obra.}}
+| {{{field|Motivacion}}}
+|-
+! Reseña Colaborativa: {{#info: Breve reseña o valoración personal de la obra.}}
+| {{{field|ReseniaColaborativa}}}
+|}
+{{{end template}}}
+
+{{{for template|ParticipantesObra|label=Participantes}}}
+{{{field|Participacion|holds template}}}
+{{{end template}}}
+
+{{{for template|Participacion|multiple|embed in field=ParticipantesObra[Participacion]}}}
+{|
+|'''Nombre:''' {{{field|Nombre|input type=combobox}}}
+|- 
+|'''Rol:''' {{{field|Rol|input type=text}}}
+|}
+{{{end template}}}
+
+
+{{{for template| Presentaciones | label= Temporadas y Funciones Especiales}}}
+'''Temporadas'''
+{{{field| Temporadas |holds template}}}
+'''Funciones Especiales'''
+{{{field| FuncionesEspeciales |holds template}}}
+{{{end template}}}
+
+{{{for template|TemporadaTabla|multiple|embed in field=Presentaciones[Temporadas]}}}
+{| class=&quot;formtable&quot;
+! Fecha desde: {{#info:Si no es posible establecer un día ponga una fecha de referencia.}}
+| {{{field|Fecha Desde|input type=datepicker|show reset button|date format=dd.mm.yy}}}
+|-
+! Fecha hasta: {{#info:Si no es posible establecer un día ponga una fecha de referencia.}}
+| {{{field|Fecha Hasta|input type=datepicker|show reset button|date format=dd.mm.yy}}}
+|-
+! Lugar: 
+| {{{field|Lugar|input type=combobox}}}
+|-
+! Ciudad: 
+| {{{field|Ciudad|input type=combobox}}}
+|}
+{{{end template}}}
+
+{{{for template|FuncionEspecialTabla|multiple|embed in field=Presentaciones[FuncionesEspeciales]}}}
+{| class=&quot;formtable&quot;
+! Fecha: {{#info:Si no es posible establecer un día ponga una fecha de referencia.}}
+| {{{field|Fecha|input type=datepicker|show reset button|date format=dd.mm.yy}}}
+|-
+! Lugar: 
+| {{{field|Lugar|input type=combobox}}}
+|-
+! Ciudad: 
+| {{{field|Ciudad|input type=combobox}}}
+|-
+! En el marco de: 
+| {{{field|Marco}}}
+|}
+{{{end template}}}
+
+
+'''Más sobre la Obra:'''
+
+{{{standard input|free text|editor|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+
+&lt;/includeonly&gt;</text>
+      <sha1>mh6rb60fuytxcu3q3mpzyfh9uc2jo6r</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Formulario:Persona</title>
+    <ns>106</ns>
+    <id>3</id>
+    <revision>
+      <id>1852</id>
+      <parentid>927</parentid>
+      <timestamp>2016-11-27T21:08:28Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="2292">&lt;noinclude&gt;
+Este es el formulario &quot;Persona&quot;.
+Para crear una página con este formulario, escribe el nombre de la página a continuación;
+si ya existe una página con ese nombre, serás dirigido a un formulario para editar esa página.
+
+'''Antes de crear una nueva página, busca si alguien ha escrito previamente una página de contenido similar'''
+
+
+{{#forminput:form=Persona}}
+
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div id=&quot;wikiPreview&quot; style=&quot;display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;&quot;&gt;&lt;/div&gt;
+{{{for template|CajaDatosPersona}}}
+{| class=&quot;formtable&quot;
+! Foto:
+| {{{field|FotoPersona|uploadable}}}
+|-
+! Fecha de Nacimiento: 
+| {{{field|FechaNacimiento|input type=datepicker}}}
+|-
+! Disciplina: 
+| {{{field|Disciplina|input type=tokens|existing values only|values=Actor/Actríz,Bailarín(a),Clown,Acróbata,Malabarista,Mago,Cantante,Compositor(a),Performer,Vestuarista,Iluminador(a),Director(a),Coreógrafo/a,Dramaturgo/a,Puestista,Regié,Docente,Investigador(a),Gestor(a) cultural,Productor(a),Comunicador(a),Crítico/a de Artes Escénicas,Fotógrafo/a,Escenógrafo/a,Estudiante,Videasta,Maquillador(a),Diseñador(a) Gráfico/a}}}
+|}
+{{{end template}}}
+
+{{{for template|CajaContacto|label=Contacto}}}
+{| class=&quot;formtable&quot;
+! Correo electrónico:{{#info:Para protegerte del correo electrónico no deseado (spam) te recomendamos escribir la letra @ en palabras, por ejemplo midireccion(arroba)gmail.com.}} 
+| {{{field|CorreoElectronico}}}
+|-
+! Sitio web: {{#info:Escribir la url en el formato: http://www.misitio.com.ar}}
+| {{{field|SitioWeb}}}
+|-
+! Facebook: {{#info:Escribir la url en el formato: https://www.facebook.com/mi.pagina}}
+| {{{field|Facebook}}}
+|-
+! Video: {{#info:Canal de youtube/vimeo de la persona.}}
+| {{{field|Youtube}}}
+|-
+! Otros datos de contacto: 
+| {{{field|OtrosDatosContacto}}}
+|}
+{{{end template}}}
+
+
+{{{for template|PersonaV2}}}
+{| class=&quot;formtable&quot;
+! Reseña Curricular: 
+| {{{field|Reseña Curricular|input type=textarea}}}
+|}
+{{{end template}}}
+
+'''Texto libre:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+&lt;/includeonly&gt;</text>
+      <sha1>olso9egw2blzj3xyh1je4bws03vkce8</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Categoría:Ediciones</title>
+    <ns>14</ns>
+    <id>551</id>
+    <revision>
+      <id>1744</id>
+      <timestamp>2016-11-10T21:57:39Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Página creada con «{{#default_form:Edicion}}»</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="25">{{#default_form:Edicion}}</text>
+      <sha1>074z9m4k2sopo4194zs1qeetifzyzgp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Categoría:Espacios</title>
+    <ns>14</ns>
+    <id>203</id>
+    <revision>
+      <id>4368</id>
+      <parentid>4367</parentid>
+      <timestamp>2018-05-23T22:05:29Z</timestamp>
+      <contributor>
+        <username>Dtorres</username>
+        <id>2</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="146">{{#default_form:Espacio}}
+
+== Ubicación de los espacios ==
+{{#ask: [[Category:Espacios]][[Has coordinates::+]]
+| ?Has coordinates
+| format=map
+}}</text>
+      <sha1>coqnrxrth191tz4ujejjxqoeswivh8m</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Categoría:Eventos</title>
+    <ns>14</ns>
+    <id>305</id>
+    <revision>
+      <id>1741</id>
+      <parentid>1020</parentid>
+      <timestamp>2016-11-10T21:56:05Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="24">{{#default_form:Evento}}</text>
+      <sha1>kimlegoex2atjpozonoubbwfhstszz9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Categoría:Grupos</title>
+    <ns>14</ns>
+    <id>78</id>
+    <revision>
+      <id>402</id>
+      <parentid>173</parentid>
+      <timestamp>2016-04-30T22:45:23Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <minor/>
+      <comment>Protegió «[[Categoría:Grupos]]» ([Editar=Solo permitir administradores] (indefinido) [Pueden trasladar=Solo permitir administradores] (indefinido))</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="23">{{#default_form:Grupo}}</text>
+      <sha1>tdo0wnahslggwiw43jjk1unfhmcxxa7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Categoría:Obras</title>
+    <ns>14</ns>
+    <id>25</id>
+    <revision>
+      <id>400</id>
+      <parentid>240</parentid>
+      <timestamp>2016-04-30T22:45:01Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <minor/>
+      <comment>Protegió «[[Categoría:Obras]]» ([Editar=Solo permitir administradores] (indefinido) [Pueden trasladar=Solo permitir administradores] (indefinido))</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="22">{{#default_form:Obra}}</text>
+      <sha1>lsqhmgebmyx9gimby26fk5ttrj1elf0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Categoría:Personas</title>
+    <ns>14</ns>
+    <id>26</id>
+    <revision>
+      <id>401</id>
+      <parentid>35</parentid>
+      <timestamp>2016-04-30T22:45:11Z</timestamp>
+      <contributor>
+        <username>Vika</username>
+        <id>3</id>
+      </contributor>
+      <minor/>
+      <comment>Protegió «[[Categoría:Personas]]» ([Editar=Solo permitir administradores] (indefinido) [Pueden trasladar=Solo permitir administradores] (indefinido))</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="25">{{#default_form:Persona}}</text>
+      <sha1>gquhweiype8xtjmuxitgiyzlykba2mw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:Has coordinates</title>
+    <ns>102</ns>
+    <id>1613</id>
+    <revision>
+      <id>4318</id>
+      <timestamp>2018-05-22T22:51:07Z</timestamp>
+      <contributor>
+        <username>Dtorres</username>
+        <id>2</id>
+      </contributor>
+      <comment>Página creada con «This attribute describes the [[Has type::Geographic coordinate|geographic coordinate]] of some place. If a page contains a property with this attribute, then the page's fac...»</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="312">This attribute describes the [[Has type::Geographic coordinate|geographic coordinate]] of some place. If a page contains a property with this attribute, then the page's factbox will also provide links to [[Provides service::online maps|online maps]]; this uses SMW's [[Help:Service links|service links]] feature.</text>
+      <sha1>nhwxkf6glimnnde0c43c41hbfc9eeqk</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ReseniaColaborativa</title>
+    <ns>102</ns>
+    <id>1233</id>
+    <revision>
+      <id>3560</id>
+      <timestamp>2017-11-07T21:44:25Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
+    </revision>
+  </page>
+</mediawiki>

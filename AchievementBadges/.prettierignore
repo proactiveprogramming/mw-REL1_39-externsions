@@ -1,0 +1,8 @@
+# composer dependencies
+/vendor/
+/composer.lock
+
+# maintained by translatewiki
+/i18n/
+
+*.svg

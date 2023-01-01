@@ -8,10 +8,7 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:PluggableSSO",
 	"descriptionmsg": "pluggablesso-desc",
 	"type": "authentication",
-	"license-name": "GPL-3.0-or-later",
-	"requires": {
-		"MediaWiki": ">= 1.31.0"
-	},
+	"license-name": "GPL-3.0+",
 	"MessagesDirs": {
 		"PluggableSSO": [
 			"i18n"

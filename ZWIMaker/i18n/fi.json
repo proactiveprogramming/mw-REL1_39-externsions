@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nedergard"
+		]
+	},
+	"mzwi-action": "ZWI-vienti",
+	"mzwi-desc": "Muuntaa nykyisen sivun ZWI:ksi ja lähettää sen selaimelle"
+}

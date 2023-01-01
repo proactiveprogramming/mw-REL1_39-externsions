@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Siebrand"
+        ]
+    },
+    "newduplicateusermessage-description": "Voegt een bericht toe aan de overlegpagina van nieuwe gebruikers",
+    "newduplicateusermessage-edit-summary": "[[{{int:newduplicateusermessage-template}}|Welkomstbericht]] toegevoegd aan de overlegpagina van de nieuwe gebruiker"
+}

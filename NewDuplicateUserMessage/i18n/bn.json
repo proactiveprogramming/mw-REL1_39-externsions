@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Nasir8891"
+        ]
+    },
+    "newduplicateusermessage-description": "নতুন নিবন্ধিত ব্যবহারকারীদের আলাপ পাতায় বার্তা যোগ করে",
+    "newduplicateusermessage-edit-summary": "নতুন ব্যবহারকারীদের আলাপ পাতায় [[{{int:newduplicateusermessage-template}}|স্বাগতম বার্তা]] সংযোজন"
+}

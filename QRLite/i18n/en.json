@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fannon"
+		]
+	},
+	"qrlite-desc": "Generates QRCodes in .png or .svg format on-the-fly."
+}

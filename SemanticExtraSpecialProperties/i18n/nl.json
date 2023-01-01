@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"Klaas van Buiten",
+			"KlaasZ4usV",
+			"Mainframe98",
+			"McDutchie",
+			"Ooswesthoesbes",
+			"Patio",
+			"SPQRobin",
+			"Siebrand"
+		]
+	},
+	"sesp-desc": "Voegt extra bijzondere eigenschappen toe aan alle pagina's",
+	"sesp-property-unknown-label": "Onbekend label of alias",
+	"sesp-property-author": "Pagina-auteur",
+	"sesp-property-first-author": "Paginamaker",
+	"sesp-property-revision-id": "Versienummer",
+	"sesp-property-page-id": "Pagina-ID",
+	"sesp-property-page-len": "Paginalengte",
+	"sesp-property-view-count": "Aantal keren bekeken",
+	"sesp-property-subpages": "Subpagina",
+	"sesp-property-revisions": "Aantal versies",
+	"sesp-property-talk-revisions": "Aantal versies overlegpagina",
+	"sesp-property-shorturl": "Korte URL",
+	"sesp-property-approved-rev": "Goedgekeurde versie",
+	"sesp-property-approved-by": "Goedgekeurd door",
+	"sesp-property-approved-date": "Datum goedkeuring",
+	"sesp-property-user-registration-date": "Gebruikersregistratiedatum",
+	"sesp-property-user-edit-count": "Aantal bewerkingen van de gebruiker",
+	"sesp-property-user-block": "Gebruikersblok",
+	"sesp-property-user-block-desc": "\"$1\" registreert een lijst met voor een gebruiker ingestelde blokkades. Dit wordt verzorgd door de uitbreiding [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Extra_Special_Properties Semantic Extra Special Properties].",
+	"sesp-property-user-right": "Gebruiksrecht",
+	"sesp-property-user-right-desc": "\"$1\" registreert een lijst met aan een gebruiker toegewezen rechten. Dit wordt verzorgd door de uitbreiding [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Extra_Special_Properties Semantic Extra Special Properties].",
+	"sesp-property-user-group": "Gebruikersgroep",
+	"sesp-property-user-group-desc": "\"$1\" registreert een lijst met groepen waar een gebruiker lid van is. Dit wordt verzorgd door de extensie [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Extra_Special_Properties Semantic Extra Special Properties].",
+	"sesp-property-exif-data": "Exifgegevens"
+}

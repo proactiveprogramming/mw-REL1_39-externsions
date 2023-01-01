@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"JinRyuu",
+			"WikiMANNia"
+		]
+	},
+	"headerextension-desc": "Permite que scripts y metadatos se añadan justo antes de la etiqueta <code>&lt;/head&gt;</code> al wiki tal y como está configurado en el archivo LocalSettings.php."
+}

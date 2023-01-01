@@ -1,0 +1,52 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraydiff
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayDiff parser function
+
+!! test
+Test diff two distinct one-dimensional lists.
+!! wikitext
+{{#complexarraydefine:foo|a,b,c}}
+{{#complexarraydefine:bar|d,e,f}}
+{{#complexarraydiff:example|foo|bar}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Test diff two identical one-dimensional lists.
+!! wikitext
+{{#complexarraydefine:foo|a,b,c}}
+{{#complexarraydefine:bar|a,b,c}}
+{{#complexarraydiff:example|foo|bar}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p><p><br />
+</p>
+!! end
+
+!! test
+Test diff two two-dimensional distinct lists.
+!! wikitext
+{{#complexarraydefine:foo|[["a"],["b"],["c"]]}}
+{{#complexarraydefine:bar|[["d"],["e"],["f"]]}}
+{{#complexarraydiff:example|foo|bar}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+<span class="error">ComplexArrayDiff can only deal with one-dimensional array. At least one of the array that were given were multidimensional.</span>
+</p>
+!! end
+

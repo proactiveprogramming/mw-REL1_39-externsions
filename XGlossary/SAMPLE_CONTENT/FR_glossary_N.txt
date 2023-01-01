@@ -1,0 +1,18 @@
+{{#glossary_entry:
+ |langs=FR
+ |title=Normale
+ |ref=normale
+ |dict=(langs=FR;term=normale), (langs=EN;term=normal)
+ |shortdesc=La normale à une surface plane est un vecteur tri-dimensionnel perpendiculaire à cette surface.
+ |longdesc=Une normale à une surface non-plane en un point <code>p</code> de cette surface est le vecteur perpendiculaire au plan tangent à cette surface en ce point <code>p</code>.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Normal Mapping
+ |ref=normal mapping
+ |dict=(langs=FR;term=placage de normale;usage=*;approx=Yes;note=Traduction donnée uniquement à titre indicatif, utilisez toujours le terme anglais&nbsp\;!), (langs=EN;term=normal mapping)
+ |shortdesc=Le ''normal mapping'' est une technique pour simuler du relief sur des surfaces lisses, en modifiant leur ombrage.
+ |longdesc=Il est similaire au {{Glossary/Link|ref=bump mapping|txt=''bump mapping''}}, mais au lieu d’utiliser une texture en niveaux de gris, sa couleur définit le décalage des normales, les trois composantes RGB correspondant aux trois directions X, Y et Z. Cela permet plus de détails et de contrôle sur l’effet.
+ }}
+

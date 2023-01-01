@@ -1,0 +1,1 @@
+ALTER TABLE ab_links ADD COLUMN `abl_hidden_through` int(10) unsigned NOT NULL DEFAULT 0;

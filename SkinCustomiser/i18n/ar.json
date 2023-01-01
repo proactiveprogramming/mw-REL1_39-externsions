@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [ "WikiMANNia" ]
+	},
+	"skincustomiser-msg": "Customise Skins",
+	"skincustomiser-desc": "Customise existing skins. Add scripts and meta data in the header area. Add translated labels for the navigation bar.",
+	"projectabout": "About your wiki",
+	"projectpage": "صفحة المشروع",
+	"registrate": "اطلب حساب",
+	"contact": "اتصل",
+	"interaction": "التفاعل",
+	"portals": "بوابات",
+	"portal-1": "Your personal portal 1",
+	"portal-2": "Your personal portal 2",
+	"portal-3": "Your personal portal 3",
+	"createacct-benefit-heading": "{{SITENAME}} موقع يساهم فيه أشخاص مثلك."
+}

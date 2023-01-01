@@ -1,0 +1,93 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarrayslice
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArraySlice parser function
+
+!! test
+First element from one-dimensional array
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayslice:example2|example|0|1}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+0: a
+</p>
+!! end
+
+!! test
+Last element from one-dimensional array
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayslice:example2|example|-1|1}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+0: c
+</p>
+!! end
+
+!! test
+Second element from one-dimensional array
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayslice:example2|example|1|1}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+0: b
+</p>
+!! end
+
+!! test
+Last two element from two-dimensional array
+!! wikitext
+{{#complexarraydefine:example|[["a"], ["b"], ["c"]]}}
+{{#complexarrayslice:example2|example|-2|2}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>b</li></ul></li>
+<li>1
+<ul><li>c</li></ul></li></ul>
+
+!! end
+
+!! test
+Slice beyond bounds
+!! wikitext
+{{#complexarraydefine:example|a,b}}
+{{#complexarrayslice:example2|example|1000|10289}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+</p>
+!! end
+
+!! test
+Slice negative length
+!! wikitext
+{{#complexarraydefine:example|a,b}}
+{{#complexarrayslice:example2|example|1|-100}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+</p>
+!! end
+
+!! test
+Slice non-existent array
+!! wikitext
+{{#complexarrayslice:example2|example12312|1|-100}}
+{{#complexarrayprint:example2}}
+!! html
+<p><br />
+</p>
+!! end

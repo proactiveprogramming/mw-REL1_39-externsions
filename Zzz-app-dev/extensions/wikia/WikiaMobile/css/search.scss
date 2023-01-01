@@ -1,0 +1,128 @@
+#wkSrhTgl {
+	background-image:  url('/extensions/wikia/WikiaMobile/images/topbar_search.png'); /* inline */
+}
+
+#wkSrhFrm{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+
+	padding: 10px;
+	margin: 0;
+
+	height: 55px;
+
+	background: $searchOpenBackground;
+	box-shadow: 0 5px 15px $shadow-color;
+}
+
+
+#wkSrhSub {
+	border: 0;
+
+	border-radius: 5px;
+
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+}
+
+#wkSrhInp {
+	display: block;
+
+	-webkit-box-flex: 50;
+	-moz-box-flex: 50;
+	box-flex: 50;
+
+	//bring input and submit closer
+	margin: 0 -25px 0 -5px;
+}
+
+#wkSrhSug {
+	margin: 0;
+	padding: 0;
+	background: white;
+	width: 100%;
+	opacity: .94;
+	border-bottom: 5px solid $searchOpenBackground;
+
+	li {
+		font-weight: 800;
+		position: relative;
+		color: white;
+		padding-right: 40px;
+
+		-webkit-transition: color .2s;
+		-moz-transition: color .2s;
+		transition: color .2s;
+
+		&.show {
+			color: inherit;
+		}
+	}
+
+	em {
+		font-weight: 100;
+		font-style: normal;
+	}
+}
+
+#wkClear {
+	position: relative;
+	left: -5px;
+	width: 30px;
+	height: 40px;
+	background-position: center;
+	background-size: 40%;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	transition: opacity .3s;
+
+	.hide-clear > & {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.redir {
+	font-size: .7em;
+	font-weight: 100;
+	margin-top: -5px;
+	line-height: 1.3em;
+}
+
+.copySrh {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 1.5em;
+	font-weight: 100;
+	color: grey;
+	line-height: 2em;
+	text-align: center;
+	width: 40px;
+}
+
+
+#wkSrh {
+	display: none;
+}
+
+.srhOpn {
+	z-index: $highest-z-index+1;
+
+	#wkTopBar{
+		border-bottom: 1px solid white;
+	}
+
+	#wkSrh {
+		display: block;
+	}
+
+	#wkSrhTgl {
+		background-color: $searchOpenBackground;
+		border-color: white;
+		border-style: solid;
+		border-width: 1px 0 0 1px;
+	}
+}

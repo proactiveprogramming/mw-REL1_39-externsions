@@ -1,0 +1,23 @@
+{
+	"name": "SyntaxHighlightPages",
+	"type": "other",
+	"license-name": "MIT",
+	"author": "Gittenburg",
+	"url": "https://www.mediawiki.org/wiki/Extension:SyntaxHighlightPages",
+	"version": "0.1.0",
+	"description": "Syntax highlight pages based on title suffixes",
+	"config": {
+		"SyntaxHighlightPagesSuffixes": ["java", "pl", "py", "tex"]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SyntaxHighlightPages\\": "includes/"
+	},
+	"ContentHandlers": {
+		"syntaxhighlight": "MediaWiki\\Extension\\SyntaxHighlightPages\\ContentHandler"
+	},
+	"Hooks": {
+		"ContentHandlerDefaultModelFor": "MediaWiki\\Extension\\SyntaxHighlightPages\\Hooks::onContentHandlerDefaultModelFor",
+		"BaseTemplateToolbox": "MediaWiki\\Extension\\SyntaxHighlightPages\\Hooks::onBaseTemplateToolbox"
+	},
+	"manifest_version": 1
+}

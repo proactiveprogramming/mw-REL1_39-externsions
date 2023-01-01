@@ -1,0 +1,9 @@
+# Node packages
+modules/node_modules
+
+# Intermediate output
+modules/styles.es6
+modules/render.js
+
+# PHP packages
+vendor

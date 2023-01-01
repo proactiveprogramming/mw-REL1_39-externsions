@@ -1,0 +1,106 @@
+﻿DELIMITER $$
+/*
+ * Copyright (c) 2010 University of Macau
+ *
+ * Licensed under the Educational Community License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may
+ * obtain a copy of the License at
+ *
+ * http://www.osedu.org/licenses/ECL-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an "AS IS"
+ * BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
+
+
+DROP FUNCTION IF EXISTS `calculate_degree` $$
+CREATE DEFINER=`root`@`localhost` FUNCTION `calculate_degree`(
+ p_user1 INT(5),
+ p_user2 INT(5),
+ p_page INT(8),
+ p_max_time_a DATE,
+ p_min_time_a DATE,
+ p_max_time_b DATE,
+ p_min_time_b DATE,
+ p_tn INT(6),
+ p_tm INT(6),
+ p_an_a INT(6),
+ p_an_b INT(6),
+ p_am_a INT(6),
+ p_am_b INT(6)
+ )
+RETURNS DECIMAL(16, 10)
+DETERMINISTIC
+BEGIN
+  DECLARE wv_time_a DECIMAL(18, 10);
+  DECLARE l_an_a INT(6) DEFAULT p_an_a;
+  DECLARE l_an_b INT(6) DEFAULT p_an_b;
+  DECLARE l_tn INT(6) DEFAULT 0;
+  DECLARE l_am_a INT(6) DEFAULT p_am_a;
+  DECLARE l_am_b INT(6) DEFAULT p_am_b;
+  DECLARE l_tm INT(6) DEFAULT 0;
+  DECLARE l_minor INT(6) DEFAULT 0;
+  DECLARE CM DECIMAL(3, 2) DEFAULT 0.05;
+
+  CAL_TIME: BEGIN -- cal_time
+    DECLARE l_intersect DECIMAL(18, 10);
+    DECLARE l_la INT(8);
+    DECLARE l_la_start DATE default p_min_time_a;
+    DECLARE l_la_end DATE default p_max_time_a;
+    DECLARE l_lb INT(8);
+    DECLARE l_lb_start DATE default p_min_time_b;
+    DECLARE l_lb_end DATE default p_max_time_b;
+    DECLARE l_distance DECIMAL(18, 10);
+
+    -- Calculate the time intersection
+    SET l_la = ABS(DATEDIFF(l_la_start, l_la_end)) + 1;
+    -- Case 5, No intersection
+    IF (l_la_end < l_lb_start OR l_la_start > l_lb_end) THEN
+      -- If l_intersect = 0, Count the distance
+      IF (l_la_start < l_lb_start) THEN
+        SET l_distance = ABS(DATEDIFF(l_lb_start, l_la_end)) + 1;
+      ELSE
+        SET l_distance = ABS(DATEDIFF(l_la_start, l_lb_end)) + 1;
+      END IF;
+      -- +1 on distance to avoid l_intersect = 1 if two DATEs are continued
+      SET l_intersect = ROUND(1 / SQRT(l_distance), 10);
+    -- Case 1
+    ELSEIF (l_la_start <= l_lb_start AND l_la_end <= l_lb_end) THEN
+      SET l_intersect = ABS(DATEDIFF(l_lb_start, l_la_end)) + 1;
+    -- Case 2
+    ELSEIF (l_lb_start <= l_la_start AND l_lb_end <= l_la_end) THEN
+      SET l_intersect = ABS(DATEDIFF(l_la_start, l_lb_end)) + 1;
+    -- Case 3
+    ELSEIF (l_la_start <= l_lb_start AND l_lb_end <= l_la_end) THEN
+      SET l_intersect = ABS(DATEDIFF(l_lb_start, l_lb_end)) + 1; -- l_lb
+    -- Case 4
+    ELSEIF (l_lb_start <= l_la_start AND l_la_end <= l_lb_end) THEN
+      SET l_intersect = l_la;
+    ELSE
+      SET l_intersect = -1; -- Error
+    END IF;
+
+    SET wv_time_a = IFNULL(ROUND(l_intersect / l_la, 10), 0);
+  END CAL_TIME; -- cal_time
+
+  SELECT IFNULL(SUM(rev_minor_edit = 1), 0),
+         IFNULL(SUM(rev_minor_edit = 0), 0),
+         IFNULL(SUM(rev_user = p_user1 AND rev_minor_edit = 1), 0),
+         IFNULL(SUM(rev_user = p_user2 AND rev_minor_edit = 1), 0),
+         IFNULL(SUM(rev_user = p_user1 AND rev_minor_edit = 0), 0),
+         IFNULL(SUM(rev_user = p_user2 AND rev_minor_edit = 0), 0)
+         INTO l_tm, l_tn, l_am_a, l_am_b, l_an_a, l_an_b
+    FROM revision
+    WHERE rev_page = p_page;
+
+  IF (l_tm <> 0) THEN
+    SET l_minor = ROUND((CM * least(l_am_a, l_am_b)) / l_tm, 10);
+  END IF;
+
+  RETURN IFNULL((ROUND(LEAST(l_an_a, l_an_b) / l_tn, 10) + l_minor) * wv_time_a, 0);
+END $$
+
+DELIMITER ;

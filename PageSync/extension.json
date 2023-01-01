@@ -1,0 +1,92 @@
+{
+  "name": "PageSync",
+  "version": "2.1.3",
+  "author": [
+    "Sen-Sai"
+  ],
+  "url": "https://www.mediawiki.org/wiki/Extension:PageSync",
+  "descriptionmsg": "wsps-desc",
+  "license-name": "GPL v2",
+  "type": "other",
+  "requires": {
+    "MediaWiki": ">= 1.35.1",
+    "platform": {
+      "php": ">= 7.1",
+      "ext-zip": "*"
+    }
+  },
+
+  "ExtensionMessagesFiles": {
+    "WSpsAlias": "WSps.i18n.alias.php",
+    "WSpsMagic": "WSps.i18n.magic.php"
+  },
+  "APIModules": {
+    "wsps": "PageSync\\API\\ApiWSps"
+  },
+  "Hooks": {
+    "BeforePageDisplay" : "PageSync\\HookHandler::onBeforePageDisplay",
+    "ParserFirstCallInit" : "PageSync\\HookHandler::onParserFirstCallInit",
+    "AdminLinks": "PageSync\\HookHandler::addToAdminLinks",
+    "PageSaveComplete": "PageSync\\Core\\PSCore::pageSaved",
+    "ArticleDelete": "PageSync\\HookHandler::onArticleDelete",
+    "SkinTemplateNavigation::Universal": "PageSync\\HookHandler::nav"
+  },
+  "AutoloadNamespaces": {
+    "PageSync\\": "src/"
+  },
+  "MessagesDirs": {
+    "WSPageSync": [
+      "i18n"
+    ]
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteExtPath": "PageSync"
+  },
+  "SpecialPages": {
+    "WSps": "PageSync\\Special\\WSpsSpecial"
+  },
+  "config": {
+    "PageSync": {
+      "value":  {
+        "allowedGroups": [],
+        "filePath": "",
+        "tempFilePath": "",
+        "fileNameSpaces": [
+          6
+        ],
+        "contentSlotsToBeSynced": "all",
+        "maintenance": {
+          "doNotRestoreThesePages": [],
+          "restoreFrom": ""
+        }
+      }
+    }
+  },
+  "ResourceModules": {
+    "ext.WSPageSync.scripts": {
+      "scripts": "wsps.js",
+      "dependencies": [
+        "oojs-ui-core",
+        "oojs-ui-windows",
+        "oojs-ui-widgets"
+      ],
+      "styles": "assets/images/style.css",
+      "position": "top",
+      "messages": [
+        "wsps",
+        "wsps-page-added",
+        "wsps-page-removed",
+        "wsps-javascript_restore_backup_text",
+        "wsps-javascript_delete_backup_text",
+        "wsps-javascript_delete_share_text",
+        "wsps-api-error-no-config-title",
+        "wsps-page-tags-added",
+        "wsps-page-tags-removed",
+        "wsps-page-tags-error-adding",
+        "wsps-page-tags-label"
+      ]
+    }
+  },
+  "manifest_version": 2
+}

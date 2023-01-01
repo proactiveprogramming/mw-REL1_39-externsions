@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jezevec",
+			"Mormegil"
+		]
+	},
+	"mzwi-action": "Exportovat do ZWI",
+	"mzwi-desc": "Převede aktuální stránku do ZWI a pošle do prohlížeče"
+}

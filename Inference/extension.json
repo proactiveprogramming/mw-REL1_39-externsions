@@ -1,0 +1,79 @@
+{
+	"name": "Inference",
+	"version": "0.0.0",
+	"author": [
+		"John Erling Blad"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Inference",
+	"descriptionmsg": "inference-desc",
+	"license-name": "GPL-2.0",
+	"type": "other",
+	"AutoloadClasses": {
+		"Pickle\\Hooks":
+			"includes/Hooks.php",
+
+		"Pickle\\LuaLibInference":
+			"includes/LuaLibrary/LuaLibInference.php"
+	},
+	"config": {
+		"_prefix": "wgInference",
+		"EntityTypes": {
+			"entity": "inference-entitytype-entity-keyword",
+			"item": "inference-entitytype-item-keyword",
+			"property": "inference-entitytype-property-keyword",
+			"lexeme": "inference-entitytype-lexeme-keyword"
+		},
+		"SnakTypes": {
+			"value": "inference-snaktype-value-keyword",
+			"some-value": "inference-snaktype-some-value-keyword",
+			"no-value": "inference-snaktype-no-value-keyword"
+		},
+		"DataTypes": {
+			"wikibase-item": "inference-datatype-item-keyword",
+			"wikibase-property": "inference-datatype-property-keyword",
+			"quantity": "inference-datatype-quantity-keyword",
+			"time": "inference-datatype-time-keyword",
+			"url": "inference-datatype-url-keyword",
+			"string": "inference-datatype-string-keyword",
+			"monolingualtext": "inference-datatype-monolingualtext-keyword",
+			"geo-shape": "inference-datatype-geo-shape-keyword",
+			"globe-coordinate": "inference-datatype-globe-coordinate-keyword",
+			"tabular-data": "inference-datatype-tabular-data-keyword",
+			"math": "inference-datatype-math-keyword",
+			"external-id": "inference-datatype-external-id-keyword",
+			"commonsMedia": "inference-datatype-commons-media-keyword"
+		},
+		"ValueTypes": {
+			"wikibase-entityid": "inference-valuetype-entityid-keyword",
+			"quantity": "inference-valuetype-quantity-keyword",
+			"string": "inference-valuetype-string-keyword",
+			"monolingualtext": "inference-valuetype-monolingualtext-keyword",
+			"globecoordinate": "inference-valuetype-globecoordinate-keyword"
+		}
+	},
+	"callback": "Pickle\\Hooks::onExtensionSetup",
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"Inference\\Hooks::onParserSetup"
+		],
+		"ScribuntoExternalLibraries": [
+			"Pickle\\Hooks::onRegisterScribuntoLibraries"
+		],
+		"ScribuntoExternalLibraryPaths": [
+			"Pickle\\Hooks::onRegisterScribuntoExternalLibraryPaths"
+		],
+		"UnitTestsList": [
+			"Pickle\\Hooks::onUnitTestsList"
+		]
+	},
+	"MessagesDirs": {
+		"Inference": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Inference/modules"
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,98 @@
+/* WorkingWiki extension for MediaWiki 1.19 and later
+ * Copyright (C) 2010 Lee Worden <worden.lee@gmail.com>
+ * http://lalashan.mcmaster.ca/theobio/projects/index.php/WorkingWiki
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+
+.client-js .ww-altlinks {
+	position: relative;
+	clear: none;
+}
+
+.client-js .ww-altlinks .ww-altlinks-pulldown-arrow { 
+	height: 16px;
+	width: 16px;
+	display:block;
+	/* @embed */ /* TODO: use LESS for SVG etc. */
+	background-image: url(images/pulldown-arrow.png);
+	background-repeat: no-repeat;
+}
+
+.client-js .ww-altlinks .ww-altlinks-inner {
+	display: none;
+	position: absolute;
+       	top: 8px;
+       	right: 0px;
+       	/*right: 8px;*/
+	background: #e8e8e8;
+       	border: 1px solid #d8d8d8;
+	/*margin: 0.2em;*/
+	text-align: left;
+	z-index:3;
+}
+
+.client-js .ww-altlinks .ww-altlinks-inner:before {
+	content: "" !important;
+}
+
+.client-js .ww-altlinks .ww-altlinks-inner:after {
+	content: "" !important;
+}
+
+/* When .ww-altlinks is inside a latexml heading, its position is not relative.
+ * In this case it is absolute, 3px up from the bottom of the header, which is relative.
+ * So we have to position relative to the h1, not the .ww-altlinks.
+ */
+h1.ltx_title_document .ww-altlinks .ww-altlinks-inner {
+	/*top:8px !important;*/
+}
+
+/*
+.latexml h1.title .ww-altlinks .ww-altlinks-inner {
+	top:8px !important;
+}
+*/
+
+.client-js .ww-altlinks .ww-altlinks-comma {
+	display:none;
+}
+
+.client-js .ww-altlinks .ww-altlink {
+       	display:block;
+       	padding:0.2em 0.4em 0em 0.4em;
+	white-space:nowrap;
+}
+
+.client-js .ww-altlinks.ww-pulldown-pinned .ww-altlinks-inner,
+  .client-js .ww-altlinks:hover .ww-altlinks-inner {
+	display:block;
+}
+
+.client-js .ww-altlinks:hover,
+ .client-js .ww-altlinks.ww-pulldown-pinned {
+	background:#e8e8e8;
+}
+
+.client-js .ww-altlinks .ww-altlink:hover {
+	background:#d8d8d8;
+}
+
+/* latexml h1 clips the pulldown, so this makes it visible */
+.client-js h1 {
+	overflow:visible;
+}
+

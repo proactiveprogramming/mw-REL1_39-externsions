@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Byrial"
+        ]
+    },
+    "newduplicateusermessage-description": "Placerer en besked på nye brugeres diskussionsside",
+    "newduplicateusermessage-edit-summary": "Placerer en [[{{int:newduplicateusermessage-template}}|velkomstbesked]] på nye brugeres diskussionsside"
+}

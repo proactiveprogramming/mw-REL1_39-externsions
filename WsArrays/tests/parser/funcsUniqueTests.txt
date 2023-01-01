@@ -1,0 +1,85 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarrayunique
+complexarrayprint
+!! endfunctionhooks
+
+# This test tests the ComplexArrayUnique parser function
+
+!! test
+One-dimensional list
+!! wikitext
+{{#complexarraydefine:example|a,b,c,c}}
+{{#complexarrayunique:example}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+One-dimensional list no duplicate values
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarrayunique:example}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>a</li>
+<li>b</li>
+<li>c</li></ul>
+
+!! end
+
+!! test
+Two-dimensional list duplicate subarrays
+!! wikitext
+{{#complexarraydefine:example|[["a", "b"],["a", "b"],["a","c"]]}}
+{{#complexarrayunique:example}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a</li>
+<li>b</li></ul></li>
+<li>2
+<ul><li>a</li>
+<li>c</li></ul></li></ul>
+
+!! end
+
+!! test
+Two-dimensional list duplicate values in subarray
+!! wikitext
+{{#complexarraydefine:example|[["a", "a"],["a", "b"],["a","c"]]}}
+{{#complexarrayunique:example}}
+{{#complexarrayprint:example}}
+!! html
+<p><br />
+</p>
+<ul><li>0
+<ul><li>a</li>
+<li>a</li></ul></li>
+<li>1
+<ul><li>a</li>
+<li>b</li></ul></li>
+<li>2
+<ul><li>a</li>
+<li>c</li></ul></li></ul>
+
+!! end
+
+!! test
+Unique non-existent array
+!! wikitext
+{{#complexarrayunique:foobar}}
+!! html
+!! end

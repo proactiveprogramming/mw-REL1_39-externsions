@@ -1,0 +1,10 @@
+{
+  "@metadata": {
+    "authors": [
+      "Marijn van Wezel"
+    ]
+  },
+  "timednotify-desc": "Provides a time-based notification system for Echo.",
+  "echo-pref-tooltip-timednotify-time-based-notification": "Notify me when a time-based event occurs.",
+  "echo-category-title-timednotify-time-based-notification": "Time-based events"
+}

@@ -1,0 +1,6 @@
+{
+  "@metadata": {
+    "authors": [ "Matt Marjanovic" ]
+  },
+  "discourse-sso-consumer-desc": "{{desc|name=DiscourseSsoConsumer|url=https://github.com/centertap/DiscourseSsoConsumer}}"
+}

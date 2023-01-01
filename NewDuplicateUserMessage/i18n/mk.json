@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bjankuloski06"
+        ]
+    },
+    "newduplicateusermessage-description": "Поставува порака на разговорните страници на новосоздадени корисници",
+    "newduplicateusermessage-edit-summary": "Додавање на [[{{int:newduplicateusermessage-template}}|добредојде]] на разговорната страница на нов корисник"
+}

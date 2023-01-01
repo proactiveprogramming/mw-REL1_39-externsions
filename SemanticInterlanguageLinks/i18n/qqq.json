@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Purodha",
+			"Siebrand",
+			"Umherirrender",
+			"mwjames"
+		]
+	},
+	"sil-desc": "{{desc|name=Semantic Interlanguage Links|url=https://www.mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links}}\nAn extension to deploy language links effortless using Semantic MedaWiki.",
+	"sil-property-ill-alias-language": "This is the name of a [https://semantic-mediawiki.org/wiki/Property property] as defined by [https://semantic-mediawiki.org/ Semantic MediaWiki].\n{{Doc-smw-sp}}",
+	"sil-property-ill-alias-reference": "This is the name of a [https://semantic-mediawiki.org/wiki/Property property] as defined by [https://semantic-mediawiki.org/ Semantic MediaWiki].\n{{Doc-smw-sp}}",
+	"sil-property-iwl-alias-language": "This is the name of a [https://semantic-mediawiki.org/wiki/Property property] as defined by [https://semantic-mediawiki.org/ Semantic MediaWiki].\n{{Doc-smw-sp}}",
+	"sil-property-iwl-alias-reference": "This is the name of a [https://semantic-mediawiki.org/wiki/Property property] as defined by [https://semantic-mediawiki.org/ Semantic MediaWiki].\n{{Doc-smw-sp}}",
+	"sil-property-alias-container": "This is the name of a [https://semantic-mediawiki.org/wiki/Property property] as defined by [https://semantic-mediawiki.org/ Semantic MediaWiki].\n{{Doc-smw-sp}}",
+	"sil-interlanguagelink-hideinterlanguagelinks": "An error message caused by the INTERLANGUAGELINK parser function due to the wgHideInterlanguageLinkss setting.",
+	"sil-interlanguagelink-invalidlanguagecode": "An error message caused by the INTERLANGUAGELINK parser function.",
+	"sil-interlanguagelink-multiplecalls-different-languagecode": "An error message caused by the <code><nowiki>#interlanguagelink</nowiki></code> parser function.\n\nParameter:\n* $1 holds the language code",
+	"sil-interlanguagelink-languagetargetcombination-exists": "An error message caused by the INTERLANGUAGELINK parser function.",
+	"sil-interlanguagelist-missing-linkreference": "An error message caused by the INTERLANGUAGELIST parser function.",
+	"sil-interlanguagelist-missing-template": "An error message caused by the INTERLANGUAGELIST parser function.",
+	"sil-interlanguageparser-linkreference-error": "An error message caused by a parser function.\n\nStyle hint:<br />\nThis is a very technical message that is likely not fully understood by mundane users. It will assumably be the wiki admin trying to get things rolling. This is a special interest extension probably a bit comparable to the translate extension requiring some expertise using it.",
+	"sil-search-profile": "A label displayed on the Special:Search page.",
+	"sil-search-profile-tooltip": "A label displayed on the Special:Search page.",
+	"sil-search-languagefilter-label": "A label displayed on the Special:Search page.",
+	"sil-search-nolanguagefilter": "A label displayed on the Special:Search page.",
+	"sil-categorypage-languagefilter-active": "A message shown on the category page. Parameters:\n* $1 is the language of the page"
+}

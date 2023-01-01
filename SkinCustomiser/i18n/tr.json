@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [ "WikiMANNia" ]
+	},
+	"skincustomiser-msg": "Görünümleri Özelleştir",
+	"skincustomiser-desc": "Mevcut kaplamaları özelleştirin. Başlık alanına komut dosyaları ve meta veriler ekleyin. Gezinme çubuğu için çevrilmiş etiketler ekleyin.",
+	"projectabout": "Wiki'niz hakkında ",
+	"projectpage": "Proje sayfası",
+	"registrate": "Hesap sor",
+	"contact": "Temas",
+	"interaction": "Etkileşim",
+	"portals": "Portallar",
+	"portal-1": "Kişisel portalınız 1",
+	"portal-2": "Kişisel portalınız 2",
+	"portal-3": "Kişisel portalınız 3",
+	"createacct-benefit-heading": "{{SITENAME}} sizin gibi insanlar tarafından geliştirilir."
+}

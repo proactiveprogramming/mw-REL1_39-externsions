@@ -1,0 +1,6 @@
+[submodule "topics"]
+	path = topics
+	url = https://github.com/jeblad/Expect.wiki.git
+[submodule "includes/LuaLibrary/lua/pure/_table"]
+	path = includes/LuaLibrary/lua/pure/_table
+	url = https://github.com/jeblad/Table.git

@@ -1,0 +1,60 @@
+{
+  "name": "TimedNotify",
+  "version": "1.0.0",
+  "url": "https://www.mediawiki.org/wiki/Extension:TimedNotify",
+  "type": "other",
+  "author": [
+    "[https://mediawiki.org/wiki/User:Xxmarijnw Marijn van Wezel] ([https://wikibase-solutions.com Wikibase Solutions])"
+  ],
+  "descriptionmsg": "timednotify-desc",
+  "license-name": "GPL-2.0-or-later",
+  "requires": {
+    "MediaWiki": ">= 1.35.0",
+    "extensions": {
+      "Echo": "*"
+    }
+  },
+  "MessagesDirs": {
+    "TimedNotify": [
+      "i18n"
+    ]
+  },
+  "AutoloadNamespaces": {
+    "TimedNotify\\": "src/"
+  },
+  "ServiceWiringFiles": [
+    "TimedNotify.wiring.php"
+  ],
+  "Hooks": {
+    "BeforeCreateEchoEvent": "TimedNotify\\MediaWiki\\Hooks\\EchoHooks::onBeforeCreateEchoEvent",
+    "BeforeInitialize": "BeforeInitializeNotificationRunner",
+    "LoadExtensionSchemaUpdates": "DatabaseSchemaUpdater"
+  },
+  "HookHandlers": {
+    "BeforeInitializeNotificationRunner": {
+      "class": "TimedNotify\\MediaWiki\\Hooks\\BeforeInitializeNotificationRunner",
+      "services": [
+        "TimedNotify.NotificationRunner"
+      ]
+    },
+    "DatabaseSchemaUpdater": {
+      "class": "TimedNotify\\MediaWiki\\Hooks\\DatabaseSchemaUpdater"
+    }
+  },
+  "config": {
+    "TimedNotifyRunRate": {
+      "value": 0.05
+    },
+    "TimedNotifyPushedNotificationRetentionDays": {
+      "value": 60
+    },
+    "TimedNotifyRunDeferred": {
+      "value": true
+    },
+    "TimedNotifyDisabledNotifiers": {
+      "value": []
+    }
+  },
+  "manifest_version": 2,
+  "load_composer_autoloader": true
+}

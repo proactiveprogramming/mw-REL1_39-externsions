@@ -74,10 +74,6 @@ class SessionProvider extends CookieSessionProvider {
 		return $session;
 	}
 
-	/**
-	 * @param string $username
-	 * @return string
-	 */
 	protected function checkMultiDomain( $username ) {
 		$conf = $this->getConfig();
 		$remoteDomain = $conf->get( 'AuthRemoteuserDomain' );
@@ -108,9 +104,7 @@ class SessionProvider extends CookieSessionProvider {
 		return $username;
 	}
 
-	/**
-	 * @return Config
-	 */
+
 	protected function getConfig() {
 		if ( !$this->config ) {
 			$this->config = RequestContext::getMain()->getConfig();

@@ -1,0 +1,78 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+complexarraydefine
+complexarraymap
+!! endfunctionhooks
+
+# This test tests the ComplexArrayMap parser function
+
+!! test
+Map simple one-dimensional list
+!! wikitext
+{{#complexarraydefine:example|a,b,c}}
+{{#complexarraymap:example|@@@|Hello, @@@!|<br/>}}
+!! html
+<p>Hello, a!<br />Hello, b!<br />Hello, c!
+</p>
+!! end
+
+!! test
+Map simple uniform two-dimensional list
+!! wikitext
+{{#complexarraydefine:example|[["a", "b"],["c", "d"],["e", "f"]]}}
+{{#complexarraymap:example|@@@|Hello, @@@!|<br/>}}
+!! html
+<p>Hello,&#160;!<br />Hello,&#160;!<br />Hello,&#160;!
+</p>
+!! end
+
+!! test
+Map simple uniform two-dimensional list first element
+!! wikitext
+{{#complexarraydefine:example|[["a", "b"],["c", "d"],["e", "f"]]}}
+{{#complexarraymap:example|@@@|Hello, @@@[0]!|<br/>}}
+!! html
+<p>Hello, a!<br />Hello, c!<br />Hello, e!
+</p>
+!! end
+
+!! test
+Map simple uniform two-dimensional list display mapping key
+!! wikitext
+{{#complexarraydefine:example|[["a", "b"],["c", "d"],["e", "f"]]}}
+{{#complexarraymap:example|@@@|Hello, @@@!|<br/>|true}}
+!! html
+<p>Hello, @@@!<br />Hello, @@@!<br />Hello, @@@!
+</p>
+!! end
+
+!! test
+Map simple non-uniform two-dimensional list display mapping key
+!! wikitext
+{{#complexarraydefine:example|[["a", "b"],["d"],["e", "f"]]}}
+{{#complexarraymap:example|@@@|Hello, @@@[1]!|<br/>|true}}
+!! html
+<p>Hello, b!<br />Hello, @@@[1]!<br />Hello, f!
+</p>
+!! end
+
+!! test
+Map simple non-uniform two-dimensional list display mapping key
+!! wikitext
+{{#complexarraydefine:example|[["a", "b"],["d"],["e", "f"]]}}
+{{#complexarraymap:example|@@@|Hello, @@@[1]!|<br/>|true}}
+!! html
+<p>Hello, b!<br />Hello, @@@[1]!<br />Hello, f!
+</p>
+!! end
+
+!! test
+Map simple non-uniform two-dimensional list
+!! wikitext
+{{#complexarraydefine:example|[["a", "b"],["d"],["e", "f"]]}}
+{{#complexarraymap:example|@@@|Hello, @@@[1]!|<br/>}}
+!! html
+<p>Hello, b!<br />Hello,&#160;!<br />Hello, f!
+</p>
+!! end

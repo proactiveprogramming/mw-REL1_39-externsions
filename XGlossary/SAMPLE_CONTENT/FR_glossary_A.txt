@@ -1,0 +1,149 @@
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=AC3D
+ |ref=ac3d
+ |shortdesc=Un programme pour créer et texturer (placage UV) des modèles numériques 3D.
+ |longdesc=Relativement bon marché, il dispose de son propre format de fichier (<code>.ac</code>), que Blender peut importer et exporter.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Action
+ |ref=action
+ |shortdesc=Une “action” est un groupe d’Ipos {{Literal|Object}} ou {{Literal|Shape}}, défini dans une fenêtre {{Literal|Action Editor}}, qui vous permet seulement de modifier les ''positions'' des images clé, '''pas''' leur valeur.
+ |longdesc=De cette façon, vous pouvez créer des actions comme un cycle de marche, tourner la tête, etc., que vous utiliserez ensuite dans la fenêtre {{Literal|NLA Editor}}. Voyez [[Doc:FR/Manual/Animation/Armatures/The Action Editor|cette page]] pour plus d’info.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Action” (actuateur)
+ |ref=action actuateur
+ |dict=(langs=FR;term=actuateur {{Literal|Action}}), (langs=EN;term={{Literal|Action}} actuator)
+ |shortdesc=L’“actuateur” {{Literal|Action}} fournit une interface pour contrôler une action dans le moteur de jeu. Les “actuateurs” {{Literal|Action}} ne peuvent être créés que sur des objets armatures.
+ |longdesc=Voyez aussi la [[Doc:FR/Manual/Game Engine/Logic/Actuators/Action|page sur l’actuateur {{Literal|Action}}]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Action Editor” (fenêtre)
+ |ref=action editor fenêtre
+ |dict=(langs=FR;term=fenêtre {{Literal|Action Editor}}), (langs=EN;term={{Literal|Action Editor}} window)
+ |shortdesc=Cette fenêtre vous permet d’éditer les actions dans Blender, voyez [[Doc:FR/Manual/Animation/Armatures/The Action Editor|cette page]].
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Actif
+ |ref=actif
+ |dict=(langs=FR|term=actif), (langs=EN;term=active)
+ |shortdesc=Blender fait une distinction entre “sélectionné” et “actif”. Un seul objet ou élément à la fois peut être actif, par exemple pour permettre la visualisation des ses paramètres dans la fenêtre {{Literal|Buttons}}.
+ |longdesc=En mode {{Literal|Object}}, l’objet actif (en général, le dernier sélectionné) est affiché dans un rose plus clair que ceux qui sont sélectionnés. Quand aucun objet n’est sélectionné, il y en a quand même un d’actif (son centre demeure rose), en général le dernier dé-sélectionné. Voyez [[Doc:FR/Manual/Modelling/Objects/Selecting|cette page]] pour plus d’info.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Actuateur
+ |ref=actuateur
+ |dict=(langs=FR;term=actuateur;usage=3;note=Ce néologisme est également utilisé en robotique. À utiliser de préférence entre guillemets. N’hésitez pas à utiliser le terme anglais de temps à autre.), (langs=EN;term=actuator)
+ |syns=(langs=EN;title=Actuator;ref=actuator)
+ |shortdesc=Un “actuateur” est une brique logique du moteur de jeu, qui agit comme les muscles biologiques. Il peut déplacer l’objet, mais aussi produire un son…
+ |longdesc=Voyez également la [[Doc:FR/Manual/Game Engine/Logic/Actuators|page sur les actuateurs]], et les entrées {{Glossary/Link|ref=logic brick|txt=brique logique}} et {{Glossary/Link|ref=blender game engine|txt=moteur de jeu}}.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Add” (menu)
+ |ref=add menu
+ |dict=(langs=FR;term=menu {{Literal|Add}};note=Élément de la GUI, utilisez le template <nowiki>{{Literal|}}</nowiki>.)
+ |shortdesc=Un menu de l’en-tête {{Literal|User Preference}}. Il vous permet d’ajouter des primitives-objets à votre scène.
+ |longdesc=En mode {{Literal|Object}}, un nouvel objet est créé à chaque fois. En mode {{Literal|Edit}}, la primitive est ajoutée ''dans'' l’objet édité (actif). Voyez aussi [[Doc:FR/Manual/3D interaction/Navigating/3D View Usage#“Add”|cette page]].
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Alpha (canal)
+ |ref=alpha canal
+ |dict=(langs=FR;term=canal alpha), (langs=EN;term=alpha channel)
+ |shortdesc=Canal supplémentaire dans une image 2D, pour la transparence.
+ |longdesc=Dans un élément (un pixel) de l’image contenant une couleur, une valeur supplémentaire est stockée pour le canal alpha, contenant une valeur comprise entre '''0.0''' (totalement transparent) et '''1.0''' (totalement opaque). Dans un rendu de Blender, une valeur de '''0.0''' signifie que le pixel ne “contient” rien, c-à-d qu’aucune géométrie ne lui a “donné des couleurs”, puisqu’il n’en recouvre aucune. Une valeur de '''1.0''' signifie que le pixel est totalement opaque, car il est totalement “couvert” par la géométrie.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Animation
+ |ref=animation
+ |shortdesc=Simulation de mouvement. Blender peut produire aussi bien des vidéos d’animations que des animations temps-réel.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Animation (buttons)
+ |ref=animation buttons
+ |shortdesc=Sous-contexte du contexte {{Literal|Scene}} ({{Shortcut|F10}}).
+ |longdesc=Dans ce sous-contexte, vous pouvez définir les images de début/de fin d’une animation, la ralentir ou l’accélérer, régler son ''frame rate'', forcer le jeu de cette animation dans le vues 3D de Blender à être synchronisé avec le ''frame-rate'', quitte à perdre certaines images… Utile pour synchroniser l’animation avec l’audio.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Append
+ |ref=append
+ |syns=(langs=FR;title=Importation;ref=importation)
+ |dict=(langs=FR;term=Importation;approx=Yes), (langs=EN;term=append)
+ |shortdesc=Copie complète dans un fichier .blend “hôte” d’un ou plusieurs ''datablocks'' provenant d’un autre fichier .blend.
+ }}
+
+{{#glossary_entry:
+ |langs=EN
+ |title=Area
+ |ref=area
+ |dict=(langs=FR;term=zone;usage=1;approx=Yes;note=N’utilisez pas ce terme dans ce sens là&nbsp\;!), (langs=EN;term=area;usage=1;note=Essayez d’éviter l’utilisation de ce terme.)
+ |shortdesc=Traditionnellement, une “''area''”, dans Blender, c’est une sous-fenêtre quelconque, comme une vue 3D, l’éditeur de texte, la fenêtre {{Literal|Ipo}}…
+ |longdesc=Très peu de gens utilisent ce terme de nos jours, alors essayez d’éviter son utilisation.
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Armature
+ |ref=armature
+ |syns=(langs=EN;title=Skeleton;ref=skeleton), (langs=FR;title=Squelette;ref=squelette)
+ |dict=(langs=FR;term=armature;usage=4;note=Le terme technique dans Blender.), (langs=EN;term=squelette;usage=3;note=Préférez le terme “armature”.), (langs=EN;term=armature), (langs=EN;term=skeleton)
+ |shortdesc=Une classe de primitive objet constituée d’un seul membre, et qui vous permet de contrôler/déformer d’autres objets (souvent des ''meshes'', généralement pour les animer. Elle est constituée de “''bones''” (“os”).
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Arrière-plan
+ |ref=arriere plan
+ |syns=(langs=EN;title=Background;ref=background)
+ |dict=(langs=FR;term=arrière-plan), (langs=EN;term=background)
+ |shortdesc=Ce qui se trouve au fond de la scène.
+ |longdesc=En général, rien d’important ne s’y passe, car le spectateur n’y fait généralement pas attention. Cependant, l’arrière-plan peut être très important pour la crédibilité de votre scène (ce sont souvent des photos retouchées ou des ''mate-paintings'', car cela représenterait trop de travail de les créer/rendre en 3D “réelle”).
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Automerge”
+ |ref=automerge
+ |dict=(langs=FR;term=auto-soudure;usage=2;approx=Yes;note=Préférez l’utilisation du terme anglais…),  (langs=EN;term=automerge)
+ |shortdesc=Un mode d’édition fonctionnant avec l’outil {{Literal|Snap}}, qui enlève les doublons quand vous réunissez, soudez deux ''vertices'' ou plus.
+ |longdesc=Menu {{Literal|Mesh}}&nbsp;→ {{Literal|AutoMerge Editing}}. Voyez aussi la [[Doc:FR/Manual/Modelling/Meshes/Snap to Mesh|page sur l’outil {{Literal|Snap}}]].
+ }}
+
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=“Autostart”
+ |ref=autostart
+ |dict=(langs=FR;term=auto-démarrage;usage=1), (langs=EN;term=autostart)
+ |shortdesc=Démarre automatiquement le jeu (comme en pressant {{Shortcut|P}}) à l’ouverture du fichier .blend&nbsp;?
+ |longdesc=Menu {{Literal|User Preference}}&nbsp;→ {{Literal|Game}}&nbsp;→ {{Literal|Autostart}}.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Axe
+ |ref=axe
+ |dict=(langs=FR;term=axe), (langs=EN;term=axis)
+ |shortdesc=Une ligne de référence.
+ |longdesc='''1.''' La géométrie du monde de Blender est définie par trois axes orthogonaux, les axes X, Y et Z. Ils sont montrés par des lignes rouge, verte et bleue, respectivement, dans les vues 3D. Leur intersection mutuelle (leur point concourant) définit l’origine du système de coordonnées global de Blender. Dans ce système de type cartésien, une position 3D est définie par ses décalages le long de ces trois axes.<br />'''2.''' Chaque objet (ou ensemble d’objets simultanément sélectionnés) dispose de ses propres axes locaux, orthogonaux les uns par rapport aux autres, et par rapport aux côtés de la boîte englobante de l’objet. Les axes locaux sont invisibles, à moins que vous n’activiez leur affichage (contexte {{Literal|Object}}&nbsp;→ sous-contexte {{Literal|Object}}&nbsp;→ panneau {{Literal|Draw}}&nbsp;→ bouton {{Literal|Axis}}). S’il est activé, le [[Doc:FR/Manual/3D interaction/Manipulation/Manipulators|manipulateur de transformation]] réside au centre opérationnel de l’objet, et ses flèches sont par défaut parallèles aux axes globaux. Cependant, un mode {{Literal|Local}} peut être sélectionné dans la liste déroulante {{Literal|Orientation}} de l’en-tête des vues 3D. Une fois dans ce mode, les flèches du manipulateur coïncideront avec les axes locaux de l’objet, et les manipulations (transformations) se feront selon ces axes locaux, que ce soit en mode {{Literal|Object}} ou {{Literal|Edit}}.<br />'''3.''' Un ensemble de petits axes dans le coin inférieur gauche de la vue 3D agit comme une “boussole” 3D. Ses flèches sont toujours parallèles aux axes globaux, quelle que soit la vue. Les flèches pointent dans la direction positive de chaque axe global.
+ }}
+

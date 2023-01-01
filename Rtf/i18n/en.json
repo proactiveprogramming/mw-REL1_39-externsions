@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Hunter Turcin"
+        ]
+    },
+    "rtf-desc": "Adds support for Rich Text Format",
+    "rtf-extensionname": "Rtf"
+}

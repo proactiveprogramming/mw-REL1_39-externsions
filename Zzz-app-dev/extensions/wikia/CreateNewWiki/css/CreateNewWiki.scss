@@ -1,0 +1,442 @@
+@import 'variables';
+@import 'skins/shared/mixins/box-shadow';
+@import 'skins/shared/mixins/clearfix';
+@import 'skins/shared/mixins/placeholder';
+@import 'skins/shared/mixins/transition';
+@import 'skins/oasis/css/core/layout';
+@import 'skins/shared/mixins/columns';
+@import 'skins/shared/mixins/transform';
+@import 'extensions/wikia/ThemeDesigner/css/ThemeTab';
+@import 'extensions/wikia/DesignSystem/node_modules/design-system/dist/scss/wds-variables/index';
+
+.WikiaSiteWrapper {
+	background-color: $wds-color-off-white;
+}
+
+.WikiaPage {
+	border: 0;
+
+	.WikiaPageBackground {
+		background: none;
+	}
+}
+
+.WikiaFooter {
+	padding-bottom: 10px;
+
+	section {
+		display: none;
+	}
+}
+
+#CreateNewWiki {
+	background: $wds-color-white;
+	border: 1px solid $wds-color-faint-gray;
+	box-sizing: border-box;
+	color: $wds-color-dark-gray;
+	font-family: $wds-font-family;
+	font-size: $wds-typescale-size-base;
+	line-height: $wds-line-height;
+	margin: 4px auto 0;
+	padding: $content-spacing-regular 0 $cnw-bottom-bar-size;
+	position: relative;
+	width: $cnw-size;
+
+	@include placeholder {
+		color: $wds-color-light-gray;
+	}
+
+	h1 {
+		display: none;
+	}
+
+	h2 {
+		border: 0;
+		font-size: $wds-typescale-size-plus-2;
+		font-weight: bold;
+		margin: 0 0 $content-spacing-regular;
+		overflow: visible;
+		padding: 0;
+	}
+
+	h3 {
+		font-weight: bold;
+		margin: $content-spacing-xxlarge 0 $content-spacing-small;
+	}
+
+	p {
+		margin: $content-spacing-regular 0 $content-spacing-large;
+	}
+
+	nav {
+		bottom: 0;
+		display: flex;
+		height: $cnw-bottom-bar-size;
+		position: absolute;
+		right: 0;
+
+		input[type=button] {
+			background: $wds-color-white;
+			float: right;
+			height: auto;
+			margin: $content-spacing-xxsmall 0 $content-spacing-xxsmall $content-spacing-xxsmall;
+		}
+
+		&.controls .wikiaThrobber {
+			// fix color change when selecting different themes
+			background-color: $wds-color-white;
+			height: $cnw-bottom-bar-size;
+			order: -1;
+			position: relative;
+			width: $cnw-bottom-bar-size;
+		}
+	}
+
+	textarea,
+	input[type=text] {
+		border: 0;
+		border-bottom: 1px solid $wds-color-mist-gray;
+		font-family: inherit;
+		font-size: inherit;
+		line-height: $wds-line-height;
+		outline: none;
+	}
+
+	textarea {
+		display: block;
+		height: 4 * $wds-line-height;
+		overflow-x: hidden;
+		overflow-y: auto;
+		resize: none;
+		width: $cnw-textarea-width;
+
+		@include placeholder {
+			font-style: italic;
+		}
+	}
+
+	input[type=text] {
+		width: $cnw-input-width;
+
+		&.input-error {
+			border-color: $wds-color-alert;
+		}
+	}
+
+	.checkbox-styled {
+		float: left;
+		height: $cnw-checkbox-size;
+		margin-top: 3px;
+		position: relative;
+		width: $cnw-checkbox-size;
+
+		label {
+			border: 1px solid $wds-color-light-gray;
+			border-radius: 1px;
+			box-sizing: border-box;
+			height: $cnw-checkbox-size;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: $cnw-checkbox-size;
+
+			&::after {
+				background-color: transparent;
+				border: 2px solid $wds-color-white;
+				border-right: 0;
+				border-top: 0;
+				content: '';
+				height: 4px;
+				left: 3px;
+				opacity: 0;
+				position: absolute;
+				top: 4px;
+				transform: rotate(-45deg) translate3d(0, 0, 0);
+				width: 8px;
+			}
+
+			&:hover::after {
+				opacity: .3;
+			}
+		}
+
+		input[type=checkbox] {
+			visibility: hidden;
+
+			&:checked + label {
+				background-color: $wds-color-light-blue;
+				border-color: $wds-color-light-blue;
+			}
+
+			&:checked + label::after {
+				opacity: 1;
+			}
+		}
+	}
+
+	.checkbox {
+		display: flex;
+		margin: $content-spacing-small 0 0 (-$content-spacing-xxsmall);
+
+		label {
+			padding: $content-spacing-xxsmall 0 $content-spacing-xxsmall $content-spacing-xxsmall;
+		}
+
+		span {
+			margin: 0 $content-spacing-small;
+		}
+	}
+
+	.wiki-domain-container,
+	.wiki-name-container {
+		position: relative;
+	}
+
+	.language-choice,
+	.select-container,
+	.wiki-name-container,
+	.wiki-domain-container {
+		margin: $content-spacing-regular 0;
+	}
+
+	.instruction {
+		margin-bottom: $content-spacing-xxlarge;
+	}
+
+	.step {
+		line-height: inherit;
+		margin: 0;
+	}
+
+	.steps {
+		border-bottom: 1px solid $wds-color-mist-gray;
+		list-style: none;
+		margin: 0;
+		padding: 0 $content-spacing-large $content-spacing-regular;
+	}
+
+	.error-msg {
+		color: $wds-color-alert;
+		font-size: $wds-typescale-size-minus-2;
+		min-height: $wds-line-height * 4 / 3;
+	}
+
+	.categories-sets {
+		display: none;
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+
+	.categories-set {
+		@include column-count(4);
+		display: none;
+
+		span {
+			display: block;
+			margin-left: $cnw-checkbox-size + $content-spacing-small-plus;
+		}
+	}
+
+	.category-label {
+		display: block;
+		margin-left: -$content-spacing-xxsmall;
+		min-height: $cnw-category-label-height;
+		padding: $content-spacing-xxsmall 0 $content-spacing-xxsmall $content-spacing-xxsmall;
+		page-break-inside: avoid;
+	}
+
+	.ThemeTab {
+		height: 125px;
+		margin-left: -$content-spacing-regular;
+		position: relative;
+
+		.slider {
+			height: 125px;
+			top: 0;
+			width: 608px;
+
+			ul {
+				list-style: none;
+				margin: 0;
+			}
+
+			li {
+				padding-bottom: 0;
+				padding-top: 0;
+			}
+
+			h3 {
+				display: none;
+			}
+		}
+
+		.chevron {
+			top: 37px;
+
+			&.next {
+				left: 645px;
+			}
+		}
+	}
+
+	.floating-label {
+		@include transition(font-size top, .1s, ease-in, 0);
+
+		color: $wds-color-light-gray;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+
+		&.active {
+			font-size: $wds-typescale-size-minus-2;
+			top: -$content-spacing-regular;
+
+			&.label-error {
+				color: $wds-color-alert;
+			}
+		}
+	}
+
+	.cnw-select {
+		margin: $content-spacing-large 0;
+
+		&.cnw-select-language {
+			margin-top: 0;
+
+			h3 {
+				margin-top: 0;
+			}
+		}
+
+		&.cnw-select-vertical {
+			margin-bottom: 0;
+		}
+	}
+
+	.wds-dropdown {
+		border-bottom: 1px solid $wds-color-mist-gray;
+		width: $cnw-input-width-large;
+
+		&.input-error {
+			border-color: $wds-color-alert;
+		}
+
+		.default-value {
+			line-height: $wds-line-height;
+		}
+
+		svg {
+			fill: $wds-color-light-gray;
+			float: right;
+			margin-top: 4px;
+		}
+
+		&.wds-is-active {
+			svg {
+				@include transform-rotate(180deg);
+			}
+		}
+
+		.wds-dropdown__content {
+			overflow: auto;
+			width: $cnw-input-width-large;
+
+			&.wiki-language-dropdown {
+				max-height: $cnw-dropdown-spacer-height + ($cnw-dropdown-elements - 1) * $cnw-dropdown-item-height;
+			}
+
+			&.wiki-vertical-dropdown {
+				max-height: $cnw-dropdown-elements * $cnw-dropdown-item-height;
+			}
+		}
+	}
+
+	.wds-list {
+		cursor: pointer;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		.spacer {
+			color: $wds-color-dark-gray;
+			cursor: default;
+			font-size: $wds-typescale-size-base;
+			font-weight: bold;
+			line-height: .9;
+			padding: $content-spacing-regular-minus $content-spacing-regular;
+		}
+
+		li {
+			margin: 0;
+			padding: $content-spacing-small $content-spacing-regular;
+		}
+
+		li:not(.spacer):hover {
+			background: $wds-color-off-white;
+			color: $wds-color-link;
+		}
+
+	}
+}
+
+#DescWiki,
+#ThemeWiki {
+	display: none;
+}
+
+#ThemeWiki {
+	.creating-wiki-message {
+		display: none;
+	}
+
+	.creating-wiki {
+		.creating-wiki-message {
+			color: $wds-color-light-gray;
+			display: block;
+			font-size: $wds-typescale-size-minus-1;
+			line-height: $wds-line-height;
+			padding: $content-spacing-regular $content-spacing-regular 0 0;
+		}
+
+		.next {
+			display: none;
+		}
+	}
+}
+
+#UserAuth {
+	@include clearfix;
+	display: none;
+	width: 600px;
+
+	.UserLoginModal {
+		border-right: 1px solid $color-borders;
+		margin: 0 0 15px;
+		padding: 10px 90px 0 0;
+	}
+
+	.signup-loginmodal {
+		float: left;
+	}
+
+	.signup-marketing {
+		float: right;
+		padding: 30px;
+		width: 175px;
+	}
+
+	.get-account {
+		display: none;
+	}
+
+	.keeploggedin {
+		display: none;
+	}
+}
+
+.hidden {
+	display: none;
+}

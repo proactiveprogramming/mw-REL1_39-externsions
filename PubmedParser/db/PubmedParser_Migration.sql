@@ -1,0 +1,7 @@
+BEGIN;
+CREATE TABLE IF NOT EXISTS /*_*/pubmed (
+	pmid INTEGER UNSIGNED NOT NULL PRIMARY KEY,
+	xml MEDIUMTEXT NOT NULL
+	)
+	COMMENT "Caching table for PubmedParser extension";
+COMMIT;

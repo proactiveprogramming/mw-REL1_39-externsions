@@ -1,0 +1,2 @@
+{{#switch: {{#titleparts:{{PAGENAME}}|1|1}} |AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|TR|UK|ZH=/|}}
+

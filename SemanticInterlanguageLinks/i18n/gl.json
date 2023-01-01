@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Banjo",
+			"Elisardojm"
+		]
+	},
+	"sil-desc": "Extensión de [https://www.semantic-mediawiki.org MediaWiki Semántica] para crear e xestionar ligazóns interlingüísticas",
+	"sil-property-ill-alias-language": "Lingua do contido da páxina",
+	"sil-property-ill-alias-reference": "Referencia interlingüística",
+	"sil-property-iwl-alias-language": "Idioma interwiki",
+	"sil-property-iwl-alias-reference": "Referencia interwiki",
+	"sil-property-alias-container": "Ten unha ligazón interlingüística",
+	"smw-pa-property-predefined__sil_container": "\"$1\" é unha propiedade predefinida que representa unha entidade contedora para describir información relativa a ligazóns interlingüísticas e é proporcionada pola extensión  [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Ligazóns Interidioma Semánticas].",
+	"smw-pa-property-predefined__sil_ill_lang": "\"$1\" é unha propiedade predefinida que contén un código de lingua anotado e é proporcionado pola extensión [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Ligazóns Interidioma Semánticas].",
+	"smw-pa-property-predefined__sil_ill_ref": "\"$1\" é unha propiedade predefinida que contén unha referencia arbitraria e é proporcionado pola extensión [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Ligazóns Interidioma Semánticas].",
+	"smw-pa-property-predefined-long__sil_ill_ref": "As entidades coa mesma referencia están ligadas e espérase que representen contido similar en diferentes linguas.",
+	"smw-pa-property-predefined__sil_iwl_lang": "\"$1\" é unha propiedade predefinida e representa un código de lingua derivado dunha ligazón interwiki e é proporcionado pola extensión [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Ligazóns Interidioma Semánticas].",
+	"smw-pa-property-predefined__sil_iwl_ref": "\"$1\" é unha propiedade predefinida e representa unha páxina obxectivo derivada dunha ligazón interwiki e é proporcionado pola extensión [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Interlanguage_Links Ligazóns Interidioma Semánticas].",
+	"sil-interlanguagelink-hideinterlanguagelinks": "Non se pode utilizar a función do analizador porque <code>$wgHideInterlanguageLinks</code> está activa.",
+	"sil-interlanguagelink-invalidlanguagecode": "Non se recoñece \"$1\" como código de idioma válido.",
+	"sil-interlanguagelink-multiplecalls-different-languagecode": "A función de análise foi chamada varias veces pero cun código de lingua diferente (\"$1\") o que debe evitarse xa que o contido dunha páxina xeralmente espérase que estea representado nunha única lingua.",
+	"sil-interlanguagelink-languagetargetcombination-exists": "Xa existe a combinación \"$1\":\"$2\" para a páxina \"$3\", polo tanto, non se creou ningunha anotación interlingüística.",
+	"sil-interlanguagelist-missing-linkreference": "Á función do analizador fáltalle unha referencia válida.",
+	"sil-interlanguagelist-missing-template": "Á función do analizador fáltalle un modelo de saída.",
+	"sil-interlanguageparser-linkreference-error": "A función do analizador experimentou un problema ó crear un objecto de título a partir de \"$1\".",
+	"sil-search-profile": "por idioma",
+	"sil-search-profile-tooltip": "Filtrar artigo por anotación de idioma",
+	"sil-search-languagefilter-label": "Filtro por lingua",
+	"sil-search-nolanguagefilter": "Sen filtro de idioma",
+	"sil-categorypage-languagefilter-active": "Esta categoría contén información (páxina, subpáxina e imaxe) filtrada polo idioma \"$1\"."
+}

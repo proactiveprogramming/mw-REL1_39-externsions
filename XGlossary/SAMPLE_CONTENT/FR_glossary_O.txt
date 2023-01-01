@@ -1,0 +1,10 @@
+{{#glossary_entry:
+ |langs=FR
+ |title=Occlusion Ambiante
+ |ref=occlusion ambiante
+ |syns=(langs=EN;title=Ambient Occlusion \(AO\);ref=ambient occlusion)
+ |dict=(langs=FR;term=occlusion ambiante;usage=4), (langs=EN;term=ambient occlusion)
+ |shortdesc=Cela simule un énorme dôme de lumière entourant toute la scène. Si un point d’une surface se trouve sous un pied ou une table, il se retrouvera bien plus sombre que le sommet de la tête de quelqu’un, ou qu’un dessus de table.
+ |longdesc=Une proportion (quantité) de lumière ambiante qu’un point d’une surface est susceptible de recevoir, en fonction de la quantité de “ciel” qu’il peut “voir”.
+ }}
+

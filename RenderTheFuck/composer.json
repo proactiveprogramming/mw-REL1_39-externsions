@@ -1,0 +1,11 @@
+{
+    "require-dev": {
+        "mediawiki/mediawiki-codesniffer": "0.7.2"
+    },
+    "scripts": {
+        "test": [
+            "phpcs -p -s"
+        ],
+        "fix": "phpcbf"
+    }
+}

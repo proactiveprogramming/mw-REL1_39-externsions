@@ -1,0 +1,718 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Pickle documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Pickle</h1>
+
+<ul>
+  <li><a href="../mw.pickle.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>Pickle</strong></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Adapt.html">Adapt</a></li>
+  <li><a href="../classes/Bag.html">Bag</a></li>
+  <li><a href="../classes/Case.html">Case</a></li>
+  <li><a href="../classes/Counter.html">Counter</a></li>
+  <li><a href="../classes/Double.html">Double</a></li>
+  <li><a href="../classes/Extractor.html">Extractor</a></li>
+  <li><a href="../classes/Extractors.html">Extractors</a></li>
+  <li><a href="../classes/Spy.html">Spy</a></li>
+  <li><a href="../classes/Translator.html">Translator</a></li>
+  <li><a href="../classes/Translators.html">Translators</a></li>
+  <li><a href="../classes/Render.html">Render</a></li>
+  <li><a href="../classes/RenderAdapt.html">RenderAdapt</a></li>
+  <li><a href="../classes/RenderAdaptCompact.html">RenderAdaptCompact</a></li>
+  <li><a href="../classes/RenderAdaptFull.html">RenderAdaptFull</a></li>
+  <li><a href="../classes/RenderAdaptVivid.html">RenderAdaptVivid</a></li>
+  <li><a href="../classes/RenderCase.html">RenderCase</a></li>
+  <li><a href="../classes/RenderCaseCompact.html">RenderCaseCompact</a></li>
+  <li><a href="../classes/RenderCaseFull.html">RenderCaseFull</a></li>
+  <li><a href="../classes/RenderCaseVivid.html">RenderCaseVivid</a></li>
+  <li><a href="../classes/Renders.html">Renders</a></li>
+  <li><a href="../classes/Report.html">Report</a></li>
+  <li><a href="../classes/ReportAdapt.html">ReportAdapt</a></li>
+  <li><a href="../classes/ReportCase.html">ReportCase</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/activities.md.html">Activities</a></li>
+  <li><a href="../topics/adapt.md.html">Adapt</a></li>
+  <li><a href="../topics/call-style.md.html">Call style</a></li>
+  <li><a href="../topics/change-log.md.html">Log</a></li>
+  <li><a href="../topics/databases.md.html">Databases</a></li>
+  <li><a href="../topics/dataflow.md.html">Dataflow</a></li>
+  <li><a href="../topics/hello-world.md.html">Hello World</a></li>
+  <li><a href="../topics/lua-classes.md.html">Lua classes</a></li>
+  <li><a href="../topics/musings.md.html">Musings</a></li>
+  <li><a href="../topics/page-indicators.md.html">Page indicators</a></li>
+  <li><a href="../topics/sources.md.html">Sources</a></li>
+  <li><a href="../topics/spies.md.html">Spies</a></li>
+  <li><a href="../topics/statistics.md.html">Statistics</a></li>
+  <li><a href="../topics/test-anything-protocol.md.html">Test anything protocol</a></li>
+  <li><a href="../topics/test-case.md.html">Test Case</a></li>
+  <li><a href="../topics/test-doubles.md.html">Test doubles</a></li>
+  <li><a href="../topics/testing.md.html">Testing</a></li>
+  <li><a href="../topics/tracking-categories.md.html">Tracking categories</a></li>
+  <li><a href="../topics/translatewiki.md.html">Translatewiki</a></li>
+  <li><a href="../topics/vagrant.md.html">Vagrant</a></li>
+  <li><a href="../topics/vscode-extensions.md.html">VScode extension</a></li>
+  <li><a href="../topics/vscode-snippets.md.html">VScode snippets</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/HelloWorld.pickle.nb.lua.html">HelloWorld.pickle.nb.lua</a></li>
+  <li><a href="../examples/HelloWorld.lua.html">HelloWorld.lua</a></li>
+  <li><a href="../examples/HelloWorld.pickle.lua.html">HelloWorld.pickle.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>Pickle</code></h1>
+<p>Register functions for the testing framework.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#stub">stub (...)</a></td>
+	<td class="summary">Make a test double
+ This is for mimickin general behavior, and acts like it is a function.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#carp">carp (str)</a></td>
+	<td class="summary">Make a carp on the current report.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#cluck">cluck (str)</a></td>
+	<td class="summary">Make a cluck on the current report.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#croak">croak (str[, level=0])</a></td>
+	<td class="summary">Make a croak on the current report.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#confess">confess (str[, level=0])</a></td>
+	<td class="summary">Make a confess(ion) on the current report.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#skip">skip (str)</a></td>
+	<td class="summary">Make a skip comment on the current report.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#todo">todo (str)</a></td>
+	<td class="summary">Make a todo comment on the current report.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#expect">expect (...)</a></td>
+	<td class="summary">Expect whatever to be compared to the subject.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#subject">subject (...)</a></td>
+	<td class="summary">Subject of whatever to be compared to the expected.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#xtop">xtop (...)</a></td>
+	<td class="summary">Silent “top” for the test.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#xdescribe">xdescribe (...)</a></td>
+	<td class="summary">Silent “describe” for the test.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#context">context (...)</a></td>
+	<td class="summary">Silent “context” for the test.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#top">top (...)</a></td>
+	<td class="summary">“Top” for the test.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#describe">describe (...)</a></td>
+	<td class="summary">“Describe” for the test.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#context">context (...)</a></td>
+	<td class="summary">“Context” for the test.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#mw.pickle.__call">mw.pickle.__call (opts)</a></td>
+	<td class="summary">Install the library.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#pickle.setupInterface">pickle.setupInterface (opts)</a></td>
+	<td class="summary">install the module in the global space.</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name nowrap"><a href="#env.xit">env.xit</a></td>
+	<td class="summary">Silent “it” for the test.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#env.it">env.it</a></td>
+	<td class="summary">“It” for the test.</td>
+	</tr>
+	<tr>
+	<td class="name nowrap"><a href="#env._reports">env._reports</a></td>
+	<td class="summary">Put up a nice banner telling everyone pickle is initialized, and add the instances</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "stub"></a>
+    <strong>stub (...)</strong>
+    </dt>
+    <dd>
+    Make a test double
+ This is for mimickin general behavior, and acts like it is a function.
+ Returns precomputed values or compute them on the fly.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a>, <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a>, <span class="type">boolean</span>, <span class="type">number</span> or <span class="type">function</span></span>
+         arguments to be parsed
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">function</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "carp"></a>
+    <strong>carp (str)</strong>
+    </dt>
+    <dd>
+    Make a carp on the current report.
+ This is usualy called due to debugging a possible error condition.
+ Prints a “todo” comment, caller's name and arguments.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         message to use for todo part of report
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Spy
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cluck"></a>
+    <strong>cluck (str)</strong>
+    </dt>
+    <dd>
+    Make a cluck on the current report.
+ This is usually called due to debugging a possible error condition.
+ Prints a “todo” comment, caller's name and arguments, and a stack backtrace.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         message to use for todo part of report
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Spy
+
+
+
+
+</dd>
+    <dt>
+    <a name = "croak"></a>
+    <strong>croak (str[, level=0])</strong>
+    </dt>
+    <dd>
+    Make a croak on the current report.
+ This is usually called due to debugging a possible error condition.
+ Prints a “skip” comment, caller's name and arguments, and exits.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         message to use for todo part of report
+        </li>
+        <li><span class="parameter">level</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         to report
+         (<em>default</em> 0)
+        </li>
+    </ul>
+
+
+    <h3>Raises:</h3>
+    unconditionally
+
+
+
+</dd>
+    <dt>
+    <a name = "confess"></a>
+    <strong>confess (str[, level=0])</strong>
+    </dt>
+    <dd>
+    Make a confess(ion) on the current report.
+ This is usually called due to debugging a possible error condition.
+ Prints a “skip” comment, caller's name and arguments, a stack backtrace, and exits.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         message to use for todo part of report
+        </li>
+        <li><span class="parameter">level</span>
+            <span class="types"><span class="type">nil</span> or <span class="type">number</span></span>
+         to report
+         (<em>default</em> 0)
+        </li>
+    </ul>
+
+
+    <h3>Raises:</h3>
+    unconditionally
+
+
+
+</dd>
+    <dt>
+    <a name = "skip"></a>
+    <strong>skip (str)</strong>
+    </dt>
+    <dd>
+    Make a skip comment on the current report.
+ This function will not terminate the current run.
+ Consider <a href="../modules/Pickle.html#croak">croak</a> or <a href="../modules/Pickle.html#confess">confess</a>.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         message to be passed on
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "todo"></a>
+    <strong>todo (str)</strong>
+    </dt>
+    <dd>
+    Make a todo comment on the current report.
+ This function will not terminate the current run.
+ Consider <a href="../modules/Pickle.html#carp">carp</a> or <a href="../modules/Pickle.html#cluck">cluck</a>.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+            <span class="types"><span class="type">nil</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         message to be passed on
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "expect"></a>
+    <strong>expect (...)</strong>
+    </dt>
+    <dd>
+    Expect whatever to be compared to the subject.
+ The expected value is the assumed outcome,
+ or something that can be transformed into the
+ assumed outcome.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         varargs passed on to Adapt:create
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Adapt
+
+
+
+
+</dd>
+    <dt>
+    <a name = "subject"></a>
+    <strong>subject (...)</strong>
+    </dt>
+    <dd>
+    Subject of whatever to be compared to the expected.
+ The subject is whatever object we want to test,
+ usually the returned table for a module.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         varargs passed on to Adapt:create
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Adapt
+
+
+
+
+</dd>
+    <dt>
+    <a name = "xtop"></a>
+    <strong>xtop (...)</strong>
+    </dt>
+    <dd>
+    Silent “top” for the test.
+ This is a level above the usual the three levels, and only
+ used when several modules are tested simultaneously.
+ The function will silently avoid running the fixture.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         varargs passed on to Case:dispatch
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Case
+
+
+
+
+</dd>
+    <dt>
+    <a name = "xdescribe"></a>
+    <strong>xdescribe (...)</strong>
+    </dt>
+    <dd>
+    Silent “describe” for the test.
+ This is the outermost of the three levels.
+ The function will silently avoid running the fixture.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         varargs passed on to Case:dispatch
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Case
+
+
+
+
+</dd>
+    <dt>
+    <a name = "context"></a>
+    <strong>context (...)</strong>
+    </dt>
+    <dd>
+    Silent “context” for the test.
+ This is usually used for creating some additional context
+ before the actual testing.
+ The function will silently avoid running the fixture.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         varargs passed on to Case:dispatch
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Case
+
+
+
+
+</dd>
+    <dt>
+    <a name = "top"></a>
+    <strong>top (...)</strong>
+    </dt>
+    <dd>
+    “Top” for the test.
+ This is a level above the usual the three levels, and only
+ used when several modules are tested simultaneously.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         varargs passed on to Case:dispatch
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Case
+
+
+
+
+</dd>
+    <dt>
+    <a name = "describe"></a>
+    <strong>describe (...)</strong>
+    </dt>
+    <dd>
+    “Describe” for the test.
+ This is the outermost of the three levels.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         varargs passed on to Case:dispatch
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Case
+
+
+
+
+</dd>
+    <dt>
+    <a name = "context"></a>
+    <strong>context (...)</strong>
+    </dt>
+    <dd>
+    “Context” for the test.
+ This is usually used for creating some additional context
+ before the actual testing. An alternate would be to use
+ 'before' and 'after' functions.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         varargs passed on to Case:dispatch
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+        Case
+
+
+
+
+</dd>
+    <dt>
+    <a name = "mw.pickle.__call"></a>
+    <strong>mw.pickle.__call (opts)</strong>
+    </dt>
+    <dd>
+    Install the library.
+ This install all dependencies and changes the environment
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">opts</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         for the options
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+
+           <span class="types"><span class="type">self</span></span>
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "pickle.setupInterface"></a>
+    <strong>pickle.setupInterface (opts)</strong>
+    </dt>
+    <dd>
+    install the module in the global space.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">opts</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "env.xit"></a>
+    <strong>env.xit</strong>
+    </dt>
+    <dd>
+    Silent “it” for the test.
+
+
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         passed on to Case:create
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "env.it"></a>
+    <strong>env.it</strong>
+    </dt>
+    <dd>
+    “It” for the test.
+
+
+    <ul>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">vararg</span></span>
+         passed on to Case:create
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "env._reports"></a>
+    <strong>env._reports</strong>
+    </dt>
+    <dd>
+    Put up a nice banner telling everyone pickle is initialized, and add the instances
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
+

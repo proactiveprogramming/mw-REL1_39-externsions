@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"bcmath-desc": "Provides arbitrary-precision arithmetic to Lua modules",
+	"bcmath-payload-counter": "$1: $2",
+	"bcmath-check-not-implemented": "Functionality “$1” isn't implemented yet!",
+	"bcmath-check-self-nan": "“self” does not have a valid value",
+	"bcmath-check-operand-nan": "operator “$1” with operand “$2” does not have a valid value",
+	"bcmath-add-singlesided-infinite": "Added two values where one is infinite",
+	"bcmath-add-opposite-infinites": "Added two infinite values of opposite direction",
+	"bcmath-add-similar-infinites": "Added two infinite values of similar direction",
+	"bcmath-sub-singlesided-infinite": "Subtracted two values where one is infinite",
+	"bcmath-sub-opposite-infinites": "Subtracted two infinite values of opposite direction",
+	"bcmath-sub-similar-infinites": "Subtracted two infinite values of similar direction",
+	"bcmath-mul-infinite-and-zero": "Multiplied infinite and zero",
+	"bcmath-mul-opposite-infinites": "Multiplied two infinite values of opposite direction",
+	"bcmath-mul-similar-infinites": "Multiplied two infinite values of similar direction",
+	"bcmath-div-divisor-infinite": "Divided with infinite divisor",
+	"bcmath-div-divisor-zero": "Divided with zero divisor",
+	"bcmath-div-dividend-infinite": "Divided with infinite dividend",
+	"bcmath-mod-divisor-infinite": "Modulus with infinite divisor",
+	"bcmath-mod-divisor-zero": "Modulus with zero divisor",
+	"bcmath-mod-dividend-infinite": "Modulus with infinite dividend",
+	"bcmath-pow-exponent-zero": "Power with zero exponent",
+	"bcmath-pow-base-one": "Power with base one",
+	"bcmath-powmod-divisor-zero": "Powermod with zero divisor",
+	"bcmath-powmod-exponent-negative": "Powermod with negative exponent",
+	"bcmath-sqrt-operand-negative": "Square root with negative operand"
+}

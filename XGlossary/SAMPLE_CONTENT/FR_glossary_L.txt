@@ -1,0 +1,20 @@
+{{#glossary_entry:
+ |langs=EN, FR
+ |title=Logic Brick (ou Logicbrick)
+ |ref=logic brick
+ |syns=(langs=FR;title=Brique Logique;ref=brique logique)
+ |dict=(langs=FR;term=brique logique;usage=4;note=N’hésitez pas à utiliser aussi le terme anglais&nbsp\;!), (langs=EN;term=logic brick)
+ |shortdesc=Une représentation graphique d’une unité fonctionnelle, dans la logique de jeu de Blender.
+ |longdesc=Les “briques logiques” peuvent être des {{Glossary/Link|ref=capteur|txt=Capteurs}}, {{Glossary/Link|ref=controleur|txt=Contrôleurs}} ou {{Glossary/Link|ref=actuateur|txt=Actuateurs}}.
+ }}
+
+{{#glossary_entry:
+ |langs=FR
+ |title=Lumière Ambiante
+ |ref=lumiere ambiante
+ |syns=(langs=EN;title=Ambient Light;ref=ambient light)
+ |dict=(langs=FR;term=lumière ambiante;usage=4), (langs=EN;term=ambient light)
+ |shortdesc=C’est de la lumière qui ne semble provenir de nulle part, mais se trouve simplement là dans l’environnement.
+ |longdesc=Regardez sous votre bureau –&nbsp;c’est relativement sombre la-dessous, mais il y a quand même de la lumière. Dans le monde réel, cela est causé des photons errants qui rebondissent dans l’environnement, parfois jusque sous le bureau. La lumière ambiante est la quantité de lumière basique, minimale, présente dans toute la scène. Ajouter trop d’''ambient light'' délave une scène. Puisque la lumière ne provient de nulle part, toutes les faces d’un objet sont “illuminées” de la même façon, ne créant aucun ombrage.
+ }}
+
