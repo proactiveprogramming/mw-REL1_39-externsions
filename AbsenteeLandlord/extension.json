@@ -23,12 +23,12 @@
 		]
 	},
 	"AutoloadClasses": {
-		"AbsenteeLandlord": "AbsenteeLandlord.php",
-		"AbsenteeLandlordReadOnlyMode": "AbsenteeLandlordReadOnlyMode.php"
+		"Hooks": "includes/Hooks.php",
+		"AbsenteeLandlordReadOnlyMode": "includes/AbsenteeLandlordReadOnlyMode.php"
 	},
 	"Hooks": {
-		"BeforePageDisplay": "AbsenteeLandlord::maybeDoTouch",
-		"MediaWikiServices": "AbsenteeLandlord::onMediaWikiServices"
+		"BeforePageDisplay": "Hooks::onBeforePageDisplay",
+		"MediaWikiServices": "Hooks::onMediaWikiServices"
 	},
 	"manifest_version": 2
 }
