@@ -28,9 +28,6 @@ class VikiSemanticTitle {
 	}
 
 	static function onRegistration() {
-		global $wgExtensionFunctions;
-		$wgExtensionFunctions[] = 'VikiSemanticTitle::checkForVIKI';
-
 		global $wgVIKI_Function_Hooks;
 
 		if ( !isset( $wgVIKI_Function_Hooks ) )
@@ -43,9 +40,4 @@ class VikiSemanticTitle {
 				array( 'VIKI.VikiSemanticTitle.checkForSemanticTitle' );
 	}
 
-	static function checkForVIKI () {
-		if( !ExtensionRegistry::getInstance()->isLoaded("VIKI") ) {
-			die("<b>Error:</b> The extension VikiSemanticTitle requires VIKI to be installed. Be sure to call <b>wfLoadExtension(\"VIKI\")</b> in LocalSettings.php.");
-		}
-	}
 }

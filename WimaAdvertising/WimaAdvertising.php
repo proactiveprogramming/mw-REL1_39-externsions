@@ -42,23 +42,6 @@ $dtgIP = dirname( __FILE__ );
 $dir = __DIR__ . '/';
 ##
 
-call_user_func(
-	function () {
-		if ( function_exists( 'wfLoadExtension' ) ) {
-			wfLoadExtension( 'WimaAdvertising' );
-			// Keep i18n globals so mergeMessageFileList.php doesn't break
-			$wgMessagesDirs['WimaAdvertising'] = "$dtgIP/i18n";
-			wfWarn(
-			   'Deprecated PHP entry point used for WimaAdvertising extension. ' .
-			   'Please use wfLoadExtension instead, ' .
-			   'see https://www.mediawiki.org/wiki/Extension_registration ' .
-			   'for more details.'
-			);
-			return;
-		}
-	}
-);
-
 $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'WimaAdvertising',
@@ -179,10 +162,7 @@ $wgExtensionFunctions[] = 'setupWimaAdvertisingExtension';
 function setupWimaAdvertisingExtension() {
 	global $wgDisableWimaAdvertising, $wgVersion;
 
-	if ( version_compare( $wgVersion, '1.23', '<' ) ) {
-		die( 'This extension requires MediaWiki 1.23+' );
-	}
-	elseif ( $wgDisableWimaAdvertising === false ) {
+	if ( $wgDisableWimaAdvertising === false ) {
 		global $wgAvailableRights, $wgGroupPermissions, $wgLogTypes, $wgLogActionsHandlers;
 	}
 

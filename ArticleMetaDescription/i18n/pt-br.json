@@ -1,9 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
-		]
-	},
-	"articlemetadescription-desc": "Adiciona o elemento <code>&lt;meta description=\"...\" /&gt;</code> com um trecho do artigo."
-}

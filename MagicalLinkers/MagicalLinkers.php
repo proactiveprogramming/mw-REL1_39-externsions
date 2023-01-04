@@ -15,21 +15,7 @@
 # 2018, Nuno Tavares <github.com/ntavares>
 
 
-if ( function_exists( 'wfLoadExtension' ) ) {
-	wfLoadExtension( 'MagicalLinkers' );
-	/* wfWarn(
-		'Deprecated PHP entry point used for MagicalLinkers extension. ' .
-		'Please use wfLoadExtension instead, ' .
-		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
-	); */
-	return true;
-} else {
-	die( 'The MagicalLinkers extension requires MediaWiki 1.25+' );
-}
-
-
 // NOTE: should we do something about $wgEnableMagicLinks?
-
 
 $wgMagicalInit = false;
 $wgMagicalPattern = array();

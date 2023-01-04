@@ -69,11 +69,6 @@ class SpecialGetProjectFile extends SpecialPage {
 
 	function __construct() {
 		parent::__construct('GetProjectFile');
-		// need to omit in 1.18, call in older MW
-		global $wgVersion;
-		if ( version_compare( $wgVersion, '1.17', '<=' ) ) {
-			wfLoadExtensionMessages('WorkingWiki');
-		}
 		$this->mIncludable = false;
 		$this->mListed = false;
 	}

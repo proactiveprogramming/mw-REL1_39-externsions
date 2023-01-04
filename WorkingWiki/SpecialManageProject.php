@@ -40,10 +40,6 @@ class SpecialManageProject extends SpecialPage
 {
   function __construct()
   { parent::__construct('ManageProject');
-    // need to call for old MW, omit for 1.18
-    global $wgVersion;
-    if ( version_compare( $wgVersion, '1.17', '<=' ) )
-      wfLoadExtensionMessages('WorkingWiki');
     $this->mIncludable = false;
     $this->mListed = false;
   }

@@ -29,9 +29,6 @@ class VikiTitleIcon {
 	}
 
 	static function onRegistration() {
-		global $wgExtensionFunctions;
-		$wgExtensionFunctions[] = 'VikiTitleIcon::checkForVIKI';
-
 		global $wgVIKI_Function_Hooks;
 
 		if ( !isset( $wgVIKI_Function_Hooks ) )
@@ -43,9 +40,4 @@ class VikiTitleIcon {
 			$wgVIKI_Function_Hooks['AfterVisitNodeHook'] = array( 'VIKI.VikiTitleIcon.checkForTitleIcon' );
 	}
 
-	static function checkForVIKI () {
-		if( !ExtensionRegistry::getInstance()->isLoaded("VIKI") ) {
-			die("<b>Error:</b> The extension VikiTitleIcon requires VIKI to be installed. Be sure to call <b>wfLoadExtension(\"VIKI\")</b> in LocalSettings.php.");
-		}
-	}
 }
